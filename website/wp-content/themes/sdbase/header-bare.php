@@ -32,7 +32,7 @@
 		}
 		elseif ( is_search() ) {
 			bloginfo( 'name' );
-			print ' | Search results for ' .wp_specialchars( $s );
+			print ' | Search results for ' . esc_html( $s );
 		}
 		elseif ( is_404() ) {
 			bloginfo( 'name' );
