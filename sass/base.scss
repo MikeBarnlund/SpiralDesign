@@ -3,8 +3,8 @@
 
 // Variables
 
-$brand1: #93b1d7; /* blue */
-$brand2: #6a747c; /* grey */
+$brand1: #F60; /* orange */
+$brand2: #222; /* grey */
 
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -12,9 +12,10 @@ $bodyColor: $brand2;
 $linkColor: $brand1 - #222;
 $linkHoverColor: $linkColor - #222;
 
-$background: #222;
+$background: #000;
+$headerBackground: $brand2;
 
-$footerHeight: 175px;
+$footerHeight: 5px;
 $footerPadding: 20px;
 
 $defaultBorderColor: #222;
@@ -28,35 +29,26 @@ body {
 	height: 100%;
 	color: $bodyColor;
 	font-size: $fontSize;
-	line-height: 1.3;
 	font-family: $fontFamily;
 	background: $background;
 }
 a { text-decoration: underline; color: $linkColor; }
 a:hover { color: $linkHoverColor; }
-h1, h2, h3, h4 {
-	margin: 15px 0;
-}
 h1 { font-size: $fontSize + 18; }
 h2 { font-size: $fontSize + 7; }
 small { font-size: $fontSize - 2; }
+em { font-style: italic; }
 
 /* =================================== Layout ============================== */
 
-#contentwrapper			{ position: relative; min-height: 100%; }
-#contentbody {
+#contentwrapper			{
 	position: relative;
-	padding: 0 0 $footerHeight + $footerPadding 0; /* footer height (140) + padding (50) */
-	z-index: 0;
-	overflow: hidden;
+	min-height: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#contentbody {
 
-	.bodycontainer {
-		padding: 0;
-		width: 960px;
-		margin: 0 auto;
-		overflow: hidden;
-		position: relative;
-	}
 }
 
 * html #contentwrapper	{ height: 100%; }
@@ -67,189 +59,87 @@ small { font-size: $fontSize - 2; }
 	margin-top: 0 - $footerHeight;
 	clear: both;
 }
-.container {
-	width: 960px;
-	margin: 0 auto;
-}
 
 /* ========================= Header ========================= */
 
-#header {
-	overflow: hidden;
+header {
+	height: 200px;
+	background: $headerBackground;
+	margin-bottom: 70px;
 
-	#logo {
-		height: 75px;
-	}
-
-	.container { overflow: hidden; }
-
-	#nav {
-		height: $navHeight;
-		background: #EEE;
-
-		.menu {
-			a {
-				text-decoration: none;
-				line-height: $navHeight;
-				padding: 0 15px;
-			}
-
-			a:hover, .current_page_item a {
-
-			}
-		}
-
-		li { display: inline; }
+	.diamond_border {
+		$diamondsize: 35px;
+		height: $diamondsize;
+		width: $diamondsize;
+		background: $headerBackground;
+		-moz-transform:rotate(45deg);
+		display: inline-block;
+		margin-bottom: -126px;
+		margin-right: 13px;
 	}
 }
 
-/* ========================= Reusable ======================== */
+/* ===================== Reusable ===================== */
 
-h2.entry-title {
-	margin-bottom: 0;
-}
-.post {
-	clear: both;
-	margin-bottom: 20px;
-	padding: 15px;
-}
-.page {
-	padding: 15px;
-	h1.entry-title {
-		margin-top: 0;
-	}
-}
-.editable { position: relative; }
-.edit-link {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: 10;
-}
 .alignright { float: right; margin-left: 10px; }
 .alignleft { float: left; margin-right: 10px; }
 
-/* ========================= Post Display ========================= */
+/* ========= Grid ========= */
 
-.entry-content { line-height: 1.3; margin: 15px 0; overflow: hidden;}
-.entry-date { }
-p { margin: 0 0 10px 0; }
+ul.grid {
+	$defaultCellSize: 160px;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 
-/* ========================= Sidebar ========================== */
+	&.flip_hide { -webkit-transform:rotateY(180deg); }
+	&.flip_show { -webkit-transform:rotateY(0deg); }
 
-.content-with-sidebar {
-	clear: both;
-	float: left;
-	width: 730px;
-	background: #333;
-	margin-top: 20px;
-}
-.sidebar {
-	float: right;
-	width: 200px;
-	margin-top: 20px;
-	background: #333;
-	padding: 15px 0 15px 15px;
-}
-
-/* ==================== Footer ================= */
-
-#footer {
-	background: #000;
-
-	a { text-decoration: none; }
-
-	.container { position: relative; height: $footerHeight; }
-
-	.spiraldesign {
-		position: absolute;
+	li {
+		float: left;
 		display: block;
-		width: 151px;
-		height: 30px;
-		background: url(../img/spiraldesign.png) top left no-repeat;
-		right: 0;
-		bottom: 10px;
+		width: $defaultCellSize;
+		height: $defaultCellSize;
+		position: relative;
+		cursor: pointer;
 
-		&:hover { background-position: bottom left; }
-	}
-
-	.social {
-		width: 240px;
-		padding: 15px 0 15px 15px;
-		float: right;
-	}
-
-	#twitter_updates {
-		font-size: $fontSize - 2;
-		padding-bottom: 15px;
-		border-bottom: 1px solid $defaultBorderColor;
-
-		li {
-			background: url(../img/twitter.png) left center no-repeat;
-			padding-left: 68px;
+		&.nav { background: $brand1; }
+		&.post_link { background: #333;}
+		&.work {
+			overflow: hidden;
+			background: #000;
+			span { background: rgba(0,0,0,.7); width: 100%;}
+			img { opacity: .3; }
+			em { font-size: 50%; }
 		}
-		.twitter_user { }
-		.twitter_time { display: block; font-size: $fontSize - 3; }
-	}
-}
 
-/* ================== Twitter ================ */
+		&.dbl {
+			width: $defaultCellSize * 2;
+			background: #111;
+			span {
+				em {
+					font-style: normal;
+					display: block;
+					font-size: 80%;
+				}
+			}
+		}
 
-#twitter_updates {
-	.twitter_user { }
-	.twitter_time { font-size: $fontSize - 2; }
-}
-
-/* ================== Contact Form ================ */
-
-table.contactform {
-
-	td {
-		padding: 3px;
-		vertical-align: middle;
-		height: 51px;
-
-		&.label {
+		span {
+			display: block;
+			position: absolute;
+			padding: 5px;
+			bottom: 0;
+			right: 0;
+			color: #FFF;
+			font-weight: bold;
+			font-size: 170%;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 			text-align: right;
-			padding-right: 8px;
-			line-height: 1.5;
-			width: 250px;
-			vertical-align: middle;
+			small {
+				display: block;
+			}
 		}
 
-		&.submitrow {
-			border-top: 1px solid #444;
-			margin-top: 10px;
-		}
+		img { max-width: 100%; }
 	}
-
-	.textbox, textarea { width: 369px; }
-	.dropdown { width: 200px; }
-
-	.textbox, textarea, .dropdown {
-		background: #222;
-		border: 1px solid #444;
-		color: #FFF;
-		padding: 3px;
-		font-size: $fontSize - 1;
-
-		&:focus {
-			background: #333;
-			border: 1px solid #555;
-		}
-	}
-}
-
-.button {
-	text-shadow: 0px -1px 0px #333;
-	color: #FFF;
-	@include gradient(center top, center bottom, #666, #444);
-	@include roundedall(4px);
-	padding: 2px 20px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #777 #333 #333 #777;
-	font-size: $fontSize - 1;
-	float: right;
-	cursor: pointer;
 }

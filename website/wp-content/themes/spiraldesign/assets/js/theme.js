@@ -1,17 +1,3 @@
-function gotTwitterStatus( twitters ) {
-	var statusHTML = [];
-	for (var i = 0; i < twitters.length; i++ ) {
-		var username = twitters[i].user.screen_name;
-		var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
-			return '<a href="'+url+'">'+url+'</a>';
-		}).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
-			return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
-		});
-		statusHTML.push('<li><a href="http://twitter.com/hipserIE6" class="twitter_user">@hipsterIE6</a><br/><span>'+status+'</span> <a class="twitter_time" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a></li>');
-	}
-	document.getElementById('twitter_updates').innerHTML = statusHTML.join('');
-}
-
 function relative_time(time_value) {
 	var values = time_value.split(" ");
 	time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -38,10 +24,5 @@ function relative_time(time_value) {
 }
 
 $( document ).ready( function () {
-	var $contentDiv = $( '.page' );
-	var padding = parseInt( $contentDiv.css( 'padding-top' ) ) * 2;
 
-	var contentHeight = $contentDiv.height( )/* - padding*/;
-	var sidebarHeight = $( '.sidebar' ).height( );
-	if ( contentHeight > sidebarHeight ) $( '.sidebar' ).css( 'height', contentHeight + 'px' );
 } );
