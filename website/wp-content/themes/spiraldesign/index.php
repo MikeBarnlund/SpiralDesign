@@ -8,21 +8,30 @@ get_header();
 
 <script>
 	$( document ).ready( function() {
-		$( '.grid li' ).click( function() {
-			$( this ).parent().toggleClass( 'flip_hide' );
-		} );
 
-		$( '#testajax' ).click( function() {
+		$( 'ul.grid' ).get( 0 ).addEventListener(
+			'webkitTransitionEnd',
+			function( event ) {
+				console.log( 'Transition Complete' );
+				$( '#backside' ).toggleClass( 'flip_show' );
+			}, false
+		);
+
+		$( '.grid li' ).click( function() {
+
 			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
-			console.log( ajaxurl );
+			var $grid = $( 'ul.grid' );
+
+			callback = function( data ) {
+				$( '#backside' ).html( data );
+				$grid.toggleClass( 'flip_hide' );
+			};
 			$.post( ajaxurl,
 				{
 					action: 'ajax_call',
 					post_id: '1'
 				},
-				function( data ) {
-					console.log( 'Data = ' + data );
-				}
+				callback
 			);
 		} );
 	} );
@@ -41,9 +50,7 @@ get_header();
 
 	<li class="work"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_remotegc.png"><span>Work<small>remotegc.com</small></span></li>
 </ul>
-
-<button id="testajax">Test Ajax</button>
-
+<div id="backside"></div>
 <?php
 while ( have_posts() ) :
 	the_post();

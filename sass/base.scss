@@ -1,6 +1,3 @@
-
-@import 'mixins';
-
 // Variables
 
 $brand1: #F60; /* orange */
@@ -86,13 +83,16 @@ header {
 
 /* ========= Grid ========= */
 
+$gridTransition: all .5s ease-in;
+$backTransition: all .5s ease-out;
+
 ul.grid {
 	$defaultCellSize: 160px;
-	-moz-transition: all 1s ease-in-out;
-	-webkit-transition: all 1s ease-in-out;
+	position: relative;
+	-moz-transition: $gridTransition;
+	-webkit-transition: $gridTransition;
 
-	&.flip_hide { -webkit-transform:rotateY(180deg); }
-	&.flip_show { -webkit-transform:rotateY(0deg); }
+	&.flip_hide { -webkit-transform:rotateY(90deg); }
 
 	li {
 		float: left;
@@ -142,4 +142,16 @@ ul.grid {
 
 		img { max-width: 100%; }
 	}
+}
+#backside {
+	-moz-transition: $backTransition;
+	-webkit-transition: $backTransition;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #444;
+	-webkit-transform:rotateY(-90deg);
+	&.flip_show { -webkit-transform:rotateY(0deg); }
 }

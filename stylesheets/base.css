@@ -1,0 +1,196 @@
+/* orange */
+/* grey */
+/* ========================== General Elements ========================= */
+/* line 24, ../sass/base.scss */
+html {
+  height: 100%;
+}
+
+/* line 25, ../sass/base.scss */
+body {
+  height: 100%;
+  color: #222222;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: black;
+}
+
+/* line 32, ../sass/base.scss */
+a {
+  text-decoration: underline;
+  color: #dd4400;
+}
+
+/* line 33, ../sass/base.scss */
+a:hover {
+  color: #bb2200;
+}
+
+/* line 34, ../sass/base.scss */
+h1 {
+  font-size: 32px;
+}
+
+/* line 35, ../sass/base.scss */
+h2 {
+  font-size: 21px;
+}
+
+/* line 36, ../sass/base.scss */
+small {
+  font-size: 12px;
+}
+
+/* line 37, ../sass/base.scss */
+em {
+  font-style: italic;
+}
+
+/* =================================== Layout ============================== */
+/* line 41, ../sass/base.scss */
+#contentwrapper {
+  position: relative;
+  min-height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* line 51, ../sass/base.scss */
+* html #contentwrapper {
+  height: 100%;
+}
+
+/* line 53, ../sass/base.scss */
+#footer {
+  position: relative;
+  height: 5px;
+  margin-top: -5px;
+  clear: both;
+}
+
+/* ========================= Header ========================= */
+/* line 62, ../sass/base.scss */
+header {
+  height: 200px;
+  background: #222222;
+  margin-bottom: 70px;
+}
+/* line 67, ../sass/base.scss */
+header .diamond_border {
+  height: 35px;
+  width: 35px;
+  background: #222222;
+  -moz-transform: rotate(45deg);
+  display: inline-block;
+  margin-bottom: -126px;
+  margin-right: 13px;
+}
+
+/* ===================== Reusable ===================== */
+/* line 81, ../sass/base.scss */
+.alignright {
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 82, ../sass/base.scss */
+.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+
+/* ========= Grid ========= */
+/* line 89, ../sass/base.scss */
+ul.grid {
+  position: relative;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+}
+/* line 95, ../sass/base.scss */
+ul.grid.flip_hide {
+  -webkit-transform: rotateY(90deg);
+}
+/* line 97, ../sass/base.scss */
+ul.grid li {
+  float: left;
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 105, ../sass/base.scss */
+ul.grid li.nav {
+  background: #ff6600;
+}
+/* line 106, ../sass/base.scss */
+ul.grid li.post_link {
+  background: #333;
+}
+/* line 107, ../sass/base.scss */
+ul.grid li.work {
+  overflow: hidden;
+  background: #000;
+}
+/* line 110, ../sass/base.scss */
+ul.grid li.work span {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+/* line 111, ../sass/base.scss */
+ul.grid li.work img {
+  opacity: .3;
+}
+/* line 112, ../sass/base.scss */
+ul.grid li.work em {
+  font-size: 50%;
+}
+/* line 115, ../sass/base.scss */
+ul.grid li.dbl {
+  width: 320px;
+  background: #111;
+}
+/* line 119, ../sass/base.scss */
+ul.grid li.dbl span em {
+  font-style: normal;
+  display: block;
+  font-size: 80%;
+}
+/* line 127, ../sass/base.scss */
+ul.grid li span {
+  display: block;
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  right: 0;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 170%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  text-align: right;
+}
+/* line 138, ../sass/base.scss */
+ul.grid li span small {
+  display: block;
+}
+/* line 143, ../sass/base.scss */
+ul.grid li img {
+  max-width: 100%;
+}
+
+/* line 146, ../sass/base.scss */
+#backside {
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #444;
+  -webkit-transform: rotateY(-90deg);
+}
+/* line 156, ../sass/base.scss */
+#backside.flip_show {
+  -webkit-transform: rotateY(0deg);
+}
