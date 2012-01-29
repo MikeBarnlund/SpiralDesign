@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 // Variables
 
 $brand1: #F60; /* orange */
@@ -89,10 +91,6 @@ $backTransition: all .5s ease-out;
 ul.grid {
 	$defaultCellSize: 160px;
 	position: relative;
-	-moz-transition: $gridTransition;
-	-webkit-transition: $gridTransition;
-
-	&.flip_hide { -webkit-transform:rotateY(90deg); }
 
 	li {
 		float: left;
@@ -124,6 +122,13 @@ ul.grid {
 			}
 		}
 
+		&.full {
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
 		span {
 			display: block;
 			position: absolute;
@@ -144,14 +149,10 @@ ul.grid {
 	}
 }
 #backside {
-	-moz-transition: $backTransition;
-	-webkit-transition: $backTransition;
 	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background: #444;
-	-webkit-transform:rotateY(-90deg);
-	&.flip_show { -webkit-transform:rotateY(0deg); }
 }

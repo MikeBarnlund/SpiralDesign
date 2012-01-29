@@ -9,14 +9,6 @@ get_header();
 <script>
 	$( document ).ready( function() {
 
-		$( 'ul.grid' ).get( 0 ).addEventListener(
-			'webkitTransitionEnd',
-			function( event ) {
-				console.log( 'Transition Complete' );
-				$( '#backside' ).toggleClass( 'flip_show' );
-			}, false
-		);
-
 		$( '.grid li' ).click( function() {
 
 			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
@@ -24,8 +16,12 @@ get_header();
 
 			callback = function( data ) {
 				$( '#backside' ).html( data );
-				$grid.toggleClass( 'flip_hide' );
+				//$grid.toggleClass( 'flip_hide' );
 			};
+
+			$( this ).toggleClass( 'full' );
+
+			/* Make this call after you get the animations working
 			$.post( ajaxurl,
 				{
 					action: 'ajax_call',
@@ -33,6 +29,7 @@ get_header();
 				},
 				callback
 			);
+			*/
 		} );
 	} );
 </script>
