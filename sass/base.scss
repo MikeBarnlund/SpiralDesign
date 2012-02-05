@@ -52,6 +52,7 @@ body {
 	color: $bodyColor;
 	font-size: $fontSize;
 	font-family: $fontFamily;
+	line-height: 1.1;
 	background: $background;
 }
 a { text-decoration: underline; color: $linkColor; }
@@ -289,8 +290,8 @@ $contentSlideSpeed: .5s;
 	float: left;
 }
 
-#async-container {
-	//margin-top: $navmenuHeight;
+#async-content {
+	overflow: hidden;
 }
 
 #nav-menu {

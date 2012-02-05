@@ -16,10 +16,9 @@ get_header();
 	};
 
 	$( document ).ready( function() {
-
+		$( '#async-content' ).css( { 'height' : '0' } );
 		$( '.grid li' ).click( function() {
 			var i = 0;
-			var $asyncContainer = $( '#async-container' );
 			var $viewport = $( this ).parents( 'div#viewport' );
 			var $grid = $( this ).parent( 'ul.grid' );
 			$( '.grid li' ).each( function() {
@@ -40,8 +39,8 @@ get_header();
 			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
 
 			callback = function( data ) {
-				var $asyncContainer = $( '#async-content' );
-				$asyncContainer.html( data );
+				var $asyncContent = $( '#async-content' );
+				$asyncContent.html( data ).animateHeight( 1000 );
 			};
 
 			$.post( ajaxurl,
@@ -57,8 +56,15 @@ get_header();
 			e.preventDefault();
 			var contentSlideSpeed = 500;
 			var $viewport = $( this ).parents( 'div#viewport' );
+			var $asyncContent = $( '#async-content' );
 
+			// slide the menu back into view
 			$viewport.removeClass( 'slideleft', true );
+
+			// wait for animation then clear async content
+			setTimeout( function() {
+				$asyncContent.animate( { 'height': 0 } );
+			}, contentSlideSpeed );
 
 			var i = 0;
 			$( '.grid li' ).each( function() {

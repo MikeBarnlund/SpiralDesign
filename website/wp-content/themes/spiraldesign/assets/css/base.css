@@ -8,7 +8,7 @@
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #cccccc; font-size: 15px; font-family: "PTSansRegular", Helvetica, Arial, sans-serif; background: #353535; }
+body { height: 100%; color: #cccccc; font-size: 15px; font-family: "PTSansRegular", Helvetica, Arial, sans-serif; line-height: 1.1; background: #353535; }
 
 a { text-decoration: underline; color: #167ea7; }
 
@@ -85,6 +85,8 @@ ul.grid li img { max-width: 100%; }
 #viewport.slideright { -webkit-transform: translate(0%); -moz-transform: translate(0%); }
 
 #navgrid, #async-container { width: 50%; float: left; }
+
+#async-content { overflow: hidden; }
 
 #nav-menu { height: 40px; border-bottom: 1px dashed #505050; padding: 0 0 5px 0; margin: 20px; }
 #nav-menu #home-button { color: #cccccc; text-decoration: none; height: 30px; line-height: 30px; padding: 0 10px; display: inline-block; *display: inline; *zoom: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background: #3c3c3c; }
