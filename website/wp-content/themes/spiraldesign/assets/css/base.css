@@ -53,9 +53,10 @@ header .diamond_border { height: 35px; width: 35px; background: #303030; -moz-tr
 
 ul.grid { position: relative; -webkit-perspective: 1000px; -moz-perspective: 1000px; padding: 5px 0 0 5px; }
 ul.grid li { float: left; display: block; width: 155px; height: 155px; position: relative; cursor: pointer; margin: 0 5px 5px 0; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -moz-transform-style: preserve-3d; -moz-backface-visibility: hidden; }
-ul.grid li.anim-hflip.on { -webkit-animation: flipHorizontal 0.5s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipHorizontal 0.5s ease-in; -moz-animation-fill-mode: forwards; }
-ul.grid li.anim-vflip.on { -webkit-animation: flipVertical 0.5s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipVertical 0.5s ease-in; -moz-animation-fill-mode: forwards; }
-ul.grid li.anim-fade { -webkit-transition: 0.5s all ease-out; -moz-transition: 0.5s all ease-out; }
+ul.grid li.anim-hflip, ul.grid li.anim-vflip { -webkit-transition: 0.5s all ease-out; -moz-transition: 0.5s all ease-out; }
+ul.grid li.anim-fade { -webkit-transition: 0.5s all linear; -moz-transition: 0.5s all linear; }
+ul.grid li.anim-hflip.on { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
+ul.grid li.anim-vflip.on { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
 ul.grid li.anim-fade.on { opacity: 0; }
 ul.grid li.nav { background: #c65a1e; }
 ul.grid li.post_link { background: #056d96; }
@@ -72,7 +73,7 @@ ul.grid li img { max-width: 100%; }
 
 .bodycontainer { background: #404040; overflow: hidden; -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; -ms-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px; -moz-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5); -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5); -o-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5); box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5); }
 
-#async-container .post { padding: 20px; color: #cccccc; }
+#async-container .post { padding: 0 20px 20px 20px; color: #cccccc; }
 #async-container .post h1 { padding-bottom: 15px; color: #FFF; border-bottom: 1px solid #393939; }
 #async-container .post .entry-meta { font-size: 12px; padding-top: 20px; margin-bottom: 20px; color: #AAA; border-top: 1px solid #474747; }
 #async-container .post .entry-meta small { font-size: 11px; }

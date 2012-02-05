@@ -156,30 +156,31 @@ ul.grid {
 
 		//-webkit-animation: flipVertical 1s ease-in;
 
+		&.anim-hflip, &.anim-vflip {
+			-webkit-transition: $animationDuration all ease-out;
+			-moz-transition: $animationDuration all ease-out;
+		}
+		&.anim-fade {
+			-webkit-transition: $animationDuration all linear;
+			-moz-transition: $animationDuration all linear;
+		}
+
 		&.anim-hflip {
 			&.on {
-				-webkit-animation: flipHorizontal $animationDuration ease-in;
-				-webkit-animation-fill-mode: forwards;
-				-moz-animation: flipHorizontal $animationDuration ease-in;
-				-moz-animation-fill-mode: forwards;
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
 			}
 		}
 
 		&.anim-vflip {
 			&.on {
-				-webkit-animation: flipVertical $animationDuration ease-in;
-				-webkit-animation-fill-mode: forwards;
-				-moz-animation: flipVertical $animationDuration ease-in;
-				-moz-animation-fill-mode: forwards;
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
 			}
 		}
 
 		&.anim-fade {
-			-webkit-transition: $animationDuration all ease-out;
-			-moz-transition: $animationDuration all ease-out;
-			&.on {
-				opacity: 0;
-			}
+			&.on { opacity: 0; }
 		}
 
 		&.nav { background: $brand1; }
@@ -244,7 +245,7 @@ $postGutter: 20px;
 	$borderOffset: #070707;
 
 	.post {
-		padding: $postGutter;
+		padding: 0 $postGutter $postGutter $postGutter;
 		color: $bodyColor;
 		h1 {
 			padding-bottom: $postGutter - 5px;

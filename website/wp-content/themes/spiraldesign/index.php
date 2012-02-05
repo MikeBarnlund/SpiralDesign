@@ -34,7 +34,7 @@ get_header();
 
 			// slide the grid left
 			setTimeout( function() {
-				$viewport.toggleClass( 'slideleft', true );
+				$viewport.addClass( 'slideleft', true );
 			}, i * 50 + 450 );
 
 			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
@@ -58,7 +58,7 @@ get_header();
 			var contentSlideSpeed = 500;
 			var $viewport = $( this ).parents( 'div#viewport' );
 
-			$viewport.toggleClass( 'slideright', true );
+			$viewport.removeClass( 'slideleft', true );
 
 			var i = 0;
 			$( '.grid li' ).each( function() {
