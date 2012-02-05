@@ -85,12 +85,31 @@ header {
 
 /* ========= Grid ========= */
 
-$gridTransition: all .5s ease-in;
-$backTransition: all .5s ease-out;
+@-webkit-keyframes flipVertical {
+	0% { -webkit-transform: rotateY(0deg); }
+	100% { -webkit-transform: rotateY(180deg); }
+}
+
+@-webkit-keyframes flipHorizontal {
+	0% { -webkit-transform: rotateX(0deg); }
+	100% { -webkit-transform: rotateX(180deg); }
+}
+
+@-moz-keyframes flipVertical {
+	0% { -moz-transform: rotateY(0deg); }
+	100% { -moz-transform: rotateY(180deg); }
+}
+
+@-moz-keyframes flipHorizontal {
+	0% { -moz-transform: rotateX(0deg); }
+	100% { -moz-transform: rotateX(180deg); }
+}
 
 ul.grid {
 	$defaultCellSize: 160px;
 	position: relative;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
 
 	li {
 		float: left;
@@ -99,6 +118,27 @@ ul.grid {
 		height: $defaultCellSize;
 		position: relative;
 		cursor: pointer;
+
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-moz-transform-style: preserve-3d;
+		-moz-backface-visibility: hidden;
+
+		//-webkit-animation: flipVertical 1s ease-in;
+
+		&.flipped-horizontal {
+			-webkit-animation: flipHorizontal 1s ease-in;
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation: flipHorizontal 1s ease-in;
+			-moz-animation-fill-mode: forwards;
+		}
+
+		&.flipped-vertical {
+			-webkit-animation: flipVertical 1s ease-in;
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation: flipVertical 1s ease-in;
+			-moz-animation-fill-mode: forwards;
+		}
 
 		&.nav { background: $brand1; }
 		&.post_link { background: #333;}
@@ -123,7 +163,6 @@ ul.grid {
 		}
 
 		&.full {
-
 			position: absolute;
 			width: 100%;
 			height: 100%;

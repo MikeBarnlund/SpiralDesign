@@ -34,8 +34,22 @@ header .diamond_border { height: 35px; width: 35px; background: #222222; -moz-tr
 .alignleft { float: left; margin-right: 10px; }
 
 /* ========= Grid ========= */
-ul.grid { position: relative; }
-ul.grid li { float: left; display: block; width: 160px; height: 160px; position: relative; cursor: pointer; }
+@-webkit-keyframes flipVertical { 0% { -webkit-transform: rotateY(0deg); }
+  100% { -webkit-transform: rotateY(180deg); } }
+
+@-webkit-keyframes flipHorizontal { 0% { -webkit-transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(180deg); } }
+
+@-moz-keyframes flipVertical { 0% { -moz-transform: rotateY(0deg); }
+  100% { -moz-transform: rotateY(180deg); } }
+
+@-moz-keyframes flipHorizontal { 0% { -moz-transform: rotateX(0deg); }
+  100% { -moz-transform: rotateX(180deg); } }
+
+ul.grid { position: relative; -webkit-perspective: 1000px; -moz-perspective: 1000px; }
+ul.grid li { float: left; display: block; width: 160px; height: 160px; position: relative; cursor: pointer; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -moz-transform-style: preserve-3d; -moz-backface-visibility: hidden; }
+ul.grid li.flipped-horizontal { -webkit-animation: flipHorizontal 1s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipHorizontal 1s ease-in; -moz-animation-fill-mode: forwards; }
+ul.grid li.flipped-vertical { -webkit-animation: flipVertical 1s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipVertical 1s ease-in; -moz-animation-fill-mode: forwards; }
 ul.grid li.nav { background: #ff6600; }
 ul.grid li.post_link { background: #333; }
 ul.grid li.work { overflow: hidden; background: #000; }
