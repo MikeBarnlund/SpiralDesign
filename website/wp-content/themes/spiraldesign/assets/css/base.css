@@ -1,13 +1,18 @@
+@font-face { font-family: 'PTSansBold'; src: url("../fonts/pt-sans/PTS75F-webfont.eot"); src: local("☺"), url("../fonts/pt-sans/PTS75F-webfont.woff") format("woff"), url("../fonts/pt-sans/PTS75F-webfont.ttf") format("truetype"), url("../fonts/pt-sans/PTS75F-webfont.svg#webfontpfl2y6jq") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'PTSansRegular'; src: url("../fonts/pt-sans/PTS55F-webfont.eot"); src: local("☺"), url("../fonts/pt-sans/PTS55F-webfont.woff") format("woff"), url("../fonts/pt-sans/PTS55F-webfont.ttf") format("truetype"), url("../fonts/pt-sans/PTS55F-webfont.svg#webfontmBFaK3EM") format("svg"); font-weight: normal; font-style: normal; }
+
 /* orange */
 /* grey */
+/* blue */
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #222222; font-size: 14px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: black; }
+body { height: 100%; color: #303030; font-size: 14px; font-family: "PTSansRegular", Helvetica, Arial, sans-serif; background: #353535; }
 
-a { text-decoration: underline; color: #dd4400; }
+a { text-decoration: underline; color: #a43800; }
 
-a:hover { color: #bb2200; }
+a:hover { color: #821600; }
 
 h1 { font-size: 32px; }
 
@@ -18,15 +23,15 @@ small { font-size: 12px; }
 em { font-style: italic; }
 
 /* =================================== Layout ============================== */
-#contentwrapper { position: relative; min-height: 100%; max-width: 800px; margin: 0 auto; }
+#contentwrapper { position: relative; min-height: 100%; max-width: 805px; margin: 0 auto; }
 
 * html #contentwrapper { height: 100%; }
 
 #footer { position: relative; height: 5px; margin-top: -5px; clear: both; }
 
 /* ========================= Header ========================= */
-header { height: 200px; background: #222222; margin-bottom: 70px; }
-header .diamond_border { height: 35px; width: 35px; background: #222222; -moz-transform: rotate(45deg); display: inline-block; margin-bottom: -126px; margin-right: 13px; }
+header { height: 200px; background: #303030; margin-bottom: 70px; }
+header .diamond_border { height: 35px; width: 35px; background: #303030; -moz-transform: rotate(45deg); display: inline-block; margin-bottom: -126px; margin-right: 13px; border-right: 1px solid #3d3d3d; border-bottom: 1px solid #313131; }
 
 /* ===================== Reusable ===================== */
 .alignright { float: right; margin-left: 10px; }
@@ -34,6 +39,8 @@ header .diamond_border { height: 35px; width: 35px; background: #222222; -moz-tr
 .alignleft { float: left; margin-right: 10px; }
 
 /* ========= Grid ========= */
+.bodycontainer { background: #404040; overflow: hidden; }
+
 @-webkit-keyframes flipVertical { 0% { -webkit-transform: rotateY(0deg); }
   100% { -webkit-transform: rotateY(180deg); } }
 
@@ -46,20 +53,20 @@ header .diamond_border { height: 35px; width: 35px; background: #222222; -moz-tr
 @-moz-keyframes flipHorizontal { 0% { -moz-transform: rotateX(0deg); }
   100% { -moz-transform: rotateX(180deg); } }
 
-ul.grid { position: relative; -webkit-perspective: 1000px; -moz-perspective: 1000px; }
-ul.grid li { float: left; display: block; width: 160px; height: 160px; position: relative; cursor: pointer; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -moz-transform-style: preserve-3d; -moz-backface-visibility: hidden; }
+ul.grid { position: relative; -webkit-perspective: 1000px; -moz-perspective: 1000px; padding: 5px 0 0 5px; }
+ul.grid li { float: left; display: block; width: 155px; height: 155px; position: relative; cursor: pointer; margin: 0 5px 5px 0; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -moz-transform-style: preserve-3d; -moz-backface-visibility: hidden; }
 ul.grid li.flipped-horizontal { -webkit-animation: flipHorizontal 1s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipHorizontal 1s ease-in; -moz-animation-fill-mode: forwards; }
 ul.grid li.flipped-vertical { -webkit-animation: flipVertical 1s ease-in; -webkit-animation-fill-mode: forwards; -moz-animation: flipVertical 1s ease-in; -moz-animation-fill-mode: forwards; }
-ul.grid li.nav { background: #ff6600; }
-ul.grid li.post_link { background: #333; }
-ul.grid li.work { overflow: hidden; background: #000; }
-ul.grid li.work span { background: rgba(0, 0, 0, 0.7); width: 100%; }
-ul.grid li.work img { opacity: .3; }
+ul.grid li.nav { background: #c65a1e; }
+ul.grid li.post_link { background: #056d96; }
+ul.grid li.work { overflow: hidden; background: #222; }
+ul.grid li.work span { width: 100%; }
+ul.grid li.work img { opacity: .1; }
 ul.grid li.work em { font-size: 50%; }
-ul.grid li.dbl { width: 320px; background: #111; }
+ul.grid li.dbl { width: 315px; background: #303030; }
 ul.grid li.dbl span em { font-style: normal; display: block; font-size: 80%; }
 ul.grid li.full { position: absolute; width: 100%; height: 100%; }
-ul.grid li span { display: block; position: absolute; padding: 5px; bottom: 0; right: 0; color: #FFF; font-weight: bold; font-size: 170%; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); text-align: right; }
+ul.grid li span { display: block; position: absolute; padding: 10px; bottom: 0; right: 0; color: #FFF; font-size: 150%; text-align: right; }
 ul.grid li span small { display: block; }
 ul.grid li img { max-width: 100%; }
 

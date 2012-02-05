@@ -1,17 +1,36 @@
 @import "compass/css3";
 
+@font-face {
+	font-family: 'PTSansBold';
+	src: url('../fonts/pt-sans/PTS75F-webfont.eot');
+	src: local('☺'), url('../fonts/pt-sans/PTS75F-webfont.woff') format('woff'), url('../fonts/pt-sans/PTS75F-webfont.ttf') format('truetype'), url('../fonts/pt-sans/PTS75F-webfont.svg#webfontpfl2y6jq') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url('../fonts/pt-sans/PTS55F-webfont.eot');
+	src: local('☺'), url('../fonts/pt-sans/PTS55F-webfont.woff') format('woff'), url('../fonts/pt-sans/PTS55F-webfont.ttf') format('truetype'), url('../fonts/pt-sans/PTS55F-webfont.svg#webfontmBFaK3EM') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 // Variables
 
-$brand1: #F60; /* orange */
-$brand2: #222; /* grey */
+$brand1: #c65a1e; /* orange */
+$brand2: #303030; /* grey */
+$brand3: #056d96; /* blue */
 
 $fontSize: 14px;
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontFamily: "PTSansRegular", Helvetica, Arial, sans-serif;
 $bodyColor: $brand2;
 $linkColor: $brand1 - #222;
 $linkHoverColor: $linkColor - #222;
 
-$background: #000;
+$contentBg: #404040;
+
+$background: #353535;
 $headerBackground: $brand2;
 
 $footerHeight: 5px;
@@ -20,6 +39,10 @@ $footerPadding: 20px;
 $defaultBorderColor: #222;
 
 $navHeight: 30px;
+
+@mixin strong {
+	font-family: "PTSansBold";
+}
 
 /* ========================== General Elements ========================= */
 
@@ -43,7 +66,7 @@ em { font-style: italic; }
 #contentwrapper			{
 	position: relative;
 	min-height: 100%;
-	max-width: 800px;
+	max-width: 805px;
 	margin: 0 auto;
 }
 #contentbody {
@@ -67,6 +90,7 @@ header {
 	margin-bottom: 70px;
 
 	.diamond_border {
+		$borderColorOffset: #040404;
 		$diamondsize: 35px;
 		height: $diamondsize;
 		width: $diamondsize;
@@ -75,6 +99,8 @@ header {
 		display: inline-block;
 		margin-bottom: -126px;
 		margin-right: 13px;
+		border-right: 1px solid $background + $borderColorOffset * 2;
+		border-bottom: 1px solid $background - $borderColorOffset;
 	}
 }
 
@@ -84,6 +110,11 @@ header {
 .alignleft { float: left; margin-right: 10px; }
 
 /* ========= Grid ========= */
+
+.bodycontainer {
+	background: $contentBg;
+	overflow: hidden;
+}
 
 @-webkit-keyframes flipVertical {
 	0% { -webkit-transform: rotateY(0deg); }
@@ -106,10 +137,12 @@ header {
 }
 
 ul.grid {
-	$defaultCellSize: 160px;
+	$defaultCellSize: 155px;
+	$gridGutter: 5px;
 	position: relative;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
+	padding: $gridGutter 0 0 $gridGutter;
 
 	li {
 		float: left;
@@ -118,6 +151,7 @@ ul.grid {
 		height: $defaultCellSize;
 		position: relative;
 		cursor: pointer;
+		margin: 0 $gridGutter $gridGutter 0;
 
 		-webkit-transform-style: preserve-3d;
 		-webkit-backface-visibility: hidden;
@@ -141,18 +175,18 @@ ul.grid {
 		}
 
 		&.nav { background: $brand1; }
-		&.post_link { background: #333;}
+		&.post_link { background: $brand3;}
 		&.work {
 			overflow: hidden;
-			background: #000;
-			span { background: rgba(0,0,0,.7); width: 100%;}
-			img { opacity: .3; }
+			background: #222;
+			span { width: 100%;}
+			img { opacity: .1; }
 			em { font-size: 50%; }
 		}
 
 		&.dbl {
-			width: $defaultCellSize * 2;
-			background: #111;
+			width: $defaultCellSize * 2 + $gridGutter;
+			background: #303030;
 			span {
 				em {
 					font-style: normal;
@@ -171,14 +205,14 @@ ul.grid {
 		span {
 			display: block;
 			position: absolute;
-			padding: 5px;
+			padding: 10px;
 			bottom: 0;
 			right: 0;
 			color: #FFF;
-			font-weight: bold;
-			font-size: 170%;
-			text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+			font-size: 150%;
+			//text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 			text-align: right;
+
 			small {
 				display: block;
 			}
