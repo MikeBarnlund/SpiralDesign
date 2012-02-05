@@ -14,6 +14,8 @@ get_header();
 
 		$( '.grid li' ).click( function() {
 			var i = 0;
+			var $asyncContainer = $( '#async-container' );
+			var $grid = $( this ).parent( 'ul.grid' );
 			$( '.grid li' ).each( function() {
 				var flipClass = ( i % 2 === 0 ) ? 'flipped-horizontal' : 'flipped-vertical';
 				var $this = $( this );
@@ -21,34 +23,36 @@ get_header();
 					function() {
 						doflip( $this, flipClass );
 					},
-					i * 100 );
+					i * 50 );
 				i++;
 			} );
 
-		//
-		// 	ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
-		//
-		// 	callback = function( data ) {
-		// 		$( '#backside' ).html( data );
-		// 		//$grid.toggleClass( 'flip_hide' );
-		// 	};
-		//
-		// 	$( this ).toggleClass( 'full' );
-		//
-		// 	/* Make this call after you get the animations working
-		// 	$.post( ajaxurl,
-		// 		{
-		// 			action: 'ajax_call',
-		// 			post_id: '1'
-		// 		},
-		// 		callback
-		// 	);
+			// slide the grid left
+			setTimeout( function() {
+				$grid.hide();
+				$asyncContainer.toggleClass( 'slideleft', true );
+			}, i * 50 + 450 );
+
+			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
+
+			callback = function( data ) {
+				var $asyncContainer = $( '#async-container' );
+				$asyncContainer.html( data );
+			};
+
+			$.post( ajaxurl,
+				{
+					action: 'ajax_call',
+					post_id: '1'
+				},
+				callback
+			);
 		} );
 
 	} );
 </script>
 
-<div class="container-3d">
+<div id="viewport">
 	<ul class="grid">
 		<li class="dbl"><span>Web design has evolved. <em>Has it passed you by?</em></span></li>
 		<li class="nav"><span>Do I <em>really</em> need a mobile site?</span></li>
@@ -62,8 +66,10 @@ get_header();
 
 		<li class="work"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_remotegc.png"><span>Work<small>remotegc.com</small></span></li>
 	</ul>
+	<div id="async-container">
+
+	</div>
 </div>
-<div id="backside"></div>
 <?php
 while ( have_posts() ) :
 	the_post();
