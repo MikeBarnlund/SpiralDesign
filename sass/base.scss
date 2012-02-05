@@ -24,7 +24,7 @@ $brand3: #056d96; /* blue */
 
 $fontSize: 15px;
 $fontFamily: "PTSansRegular", Helvetica, Arial, sans-serif;
-$bodyColor: $brand2;
+$bodyColor: #CCC;
 $linkColor: $brand3 + #111;
 $linkHoverColor: $linkColor + #222;
 
@@ -156,18 +156,30 @@ ul.grid {
 
 		//-webkit-animation: flipVertical 1s ease-in;
 
-		&.flipped-horizontal {
-			-webkit-animation: flipHorizontal $animationDuration ease-in;
-			-webkit-animation-fill-mode: forwards;
-			-moz-animation: flipHorizontal $animationDuration ease-in;
-			-moz-animation-fill-mode: forwards;
+		&.anim-hflip {
+			&.on {
+				-webkit-animation: flipHorizontal $animationDuration ease-in;
+				-webkit-animation-fill-mode: forwards;
+				-moz-animation: flipHorizontal $animationDuration ease-in;
+				-moz-animation-fill-mode: forwards;
+			}
 		}
 
-		&.flipped-vertical {
-			-webkit-animation: flipVertical $animationDuration ease-in;
-			-webkit-animation-fill-mode: forwards;
-			-moz-animation: flipVertical $animationDuration ease-in;
-			-moz-animation-fill-mode: forwards;
+		&.anim-vflip {
+			&.on {
+				-webkit-animation: flipVertical $animationDuration ease-in;
+				-webkit-animation-fill-mode: forwards;
+				-moz-animation: flipVertical $animationDuration ease-in;
+				-moz-animation-fill-mode: forwards;
+			}
+		}
+
+		&.anim-fade {
+			-webkit-transition: $animationDuration all ease-out;
+			-moz-transition: $animationDuration all ease-out;
+			&.on {
+				opacity: 0;
+			}
 		}
 
 		&.nav { background: $brand1; }
@@ -227,14 +239,13 @@ ul.grid {
 	@include single-box-shadow( rgba(0,0,0,.5), 0px, 0px, 3px, 0px, true);
 }
 
+$postGutter: 20px;
 #async-container {
-	$postGutter: 20px;
 	$borderOffset: #070707;
-	padding: $postGutter;
-	float: left;
 
 	.post {
-		color: #CCC;
+		padding: $postGutter;
+		color: $bodyColor;
 		h1 {
 			padding-bottom: $postGutter - 5px;
 			color: #FFF;
@@ -253,13 +264,53 @@ ul.grid {
 
 // ====================== Navigation / Display ========================
 
-#async-container {
-	-webkit-transform: translate( 100% );
-	-moz-transform: translate( 100% );
+$navmenuHeight: 40px;
+$navmenuItemHeight: 30px;
+$contentSlideSpeed: .5s;
+
+#navgrid { overflow: hidden; }
+
+#viewport {
+	width: 200%;
+	-webkit-transition: $contentSlideSpeed all ease-out;
+	-moz-transition: $contentSlideSpeed all ease-out;
 	&.slideleft {
-		-webkit-transition: .5s all ease-out;
-		-moz-transition: .5s all ease-out;
-		-webkit-transform: translate( 0 );
-		-moz-transform: translate( 0 );
+		-webkit-transform: translate( -50% );
+		-moz-transform: translate( -50% );
+	}
+	&.slideright {
+		-webkit-transform: translate( 0% );
+		-moz-transform: translate( 0% );
+	}
+}
+#navgrid, #async-container {
+	width: 50%;
+	float: left;
+}
+
+#async-container {
+	//margin-top: $navmenuHeight;
+}
+
+#nav-menu {
+	$navBorderColor: #505050;
+	height: $navmenuHeight;
+	//@include linear-gradient( $navmenuBg2, $navmenuBg1 );
+	border-bottom: 1px dashed $navBorderColor;
+	padding: 0 0 5px 0;
+	margin: $postGutter;
+	#home-button {
+		color: $bodyColor;
+		text-decoration: none;
+		height: $navmenuItemHeight;
+		line-height: $navmenuItemHeight;
+		padding: 0 10px;
+		display: inline-block;
+		*display: inline; *zoom: 1;
+		@include border-radius( 5px );
+		background: $contentBg - #040404;
+		&:hover {
+			background: $contentBg - #111;
+		}
 	}
 }
