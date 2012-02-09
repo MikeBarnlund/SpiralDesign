@@ -86,6 +86,11 @@ get_header();
 <div id="viewport">
 	<div id="navgrid">
 		<ul class="grid">
+			<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'content', get_post_format() );
+			endwhile;
+			?>
 			<li class="dbl anim-hflip"><span>Web design has evolved. <em>Has it passed you by?</em></span></li>
 			<li class="nav anim-vflip"><span>Do I <em>really</em> need a mobile site?</span></li>
 			<li class="work anim-fade"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_plumbing_paramedics.png"><span>Work<small>plumbingparamedics.ca</small></span></li>
