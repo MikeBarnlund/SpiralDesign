@@ -17,6 +17,46 @@ get_header();
 
 	$( document ).ready( function() {
 		$( '#async-content' ).css( { 'height' : '0' } );
+
+		$( '.grid li a' ).click( function( e ) {
+			e.preventDefault();
+			var $this = $( this );
+			var i = 0;
+			var $viewport = $( this ).parents( 'div#viewport' );
+			var $grid = $( this ).parents( 'ul.grid' );
+			$( '.grid li' ).each( function() {
+				var $this = $( this );
+				var flipto = setTimeout(
+					function() {
+						doflip( $this, true );
+					},
+					i * 50 );
+				i++;
+			} );
+
+			// slide the grid left
+			setTimeout( function() {
+				$viewport.addClass( 'slideleft', true );
+			}, i * 50 + 450 );
+
+			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
+
+			callback = function( data ) {
+				var $asyncContent = $( '#async-content' );
+				$asyncContent.html( data ).animateHeight( 1000 );
+			};
+
+			$.post( ajaxurl,
+				{
+					action: 'ajax_call',
+					post_id: $this.attr( 'rel' )
+				},
+				callback
+			);
+
+			return false;
+		} );
+
 		$( '.grid li' ).click( function() {
 			var i = 0;
 			var $viewport = $( this ).parents( 'div#viewport' );

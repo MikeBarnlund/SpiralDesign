@@ -212,7 +212,7 @@ ul.grid {
 			height: 100%;
 		}
 
-		span {
+		a {
 			display: block;
 			position: absolute;
 			padding: 10px;
@@ -222,6 +222,7 @@ ul.grid {
 			font-size: 150%;
 			//text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 			text-align: right;
+			text-decoration: none;
 
 			small {
 				display: block;
