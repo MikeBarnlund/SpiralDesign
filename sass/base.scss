@@ -175,8 +175,8 @@ ul.grid {
 
 		&.anim-vflip {
 			&.on {
-				-webkit-transform: rotateY(180deg);
-				-moz-transform: rotateY(180deg);
+				-webkit-transform: rotateX(180deg);
+				-moz-transform: rotateX(180deg);
 			}
 		}
 

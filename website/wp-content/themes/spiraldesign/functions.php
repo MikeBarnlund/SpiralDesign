@@ -31,51 +31,136 @@ add_theme_support( 'admin-bar', array( 'callback' => '__return_false') );
 add_action( 'wp_ajax_ajax_call', 'ajax_call' );
 add_action( 'wp_ajax_nopriv_ajax_call', 'ajax_call' );
 
-// ================= Configure Promotion Post Type ==================
+// ==================== Better Metabox Setup ======================
 
-add_action( 'add_meta_boxes', 'add_grid_priority_metabox' );
+define('MY_WORDPRESS_FOLDER',$_SERVER['DOCUMENT_ROOT']);
+define('MY_THEME_FOLDER',str_replace("\\",'/',dirname(__FILE__)));
+define('MY_THEME_PATH','/' . substr(MY_THEME_FOLDER,stripos(MY_THEME_FOLDER,'wp-content')));
 
+add_action('admin_init','my_meta_init');
 
-// Add the Promotion Meta Boxes
-function add_grid_priority_metabox() {
-    add_meta_box('wpt_grid_priority', 'Grid Priority', 'wpt_grid_priority', 'post', 'side', 'default');
+function my_meta_init()
+{
+    // review the function reference for parameter details
+    // http://codex.wordpress.org/Function_Reference/wp_enqueue_script
+    // http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+
+    //wp_enqueue_script('my_meta_js', MY_THEME_PATH . '/custom/meta.js', array('jquery'));
+    wp_enqueue_style('my_meta_css', MY_THEME_PATH . '/assets/css/meta.css');
+
+    // review the function reference for parameter details
+    // http://codex.wordpress.org/Function_Reference/add_meta_box
+
+    // add a meta box for each of the wordpress page types: posts and pages
+    foreach (array('post','page') as $type)
+    {
+        add_meta_box('my_all_meta', 'My Custom Meta Box', 'my_meta_setup', $type, 'normal', 'high');
+    }
+
+    // add a callback function to save any data a user enters in
+    add_action('save_post','my_meta_save');
 }
 
-// The Promotion Price Metabox
-function wpt_grid_priority() {
+function my_meta_setup()
+{
     global $post;
-    // Noncename needed to verify where the data originated
-    echo '<input type="hidden" name="prioritymeta_noncename" id="prioritymeta_noncename" value="' .
-    wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
-    // Get the location data if its already been entered
-    $gridpriority = get_post_meta($post->ID, '_gridpriority', true);
-    // Echo out the field
-    echo '<input type="text" name="_gridpriority" value="' . $gridpriority  . '" class="widefat" />';
+
+    // using an underscore, prevents the meta variable
+    // from showing up in the custom fields section
+    $meta = get_post_meta($post->ID,'_my_meta',TRUE);
+	$gridpriority = get_post_meta($post->ID,'_gridpriority',TRUE);
+
+    // instead of writing HTML here, lets do an include
+    include(MY_THEME_FOLDER . '/custom/meta.php');
+
+    // create a custom nonce for submit verification later
+    echo '<input type="hidden" name="my_meta_noncename" value="' . wp_create_nonce(__FILE__) . '" />';
+	echo '<input type="hidden" name="gridpriority_noncename" value="' . wp_create_nonce(__FILE__) . '" />';
 }
 
-// Save the Metabox Data
-function wpt_save_grid_priority_meta($post_id, $post) {
-    // verify this came from the our screen and with proper authorization,
-    // because save_post can be triggered at other times
-    if ( !wp_verify_nonce( $_POST['prioritymeta_noncename'], plugin_basename(__FILE__) )) {
-    return $post->ID;
+function my_meta_save($post_id)
+{
+    // authentication checks
+
+    // make sure data came from our meta box
+    if (!wp_verify_nonce($_POST['my_meta_noncename'],__FILE__)) return $post_id;
+	if (!wp_verify_nonce($_POST['gridpriority_noncename'],__FILE__)) return $post_id;
+
+    // check user permissions
+    if ($_POST['post_type'] == 'page')
+    {
+        if (!current_user_can('edit_page', $post_id)) return $post_id;
     }
-    // Is the user allowed to edit the post or page?
-    if ( !current_user_can( 'edit_post', $post->ID ))
-        return $post->ID;
-    // OK, we're authenticated: we need to find and save the data
-    // We'll put it into an array to make it easier to loop though.
-    $promotion_meta['_gridpriority'] = $_POST['_gridpriority'];
-    // Add values of $promotion_meta as custom fields
-    foreach ($promotion_meta as $key => $value) { // Cycle through the $promotion_meta array!
-        if( $post->post_type == 'revision' ) return; // Don't store custom data twice
-        $value = implode(',', (array)$value); // If $value is an array, make it a CSV (unlikely)
-        if(get_post_meta($post->ID, $key, FALSE)) { // If the custom field already has a value
-            update_post_meta($post->ID, $key, $value);
-        } else { // If the custom field doesn't have a value
-            add_post_meta($post->ID, $key, $value);
+    else
+    {
+        if (!current_user_can('edit_post', $post_id)) return $post_id;
+    }
+
+    // authentication passed, save data
+
+    // var types
+    // single: _my_meta[var]
+    // array: _my_meta[var][]
+    // grouped array: _my_meta[var_group][0][var_1], _my_meta[var_group][0][var_2]
+
+    $current_data = get_post_meta($post_id, '_my_meta', TRUE);
+	$current_gridpriority = get_post_meta($post_id, '_gridpriority', TRUE);
+
+    $new_data = $_POST['_my_meta'];
+	$new_gridpriority = $_POST['_gridpriority'];
+
+    my_meta_clean($new_data);
+
+    if ($current_gridpriority)
+    {
+        if (is_null($new_gridpriority)) delete_post_meta($post_id,'_gridpriority');
+        else update_post_meta($post_id,'_gridpriority',$new_gridpriority);
+    }
+    elseif (!is_null($new_gridpriority))
+    {
+        add_post_meta($post_id,'_gridpriority',$new_gridpriority,TRUE);
+    }
+
+    if ($current_data)
+    {
+        if (is_null($new_data)) delete_post_meta($post_id,'_my_meta');
+        else update_post_meta($post_id,'_my_meta',$new_data);
+    }
+    elseif (!is_null($new_data))
+    {
+        add_post_meta($post_id,'_my_meta',$new_data,TRUE);
+    }
+
+    return $post_id;
+}
+
+function my_meta_clean(&$arr)
+{
+    if (is_array($arr))
+    {
+        foreach ($arr as $i => $v)
+        {
+            if (is_array($arr[$i]))
+            {
+                my_meta_clean($arr[$i]);
+
+                if (!count($arr[$i]))
+                {
+                    unset($arr[$i]);
+                }
+            }
+            else
+            {
+                if (trim($arr[$i]) == '')
+                {
+                    unset($arr[$i]);
+                }
+            }
         }
-        if(!$value) delete_post_meta($post->ID, $key); // Delete if blank
+
+        if (!count($arr))
+        {
+            $arr = NULL;
+        }
     }
 }
-add_action('save_post', 'wpt_save_grid_priority_meta', 1, 2);

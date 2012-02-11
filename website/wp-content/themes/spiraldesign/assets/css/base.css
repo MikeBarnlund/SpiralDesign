@@ -56,7 +56,7 @@ ul.grid li { float: left; display: block; width: 155px; height: 155px; position:
 ul.grid li.anim-hflip, ul.grid li.anim-vflip { -webkit-transition: 0.5s all ease-out; -moz-transition: 0.5s all ease-out; }
 ul.grid li.anim-fade { -webkit-transition: 0.5s all linear; -moz-transition: 0.5s all linear; }
 ul.grid li.anim-hflip.on { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
-ul.grid li.anim-vflip.on { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
+ul.grid li.anim-vflip.on { -webkit-transform: rotateX(180deg); -moz-transform: rotateX(180deg); }
 ul.grid li.anim-fade.on { opacity: 0; }
 ul.grid li.nav { background: #c65a1e; }
 ul.grid li.post_link { background: #056d96; }
