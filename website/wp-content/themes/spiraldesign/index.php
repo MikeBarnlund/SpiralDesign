@@ -57,41 +57,6 @@ get_header();
 			return false;
 		} );
 
-		$( '.grid li' ).click( function() {
-			var i = 0;
-			var $viewport = $( this ).parents( 'div#viewport' );
-			var $grid = $( this ).parent( 'ul.grid' );
-			$( '.grid li' ).each( function() {
-				var $this = $( this );
-				var flipto = setTimeout(
-					function() {
-						doflip( $this, true );
-					},
-					i * 50 );
-				i++;
-			} );
-
-			// slide the grid left
-			setTimeout( function() {
-				$viewport.addClass( 'slideleft', true );
-			}, i * 50 + 450 );
-
-			ajaxurl = '<?php echo bloginfo('wpurl'); ?>/wp-admin/admin-ajax.php';
-
-			callback = function( data ) {
-				var $asyncContent = $( '#async-content' );
-				$asyncContent.html( data ).animateHeight( 1000 );
-			};
-
-			$.post( ajaxurl,
-				{
-					action: 'ajax_call',
-					post_id: '1'
-				},
-				callback
-			);
-		} );
-
 		$( '#home-button' ).click( function( e ) {
 			e.preventDefault();
 			var contentSlideSpeed = 500;
@@ -127,6 +92,23 @@ get_header();
 	<div id="navgrid">
 		<ul class="grid">
 			<?php
+			$args = array(
+				'posts_per_page' => 10,
+	            'order' => 'DESC',
+	            'meta_key' => '_gridpriority',
+	            'orderby' => 'meta_value_num', //or 'meta_value'
+				'meta_query' => array(
+					array(
+						'key' => '_gridpriority',
+						'compare' => '>=',
+						'value' => '1',
+						'type' => 'numeric'
+					)
+				)
+			);
+
+			query_posts( $args );
+
 			while ( have_posts() ) : the_post();
 				get_template_part( 'content', get_post_format() );
 			endwhile;
