@@ -34,6 +34,7 @@ elseif ( is_404() ) {
 			var i = 0;
 			var $viewport = $( this ).parents( 'div#viewport' );
 			var $grid = $( this ).parents( 'ul.grid' );
+			var href = $this.attr( 'href' );
 			$( '.grid li' ).each( function() {
 				var $this = $( this );
 				var flipto = setTimeout(
@@ -54,6 +55,7 @@ elseif ( is_404() ) {
 			callback = function( data ) {
 				var $asyncContent = $( '#async-content' );
 				$asyncContent.html( data ).animateHeight( 1000 );
+				//$.address.value( href );
 			};
 
 			$.post( ajaxurl,
@@ -96,6 +98,13 @@ elseif ( is_404() ) {
 		} );
 
 	} );
+
+	$.address.change(function(event) {
+	    // do something depending on the event.value property, e.g.
+	    // $('#content').load(event.value + '.xml');
+		console.log( 'address.change called' );
+	});
+
 </script>
 
 <?php
