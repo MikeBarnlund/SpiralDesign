@@ -188,9 +188,9 @@ ul.grid {
 
 		&.permanent-page { background: $brand1; }
 		&.blog-post { background: $brand3;}
-		&.work {
+		&.work-example {
 			overflow: hidden;
-			background: #222;
+			background: #404040;
 			span { width: 100%;}
 			img { opacity: .1; }
 			em { font-size: 50%; }
@@ -248,25 +248,25 @@ ul.grid {
 }
 
 $postGutter: 20px;
+$borderOffset: #070707;
 #async-container {
-	$borderOffset: #070707;
 
-	.post {
-		padding: 0 $postGutter $postGutter $postGutter;
-		color: $bodyColor;
-		h1 {
-			padding-bottom: $postGutter - 5px;
-			color: #FFF;
-			border-bottom: 1px solid $contentBg - $borderOffset;
-		}
-		.entry-meta {
-			font-size: $fontSize - 3;
-			padding-top: $postGutter;
-			margin-bottom: $postGutter;
-			color: #AAA;
-			border-top: 1px solid $contentBg + $borderOffset;
-			small { font-size: $fontSize - 4; }
-		}
+}
+.post {
+	padding: 0 $postGutter $postGutter $postGutter;
+	color: $bodyColor;
+	h1 {
+		padding-bottom: $postGutter - 5px;
+		color: #FFF;
+		border-bottom: 1px solid $contentBg - $borderOffset;
+	}
+	.entry-meta {
+		font-size: $fontSize - 3;
+		padding-top: $postGutter;
+		margin-bottom: $postGutter;
+		color: #AAA;
+		border-top: 1px solid $contentBg + $borderOffset;
+		small { font-size: $fontSize - 4; }
 	}
 }
 
