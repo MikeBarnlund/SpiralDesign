@@ -1,5 +1,4 @@
-
-@import 'mixins';
+@import 'compass/css3';
 
 // Variables
 
@@ -243,8 +242,8 @@ table.contactform {
 .button {
 	text-shadow: 0px -1px 0px #333;
 	color: #FFF;
-	@include gradient(center top, center bottom, #666, #444);
-	@include roundedall(4px);
+	@include background( linear-gradient( top, #666, #444 ) );
+	@include border-radius(4px);
 	padding: 2px 20px;
 	border-width: 1px;
 	border-style: solid;
