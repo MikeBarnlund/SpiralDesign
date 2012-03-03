@@ -1,0 +1,32 @@
+
+ViewController Notes
+
+* Views Collection
+** AddView( view )
+** GetView( hash )
+** View Object
+*** Hash
+*** InAnimation ( function )
+*** OutAnimation ( function )
+*** Html
+*** Update( callback ) - fetches markup from server
+
+* Will need some sort of animation queue (check stock jQuery queue)
+* Will make use of external plugin (jQuery.Address) to monitor address bar
+
+Events
+
+OnInit
+* AJAX call, if required
+* Insert HTML to DOM
+* Initialize JS
+* View.InAnimation
+
+OnURLChange
+* Use hash to check if this page is already loaded
+* AJAX call, if necessary
+* View.OutAnimation
+* Both ajax and animation callbacks check that the other is done
+* Insert HTML to DOM
+* Initialize JS
+* New View.InAnimation

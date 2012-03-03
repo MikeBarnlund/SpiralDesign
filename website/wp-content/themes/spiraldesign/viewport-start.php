@@ -137,11 +137,6 @@ $grid_on_screen = ( is_home() || is_front_page() ) ? TRUE : FALSE;
 				get_template_part( 'content', get_post_format() );
 			endwhile;
 			?>
-			<li class="work anim-fade"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_plumbing_paramedics.png"><span>Work<small>plumbingparamedics.ca</small></span></li>
-
-			<li class="work anim-hflip"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_joebeeverz.png"><span>Work<small>joebeeverz.com</small></span></li>
-
-			<li class="work anim-hflip"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/ss_remotegc.png"><span>Work<small>remotegc.com</small></span></li>
 		</ul>
 	</div>
 	<div id="async-container">
