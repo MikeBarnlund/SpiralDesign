@@ -5,7 +5,7 @@ html { height: 100%; }
 
 body { height: 100%; color: #666666; font-size: 14px; line-height: 1.3; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: white; }
 
-a { text-decoration: underline; color: #ed1c24; }
+a { text-decoration: none; color: #ed1c24; }
 
 a:hover { color: #cb0002; }
 
@@ -31,11 +31,15 @@ small { font-size: 12px; }
 
 /* ========================= Header ========================= */
 #header { overflow: hidden; }
-#header #logo { height: 75px; }
 #header .container { overflow: hidden; }
-#header #nav { height: 30px; background: #EEE; }
-#header #nav .menu a { text-decoration: none; line-height: 30px; padding: 0 15px; }
+#header #nav { height: 40px; border-bottom: 3px solid black; overflow: hidden; }
+#header #nav .logo { float: left; width: 200px; font-weight: bold; font-size: 30px; }
+#header #nav .menu { float: right; }
+#header #nav .menu a { line-height: 40px; padding: 0 0 0 10px; text-transform: uppercase; }
+#header #nav .menu a:hover, #header #nav .menu .current_page_item a { color: #000; }
 #header #nav li { display: inline; }
+#header h1 { margin: 0; padding: 7px 0; font-size: 16px; font-weight: bold; text-transform: uppercase; border-bottom: 1px dashed #555555; }
+#header h1 em { color: #ed1c24; }
 
 /* ========================= Reusable ======================== */
 h2.entry-title { margin-bottom: 0; }
@@ -55,6 +59,9 @@ p { margin: 0 0 10px 0; }
 
 /* ========================= Sidebar ========================== */
 .content { width: 960px; margin-top: 20px; }
+.content h1 { background: #000; font-size: 18px; text-transform: uppercase; font-weight: bold; line-height: 1; }
+.content h1 span { background: #FFF; color: #ed1c24; display: inline-block; *display: inline; zoom: 1; padding-right: 10px; }
+.content h1 span em { color: #666666; }
 
 /* ==================== Footer ================= */
 #footer a { text-decoration: none; }

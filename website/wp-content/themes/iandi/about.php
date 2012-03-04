@@ -12,7 +12,7 @@ the_post();
 <div class="content">
 	<?php if ( get_the_ID() ) { ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
 			<div class="interview-header">
 				<?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'full'); ?>
 				<img src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />

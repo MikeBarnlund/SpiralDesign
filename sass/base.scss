@@ -18,7 +18,10 @@ $footerPadding: 20px;
 
 $defaultBorderColor: #CCC;
 
-$navHeight: 30px;
+$navHeight: 40px;
+
+$headerFooterBorder: 3px solid #000;
+$headerFooterBorder2: 1px dashed #555;
 
 /* ========================== General Elements ========================= */
 
@@ -31,7 +34,7 @@ body {
 	font-family: $fontFamily;
 	background: $background;
 }
-a { text-decoration: underline; color: $linkColor; }
+a { text-decoration: none; color: $linkColor; }
 a:hover { color: $linkHoverColor; }
 h1, h2, h3, h4 {
 	margin: 15px 0;
@@ -76,29 +79,39 @@ small { font-size: $fontSize - 2; }
 #header {
 	overflow: hidden;
 
-	#logo {
-		height: 75px;
-	}
-
 	.container { overflow: hidden; }
 
 	#nav {
 		height: $navHeight;
-		background: #EEE;
+		border-bottom: $headerFooterBorder;
+		overflow: hidden;
+
+		.logo { float: left; width: 200px; font-weight: bold; font-size: 30px; }
 
 		.menu {
+			float: right;
 			a {
-				text-decoration: none;
 				line-height: $navHeight;
-				padding: 0 15px;
+				padding: 0 0 0 10px;
+				text-transform: uppercase;
 			}
 
 			a:hover, .current_page_item a {
-
+				color: #000;
 			}
 		}
 
 		li { display: inline; }
+	}
+
+	h1 {
+		margin: 0;
+		padding: 7px 0;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-bottom: $headerFooterBorder2;
+		em { color: $brand1; }
 	}
 }
 
@@ -130,6 +143,22 @@ p { margin: 0 0 10px 0; }
 .content {
 	width: 960px;
 	margin-top: 20px;
+
+	h1 {
+		background: #000;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: bold;
+		line-height: 1;
+		span {
+			background: #FFF;
+			color: $brand1;
+			display: inline-block;
+			*display: inline; zoom: 1;
+			padding-right: 10px;
+			em { color: $bodyColor; }
+		}
+	}
 }
 
 /* ==================== Footer ================= */
