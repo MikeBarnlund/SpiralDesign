@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Posts
+Template Name: Interviews
 */
 
 get_header();
@@ -14,12 +14,12 @@ get_header();
 	/* Main Loop */
 
 	//omit category "Home Page Only"
-	$the_posts = query_posts( 'posts_per_page=3' );
+	$the_posts = query_posts( 'post_type=interview');
 	//$the_posts = get_posts( );
 
 	foreach ( $the_posts as $post) {
 		setup_postdata( $post );
-		get_template_part( 'content', get_post_format() );
+		get_template_part( 'interview', 'slat' );
 	}
 
 	/* Bottom post navigation */

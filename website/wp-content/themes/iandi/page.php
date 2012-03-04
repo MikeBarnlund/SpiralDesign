@@ -24,8 +24,6 @@ the_post();
 
 <?php
 
-get_sidebar();
-
 get_footer();
 
 ?>

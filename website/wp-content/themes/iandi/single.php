@@ -19,6 +19,5 @@ the_post();
 </div>
 
 <?php
-get_sidebar();
 get_footer();
 ?>
