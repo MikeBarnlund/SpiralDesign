@@ -54,7 +54,7 @@
 
 	<!-- Load Global Scripts -->
 
-	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- Load Theme Scripts -->
 	<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/theme.js" type="text/javascript" charset="utf-8"></script>

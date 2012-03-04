@@ -11,8 +11,6 @@ get_header();
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php
 
-	get_template_part( 'page', 'content' );
-
 	/* Main Loop */
 
 	//omit category "Home Page Only"

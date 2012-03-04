@@ -8,8 +8,11 @@
 	</div>
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'sdbase' )  ); ?>
-		<?php /*get_template_part( 'share' );*/ ?>
+		<?php
+		global $more;
+		$more = 0;
+		?>
+		<?php the_content( __( 'Read', 'vv' ) ); ?>
 		<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sdbase' ) . '&after=</div>') ?>
 	</div>
 </div>

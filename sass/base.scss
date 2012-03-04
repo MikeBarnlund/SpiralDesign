@@ -110,10 +110,8 @@ h2.entry-title {
 .post {
 	clear: both;
 	margin-bottom: 20px;
-	padding: 15px;
 }
 .page {
-	padding: 15px;
 	h1.entry-title {
 		margin-top: 0;
 	}
@@ -132,9 +130,10 @@ p { margin: 0 0 10px 0; }
 .content-with-sidebar {
 	clear: both;
 	float: left;
-	width: 730px;
+	width: 710px;
 	background: #333;
 	margin-top: 20px;
+	padding: 15px;
 }
 .sidebar {
 	float: right;
