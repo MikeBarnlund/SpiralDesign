@@ -54,9 +54,7 @@ h2.entry-title { margin-bottom: 0; }
 p { margin: 0 0 10px 0; }
 
 /* ========================= Sidebar ========================== */
-.content-with-sidebar { clear: both; float: left; width: 710px; background: #333; margin-top: 20px; padding: 15px; }
-
-.sidebar { float: right; width: 200px; margin-top: 20px; background: #333; padding: 15px 0 15px 15px; }
+.content { clear: both; float: left; width: 960px; background: #333; margin-top: 20px; padding: 15px; }
 
 /* ==================== Footer ================= */
 #footer { background: #000; }

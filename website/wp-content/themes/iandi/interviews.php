@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-<div class="content-with-sidebar">
+<div class="content">
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php
 
@@ -30,7 +30,7 @@ get_header();
 			<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'iandi' )) ?></div>
 		</div>
 	<?php } ?>
-</div> <!-- .content-with-sidebar -->
+</div> <!-- .content -->
 
 <?php
 
