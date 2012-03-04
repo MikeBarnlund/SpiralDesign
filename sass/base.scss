@@ -118,13 +118,6 @@ h2.entry-title {
 		margin-top: 0;
 	}
 }
-.editable { position: relative; }
-.edit-link {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: 10;
-}
 .alignright { float: right; margin-left: 10px; }
 .alignleft { float: left; margin-right: 10px; }
 
@@ -170,25 +163,6 @@ p { margin: 0 0 10px 0; }
 		bottom: 10px;
 
 		&:hover { background-position: bottom left; }
-	}
-
-	.social {
-		width: 240px;
-		padding: 15px 0 15px 15px;
-		float: right;
-	}
-
-	#twitter_updates {
-		font-size: $fontSize - 2;
-		padding-bottom: 15px;
-		border-bottom: 1px solid $defaultBorderColor;
-
-		li {
-			background: url(../img/twitter.png) left center no-repeat;
-			padding-left: 68px;
-		}
-		.twitter_user { }
-		.twitter_time { display: block; font-size: $fontSize - 3; }
 	}
 }
 
