@@ -13,9 +13,18 @@ get_header();
 
 	/* Main Loop */
 
-	//omit category "Home Page Only"
-	$the_posts = query_posts( 'post_type=interview');
-	//$the_posts = get_posts( );
+	$query = "
+		SELECT wposts.*
+		FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+		WHERE wposts.ID = wpostmeta.post_id
+		AND wpostmeta.meta_key = 'state'
+		AND wpostmeta.meta_value != 'upcoming'
+		AND wposts.post_status = 'publish'
+		AND wposts.post_type = 'interview'
+		ORDER BY wposts.post_date DESC
+	";
+
+	$the_posts = $wpdb->get_results( $query, OBJECT );
 
 	foreach ( $the_posts as $post) {
 		setup_postdata( $post );
