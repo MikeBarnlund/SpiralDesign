@@ -2,16 +2,16 @@
 
 // Variables
 
-$brand1: #93b1d7; /* blue */
+$brand1: #ED1C24; /* red */
 $brand2: #6a747c; /* grey */
 
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: $brand2;
-$linkColor: $brand1 - #222;
+$bodyColor: #666;
+$linkColor: $brand1;
 $linkHoverColor: $linkColor - #222;
 
-$background: #222;
+$background: #FFF;
 
 $footerHeight: 175px;
 $footerPadding: 20px;
@@ -128,22 +128,16 @@ p { margin: 0 0 10px 0; }
 /* ========================= Sidebar ========================== */
 
 .content {
-	clear: both;
-	float: left;
 	width: 960px;
-	background: #333;
 	margin-top: 20px;
-	padding: 15px;
 }
 
 /* ==================== Footer ================= */
 
 #footer {
-	background: #000;
-
 	a { text-decoration: none; }
 
-	.container { position: relative; height: $footerHeight; }
+	.container { border-top: 3px solid #000; position: relative; height: $footerHeight; }
 
 	.spiraldesign {
 		position: absolute;
