@@ -14,6 +14,7 @@ get_header();
 	/* Main Loop */
 
 	//omit category "Home Page Only"
+	//$the_posts = query_posts( 'posts_per_page=3' );
 	$the_posts = get_posts( );
 
 	foreach ( $the_posts as $post) {
