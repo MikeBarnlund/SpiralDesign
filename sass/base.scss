@@ -26,6 +26,8 @@ $headerFooterBorder2: 1px dashed #888;
 $gutterA: 44px;
 $gutterB: 20px;
 
+$h1background: #242424;
+
 /* ========================== General Elements ========================= */
 
 html { height: 100%; }
@@ -42,7 +44,7 @@ a:hover { color: $linkHoverColor; }
 h1, h2, h3, h4 {
 	margin: 0 0 $gutterB 0;
 }
-h1 { font-size: $fontSize + 6; }
+h1 { font-size: 22px; }
 h2 { font-size: $fontSize + 4; }
 h3 { font-size: $fontSize + 4; }
 small { font-size: $fontSize - 2; }
@@ -187,10 +189,10 @@ p { margin: 0 0 10px 0; }
 
 	h1 {
 		@include altgoth();
-		background: #000;
-		font-size: 18px;
-		text-transform: uppercase;
 		line-height: 1;
+
+		background: $h1background;
+		text-transform: uppercase;
 		span {
 			background: #FFF;
 			color: $brand1;
@@ -209,6 +211,7 @@ p { margin: 0 0 10px 0; }
 	color: #999;
 	overflow: hidden;
 	margin-bottom: $gutterB;
+	position: relative;
 
 	img.featured {
 		float: left;
@@ -226,5 +229,22 @@ p { margin: 0 0 10px 0; }
 		h2, h3 { margin: 0; text-transform: uppercase; @include altgoth(); line-height: 1; }
 		h2 { color: $brand1; font-size: 25px; }
 		h3 { font-size: 19px; }
+	}
+
+	.social {
+		position: absolute;
+		bottom: $gutterA;
+		right: $gutterA;
+		a {
+			display: inline-block;
+			*display: inline; zoom: 1;
+			width: 38px;
+			height: 27px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			&.twitter { background-image: url(../img/twitter.png); }
+			&.email { background-image: url(../img/email.png); margin-left: 15px; }
+			&:hover { background-position: 0 100%; }
+		}
 	}
 }

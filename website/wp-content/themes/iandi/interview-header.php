@@ -16,6 +16,5 @@
 			<?php the_content(); ?>
 			<?php edit_post_link( __( 'Edit', 'iandi' ), '<div class="edit-link">', '</div>' ) ?>
 		</div>
-
 	</div>
 </div>
