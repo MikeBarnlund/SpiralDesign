@@ -13,8 +13,10 @@
 		</div>
 
 		<div class="summary">
-			<?php the_content(); ?>
+			<?php the_field( 'summary' ); ?>
 			<?php edit_post_link( __( 'Edit', 'iandi' ), '<div class="edit-link">', '</div>' ) ?>
 		</div>
+
+		<a class="read-interview" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'iandi' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">Read Interview&nbsp;&nbsp;<em>>></em></a>
 	</div>
 </div>
