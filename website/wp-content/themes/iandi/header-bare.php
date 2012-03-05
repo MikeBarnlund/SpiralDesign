@@ -54,6 +54,9 @@
 
 	<!-- Load Global Scripts -->
 
+	<script type="text/javascript" src="http://use.typekit.com/svm8utr.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- Load Theme Scripts -->

@@ -1,6 +1,6 @@
-			</div> <!-- end #contentbody .bodycontainer -->
-		</div> <!-- end #contentbody -->
-	</div> <!-- end #contentwrapper -->
+		</div> <!-- end #contentbody .bodycontainer -->
+	</div> <!-- end #contentbody -->
+
 	<div id="footer">
 		<div class="container">
 

@@ -4,6 +4,7 @@ the_post();
 ?>
 
 <div class="content">
+	<h1><span><em>Things of</em> Interest</span></h1>
 	<?php
 	if ( get_the_ID() ) {
 	?>
