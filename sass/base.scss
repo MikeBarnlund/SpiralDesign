@@ -27,6 +27,7 @@ $gutterA: 44px;
 $gutterB: 20px;
 
 $h1background: #242424;
+$linksBackground: #d1d1d1;
 
 /* ========================== General Elements ========================= */
 
@@ -81,6 +82,7 @@ small { font-size: $fontSize - 2; }
 	width: 960px;
 	margin: 0 auto;
 }
+.section { margin-bottom: $gutterB; }
 
 /* ========================= Header ========================= */
 
@@ -210,7 +212,6 @@ p { margin: 0 0 10px 0; }
 	background: url(../img/ihbg.gif) top left;;
 	color: #999;
 	overflow: hidden;
-	margin-bottom: $gutterB;
 	position: relative;
 
 	img.featured {
@@ -246,5 +247,20 @@ p { margin: 0 0 10px 0; }
 			&.email { background-image: url(../img/email.png); margin-left: 15px; }
 			&:hover { background-position: 0 100%; }
 		}
+	}
+}
+
+// ================= About Page Links =================
+
+ul.links {
+	background: $linksBackground;
+	padding: $gutterB;
+	float: left;
+	margin-right: $gutterB;
+	li {
+		@include altgoth();
+		font-size: 18px;
+		line-height: 1.3;
+		a { color: $bodyColor; &:hover { color: $linkColor; } }
 	}
 }
