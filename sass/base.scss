@@ -13,9 +13,6 @@ $linkHoverColor: $linkColor - #222;
 
 $background: #FFF;
 
-$footerHeight: 50px;
-$footerPadding: 20px;
-
 $defaultBorderColor: #CCC;
 
 $navHeight: 80px;
@@ -28,6 +25,9 @@ $gutterB: 20px;
 
 $h1background: #242424;
 $linksBackground: #d1d1d1;
+
+$footerHeight: $gutterA;
+$footerPadding: $gutterB;
 
 /* ========================== General Elements ========================= */
 
@@ -156,6 +156,9 @@ h2.entry-title {
 /* ==================== Footer ================= */
 
 #footer {
+	height: $gutterA;
+	margin-bottom: $gutterA;
+
 	a { text-decoration: none; }
 
 	.container {
@@ -165,16 +168,32 @@ h2.entry-title {
 		height: $footerHeight;
 	}
 
-	.spiraldesign {
-		position: absolute;
-		display: block;
-		width: 151px;
-		height: 30px;
-		background: url(../img/spiraldesign.png) top left no-repeat;
-		right: 0;
-		bottom: 10px;
-
-		&:hover { background-position: bottom left; }
+	.logos {
+		height: $gutterA;
+		line-height: $gutterB;
+		a {
+			display: inline-block;
+			*display: inline; zoom: 1;
+			height: 25px;
+			background-image: url(../img/footer-logo-sprite.png);
+			margin: 10px 10px 10px 0;
+			vertical-align: middle;
+			&.twitter {
+				background-position: 0 0;
+				width: 23px;
+				&:hover { background-position: 0 -100%; }
+			}
+			&.email {
+				background-position: -34px 0;
+				width: 24px;
+				&:hover { background-position: -34px -100%; }
+			}
+			&.vv {
+				background-position: -71px 0;
+				width: 24px;
+				&:hover { background-position: -71px -100%; }
+			}
+		}
 	}
 }
 
