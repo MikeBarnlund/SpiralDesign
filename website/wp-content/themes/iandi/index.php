@@ -58,6 +58,16 @@ get_header(); ?>
 
 	<div class="section">
 		<h1><span><em>Things of</em> Interest</span></h1>
+		<?php
+
+		$the_posts = query_posts( 'posts_per_page=2' );
+		//$the_posts = get_posts( );
+
+		foreach ( $the_posts as $post) {
+			setup_postdata( $post );
+			get_template_part( 'content', get_post_format() );
+		}
+		?>
 	</div>
 </div>
 

@@ -10,6 +10,7 @@ $fontFamily: Helvetica, Arial, sans-serif;
 $fontDk: #222;
 $fontMd: #444;
 $fontLt: #999;
+$fontVLt: #cccccc;
 $bodyColor: #666;
 $linkColor: $brand1;
 $linkHoverColor: $linkColor - #222;
@@ -30,6 +31,8 @@ $gutterB: 20px;
 
 $h1background: #242424;
 $ltGreyBackground: #d1d1d1;
+$mdLtGreyBackground: #bcbcbc;
+$mdGreyBackground: #666666;
 
 $footerHeight: $gutterA;
 $footerPadding: $gutterB;
@@ -148,15 +151,40 @@ em { color: $brand1; }
 h2.entry-title {
 	margin-bottom: 0;
 }
-.post {
+.post-slat {
 	clear: both;
-	margin-bottom: 20px;
-}
-.page {
-	h1.entry-title {
-		margin-top: 0;
+	margin-bottom: $gutterB;
+	background: $mdLtGreyBackground;
+	overflow: hidden;
+	position: relative;
+
+	h2, h4 { @include altgoth(); line-height: 1.2; margin: 0; }
+	h4 { color: $brand1; }
+	h2 {
+		color: $fontVLt;
+		background: $mdGreyBackground;
+		padding: $gutterB;
+		margin-bottom: $gutterB;
+		font-size: 19px;
+	}
+	.cat-links {
+		@include altgoth();
+		font-size: 16px;
+		color: $brand1;
+		padding: $gutterB 0 $gutterB / 4 $gutterB;
+	}
+	.featured { float: left; }
+	.summary { padding: 0 $gutterB $gutterB $gutterB; }
+	.more-link {
+		color: #333;
+		@include altgoth();
+		position: absolute;
+		bottom: $gutterB;
+		right: $gutterB;
+		font-size: 15px;
 	}
 }
+
 .alignright { float: right; margin-left: 10px; }
 .alignleft { float: left; margin-right: 10px; }
 

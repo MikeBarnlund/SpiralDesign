@@ -45,9 +45,14 @@ em { color: #b4061d; }
 /* ========================= Reusable ======================== */
 h2.entry-title { margin-bottom: 0; }
 
-.post { clear: both; margin-bottom: 20px; }
-
-.page h1.entry-title { margin-top: 0; }
+.post-slat { clear: both; margin-bottom: 20px; background: #bcbcbc; overflow: hidden; position: relative; }
+.post-slat h2, .post-slat h4 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.2; margin: 0; }
+.post-slat h4 { color: #b4061d; }
+.post-slat h2 { color: #cccccc; background: #666666; padding: 20px; margin-bottom: 20px; font-size: 19px; }
+.post-slat .cat-links { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 16px; color: #b4061d; padding: 20px 0 5px 20px; }
+.post-slat .featured { float: left; }
+.post-slat .summary { padding: 0 20px 20px 20px; }
+.post-slat .more-link { color: #333; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; position: absolute; bottom: 20px; right: 20px; font-size: 15px; }
 
 .alignright { float: right; margin-left: 10px; }
 
