@@ -203,28 +203,28 @@ h2.entry-title {
 		height: $footerHeight;
 		line-height: $footerHeight - 2;
 
-		a {
+		a.twitter, a.email, a.vv {
 			display: inline-block;
 			*display: inline; zoom: 1;
 			height: 25px;
 			background-image: url(../img/footer-logo-sprite.png);
 			margin: 0 10px 0 0;
 			vertical-align: middle;
-			&.twitter {
-				background-position: 0 0;
-				width: 23px;
-				&:hover { background-position: 0 -100%; }
-			}
-			&.email {
-				background-position: -34px 0;
-				width: 24px;
-				&:hover { background-position: -34px -100%; }
-			}
-			&.vv {
-				background-position: -71px 0;
-				width: 24px;
-				&:hover { background-position: -71px -100%; }
-			}
+		}
+		a.twitter {
+			background-position: 0 0;
+			width: 23px;
+			a:hover { background-position: 0 -100%; }
+		}
+		a.email {
+			background-position: -34px 0;
+			width: 24px;
+			a:hover { background-position: -34px -100%; }
+		}
+		a.vv {
+			background-position: -71px 0;
+			width: 24px;
+			a:hover { background-position: -71px -100%; }
 		}
 		span {
 			@include altgoth();
@@ -234,6 +234,27 @@ h2.entry-title {
 		}
 	}
 }
+
+// Post navigation
+
+#footer {
+	.footer-navigation {
+		position: absolute;
+		right: 0; top: 0;
+		text-align: right;
+		height: $footerHeight;
+		line-height: $footerHeight;
+		a {
+			font-size: 15px;
+			@include altgoth();
+			color: $fontDk;
+			background: none;
+			padding-left: 20px;
+			vertical-align: middle;
+		}
+	}
+}
+
 
 /* ========================= Post Display ========================= */
 
@@ -245,6 +266,7 @@ p { margin: 0 0 10px 0; }
 
 .content {
 	width: 960px;
+	position: relative;
 
 	h1 {
 		@include altgoth();

@@ -67,8 +67,11 @@ get_header(); ?>
 			setup_postdata( $post );
 			get_template_part( 'content', get_post_format() );
 		}
+
+		wp_reset_query();
 		?>
 	</div>
 </div>
 
-<?php get_footer();
+<?php
+get_footer();
