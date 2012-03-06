@@ -158,12 +158,12 @@ h2.entry-title {
 	overflow: hidden;
 	position: relative;
 
-	h2, h4 { @include altgoth(); line-height: 1.2; margin: 0; }
+	h2, h4 { @include altgoth(); line-height: 1.1; margin: 0; }
 	h4 { color: $brand1; }
 	h2 {
 		color: $fontVLt;
 		background: $mdGreyBackground;
-		padding: $gutterB;
+		padding: $gutterB $gutterB $gutterB - 5 $gutterB;
 		margin-bottom: $gutterB;
 		font-size: 19px;
 	}
