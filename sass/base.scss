@@ -120,6 +120,7 @@ em { color: $brand1; }
 		.menu {
 			position: absolute;
 			right: 0; bottom: 18px;
+			height: 18px;
 
 			a {
 				font-size: 18px;
@@ -214,17 +215,17 @@ h2.entry-title {
 		a.twitter {
 			background-position: 0 0;
 			width: 23px;
-			a:hover { background-position: 0 -100%; }
+			&:hover { background-position: 0 -100%; }
 		}
 		a.email {
 			background-position: -34px 0;
 			width: 24px;
-			a:hover { background-position: -34px -100%; }
+			&:hover { background-position: -34px -100%; }
 		}
 		a.vv {
 			background-position: -71px 0;
 			width: 24px;
-			a:hover { background-position: -71px -100%; }
+			&:hover { background-position: -71px -100%; }
 		}
 		span {
 			@include altgoth();
