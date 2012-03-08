@@ -147,15 +147,18 @@ em { color: $brand1; }
 	}
 }
 
-/* ========================= Reusable ======================== */
+/* ========================= Posts ======================== */
 
 h2.entry-title {
 	margin-bottom: 0;
 }
+.featured {
+	margin-bottom: $gutterB;
+}
 .post-slat {
 	clear: both;
 	margin-bottom: $gutterB;
-	background: $mdLtGreyBackground;
+	background: $ltGreyBackground;
 	overflow: hidden;
 	position: relative;
 
@@ -164,7 +167,7 @@ h2.entry-title {
 	h2 {
 		color: $fontVLt;
 		background: $mdGreyBackground;
-		padding: $gutterB $gutterB $gutterB - 5 $gutterB;
+		padding: 10px $gutterB 5px $gutterB;
 		margin-bottom: $gutterB;
 		font-size: 19px;
 	}
@@ -172,9 +175,9 @@ h2.entry-title {
 		@include altgoth();
 		font-size: 16px;
 		color: $brand1;
-		padding: $gutterB 0 $gutterB / 4 $gutterB;
+		padding: 10px 0 $gutterB / 4 $gutterB;
 	}
-	.featured { float: left; }
+	.featured { float: left; margin: 0; }
 	.summary { padding: 0 $gutterB $gutterB $gutterB; }
 	.more-link {
 		color: #333;
@@ -183,6 +186,23 @@ h2.entry-title {
 		bottom: $gutterB;
 		right: $gutterB;
 		font-size: 15px;
+	}
+}
+ul.post-links {
+	background: $ltGreyBackground;
+	padding: 10px;
+	list-style-type: square;
+	list-style-image: none;
+	list-style-position: inside;
+	overflow: hidden;
+	li {
+		color: $brand1;
+		@include altgoth();
+		font-size: 18px;
+		line-height: 1;
+		float: left;
+		margin-right: 20px;
+		a { color: $bodyColor; vertical-align: middle; &:hover { color: $linkColor; } }
 	}
 }
 
@@ -282,6 +302,7 @@ p { margin: 0 0 10px 0; }
 			padding-right: 10px;
 			em { color: $fontDk; }
 		}
+		&.check-out { background: $mdGreyBackground; }
 	}
 }
 
@@ -358,7 +379,7 @@ $uimargin: $gutterB / 2;
 }
 
 h1.upcoming-interviews {
-	background: #666;
+	background: $mdGreyBackground;
 	span { color: $fontDk; }
 }
 
