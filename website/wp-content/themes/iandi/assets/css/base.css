@@ -52,7 +52,7 @@ h2.entry-title { margin-bottom: 0; }
 .post-slat h4 { color: #b4061d; }
 .post-slat h2 { color: #cccccc; background: #666666; padding: 10px 20px 5px 20px; margin-bottom: 20px; font-size: 19px; }
 .post-slat .cat-links { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 16px; color: #b4061d; padding: 10px 0 5px 20px; }
-.post-slat .featured { float: left; margin: 0; }
+.post-slat .featured { float: left; margin-bottom: 0; }
 .post-slat .summary { padding: 0 20px 20px 20px; }
 .post-slat .more-link { color: #333; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; position: absolute; bottom: 20px; right: 20px; font-size: 15px; }
 
@@ -94,7 +94,7 @@ p { margin: 0 0 10px 0; }
 .content h1.check-out { background: #666666; }
 
 .interview-header { background: url(../img/ihbg.gif) top left; color: #999999; overflow: hidden; position: relative; }
-.interview-header img.featured { float: left; }
+.interview-header img.featured { float: left; margin-bottom: 0; }
 .interview-header .header-content { margin-left: 246px; padding: 44px; }
 .interview-header .interviewee-wrapper { background: url(../img/ihbg-title.gif) top left; border: 1px solid #444; border: 1px solid rgba(255, 255, 255, 0.07); padding: 10px 15px; margin-bottom: 20px; }
 .interview-header .interviewee-wrapper h2, .interview-header .interviewee-wrapper h3 { margin: 0; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1; }
@@ -124,3 +124,12 @@ ul.links { background: #d1d1d1; padding: 20px; float: left; margin-right: 20px; 
 ul.links li { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 18px; line-height: 1.3; }
 ul.links li a { color: #666666; }
 ul.links li a:hover { color: #b4061d; }
+
+.interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 5px; }
+.interview h3.answer { color: #b4061d; }
+.interview p { margin-bottom: 20px; }
+.interview img.right { float: right; clear: right; margin: 0 0 20px 20px; }
+.interview img.left { float: left; clear: left; margin: 0 20px 20px 0; }
+.interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; width: 325px; font-size: 35px; padding-top: 20px; border-top: 1px solid #DADADA; color: #222222; }
+.interview blockquote.left { float: left; clear: left; margin: 0 20px 20px 0; }
+.interview blockquote.right { float: right; clear: right; margin: 0 0 20px 20px; text-align: right; }
