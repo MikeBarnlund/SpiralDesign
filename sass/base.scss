@@ -147,6 +147,68 @@ em { color: $brand1; }
 	}
 }
 
+// =================== Interviews Page ===================
+$interviewSlatGutter: 10px;
+$featuredImageHeight: 245px;
+
+.interviews {
+	margin: 0 auto $gutterB - $interviewSlatGutter auto;
+	overflow: hidden;
+}
+
+.interview-slat {
+	$interviewSlatWidth: 184px;
+	width: $interviewSlatWidth;
+	margin: 0 $interviewSlatGutter $interviewSlatGutter 0;
+	float: left;
+	background: #777;
+	position: relative;
+
+	&.last { margin-right: 0; }
+	&.upnext img { opacity: .12; }
+
+	.interviewee-info {
+		background: $ltGreyBackground;
+		padding-bottom: 13px;
+		padding-top: 15px;
+	}
+
+	h3.featured-interview {
+		position: absolute;
+		top: 0;
+		background: $brand1;
+		padding: 4px 0 1px 15px;
+		width: $interviewSlatWidth - 15;
+		color: #FFF;
+		@include altgoth();
+		font-size: 15px;
+	}
+	h3.up-next {
+		position: absolute;
+		top: 0;
+		width: $interviewSlatWidth - 15;
+		background: $ltGreyBackground;
+		@include altgoth();
+		font-size: 22px;
+		color: $fontDk;
+
+		padding: 4px 0 1px 15px;
+		top: 108px; // featuredimageheight 245px, h3 height: 29px;
+	}
+
+	h2, h3 {
+		@include altgoth();
+		line-height: 1.1;
+		margin: 0;
+		padding: 3px 15px;
+		font-size: 15px;
+	}
+	h2 { color: $fontVLt; }
+	h3.interviewee-title { height: 33px; }
+
+	img { width: $interviewSlatWidth; }
+}
+
 /* ========================= Posts ======================== */
 
 h2.entry-title {
