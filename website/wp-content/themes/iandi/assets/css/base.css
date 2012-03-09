@@ -34,7 +34,7 @@ em { color: #b4061d; }
 /* ========================= Header ========================= */
 #header { overflow: hidden; margin-bottom: 44px; }
 #header .container { overflow: hidden; }
-#header #nav { height: 80px; border-bottom: 4px solid #242424; overflow: hidden; position: relative; }
+#header #nav { height: 137px; border-bottom: 4px solid #242424; overflow: hidden; position: relative; }
 #header #nav .logo { position: absolute; height: 40px; left: 0; bottom: 18px; }
 #header #nav .menu { position: absolute; right: 0; bottom: 18px; height: 18px; }
 #header #nav .menu a { font-size: 18px; line-height: 12px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; padding: 0 0 0 10px; }

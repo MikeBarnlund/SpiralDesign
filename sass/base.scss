@@ -21,7 +21,7 @@ $background: #FFF;
 
 $defaultBorderColor: #CCC;
 
-$navHeight: 80px;
+$navHeight: 57px + 80px; // logo + bottom padding = 57px. Asher requested 80px of whitespace above that.
 
 $headerFooterBorder: 4px solid #242424;
 $headerFooterBorder2: 1px dashed #888;
