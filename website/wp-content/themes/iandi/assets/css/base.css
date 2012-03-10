@@ -108,7 +108,7 @@ p { margin: 0 0 10px 0; }
 
 .interview-header { background: url(../img/ihbg.gif) top left; color: #999999; overflow: hidden; position: relative; }
 .interview-header img.featured { float: left; margin-bottom: 0; }
-.interview-header .header-content { margin-left: 246px; padding: 44px; }
+.interview-header .header-content { margin-left: 246px; padding: 40px; }
 .interview-header .interviewee-wrapper { background: url(../img/ihbg-title.gif) top left; border: 1px solid #444; border: 1px solid rgba(255, 255, 255, 0.07); padding: 10px 15px; margin-bottom: 20px; }
 .interview-header .interviewee-wrapper h2, .interview-header .interviewee-wrapper h3 { margin: 0; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1; }
 .interview-header .interviewee-wrapper h2 { color: #b4061d; font-size: 25px; }

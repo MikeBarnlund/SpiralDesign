@@ -22,7 +22,8 @@ get_header();
 			AND wpostmeta.meta_value != 'upcoming'
 			AND wposts.post_status = 'publish'
 			AND wposts.post_type = 'interview'
-			ORDER BY wposts.post_date DESC
+			ORDER BY wpostmeta.meta_value DESC,
+			wposts.post_date DESC
 		";
 
 		$the_posts = $wpdb->get_results( $query, OBJECT );
