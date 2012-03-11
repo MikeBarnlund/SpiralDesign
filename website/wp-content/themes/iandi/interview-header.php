@@ -16,6 +16,13 @@
 			<?php the_field( 'summary' ); ?>
 		</div>
 
-		<a class="read-interview" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'iandi' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">Read Interview&nbsp;&nbsp;<em>>></em></a>
+		<?php
+		if ( is_single() ) { ?>
+			<img class="read-interview" src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/down-arrow.png" />
+		<?php } else { ?>
+			<a class="read-interview" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'iandi' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">Read Interview&nbsp;&nbsp;<em>>></em></a>
+		<?php } ?>
+
+
 	</div>
 </div>
