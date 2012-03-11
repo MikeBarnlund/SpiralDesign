@@ -5,6 +5,8 @@ Template Name: Posts
 
 get_header();
 
+$paged = ( get_query_var('paged') ) ? get_query_var( 'paged' ) : 1;
+
 ?>
 
 <div class="content">
@@ -14,19 +16,14 @@ get_header();
 	/* Main Loop */
 
 	//omit category "Home Page Only"
-	$the_posts = query_posts( 'posts_per_page=3' );
-	//$the_posts = get_posts( );
+	$the_posts = query_posts( array( 'posts_per_page' => 3, 'paged' => $paged ) );
 
 	foreach ( $the_posts as $post) {
 		setup_postdata( $post );
 		get_template_part( 'content', get_post_format() );
 	}
 
-	/* Bottom post navigation */
-
-	global $wp_query;
-	$total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) {
-	} ?>
+	?>
 </div> <!-- .content -->
 
 <?php

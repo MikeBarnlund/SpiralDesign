@@ -252,7 +252,10 @@ h2.entry-title {
 		color: $brand1;
 		padding: 10px 0 $gutterB / 4 $gutterB;
 	}
-	.featured { float: left; margin-bottom: 0; }
+	.featured {
+		float: left; margin-bottom: 0;
+		img { max-width: 600px;}
+	}
 	.summary { padding: 0 $gutterB $gutterB $gutterB; }
 	.more-link {
 		color: #333;

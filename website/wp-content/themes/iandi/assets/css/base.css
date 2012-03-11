@@ -69,6 +69,7 @@ h2.entry-title { margin-bottom: 0; }
 .post-slat h2 { color: #cccccc; background: #666666; padding: 10px 20px 5px 20px; margin-bottom: 20px; font-size: 19px; }
 .post-slat .cat-links { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 16px; color: #b4061d; padding: 10px 0 5px 20px; }
 .post-slat .featured { float: left; margin-bottom: 0; }
+.post-slat .featured img { max-width: 600px; }
 .post-slat .summary { padding: 0 20px 20px 20px; }
 .post-slat .more-link { color: #333; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; position: absolute; bottom: 20px; right: 20px; font-size: 15px; }
 
