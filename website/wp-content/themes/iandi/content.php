@@ -13,8 +13,12 @@
 			$categories_list = get_the_category_list( __( ', ', 'iandi' ) );
 			if ( $categories_list ): ?>
 				<div class="cat-links">
-					<?php printf( __( '%2$s', 'iandi' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
-					$show_sep = true; ?>
+					<?php
+					$categories = wp_get_post_categories( get_the_ID() );
+					foreach ( $categories as $category ) {
+						echo get_category( $category )->cat_name;
+					}
+					?>
 				</div>
 			<?php endif; // End if categories
 		endif; ?>

@@ -37,7 +37,8 @@ $mdGreyBackground: #666666;
 $footerHeight: $gutterA;
 $footerPadding: $gutterB;
 
-
+$selectionBackground: $bodyColor;
+$selectionColor: $fontVLt;
 
 /* ========================== General Elements ========================= */
 
@@ -61,6 +62,15 @@ h2 { font-size: $fontSize + 4; }
 h3 { font-size: $fontSize + 4; }
 small { font-size: $fontSize - 2; }
 em { color: $brand1; }
+
+*::selection {
+	background: $selectionBackground;
+	color: $selectionColor;
+}
+*::-moz-selection {
+	background: $selectionBackground;
+	color: $selectionColor;
+}
 
 // ========================== Alternate Gothic Font Elements ======================
 
