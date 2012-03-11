@@ -36,9 +36,12 @@ em { color: #b4061d; }
 #header .container { overflow: hidden; }
 #header #nav { height: 137px; border-bottom: 4px solid #242424; overflow: hidden; position: relative; }
 #header #nav .logo { position: absolute; height: 40px; left: 0; bottom: 18px; }
-#header #nav .menu { position: absolute; right: 0; bottom: 18px; height: 18px; }
-#header #nav .menu a { font-size: 18px; line-height: 12px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; padding: 0 0 0 10px; }
-#header #nav .menu a:hover, #header #nav .menu .current_page_item a { color: #000; }
+#header #nav .nav-menu { position: absolute; right: 0; bottom: 18px; height: 18px; }
+#header #nav .nav-menu .menu-custom-menu-container, #header #nav .nav-menu a.twitter-logo { display: inline-block; *display: inline; zoom: 1; }
+#header #nav .nav-menu a.twitter-logo { width: 17px; height: 12px; background-image: url(../img/twitter-sprite.png); background-position: 0 -19px; }
+#header #nav .nav-menu a.twitter-logo:hover { background-position: 0 0; }
+#header #nav .nav-menu .menu a { font-size: 18px; line-height: 12px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; padding: 0 0 0 10px; color: #000; }
+#header #nav .nav-menu .menu a:hover, #header #nav .nav-menu .menu .current_page_item a { color: #b4061d; }
 #header #nav li { display: inline; }
 #header h1 { font-size: 18px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0; height: 44px; line-height: 44px; border-bottom: 1px dashed #888888; }
 

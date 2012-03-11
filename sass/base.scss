@@ -117,20 +117,33 @@ em { color: $brand1; }
 			left: 0; bottom: 18px;
 		}
 
-		.menu {
+		.nav-menu {
 			position: absolute;
 			right: 0; bottom: 18px;
 			height: 18px;
 
-			a {
-				font-size: 18px;
-				line-height: 12px;
-				@include altgoth();
-				padding: 0 0 0 10px;
+			.menu-custom-menu-container, a.twitter-logo { display: inline-block; *display: inline; zoom: 1; }
+
+			a.twitter-logo {
+				width: 17px;
+				height: 12px;
+				background-image: url(../img/twitter-sprite.png);
+				background-position: 0 -19px;
+				&:hover { background-position: 0 0; }
 			}
 
-			a:hover, .current_page_item a {
-				color: #000;
+			.menu {
+				a {
+					font-size: 18px;
+					line-height: 12px;
+					@include altgoth();
+					padding: 0 0 0 10px;
+					color: #000;
+				}
+
+				a:hover, .current_page_item a {
+					color: $brand1;
+				}
 			}
 		}
 
