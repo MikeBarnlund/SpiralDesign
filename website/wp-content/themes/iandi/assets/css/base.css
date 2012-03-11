@@ -25,6 +25,8 @@ em { color: #b4061d; }
 
 *::-moz-selection { background: #666666; color: #cccccc; }
 
+.edit-link { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
+
 /* =================================== Layout ============================== */
 #contentbody { position: relative; z-index: 0; overflow: hidden; }
 #contentbody .bodycontainer { padding: 0; width: 960px; margin: 0 auto; overflow: hidden; position: relative; }
@@ -154,3 +156,5 @@ ul.links li a:hover { color: #b4061d; }
 .interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; width: 325px; font-size: 35px; padding-top: 20px; border-top: 1px solid #DADADA; color: #222222; }
 .interview blockquote.left { float: left; clear: left; margin: 0 20px 20px 0; }
 .interview blockquote.right { float: right; clear: right; margin: 0 0 20px 20px; text-align: right; }
+
+.not-found a { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }

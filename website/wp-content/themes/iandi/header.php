@@ -4,7 +4,7 @@
 			<div id="nav">
 				<a class="logo" href="/"><img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/logo.png"/>&nbsp;</a>
 				<div class="nav-menu">
-					<a class="twitter-logo" href="https://twitter.com/#!/@indandint"></a>
+					<a class="twitter-logo" href="https://twitter.com/indandint"></a>
 					<?php wp_nav_menu( ); ?>
 				</div>
 			</div>

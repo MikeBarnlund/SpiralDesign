@@ -19,18 +19,22 @@ the_post();
 				$categories_list = get_the_category_list( __( ', ', 'iandi' ) );
 				if ( $categories_list ): ?>
 					<div class="cat-links">
-						<?php printf( __( '%2$s', 'iandi' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
-						$show_sep = true; ?>
+						<?php
+						$categories = wp_get_post_categories( get_the_ID() );
+						foreach ( $categories as $category ) {
+							echo get_category( $category )->cat_name;
+						}
+						?>
 					</div>
 				<?php endif; // End if categories
-			endif; ?>
+				endif; ?>
 
 			<h2 class="entry-title">
 				<?php the_title(); ?>
 			</h2>
 			<div class="summary">
 				<?php the_content( ); ?>
-				<?php edit_post_link( __( 'Edit', 'iandi' ), '<div class="edit-link">', '</div>' ) ?>
+				<?php edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' ) ?>
 				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'iandi' ) . '&after=</div>') ?>
 			</div>
 		</div>

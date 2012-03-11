@@ -15,7 +15,7 @@ the_post();
 		<h1>&nbsp;</h1>
 		<div class="entry-content editable">
 			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit', 'iandi' ), '<div class="edit-link">', '</div>' ) ?>
+			<?php edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' ) ?>
 		</div><!-- .entry-content -->
 	</div>
 	<?php

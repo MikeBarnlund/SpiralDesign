@@ -1,5 +1,13 @@
 @import 'compass/css3';
 
+// ========================== Alternate Gothic Font Elements ======================
+
+@mixin altgoth {
+	font-weight: normal;
+	font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
 // Variables
 
 $brand1: #b4061d; /* red */
@@ -72,12 +80,9 @@ em { color: $brand1; }
 	color: $selectionColor;
 }
 
-// ========================== Alternate Gothic Font Elements ======================
-
-@mixin altgoth {
-	font-weight: normal;
-	font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+.edit-link {
+	@include altgoth();
+	font-size: 15px;
 }
 
 /* =================================== Layout ============================== */
@@ -543,3 +548,7 @@ ul.links {
 		}
 	}
 }
+
+// =========== 404 Page ===========
+
+.not-found a { @include altgoth(); font-size: 15px; }

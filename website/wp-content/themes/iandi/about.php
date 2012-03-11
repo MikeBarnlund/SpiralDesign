@@ -29,11 +29,11 @@ the_post();
 
 					<div class="summary">
 						<?php the_content(); ?>
-						<?php edit_post_link( __( 'Edit', 'iandi' ), '<div class="edit-link">', '</div>' ) ?>
+						<?php edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' ) ?>
 					</div>
 				</div>
 				<div class="social">
-					<a class="twitter" target="_blank" href="http://www.twitter.com/vauntvisual"></a><a class="email" href="mailto:asher@industryandinterest.com"></a>
+					<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a><a class="email" href="mailto:asher@industryandinterest.com"></a>
 				</div>
 			</div>
 			<?php
