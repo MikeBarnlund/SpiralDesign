@@ -450,40 +450,37 @@ function acf_form_head()
 	));
 	
 		
-		
 	// form was not posted, load js head stuff
-	add_action('wp_head', function(){
-		
-		
-		// global vars
-		global $post, $acf;
-		
-		
-		// fields admin_head
-		foreach($acf->fields as $field)
-		{
-			$acf->fields[$field->name]->admin_head();
-		}
-		
-		
-		// Style
-		echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/global.css" />';
-		echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/input.css" />';
+	add_action('wp_head', 'acf_form_wp_head');
+	
+}
 
-
-		// Javascript
-		echo '<script type="text/javascript" src="'.$acf->dir.'/js/input-actions.js" ></script>';
-		echo '<script type="text/javascript">
-			acf.validation_message = "' . __("Validation Failed. One or more fields below are required.",'acf') . '";
-			acf.post_id = ' . $post->ID . ';
-			acf.editor_mode = "wysiwyg";
-			acf.admin_url = "' . admin_url() . '";
-		</script>';		
-		
-	});
-
+function acf_form_wp_head()
+{
+	// global vars
+	global $post, $acf;
 	
 	
+	// fields admin_head
+	foreach($acf->fields as $field)
+	{
+		$acf->fields[$field->name]->admin_head();
+	}
+	
+	
+	// Style
+	echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/global.css" />';
+	echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/input.css" />';
+
+
+	// Javascript
+	echo '<script type="text/javascript" src="'.$acf->dir.'/js/input-actions.js" ></script>';
+	echo '<script type="text/javascript">
+		acf.validation_message = "' . __("Validation Failed. One or more fields below are required.",'acf') . '";
+		acf.post_id = ' . $post->ID . ';
+		acf.editor_mode = "wysiwyg";
+		acf.admin_url = "' . admin_url() . '";
+	</script>';
 }
 
 
