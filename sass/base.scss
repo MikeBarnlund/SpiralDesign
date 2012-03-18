@@ -14,7 +14,7 @@ $brand1: #b4061d; /* red */
 $brand2: #6a747c; /* grey */
 
 $fontSize: 13px;
-$fontFamily: Helvetica, Arial, sans-serif;
+$fontFamily: "dejarip", Helvetica, Arial, sans-serif;
 $fontDk: #222;
 $fontMd: #444;
 $fontLt: #999;
@@ -511,55 +511,45 @@ ul.links {
 // =================== Single Interview ====================
 
 $interviewGutter: 39px;
-$interviewContentGutter: 20px;
+$interviewContentGutter: 21px;
 $interviewColumnGap: 45px;
+$interviewGutterOffset: 4px;
 
 .interview {
-	.right { float: right; }
-	.left { float: left; }
-	.text-center { text-align: center; }
-	.text-left { text-align: left; }
-	.text-right { text-align: right; }
 	h1 { margin-bottom: $interviewGutter; }
 	h3 {
 		@include altgoth();
 		font: $fontDk;
 		line-height: 1;
 		font-size: 19px;
-		margin-bottom: 5px;
+		margin-bottom: 3px;
 		&.answer { color: $brand1; }
 	}
 	p { margin-bottom: $interviewContentGutter; }
 	img {
-		&.left {
-			clear: left;
-			margin: 0 $interviewGutter $interviewGutter 0;
-		}
-		&.right {
-			clear: right;
-			margin: 0 0 $interviewGutter $interviewGutter;
-		}
+		&.left { margin: 0 $interviewGutter $interviewGutter 0; }
+		&.right { margin: 0 0 $interviewGutter $interviewGutter; }
 		&.full-width {
 			display: block;
 			width: 960px;
 			margin: 0 0 $interviewGutter 0;
 		}
 	}
+
 	blockquote {
 		@include altgoth();
 		line-height: 1.2;
 		text-transform: none;
-		width: 325px;
-		font-size: 35px;
 		color: $fontDk;
+		p { margin: 0; }
+		&.left, &.right {
+			width: 325px;
+			font-size: 35px;
+		}
 		&.left {
-			float: left;
-			clear: left;
 			margin: 0 $interviewGutter $interviewGutter 0;
 		}
 		&.right {
-			float: right;
-			clear: right;
 			margin: 0 0 $interviewGutter $interviewGutter;
 			text-align: right;
 		}
@@ -570,30 +560,29 @@ $interviewColumnGap: 45px;
 			margin: 0 0 $interviewGutter 0;
 		}
 	}
-	.clear-left { clear: left; }
-	.clear-right { clear: right; }
-	.caption-right, .caption-left {
+
+	.caption {
 		margin-top: -$interviewGutter + 10;
 		font-size: 11px;
 		font-style: italic;
 		color: $bodyColor;
-		padding-bottom: $interviewGutter;
-		margin-left: $interviewGutter;
+		margin-bottom: 33px - $interviewGutterOffset;
 		width: 325px;
+		line-height: 1.3;
+		&.left { text-align: left; margin-right: $interviewGutter; }
+		&.right { text-align: right; margin-left: $interviewGutter; }
 	}
-	.caption-right { clear: right; float: right; }
-	.caption-left { clear: left; float: left; }
 
 	.three-column {
 		@include column-count( 3 );
-		@include column-gap( $interviewColumnGap );
+		@include column-gap( 49px );
 		width: 100%;
 		margin-bottom: $interviewGutter;
 	}
 
 	.larger-text {
 		font-size: 16px;
-		p { margin-bottom: $interviewGutter - 4; }
+		p { margin-bottom: $interviewGutter - $interviewGutterOffset * 2; }
 	}
 
 	.bold-italic {
@@ -601,12 +590,19 @@ $interviewColumnGap: 45px;
 		font-weight: bold;
 	}
 
-	.line-style-1, .line-style-2, .line-style-3 {
-		height: 51px;
-	}
+	.line-style-1, .line-style-2, .line-style-3 { height: 51px; }
 	.line-style-1 { border-top: 3px solid $fontDk; }
 	.line-style-2 { border-top: 1px solid $fontDk; }
 	.line-style-3 { border-top: 1px dashed $fontDk; }
+
+	.right { clear: right; float: right; }
+	.left { clear: left; float: left; }
+	.text-center { text-align: center; }
+	.text-left { text-align: left; }
+	.text-right { text-align: right; }
+	.clear-left { clear: left; }
+	.clear-right { clear: right; }
+	.clear-both { clear: both; }
 }
 
 // =========== 404 Page ===========

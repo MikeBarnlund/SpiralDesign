@@ -3,7 +3,7 @@
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #666666; font-size: 13px; line-height: 1.7; font-family: Helvetica, Arial, sans-serif; background: white; }
+body { height: 100%; color: #666666; font-size: 13px; line-height: 1.7; font-family: "dejarip", Helvetica, Arial, sans-serif; background: white; }
 
 a { text-decoration: none; color: #b4061d; }
 
@@ -148,34 +148,37 @@ ul.links li { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helve
 ul.links li a { color: #666666; }
 ul.links li a:hover { color: #b4061d; }
 
-.interview .right { float: right; }
-.interview .left { float: left; }
-.interview .text-center { text-align: center; }
-.interview .text-left { text-align: left; }
-.interview .text-right { text-align: right; }
 .interview h1 { margin-bottom: 39px; }
-.interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 5px; }
+.interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 3px; }
 .interview h3.answer { color: #b4061d; }
-.interview p { margin-bottom: 20px; }
-.interview img.left { clear: left; margin: 0 39px 39px 0; }
-.interview img.right { clear: right; margin: 0 0 39px 39px; }
+.interview p { margin-bottom: 21px; }
+.interview img.left { margin: 0 39px 39px 0; }
+.interview img.right { margin: 0 0 39px 39px; }
 .interview img.full-width { display: block; width: 960px; margin: 0 0 39px 0; }
-.interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.2; text-transform: none; width: 325px; font-size: 35px; color: #222222; }
-.interview blockquote.left { float: left; clear: left; margin: 0 39px 39px 0; }
-.interview blockquote.right { float: right; clear: right; margin: 0 0 39px 39px; text-align: right; }
+.interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.2; text-transform: none; color: #222222; }
+.interview blockquote p { margin: 0; }
+.interview blockquote.left, .interview blockquote.right { width: 325px; font-size: 35px; }
+.interview blockquote.left { margin: 0 39px 39px 0; }
+.interview blockquote.right { margin: 0 0 39px 39px; text-align: right; }
 .interview blockquote.full-width { clear: both; font-size: 47px; width: 960px; margin: 0 0 39px 0; }
-.interview .clear-left { clear: left; }
-.interview .clear-right { clear: right; }
-.interview .caption-right, .interview .caption-left { margin-top: -29px; font-size: 11px; font-style: italic; color: #666666; padding-bottom: 39px; margin-left: 39px; width: 325px; }
-.interview .caption-right { clear: right; float: right; }
-.interview .caption-left { clear: left; float: left; }
-.interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 45px; -webkit-column-gap: 45px; -o-column-gap: 45px; column-gap: 45px; width: 100%; margin-bottom: 39px; }
+.interview .caption { margin-top: -29px; font-size: 11px; font-style: italic; color: #666666; margin-bottom: 29px; width: 325px; line-height: 1.3; }
+.interview .caption.left { text-align: left; margin-right: 39px; }
+.interview .caption.right { text-align: right; margin-left: 39px; }
+.interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 49px; -webkit-column-gap: 49px; -o-column-gap: 49px; column-gap: 49px; width: 100%; margin-bottom: 39px; }
 .interview .larger-text { font-size: 16px; }
-.interview .larger-text p { margin-bottom: 35px; }
+.interview .larger-text p { margin-bottom: 31px; }
 .interview .bold-italic { font-style: italic; font-weight: bold; }
 .interview .line-style-1, .interview .line-style-2, .interview .line-style-3 { height: 51px; }
 .interview .line-style-1 { border-top: 3px solid #222222; }
 .interview .line-style-2 { border-top: 1px solid #222222; }
 .interview .line-style-3 { border-top: 1px dashed #222222; }
+.interview .right { clear: right; float: right; }
+.interview .left { clear: left; float: left; }
+.interview .text-center { text-align: center; }
+.interview .text-left { text-align: left; }
+.interview .text-right { text-align: right; }
+.interview .clear-left { clear: left; }
+.interview .clear-right { clear: right; }
+.interview .clear-both { clear: both; }
 
 .not-found a { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
