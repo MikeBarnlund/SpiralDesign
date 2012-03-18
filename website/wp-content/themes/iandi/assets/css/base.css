@@ -3,7 +3,7 @@
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #666666; font-size: 13px; line-height: 1.8; font-family: Helvetica, Arial, sans-serif; background: white; }
+body { height: 100%; color: #666666; font-size: 13px; line-height: 1.7; font-family: Helvetica, Arial, sans-serif; background: white; }
 
 a { text-decoration: none; color: #b4061d; }
 
@@ -19,7 +19,7 @@ h3 { font-size: 17px; }
 
 small { font-size: 11px; }
 
-em { color: #b4061d; }
+em { color: #b4061d; font-style: normal; }
 
 *::selection { background: #666666; color: #cccccc; }
 
@@ -40,16 +40,16 @@ em { color: #b4061d; }
 /* ========================= Header ========================= */
 #header { overflow: hidden; margin-bottom: 44px; }
 #header .container { overflow: hidden; }
-#header #nav { height: 137px; border-bottom: 4px solid #242424; overflow: hidden; position: relative; }
-#header #nav .logo { position: absolute; height: 40px; left: 0; bottom: 18px; }
-#header #nav .nav-menu { position: absolute; right: 0; bottom: 18px; height: 18px; }
-#header #nav .nav-menu .menu-custom-menu-container, #header #nav .nav-menu a.twitter-logo { display: inline-block; *display: inline; zoom: 1; }
+#header #nav { height: 140px; border-bottom: 4px solid #242424; overflow: hidden; position: relative; }
+#header #nav .logo { position: absolute; height: 60px; left: 0; bottom: 18px; }
+#header #nav .nav-menu { position: absolute; right: 0; bottom: 18px; height: 13px; }
+#header #nav .nav-menu .menu-custom-menu-container, #header #nav .nav-menu a.twitter-logo { vertical-align: top; display: inline-block; *display: inline; zoom: 1; }
 #header #nav .nav-menu a.twitter-logo { width: 17px; height: 12px; background-image: url(../img/twitter-sprite.png); background-position: 0 -19px; }
 #header #nav .nav-menu a.twitter-logo:hover { background-position: 0 0; }
-#header #nav .nav-menu .menu a { font-size: 18px; line-height: 12px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; padding: 0 0 0 10px; color: #000; }
+#header #nav .nav-menu .menu a { font-size: 18px; line-height: 16px; height: 13px; display: block; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; padding: 0 0 0 10px; color: #000; vertical-align: baseline; }
 #header #nav .nav-menu .menu a:hover, #header #nav .nav-menu .menu .current_page_item a { color: #b4061d; }
-#header #nav li { display: inline; }
-#header h1 { font-size: 18px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0; height: 44px; line-height: 44px; border-bottom: 1px dashed #888888; }
+#header #nav li { float: left; height: 13px; }
+#header h1 { font-size: 18px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0; height: 44px; line-height: 46px; border-bottom: 1px dashed #888888; }
 
 .interviews { margin: 0 auto 10px auto; overflow: hidden; }
 
@@ -105,7 +105,7 @@ ul.post-links li a:hover { color: #b4061d; }
 #footer .footer-navigation a { font-size: 15px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; color: #222222; background: none; padding-left: 20px; vertical-align: middle; }
 
 /* ========================= Post Display ========================= */
-.entry-content { line-height: 1.3; margin: 15px 0; overflow: hidden; }
+.entry-content { margin: 15px 0; overflow: hidden; }
 
 p { margin: 0 0 10px 0; }
 
@@ -148,13 +148,34 @@ ul.links li { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helve
 ul.links li a { color: #666666; }
 ul.links li a:hover { color: #b4061d; }
 
+.interview .right { float: right; }
+.interview .left { float: left; }
+.interview .text-center { text-align: center; }
+.interview .text-left { text-align: left; }
+.interview .text-right { text-align: right; }
+.interview h1 { margin-bottom: 39px; }
 .interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 5px; }
 .interview h3.answer { color: #b4061d; }
 .interview p { margin-bottom: 20px; }
-.interview img.right { float: right; clear: right; margin: 0 0 20px 20px; }
-.interview img.left { float: left; clear: left; margin: 0 20px 20px 0; }
-.interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; width: 325px; font-size: 35px; padding-top: 20px; border-top: 1px solid #DADADA; color: #222222; }
-.interview blockquote.left { float: left; clear: left; margin: 0 20px 20px 0; }
-.interview blockquote.right { float: right; clear: right; margin: 0 0 20px 20px; text-align: right; }
+.interview img.left { clear: left; margin: 0 39px 39px 0; }
+.interview img.right { clear: right; margin: 0 0 39px 39px; }
+.interview img.full-width { display: block; width: 960px; margin: 0 0 39px 0; }
+.interview blockquote { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.2; text-transform: none; width: 325px; font-size: 35px; color: #222222; }
+.interview blockquote.left { float: left; clear: left; margin: 0 39px 39px 0; }
+.interview blockquote.right { float: right; clear: right; margin: 0 0 39px 39px; text-align: right; }
+.interview blockquote.full-width { clear: both; font-size: 47px; width: 960px; margin: 0 0 39px 0; }
+.interview .clear-left { clear: left; }
+.interview .clear-right { clear: right; }
+.interview .caption-right, .interview .caption-left { margin-top: -29px; font-size: 11px; font-style: italic; color: #666666; padding-bottom: 39px; margin-left: 39px; width: 325px; }
+.interview .caption-right { clear: right; float: right; }
+.interview .caption-left { clear: left; float: left; }
+.interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 45px; -webkit-column-gap: 45px; -o-column-gap: 45px; column-gap: 45px; width: 100%; margin-bottom: 39px; }
+.interview .larger-text { font-size: 16px; }
+.interview .larger-text p { margin-bottom: 35px; }
+.interview .bold-italic { font-style: italic; font-weight: bold; }
+.interview .line-style-1, .interview .line-style-2, .interview .line-style-3 { height: 51px; }
+.interview .line-style-1 { border-top: 3px solid #222222; }
+.interview .line-style-2 { border-top: 1px solid #222222; }
+.interview .line-style-3 { border-top: 1px dashed #222222; }
 
 .not-found a { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
