@@ -514,6 +514,10 @@ $interviewGutter: 39px;
 $interviewContentGutter: 21px;
 $interviewColumnGap: 45px;
 $interviewGutterOffset: 4px;
+$blockQuoteGutterOffset: 8px;  // To account for line height
+$blockQuoteGutter: $interviewGutter - $blockQuoteGutterOffset;  // For top & bottom
+$captionGutterOffset: 3px;
+$captionGutter: $interviewGutter - $captionGutterOffset;
 
 .interview {
 	h1 { margin-bottom: $interviewGutter; }
@@ -547,17 +551,17 @@ $interviewGutterOffset: 4px;
 			font-size: 35px;
 		}
 		&.left {
-			margin: 0 $interviewGutter $interviewGutter 0;
+			margin: 0 $interviewGutter $blockQuoteGutter 0;
 		}
 		&.right {
-			margin: 0 0 $interviewGutter $interviewGutter;
+			margin: 0 0 $blockQuoteGutter $interviewGutter;
 			text-align: right;
 		}
 		&.full-width {
 			clear: both;
 			font-size: 47px;
 			width: 960px;
-			margin: 0 0 $interviewGutter 0;
+			margin: 0 0 $blockQuoteGutter 0;
 		}
 	}
 
@@ -566,7 +570,7 @@ $interviewGutterOffset: 4px;
 		font-size: 11px;
 		font-style: italic;
 		color: $bodyColor;
-		margin-bottom: 33px - $interviewGutterOffset;
+		margin-bottom: $captionGutter;
 		width: 325px;
 		line-height: 1.3;
 		&.left { text-align: left; margin-right: $interviewGutter; }
@@ -590,10 +594,11 @@ $interviewGutterOffset: 4px;
 		font-weight: bold;
 	}
 
-	.line-style-1, .line-style-2, .line-style-3 { height: 51px; }
+	.line-style-1, .line-style-2, .line-style-3 { height: 33px - 9px; }
 	.line-style-1 { border-top: 3px solid $fontDk; }
 	.line-style-2 { border-top: 1px solid $fontDk; }
 	.line-style-3 { border-top: 1px dashed $fontDk; }
+	.spacer { font-size: 0; height: 7px; }
 
 	.right { clear: right; float: right; }
 	.left { clear: left; float: left; }
