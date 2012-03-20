@@ -513,11 +513,12 @@ ul.links {
 $interviewGutter: 39px;
 $interviewContentGutter: 21px;
 $interviewColumnGap: 45px;
-$interviewGutterOffset: 4px;
-$blockQuoteGutterOffset: 8px;  // To account for line height
+$interviewGutterOffset: 8px;  // approximate distance from bottom of upper case letter to bottom of line
+$blockQuoteGutterOffset: 10px;  // To account for line height
 $blockQuoteGutter: $interviewGutter - $blockQuoteGutterOffset;  // For top & bottom
 $captionGutterOffset: 3px;
 $captionGutter: $interviewGutter - $captionGutterOffset;
+$lineGutter: 32px;
 
 .interview {
 	h1 { margin-bottom: $interviewGutter; }
@@ -529,7 +530,10 @@ $captionGutter: $interviewGutter - $captionGutterOffset;
 		margin-bottom: 3px;
 		&.answer { color: $brand1; }
 	}
-	p { margin-bottom: $interviewContentGutter; }
+	p {
+		margin-bottom: $interviewContentGutter;
+		&.spacer { margin-bottom: $interviewContentGutter + 18px - $interviewGutterOffset;}
+	}
 	img {
 		&.left { margin: 0 $interviewGutter $interviewGutter 0; }
 		&.right { margin: 0 0 $interviewGutter $interviewGutter; }
@@ -563,6 +567,11 @@ $captionGutter: $interviewGutter - $captionGutterOffset;
 			width: 960px;
 			margin: 0 0 $blockQuoteGutter 0;
 		}
+		&.line-1, &.line-2, &.line-3 { padding-top: $lineGutter - $blockQuoteGutterOffset; }
+		&.line-1-after, &.line-2-after, &.line-3-after {
+			padding-bottom: $lineGutter - $blockQuoteGutterOffset;
+			margin-bottom: $blockQuoteGutter + $blockQuoteGutterOffset;  // add the offset back in since there's no text
+		}
 	}
 
 	.caption {
@@ -594,11 +603,15 @@ $captionGutter: $interviewGutter - $captionGutterOffset;
 		font-weight: bold;
 	}
 
-	.line-style-1, .line-style-2, .line-style-3 { height: 33px - 9px; }
-	.line-style-1 { border-top: 3px solid $fontDk; }
-	.line-style-2 { border-top: 1px solid $fontDk; }
-	.line-style-3 { border-top: 1px dashed $fontDk; }
-	.spacer { font-size: 0; height: 7px; }
+	.single-line { height: 33px - 9px; }
+	.line-1 { border-top: 3px solid $fontDk; }
+	.line-2 { border-top: 1px solid $fontDk; }
+	.line-3 { border-top: 1px dashed $fontDk; }
+	.line-1-after { border-bottom: 3px solid $fontDk; }
+	.line-2-after { border-bottom: 1px solid $fontDk; }
+	.line-3-after { border-bottom: 1px dashed $fontDk; }
+
+	.single-spacer { font-size: 0; height: 7px; }
 
 	.right { clear: right; float: right; }
 	.left { clear: left; float: left; }
