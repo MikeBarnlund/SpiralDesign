@@ -584,6 +584,12 @@ $lineGutter: 32px;
 		line-height: 1.3;
 		&.left { text-align: left; margin-right: $interviewGutter; }
 		&.right { text-align: right; margin-left: $interviewGutter; }
+		&.full-width { width: 960px; }
+		&.line-1, &.line-2, &.line-3 { padding-top: $lineGutter - $captionGutterOffset; }
+		&.line-1-after, &.line-2-after, &.line-3-after {
+			padding-bottom: $lineGutter - $captionGutterOffset;
+			margin-bottom: $blockQuoteGutter + $captionGutterOffset;  // add the offset back in since there's no text
+		}
 	}
 
 	.three-column {
@@ -591,11 +597,20 @@ $lineGutter: 32px;
 		@include column-gap( 49px );
 		width: 100%;
 		margin-bottom: $interviewGutter;
+		&.line-1, &.line-2, &.line-3 { padding-top: $lineGutter - $interviewGutterOffset; }
+		&.line-1-after, &.line-2-after, &.line-3-after {
+			padding-bottom: $lineGutter - $interviewGutterOffset;
+			margin-bottom: $lineGutter + $interviewGutterOffset;  // add the offset back in since there's no text
+		}
 	}
 
 	.larger-text {
 		font-size: 16px;
 		p { margin-bottom: $interviewGutter - $interviewGutterOffset * 2; }
+		&.line-1, &.line-2, &.line-3 { padding-top: $lineGutter - $interviewGutterOffset; }
+		&.line-1-after, &.line-2-after, &.line-3-after {
+			margin-bottom: $lineGutter + $interviewGutterOffset;  // add the offset back in since there's no text
+		}
 	}
 
 	.bold-italic {

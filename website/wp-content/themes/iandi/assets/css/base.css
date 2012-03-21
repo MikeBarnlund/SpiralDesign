@@ -167,9 +167,16 @@ ul.links li a:hover { color: #b4061d; }
 .interview .caption { margin-top: -29px; font-size: 11px; font-style: italic; color: #666666; margin-bottom: 36px; width: 325px; line-height: 1.3; }
 .interview .caption.left { text-align: left; margin-right: 39px; }
 .interview .caption.right { text-align: right; margin-left: 39px; }
+.interview .caption.full-width { width: 960px; }
+.interview .caption.line-1, .interview .caption.line-2, .interview .caption.line-3 { padding-top: 29px; }
+.interview .caption.line-1-after, .interview .caption.line-2-after, .interview .caption.line-3-after { padding-bottom: 29px; margin-bottom: 32px; }
 .interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 49px; -webkit-column-gap: 49px; -o-column-gap: 49px; column-gap: 49px; width: 100%; margin-bottom: 39px; }
+.interview .three-column.line-1, .interview .three-column.line-2, .interview .three-column.line-3 { padding-top: 24px; }
+.interview .three-column.line-1-after, .interview .three-column.line-2-after, .interview .three-column.line-3-after { padding-bottom: 24px; margin-bottom: 40px; }
 .interview .larger-text { font-size: 16px; }
 .interview .larger-text p { margin-bottom: 23px; }
+.interview .larger-text.line-1, .interview .larger-text.line-2, .interview .larger-text.line-3 { padding-top: 24px; }
+.interview .larger-text.line-1-after, .interview .larger-text.line-2-after, .interview .larger-text.line-3-after { margin-bottom: 40px; }
 .interview .bold-italic { font-style: italic; font-weight: bold; }
 .interview .single-line { height: 24px; }
 .interview .line-1 { border-top: 3px solid #222222; }
