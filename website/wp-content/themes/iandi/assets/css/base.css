@@ -151,8 +151,9 @@ ul.links li a:hover { color: #b4061d; }
 .interview h1 { margin-bottom: 39px; }
 .interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 3px; }
 .interview h3.answer { color: #b4061d; }
-.interview p { margin-bottom: 21px; }
-.interview p.spacer { margin-bottom: 31px; }
+.interview p, .interview ul { margin-bottom: 21px; }
+.interview p.spacer, .interview ul.spacer { margin-bottom: 31px; }
+.interview ul { list-style: disc outside none; margin-left: 1em; }
 .interview img.left { margin: 0 39px 39px 0; }
 .interview img.right { margin: 0 0 39px 39px; }
 .interview img.full-width { display: block; width: 960px; margin: 0 0 39px 0; }
