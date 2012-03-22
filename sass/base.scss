@@ -185,14 +185,13 @@ $interviewSlatGutter: 10px;
 $featuredImageHeight: 245px;
 
 .interviews {
-	margin: 0 auto $gutterB - $interviewSlatGutter auto;
 	overflow: hidden;
 }
 
 .interview-slat {
 	$interviewSlatWidth: 184px;
 	width: $interviewSlatWidth;
-	margin: 0 $interviewSlatGutter $interviewSlatGutter 0;
+	margin: 0 $interviewSlatGutter $gutterA 0;
 	float: left;
 	background: #777;
 	position: relative;
@@ -202,8 +201,8 @@ $featuredImageHeight: 245px;
 
 	.interviewee-info {
 		background: $ltGreyBackground;
-		padding-bottom: 13px;
-		padding-top: 15px;
+		padding-bottom: 11px;
+		padding-top: 13px;
 	}
 
 	h3.featured-interview {
@@ -233,7 +232,7 @@ $featuredImageHeight: 245px;
 		@include altgoth();
 		line-height: 1.1;
 		margin: 0;
-		padding: 3px 15px;
+		padding: 0 15px;
 		font-size: 15px;
 	}
 	h2 { color: $fontVLt; }

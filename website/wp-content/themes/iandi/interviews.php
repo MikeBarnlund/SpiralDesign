@@ -8,8 +8,8 @@ get_header();
 ?>
 
 <div class="content">
-	<h1 class="entry-title"><?php the_title(); ?></h1>
-	<div class="interviews section">
+	<h1 class="entry-title"><span>Industry <em>Leaders</em></span></h1>
+	<div class="interviews">
 		<?php
 
 		/* Main Loop */
