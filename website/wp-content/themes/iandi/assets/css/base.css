@@ -91,7 +91,7 @@ ul.post-links li a:hover { color: #b4061d; }
 .alignleft { float: left; margin-right: 10px; }
 
 /* ==================== Footer ================= */
-#footer { margin-bottom: 44px; }
+#footer { padding-bottom: 44px; }
 #footer a { text-decoration: none; }
 #footer .container { border-top: 4px solid #242424; border-bottom: 1px dashed #888888; position: relative; height: 44px; line-height: 42px; }
 #footer .container a.twitter, #footer .container a.email, #footer .container a.vv { display: inline-block; *display: inline; zoom: 1; height: 25px; background-image: url(../img/footer-logo-sprite.png); margin: 0 10px 0 0; vertical-align: middle; }
