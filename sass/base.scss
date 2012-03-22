@@ -103,14 +103,16 @@ em { color: $brand1; font-style: normal; }
 
 #footer {
 	position: relative;
-	height: $footerHeight;
 	clear: both;
 }
 .container {
 	width: 960px;
 	margin: 0 auto;
 }
-.section { margin-bottom: $gutterB; overflow: hidden; }
+.section {
+	margin-bottom: $gutterB; overflow: hidden;
+	&.spacer { margin-bottom: $gutterA; }
+}
 
 /* ========================= Header ========================= */
 
@@ -266,9 +268,17 @@ h2.entry-title {
 	}
 	.cat-links {
 		@include altgoth();
+		height: 58px;
 		font-size: 16px;
 		color: $brand1;
-		padding: 10px 0 $gutterB / 4 $gutterB;
+		background: $mdLtGreyBackground;
+		position: relative;
+		span {
+			position: absolute;
+			bottom: 7px;
+			left: $gutterB;
+			line-height: 1;
+		}
 	}
 	.featured {
 		float: left; margin-bottom: 0;
@@ -308,7 +318,6 @@ ul.post-links {
 /* ==================== Footer ================= */
 
 #footer {
-	height: $gutterA;
 	margin-bottom: $gutterA;
 
 	a { text-decoration: none; }
@@ -375,7 +384,7 @@ ul.post-links {
 
 /* ========================= Post Display ========================= */
 
-.entry-content { margin: 15px 0; overflow: hidden; }
+.entry-content { margin: 0; overflow: hidden; }
 .entry-date { }
 p { margin: 0 0 10px 0; }
 

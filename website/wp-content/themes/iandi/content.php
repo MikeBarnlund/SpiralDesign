@@ -13,12 +13,14 @@
 			$categories_list = get_the_category_list( __( ', ', 'iandi' ) );
 			if ( $categories_list ): ?>
 				<div class="cat-links">
+					<span>
 					<?php
 					$categories = wp_get_post_categories( get_the_ID() );
 					foreach ( $categories as $category ) {
 						echo get_category( $category )->cat_name;
 					}
 					?>
+					</span>
 				</div>
 			<?php endif; // End if categories
 		endif; ?>

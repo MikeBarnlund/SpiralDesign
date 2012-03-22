@@ -31,7 +31,7 @@ get_header(); ?>
 		?>
 	</div>
 
-	<div class="section">
+	<div class="section spacer">
 		<h1 class="upcoming-interviews"><span>Upcoming Interviews</span></h1>
 		<?php
 		$query = "
