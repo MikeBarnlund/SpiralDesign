@@ -386,11 +386,14 @@ p { margin: 0 0 10px 0; }
 	position: relative;
 
 	h1 {
+		position: relative;
 		@include altgoth();
-		line-height: 1;
-
+		height: 16px;
 		background: $h1background;
 		span {
+			position: absolute;
+			top: -8px;
+			left: 0;
 			background: #FFF;
 			color: $brand1;
 			display: inline-block;
@@ -460,17 +463,18 @@ p { margin: 0 0 10px 0; }
 
 // ================= Upcoming Interview Slat ====================
 
-$uimargin: $gutterB / 2;
+$uimargin: 15px;
+$uimarginoffset: 4px;
 
 .upcoming-interview {
 	background: $ltGreyBackground;
-	padding: $uimargin;
+	padding: $uimargin $uimargin $uimargin - $uimarginoffset $uimargin;
 	margin-right: $uimargin;
 	width: ( 960px - $uimargin * 3 ) / 4 - $uimargin * 2;
 	float: left;
 	h2, h3 { @include altgoth(); line-height: 1; margin: 0; }
 	h2 { color: $brand1; }
-	h3 { font-size: 15px; }
+	h3 { color: $bodyColor; font-size: 15px; }
 }
 
 h1.upcoming-interviews {
@@ -479,11 +483,11 @@ h1.upcoming-interviews {
 }
 
 .previous-interviews {
-	$contentHeight: 52px - 5; // remove borders from height
+	$contentHeight: 58px - 5; // remove borders from height
 	float: left;
 	@include altgoth();
 	height: $contentHeight;
-	line-height: $contentHeight;
+	line-height: 58px;
 	width: ( 960px - $uimargin * 3 ) / 4;
 	border-top: $headerFooterBorder;
 	border-bottom: 1px solid $defaultBorderColor;

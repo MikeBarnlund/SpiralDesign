@@ -111,8 +111,8 @@ p { margin: 0 0 10px 0; }
 
 /* ========================= Content ========================== */
 .content { width: 960px; position: relative; }
-.content h1 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1; background: #242424; }
-.content h1 span { background: #FFF; color: #b4061d; display: inline-block; *display: inline; zoom: 1; padding-right: 10px; }
+.content h1 { position: relative; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; height: 16px; background: #242424; }
+.content h1 span { position: absolute; top: -8px; left: 0; background: #FFF; color: #b4061d; display: inline-block; *display: inline; zoom: 1; padding-right: 10px; }
 .content h1 span em { color: #222222; }
 .content h1.check-out { background: #666666; }
 
@@ -132,15 +132,15 @@ p { margin: 0 0 10px 0; }
 .interview-header .social a.email { background-image: url(../img/email.png); margin-left: 15px; }
 .interview-header .social a:hover { background-position: 0 100%; }
 
-.upcoming-interview { background: #d1d1d1; padding: 10px; margin-right: 10px; width: 212.5px; float: left; }
+.upcoming-interview { background: #d1d1d1; padding: 15px 15px 11px 15px; margin-right: 15px; width: 198.75px; float: left; }
 .upcoming-interview h2, .upcoming-interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1; margin: 0; }
 .upcoming-interview h2 { color: #b4061d; }
-.upcoming-interview h3 { font-size: 15px; }
+.upcoming-interview h3 { color: #666666; font-size: 15px; }
 
 h1.upcoming-interviews { background: #666666; }
 h1.upcoming-interviews span { color: #222222; }
 
-.previous-interviews { float: left; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; height: 47px; line-height: 47px; width: 232.5px; border-top: 4px solid #242424; border-bottom: 1px solid #cccccc; text-align: center; font-size: 19px; color: #222222; }
+.previous-interviews { float: left; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; height: 53px; line-height: 58px; width: 228.75px; border-top: 4px solid #242424; border-bottom: 1px solid #cccccc; text-align: center; font-size: 19px; color: #222222; }
 .previous-interviews:hover { color: #b4061d; }
 
 ul.links { background: #d1d1d1; padding: 20px; float: left; margin-right: 20px; }
