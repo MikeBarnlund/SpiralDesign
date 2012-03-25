@@ -17,10 +17,30 @@
 				<div class="footer-navigation">
 					<a href="/posts" title="See All Posts">See All <em>&gt;&gt;</em></a>
 				</div>
-			<?php } else {
+			<?php } else if ( is_single() ) {
+				echo '<div class="footer-navigation single-post">';
+				$title_maxlen = 28;
+				$next_post = get_adjacent_post( false, '', false );
+				$previous_post = get_adjacent_post( false, '', true );
+				echo ( !empty( $previous_post ) )
+					?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
+						( strlen( $previous_post->post_title ) > $title_maxlen
+							? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
+							: $previous_post->post_title ) .
+						'</a>'
+					: '';
+				echo ( !empty( $next_post ) )
+					?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
+						( strlen( $next_post->post_title ) > $title_maxlen
+							? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
+							: $next_post->post_title ) .
+						' <em>&gt;&gt;</em></a>'
+					: '';
+				echo '</div>';
+			} else {
 				echo '<div class="footer-navigation">';
 				next_posts_link(__( 'Next <em>&gt;&gt;</em>', 'iandi' ));
-				previous_posts_link(__( '<em>&lt;&lt;</em> Prev', 'iandi' ));
+				previous_posts_link(__( ' Prev', 'iandi' ));
 				echo '</div>';
 			} ?>
 		</div>
