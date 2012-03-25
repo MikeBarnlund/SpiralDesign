@@ -25,7 +25,7 @@ em { color: #b4061d; font-style: normal; }
 
 *::-moz-selection { background: #666666; color: #cccccc; }
 
-.edit-link { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
+.edit-link { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; line-height: 15px; margin-bottom: 10px; }
 
 /* =================================== Layout ============================== */
 #contentbody { position: relative; z-index: 0; overflow: hidden; }
@@ -78,11 +78,17 @@ h2.entry-title { margin-bottom: 0; }
 .post-slat .cat-links span { position: absolute; bottom: 7px; left: 20px; line-height: 1; }
 .post-slat .featured { float: left; margin-bottom: 0; }
 .post-slat .featured img { max-width: 600px; }
-.post-slat .summary { padding: 0 20px 20px 20px; }
+.post-slat .summary { padding: 0 20px 5px 20px; }
 .post-slat .more-link { color: #333; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; position: absolute; bottom: 20px; right: 20px; font-size: 15px; }
+.post-slat ul.media-credits { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 16px; line-height: 16px; margin-bottom: 10px; }
+.post-slat ul.media-credits a { color: #666666; }
 
-ul.post-links { background: #d1d1d1; padding: 10px; list-style-type: square; list-style-image: none; list-style-position: inside; overflow: hidden; }
-ul.post-links li { color: #b4061d; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 18px; line-height: 1; float: left; margin-right: 20px; }
+.single-post .cat-links { height: 40px; }
+.single-post .cat-links span { bottom: 3px; }
+.single-post h2 { padding: 8px 20px 3px; }
+
+ul.post-links { background: #d1d1d1; list-style-type: square; list-style-image: none; list-style-position: inside; overflow: hidden; }
+ul.post-links li { height: 34px; line-height: 36px; color: #b4061d; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 18px; float: left; margin-left: 19px; }
 ul.post-links li a { color: #666666; vertical-align: middle; }
 ul.post-links li a:hover { color: #b4061d; }
 
@@ -113,10 +119,10 @@ p { margin: 0 0 10px 0; }
 
 /* ========================= Content ========================== */
 .content { width: 960px; position: relative; }
-.content h1 { position: relative; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; height: 16px; background: #242424; }
+.content h1 { position: relative; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; height: 16px; background: #222222; }
 .content h1 span { position: absolute; top: -8px; left: 0; background: #FFF; color: #b4061d; display: inline-block; *display: inline; zoom: 1; padding-right: 10px; }
 .content h1 span em { color: #222222; }
-.content h1.check-out { background: #666666; }
+.content h1.check-out { background: #757575; }
 
 .interview-header { background: url(../img/ihbg.gif) top left; color: #999999; overflow: hidden; position: relative; }
 .interview-header img.featured { float: left; margin-bottom: 0; }
@@ -173,7 +179,7 @@ ul.links li a:hover { color: #b4061d; }
 .interview .caption.full-width { width: 960px; }
 .interview .caption.line-1, .interview .caption.line-2, .interview .caption.line-3 { padding-top: 29px; }
 .interview .caption.line-1-after, .interview .caption.line-2-after, .interview .caption.line-3-after { padding-bottom: 29px; margin-bottom: 32px; }
-.interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 49px; -webkit-column-gap: 49px; -o-column-gap: 49px; column-gap: 49px; width: 100%; margin-bottom: 39px; }
+.interview .three-column { -moz-column-count: 3; -webkit-column-count: 3; -o-column-count: 3; column-count: 3; -moz-column-gap: 49px; -webkit-column-gap: 49px; -o-column-gap: 49px; column-gap: 49px; width: 100%; margin-bottom: 21px; }
 .interview .three-column.line-1, .interview .three-column.line-2, .interview .three-column.line-3 { padding-top: 24px; }
 .interview .three-column.line-1-after, .interview .three-column.line-2-after, .interview .three-column.line-3-after { padding-bottom: 24px; margin-bottom: 40px; }
 .interview .larger-text { font-size: 16px; }

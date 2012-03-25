@@ -10,7 +10,7 @@ the_post();
 		<img src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />
 		<?php the_field( 'feature_video_embed_code_full' ); ?>
 	</div>
-	<div id="post-<?php the_ID(); ?>" class="post-slat">
+	<div id="post-<?php the_ID(); ?>" class="post-slat single-post">
 		<div class="entry-content">
 
 			<?php $show_sep = false; ?>
@@ -19,12 +19,14 @@ the_post();
 				$categories_list = get_the_category_list( __( ', ', 'iandi' ) );
 				if ( $categories_list ): ?>
 					<div class="cat-links">
+						<span>
 						<?php
 						$categories = wp_get_post_categories( get_the_ID() );
 						foreach ( $categories as $category ) {
 							echo get_category( $category )->cat_name;
 						}
 						?>
+						</span>
 					</div>
 				<?php endif; // End if categories
 				endif; ?>
@@ -34,8 +36,25 @@ the_post();
 			</h2>
 			<div class="summary">
 				<?php the_content( ); ?>
-				<?php edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' ) ?>
 				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'iandi' ) . '&after=</div>') ?>
+				<?php
+
+				$rows = get_field('media_credits');
+				if($rows)
+				{
+					echo '<ul class="media-credits">';
+
+					foreach($rows as $row)
+					{
+						echo '<li><a href="' . $row['link_url'] . '" target="_blank">' . $row['link_text'] . '</a></li>';
+					}
+
+					echo '</ul>';
+				}
+
+				edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' );
+
+				?>
 			</div>
 		</div>
 	</div>

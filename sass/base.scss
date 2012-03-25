@@ -37,7 +37,7 @@ $headerFooterBorder2: 1px dashed #888;
 $gutterA: 44px;
 $gutterB: 20px;
 
-$h1background: #242424;
+$h1background: #222;
 $ltGreyBackground: #d1d1d1;
 $mdLtGreyBackground: #bcbcbc;
 $mdGreyBackground: #666666;
@@ -83,6 +83,8 @@ em { color: $brand1; font-style: normal; }
 .edit-link {
 	@include altgoth();
 	font-size: 15px;
+	line-height: 15px;
+	margin-bottom: 10px;
 }
 
 /* =================================== Layout ============================== */
@@ -283,7 +285,7 @@ h2.entry-title {
 		float: left; margin-bottom: 0;
 		img { max-width: 600px;}
 	}
-	.summary { padding: 0 $gutterB $gutterB $gutterB; }
+	.summary { padding: 0 $gutterB 5px $gutterB; } // 5px to account for content margin
 	.more-link {
 		color: #333;
 		@include altgoth();
@@ -292,21 +294,37 @@ h2.entry-title {
 		right: $gutterB;
 		font-size: 15px;
 	}
+	ul.media-credits {
+		@include altgoth();
+		font-size: 16px;
+		line-height: 16px;
+		margin-bottom: 10px;
+		a { color: $bodyColor; }
+	}
+}
+.single-post {
+	.cat-links {
+		height: 40px;
+		span { bottom: 3px; }
+	}
+	h2 {
+		padding: 8px 20px 3px;
+	}
 }
 ul.post-links {
 	background: $ltGreyBackground;
-	padding: 10px;
 	list-style-type: square;
 	list-style-image: none;
 	list-style-position: inside;
 	overflow: hidden;
 	li {
+		height: 34px;
+		line-height: 36px;
 		color: $brand1;
 		@include altgoth();
 		font-size: 18px;
-		line-height: 1;
 		float: left;
-		margin-right: 20px;
+		margin-left: 19px;
 		a { color: $bodyColor; vertical-align: middle; &:hover { color: $linkColor; } }
 	}
 }
@@ -409,7 +427,7 @@ p { margin: 0 0 10px 0; }
 			padding-right: 10px;
 			em { color: $fontDk; }
 		}
-		&.check-out { background: $mdGreyBackground; }
+		&.check-out { background: #757575; }
 	}
 }
 
@@ -612,7 +630,7 @@ $lineGutter: 32px;
 		@include column-count( 3 );
 		@include column-gap( 49px );
 		width: 100%;
-		margin-bottom: $interviewGutter;
+		margin-bottom: $interviewContentGutter;
 		&.line-1, &.line-2, &.line-3 { padding-top: $lineGutter - $interviewGutterOffset; }
 		&.line-1-after, &.line-2-after, &.line-3-after {
 			padding-bottom: $lineGutter - $interviewGutterOffset;
