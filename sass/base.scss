@@ -349,11 +349,10 @@ ul.post-links {
 		line-height: $footerHeight - 2;
 
 		a.twitter, a.email, a.vv {
-			display: inline-block;
-			*display: inline; zoom: 1;
+			float: left;
 			height: 25px;
 			background-image: url(../img/footer-logo-sprite.png);
-			margin: 0 10px 0 0;
+			margin: 9px 10px 0 0;
 			vertical-align: middle;
 		}
 		a.twitter {
@@ -379,6 +378,7 @@ ul.post-links {
 			@include altgoth();
 			font-size: 13px;
 			display: inline-block;
+			line-height: 47px;
 			*display: inline; zoom: 1;
 		}
 	}
@@ -389,7 +389,7 @@ ul.post-links {
 #footer {
 	.footer-navigation {
 		position: absolute;
-		right: 0; top: 0;
+		right: 0; top: 2px; // vertically centers text
 		text-align: right;
 		height: $footerHeight;
 		line-height: $footerHeight;
@@ -450,12 +450,13 @@ p { margin: 0 0 10px 0; }
 
 	.header-content {
 		margin-left: 246px;  	// image width
-		padding: 40px;
+		padding: 72px 40px 40px 40px;
 	}
 	.interviewee-wrapper {
-		background: url(../img/ihbg-title.gif) top left;
-		border: 1px solid #444;
-		border: 1px solid rgba(255,255,255,.07);
+		// background: url(../img/ihbg-title.gif) top left;
+		background: #222;
+		// border: 1px solid #444;
+		// border: 1px solid rgba(255,255,255,.07);
 		padding: 10px 15px;
 		margin-bottom: $gutterB;
 		h2, h3 { margin: 0; @include altgoth(); line-height: 1; }
@@ -533,14 +534,14 @@ h1.upcoming-interviews {
 
 ul.links {
 	background: $ltGreyBackground;
-	padding: $gutterB;
+	padding: $gutterB $gutterB 15px $gutterB;
 	float: left;
 	margin-right: $gutterB;
 	li {
 		@include altgoth();
 		font-size: 18px;
-		line-height: 1.3;
-		a { color: $bodyColor; &:hover { color: $linkColor; } }
+		line-height: 1.2;
+		a { color: $fontMd; &:hover { color: $linkColor; } }
 	}
 }
 

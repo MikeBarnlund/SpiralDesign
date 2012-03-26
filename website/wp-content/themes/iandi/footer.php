@@ -20,8 +20,16 @@
 			<?php } else if ( is_single() ) {
 				echo '<div class="footer-navigation single-post">';
 				$title_maxlen = 28;
+
 				$next_post = get_adjacent_post( false, '', false );
+				$next_state = get_field( 'state', $next_post->ID );
+
 				$previous_post = get_adjacent_post( false, '', true );
+				$previous_state = get_field( 'state', $previous_post->ID );
+
+				if ( $next_state === 'upcoming' || $next_state === 'upnext' ) $next_post = '';
+				if ( $previous_state === 'upcoming' || $previous_state === 'upnext' ) $previous_post = '';
+
 				echo ( !empty( $previous_post ) )
 					?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
 						( strlen( $previous_post->post_title ) > $title_maxlen

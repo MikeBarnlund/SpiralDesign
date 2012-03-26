@@ -6,9 +6,13 @@ the_post();
 <div class="content">
 	<h1><span><em>Things of</em> Interest</span></h1>
 	<div class="featured">
-		<?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'full'); ?>
-		<img src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />
-		<?php the_field( 'feature_video_embed_code_full' ); ?>
+
+		<div class="featured">
+			<?php
+			$image = wp_get_attachment_image_src(get_field('feature_image'), 'full');
+			echo !empty( $image ) ? '<img src="' . $image[0] . '" alt="' . get_the_title(get_field( 'feature_image' ) ) . '" />' : '';
+			echo the_field( 'feature_video_embed_code_full' ); ?>
+		</div>
 	</div>
 	<div id="post-<?php the_ID(); ?>" class="post-slat single-post">
 		<div class="entry-content">
