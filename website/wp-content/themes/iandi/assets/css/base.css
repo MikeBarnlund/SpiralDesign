@@ -70,7 +70,7 @@ h2.entry-title { margin-bottom: 0; }
 
 .featured { margin-bottom: 20px; }
 
-.post-slat { clear: both; margin-bottom: 20px; background: #d1d1d1; overflow: hidden; position: relative; }
+.post-slat { clear: both; margin-bottom: 26px; background: #d1d1d1; overflow: hidden; position: relative; }
 .post-slat h2, .post-slat h4 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.1; margin: 0; }
 .post-slat h4 { color: #b4061d; }
 .post-slat h2 { color: #cccccc; background: #666666; padding: 15px 20px 11px 20px; margin-bottom: 20px; font-size: 19px; }
@@ -107,6 +107,8 @@ ul.post-links li a:hover { color: #b4061d; }
 #footer .container a.email:hover { background-position: -34px -100%; }
 #footer .container a.vv { background-position: -71px 0; width: 24px; }
 #footer .container a.vv:hover { background-position: -71px -100%; }
+#footer .container a.copyright-link { color: #666666; }
+#footer .container a.copyright-link:hover { color: #b4061d; }
 #footer .container span { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 13px; display: inline-block; *display: inline; zoom: 1; }
 
 #footer .footer-navigation { position: absolute; right: 0; top: 0; text-align: right; height: 44px; line-height: 44px; }

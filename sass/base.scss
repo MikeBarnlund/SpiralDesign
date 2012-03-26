@@ -251,9 +251,10 @@ h2.entry-title {
 .featured {
 	margin-bottom: $gutterB;
 }
+$postSlatGutter: 26px;
 .post-slat {
 	clear: both;
-	margin-bottom: $gutterB;
+	margin-bottom: $postSlatGutter;
 	background: $ltGreyBackground;
 	overflow: hidden;
 	position: relative;
@@ -368,6 +369,10 @@ ul.post-links {
 			background-position: -71px 0;
 			width: 24px;
 			&:hover { background-position: -71px -100%; }
+		}
+		a.copyright-link {
+			color: $bodyColor;
+			&:hover { color: $linkColor; }
 		}
 		span {
 			@include altgoth();

@@ -9,8 +9,8 @@ $paged = ( get_query_var('paged') ) ? get_query_var( 'paged' ) : 1;
 
 ?>
 
-<div class="content">
-	<h1 class="entry-title"><?php the_title(); ?></h1>
+<div class="content section">
+	<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
 	<?php
 
 	/* Main Loop */
