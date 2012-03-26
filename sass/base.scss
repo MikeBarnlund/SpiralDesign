@@ -318,6 +318,7 @@ ul.post-links {
 	list-style-image: none;
 	list-style-position: inside;
 	overflow: hidden;
+	margin-bottom: $gutterA;
 	li {
 		height: 34px;
 		line-height: 36px;
@@ -326,7 +327,7 @@ ul.post-links {
 		font-size: 18px;
 		float: left;
 		margin-left: 19px;
-		a { color: $bodyColor; vertical-align: middle; &:hover { color: $linkColor; } }
+		a { color: $fontMd; vertical-align: middle; &:hover { color: $linkColor; } }
 	}
 }
 

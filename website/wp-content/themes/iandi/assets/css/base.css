@@ -87,9 +87,9 @@ h2.entry-title { margin-bottom: 0; }
 .single-post .cat-links span { bottom: 3px; }
 .single-post h2 { padding: 8px 20px 3px; }
 
-ul.post-links { background: #d1d1d1; list-style-type: square; list-style-image: none; list-style-position: inside; overflow: hidden; }
+ul.post-links { background: #d1d1d1; list-style-type: square; list-style-image: none; list-style-position: inside; overflow: hidden; margin-bottom: 44px; }
 ul.post-links li { height: 34px; line-height: 36px; color: #b4061d; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 18px; float: left; margin-left: 19px; }
-ul.post-links li a { color: #666666; vertical-align: middle; }
+ul.post-links li a { color: #444444; vertical-align: middle; }
 ul.post-links li a:hover { color: #b4061d; }
 
 .alignright { float: right; margin-left: 10px; }
