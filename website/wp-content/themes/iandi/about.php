@@ -9,7 +9,7 @@ the_post();
 
 ?>
 
-<div class="content">
+<div class="content about-page">
 	<?php if ( get_the_ID() ) { ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
