@@ -16,32 +16,52 @@
 
 	<title>
 		<?php
+		$title = '';
+		$share_title = '';
 
 		if ( is_single() ) {
-			single_post_title();
+			if ( get_post_type() === 'interview' ) {
+				$title = 'Interview with ' . single_post_title( '', FALSE ). ' - ' . get_field( 'interviewee_title' );
+				$share_title = $title . ' on Industry & Interest | @INDandINT';
+			} else {
+				$title = single_post_title( '', FALSE );
+				$share_title = $title . ' | @INDandINT';
+			}
+
 		}
 		elseif ( is_home() || is_front_page() ) {
-			bloginfo( 'description' );
-			print ' | ';
-			bloginfo( 'name' );
+			$title .= get_bloginfo( 'description' ) .
+				' | ' .
+				get_bloginfo( 'name' );
+			$share_title = $title . ' | @INDandINT';
 		}
 		elseif ( is_page() ) {
-			bloginfo( 'name' );
-			print ' | ';
-			single_post_title( '' );
+			$title .= get_bloginfo( 'name' ) .
+				' | ' .
+				single_post_title( '', FALSE );
+			$share_title = $title . ' | @INDandINT';
 		}
 		elseif ( is_search() ) {
-			bloginfo( 'name' );
-			print ' | Search results for ' . esc_html( $s );
+			$title .= get_bloginfo( 'name' ) .
+				' | Search results for ' . esc_html( $s );
+			$share_title = $title . ' | @INDandINT';
 		}
 		elseif ( is_404() ) {
-			bloginfo( 'name' );
-			print ' | Not Found';
+			$title .= get_bloginfo( 'name' ) .
+				' | Not Found';
+			$share_title = $title . ' | @INDandINT';
 		}
-		else { bloginfo( 'name' ); }
+		else {
+			$title = get_bloginfo( 'name' );
+			$share_title = $title . ' | @INDandINT';
+		}
+
+		echo $title;
 
 		?>
 	</title>
+
+	<meta property="og:title" content="<?php echo $share_title; ?>" />
 
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
