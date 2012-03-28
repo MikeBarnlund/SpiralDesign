@@ -10,7 +10,7 @@ $paged = ( get_query_var('paged') ) ? get_query_var( 'paged' ) : 1;
 ?>
 
 <div class="content section">
-	<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
+	<h1 class="entry-title"><span><em>Things of</em> Interest</span></h1>
 	<?php
 
 	/* Main Loop */
