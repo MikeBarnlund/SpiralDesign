@@ -39,7 +39,7 @@ get_header(); ?>
 			FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
 			WHERE wposts.ID = wpostmeta.post_id
 			AND wpostmeta.meta_key = 'state'
-			AND wpostmeta.meta_value = 'upcoming'
+			AND ( wpostmeta.meta_value = 'upcoming' OR wpostmeta.meta_value = 'upnext' )
 			AND wposts.post_status = 'publish'
 			AND wposts.post_type = 'interview'
 			ORDER BY wposts.post_date DESC
