@@ -34,8 +34,24 @@ the_post();
 		<?php } ?>
 
 		<div class="interview-footer">
-			<span>Interview By <a href="mailto:asher@industryandinterest.com">Asher Compton</a></span>
-			<span>Introduction By <a href="mailto:emmy@industryandinterest.com">Emmy Watts</a></span>
+			<?php
+			$interviewed_by = get_field( 'interviewed_by' );
+			$interviewed_by_email = get_field( 'interviewed_by_email' );
+			$introduction_by = get_field( 'introduction_by' );
+			$introduction_by_email = get_field( 'introduction_by_email' );
+
+			if ( !empty( $interviewed_by ) ) {
+				echo ( empty( $interviewed_by_email ) ) ?
+					'<span>Interview By ' . $interviewed_by . '</span>' :
+					'<span>Interview By <a href="mailto:<?php echo $interviewed_by_email; ?>">' . $interviewed_by . '</a></span>' ;
+			}
+			if ( !empty( $introduction_by ) ) {
+				echo ( empty( $introduction_by_email ) ) ?
+					'<span>Introduction By ' . $introduction_by . '</span>' :
+					'<span>Introduction By <a href="mailto:<?php echo $introduction_by_email; ?>">' . $introduction_by . '</a></span>' ;
+			}
+
+			?>
 			<script type="text/javascript">
 				$( document ).ready( function() {
 					$( 'a#tweet_button' ).click( function() {
