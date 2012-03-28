@@ -13,7 +13,11 @@
 		</div>
 
 		<div class="summary">
-			<?php the_field( 'summary' ); ?>
+			<?php
+			$summary = get_field( 'summary' );
+			$more_link_location = is_single() ? FALSE : strpos( $summary, '<!--more-->' );
+			echo ( $more_link_location !== FALSE ) ? rtrim( substr( $summary, 0, $more_link_location ) ) : $summary;
+			?>
 		</div>
 
 		<?php
