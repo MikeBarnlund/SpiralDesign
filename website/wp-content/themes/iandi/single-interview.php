@@ -32,6 +32,12 @@ the_post();
 			?>
 			</ul>
 		<?php } ?>
+
+		<div class="interview-credits">
+			<span>Interview By <a href="mailto:asher@industryandinterest.com">Asher Compton</a></span>
+			<span>Introduction By <a href="mailto:emmy@industryandinterest.com">Emmy Watts</a></span>
+		</div>
+
 	<?php } ?>
 </div>
 
