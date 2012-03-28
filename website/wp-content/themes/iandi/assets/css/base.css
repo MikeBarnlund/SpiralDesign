@@ -208,9 +208,9 @@ ul.links li a:hover { color: #b4061d; }
 .interview .clear-right { clear: right; }
 .interview .clear-both { clear: both; }
 
-.interview-credits { border-top: 1px solid #d3d3d3; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; line-height: 1; color: #222222; padding-top: 10px; margin-top: -24px; margin-bottom: 30px; }
-.interview-credits span { padding-right: 15px; }
-.interview-credits a { color: #706666; }
-.interview-credits a:hover { color: #b4061d; }
+.interview-footer { border-top: 1px solid #d3d3d3; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; line-height: 1; color: #222222; padding-top: 10px; margin-top: -24px; margin-bottom: 30px; }
+.interview-footer span { padding-right: 15px; }
+.interview-footer a { color: #706666; }
+.interview-footer a:hover { color: #b4061d; }
 
 .not-found a { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }

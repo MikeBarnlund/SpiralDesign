@@ -33,9 +33,20 @@ the_post();
 			</ul>
 		<?php } ?>
 
-		<div class="interview-credits">
+		<div class="interview-footer">
 			<span>Interview By <a href="mailto:asher@industryandinterest.com">Asher Compton</a></span>
 			<span>Introduction By <a href="mailto:emmy@industryandinterest.com">Emmy Watts</a></span>
+			<span><em>Share</em></span>
+			<?php
+			https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fiandi.spiraldesign.ca%2Finterview%2Fglen-allsop%2F&text=Interview+with+GLEN+ALLSOP+-+Freelance+Photographer+on+Industry+%26+Interest+|+%40INDandINT+|+&url=http%3A%2F%2Fiandi.spiraldesign.ca%2Finterview%2Fglen-allsop%2F
+			$message = 'Interview with ' . get_the_title() . ' - ' .
+				get_field( 'interviewee_title' ) .
+				' on Industry & Interest | @INDandINT | ';
+				//get_permalink();
+			$message = urlencode( $message );
+			?>
+			<span><a target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo urlencode( get_permalink() ); ?>&text=<?php echo $message; ?>&url=<?php echo urlencode( get_permalink() ); ?>">Twitter</a></span>
+			<span><a href="http://www.facebook.com">Facebook</a></span>
 		</div>
 
 	<?php } ?>
