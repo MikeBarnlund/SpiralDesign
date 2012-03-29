@@ -3,7 +3,7 @@ get_header();
 the_post();
 ?>
 
-<div class="content">
+<div class="single-interview content">
 	<?php
 	if ( get_the_ID() ) { ?>
 		<div class="section">
@@ -43,12 +43,12 @@ the_post();
 			if ( !empty( $interviewed_by ) ) {
 				echo ( empty( $interviewed_by_email ) ) ?
 					'<span>Interview By ' . $interviewed_by . '</span>' :
-					'<span>Interview By <a href="mailto:<?php echo $interviewed_by_email; ?>">' . $interviewed_by . '</a></span>' ;
+					'<span>Interview By <a href="mailto:<?php echo $interviewed_by_email; ?>">' . $interviewed_by . '</a></span>';
 			}
 			if ( !empty( $introduction_by ) ) {
 				echo ( empty( $introduction_by_email ) ) ?
 					'<span>Introduction By ' . $introduction_by . '</span>' :
-					'<span>Introduction By <a href="mailto:<?php echo $introduction_by_email; ?>">' . $introduction_by . '</a></span>' ;
+					'<span>Introduction By <a href="mailto:<?php echo $introduction_by_email; ?>">' . $introduction_by . '</a></span>';
 			}
 
 			?>
@@ -68,7 +68,6 @@ the_post();
 			</script>
 			<span><em>Share</em></span>
 			<?php
-			https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fiandi.spiraldesign.ca%2Finterview%2Fglen-allsop%2F&text=Interview+with+GLEN+ALLSOP+-+Freelance+Photographer+on+Industry+%26+Interest+|+%40INDandINT+|+&url=http%3A%2F%2Fiandi.spiraldesign.ca%2Finterview%2Fglen-allsop%2F
 			$message = 'Interview with ' . get_the_title() . ' - ' .
 				get_field( 'interviewee_title' ) .
 				' on Industry & Interest | @INDandINT |';
@@ -76,7 +75,7 @@ the_post();
 			$message = urlencode( $message );
 			?>
 			<span><a id="tweet_button" target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo urlencode( get_permalink() ); ?>&text=<?php echo $message; ?>&url=<?php echo urlencode( get_permalink() ); ?>">Twitter</a></span>
-			<span><a id="fb_button" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>&t=TITLE">Facebook</a></span>
+			<span><a id="fb_button" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>">Facebook</a></span>
 		</div>
 
 	<?php } ?>

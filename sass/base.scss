@@ -450,7 +450,7 @@ p { margin: 0 0 10px 0; }
 
 	.header-content {
 		margin-left: 246px;  	// image width
-		padding: 72px 40px 40px 40px;
+		padding: 72px 40px 27px 40px; // account for paragraph margin
 	}
 	.interviewee-wrapper {
 		// background: url(../img/ihbg-title.gif) top left;
@@ -467,8 +467,8 @@ p { margin: 0 0 10px 0; }
 	.read-interview {
 		line-height: 1;
 		position: absolute;
-		bottom: $gutterA;
-		right: $gutterA;
+		bottom: 40px;
+		right: 40px;
 		font-size: 15px;
 		@include altgoth();
 		color: $textColor;
@@ -498,6 +498,10 @@ p { margin: 0 0 10px 0; }
 	.interview-header .header-content {
 		margin-left: 217px;
 	}
+}
+
+.single-interview .interview-header .header-content {
+	padding: 40px 40px 27px 40px; // account for paragraph margin
 }
 
 // ================= Upcoming Interview Slat ====================
