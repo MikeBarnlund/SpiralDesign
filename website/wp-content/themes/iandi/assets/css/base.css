@@ -216,3 +216,12 @@ ul.links li a:hover { color: #b4061d; }
 .interview-footer a:hover { color: #b4061d; }
 
 .not-found a { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
+
+.password-protected { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; line-height: 1; background: #eeeeee; text-align: center; overflow: hidden; padding-top: 22px; margin-bottom: 35px; }
+.password-protected p { display: inline-block; *display: inline; zoom: 1; font-size: 18px; padding: 12px 0 8px 0; border-top: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; margin: 0 auto 18px auto; }
+.password-protected input, .password-protected button, .password-protected img { display: block; margin: 0 auto 18px auto; }
+.password-protected img { margin-bottom: 13px; }
+.password-protected .form-text { background: #bababa; border: 0; height: 25px; line-height: 23px; width: 212px; text-align: center; color: #FFF; }
+.password-protected .form-button { border: 0; background: none; font-size: 15px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; color: #222222; background: none; line-height: 1; cursor: pointer; }
+
+.post-password-required .entry-content { margin-top: -19px; }

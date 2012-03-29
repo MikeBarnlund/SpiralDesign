@@ -13,7 +13,7 @@ switch ( $state ) {
 
 <div id="post-<?php the_ID(); ?>" class="interview-slat <?php echo $state; ?> <?php echo $slat_class; ?>">
 	<?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'full'); ?>
-	<img src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />
+	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'iandi' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><img src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" /></a>
 
 	<?php
 	$state = get_field( 'state' );

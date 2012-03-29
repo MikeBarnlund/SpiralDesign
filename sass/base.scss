@@ -708,3 +708,51 @@ $lineGutter: 32px;
 // =========== 404 Page ===========
 
 .not-found a { @include altgoth(); font-size: 15px; }
+
+// =========== Password Protected ================
+
+.password-protected {
+	@include altgoth();
+	text-transform: none;
+	line-height: 1;
+	background: #eeeeee;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 22px;
+	margin-bottom: 35px;
+	p {
+		display: inline-block;
+		*display: inline; zoom: 1;
+		font-size: 18px;
+		padding: 12px 0 8px 0;
+		border-top: 1px solid #d1d1d1;
+		border-bottom: 1px solid #d1d1d1;
+		margin: 0 auto 18px auto;
+	}
+	input, button, img {
+		display: block;
+		margin: 0 auto 18px auto;
+	}
+	img { margin-bottom: 13px; }
+	.form-text {
+		background: #bababa;
+		border: 0;
+		height: 25px;
+		line-height: 23px;
+		width: 212px;
+		text-align: center;
+		color: #FFF;
+	}
+	.form-button {
+		border: 0;
+		background: none;
+		font-size: 15px;
+		@include altgoth();
+		color: $fontDk;
+		background: none;
+		line-height: 1;
+		cursor: pointer;
+	}
+}
+
+.post-password-required .entry-content { margin-top: -19px; }

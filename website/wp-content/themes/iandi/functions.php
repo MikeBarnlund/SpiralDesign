@@ -25,3 +25,21 @@ function create_post_type() {
 		)
 	);
 }
+
+// ================ Custom Password Form ==================
+
+add_filter( 'the_password_form', 'custom_password_form' );
+function custom_password_form() {
+	remove_filter('the_content', 'wpautop');
+	global $post;
+	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+	$o = '<div class="password-protected">' .
+		'<img src="' . get_bloginfo( 'template_url' ) . '/assets/img/protected.png" />' .
+		'<form action="' . get_option('siteurl') . '/wp-pass.php" method="post">' .
+		'<p>Your Interview is password protected. To view, please enter the password supplied to you by I&I.</p>' .
+		'<input class="form-text" name="post_password" id="' . $label . '" type="password" size="20" />' .
+		'<button class="form-button" type="submit" name="Submit">Submit <em>&gt;&gt;</em></button>' .
+		'</form>' .
+		'</div>';
+	return $o;
+}
