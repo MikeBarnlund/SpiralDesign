@@ -33,7 +33,7 @@ the_post();
 					</div>
 				</div>
 				<div class="social">
-					<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a><a class="email" href="mailto:asher@industryandinterest.com"></a>
+					<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a><a class="email" href="mailto:contact@industryandinterest.com"></a>
 				</div>
 			</div>
 			<?php
@@ -42,14 +42,14 @@ the_post();
 				<h1><span>Links</span></h1>
 				<ul class="links section">
 				<?php
-				$i = 1;
+				$i = 0;
 				foreach( $links as $link ) {
-					echo ( $i % 6 ) === 0 ? '</ul><ul class="links">' : '';
-					$i++;
+					echo $i > 0 && $i % 5 === 0 ? '</ul><ul class="links">' : '';
 					echo '<li><a target="_blank" href="' . $link['link_address'] . '">' . $link['link_text'] . '</a></li>';
+					$i++;
 				}
-				$diff = $i % 6;
-				for ( $i = 0; $i <= $diff; $i++ ) {
+				$diff = 5 - ( $i % 5 );
+				for ( $i = 0; $i < $diff; $i++ ) {
 					echo '<li>&nbsp;</li>';
 				}
 				?>

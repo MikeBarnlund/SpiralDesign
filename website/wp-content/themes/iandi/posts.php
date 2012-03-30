@@ -17,14 +17,10 @@ $paged = ( get_query_var('paged') ) ? get_query_var( 'paged' ) : 1;
 
 	//omit category "Home Page Only"
 	$the_posts = query_posts( array( 'posts_per_page' => 5, 'paged' => $paged ) );
-	$i = 0;
 
 	foreach ( $the_posts as $post) {
-		if ( $i++ > 1 ) {
-			setup_postdata( $post );
-			get_template_part( 'content', get_post_format() );
-
-		}
+		setup_postdata( $post );
+		get_template_part( 'content', get_post_format() );
 	}
 
 	?>

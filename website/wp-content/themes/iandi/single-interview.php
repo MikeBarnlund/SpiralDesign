@@ -43,12 +43,12 @@ the_post();
 			if ( !empty( $interviewed_by ) ) {
 				echo ( empty( $interviewed_by_email ) ) ?
 					'<span>Interview By ' . $interviewed_by . '</span>' :
-					'<span>Interview By <a href="mailto:<?php echo $interviewed_by_email; ?>">' . $interviewed_by . '</a></span>';
+					'<span>Interview By <a href="mailto:' . $interviewed_by_email . '">' . $interviewed_by . '</a></span>';
 			}
 			if ( !empty( $introduction_by ) ) {
 				echo ( empty( $introduction_by_email ) ) ?
 					'<span>Introduction By ' . $introduction_by . '</span>' :
-					'<span>Introduction By <a href="mailto:<?php echo $introduction_by_email; ?>">' . $introduction_by . '</a></span>';
+					'<span>Introduction By <a href="mailto:' . $introduction_by_email . '">' . $introduction_by . '</a></span>';
 			}
 
 			?>
@@ -71,7 +71,6 @@ the_post();
 			$message = 'Interview with ' . get_the_title() . ' - ' .
 				get_field( 'interviewee_title' ) .
 				' on Industry & Interest | @INDandINT |';
-				//get_permalink();
 			$message = urlencode( $message );
 			?>
 			<span><a id="tweet_button" target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo urlencode( get_permalink() ); ?>&text=<?php echo $message; ?>&url=<?php echo urlencode( get_permalink() ); ?>">Twitter</a></span>
