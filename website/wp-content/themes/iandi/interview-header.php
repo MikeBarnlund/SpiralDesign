@@ -1,6 +1,11 @@
 <div class="interview-header">
-	<?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'full'); ?>
-	<img class="featured" src="<?php echo $image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />
+	<?php
+	$feature_image = wp_get_attachment_image_src( get_field( 'feature_image' ), 'full' );
+	$feature_image_single = is_single()
+		? wp_get_attachment_image_src( get_field( 'feature_image_single_interview_page' ), 'full' )
+		: false;
+	?>
+	<img class="featured" src="<?php echo !empty( $feature_image_single ) ? $feature_image_single[0] : $feature_image[0]; ?>" alt="<?php get_the_title(get_field('feature_image')) ?>" />
 
 	<div class="header-content">
 		<div class="interviewee-wrapper">
@@ -16,7 +21,7 @@
 			<?php
 			$summary = get_field( 'summary' );
 			$more_link_location = is_single() ? FALSE : strpos( $summary, '<!--more-->' );
-			echo ( $more_link_location !== FALSE ) ? rtrim( substr( $summary, 0, $more_link_location ) ) : $summary;
+			echo ( $more_link_location !== FALSE ) ? rtrim( substr( $summary, 0, $more_link_location ) ) . '...' : $summary;
 			?>
 		</div>
 
