@@ -20,7 +20,7 @@ the_post();
 		<?php
 		$links = get_field( 'recommended_links' );
 		if( $links ) { ?>
-			<h1 class="check-out"><span>Check</span></h1>
+			<h1 class="check-out"><span><em>Also of</em> Interest</span></h1>
 			<ul class="post-links section">
 			<?php
 			$i = 1;

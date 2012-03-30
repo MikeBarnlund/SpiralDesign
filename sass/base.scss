@@ -729,7 +729,7 @@ $lineGutter: 32px;
 		border-bottom: 1px solid #d1d1d1;
 		margin: 0 auto 18px auto;
 	}
-	input, button, img {
+	input, img {
 		display: block;
 		margin: 0 auto 18px auto;
 	}
@@ -744,6 +744,9 @@ $lineGutter: 32px;
 		color: #FFF;
 	}
 	.form-button {
+		display: inline-block;
+		*display: inline; zoom: 1;
+		margin-bottom: 18px;
 		border: 0;
 		background: none;
 		font-size: 15px;
