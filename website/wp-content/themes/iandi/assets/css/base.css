@@ -161,6 +161,7 @@ ul.links { background: #d1d1d1; padding: 20px 20px 15px 20px; float: left; margi
 ul.links li { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 18px; line-height: 1.2; }
 ul.links li a { color: #444444; }
 ul.links li a:hover { color: #b4061d; }
+ul.links li a em { color: #706666; }
 
 .interview h1 { margin-bottom: 39px; }
 .interview h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font: #222222; line-height: 1; font-size: 19px; margin-bottom: 3px; }

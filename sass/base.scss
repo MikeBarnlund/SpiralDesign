@@ -551,7 +551,11 @@ ul.links {
 		@include altgoth();
 		font-size: 18px;
 		line-height: 1.2;
-		a { color: $fontMd; &:hover { color: $linkColor; } }
+		a {
+			color: $fontMd;
+			&:hover { color: $linkColor; }
+			em { color: #706666; }
+		}
 	}
 }
 

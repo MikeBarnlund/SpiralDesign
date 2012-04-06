@@ -20,6 +20,7 @@ get_header();
 			WHERE wposts.ID = wpostmeta.post_id
 			AND wpostmeta.meta_key = 'state'
 			AND wpostmeta.meta_value != 'upcoming'
+			AND wpostmeta.meta_value != 'activeunlisted'
 			AND wposts.post_status = 'publish'
 			AND wposts.post_type = 'interview'
 			ORDER BY wpostmeta.meta_value DESC,

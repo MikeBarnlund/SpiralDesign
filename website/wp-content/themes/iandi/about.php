@@ -39,18 +39,21 @@ the_post();
 			<?php
 			$links = get_field( 'recommended_links' );
 			if( $links ) { ?>
-				<h1><span>Links</span></h1>
+				<h1><span>Inspired</span></h1>
 				<ul class="links section">
 				<?php
 				$i = 0;
+				$maxlinks = 10;
 				foreach( $links as $link ) {
-					echo $i > 0 && $i % 5 === 0 ? '</ul><ul class="links">' : '';
+					echo $i > 0 && $i % $maxlinks === 0 ? '</ul><ul class="links">' : '';
 					echo '<li><a target="_blank" href="' . $link['link_address'] . '">' . $link['link_text'] . '</a></li>';
 					$i++;
 				}
-				$diff = 5 - ( $i % 5 );
-				for ( $i = 0; $i < $diff; $i++ ) {
-					echo '<li>&nbsp;</li>';
+				if ( $i > $maxlinks ) {
+					$diff = $maxlinks - ( $i % $maxlinks );
+					for ( $i = 0; $i < $diff; $i++ ) {
+						echo '<li>&nbsp;</li>';
+					}
 				}
 				?>
 				</ul>
