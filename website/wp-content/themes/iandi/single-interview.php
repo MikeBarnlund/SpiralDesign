@@ -13,7 +13,7 @@ the_post();
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1>&nbsp;</h1>
 			<div class="entry-content editable">
-				<?php remove_filter( 'the_content', 'wpautop' ); ?>
+
 				<?php the_content(); ?>
 				<?php edit_post_link( __( 'Edit Content', 'iandi' ), '<div class="edit-link">(', ')</div>' ) ?>
 			</div><!-- .entry-content -->

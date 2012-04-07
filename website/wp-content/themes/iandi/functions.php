@@ -10,6 +10,11 @@ add_theme_support( 'menus' );
 
 add_theme_support( 'admin-bar', array( 'callback' => '__return_false') );
 
+/* ================ Disable Wordpress's Horrible Auto Formatting ============== */
+
+remove_filter('the_content', 'wpautop');
+remove_filter('the_excerpt', 'wpautop');
+
 // ================= Add Custom Post Types ==================
 
 add_action( 'init', 'create_post_type' );
