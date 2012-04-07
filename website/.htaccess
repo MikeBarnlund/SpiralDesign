@@ -1,13 +1,13 @@
 # BEGIN Security
 # AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/spiraldesign_trunk/website/.htpasswd
-AuthUserFile /home/asherjc/public_html/.htpasswd
-AuthGroupFile /dev/null
-AuthName "AuthName"
-AuthType Basic
-
-<Limit GET POST>
-require valid-user
-</Limit>
+# AuthUserFile /home/asherjc/public_html/.htpasswd
+# AuthGroupFile /dev/null
+# AuthName "AuthName"
+# AuthType Basic
+#
+# <Limit GET POST>
+# require valid-user
+# </Limit>
 # End Security
 
 # BEGIN WordPress

@@ -52,18 +52,18 @@ em { color: #b4061d; font-style: normal; }
 #header #nav li { float: left; height: 13px; }
 #header h1 { font-size: 18px; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0; height: 44px; line-height: 46px; border-bottom: 1px dashed #888888; }
 
-.interviews { overflow: hidden; }
+.interviews { overflow: hidden; font-size: 0; }
 
-.interview-slat { width: 184px; margin: 0 10px 44px 0; float: left; background: #777; position: relative; }
+.interview-slat { width: 184px; margin: 0 10px 44px 0; background: #777; position: relative; display: inline-block; *display: inline; zoom: 1; vertical-align: top; }
 .interview-slat.last { margin-right: 0; }
 .interview-slat.upnext img { opacity: .12; }
 .interview-slat .interviewee-info { background: #d1d1d1; padding-bottom: 11px; padding-top: 13px; }
-.interview-slat h3.featured-interview { position: absolute; top: 0; background: #b4061d; padding: 4px 0 1px 15px; width: 169px; color: #FFF; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
-.interview-slat h3.up-next { position: absolute; top: 0; width: 169px; background: #d1d1d1; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 22px; color: #222222; padding: 4px 0 1px 15px; top: 108px; }
+.interview-slat h3.featured-interview { position: absolute; top: 0; left: 0; background: #b4061d; padding: 4px 0 1px 15px; width: 169px; color: #FFF; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
+.interview-slat h3.up-next { position: absolute; top: 0; left: 0; width: 169px; background: #d1d1d1; font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 22px; color: #222222; padding: 4px 0 1px 15px; top: 108px; }
 .interview-slat h2, .interview-slat h3 { font-weight: normal; font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif; text-transform: uppercase; line-height: 1.1; margin: 0; padding: 0 15px; font-size: 15px; }
 .interview-slat h2 { color: #cccccc; }
 .interview-slat h3.interviewee-title { height: 33px; }
-.interview-slat img { width: 184px; }
+.interview-slat img { width: 184px; display: block; }
 
 /* ========================= Posts ======================== */
 h2.entry-title { margin-bottom: 0; }
@@ -169,6 +169,7 @@ ul.links li a em { color: #706666; }
 .interview p, .interview ul { margin-bottom: 21px; }
 .interview p.spacer, .interview ul.spacer { margin-bottom: 31px; }
 .interview ul { list-style: disc outside none; margin-left: 1em; }
+.interview img { display: block; zoom: 1; }
 .interview img.left { margin: 0 39px 39px 0; }
 .interview img.right { margin: 0 0 39px 39px; }
 .interview img.full-width { display: block; width: 960px; margin: 0 0 39px 0; }

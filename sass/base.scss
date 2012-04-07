@@ -188,15 +188,19 @@ $featuredImageHeight: 245px;
 
 .interviews {
 	overflow: hidden;
+	font-size: 0; // gets rid of space between inline block elements
 }
 
 .interview-slat {
 	$interviewSlatWidth: 184px;
 	width: $interviewSlatWidth;
 	margin: 0 $interviewSlatGutter $gutterA 0;
-	float: left;
+	//float: left;
 	background: #777;
 	position: relative;
+	display: inline-block;
+	*display: inline; zoom: 1;
+	vertical-align: top;
 
 	&.last { margin-right: 0; }
 	&.upnext img { opacity: .12; }
@@ -209,7 +213,7 @@ $featuredImageHeight: 245px;
 
 	h3.featured-interview {
 		position: absolute;
-		top: 0;
+		top: 0; left: 0;
 		background: $brand1;
 		padding: 4px 0 1px 15px;
 		width: $interviewSlatWidth - 15;
@@ -219,7 +223,7 @@ $featuredImageHeight: 245px;
 	}
 	h3.up-next {
 		position: absolute;
-		top: 0;
+		top: 0; left: 0;
 		width: $interviewSlatWidth - 15;
 		background: $ltGreyBackground;
 		@include altgoth();
@@ -240,7 +244,7 @@ $featuredImageHeight: 245px;
 	h2 { color: $fontVLt; }
 	h3.interviewee-title { height: 33px; }
 
-	img { width: $interviewSlatWidth; }
+	img { width: $interviewSlatWidth; display: block; }
 }
 
 /* ========================= Posts ======================== */
@@ -590,6 +594,7 @@ $lineGutter: 32px;
 		margin-left: 1em;
 	}
 	img {
+		display: block; zoom: 1;
 		&.left { margin: 0 $interviewGutter $interviewGutter 0; }
 		&.right { margin: 0 0 $interviewGutter $interviewGutter; }
 		&.full-width {
