@@ -1,16 +1,13 @@
-# Local .htpasswd
-# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/plumbingparamedics.ca/website/.htpasswd
-
 # BEGIN Security
 # AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/spiraldesign_trunk/website/.htpasswd
-# AuthUserFile /home/barnlund/public_html/iandi/.htpasswd
-# AuthGroupFile /dev/null
-# AuthName "AuthName"
-# AuthType Basic
-#
-# <Limit GET POST>
-# require valid-user
-# </Limit>
+AuthUserFile /home/asherjc/public_html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "AuthName"
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>
 # End Security
 
 # BEGIN WordPress

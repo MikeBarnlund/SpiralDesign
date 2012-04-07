@@ -33,7 +33,7 @@ the_post();
 					</div>
 				</div>
 				<div class="social">
-					<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a><a class="email" href="mailto:contact@industryandinterest.com"></a>
+					<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a><a class="email" href="mailto:asher@industryandinterest.com"></a>
 				</div>
 			</div>
 			<?php
