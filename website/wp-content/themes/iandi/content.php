@@ -1,7 +1,9 @@
 <div id="post-<?php the_ID(); ?>" class="post-slat">
 	<div class="featured">
 		<?php
-		$image = wp_get_attachment_image_src(get_field('feature_image'), 'full');
+		$imageAttachmentId = get_field( 'feature_image_summary' );
+		if ( empty( $imageAttachmentId ) ) $imageAttachmentId = get_field( 'feature_image' );
+		$image = wp_get_attachment_image_src( $imageAttachmentId, 'full' );
 		echo !empty( $image ) ? '<img src="' . $image[0] . '" alt="' . get_the_title(get_field( 'feature_image' ) ) . '" />' : '';
 		echo the_field( 'feature_video_embed_code_small' ); ?>
 	</div>

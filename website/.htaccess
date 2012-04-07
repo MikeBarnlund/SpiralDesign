@@ -17,6 +17,15 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
+
+#custom redirects
+
+RewriteRule ^post/16047981459/interview-david-gensler$ http://industryandinterest.com/interview/david-gensler [R=301,L]
+RewriteRule ^post/16357547983/interview-brodie-gunning-president-coo-the-media$ http://industryandinterest.com/interview/brodie-gunning [R=301,L]
+RewriteRule ^post/16506402423/interview-george-sukunyan$ http://industryandinterest.com/interview/george-sukunyan [R=301,L]
+
+#end custom redirects
+
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
