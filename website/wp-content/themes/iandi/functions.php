@@ -48,3 +48,44 @@ function custom_password_form() {
 		'</div>';
 	return $o;
 }
+
+// =============== Custom Adjacent Post Link Fetching ==================
+
+
+/**
+ * Retrieve adjacent available interview.
+ *
+ */
+function get_adjacent_available_post( $in_same_cat = false, $excluded_categories = '', $previous = true ) {
+	global $post, $wpdb;
+
+	if ( empty( $post ) )
+		return null;
+
+	$current_post_date = $post->post_date;
+
+	$join = $wpdb->prepare( "INNER JOIN $wpdb->postmeta wpostmeta ON wposts.ID = wpostmeta.post_id" );
+	$posts_in_ex_cats_sql = '';
+
+	$adjacent = $previous ? 'previous' : 'next';
+	$op = $previous ? '<' : '>';
+	$order = $previous ? 'DESC' : 'ASC';
+
+	$join  = apply_filters( "get_{$adjacent}_post_join", $join, $in_same_cat, $excluded_categories );
+	$where = apply_filters( "get_{$adjacent}_post_where", $wpdb->prepare("WHERE wposts.post_date $op %s AND wposts.post_type = %s AND wposts.post_status = 'publish' AND wpostmeta.meta_key = 'state' AND wpostmeta.meta_value IN ( 'active', 'featured' ) ", $current_post_date, $post->post_type), $in_same_cat, $excluded_categories );
+	$sort  = apply_filters( "get_{$adjacent}_post_sort", "ORDER BY wposts.post_date $order LIMIT 1" );
+
+	$query = "SELECT wposts.*, wpostmeta.meta_value FROM $wpdb->posts wposts $join $where $sort";
+	//echo '<br/><strong>Query:</strong> ' . $query;
+	$query_key = 'adjacent_post_' . md5($query);
+	$result = wp_cache_get($query_key, 'counts');
+	if ( false !== $result )
+		return $result;
+
+	$result = $wpdb->get_row("SELECT wposts.*, wpostmeta.meta_value FROM $wpdb->posts wposts $join $where $sort");
+	if ( null === $result )
+		$result = '';
+
+	wp_cache_set($query_key, $result, 'counts');
+	return $result;
+}
