@@ -1,0 +1,1960 @@
+%PDF-1.6%‚„œ”
+35 0 obj<</Names 37 0 R/ViewerPreferences<</Direction/L2R>>/Perms<</UR3<</SubFilter/adbe.pkcs7.detached/Filter/Adobe.PPKLite/Contents<30820efb06092a864886f70d010702a0820eec30820ee8020101310b300906052b0e03021a0500300b06092a864886f70d010701a0820db83082041f30820307a003020102020208ea300d06092a864886f70d0101050500305f310b300906035504061302555331163014060355040a130d47656f547275737420496e632e311d301b060355040b131441646f6265205472757374205365727669636573311930170603550403131050726f64756374205365727669636573301e170d3036303632303139343833315a170d3233303130383038303030305a308180312d302b06035504031324415245204163726f6261742050726f647563742076382e30205032332030303032333337311d301b060355040b131441646f626520547275737420536572766963657331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564310b300906035504061302555330819f300d06092a864886f70d010101050003818d0030818902818100974434ec7acfa2692c3e6bf74fe5fd741e6dd88c288fc1a033f5370df28268c6aea85c3d3baeea1c02c2391b527c1ed3f63cc652b7b210c79b87c59b7667bfab4d99eb87f1ac399151c543210e531566a4dad106eec5c1f687a12c1a4bd7aa95393a58d43ab9cf24e48a85b555654a6ba587fc5ac02a7428785052eef2034abb0203010001a382014530820141300b0603551d0f04040302078030320603551d1f042b30293027a025a0238621687474703a2f2f63726c2e61646f62652e636f6d2f70726f64537663652e63726c30140603551d25040d300b06092a864886f72f010107300f0603551d130101ff040530030201003081ba0603551d200481b23081af3081ac06092a864886f72f01020330819e30819b06082b0601050507020230818e1a818b596f7520617265206e6f74207065726d697474656420746f207573652074686973204c6963656e736520436572746966696361746520657863657074206173207065726d697474656420627920746865206c6963656e73652061677265656d656e74206163636f6d70616e79696e67207468652041646f6265204163726f62617420736f6674776172652e301a060a2a864886f72f01010701040c300a020101030200b70a0101300d06092a864886f70d0101050500038201010065783dc2e9ed8b816ff38f5f7734b6c2fc4492cca9443ac11b13295ca9c52805049668ead31e16567a5065aec05e0eb231050b6ac645973c6d065cad508da6f8e64e0758d8773425dbf606515c31f89500293f34880dbc1485cad8a59d5ae7466e5bb20a1cc27426c42f47e5b67acec2d9f6107efcf77a08a5d065791b0770d455d1a3885115f406130ea74d0c114714d7798ac37c3f845081ca97cf884e004ce913b407c4f61981d59bdda26300bd616547b5adc4371396f842be7bc3424c1f79327b8ace83909d1da99abb186a015b9d39d88f590082d1fb10d31f0d67c41a85de7e353e4135fc686fb47d1cb5215fc5024abe8920831a15df001800c464eb308204a130820389a00302010202043e1cbd28300d06092a864886f70d01010505003069310b300906035504061302555331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564311d301b060355040b131441646f6265205472757374205365727669636573311630140603550403130d41646f626520526f6f74204341301e170d3033303130383233333732335a170d3233303130393030303732335a3069310b300906035504061302555331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564311d301b060355040b131441646f6265205472757374205365727669636573311630140603550403130d41646f626520526f6f7420434130820122300d06092a864886f70d01010105000382010f003082010a0282010100cc4f5484f7a7a2e733537f3f9c12886b2c9947677e0f1eb9ad1488f9c310d81df0f0d59f690a2f5935b0cc6ca94c9c15a09fce20bfa0cf54e2e02066453f3986387e9cc48e0722c624f60112b035df55ea6990b0db85371ee24e07b242a16a1369a066ea809111592a9b08795a20442dc9bd73388b3c2fe0431b5db30bf0af351a29feefa692dd814c9d3d598ead313c407e9b913606fce25c8dd18d26d55c45cfaf653fb1aad26296f4a838eaba6042f4f41c4a3515cef84e22560f9518c5f8969f9ffbb0b77825e9806bbdd60af0c674949df30f50db9a77ce4b7083238da0ca7820445c3c5464f1eaa230199fea4c064d06784b5e92df22d2c967b37ad2010203010001a382014f3082014b301106096086480186f842010104040302000730818e0603551d1f048186308183308180a07ea07ca47a3078310b300906035504061302555331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564311d301b060355040b131441646f6265205472757374205365727669636573311630140603550403130d41646f626520526f6f74204341310d300b0603550403130443524c31302b0603551d1004243022800f32303033303130383233333732335a810f32303233303130393030303732335a300b0603551d0f040403020106301f0603551d2304183016801482b7384a93aa9b10ef80bbd954e2f10ffb809cde301d0603551d0e0416041482b7384a93aa9b10ef80bbd954e2f10ffb809cde300c0603551d13040530030101ff301d06092a864886f67d0741000410300e1b0856362e303a342e3003020490300d06092a864886f70d0101050500038201010032da9f4375c1fa6fc96fdbab1d36373ebc611936b7023c1d2359986c9eee4d85e754c8201fa7d4bbe2bf00777d246b702f5cc13a7649b5d3e023842a716a22f3c127299815f63590e4044cc38dbc9f611ce7fd248cd144438c16ba9b4da5d4352fbc11cebdf751378d9f90e414f1183fbee9591235f93392f39ee0d56b9a719b994bc871c3e1b16109c4e5fa91f0423a377d34f972e8cdaa621c21e9d5f48210e37b05b62d68560b7e7e922c6f4d72820ced5674b29db9ab2d2b1d105fdb2775708ffd1dd7e202a079e51ce5ffaf6440512d9e9b47db42a57c1fc2a648b0d7be92694da4f62957c5781118dc8751ca13b2629d4f2b32bd31a5c1fa52ab0588c8308204ec308203d4a00302010202043e1cbdcc300d06092a864886f70d01010505003069310b300906035504061302555331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564311d301b060355040b131441646f6265205472757374205365727669636573311630140603550403130d41646f626520526f6f74204341301e170d3034303430323138333834355a170d3233303130383038303030305a305f310b300906035504061302555331163014060355040a130d47656f547275737420496e632e311d301b060355040b131441646f6265205472757374205365727669636573311930170603550403131050726f6475637420536572766963657330820122300d06092a864886f70d01010105000382010f003082010a0282010100a65e1f5ab78fb8f13a179a13566af92c2a73a9c30911ecc9b51cff8e0a08bbe6aa5747ee18b44a871c780c1d2ccfe6cc52121cfec6249d46796ec545af57bfda8715aa7ed438e605fa2abbbbcca4948d1b0dfe0f66411b8110af2de2ec409ca8c87cd7580a1fea9d613ce115585285ddb059295986d91adfbe90edceece16a2d006e1ecfb850c625164c7c0fd72b4a5fa186593625b54cfc5de1f27cf4829fca97efd6e416473a16f6fffa5e8600a40b9caab4cd815e12a0960241e7c1f94d56b39e71c54dcb4864ac0ee2764f436444babbdaba633c1c1c17e76b73e9cdc7583a60409071e2be8a80d65ed98ab3c124fc6442f5daab1cf1c21cd1b12359c1cd0203010001a38201a4308201a030120603551d130101ff040830060101ff02010130570603551d200450304e304c06092a864886f72f010203303f303d06082b06010505070201163168747470733a2f2f7777772e61646f62652e636f6d2f6d6973632f706b692f70726f645f737663655f6370732e68746d6c30140603551d25040d300b06092a864886f72f0101073081b20603551d1f0481aa3081a73022a020a01e861c687474703a2f2f63726c2e61646f62652e636f6d2f6364732e63726c308180a07ea07ca47a3078310b300906035504061302555331233021060355040a131a41646f62652053797374656d7320496e636f72706f7261746564311d301b060355040b131441646f6265205472757374205365727669636573311630140603550403130d41646f626520526f6f74204341310d300b0603550403130443524c31300b0603551d0f040403020106301f0603551d2304183016801482b7384a93aa9b10ef80bbd954e2f10ffb809cde301d0603551d0e04160414d0a904d3876d28c7afb863ddaeec4acec44ffef3301906092a864886f67d074100040c300a1b0456362e3003020490300d06092a864886f70d01010505000382010100acaba2d69e9e20f5b36876f20c8a5b4aa3d33790faced79c799634416edd8353fc1b6a88d4dc44fd27706800fa07d0950174c32c71219c0fe782a674dbcf9a0d50008831d6670708c551612d2496e3d91da39afba749103927398862a5ab00777facc5645625aceb900bc0c88c8a2d7fea0f8508371f7113573ec3173a34f58dcb2490e9a685427cf97b78d8144c7c15cde4d4c6816ca4f3bca2db58552988e63f91dbddcf829219113b1ff301368a26a71384a21a7a361be6526c9b4e06d67fc40f4278cb022620db2d9821b8d0c87217df5e318495da44c647f5ef2d3319770e1072bf79ba59a667ad15c0c716e710f95649873a242bc5844307534d7647993182010b308201070201013065305f310b300906035504061302555331163014060355040a130d47656f547275737420496e632e311d301b060355040b131441646f6265205472757374205365727669636573311930170603550403131050726f64756374205365727669636573020208ea300906052b0e03021a0500300d06092a864886f70d010101050004818067d6cb11686c464b41e5c355af9acdfcdc7ba0f0f9d5d79fdd33a978fcbd0d82cefd727875d87949f30dd2c5cbe877155c8acc43b020a544da58e0f43455c2b5aa0ccb665dd97b739c851d8d19155ec841db38e31d7c062e9a442bb88f79f99ed193a72eade19e3746b80fb1d52f5acd43dc877edd7f75679df036d6191491e5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>/M(D:20110928085842-05'00')/Name(ARE Acrobat Product v8.0 P23 0002337)/ByteRange[0 150 9684 146274 ]                /Reference[<</TransformParams<</Document[/FullSave]/Annots[/Create/Delete/Modify/Copy/Import/Export]/Form[/Add/FillIn/Delete/SubmitStandalone]/V/2.2/Type/TransformParams/Signature[/Modify]>>/Data 35 0 R/TransformMethod/UR3/Type/SigRef>>]/Prop_Build<</Filter<</Name/Adobe.PPKLite/R 131101/Date(Oct 22 2006 23:36:05)>>/App<</TrustedMode false/OS[/Win]/Name/Exchange-Pro/R 524288/REx(8.0.0)>>/PubSec<</R 131102/Date(Oct 22 2006 23:30:44)/NonEFontNoWarn true>>>>/Type/Sig>>>>/Metadata 102 0 R/AcroForm 36 0 R/Pages 31 0 R/Type/Catalog>>endobj37 0 obj<</JavaScript 38 0 R>>endobj102 0 obj<</Subtype/XML/Length 22107/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c316 44.253921, Sun Oct 01 2006 17:14:39">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:stMfs="http://ns.adobe.com/xap/1.0/sType/ManifestItem#">
+         <xapMM:InstanceID>uuid:948b4f08-94ac-401f-8295-7e42820b856b</xapMM:InstanceID>
+         <xapMM:DocumentID>adobe:docid:indd:c36e8153-5dd2-11df-aee6-e063e2f5e341</xapMM:DocumentID>
+         <xapMM:RenditionClass>proof:pdf</xapMM:RenditionClass>
+         <xapMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>c36e8152-5dd2-11df-aee6-e063e2f5e341</stRef:instanceID>
+            <stRef:documentID>adobe:docid:indd:44b426d7-5f34-11df-ab29-dd43008c8eaa</stRef:documentID>
+         </xapMM:DerivedFrom>
+         <xapMM:Manifest>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <stMfs:linkForm>ReferenceStream</stMfs:linkForm>
+                  <xapMM:placedXResolution>72.00</xapMM:placedXResolution>
+                  <xapMM:placedYResolution>72.00</xapMM:placedYResolution>
+                  <xapMM:placedResolutionUnit>Inches</xapMM:placedResolutionUnit>
+                  <stMfs:reference rdf:parseType="Resource">
+                     <stRef:instanceID>uuid:e20c9ea5-f962-4a54-be12-984d39b9be9c</stRef:instanceID>
+                     <stRef:documentID>xmp.did:1960C1FE5126DF11B640F224D58AEA43</stRef:documentID>
+                  </stMfs:reference>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stMfs:linkForm>ReferenceStream</stMfs:linkForm>
+                  <xapMM:placedXResolution>600.00</xapMM:placedXResolution>
+                  <xapMM:placedYResolution>600.00</xapMM:placedYResolution>
+                  <xapMM:placedResolutionUnit>Inches</xapMM:placedResolutionUnit>
+                  <stMfs:reference rdf:parseType="Resource">
+                     <stRef:instanceID>uuid:711e592d-34f2-11da-ae19-9d5550c76391</stRef:instanceID>
+                     <stRef:documentID>adobe:docid:photoshop:711e592a-34f2-11da-ae19-9d5550c76391</stRef:documentID>
+                  </stMfs:reference>
+               </rdf:li>
+            </rdf:Bag>
+         </xapMM:Manifest>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xap="http://ns.adobe.com/xap/1.0/"
+            xmlns:xapGImg="http://ns.adobe.com/xap/1.0/g/img/">
+         <xap:CreateDate>2010-05-31T10:00:18-05:00</xap:CreateDate>
+         <xap:ModifyDate>2011-09-28T08:58:42-05:00</xap:ModifyDate>
+         <xap:MetadataDate>2011-09-28T08:58:42-05:00</xap:MetadataDate>
+         <xap:CreatorTool>Adobe InDesign CS3 (5.0)</xap:CreatorTool>
+         <xap:Thumbnails>
+            <rdf:Alt>
+               <rdf:li rdf:parseType="Resource">
+                  <xapGImg:format>JPEG</xapGImg:format>
+                  <xapGImg:width>256</xapGImg:width>
+                  <xapGImg:height>256</xapGImg:height>
+                  <xapGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4AE0Fkb2JlAGQAAAAAAQUAAipY/9sAhAAKBwcHBwcKBwcKDgkJCQ4RDAsLDBEU&#xA;EBAQEBAUEQ8RERERDxERFxoaGhcRHyEhISEfKy0tLSsyMjIyMjIyMjIyAQsJCQ4MDh8XFx8rIh0i&#xA;KzIrKysrMjIyMjIyMjIyMjIyMjIyMjI+Pj4+PjJAQEBAQEBAQEBAQEBAQEBAQEBAQED/wAARCAEA&#xA;AMYDAREAAhEBAxEB/8QBogAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLAQACAgMBAQEBAQAA&#xA;AAAAAAABAAIDBAUGBwgJCgsQAAIBAwMCBAIGBwMEAgYCcwECAxEEAAUhEjFBUQYTYSJxgRQykaEH&#xA;FbFCI8FS0eEzFmLwJHKC8SVDNFOSorJjc8I1RCeTo7M2F1RkdMPS4ggmgwkKGBmElEVGpLRW01Uo&#xA;GvLj88TU5PRldYWVpbXF1eX1ZnaGlqa2xtbm9jdHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4KTlJ&#xA;WWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+hEAAgIBAgMFBQQFBgQIAwNtAQACEQMEIRIxQQVRE2Ei&#xA;BnGBkTKhsfAUwdHhI0IVUmJy8TMkNEOCFpJTJaJjssIHc9I14kSDF1STCAkKGBkmNkUaJ2R0VTfy&#xA;o7PDKCnT4/OElKS0xNTk9GV1hZWltcXV5fVGVmZ2hpamtsbW5vZHV2d3h5ent8fX5/c4SFhoeIiY&#xA;qLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMBAAIRAxEAPwCbeU/KflW58q6L&#xA;cXGi6fNNNp9rJJJJaws7u0MbMzM0ZJJJ3OKpmfKXksGh0TSwR1H1S3/6p4q7/CXkr/qy6X/0i2//&#xA;AFTxV3+EvJX/AFZdL/6Rbf8A6p4q7/CXkr/qy6X/ANItv/1TxV3+EvJX/Vl0v/pFt/8Aqnirv8Je&#xA;Sv8Aqy6X/wBItv8A9U8Vd/hLyV/1ZdL/AOkW3/6p4q7/AAl5K/6sul/9Itv/ANU8Vd/hLyV/1ZdL&#xA;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&#xA;oSEQ2F/HyciTYcnUVPcjFX//2Q==</xapGImg:image>
+               </rdf:li>
+            </rdf:Alt>
+         </xap:Thumbnails>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Adobe PDF Library 8.0</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobj36 0 obj<</XFA[(xdp:xdp)100 0 R(config)25 0 R(template)26 0 R(datasets)27 0 R(localeSet)28 0 R(PDFSecurity)29 0 R(form)99 0 R(</xdp:xdp>)101 0 R]/Fields[21 0 R]/DA(/Helv 0 Tf 0 g )/DR<</Font<</Helv 20 0 R/ZaDb 98 0 R>>/Encoding<</PDFDocEncoding 19 0 R>>>>/SigFlags 2>>endobj31 0 obj<</Count 2/Type/Pages/Kids[45 0 R 1 0 R]>>endobj45 0 obj<</CropBox[0.0 0.0 612.0 792.0]/Annots 46 0 R/Parent 31 0 R/Contents[62 0 R 63 0 R 64 0 R 65 0 R 66 0 R 76 0 R 77 0 R 78 0 R]/Rotate 0/BleedBox[0.0 0.0 612.0 792.0]/ArtBox[0.0 0.0 612.0 792.0]/MediaBox[0.0 0.0 612.0 792.0]/TrimBox[0.0 0.0 612.0 792.0]/Resources<</XObject<</Im0 83 0 R>>/ColorSpace<</CS0 59 0 R>>/Font<</TT0 67 0 R/T1_0 68 0 R/C2_0 69 0 R/T1_1 70 0 R/T1_2 71 0 R>>/ProcSet[/PDF/Text/ImageB]/Properties<</MC0<</Metadata 96 0 R>>>>/ExtGState<</GS0 61 0 R/GS1 60 0 R>>>>/Type/Page>>endobj1 0 obj<</CropBox[0.0 0.0 612.0 792.0]/Annots 2 0 R/Parent 31 0 R/Contents 3 0 R/Rotate 0/BleedBox[0.0 0.0 612.0 792.0]/ArtBox[0.0 0.0 612.0 792.0]/MediaBox[0.0 0.0 612.0 792.0]/TrimBox[0.0 0.0 612.0 792.0]/Resources<</ColorSpace<</CS0 59 0 R>>/Font<</C0_0 16 0 R/T1_0 70 0 R/T1_1 68 0 R/T1_2 17 0 R>>/ProcSet[/PDF/Text]/ExtGState<</GS0 60 0 R/GS1 61 0 R>>>>/Type/Page>>endobj2 0 obj[18 0 R 13 0 R 14 0 R 15 0 R]endobj3 0 obj<</Length 3381/Filter/FlateDecode>>stream
+Hâ¥W[o€8û∑¡ÍWhﬂú≈X°ÓvÎÿI—¡d∑≥6êáÈb°»t¢VWó§˘Û3KâÁP$%;ÓLã¿±LëÁ˙ùs>~6àIÃ¿vÃpÓò%5ÓÃ‹∏⁄ÁÀ51„ $›üY≈πq˛ñ-=T∆˘∆˛1ms≥3f›€ôÈ:ñoÜ±Ï 07ôÒ€ƒ∂Ã≥©3õl¢Oî?ΩM…üˆ¥Êu¡ø£¸Ö?§ILÛän˘Ø'Z”2…£2âræ≤+@ƒ6âÚ¢J* GÍíFuFÛö©ˇÔÊgÊ‹‘±lﬂ‹¨òMÿÙ>z—M™‡Õ}í¶¸)A’Mö˛§i{åûŒçéãlü≤U˛´¢qù9Óh]˛UÏ¿ùGÙ0N£$A»¿ΩÕ?ò[.∏u#l.özLô≠)ÛNW÷>˛áf4ªß•öª*y»ı¥á˛.,úxL¿Ê£qæﬁ≥ê\\ú/‚∫â“˝Rõìﬂˇ¯·«≥ÀÀ´’“4lÀˆú6[c“∏æeã-¿∫Ï-Í:äuU[ZGIäà)iLì}˝aR}8ÁJ¸NXVDRü
+5’ì˙ësˇ
+ÿî⁄¡OîÓ!¥òÒ˝ãÿﬁ‚‚9∆Â∂ÇTN;Ô≠[ÊØzoô∫Ñ‘v‘`-Õî
+ç~”È;îçøa6§“ë“·±B'‹¿;Z1®Áæ< „¸.gab©%≥∑+Úì4O[%,éØaARÓ¬EO€b·}Q÷—(^<—º°ﬂPÔ]íÁ…û>@+∏Ω‚ﬂP!Ó[˛@6>dµŸ'5Ä§ﬁE5by"%M≤˚¶¨h€…7ü¡Ø}Yƒ¥™T4H`®‘ÊÖ≠àı´RƒÎﬁáñ◊TI.dn£ó Í{Ã2¬ﬁ“`À√ÏÈåê©?≥ßƒüµËh&∞´KÚ]Òœgé†][Ãx±—–õ¨üv∞Ôk—ΩhxRâ¥a‡\oå_˘@[Æq†≠óˇ2ÀÕ≥Èô∑¶òmNÿfﬂ	˚rMﬂ-oòl™±…Ê∂„qm|˛äâπ$√Ii˙lN∫ŒºõìÑÑ!ƒæd6≥ÆMà∑büÄ}§}è?ãæÀ|üoÏs#mh˚Ï8€H|&÷_»bÿ≥ ÿpﬁ5É÷u⁄∆Ó%Zu-øAº´øp∏˝û?‚§ﬁ∑‚:|ëQ±Øª"ã∆†»õKù/|un0â÷ o,LòíÓ@†˘4HM¢ˇ|}à·A+}à]˜€ì·h¬“◊£‡,tÛB«\ä Î	D1w¶á¡Á⁄˚Ö∞uæ—\Ùk˝¶6ƒs}Ûª‡÷À ò*å\≠<Zà
+Ø:∆‚Òz≈cãÃ˘Î‘i u\Ùèﬂ&≥µ≠˚R5éŸ{z[XÙÈ8ò∂≈ë¢VC òîÃ(v:_Z?ñ“Üôî,ê°§`°w8* ùë˛XUz/Â\™⁄X‹YÔv‘ŒoY¨j¯≈-z5j}ﬁÙ)Ì§J´£g6vn
+ÿÙ®9Ö≈kFNó.ê¬‰[∑•í‘sWE£E51û±Î>Kùà√´†¿U%	µÿ‘é’jßbu &πœ¯R˙H:Õ@@≥⁄m1R[ÏP7£'éO§—éÎ…ÅÙ:˝∏ò_xÚäFΩ F;êlì√àÿ`¢À[…™˚˘∆F¬∆È?¡˚@{ïôu÷T@9Ô≈Ω>Kjq'{NÍG§ﬂÈIµ Ω„ˆéî¶QÀf9Yï8„îóR}¥Ô◊5 ¬±¯`Fùë.:¨PâËúƒá…C√Ø1\‘¬XyF∑:œ`Ÿ¨˙›"(*¯}‡∏Qãﬁjl·C -G7€“3¶+˚X‡N¨r¨8lπ8fzkÛzÍ<¶[Â/á8›p^wEôk§»swl§"√ı†KZ¯ or|»®ZVzG>‹R)‡∫e'ÊÏ(Øî.`6QR°uƒÄX∂Áq`ÛÓ8Ö%Ëë€∂GJMmuı#4 }ë&ÒãevÌŒ	¨ ¥M◊µÊÅÕE¸ª‰˚v—8Yº9”*rbOgA0uùÈÚó≈ª[ΩWã◊Œ‘wº†}{Ω1~eÕuMÃ∏2Yâ:›ø∞˝Ô⁄¶Y≈πq˛vmõï·Ñ≠ﬂe_Æg˙~h˘¶ÌYa‡ô%5v∆ÁÆí€1√π”.›ôπqµÈVâEZQm¯l>õøf_Æ√2hXÃFsì1óﬂe˚¢¨£º)¡$/jZqüπŸ Ì∏akÕ◊Û≠yË|/\onƒ„‹=Fı«q*Ó@\<—ín∫p»¥ıI¶ıêúu´≥÷†–gbùô∫`≈9ú¶ÄªËÄUî$„ßπ@kI£:£9,ó4¶…ŒˆmS&˘ÉkZ&≈VïÚR4•z˛‹Ï◊öà,˙ídMÜº"ßªÙGY—‰50Êø√˝ó*ÇÁ@®Öc%E˚´}ëW…}JEﬁË|cÙz{®°¥}Ç\˜ùÏ§˚Ü|Wı¥·t§©AèGÒGYùtuÈBà#˜∑$.Ì}ø≥x56Ø{„æü+c©¡À€‡ÚÁ∑<ÌÜ|mtÄ.Hœ∏o§âß_TQ»ÍÆ˙0®√sF˙[ã«ü’YºÄS«awßsFFh.D	k$∞ T«h…‘385ë»Å§Ë`ñë©π=7ÒÙ¸™!ı•⁄c“„tj÷SÇÉ˜\•bëkı$yó±r4Î£8y]z∆ï´Ä£g’—w¥2Á=CÚë4dï7ßb‡+ãŸïiûﬁNu àå#–%P:bFtöŸôö¨ÙóZõl˜;D/tû®•˜)ç*ò9•˙X|/ç≈-≥Í'˛º,Úm“r»
+YìıäO≈Jù≥ÔÚ™)[Ê	Ûπàõ~vãqøkê
+li%ie)¸D¢Nˆl∆h©˚Ω®ì=w,ó¯ú®lòE˛$Ÿuk§`ÚDk∆-Ú®L¢¸ •:dÚüßT¶&%3Å¨<“ËKS!y*=™SHc¥˝ÿ6ï?Ç)âñî›êK≈iîà¥Ô%¥Ïq+∑fjƒΩ¬9@¢Ó©ŒÂz∏} ãÁîn`+Ú%q∂N2™ûçãå’jµt∫$„|PŒvO∞©‘˚°ﬂ∑˘2z¬≈/Ñ–ˆê
+xÚ ≠„F6 —ˇí*Wí6Ô'«–Ωl—ùsJ)§,Ùﬁ$Ã'“ “Ω¬:ﬁπP˜ıkm>axxŒ-»êf‰ r≤E∞ıâ2(éÖ•yúsJÔ~p]X`ò{êªé›,4c≈–¬i»ÙVö¥Ó%"‚(‡⁄‰äÅ¶Ÿ1 péÕ˛0‘7≤óˆïŒÉÀù-äı»—É9—80Ç˘∆J{)‡xÍ ;”ß|èòÕG„|ΩèrÛ‚‚|◊MînËó⁄ú¸˛«?û]^^≠ñ¶A¨	XÔ›l€É¸–ım˚¢]‰M∆ëÀ5–bÆÄ—9FîùSÛÏé‰Yâµ3v[@—ÂAûëÙ‰®à‹Œï*U©nêÓhÇ}Uë|ÉÆ|ÚnÂ¢mÆ7ﬂÆ|«˚⁄´ì•U4@Agëµk…0Wç^æE∞N&Ê+í),MÌñ±Âﬂ&7»˘Ëó®‡¿/"†í3í•H]£-R8Åò}Y‹ß4[Ge-hÕœMú¡F‚≈åm≈éE)ûsZ¢I»äû£J–‰\Â'=ÅŸó£@»së
+ı&∏Â÷J‹ìV≤=m,	™ÂÁUsü%uÔM$±2ç>Gy¡<(èE¶~W≥"Ø¡üñÏ°∑"[∂®2≠]Rb¸‚î%&˛?ÌU≤”0Dœ‰+|l-ˆƒÆ”#Kä∏Åäƒ.%©H®œxlgkZÇä[^g±ﬂ{^9˘WfO˛PŸ˚ÌØÏˆÆ?+{r≤#‹&è˙ü∞â≈\ß„÷8ûp≈Íä∆∞2òZØ‘∞%˛ÓÙ!euÕ¡à˚∞†	ÃøS
+Qç“√°lÔ%ÆZ∏»≈µ{-0WkExoÑ	‰IgDKQ‘d5tIW´ÌÚîOç¨SDïuAyõŒY.€“6√Ê/Ü{Y‰'9ù¬ÕE¯”[¶äH‹(˚2L≤ú˜ooõÓúBV›e»3®˜k]%ÇΩ\˜CÑ◊¶}|O∫”}˛ΩàÌÙ¢ésÉ¬0⁄£YÆ∏j[:–˙Ã>û∫æn≤$K¨mÛuZ|à◊û!s›‚£7-\„"ÀWyíy¸ºÃÀmÅnÒ3|—ÆÚ/ä{4ÈQ˝yuzá\;Q\ö‰LôR@OiV&·™dì¶53BV≥òà¶x÷^p—{P¬⁄\ˇq∆ª`Õ À‚õ‡:8æX
+ˆT†Í0új ¶îû ˘åÖ»±"Éw“‡3Lœ¡4›≤<8Ω°VŒXô‰f1n3i6Õ"¢n,B@µ”y4≥~/«¿G˙¿G/¶˙f~ÙJH€˜A}©Ì3U<°ƒf¨"…jI"ãòzWv˝ø®˝lcÜ"ç„ƒπD¢§ô…ÿØZ⁄%ÀEÉâ∆2¯` 3wôä
+endstreamendobj60 0 obj<</OPM 0/BM/Normal/CA 1.0/OP true/SMask/None/ca 1.0/AIS false/op true/Type/ExtGState/SA true>>endobj61 0 obj<</OPM 1/BM/Normal/CA 1.0/OP false/SMask/None/ca 1.0/AIS false/op false/Type/ExtGState/SA true>>endobj16 0 obj<</Subtype/Type0/DescendantFonts 8 0 R/BaseFont/XASIQU+FrutigerLTStd-Light/ToUnicode 9 0 R/Encoding/Identity-H/Type/Font>>endobj70 0 obj<</Subtype/Type1/FontDescriptor 72 0 R/LastChar 169/Widths[278 389 0 0 0 0 667 0 278 278 0 0 278 333 278 278 556 556 556 556 556 556 556 0 556 0 278 0 0 0 0 500 800 667 556 667 667 500 444 722 667 222 333 0 444 889 667 722 500 0 556 500 500 0 0 944 0 0 0 0 0 0 0 0 0 500 556 444 556 500 333 556 556 222 222 500 222 833 556 556 556 556 333 389 333 556 444 778 444 444 444 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800]/BaseFont/XASIQU+FrutigerLTStd-Light/FirstChar 32/ToUnicode 73 0 R/Encoding/WinAnsiEncoding/Type/Font>>endobj68 0 obj<</Subtype/Type1/FontDescriptor 74 0 R/LastChar 146/Widths[260 0 0 0 0 0 0 0 296 296 0 0 0 0 0 0 0 520 520 520 520 0 0 0 0 0 260 0 0 0 0 463 0 611 0 556 630 500 463 0 611 278 0 0 0 815 0 0 519 648 0 500 481 0 574 833 0 0 0 0 0 0 0 0 0 500 537 426 537 500 333 0 519 260 260 500 260 778 519 537 537 0 352 407 352 519 481 0 463 463 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 260]/BaseFont/MZFZSQ+FrutigerLTStd-BoldCn/FirstChar 32/ToUnicode 75 0 R/Encoding/WinAnsiEncoding/Type/Font>>endobj17 0 obj<</Subtype/Type1/FontDescriptor 11 0 R/LastChar 121/Widths[278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1000 0 0 0 0 0 0 0 0 0 556 611 0 0 556 389 0 611 278 0 0 278 0 611 611 611 0 389 444 389 611 0 0 0 556]/BaseFont/RZTYKG+FrutigerLTStd-Bold/FirstChar 32/ToUnicode 12 0 R/Encoding/WinAnsiEncoding/Type/Font>>endobj11 0 obj<</StemV 136/FontName/RZTYKG+FrutigerLTStd-Bold/FontStretch/Normal/FontFile3 10 0 R/FontWeight 700/Flags 32/Descent -250/FontBBox[-166 -250 1000 935]/Ascent 935/FontFamily(Frutiger LT Std 45 Light)/CapHeight 698/XHeight 515/Type/FontDescriptor/ItalicAngle 0>>endobj12 0 obj<</Length 314/Filter/FlateDecode>>stream
+Hâ\ë€j√0ÜÔ˝∫\/JöÙêL†d-‰bñÌR[ÈãcúÙ"o?…*Ãê¸üëe˝ñí≤zÆ\7AÚS„mÁl¿q∏Ép¡kÁTöÅÌÃtﬂ≈øÈØJÆÁq¬ærÌ†¥Ü‰ÉÇ„fx:⁄·Çïºã°sWx˙*Î$ıÕ˚Ï—M∞Ç¢ ã-]Ù“¯◊¶GHb⁄≤≤Ô¶yI9'>gèê≈}*fÃ`qÙç¡–∏+*Ω¢UÄ>”*:˚/ûÓ%Ì“öÔ&(ùÒ·’äDÈı12â“€<2â“ª42	q&ú1oÖ∑Ã;·Û^xœ|>0ó¬%ÛI¯ƒ|&√:?9˚…•VŒµÚµöy#ºa9{»•	?¸˛BnM
+˝5∑®µqú±ß‹ÕŒ·c‚~@Y¸©_ ô˘ón
+endstreamendobj10 0 obj<</Subtype/Type1C/Length 1502/Filter/FlateDecode>>stream
+Hâ|TkLWûŸ«,]ÌÉ…ÆôΩ*ZTEiP,™T^–Zó›AFaóŒ.ª`A,ıÖ¯ ©é¶¶—h™Ç÷ä/b±ZÖjmm0XÎ´V≠-ò∫&Ìº[”;>Z5ìú9è{Œ=ﬂ˝ŒΩ4•”P4Mõ3Ú≤rﬂö>2Y*ıàifV¶«1jä´»°F≠äÖV¬t ¿>ûà◊?©xØáõ˝‡Ô◊ŒdÍMîÜ¶>ùÍ*)óƒÖÖ4vB\\ë∆<ì„£PÃò11(—· Pfπ€#ªQä”ÓíJ\íÕ#8F£ƒ¢"î°&ªQÜ‡$ØÍ|Ÿ›»Ü<íÕ!€§≈»UÄf¢C( $5<M*µ/.∂πÌÖ¢Sp¢ƒÈQH(≥ï∫EØPTéäDª‡t‰)î\•—L—ÈÚîóD…ólR9ö^ú?#
+ŸúTl+G§IIX(í6%í$:ë]ê<6Ú_T*ânáh˜à.ß{ttrfñZd<rEìè≤PTEM°©döJ°©Yı∂Ü ‘Ry≈ís¶“®Ÿîõ:Kg—ük(M≤ÊCÕNMãÊ±v¢∂A{]Ø+”µËûÇ°ˆÑrˇMdƒ	m≠NY›;;∞öÅı∏ù√	–†án#|ä’l4ò˘œtH¿ƒfîìú™a’2"#™UÄË@⁄%î#&¬à	»∫öQ¡dı*ß’˙Lõû≤90'R∂˙+ßıÎ0NÎa©Ωiz<êa∑‡ƒS√‡~$é3˙‹WÕ◊#LÆÚßz°˙:h˝¶v0bÑ∞(¡‹˛ñ∂mñk_∏‚¨âLf J)«ö#ÃO0≥«áﬂÕ˙˝‹Mmç¸:Ü]≤ˆÉZ±Æ$à≠Äfı°ököÉ÷\”|“|¡ Q©ﬂ„±IÓ9<€⁄âª∏kw7ùÂ€˚äÇR'ÔÚ..œ∑Ã-¯Ùò’X’›øÙÄ€gÍ 3T b[a»\Á˛Æ€wvF%OìFéãqﬁªƒ≥ÿÇe¬∂ı¸:CVÛ∑æ6ƒ¥C8Ç¡È`¬1IÛúy÷¯õü√Ñ.ËÎßUêe¶Ö88«u‘<yŸryofÍÎo8ÅsÂf∫S-qÈ«oÆ∞Ç¬¿ålÄ3Ò¯I∏éﬂ|0:œl˝¨ï7nÿÓUb˝0§gôœ!`fØ@H8òïXˆ„`ÜÌ˛ŒphksÀûmÀñÀ<{e3hılw˝˚Bùhî>5¬:5r¯ÉëâWÒ“*^òµ§‘1∂?∫{Ì3yºõÿWÙŒmlLJ_ú+Ú5–ÆBB$Wˆat'IÏT7óI‡ûédÑΩX—[Ì˚7⁄[≠:’ª¢{L/6d[˛«œl_√∞W.b÷@"ÙêD ì)= 9˘ áê©û¸ÄB$Ë‡?Ò(ÖÉ#pËÓ ëüÓ¸z$qRlItƒ–íÓ[ºß{!èzŸÖJÛç\¿}«:&„¯ÒJ¬eÏ´\N )Ã-∂í6Ó_¬aˆ4DsØŒÉ:÷gîÅ D‡áx¡‚3ËÏ.;§3?÷¬@†yv€Œù´ñÀV∞ÿ]*+kóZ‚≥&Œ]°VoÉ`j0~SÂO*≥¸‰é®›§Ω}Ï6%L©„ÿ}€Ú7Õ¥ëáµVúï√ÃπŸK≈wﬂ€≤›∆≥Eaçû›∑¥ıdıW†ˇ˙˙X!WŒ˘Ÿ|ÏËñ≠{?™<LFá„U?zB—‹–ˆ‘Gá74ÏÊW=÷WWzV∫-9UáèYa9Ñ˙q(3`Û}ƒ≥âQÔàÔ˚è?•Yë9l∆uLäwàÿ5∑ŒÛ∞õÿW8ËT,/∂7ù8¨^“≤$ ¬d,ıÙˆı—õïF-åSs#»‘g-*»^T∂æ~	_©ØnlZŸd‘:`éZ![iPﬂ‹?–á<∆*π7M∆sdpÀÏ©ÿx"û;Á…P&Á„Ü¿S9ÿ(tm£a
+«˝#¿ øl
+endstreamendobj74 0 obj<</StemV 124/FontName/MZFZSQ+FrutigerLTStd-BoldCn/FontStretch/Condensed/FontFile3 81 0 R/FontWeight 700/Flags 32/Descent -250/FontBBox[-112 -250 1000 940]/Ascent 940/FontFamily(Frutiger LT Std 47 Light Cn)/CapHeight 698/XHeight 515/Type/FontDescriptor/ItalicAngle 0>>endobj75 0 obj<</Length 442/Filter/FlateDecode>>stream
+Hâ\ìÀj„@E˜˙ä^&ã YÓÆäA;/Ê¡xÊd©ÌbI¥ÂÖˇ~ÍÍÜå¿÷≠∫}™)Â€˝nﬂwìÀ¶°9ƒ…ù∫æMÒ:‹R›1ûª>[îÆÌöÈÛi˛o.ıòÂV|∏_ßxŸ˜ß!´*óˇ≤≈ÎîÓÓa”«¯òÂ?RS◊ü›√üÌ·—Âá€8~ƒKÏ'W∏ı⁄µÒdAﬂÍÒ{}â.üÀûˆ≠≠w”˝…j˛ΩÒ˚>FWŒœ 4CØc›ƒT˜ÁòUÖ]kWΩŸµŒbﬂ˛∑ÓÖe«SÛ^ß¨*ÒrQÿÕ¯ô¸^ëW∆À≈Ãv3.…%xI^Ç=ŸÉ7‰¯çl2ïgéGég≠G≠g≠G≠‰ ≤ÄÈÊ·ÊÈÊ·Êw‰ùq`/ΩÓ∞W‡^{Ó∞W`~@~P≤kµ¬~˝
+s9¬Aé–Y‡,Ãd
+ùŒBgÅ≥|Á#/‰ñº≥/A_ÚJ~Û<Á©ÏW—Ø“S·©ÙTx*=ûJOÖß“S·©ÙTx*=û+dñ≈b5“Áƒ`§lÚ›◊º6∑îlTÁœcûQLg◊«Ø/hFgU¯e ÚBÿƒ
+endstreamendobj81 0 obj<</Subtype/Type1C/Length 3130/Filter/FlateDecode>>stream
+HâTT{Tgü!ôIç¿d≤ò∏…®∞à-ûÆ */¥R÷∑+	â$ÇB -æ >P@ãV™Ì!H-≠Ua9ãà®Ëj+.-q]—≥∫Î÷¬Av7=eÔ‡ç{ˆõ≤˛—3ÁÃ˜›Ô>æﬂ˝›˚]öRQ4MO]µ)uSÊöŸ©b±Àëk_À tYÁ&Ê[ìù≤ﬁ$hI´î¶N‰Qâûï=K`‡ˆdâ	ª6uRk8D”ﬂ|ó\∏√#:rÌ.a˛¬ÖÛÁ/«∆æ,$Z-6!”S‰≤	ÈŒúBqG°hvŸ¨1Bb~æ∞Vv(÷⁄äl¢[>|Ap	f¡%ö≠∂≥ò'n“l´-ﬂbeuäXúìW`. ±;ú6ßê∏|é`+Õ…/.r∏m˘!ﬂëcsŸ¨ÇÀ.Á⁄Ö◊ŒBógáçl,¢YÙÀ,is≥”*ò=)⁄r¶HúN!«&∫Ãd}£XtY9.G°≥(f^jfñ$N∞⁄∂SM>JDÖ+(E	5ù¢"T4M≈P‘|öä£©Wi*â°“’T¶í⁄HSÛﬂ‘**É £>¢ÓQΩÑn•˝AaAÆ†∂†Äb±"[Òé¢YqM©T¶(Ω ˇ2&ÖyèeX€™“´™3™o’¡Í’Í}Í∫‡‡‡5¡áÉ“&úôm»ÇK»á!èvVvJO;iÚèÏTT*•ä±’Å
+‡uó¿aY∞ãYRÿ_˝∞á%HdV∫ÃÀ;î%çF⁄Uï%·Ìê¿eèΩ√s«◊c3ÃﬁÖ*FÉNå¶•€ÅR¿)åÁì@ø‚ F1]wÙ∆ŸÏråXÜaò©«Ã[÷ã∆nI¸Í∆Ú˘€®Ô¬8å—cÃ:åKBΩqòÌÖà[ôz»\aÀÅ∏’wèeî–∞B∞K°c”XÛ•/˛ù—‘T˙•*?wA´Ë÷IÇ±¬@0pﬂÉ ·zˇ∫á¯“+Î‹•y∆ZT1ﬁ≠MwW[mÈ”âBµi˝jeØﬁÇÕ˛p‚ìP°8	"∏¡Œzæ¨Ω´Ãg‡˛®|D∂∞qeù©Z≈ûØ˘Ê4ÑÍÅ]–çì„ÈŸc7ò˙sóéµÆ_uÆå[X∫ÿƒIÓYlı±∫*/âq≥ØhQRVvR⁄ñÜ£;Lrf5AK®ÜPs!ˇrìXn‡!SÕæVÇ¢Ó˝B⁄Üãø§3®ØJS	:R<}&*nÈ`"Ëp"áïˇﬂi6TB∏‰"	-Üâ»u¥‹#ŒâêÕuåΩ‹t±˘≤ëª—ÙyÛ’˝?ì|®M^SZ^b¨Aö9ZÒ¯%√/ÿ”∑:ÕNãâÛòÃõı‹£ﬂ`OÆóØxJàÅÅQÇøF&s¡ÀsÉ√0@†?∆Ê.zyà`±x,Éë·Ôzû¡ÄñÌÑx~Õj⁄ˆéJFÈ0U!ÜﬁÌ¥î≠2LãÌÉtH“7⁄sV‹’h:*Ê»õkº)¥"çÛ0≥Å¨`øŸ]{¨—§uÂà¥ÑÓ-ºKbıÍ`ÎHµXÿoæ&†”Ñ‰LÕüc!≤'Á‚‹—i f5;+˝`ÒCÜüÓ'M‘Øì&˘±,‡ˆ£2†‹P:IÆ◊¸∞ˆÖπÍ‰˘1÷B±G«Ÿ∏1
+-%≤‰º∞∫9x¥c®≈ÃÅ‘≤‹3ﬁ’wà’›∏ñ’¿ï„ni ‘ÙmPKÈ†Vå±:P›*gÍò},FJuf>œ ’,,0OXHñd¬5Ôç#‡g‚U6H*<óT˜õmKó⁄≠ãMò 'ZhÏ#<‹y ëpüÄ[»˝˙Ω#íwÑ‘#ŒCÑR¡œCVèÔ¡ÉûTÃ¬¨©ã≠Añº73Y4B,Û∑K7øáD=ƒ)@a˘¶ ÖÒ ê¢åÑ‚Ω~©÷Owê¿F¯˙qﬁ›|eÔ-L˘w/L±∂/º`Jhc¨ˆ˙À˙Kgö˛Ù≈YœÓS∆öˇ05%ÎΩâé\ÅaÛœg˘l¶û\¶€q≤x£~Ÿ∆¸ÃÂYü|(5o‚…X&Áºå*¬<`eƒ≤ö/«π>,]UÄSr;í∂å
+4À§Nìö4í¸˚*!Mn…·§•èç]‡6H^Ã%T…jñ;:Ó2Cˆàeßˇ DÀy{”‰ÊûÕrví|r=vñ?\zRæÇ‡«·'…3N#Oº„±ƒÛı'Æ~÷m¯Û«[6òJEŒG÷é¬Ï˛¨˚˝¯}€)S5ÀïâUbMâîlE˝ÔöZÙP¨~˚=åãﬂT¸∂›¯œuÃ€ëï∏9ˇÙ≈;7Fçµ¨Ê£Ú'?ˇ+¯ü@II¯uÖ5 u\óÁwŸÛY™Ì˚Û*Jç@≤Ë®˛†˙≥f˝v[}À∂˚–vÅf@|⁄*-Êèit≥Å› }zª◊w"-CJ_ONû5Øî¡°ßçü4¸û∑,;s∂ˆC–ŸõCMßvÓi0q-áFŒ˜ûkÎ˚V&.≈úâ?Î√X“yÓHÌI”è–∂Ω@@‡b˜>U´«“F
+ØHã∆xú—Ö–ﬁoioØ7 Ïÿ´™À‰T*º˚O∑Ë«f©∏¸*P∆w‚k_ÔßI3gâÒI…•_BàëT·	Lª?}H∑ë¡ïJ∆•î ì˘∑\πÆ•ÜŸˆÆ«&¯¸€ÁÙ†≤à‡åAìåsQˇïÜ⁄∆ˇÒYµ1mïQXÑ{/lÏ¶ˆ•$¥ÓV1f⁄Ht†ö,€»2¶an∞8	vBô6∏w·[ZlK∑
+%åáP†ê2óij‹†[ÜŒÃô‘ÅÀÌ‰c1’ÈπÕ€,æ∑∏-˛Ò«MÓyÛﬁsûsÓyûs8< #äÎéÔÊ¶G'ë1ñEz-›öÂZ^æJ {W…P”ó}"€ø0Á˚∆{Œ¥¥tq»k˝ïBøYèÎO´0U¥ÎuuBr“"#ÒTLıì¥√¶I⁄/ì¡6M\Äá˛¶jn¢Ø8ù√Wâ}á˘≥ËgïÒ~ÅæÇ3¿e,£YÚ•ù'√ç%óIB'Ì‰‹∏&qöIK˘ÚÓ @iËíú\B¬u—Æ@Ó†áIˇ†±¥∫Œb©„ê–¢°ê€ÿÁhV˝Ì∏õ’‚ÉÂè›‘-ôÆÑl!òÎ€,4$·6
+i|\D¶kBDzøKƒΩÎ¸#tÅÈ∫•åó5~πá8Ÿ∫˛ƒ<ç.z$ßsÙÃ‰‘ó}˙=˛Q≤ôˇ⁄7x™pGdÍñsC’•ó∑©vhiµëFÉ£’¡ë(f¡\™SÆW
+ıomë˚ˇä˚JQN…Ié¯Ò?‰gG“ñ¶£z%ÈŒ%Ä%“31ê'©Jt({}ÛÛ=I……'_LKÓ.r8&ó õwˇ>l∫%†√õ¶0ªÎ8∂¨Ñ#>ﬂ~’˜àé_„yˇ¬Lk{.¸†ÇoÔA:l9 ’=Móüœ´4ZsGå]!8ÇIØSíç$SÅ÷n›¸æwﬁòx|˜N≠Ì*Ω˘ªö≈)$g–ç¸ /ü%A:g•î]4∫≤:ÌúËÏ0:8‘	ë∫bjj67™2éÏ’VKÂvF[ùéxòˆ3È=—+çº„›ä˙AOı5DÃœ¨ÃÍá˜\Pgüß
+˚+∫ÜîŒOz/π«ÍàT#˜ÈU
+y€jsª≥T8lÁk;∂œOñ®'éRÓ≤vÅWjãÍﬁy3w–∆
+•ê >_òü4âü4gj“OÿE„'&Óûsÿ>ÓÂñò™ö+TÖ¸ô)5Ù˝·KÑDÀﬁ£Xk£_≥,¶ÚèˇÆ®%∞Eg	˚≤Vå›‚‡*±Ô0[\€ jaÙ‚gür≠&K+ÖÑ2À1SYH6˙[GFïlÒG∞a´ƒ(yªXÄéAZ,<K√K¢]“st.>O‰=Aåß$FH¿d%‘Ûaf1?‹Kˆö»Y¡9l¶…6‚$
+Z/›L¡©€!U⁄w ◊Sl..ø@|òUÃá8	mô¡ÓÜ¸™U't¶8°∆j≠Q7Ω@5˜5ç©nÓπqVoà	∆s¡8Ç≠od∑„∑l¿€ip∂¡ìm¡ßòZ{ €éﬂ∂É`èÑ·SŸÇÏQæ €häf°3FÏP¸#¿ ≠T∂¡
+endstreamendobj72 0 obj<</StemV 64/FontName/XASIQU+FrutigerLTStd-Light/FontStretch/Normal/FontFile3 80 0 R/FontWeight 300/Flags 32/Descent -250/FontBBox[-152 -250 1000 911]/Ascent 911/FontFamily(Frutiger LT Std 45 Light)/CapHeight 698/XHeight 510/Type/FontDescriptor/ItalicAngle 0>>endobj73 0 obj<</Length 525/Filter/FlateDecode>>stream
+Hâ\îÕé¢@Ö˜<E-ªî∫uoõ[ªÛìqÊJõ§Ç∏Ìßß”ìåâÚ!\Œw*)ÚÌ~∑Ô⁄…Â?«æ>ƒ…ù⁄Æ„µøçut«xnªlY∏¶≠ßœ≥˘∑æTCñß·√˝:≈Àæ;ıYY∫¸W∫xù∆ª{ÿ4˝1>f˘è±âc€ù›√üÌ·—Âá€0|ƒKÏ&∑pÎµk‚)=Ë[5|Ø.—ÂÛÿ”æI◊€È˛îf˛›Ò˚>DWÃÁK ‘}ØCU«±ÍŒ1+È≥vÂ[˙¨≥ÿ5ˇ]W„ÿÒTøWcV∏y±HáƒKÚ¨d?ìü¡+Ú
+º%o¡;Ú¸J~øëìLÈôÂëÂôÂëÂrˆd≤Ä9ÄÈÊ·ÊÈÊ·Ê7‰òππ¬\AÆ0Wê+Ã‰
+sπ¬\AÆ0Wê+Ã‰äëLÅÉp}Î#Ù¯◊J∞V¬µ¨ïp≠k%t8:8zxzxzx˙¯(;*:*g≥ Y≈¨rV1´Ï®Ë®Ï®Ë®|¶ŒœdGEGeGEGeGEG}!øÄŸW—WŸW—WŸW—WŸW—◊ÿ◊–◊Ëo7˙¸ç˛£ø¡ﬂËo7˙¸ç˛£ø¡ﬂËo7˙¸W»*K¸ø·=ÈÄMÙπ[∞ù“Æw_{µæçc⁄¶Û´aﬁüÿômøﬁC?∏4ÖoˆWÄ c‰
+r
+endstreamendobj80 0 obj<</Subtype/Type1C/Length 4332/Filter/FlateDecode>>stream
+Hâ4T{Pgüaôoayå√È.ÓLDàè8Eà+à`!(hT|ÚX`≤, •ë$í:A#¶Çzâ•‰‘œ≥|«1:ù;¡àxXrΩC-{÷∆ÛfIÓüÓÔQ›ﬂØ˚˚ıè¶\](ö¶u´M…ÀWŒJ¥ïŸ-˘f[ ä{ÓÏK~Å›yÕÀ:Zˆwï<94‡Óó€_2–Á-”æWÿZ? Ö¶Gˇ_\RisFøèäå4(6*l‹ÜÑ9aasSnq∂Y»®,µõ∑î
+…÷úb[I±-ÀnŒLEEB∫3∏TH7óömÂŒ√ˇ£,•Bñ`∑eÂö∑dŸ6≈yBíŸík. 6€ú◊	∂≤úÕ[≤Js
+,V≥U0-6Ê≠9Ee•ñrsQ•Pd…1[KÕπÇΩ¿V\ñ_ §X¨≈ˆ ≥≤»∂eŸ*Ö≈[≤ìBñ5WÿíU)( mÊ|ã”¶Y¨BéŸfœR|aôÕRök…±[ä≠•!°â+úI¬Ö\sE—J£(µäÚÚ†&Sîé¢Ñ	‘lWjÆIQ'S_STÇ“kj)µå⁄J´hÅ^ID7“ÈÎÙ?\.….ªå™¶´v™πñ∏÷πv3Ô3W»íOéëv2¨6©‘€‘ß’◊’Ø›¬›Í‹D˜ ˜b˜è‹ª<‚=yOHö–0·ÆÁrœœcûΩ~Á5”kü◊ﬂ5:ÕvMØwÄw°˜	Ô_|&˘d˚Ï˜πÁK˘÷ãµÕÚH3≠ÿiÕ™ZWπ∆±l¨Ü¿nºŒaÏc`à†Äﬂs‡‹å’´«»ÜÒ5ƒ°≤'ÚUŒπBÁNÉö’µ}ÚÀ
+?È] ±˝¨UéT.ö4åe⁄€üà±\o_4—@EUã¸≤≈ØY˙DÇBÈ'ëÅõ≤'◊w°Ô,–⁄«—ó#ıloË¨Uo.∫Úˆ≈Lû	…èO¥®Ux‹Ô:~´Mˇc,ÛOÇÄcÆ˛ÌË£á⁄4≤`õicä>w-óôì∏9EgåmÓ˘·z«QûÌMáÓNÎ©7Œ$Gô6ßZıÊŸﬂ\”*®e;Xk+¸:AÀnbw vÆçÙÄïY@îKGM}°]˚P‡Ç¡°ÖàÓAüE¬qä1Fã1}¯ ßËSª™—Q√u°–É¡°≈à8^àÇ˛y S˙ b¥cÑ¿pB-XÈò™jA-◊N~VâFÄ*â>{TÁ°äÉ=Óq¢™Ì£˜™˚è7#>-w‰U–E0§*™‚$_:ÚòD¢©ÂAëní†KR¡◊é…ƒ$tC∑Ìä¬†Ìên‡vPqAºËä©õp%1¯Ê¡ZX{Úîrçõ`%¶Úö√ÂéT•¨cJ.oπù;≥ò'Ã+Jr§.UkjE˘æHÀönU≥ølÒ?–3üåÇ◊3-¯ÕiC&}qômµæ!Ö9y≠˘ãvù‘≤ a4Üéã-úaØíeÜÚƒLËÁnënp´Bœ7Ÿ∆5©ı«“˘ù…Lykkµ®\vhUg»æN›XºŸØ°	’À”vl]≠ﬂªÑil∫z‡öÆªø ˝qÍ˚æí(E¿<Q6Htc;4*œ»áçÀ¶é‡¿X8OÇyO≈iÚ;s	ﬁ≥åcìD0ãÙk*Î=JzMΩR¨Jﬁ†∞§ü1ø;_CmkêBzvfXfF√ó˘uÂ∑W´õu0„˘]Åâ∆üP∑“ZΩ”Œv.8?	zEÿ$“◊$∏≠ :YÕA`ˇø  LË˚MËíîíe˘¸.S[a$◊Ëœ]˛`«W¸ﬁÊ”ººz≥ﬂãQ¶/#œ‚|X &O‚FæKöΩ"!h⁄∫èn¥ˇõˇï~ó•uúí÷KÏ €uG>ÀÖﬁ~ª”¢g√
+mTfk"x-∏ÇgLóÑsÜSzv®„tO€Ä»õMHÎŸÆÙ]èÓ<;(ª£Éõù5?Ú ›ë˚«{ˇ¨øU¯§hÆñÌ¡6x∆u›9›ıCwÅ)>nCJë>˝∏Ò‹=Ì8saxúº∞XÆÁ¢çΩ$z,ÓWQÒh˝`IÔ¬ˆQâÌt∏p.^<–¢ÎlŸ`‚q.FÌƒ%⁄Ì’oÅ(Â«Á\õñπÊΩw◊)Hye˙M]∆™ƒZƒaë>◊—ﬂ-«t®‡\‰¿ÛQˇ≠”ó*E&·ƒôY≈ππKO·c.Öîß1-ˆÏ∆ı:‰CÒÙèj]¸Ûù'ø˙_G≤˜´∏§ÎÉ©O·-XÉIœ1´—Kô°dL/LÜjeö=oΩ¯+üJí2ë—a≤¿B<ò¿Ècîœ”ác(∫≈œX∞Ì√œÏ˘bÔÁº"Ñ
+#”DôÎPhøÉc{ˆ˚ﬂVhü∆¿s“çiL'¡éT&ñ¿“±U∂v2«(GEÿ%˙›ì†NZ+±œÔ˘O |æ√£¥Îsˇ®+|~˛˚A-hÖ3HÙM§1öªIÿÁ£/v†™¶⁄B¯xR'ws√ÑïoΩå™ô[Úq„"- OD∫Mazácw(?≤>[áEÄ3∞ ã`A…•ªıçg¯?àLiŒ¢ïˆ•L_H ”(LÑ‰¶ˆj˚%gïä>tãÙ=Iû®P|Ü√è˚Å0`–ÇÖ»Õ«L>ù$¶q†!∞bG`/lö”p7è&'1D8"BùHH™x!‚8"6@ù“¸ﬂ’’yÖY·˛)Æ∫◊%q∑ÓUkd’h}'àœà"àäç—"êƒ¡JRe¡G◊‡VEQão$ T"\Ç.^5^GD%jPÎÿsó≥ŒÙ\6∂÷ŒtvgÓ¸œÛ˛Œ˜?fZ˘±π}OÉÏŸ‡'C3ÿh£ıÌºC∆îZP‰ÄΩÕyYK&’’Î-Û«Æô˚é uÁW-∞ãyÁπ=±√Ûg˛èπÚ÷‚+"<√•ë¿ª„GrœY4˜ex%{ﬁo˝
+õ	'‡9|ÁâÒOnÙtÎF+ÏVGä:ßÉ0Y(ÉÇí	Æl¬◊!ñ[~∫IHâ‡Ö≤ïªÆ˝õº+Ô¸S‘⁄≤NùÖ‹ËI±~·¿#N›§Dg›OuvîuweÂ∫,§›%≥ºÓ»ùeêÎÏ»eøÓHbÕL®¿|WÊ)m\O5¬ÍI•ı	%_É¨¸FbI=&$+≠Ÿ<ºpµr-™Æ¬W[&è@áÜª=©¶Ö]VRdO;º–„¸ÏóË≥ç0˚%¯√¸l¢≤ÕäIFL2c(F—’£Ø·@4£y4}1p43òØ—'P‘:»ï58®Ür‘HÀPÛÑA◊_.Åºpﬂ1î…î&^Ï˛©Y√P◊œ˙;1¶’›±ßdQÇ°ª¬7≠B÷Pr∞8ÜMpu◊S`jŸ≈CÎÜü„
+Ó∫ äü¥öû€=õøªEv¸dÄn¡ß±ã	'R÷πÕ<#S◊ıtÍóñù^~…–ÈË%¬\¨ﬂ =?5∫z≤*cI±iãƒ∆Ãÿ¯•;˜è^"NÜ˙%ÿ√`7Á£I1˚‚M™ÖNùC…§c2IÒ◊‚Hàß n»∫°ªAÅ»o*îµç§|c8ˆµó…pú”Éd¯â{J£qb_Gp∑ë¨â4¶pèß’fUo{j*l∂√ªÓ∏õ%°JX¶x˚ùckJ≥äÀ∞òáÓ3kQ∂4-¡¡:yjÎi„ù‚9√≈Ø¨<æèìV‚(Q®ö]‘>êÆ©;` f´°è~∆:‘£9*fÔè‘$¸∂Ä∆T»¥™4Â;§Ytı‘»™¥z?â	UMŸ¸§íÍÖı‘¨/Õ øè/ÏÔ?kÃ◊b&4Ü3E„Z©7'#C_ÙJ ﬂññ£‡<¯#3õ¥6"â!vÀ.]π,Pç(√ïızAﬁî>ÁØF–;‡Ï}ªB`ÂÒúÇøã´œrÀì2Êëˇî$vë@ÁíÚÀJƒ∑’$BTCNQ,Œ}86f≤Ω≥Í˝çÿ?Ω°\FoËY_}‡B	aø∞,X‚Ö*óÚÙ≠≈¿H?ØcË;hPÇ™3˙&k5©>á?ÿaº]S.√ó†õ˙¥”;D›^f–c*xc‘Ñû8J»‡„ìµõOò<–ﬂÆmi˘˘Ë∞°&mœ›©J¨>≥C†ïÚµ~íº˘¨.£Ân·Œµ´∂ôÑ['¥‰ZSr,F|o-zÙì˙DˇÉ◊b≤Ï PªıçΩO¡Á?&Gá`ÁAÒDUXœyœü◊VT√ô4*ìØãùìˇ…ø˝¡Ucoq·á}◊T`üÂËÉ3¶oﬂï`ZŒ≠‹Wóˆ£∆û'˜VI¢€…öF	ˆJûç~ÏcéΩØó;F3a≠gx–%=ƒ°”˛8=≈‘ûÌ¯®‰Z`m:®ûRr√ô)˙í∫JÊ,Lu&™tçíP!§-ƒœıBEÊÊ¬u˚çèäŒ5ãJc∏Î
+?sM‹dÎíúúÑ¥˘∏è´∏r&R-∞ÕÚÎıP¿`#p˜Ü2j©\0√4L‰îËpﬁ◊o6;3HC•Gªi‰N≤,S˝w˚≠–‰\Ô/˘÷®´}FF∆D.2e≤KGÔå3¢f¡‰/,bÊN®∫¡€‚≥Ê%\	Jy°	ÑKgÂ¶˝”∆öë:Ûˆò◊æ%fØ$4® ñ≤;GüØd  J4Ú‡suΩßÕN%ôB≈√72¥Ì%£°∫({ßê¢XOƒ.ÇÍ©πâ éÅnÑAc∞ä&Ÿ|Œ>Ü–·ÏáUü©RMuò˙|ËAïJ	HóYﬂˆ”zL“Kp*õÖWŒø˘NY£GB»¬•ƒTÖ&[ßfí¢¡ºˇÆÓcjıº©Ó∑¸ö¢îÜbÖÍ·¿Læ–ö–ÄÔ‘ÂÕ #ã≈l<%1óFI¸?5È.¢Ëã´U_
+UGndèˆÉ◊≥Ì;2◊RÒlª»sV§Á,3Nö;s⁄"U˜∫_¬y[RVÍtÉˆS∑+À%ò${ñl’ßWT≠Æ26</SÀy$⁄¨è*v](≠»Xvƒ¥©Ü€Ω)≈8"(±Øàf»‹âùQ3ÁG~6{€ŒD“∆™V£|È-YM6í-∞≈vˆè~ÜﬂÛÉl!‡U\ú∑©¿¥∂ö[ïætÕüçü.˘ˆ;nÅ7ÔÜØ‹7YQ°|•∫	KY¿Á}ë˛Âπ'&êÀxÙ™∫Wﬂ÷~∑õ@[H\«Ø-œ:~Ã@‹Aéiø"_	Rï}á1°ÕÆ)jOÈ•L°'#åvÂr◊®«?Ãíoô∫QÆs£PÊ‹⁄ÏÂﬁk§Ω£ˆvèÓìÅtÚ∫⁄çDS7iız;/#°ö<%‘3œØûON¶p7®∑AÖU‹XÜùqvÇi*Õ¿Uú÷FÔn—êÆû7H6›Ê⁄ˆó8.Ãím\dµŸ¨‚ÍhnÕÓ=ÎäåWé^æºá:≤rã£ñÈÔ˙ò[OÇ≥ÏJ_ªÊ∞“≈Û∞ü“≈é•/gwyEC%èó?ßæÏÕvxbo≤ké…d%Ñ:≥Q¢Ì]¡@¥=∫¢G”O˝≠WÁGõî‡	˙àoÊƒáOoli˝˛Íœ“âÑ®≠¢Éµ.≠lƒÓ#–≥S∏”˛5Ò«èøû/ˇgœ—ﬂ—@ˇô}èB≥Ô`»3˚Ñ@Òﬂ—r|ı”˙Mˇ3˝{≈t∂Ô+'}û¸Á«DˆÔ+&~ù¸ÁﬂtNπÓSõˇÛp‰:≈˝„Ä»Q J™·(
+endstreamendobj8 0 obj[7 0 R]endobj9 0 obj<</Length 462/Filter/FlateDecode>>stream
+Hâ\ìMã€0@Ô˛:Ó€ÚHJ ≤…rËM˚[IçmÁê_E/l°Ü“ÃËi4˘fø›˝¨ÚÔal~Vß~ËÇøé∑–zuÙÁ~»J≠∫æùüî˛€K3ey>‹Ø≥øÏá”ò≠V*ˇØs∏´óu7˝kñù˝pV/ø6áWïn”Ù«_¸0´B’µÍ¸)&˙“L_õãWy
+{€wqΩüÔo1Êﬂéü˜…+ù∏‰0Ìÿ˘Î‘¥>4√Ÿg´"~µZÌ‚Wg~Ë˛[7ö∞„©˝›Ñ¥Ωå€ãBu¢E$]îKh…⁄ZCœµ-¥Å>†-¥É>ï¥Ét¢™Ñ*HCUêÉ,Ù≠i≤Y4qBú6ê@d≤há
+wÉ{ECñä,Ü,Òâ¥Äƒ-nI8ôÂdÇü≈O®`© T∞T*X*ß∂úZ®g©'‘≥œzYåÑ[≤‹íl†wàéY:&tÃ“1°cñé:fÈò·ñ∑ds¯¸~?áü¡œ·gs¯¸~?áü¡œ·gs¯Ÿ%Ô'â4’ùcmõ˛ÛÖ?F N™˙úØˆB≠4Œi¶”‘˛s‚ßqR1ÍÒÀ˛
+0 KT˙K
+endstreamendobj7 0 obj<</Subtype/CIDFontType0/FontDescriptor 5 0 R/BaseFont/XASIQU+FrutigerLTStd-Light/W[1[278]8 10 278 13[278 333]15 16 278 18 20 556 23[556]27[278]34[667]36 37 667 39[444]42[222]49[500]52 53 500 54[667]56[944 611]66[500 556 444 556 500 333]72 73 556 74 75 222 76[500 222 833]79 82 556 83[333 389 333 556 444 778]89 90 444 105[556]116[500]119[556]]/CIDSystemInfo 6 0 R/DW 1000/Type/Font>>endobj5 0 obj<</StemV 64/FontName/XASIQU+FrutigerLTStd-Light/FontStretch/Normal/FontFile3 4 0 R/FontWeight 300/Flags 4/Descent -250/FontBBox[-152 -250 1000 911]/Ascent 911/FontFamily(Frutiger LT Std 45 Light)/CapHeight 698/XHeight 510/Type/FontDescriptor/ItalicAngle 0>>endobj6 0 obj<</Supplement 0/Ordering(Identity)/Registry(Adobe)>>endobj4 0 obj<</Subtype/CIDFontType0C/Length 3182/Filter/FlateDecode>>stream
+HâlSkTT◊æóô{e„åw¥32˜ÜáÇ *A>®(®|ﬂ
+Ã cÜÅ√Kç$®KÅäèò§§,kc‘håí⁄Z®†c«™7J-*¥Õ*&Jj”µˆ7∂=+kıGˇú{ˆ9˜€ﬂ∑ø≥7À(ñeçkRWf,_Ω–YÊ≤Xùô´V∫,S3mÖ.ˇu¨lî'÷©Mr+Îï≤IÕc6ºÿÒ"åµ:T?F^9V~]1QìØg8öì!åÜ˘7ƒöR-≈π÷ã’·≤π™óT9˝i≈…II1tMû>º∆«àq”ß«â√ã+´J]÷¢R1√ëWÏ,)vÊ∏¨ñX1’nW¯¡•‚
+k©’YÓ?¸A≤h+sDó3«b- qæ!Áãã≠6ã’ûku˙Ø”úeyoÂîÊ⁄Váò∫(F¥VÊŸÀJmÂV{ïh∑ÂY•VãË*tóäô6G±´™ƒJ7πŒgï∏®(wqåò„∞àE9U"È¥ÿ®L'Ÿbû’È °ﬂ≠eN[©≈ñÁ≤;Jcß-\π ü$^¥XÛˇüª‘)ñaò`£`∆3åëaB&úe&3ÃÜô¡0ÒLÀÃü¿ÿÜ"*Ö√03ôô~ßÕÃ2∆Œ¥0›Ã∑Ãÿ`6ÇùœÓaø	0l80®ò™X™ÿ¢¯PÒù2Hπ@YØÏ‚‚πFÓI&˚»u’’6’’_GÜæxeîfTÒ®[£«åﬁ8˙£ø
+
+
+ZTt3Ë{ı8u2®Í⁄ÂßÌ,]√€uJπ÷∑l®ñ@^·1p0@PƒÀ<¯É°&’Ÿ4ºá§1ë/Ò˛˙#ç®e8Í*¥w¿†€¢kπ#ª¯.“n—àæ⁄
+ˆØ†»œ1&AÇz`R7à¶è!âÜs8ß√cài©^≈Q_-ﬂçbN¬&§‡§˘(öæ è!§¬`éÊ$BX<¯1h ÎÜPÖºó‹ßÙâDì’€
+çäV®Ê°Q¬F*©Æè}÷´x¶ÔÌõE£ÉÂæ¸
+÷
+{5/¯ï/ü[H4-Â>3UÒ±§Ä1≤óˇ|pÉ‹KFÚôó™4u˘°áï5wÌz9—Éè	h¡ƒ}=¯Çø7Ä6Æπã úkLÔerß:⁄õΩF…ùùöêñ+`<¶sö›8ÂÅ˝4K•ò˝¸ur´Q˝jLn‚Zs”«+Ñ]\ygÁnèDP˛tŸwbÖzUãÁZø^€Pµ<kgÂ”˛%‹—∂KÔwÔˆŒE=Üæ#T?IØ∂xÿ	nRöSªyÎ!«˛v⁄íÃíe¬>°ùµ¶Ûø´Ÿ˘â∞ˇw0?ø…jƒ∑Á–7.¿§s8ñ
+áÂ	¸”?ò#¶ÆJãﬂ¯—ﬂØzø¸v¬7√é¬"πâüïÿKf•√Ê¬ôñr»Ú»¸⁄G|ºÆÁà˛&-3ãÉëªò≈›!x¬gÊÊX:îÕc'—@åÃsYÌë=ló§êo¯ÊÒ$5Â—é1
+—0J.‹k:˙π∞◊√ïÊ•ÔŸhƒÃHiê˙∆AFõw∑ÎÇ@3—◊∫ÎaHÚ8jAîOÀˇÉ¿t–•°∑"?◊	+»¬,4∂√‹ß∞∂DB86òJ4Wi=PÔa{$Eè^Çá–Ë¡F®á=ÿO4ò8“)#∑>3mPQLá>Ò∞è$hêè(¨„[cü›=LH∏Å„úG$ ©$m_˚j£™√Ñı~ËHŸW$⁄¨
+O3ø˝ÏÂ∑nÅÅ‡NxUÄ-ÿ˝3_ﬂ?qÁb[Õ∂ì¶√^Æy˝™ü€å8&*ïæ›€0ƒô∂yÊíı¸:◊4,«ßı∞`ßÂ€©F-‰zÜ ≤ ó€Ï3U∞Ωí¨§N˜˘Ã¸¬°uIf2cpÊC &y=Ra.DØ}˛¢€ÅÊî;ÎÓ…ÁÓ—W=¯"Nwˆ≈l
+Ã ∏‡%√Ì#òÊc∏$ÇãF¢y4J#∞·•ô˚äË$XL„zÈÙˆ!UP>‚_ì¸D—§øO‡M∏6ºÕılíP}\
+¡ux◊¿nÅùÿ«˘çróó√!7ÃpkœKp»´k”Ìêı$Ôû©;ŸjÄ2¸Ë']®›î±Ω“b2´N\lÔ≤±ˇ‰Êx·ÕjN¿%ª«ÇÆm„—(àﬁ˛Ù⁄qS=Ÿ·¸™Z‰1r˘˙c7A	˙√¿ööâ∆œ&∫°≤B€ÌÖ…œ÷≠˜][oΩj…ÈK≈›tHøÑ@:G”≤@âS&ØùÔ¨ˆ¡˝L"≥Cª¯H;T£“ÍÅÅœ@*PüDi“\≠vÀ)Óä_j[%ù§;+«À?Âu“˛™ÕÔõç=	pÜ>¿±êÙ˚Û¸Fÿsï{Àö_ìgDU˙S ¯äÙ7s∫ıÌßÖˇïŸF{éö"W¯j¯Lºøè´Y€=ŸàS≤Pâ”0˙K±˚“Ò?ùÍân«,ØJ◊6ƒ¬~$™Oy’±±øfT€ÅöÜMál7§ªŸV	>•ì¸ÄØ,Z\IG/`˘c`x~ä@»2ƒp‰g¢ß„T/ò{±ÎPÛ^á„|_◊¿¿ìœ^ã3i≤[ ÂnXÁ~ßB/ù}çﬁ+o ïU»µöÅGÕÌ›}ƒ§ÎiÏ‡tM’%FøQ»_˝OïÌnHpÀqÓˇÚ]µ1MùQòRÓΩ⁄aI∏î≠ﬁ;à¢	∆∏ÕÄD¡~¥äkñ©lS–Õd¿2÷Ç∏uA>¨L á§ƒ$(Ñ1D‘ÄcJN∂ÍpJe∫∞Å!‰‹Ó4€Œm≠2,π˜«€˚ûsﬁsﬁÛúÁ©-ò$h^‰¿uæÜ+ˆb≤ØÓõû¯Y…–»Úìvn`˜€'6=/”á±êxÎªñªJApÒ'®¡ÑôßŒfÂFÊHÀ@·H˝û
++;™¨ÚHp^R{¢%haütœBÿÃÈuox]ÇDÓ≈EÎMÔfÊ˛Fπ÷
++ë°b%◊Y	Úu∆DI˘JÈ‰Yº9 ÜHèƒª¯¬<<†„]ˆ˙3G[cÕ7eè—wá€Yûµ≈v®™™DÄîø4sˇÿπaã¨œ¸√I™Ò$Ûò≈/°ãÜñÖÑÖò√»f#^%¡Õﬁ:¢º√ü’ìR≥+O‘B~ƒ{,f∏?3~Zº&}WzÅ`güohÃ2†ÍÉ-ÔYE˚Áﬂ˚€6Œ±∑r_∂ﬁßó†É„GÄˇ±ﬂ=“jJpL˘eÓö”Œ	s^‚Ô+áÌ`ÌúÓÒ≈≠ÒJx8€ı#crL{,ìwçch˝†QÚG›ÍÀtß(a$A“Õ~ƒçÖIò¥£P‹—†ÈáPÌ_N◊™ŸæúP∫}4Ç3,‘Å‰ÃÑˆ‰Ó◊IpÌ8õ÷ﬁs¡K¿∆êÏîºbbM~ƒÒ;£¥í¨¬∫ˇ‚ª[¡Oﬂs<ÎQÍC+q•bº⁄Œù±eﬂ«êóê˘†Á¬`ªxØI¨O%Á¸*(2ñ)µ‰€îBV≥c≠6uÍ¥ΩÇ–”0»ÒmUüU6l~gß©@9˚¿FŒ±ø“í©◊:•º"¡f∑˙¢SW‰Í-Î5‹üÓRº∂q˝-◊Ÿ[Æí√Ñöoô”YÊö|CbRNúàÀ¿ﬁàÙ;¶øµß°1áNcS‡®Çp“|}î#Â≤Ñ5~Ã`ƒRÛ~≈≠p§@X{{]ÕI°¢è)-*.ˇ»Ê°KWExÛ∏¿ ´vÖK˛P)v∞	‚ê[ı˛Õ	$öfÜı$B‰Ï•ÎWõhlÛÖ+∏ä+ïóªı⁄˛J˜.øãr
+ü/+ö$çÂªpôo´¬F1ÚVíw∞¡WÀ‹•n_TÈñÁπâ«jΩ’|ó◊Èøå	Ï5–ﬁu,∆V˙ÄÂj≤ºßòHk‚1ëæﬁÛÎ
+™™ì◊´Î¢áXíß˘†«|fòXö·u(eRYå@. ì"x∞î—ˆ‚Ω´¨*:´zòbìˇ4_√ßYLöµ(Àl(∞96±ÃÃî7ù;⁄l∏”y˚ˆ9ÚCÜ»v©/ô9F)ê¯VAPΩÎâÖMl
+Ê2?≥Dúπœ4 û™Ó¡S5Ω∫¯·‰â	œƒƒZO||Ú⁄xaÆóæ9˙mò˚BÃ+!5≤◊≥P[isz∑9q∑
+ù,|Q;SÁìk8h´ô≠Û˝Ìú/4m™?ÚO¯¸o4“+Ú◊Q≤N˜Ø  hï¯€
+endstreamendobj59 0 obj[/ICCBased 79 0 R]endobj79 0 obj<</Length 2574/Filter/FlateDecode/N 3>>stream
+HâúñyTSw«o…ûêï∞√c[Ä∞ê5laëQIBHÿADEDÑ™ï2÷mtFOEù.Æc≠÷}Í“ı0ÍË8¥◊éù8GùNg¶”ÔÔ˜9˜wÔÔ›ﬂΩ˜ùÛ †'•™µ’0 ç÷†œJå≈b§	 
+  2y≠.-;!‡í∆K∞Z‹	¸ãû^êiΩ"L ¿0ˇâ-◊È @8(îµrú;qÆ™7ËLˆúy•ï&ÜQÎÒq∂4±jûΩÁ|Ê9⁄ƒ
+çVÅ≥)gùB£0ÒiúW◊ï8#©8w’©ïı8_≈Ÿ• ®Q„¸‹´Q j@È&ªA)/«Ÿg∫>'KÇÛ »t’;\˙î”•$’∫FΩZUn¿‹Âò(4Tå%)Î´îÉ0C&ØîÈò§Z£ìiòøÛú8¶⁄bxëÉE°¡¡B—;Ö˙ØõøP¶ﬁŒ”ìÃπûA¸om?ÁW=
+ÄxØÕ˙∑∂“- åØ¿ÚÊ[õÀ˚ 0Òææ¯Œ}¯¶y)7taææııı>j•‹«T–7˙üø@Ôºœ«t‹õÚ`q 2ô± ÄôÍ&ØÆ™6Í±ZùLÆƒÑ?‚_¯Ûyxg)Àîz•è»√ßL≠U·Ì÷*‘uµSkˇSeÿO4?◊∏∏cØØÿ∞.Ú Ú∑ Â“ R¥ﬂÅﬁÙ-ïí25ﬂ·ﬁ¸‹œ	˙˜S·>”£V≠öãìdÂ`r£æn~œÙY†&‡+`úÅ;¬A4à… ‰Ä∞»A9– =®-†tÅ∞l√`;ª¡~påÉè¡	Gp|	ÆÅ[`LÉá`<Ø "AàYAê+‰˘Cb(äáR°,® *ÅTê2B-–
+®ÍáÜ°–nË˜–QËt∫}MA†Ô†ó0”alª¡æ∞éÅS‡x	¨Çk‡&∏^¡£>¯0|>_É'·á,¬G!"F$H:Ràî!z§ÈFëQd?r9ã\A&ëG»îàrQ¢·höã —¥ÌEá—]ËaÙ4zùBg–◊¡ñ‡E#H	ã*B=°ã0HÿI¯àpÜpç0MxJ$˘D1ÑòD, VõâΩƒ≠ƒƒ„ƒKƒªƒYâdEÚ"Eê“I2íÅ‘E⁄B⁄G˙åtô4MzN¶ë»˛‰r!YKÓ í˜ê?%_&ﬂ#ø¢∞(Æî0J:EAi§ÙQ∆(«()”îWT6U@ç†ÊP+®Ì‘!Í~ÍÍmÍçÊD•e“‘¥Â¥!⁄Ôhü”¶h/Ë∫']B/¢ÈÎË“è”ø¢?a0nåhF!√¿X«ÿÕ8≈¯öÒ‹åkÊc&5Sòµôçò6ªlˆòIa∫2còKôMÃAÊ!ÊEÊ#ÖÂ∆í∞d¨V÷Î(ÎkñÕeãÿÈlªóΩá}é}üC‚∏q‚9
+N'ÁŒ)Œ].¬uÊJ∏rÓ
+Ó˜wöG‰	xR^Øá˜[ﬁo∆úchûgﬁ`>b˛â˘$·ªÒ•¸*~ˇ ˇ:ˇ•ÖùEåÖ“bç≈~ãÀœ,m,£-ïñ›ñ,ØYæ¥¬¨‚≠*≠6Xç[›±F≠=≠3≠Î≠∑Yü±~d√≥	∑ë€t€¥πi€z⁄fŸ6€~`{¡v÷Œﬁ.—Ng∑≈Óî›#{æ}¥}Ö˝Ä˝ßˆ∏ëjááœ˛äôc1X6Ñù∆fmìçé;'_9	úrù:ú8›q¶:ãùÀúúO:œ∏8∏§π¥∏ÏuπÈJqªñªnv=Î˙ÃM‡ñÔ∂ m‹Ìæ¿R 4	ˆ
+nª3‹£‹k‹G›Øz=ƒï[=æÙÑ=É<À=G</z¡^¡^jØ≠^óº	ﬁ°ﬁZÔQÔB∫0FX'‹+úÚ·˚§˙t¯å˚<ˆuÒ-Ù›‡{÷˜µ_ê_ïﬂòﬂ-Gî,Í}ÁÔÈ/˜Òø¿Hh8m†W†2p[‡üÉ∏AiA´ÇN˝#8$Xº?¯AàKHI»{!7ƒ<qÜ∏W¸y(!46¥-Ù„–a¡aÜ∞ÉaÜWÜÔ	øø@∞@π`l¡›ßYƒéà…H,≤$Ú˝»…(«(Y‘h‘7—Œ—äËù—˜b<b*bˆ≈<éıã’«~˚L&Y&9áƒ%∆u«Mƒs‚s„á„øNpJP%ÏMòIJlN<ûDHJI⁄êtCj'ïKwKgíCíó%üN°ßdßß|ìÍô™O=ñß%ßmLªΩ–u°v·x:Hó¶oLøì!»®…¯C&13#s$Û/Y¢¨ñ¨≥Ÿ‹Ï‚Ï=ŸOsbs˙rnÂ∫ÁsOÊ1ÛäÚvÁ=ÀèÀÔœü\‰ªhŸ¢Û÷ÍÇ#Ö§¬º¬ùÖ≥ã„oZ<]T‘Ut}â`I√ísK≠óV-˝§òY,+>TB(…/ŸSÚÉ,]6*õ-ïñæW:#ó»7À*¢ä eøÚ^YDYŸ}UÑj£ÍAyT˘`˘#µD=¨˛∂"©b{≈≥ Ù +¨ Ø:†!kJ4Gµm•ˆtµ}uCı%ùóÆK7YV≥©fFü¢ﬂY’.©=b‡·?SåÓ∆ï∆©∫»∫ë∫Áıyıáÿ⁄ÜçûçkÔ5%4˝¶mñ7ülqlioôZ≥lG+‘Z⁄z≤Õπ≠≥mzy‚Ú]Ì‘ˆ ˆ?u¯uÙw|ø"≈±NªŒÂùwW&Æ‹€e÷•Ô∫±*|’ˆ’ËjıÍâ5k∂¨y›≠Ë˛¢«Øg∞Áá^yÔkEká÷˛∏Æl›D_pﬂ∂ıƒı⁄ı◊7Dmÿ’œÓoÍøª1m„·l†{‡˚M≈õŒnﬂL›l‹<9î˙O §[˛ò∏ô$ôêô¸öhö’õBõØúúâú˜ùdù“û@ûÆüüãü˙†i†ÿ°G°∂¢&¢ñ££v£Ê§V§«•8•©¶¶ã¶˝ßnß‡®R®ƒ©7©©™™è´´u´È¨\¨–≠D≠∏Æ-Æ°ØØã∞ ∞u∞Í±`±÷≤K≤¬≥8≥Æ¥%¥úµµä∂∂y∂∑h∑‡∏Y∏—πJπ¬∫;∫µª.ªßº!ºõΩΩèæ
+æÑæˇøzøı¿p¿Ï¡g¡„¬_¬€√X√‘ƒQƒŒ≈K≈»∆F∆√«A«ø»=»º…:…π 8 ∑À6À∂Ã5ÃµÕ5ÕµŒ6Œ∂œ7œ∏–9–∫—<—æ“?“¡”D”∆‘I‘À’N’—÷U÷ÿ◊\◊‡ÿdÿËŸlŸÒ⁄v⁄˚€Ä‹‹ä››ñﬁﬁ¢ﬂ)ﬂØ‡6‡Ω·D·Ã‚S‚€„c„Î‰s‰¸ÂÑÊÊñÁÁ©Ë2ËºÈFÈ–Í[ÍÂÎpÎ˚ÏÜÌÌúÓ(Ó¥Ô@ÔÃXÂÒrÒˇÚåÛÛßÙ4Ù¬ıPıﬁˆmˆ˚˜ä¯¯®˘8˘«˙W˙Á˚w¸¸ò˝)˝∫˛K˛‹ˇmˇˇ ˜ÑÛ˚
+endstreamendobj18 0 obj<</Rect[27.48 733.92 584.52 736.2]/Subtype/Widget/TU(\(Simple Steps to an Easy Claims Process, <Row 1>\))/Parent 23 0 R/F 4/P 1 0 R/Q 1/T(Simple_Steps_to_an_Easy_Claims_Process__Row_1[0])/DA(/Helv 4 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj13 0 obj<</Rect[102.6 537.48 584.16 551.4]/Subtype/Widget/TU(Important notes:)/Parent 23 0 R/F 4/P 1 0 R/T(Important_notes[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj14 0 obj<</Rect[99.36 346.2 584.16 360.12]/Subtype/Widget/TU(Whatês covered:)/Parent 23 0 R/F 4/P 1 0 R/T(What_s_covered[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj15 0 obj<</Rect[142.08 188.88 584.16 202.8]/Subtype/Widget/TU(Tips for your veterinarian:)/Parent 23 0 R/F 4/P 1 0 R/T(Tips_for_your_veterinarian[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj23 0 obj<</Parent 21 0 R/T(Page2[0])/Kids[18 0 R 13 0 R 14 0 R 15 0 R]>>endobj21 0 obj<</T(topmostSubform[0])/Kids[22 0 R 23 0 R]>>endobj22 0 obj<</Parent 21 0 R/T(Page1[0])/Kids[47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R]>>endobj47 0 obj<</Rect[96.84 696.12 354.24 712.68]/Subtype/Widget/TU(Member number)/Parent 22 0 R/F 4/P 45 0 R/T(Member_number[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj48 0 obj<</Rect[429.84 696.12 580.08 712.68]/Subtype/Widget/TU(Petês name)/Parent 22 0 R/F 4/P 45 0 R/T(Pet_s_name[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj49 0 obj<</Rect[61.92 678.96 354.24 695.52]/Subtype/Widget/TU(Name)/Parent 22 0 R/F 4/P 45 0 R/T(Name[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj50 0 obj<</Rect[480.96 678.84 580.08 695.4]/Subtype/Widget/TU(Date of birth \(mm/dd/yyyy)/Parent 22 0 R/F 4/P 45 0 R/T(Date_of_birth_mmddyyyy[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj51 0 obj<</Rect[70.68 661.68 278.52 678.24]/Subtype/Widget/TU(Address [1])/Parent 22 0 R/F 4/P 45 0 R/T(Address_1[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj52 0 obj<</Rect[70.68 644.52 278.52 661.08]/Subtype/Widget/TU(Address [2])/Parent 22 0 R/F 4/P 45 0 R/T(Address_2[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj53 0 obj<</Rect[70.68 627.36 278.52 643.92]/Subtype/Widget/TU(Address [3])/Parent 22 0 R/F 4/P 45 0 R/T(Address_3[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj54 0 obj<</Rect[409.08 623.64 580.08 640.2]/Subtype/Widget/TU(Breed)/Parent 22 0 R/F 4/P 45 0 R/T(Breed[0])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj55 0 obj<</Rect[83.193 605.598 186.345 622.158]/Subtype/Widget/TU(Address [3])/Parent 22 0 R/F 4/P 45 0 R/T(Address_3[1])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj56 0 obj<</Rect[243.418 604.897 355.511 621.457]/Subtype/Widget/TU(Address [3])/Parent 22 0 R/F 4/P 45 0 R/T(Address_3[2])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj57 0 obj<</Rect[50.186 589.095 187.047 605.655]/Subtype/Widget/TU(Address [3])/Parent 22 0 R/F 4/P 45 0 R/T(Address_3[3])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj58 0 obj<</Rect[222.808 587.718 356.889 604.278]/Subtype/Widget/TU(Address [3])/Parent 22 0 R/F 4/P 45 0 R/T(Address_3[4])/DA(/Helv 10 Tf 0 g)/FT/Tx/Type/Annot/MK<<>>>>endobj46 0 obj[47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R]endobj96 0 obj<</Subtype/XML/Length 47266/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c006 1.236519, Wed Jun 14 2006 08:31:24">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Western Financial Insurance Company BW CS3</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xap="http://ns.adobe.com/xap/1.0/"
+            xmlns:xapGImg="http://ns.adobe.com/xap/1.0/g/img/">
+         <xap:CreatorTool>Adobe Illustrator CS4</xap:CreatorTool>
+         <xap:CreateDate>2010-03-02T16:20:53-06:00</xap:CreateDate>
+         <xap:ModifyDate>2010-03-02T16:20:53-07:00</xap:ModifyDate>
+         <xap:MetadataDate>2010-03-02T16:20:53-07:00</xap:MetadataDate>
+         <xap:Thumbnails>
+            <rdf:Alt>
+               <rdf:li rdf:parseType="Resource">
+                  <xapGImg:width>256</xapGImg:width>
+                  <xapGImg:height>60</xapGImg:height>
+                  <xapGImg:format>JPEG</xapGImg:format>
+                  <xapGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoK&#xA;DBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8f&#xA;Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAPAEAAwER&#xA;AAIRAQMRAf/EAaIAAAAHAQEBAQEAAAAAAAAAAAQFAwIGAQAHCAkKCwEAAgIDAQEBAQEAAAAAAAAA&#xA;AQACAwQFBgcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPB&#xA;UtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE&#xA;1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZ&#xA;qbnJ2en5KjpKWmp6ipqqusra6voRAAICAQIDBQUEBQYECAMDbQEAAhEDBCESMUEFURNhIgZxgZEy&#xA;obHwFMHR4SNCFVJicvEzJDRDghaSUyWiY7LCB3PSNeJEgxdUkwgJChgZJjZFGidkdFU38qOzwygp&#xA;0+PzhJSktMTU5PRldYWVpbXF1eX1RlZmdoaWprbG1ub2R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo&#xA;+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A9MXuu2dsSi/vpB1Veg+Z&#xA;xVJ7rzBfSsfSIhTwWhP/AARwoQMl1cyf3kzv/rMT+vFVLFVyu6GqsVPsaYqi7fWNQgO0pdf5ZPiH&#xA;474qnmn67b3JEcn7qY7AH7JPscCUzxV4f+b3/OQWteQ/ODaFbaPb3kH1eK4SeWR0Y+pUHZdtiuK0&#xA;9M/LnzXN5s8laX5hnhS3l1CN3eCMllUrI0dATv8AsYqlX5wfmZF+X3lZdVWBLu/uJ0t7K0diqux+&#xA;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&#xA;4S/VvS+tc+PA+pT1fh+xXFX/2Q==</xapGImg:image>
+               </rdf:li>
+            </rdf:Alt>
+         </xap:Thumbnails>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#">
+         <xapMM:RenditionClass>proof:pdf</xapMM:RenditionClass>
+         <xapMM:OriginalDocumentID>uuid:0C615335D5FBDA1196C9A0FA6CD4CDC3</xapMM:OriginalDocumentID>
+         <xapMM:DocumentID>xmp.did:1960C1FE5126DF11B640F224D58AEA43</xapMM:DocumentID>
+         <xapMM:InstanceID>uuid:e20c9ea5-f962-4a54-be12-984d39b9be9c</xapMM:InstanceID>
+         <xapMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:FF7DDAE802C3DE11975680ED59F02B4D</stEvt:instanceID>
+                  <stEvt:when>2009-10-27T08:13:33-06:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:007EDAE802C3DE11975680ED59F02B4D</stEvt:instanceID>
+                  <stEvt:when>2009-10-27T08:50:51-06:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:DAB90D0ECDC3DE11B939DDDA89F5E136</stEvt:instanceID>
+                  <stEvt:when>2009-10-28T08:20:33-06:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9DAB98D8BBC8DE11A34ACFA37E34BEDD</stEvt:instanceID>
+                  <stEvt:when>2009-11-03T13:59:58-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:66FFE17B01DEDE11B92D9FA3BD5D47D4</stEvt:instanceID>
+                  <stEvt:when>2009-11-30T15:41:22-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:87E60B8EA7FFDE11B5E0A72001026F59</stEvt:instanceID>
+                  <stEvt:when>2010-01-12T11:23:17-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:94C7ED082902DF11B191CE9DF1A353E7</stEvt:instanceID>
+                  <stEvt:when>2010-01-15T15:55:11-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:7EA8F9904717DF11B6109232C298B754</stEvt:instanceID>
+                  <stEvt:when>2010-02-11T13:23:57-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:7FA8F9904717DF11B6109232C298B754</stEvt:instanceID>
+                  <stEvt:when>2010-02-11T13:24:09-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:C5B42993DE1FDF11A23185B4B8ACF921</stEvt:instanceID>
+                  <stEvt:when>2010-02-22T12:23:13-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:B4BF9EC4F61FDF119A90EE20540E3112</stEvt:instanceID>
+                  <stEvt:when>2010-02-22T14:10:56-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/postscript to application/vnd.adobe.illustrator</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:1960C1FE5126DF11B640F224D58AEA43</stEvt:instanceID>
+                  <stEvt:when>2010-03-02T16:20:49-07:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CS4</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xapMM:History>
+         <xapMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:B4BF9EC4F61FDF119A90EE20540E3112</stRef:instanceID>
+            <stRef:documentID>xmp.did:B4BF9EC4F61FDF119A90EE20540E3112</stRef:documentID>
+            <stRef:originalDocumentID>uuid:0C615335D5FBDA1196C9A0FA6CD4CDC3</stRef:originalDocumentID>
+            <stRef:renditionClass>proof:pdf</stRef:renditionClass>
+         </xapMM:DerivedFrom>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xapTPg="http://ns.adobe.com/xap/1.0/t/pg/"
+            xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#"
+            xmlns:xapG="http://ns.adobe.com/xap/1.0/g/">
+         <xapTPg:HasVisibleOverprint>True</xapTPg:HasVisibleOverprint>
+         <xapTPg:HasVisibleTransparency>False</xapTPg:HasVisibleTransparency>
+         <xapTPg:NPages>1</xapTPg:NPages>
+         <xapTPg:MaxPageSize rdf:parseType="Resource">
+            <stDim:w>5.618571</stDim:w>
+            <stDim:h>1.680623</stDim:h>
+            <stDim:unit>Inches</stDim:unit>
+         </xapTPg:MaxPageSize>
+         <xapTPg:PlateNames>
+            <rdf:Seq>
+               <rdf:li>Black</rdf:li>
+            </rdf:Seq>
+         </xapTPg:PlateNames>
+         <xapTPg:SwatchGroups>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <xapG:groupName>Default Swatch Group</xapG:groupName>
+                  <xapG:groupType>0</xapG:groupType>
+                  <xapG:Colorants>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>White</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Black</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>100.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Charcoal</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>75.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Graphite</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>60.000002</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Ash</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>44.999999</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Smoke</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>30.000001</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Latte</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>10.000002</xapG:cyan>
+                           <xapG:magenta>23.000002</xapG:magenta>
+                           <xapG:yellow>32.999998</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Capuccino</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>15.999997</xapG:cyan>
+                           <xapG:magenta>37.000000</xapG:magenta>
+                           <xapG:yellow>57.999998</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Mochaccino</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>31.999999</xapG:cyan>
+                           <xapG:magenta>48.000002</xapG:magenta>
+                           <xapG:yellow>75.999999</xapG:yellow>
+                           <xapG:black>19.999999</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Mocha</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>42.999995</xapG:cyan>
+                           <xapG:magenta>51.999998</xapG:magenta>
+                           <xapG:yellow>80.000001</xapG:yellow>
+                           <xapG:black>38.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Mars Red</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>25.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>25.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Ruby</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>25.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Red</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Pumpkin</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>75.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Squash</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>50.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Sunshine</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>25.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Pure Yellow</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Peridot</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>25.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Little Sprout Green</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>50.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Jade</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>50.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>25.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Mint Julep</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>75.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>25.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Emerald</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>25.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>25.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Sea Green</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>25.000000</xapG:magenta>
+                           <xapG:yellow>50.000000</xapG:yellow>
+                           <xapG:black>25.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Caribbean Blue</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>25.000000</xapG:magenta>
+                           <xapG:yellow>25.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Pure Cyan</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Hawaiian Blue</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>25.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Twillight Blue</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>50.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Starry Night Blue</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>75.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Deep Sea Blue</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Fresh Lavender</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>75.000000</xapG:cyan>
+                           <xapG:magenta>75.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Purple</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>75.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Amethyst</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>50.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Rasberry</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>25.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Pure Magenta</xapG:swatchName>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Red</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Squash</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>50.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Pure Yellow</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Green</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>80.000001</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Pure Cyan</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>Global Deep Sea Blue</xapG:swatchName>
+                           <xapG:type>PROCESS</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>100.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>PANTONE 294 C</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>57.999998</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>20.999999</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>BRISTOL BL 3630-97 (294 C)</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>93.729997</xapG:cyan>
+                           <xapG:magenta>68.629998</xapG:magenta>
+                           <xapG:yellow>29.809999</xapG:yellow>
+                           <xapG:black>16.080000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>PANTONE 7406 U</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>0.000000</xapG:cyan>
+                           <xapG:magenta>17.999999</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>PANTONE 368 U</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>56.999999</xapG:cyan>
+                           <xapG:magenta>0.000000</xapG:magenta>
+                           <xapG:yellow>100.000000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>PANTONE Process Blue U</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>100.000000</xapG:cyan>
+                           <xapG:magenta>10.000000</xapG:magenta>
+                           <xapG:yellow>0.000000</xapG:yellow>
+                           <xapG:black>10.000000</xapG:black>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <xapG:swatchName>EVENING BLUE (PMS 658 C)</xapG:swatchName>
+                           <xapG:type>SPOT</xapG:type>
+                           <xapG:tint>100.000000</xapG:tint>
+                           <xapG:mode>CMYK</xapG:mode>
+                           <xapG:cyan>31.669998</xapG:cyan>
+                           <xapG:magenta>21.010000</xapG:magenta>
+                           <xapG:yellow>0.620000</xapG:yellow>
+                           <xapG:black>0.000000</xapG:black>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </xapG:Colorants>
+               </rdf:li>
+            </rdf:Seq>
+         </xapTPg:SwatchGroups>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Adobe PDF library 9.00</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:illustrator="http://ns.adobe.com/illustrator/1.0/">
+         <illustrator:Type>Document</illustrator:Type>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="r"?>
+endstreamendobj67 0 obj<</Subtype/TrueType/FontDescriptor 85 0 R/LastChar 32/Widths[260]/BaseFont/HCVQAA+Interstate-Light/FirstChar 32/ToUnicode 86 0 R/Encoding/WinAnsiEncoding/Type/Font>>endobj69 0 obj<</Subtype/Type0/DescendantFonts 91 0 R/BaseFont/HCVQAA+ZapfDingbatsITCbyBT-Regular/ToUnicode 92 0 R/Encoding/Identity-H/Type/Font>>endobj71 0 obj<</Subtype/Type1/FontDescriptor 94 0 R/LastChar 148/Widths[278 0 0 0 0 0 0 0 0 0 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278 0 0 0 0 0 0 0 0 0 0 0 500 0 0 0 0 0 0 0 0 0 0 0 0 0 556 0 0 0 0 0 0 0 0 0 0 0 0 556 0 444 0 556 389 611 611 278 0 0 278 889 611 611 611 0 389 389 389 611 500 0 0 500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 556 556]/BaseFont/HCVQAA+FrutigerLTStd-Roman/FirstChar 32/ToUnicode 95 0 R/Encoding/WinAnsiEncoding/Type/Font>>endobj94 0 obj<</StemV 96/FontName/HCVQAA+FrutigerLTStd-Roman/FontStretch/Normal/FontFile3 93 0 R/FontWeight 400/Flags 32/Descent -250/FontBBox[-169 -250 1000 935]/Ascent 935/FontFamily(Frutiger LT Std 55 Roman)/CapHeight 698/XHeight 510/Type/FontDescriptor/ItalicAngle 0>>endobj95 0 obj<</Length 344/Filter/FlateDecode>>stream
+Hâ\í€äÉ0ÜÔÛπl/äß÷T°h^ÏÅu˜¨ª¬C¥æ˝ŒdJ6†ÛÖ‰óœLÇ≤Æj3,2xwS◊¿"˚¡hÛtw»+‹#¢XÍ°[3ˇÓ∆÷ä √Õ:/0÷¶üDûÀ‡Á≈≠rs“”∂"xs‹`nrÛU6[4wk`≥»PÖ‘–„á^Z˚⁄é €’◊áe›aÊo«ÁjA∆~±L7iòm€ÅkÕD‚(d~¡Q0˙ﬂz|‡ÿµÔæ['Úò6á!‰Û	9aNà˜©g,"?Ï=cyy∆Çú0'ƒÊ1gS ¶äYôèƒsF\2óƒsE|f>_òÒs≈˛ä¸UÃ≥è"≈Œäúª)rSÏ¶»M±É"áå≤qëC∂gÆ¸a>Nçéª/ü=ÎÓŒaª¸Ò}¢û∑»NVbäÒ+¿ /{®
+endstreamendobj93 0 obj<</Subtype/Type1C/Length 1784/Filter/FlateDecode>>stream
+HâÑTkPWÓ¶ßª∑Çå,m••ßâ.Z c\ï¯XƒB]—ƒà L`ÙlT‘b’	DHƒ\Ãf≥1íM‚|EM≤±ÇRŸfDC¢é≤5öOì;em7$µªø∂∫Îˆ=}ÓwÓwŒ˝Ó¡1] Ü„8∑*ySZR“‹©ƒe…•‘ÈÆ‹Ëıv´Ÿ¶π
+á+”t ÙI,ZÇj~⁄ı”À$MVË_üúNÇ‡¯”Á…vGπd…/p	qã.åR«E∆Ò1!Jòg4ŒírÌ;E!Ω‹È≠Naµ-«.9ÏíŸ%Ê∆IEE¬zÏ÷ãNQ*’~˛¬F∞8≥‡íÃπ¢’,
+ˆ<aïh…ãväíÊ^!ï‰ZÕŒúãM¥	I+£±,ß®ƒi)ã Ö"KéhsäπÇ´@≤ó‰©õ›UÓ’…N…,ï+≠;WE	f[Æ`5ó*IIÃ∑®4%d±	9¢‰2´ﬂWJ$ã3◊í„≤ÿmŒòÿîÙZê!WÃ√0\}∞@„0lÜÕ«∞Â∂√RtÿZñÆ√21ÃÇanS+é≠≈LÿkX'v¡w‡-¯≥ÄƒÄ÷ÄaÇ"¶N¢ù¯^ó™;†ªMN#∑êHô|NÕ¨≠ÍRF∫puúŸETÈîCc&ˇ!
+j–U-ÖzRH@Y–Ìß∂èœa)RmJπ¿j3§Yzd”_Wé∫aªÔUå ¯Ç˝Gó ì!Óî„.ä\{‚I#’à‚—‹œÌøÖÑWP ö¸u∆ ∏
+tË;†#`≥R«"“ÅéB:ˇK¨ÍS-J_{¢nCˆ0~«G‹	ı¡-hFêo˚iJ˝D©Úlá2e°>ÂXá˝'„¡™∫*‰ÏR‹Ùï^êCŒ¯`üóÈ\·Ÿ∂ŒOõ/rﬁ∂ÌÒÜÍº‚™<nr–DÙmÖÄ{]gOæe®¶ò=´áiœ1œ_ØÜA>S/ä¸}∫€û≈CjaôÓeôi1Ÿõ[.}!ı›|s≥ßô”oÆêïŸ›“Èczò≈®º∆2=Gôoà2ŒPåEë£(bﬁ;]s¸CÂYfÀŸW»°†Lﬂ˝ëkﬁ[€+wµ4Ó∞Ù&º$„*Ò&°Õñπí◊rÛ˜<1(7@∞z3£4%ﬁA∞zËoÕG€yÙOhgo‘u ∏Å3kñÙÇZ§V»tá@Ñóy°^%8qó©û7/4˜<¬3}µ2…<¨)s◊89d(LD¡Ü,4iL¢ıHí!RV(π¬≠Û/3¬(Ô™«ñ@1#À<Ùe{∆©8≈$©˙yMÌEÅ˘Âçw.~h®Œ†fZ5;%˚Ë©d~_i<[yâÉ5˝ﬂB¨ºƒ∆oz¸ÕŸÔ˘Œ#¢÷-â7ËU∆Îe(s„˝^hÙ˝°^ÿKAπ{œ¯¡Ô§°¿0‘‰Ö+4Ñõ—‘¶¢çﬁ7¢)UX*∂Œa£!˜Fg©…>Ps≠ã¶ò'>p∞£K∆ˆªÒ^BuéÌWQJ∏∂„ﬂ◊»!∑ΩP¢ΩS¶3Áo´€æI=ÍÙ>ñè-NÂ—ß™IˇèŸOë5ÑB∑--^^¿˜8L≠&Ów[¶|Éábæéß'2Qã6û”˜ˇ2YYêfÁUÏÈ#≠óì&Å^qÍŸü≈—£ë;4EMã˜Ö™z‚ª=«ò9KΩiÑ*)^è“J!S3A·3“èÚX/ú™¶≤Z∫æ„ ÊKòÑ'Cöó∂Mî∆…˜∆—Ãà¬¢√ÏÀ’fDFr;~º˚Ë¸»”ßŒâıL®*u∞¬˝-0Ûôñÿ.
+¶\Ój¸ìß≤âgé—ÃgµÓ›5vn„Fq”x‘ñ€jIÑ_Æ…{>Ú1}ç¨Î„ÛŒq˜øÈ‹ P±ıá∞è>j>˜÷ï={NÃÈ˙AíÈ;íóˇ∆.rÒñö≈ı1a6ïg;65ºù«è«§dÙ^~–ö	≥©h+â^@Ù2†Q7˝õÎ€FZ[Íü‡˚È˝ªK˜€∏Ï¸∂khN´t∂¶öüOÈÙ∏∞£—^
+où/ã^/æ
+Åa–çÆ–(¸⁄"òzÎ´˜ØæÀ´}¢,Ò>≠Ø≠Ú.«Q$∆°Ï÷–”Å"¸	§áBºí@Œ§`çøé≠©©óikÈò≈Rß3å£≤L«°¶¶É≠w ˘Ø˜`RéìQj7ˆ'j!¬ïD-DíﬂA˛CCÒﬁ∞}vÙ´ØæZ[[¡´m8<¯c#‡œcÎÿxj>Úh;¡Î‡a„®ö@˝◊≤«J˚-u<$"(`êÁ?ñæ¢al] jÄ≤
+Zè÷˚ü7–Úﬁ@¶(ïÏø z√Á
+endstreamendobj91 0 obj[90 0 R]endobj92 0 obj<</Length 237/Filter/FlateDecode>>stream
+Hâ\êœj√0∆Ô~
+€C±ìmÏ•£ê√˛∞l‡ÿJfhl£8áº˝∑t0Å˙~‚ì‰©}iÉœ ?(⁄3>8¬9.dz}UŒ€|SÂ∑ìIB2‹≠s∆©CMÚìõs¶vG{‹˘N…ávﬂßn≤[R∫‡Ñ!É≠¡·¿É^Mz3Ç,ÿ°u‹˜y=0ÛÁ¯ZB]tuc£√9ãd¬à¢Q\ö3ó‹ø~}•˙¡˛*Óv+U+Ω©ß«¢û´¬ﬁ\€^ÓÌBƒÈ EJ¨-êx?Zä	ò⁄û¯` $rA
+endstreamendobj90 0 obj<</Subtype/CIDFontType2/FontDescriptor 88 0 R/BaseFont/HCVQAA+ZapfDingbatsITCbyBT-Regular/W[3[250]]/CIDToGIDMap/Identity/CIDSystemInfo 89 0 R/DW 1000/Type/Font>>endobj88 0 obj<</StemV 924/FontName/HCVQAA+ZapfDingbatsITCbyBT-Regular/FontFile2 87 0 R/FontStretch/Normal/FontWeight 400/Flags 4/Descent -198/FontBBox[-1 -198 999 806]/Ascent 806/FontFamily(ZapfDingbats BT)/CapHeight 725/XHeight 774/Type/FontDescriptor/ItalicAngle 0>>endobj89 0 obj<</Supplement 0/Ordering(Identity)/Registry(Adobe)>>endobj87 0 obj<</Length 4302/Filter/FlateDecode/Length1 8224>>stream
+Hâ‰W}PïUˇù˜ÒÇö!^ıFàtED$EØvEB"$BAæ˘∏(ôQô°^ï,43S#44¢R√èL≥R3«Ÿ—«Xg÷ôm›f«u⁄súÀ˛ﬁÎÀéπª3˚ﬂN≥Ô;ø˚<ÁºœyŒs~Á9œ˚^ ÒddÃÕ≤OXy#Î{˛@§/™*¨ë˛˙ß`@å§-´KÈ⁄p
+P∂€Jk ™
+á’‰⁄^⁄ªÀØ(ΩÊq –„ÿn//),>xÙN5€=lO*gG@ù>		d{LyU˝Ú4ˇÑF∂i/O\\Ω®pxÓ}¿Ä
+ŒπΩ™pyçü"ˇ¿ U⁄á-)¨*…π$Sh£}DMµ´˛dWÀ¿í®”jÍJj∂åº‡]¯µ2.ªÿxjîJ˝©íêÑÆHöÔÉèS*Í]Hæv”£ΩbõÊÙ	¬˚xŸ‚%ÜÃNJŸkÛÎãeE’t_ø˛YÉ˙–∞áÉááå∞é5zåÌëàG#«Fçã~Ã>>fBÏƒ∏IÒìü25qZRÚÙîéô≥ûpŒNùìˆd˙‹åyôYŸOÂ<ù;?Ôô¸g,,D—¢‚í“≤Úä ÁW-©˛óµ5µuÆ˙•ÀñØxæÒÖï/Æz©ÈÂW^]˝⁄ö◊õ◊Æ[Ôﬁ∞qSÀõﬂ|´uÀ÷∑∑Ω≥˝›ÔÌ‹µ˚˝∂⁄˜Ï˝∞cﬂ˛è:?Ó˙‰”œ<Ùy˜·#Gè}q_û8˘’©Øø˘ˆÙô≥ﬂù˚ûÈ Np
+W+›tﬂÙÙıdoó!Ωh¯#•Lï∫¯¬‡œ‹¿ Xà &≥CÒÜ·ac8B0VåD(¬éQç1∞·D‡QDb,¢0—xvåG& áIà«d$‡qL¡T$bíêåÈH¡80≥úòçTÃAûD:Ê"Ûêâ,d„)‰‡i‰b>ÚÚÒ,
+∞ Q»¯ã∞≈(A) Pé
+T‚9,Fñ†5®E\®«R,CñcûG#^¿JºàU<aMxØ‡U¨∆kXÉ◊—åµXáıpc6bZ6„MºÖVl¡Vºçmx€Ò.v‡=Ïƒ.Ï∆˚h√h«Ï≈áË¿>Ï«GËƒ«Ë¬'¯ü· ‚>G7„é‚æ¿q∆˛%N‡$æ¬)|ço-N„Œ‚;ú√˜päãpàÛ∏CNí¥a‚ñ∏MÛ…V&“¥ Ωí„§ﬂë¡P©M
+ÖE¨ñÏRYâ≈VÈW~ó~Ç]kWOK≈¢G≤!S™Â®X)ZFÉ∞Ën≠Ux§H∆ËF£8Çx±VÕ∆}äëú´ÄQ¥ ]/÷Ûë-2ê¢Ø‰›*˝L^∫ÖC)Ç]æÇ5™"l“úì‰∫@≥‡*WuóπÉóÒWΩó≠N≤uïÔ:m\‰⁄©i∏ç€LCIú“kÂ" .}í§8iùhGê‹#ıàõ‚ö≈9É≈Õ…ù\ø)‰≈∏R5⁄ã[LfÉõDfJ
+£N‚ùâú˚9í⁄òØ)TZxèÏ«òKµÃá≥“ñ2•û◊Ú‰c™[=ÌÂ*WxpjÈÈ>∆P‰Â,RÑJÈ"â≥πÕwÎ∏»E¨¨P-Z®^å|-Dœ'wŸöUkT¥xΩU›©ˆj1j˘BÂÎjì|R ¡
+µõÌ´Á»a3Ó23Á2w'ï˘ﬂä#§ÍEÃ–ΩÃπ[\ÎUﬁ∑pÅZ{zº#Û—©¯∑!ΩlØRèìÌ^%Ω0Êàê|ê&NâV%N•@∫*“–+V7g∑ã‹Å(aGÉzC/◊ÌZ∏ﬁ$_ÑMsËUZ∞ÓR°n§OñÖd]SYfÈíl≥ãªíÁÂÜùô=ÓÅfòEÎBF◊¿a›}}πJà:øK—%€|∫€ËkˇÈ·µËqs2r√∫≈ºô”ÌÃÖvfÂR5ZÏfˇLG4ã|©ßU)U€X“tåù¿8◊(Å¸,n*Káƒ#ÆP¬ﬁ˚so,óz/ıéh/Up◊%á‹˝—”™‹æUßE“>”sRÔ‘¨ÙÈã‰ \˜˘≥ÙıG?1[g≈Rú~ñªΩwWÜO7r`∏oWªÔ8πÁ"Èóãıù(-“”˝KØ˜Ω$ vÔ»^0hÍﬂ¯öıfÚûú‹9˝≤œ„©‘=öÀ[æEˇKsy*Î>OüG˜¸Û˝÷ùWŒ≥öÔ:ÙE8L†u NwÛ»t U∑"ù}iÑ©Ê â“B¶!ÏZ™8Æö„˚T∂„®'—GÜC◊Æ`°‚B¢z˘Ñì6n¬jå°M±äz"e$°+∞`üãm˝GS˙1∫ïÎs#HÌ@îjƒlÖï0÷ê@˚"Ôº
+˚ƒSo¶M:Áj¢4ÊM§M%˚3È£Å∫É}iîÕî≥àj"É»fúiﬁÁ»§Ôt=)îôˇ)&biõÀBtR\AããÕ nl$wD£¡ë-ªC¯ÀåÅHí‹ÉbÖÕãrrEH	®$ÇÈ/» „YG”ÃΩhb{eaeºK	±ü∏†mF ˇŒˇå9è\e{˘»Å”ÿwÍ£Mπ–ÃÀ)&å∂—ügÊ\?\»M9•Ûæ}7@_ù®€L4yné≥í90⁄–Mô`Êx∞È#Ñ«dÏo‰Œ˙øªç
+w^å‚'ÈΩ≤f·£¯IKYççß¸®ËØÉì˘)⁄_+Ò’.ÃQ:˙ˇ»¸T≠0uÖﬁ÷õ∫ OáÌ¶Æ1't„èÑb¸˝®¡ES)fò∫Ñ QhÍ2fâjSW&ö∫ä%‚˜¶Æaí4#≥§lÈ‚¬∫º¬öRG≈í≤¢¬z◊ÏÏE+R≤ˇ¡|y«WU‰Q|Œ{	ΩÜéó*%	π˝ΩÄBPÖÿP¡	E“LhP{E≈ÇΩb_ªb√æˆ]∑˜Íˆﬁ›ÆÀûﬂ·ÌÆ[¸s?ª…Á~Á7ø9gÓºπÔæô©*55¥wtwÆ_ªÆË˘˘|Mzv‰)v6ZΩm´´=ØÆ•≈ì¶ÀÎlÓjÓ‹‘‹T˝¡.Ω˙FˆÍY ˚[Æ“kÿÿUloıñt⁄Y≠≠ÿıOÕ¥¥ÆY€±∫X¨⁄‰W«Å∑∏Ω≠©–]È-,¥m,tv{æ_Èi0~m’ë◊—ÍMùø¨qwÓ∂√ÓÊ{ΩˆﬁEû|Ó Ú‹˘Wï¢êπz∂µÔ‰>Ω¿Ωπ«ù~˜Ì’å<ûZ¯Ô}†ü.’öY6≥‹D6Qªúﬁ.rÛ®k£rÎ{µı‹˘-•j-˜˘-Ãv≤ˇFéœ˚ª«˚7W%s‘€∏⁄5¶%Ùµi|Õ,MÛ·ÓΩ˜l’©£Éü§»ˇ*é‘Á8cûz<ûa⁄Èh¢æ[˜Z»®ç˜≥—uk¶|Âˇ1O>OGvZ™•?bΩC£ö ”ëùÅ¶}ËÁﬂ˚YW±WS’øÃDfÔ˚±'‰πÁ?˝Ω≠$„≤» ã2î£z¢z£˙¢˙c b£C0√0#0£0˚`_å¡XåÉáÒòÄâòÑ…òÇ˝0ï{‰ÈòÅJT°3QBDàë Ey‘bfcÄ9òã:‘£Û0‚ åXàE8ãq(ñ‡0é•XÜFÅ#qé∆1Xécqé«
+¨ƒ	(`V£	ÕXÉµXáı8–ÇV¥°8	ùËB±	'„tc3N≈iÿÇ”q∂‚LúÖ≥qw¡Á·|\Äq.∆%ÿÜKq.«v\Å+qÆ∆\ÉkqÆ«∏7·f‹Ç[qn«N‹Å;qÓ∆=∏˜·#∏‡A<ÑáÒ≈cxªûƒSxœ`7û≈sx/‡EºÑóπ#Ø‚5ºé7&ﬁ ¸L!(+5A¶f
+Q¶ó|?o»“,¡+‡Úäx≈º6÷X`ÇØ|ñΩ¢8†8†8†8†&HxQ‰2Ö$SH3‘˚¶g≤ÈÈÈÈÈÈÈŸH]D]D]D]D]D]D]D]D]D]D]L]L]L]L]L]L]L]L]L]L]B]B]B]B]B]B]B]B]B]B]J]J]J]J]ŸåY[@WJGJGJGJGéÍ’9ärlœ≥-œ∂ºMlªÀQîgôß oÚzºN›≤Àú]¥ÊÃ Üºf›7Ü–‘êÙ‘¨’7ù_c9ªk`Q`π¿ZÛÊÏâ÷A`÷A`é–°9BsÑÊÕö#4Ghé–°9"sDÊàÃô#2Gdé»ë9"sDÊàÕõ#6Gléÿ±9bsƒÊàÕõ#1Gbéƒƒââ5/â9l˝DU≥%fKÃñö-5[jíT^E÷Å=H?5[j∂‘l©ŸÚ¶ÀôWè.Á€ì±jNÀ˙ÀI¢aò7ßa®jΩ‰¨”ºÂrjUN=´SønOf+èè·Ø„°‚bÒqë∏P\ ,$(ŒÁâbΩX'ŒÁàà˚ã≥›rñX´L^Ãâ©òà±â°àæX#Œ´Q≈ï•’™YúÂØÛÂ*uß MßI5U‹OúÇ…nµS‹üX≥8ãIÚMÑÁÜ∞e¢úƒÒ•‹x©=ås}Y≥k{ﬁqe d1V=å—ˆ˜Gcî[D«h∑õ5ã≥\sF(7Rû «0ÂÜK7Lπ°äá∏QdÖ¥É5äA D/9™e  4t◊˛ËßZµ1Æ€√≤/˙∏°ÃˆU/gπ:ÓÌ•∑îΩtﬂûË°\OÂz(W^Íø\˝óin≤jœ®7(v÷ À¯æ˚≥´‡Ú}kqÔïjÔ©fqñ>é¿˝QÍ?àø'˛V|◊˝∆M¶Ô]’,Œ∫_+˛ï¯KÒ‚œ≈üâ?"˛X¸ë¯CÒ‚˜≈Ôâﬂø#~[¸ñF˙é¯MÒ ]¸ö¯UÒ+j˝≤‚/â_ø ~^≠ü?ksÂ>£¯”j˝î¯IÒj}[Ò«≈è)Ûñ‚7ø°¯uÒ5˜*∑˘Â,≠fq÷Ω¢¯£‚À‚KF>ˇÂAπÁ≈Áƒg≈›‚3‚”‚S‚ì‚n«\Œ“jª4˛«?Êµ∑â•’,Œ∫G?,>$>(> ﬁ/ﬁ'ﬁ+ﬁ#ﬁ-ﬁ%ﬁ)ﬁ·v⁄˜ï•’vÍ€rª‚€ƒ[›-‹óñ≥¥ÒXúu7Kuì‚Ì[Ín–wÊziÆØï˚Õ«7ûºZô´ƒ+≈+§‹Ó.w#yáÌ‹…Zm.Gñ…∫À§∫‘ﬁ∑ÕÕ&/—=/÷=/RÎÖjΩ@Ò˘‚y‚π‚9‚Ÿ‚Y‚ô‚VÒÒtqãxöx™∏Y£€Ïzq<›äOQ˛dqì∏Q¥}5ﬂ[>ˇ¢>oó∆◊©∂ìƒ—ˆ¯‘±¥ﬁ⁄§jï£≈≠∞_ñ¶€P™mPÌD—N;Ê]/Ô∫Rmùjk’”û,,∑FπfwOÂ,≠÷TjkRmu©mµ|´î+îr’,Œ∫ï•q¨‘Vh¶èW|úx¨∏\<F<Z<J<R<BlóâK≈√≈√D≠ôNk¶”öÈ¥f:≠ôNk¶”öÈ¥f:≠ôNk¶”ö…Séç∫AsYØXk¶õ£X´•”j…oëqñX´÷º®’“iµtZ-ùVKß’“iµtZ-ùVKûZÌ^3E≠íÆ™ngÕ~+™î≠‘o≈µMµN:≠ìnä8Yú$N'à„EO'éµˆ9≠}n¥8J)éáã√ƒ°‚±¬÷õ^°⁄`Ω√Éµ™π˛z√˙)ÓÀôÀ∫>ä{Î3ıR‹SÏ!ñkˆ g≈üjñßDãùæ3MÁn√åˇ«?˜ø¿˚oÃ_ “{OÇ
+endstreamendobj85 0 obj<</StemV 76/FontName/HCVQAA+Interstate-Light/FontFile2 84 0 R/FontStretch/Normal/FontWeight 400/Flags 32/Descent -193/FontBBox[-52 -193 1300 914]/Ascent 914/FontFamily(Interstate-Light)/CapHeight 700/XHeight 525/Type/FontDescriptor/ItalicAngle 0>>endobj86 0 obj<</Length 226/Filter/FlateDecode>>stream
+Hâ\êœjƒ ∆Ô>≈wãŸú%P∂rËöˆåNR°eby˚é6l°*„˜˝‰sÙ≠Ï)d–o›Ä¶@ûqç;ÑÁ@Í⁄Ç.]››bì“˚öqÈiä –Ô"Æôw8=¯8‚YÈWˆ»Åf8}ﬁÜ3ËaKÈ§txú‰°gõ^ÏÇ†+vÈΩË!Ôa˛{Bhk˝„¢«5YáliFe©ÃìTßê¸?˝†∆…}YV¶-ﬁ¶ë£xè€B…Á‡…mÃí¶N†∆(·}H)&™,ı#¿ Ÿ∆o0
+endstreamendobj84 0 obj<</Length 3116/Filter/FlateDecode/Length1 5664>>stream
+HâÑV	@TU˛Ó}˜0*≤)*.3åh¬åäÊÇK‡†©)¢ò)√2‚2
+)ôòπêdffFf§Ù ≤22ï‘∞LM◊“‘í22K+#¯œ{‚_øÀﬂªŒΩÁú{ﬁwñwÔÄhÖ' !jÏ¯^}|ºCÙ$9M4&—iOãÆª‹`ÅÄXê8'”‡Ml»õIﬂ‡HõÍ‰ûªÌÄÆÑléOùô„®nﬂX∏Œ'˝»îd{“π;-¥ﬁKÎ˛)$Hv#[◊ZwMqffáØI≠‹Ätvfj"˘Æ®Äh}¡iœNcWô;‡qÅÜYvgÚÖCıMÄß ¯•¥‘åÃ¡´oº/”⁄+mvrZÒÏ≠#Å6çdÔOòıld¬∂ñ•çY7π¯ÓE;ZêÍﬁO›fËç¿%ä-%	”4>î-ö±D:B*dùã´õæGÀV‹Ωµf„·ÈÂÌ”¶≠o;†}øéù:w1˝M]∫uøØG`êŸ“≥WÔ‡>}ÔÔ◊¿¿êAÉá} 4lò’9|ƒÉ#Gç~hÃÿ®q—„'<ÛHl‹ƒG'=6yJº=!1)Ÿ15e⁄Ù3ù≥R”“ggdfÕôãÏú«ÁÕœ]ê˜D˛ìüZ¥x…”ÖKüYˆÏÚ+W=∑∫¯˘5/¨}q›KÎ_ﬁ ∆WK^€Ù˙Ê7Jﬂ‹≤µÏ-•º‚Ì w∂Ω˚ﬁ˚€?®˙p«G;wÌÆ˛xœﬁ}ü‘ÏˇÙ≥ü<t¯ã#Gè}Y{¸ƒ…Sßœ|ııŸsﬂúøpÒ€Ô.’}ˇ√ÂÎ∫ÚÛ’_~Ωv˝7)I≠™†â≥Ò,õ≠‚g§ùÜpc7ˇ ˇ˛…˚Ø¶&-;»"Z≥ÿKﬁFNÒdÅfãˇ˜XGví∆iup=çô<ìÔ•qà∆Q™é†™Î‡W∏Aè⁄ÆñZ[π£ı?<y¿^¶ä∂A[¯¢ù&mèCGtBgt°®å‘K&tE ∫°;ÓC"fX–Ω–¡ËÉæ∏˝–0!Ñ¡Ç°x °‘G√`Ö·à@$ÜcƒHå¬h<Ñ1ã(åC4∆cFA,‚0èb√dLA<ÏH@"íê¶"”030NÃB*“êéŸ»@&≤0s±Ôc-^ƒl°X÷°Ø‡m|ÑÌjﬁq/‡- W±ÎâˇJTâùÕy’¯g1≤ëÉMxÁ0_·,.‚úá˙%ŒGæ≈wÿÉ\ZΩéÀ¯?P›’Áe:KÚêèÖxOaa	„i`)
+ÒñëÕ≥XÅÂXâ"¨¬Áx´ÒäÒº∂ˇ~ƒ^Ï√aT°ø˝k/¸å´¯◊ÒÆ°ü†¶Y˛‡$Ò˝¯ßàØ¡qº‘¨€u?ßÔê≈±ªÿ}ÅçÕ≥wP÷<€qáïBÙ÷m≤¯†y∂˘^¡†‚µÊy)ﬁƒA\¬ó®•ïé˙ÿÉ˙n¬≥5QL¢Ø)Øï˘òNœŒ∞∂ùMb#X$ z0¶G#®bß® k(øEîÒÂîˇ•Tã%TóÖT•<™‡<ÍõÍ!uXu€dÍºÍF£|EÆï}Eë»9"]. ’IG§Ì“6©LZ'HN)F¿¯~ùü‡ï|/·Ày√-‹ã`’l+cÎŸ`÷âN ‘}Á®ø6¢u‘£7Q˝ç)è:.É:⁄I˝}Õ$√⁄∂ÒÒˆÚÙhÌﬁ™eΩõ´ãNg0WPØŸÖ	Ö&´#∆bÆ†[ 6![AP¨oHú∆ÜhL—∆)ÃÊqõ»b¢?ÖZÃ7ˇ±&k9ì¨ÜHCä=Iëàa3ŸIÂaaÖbçÙî√ÿ1.*Vùà Cdä‚aW0.÷Ëß»∂Åq~ˆ§∏Ò±¶^¶?¸zôÍË›A˜ˆnO∫ß•`≠ªcsËö»”À7ƒbﬁEa”]d3® #…füoµò#äd≤V0.€ÊÿL∂B)a≤∂SZ®±í∑v”î0ªA√≠Û£π:U"˝îqqäl≤íf≤NS∏…™¥lg1"R¬-ÊÌth M;≠¢¬SÜ Ür.ZM
+≥[#)aabï∞¯8ı}3©lû6Çãπß≈º«bU|-‡Íu*´¥Dgµò_◊A'BË–v·"W"UÆÉéªµñÇÇ‘€ËiÙÏNƒËÄ76Xe¸	£ÿÒßUªóâ“«-5•ıêkê\Qe¥M˝ånÒ¶‚∆,Ω√%J˚ñ¯≠tøG˙Í¶‚¶bΩ£˘~ˇ˚˘]wõHŒB¥XÇtQÜhÓãâ¢
+ÈRbÂà°§ªä*ëÉRYá\È
+RÂ#ËÒoƒ}ËßÖñKeÿ"«c∫ÿáK%Ê…›ëÀ›±â◊ ü(â.◊"±ÈÏ2ÊÒ"§œêË'õê√Û–E,Cî»•Öx-Êä:‰ä˙é}µ˘D’û»)˘ ã¸î_&r1Qß Kv¬)sTÓ<9úb® J†u$≠ÛQ≈-ÿ'6`(Ω´J¨EïnÈH.ó OçYÂr_“Q>D%í»_ÖßÓ˘v'¢¸®9·áQ≠b&û/ÊRŒ(ßDı"ä‚¶ºI◊iQ4“˘	“´Ûîré"ŒõŒΩ6Ø‘’†Tïkµ†}™ùd•˝T~É‚/@â∞ ZÆ%ÆHQk£÷C≤ ãß¢û∏SLß∫©q´Dq´1ﬂäI≈Øa∫i£ˇóTLÑØò®å®Êøÿn'◊?©òpDäÊÛ<’_GæQB8‚EJ’⁄h‘¶ˆ@ç⁄3.÷pﬁ÷K‚"FÎzPO’c·-ô∫_ÀO	‚•Z§™:]%≈¢‚…EıﬁJYOÛíˇ∞_Ê±UQˇΩ•-VE–à^´(¶}ıUm•Çà’V™àQ©˙˙zÛz#ºãoq´ªbåQA„Çà∏!‚æ‡Çä’‡æ‚.nQ	ÆQ—_˝fòV”4¡øMﬂÕ…|wÊúÛfŒ93w>NéçQ|åmπ|-¶Q2´§[u#V–+˝Ôêô\PV-üß*∂K5ˇ’tIÈ—%Y‘7≈›‰>∂ºg°≠ıı4Jf≈◊h}Fn∞ıú76∆æº[uØˇ∞πp≠S—Dœ*…:…
+ªˆﬁıª|ıä…Ö‚Ù†›/∞A≤L±õ/©îå‘˚BµıF«mÎñAîA˘üä˘Ño“Ω∂L,,Æoˇ6∫Ï†æWt«å€—Jqéﬁ}8Qõ√QYœq8&vXp8.ù˘óHÁVáK’øÃ·2…≤äƒ∑z∫GƒdÁ:ehdÅ√1∆Gñ8óŒZáK§≥—·R<ùsõ±¸G´ÓÒÍÍÎ«’x3¬ˆ ï˜ör~ŒO¥ÑY?_ÎMÒÛA&ÎwxÌg8>-v”nº”˜ö¬l¡õ\Ã˘©bç◊úM◊6g~._H¸ƒ‘ ”YòÓgä≥S9£◊f3~Æ·œjÙO&Îjì…dG‚¢u‘ÎGç›ˇ€≈pSbMb∂æïÑÚäÔ˙ÍØ’»ã2∂ØC=Ìbˇ›~özCŸI˜≥Ô‘ª±4⁄°…“1RjÕõ’üñèf;nºÁ’¶,N0’Œ©So”ıûëÕlçÂ˙¸µ⁄6cÌÙ·˝À«ñ∆ìzÍ4ó§}∂4£ËÊÔÈb{˙m≤5oÓ∆¯ÅoƒøÂ;~‰'~Êæg=˘ìﬂ¯ã?¯]ÃÙWÒπò*¥D’X∆]€ÀŸZª´Ç°S˝oÀp∂”ç–n…(vd'ÌúùÕ.Ï™uÏFª≥cÿìΩÀﬁ‚∑’äqB+⁄«Æl_ˆS]Ïœx‡@’H1ÅFf"ì8Dπ9Tïpò¢{8Gh˝-©ı∂rG+√«(«*£«âœœLN‡DN£l”Ypä∏eJ9O+˜æÿ¶âP ﬁyöÚ5GqôÀÈ.íEŒ‡LŒR}úCÁrÁã´^»E\Ã%\ <.{Ω\ˆ
+1Ÿ+≈gØ÷ô∞Äk∏V¸ˆ:ÆœΩQl˜&qﬁõYÃ-,—9q∑sw≤îªtR‹ÕrÌÖ{πè˚y@˜íáxòGX¡£<∆„:1ûd%OÈÏxÜgyéU<œ¨ÊE∫yâóuz≠—iˆ*ØÒ:o&oÒ6Ô.ÔÒ>k˘Ä˘àè˘ÑO˘åœY«|…W|=i‘∞DÈÿU±™†≤bxX‘tƒÇ†°b"W≠åMò7∫∫˙o  t˝
+endstreamendobj83 0 obj<</Intent/RelativeColorimetric/Subtype/Image/Length 127/Filter/CCITTFaxDecode/Name/X/ImageMask true/Metadata 82 0 R/BitsPerComponent 1/Width 120/DecodeParms<</K -1/Columns 120/Rows 110>>/Height 110/Type/XObject/Decode[0.0 1.0]>>stream
+ˇˇ˘ŸYyéÅ‡‡¬:~π—»ƒéOÉ˚ﬂˇ˝vø_ÔˇˇQ~Ço§‡ÇgEê«≥0_!N8Hg‘3ØÉt·A”¢VË7 √§ììuÙ›.∑˝?ˇˇÌøÆ˛ª]¯ap¬‡ÀÇ¶?ˇˇˇ„ˇ˛  
+endstreamendobj82 0 obj<</Subtype/XML/Length 427/Type/Metadata>>stream
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c006 1.236519, Wed Jun 14 2006 08:31:24">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/"
+   xapMM:DocumentID="adobe:docid:photoshop:711e592a-34f2-11da-ae19-9d5550c76391"
+   xapMM:InstanceID="uuid:711e592d-34f2-11da-ae19-9d5550c76391"/>
+ </rdf:RDF>
+</x:xmpmeta>
+
+endstreamendobj62 0 obj<</Length 2065/Filter/FlateDecode>>stream
+HâåóÀéπÜ˜Á)Í\ñx—e;LV‡'úI≤hHº»Î…ü%ÈY∫˚≥TÔî>˘ZÆo?Ærä›rΩÆﬂ˛˘˙¸'[˝˚èèr∑“.t3ÛEÖÓ&|qπçÎﬂøø˛ˆ˙Ïíæ|ΩJ¸ªæ~˘Û´‹z˝ÁíÎ◊À%’ˇO“◊WΩ¸ﬂõ2⁄’En|ÕvèãÙ.≥Á…ø}¸Â€Ô˝ÌÁ_Æœø~)◊O?π^ˇ21ÆHΩdÃªÎ§RØﬁËVûuŒq}˚˛˙ﬂF˚Wﬂ_üL!ó˝™UÆè`Ï˝Dz+/t¢†™@≠Ò)O`èOKoÅµƒ™o
+ƒ±Ö;P›ê¯ÀéÿˇÔ€˙«´ﬁΩ6ˇLäòˆÜ˙pa[_H≠iˆ,ÿÍ÷ªih/4ﬂ{€meRléME¬£:å`	V*¡ÃŒ∆J∑ÿh≠üƒnòÎ§∂ÊﬁhâPº¶Ø”ÎπVï»´eï·î]ÖÂ†Öˇı-Q_:≠ÿoLÀö∂3û=(i@üzƒâLW}Œ˝nXïçN-Í=€8„2Uü ó	ùTı\t;gÿ„>sJøı:q¨Ñk‹Kß6*híûEâc÷"G^πyE<I…2=¨≥‹mKÆAÉ*A«gRπxQÆq§Wvr!PÒ$◊∏{äIÎ ™yÎxr:UyD÷»FjäR“[Ω#Y’KI-?ÁEÊB˜§F)ÁP√—ÆÕãaÎ
+§Ó´-‘êáK“UÿÌúqYıE)’a˘4yt`bjÕÓa®3ÙCÆjsØ(jtﬁÊ’\E±…≥⁄bÛB|õy4ÕEn?√"√>ós|sÒs3%ßK¶g3™u‚´¥Ó¢4¬Zr≥µﬁIV>8U…˛∞†<rà¢_hí“*©ç‘ñ‘OO˘zÁp&ÖWG´ª°ãFB◊&`ûËÎ%É¬uÏN‡A &ÉN:ÓÇﬁI≥"¶É£¥X‹Ω±L‘4p6 à∑—Ü∫Ek1nCÍ4sp[Ãœ∞ˆGâZH3’‘‚ÌPKÈ*™V7s;TcN-î{÷∫%â•V[˝Ÿ∞≈9ıY’^ü(äe“:DnŸa≤Q~t… V]uØÚ›{ﬂ*∞eô'l®ï∂
+lÍÛs&[¯€ﬁjuÖ ¨LUÍë¨k´ñg@x·>s¶V\≤™’Äõ¬íãÛã£÷∑≈©õ’dÂL∫zçaouu3√wí_ûÍ)&ŸZ?^”˙¬\>∞2Ñø¬}^Ó≤í!r∆xı!G∆ëÄV¢t\¶ıÁch“—Ó≠∂rñEnè{ñæK¡*MQ√⁄‹;bòAÚB¥(Î}Ï"®UÄ^n5â”ÅÉ™ÓŸf)«lÎ6c’nèÅÉ¢¸˝óc°‘ò-PPÏ≥S`µ ~≤eµ©A¨AΩÁ zﬂ±‡wl->%Jt∑n‘X£’÷ÛS—{+m:‚T∂Ùv /}∆}Úƒß§±WJåÎDçÒÒ≤†≤7>1ÆàÜ1∫-ó(EJÊÊ»!√—jÖæ–‹Ã3,MÏr™¡-$3Œ°—Œs*ú,<˝í.#$iLüÖ≠BT·P™E:ZﬂäO[d£òÒÅ]˚˛“∂¬«˜ªç%˜Œ–âπüíÎá3î n¿:œ’6∂èçBAï ü§ÆCLCv† Ω‡K¶vÆ˙›Ë0é:åãÍëòàÜ£BáR#IFTèıVxm∆ÖŒzkè’Ÿf†¬∫E∞9Æ÷jõÎ ¬ˆ1˘‹<ËÌ€ˆ2äï¯v‘m¬í‹∞óTw|ÿJcnWRHj´•≈Êûí
+™v‰±~çsïÓñSl"¿sœjœU≈Õ∞W⁄ÆZ8ÚJŸ∑±Ù<|n√%0
+.‹ ∫EOâ˚ù˝π∑«¯UıXç;ˆ÷∏Ã∑’ÇGºÚﬁèk∏£üˇ	˜˝xËπk6∆[noéW!$¬ÈÔãëÑ˚'û&èﬂÚ}Ò¯|!"≤,@"–”√Z>z%Ø!hh§Ë Àë¨'ëû>/Ç≠£lÍ<—o∆Åo´QR.]Ô'={eB“Ä¬ÇËïéG£À÷Î¸%„¶RUén∑¬•î—ﬁ}tcIG!ò‘ÂUgæ„ú ˘jA°>JÂßòU&8'ŸÏg∏
+¢ @Ù:2D¡†Ã°G«˙Ã	4˜Öx/ÓU®ﬁäi71Ñxµ)˜I€-Mﬁ7Îp—™/ClF·ït‰À<ë≤s≥;–1Ûºb˙¢T"Y◊Êûy__]´>„
+3”rı©e†æõè`√ß#·+öYåËD∏¨’öÂ◊ìÖ8hmŒ æÖïu,2c)ı§B™å42‰y
+ñﬁVΩôµuOn(~Ëˇ √Qû=á¬ØÖﬂåÕXWg&dÚLÛTŒcQ™˘©°¶‡y?§mÎJº~¬vºû˙î›ÏÊ8Ívîa∂∏Üo[fçˆË-{g>º:`ß‡≈Å£Ì+i∫∆ÆØ-]É¢®nO≠ƒÉ˘æ|6ì“éàaÊ·Óõè◊Á‹|·ÑíÎçuÀÛÿâ`¨ÁTÑ|S√£®∑ï;˚4w–zü¯‰ﬁZk·æ„iî&^DÔtXª^@·∆wùß®˜qûg€I‘ó÷„ÕæàÁaö)ı¯*{ÜßÊÜ¯&_ßËœ{jaeËÂYÎò©P⁄~O˘·>º,Vp◊™ƒ-¡áAüé\åº'ÀNºgVÍ‚Ò≥2ÃﬂëH«H{§∞„Hl}Eâ+jπ£Ø? ≠`û≤
+endstreamendobj63 0 obj<</Length 2235/Filter/FlateDecode>>stream
+Hâló[nlπEˇ=
+O¿ÜHëí8åå°Å È AÊÑ{ì™:’	.pÌeÍPî¯‘¯]ææ∆Ôâı˝œØÒª‰7…cíl=q∑i¥–˝á%à÷Ëı≠ÈÃ¢°‹f ^ƒπM®Ízö46w=„Œ2ø,}(ΩTß¶~á°?/¡Ô¿˛ﬁ∏˜ïøàÿ´ÊÁÚ+≥yé	vä˚""vq_¯kªÀ«öÛ∆˝hÛV8Yµ¸‘wx∞∏ÀÒVE´√:j!√Æb_≈"®≈.ßò˛ü!EVæ¿ê›æÀ{§ïÀÚºﬁ¬Â3—Mü¯⁄hÌÛ}√#qÀ˛Ü≥z£åì4ıxQ‰GiäPì¶√4—á4öO<•P_ﬂf–¶zk≈ëﬁMı£m‹kØçI˝•-ËõçΩsø‹Ï⁄?’Â¥"IÔk˛±qlM‘{:¯2—;B
+â7 Yâ7æé«[›ùÙZ;∞èΩbÉRõﬁh˛DDR~˚ƒ˙˙PeyPÕ8h,iB<$ÆãFåé@ô0xﬂƒ[¯Ùh%•.òpN’àÈêEÀåj¢DÆPÀ_•Ê-JüÕÙ∫ºäRRºÍ’¸z7h†±´R í¥hi()W.íŒÀ∏K-å„ÙÏ¡v⁄¥4eeL$1&2ò¥ÿT“…$ù¶¿Jã“F{â¬±ùÔád1R*xì&æ `Ká%±0e¨e›Mb…pÅ˙E_V†Õ4'HSü¥xúΩ±7éåΩœû$„•=ók2»,Ωâ≥Ù…	ñê∞&iÂ˘sÛ—2•hFQ‡3•ã-”Z+O∆cj9µA‰M›Ô<Ω∆ïº"ˇ’Lß∑lŒı§ã2d∂L⁄Èø–o∫˘;<ó‘íΩ÷Éœs)ñÿ¿ÈV∆N0iIíCÁ‰ﬁã˘û+çÜ8ÉoÁ¡±]Uøì©ÉÌúAiíΩdíIa¥3àY¸mL‚·MLﬁô(ãl˚A¿ÿE
+¶‚ÏÉe21éõ•B†Ò‚ÊÖ;‚¨û—Ñ a?NRA ®µp
+>ïÖ∆»Æ,˚«◊ﬂø˛ˆıÔØ¨¸˘Oæ} õNåﬂ€ŸÆÁ» ¸„O§`^^˛øÿ≤èˇÁè}·ª?Y7jÿêqÈd+í*¿Y6;ù^˘^îœ”+Ñﬂõuáãç◊n’≠æπ‰ÏÍìj∑⁄ÔöPnö=¢‹>Rª&«≤jUﬂÌ.¥M˙p[’Hkøº¯C˝s7Ô√˝ª	§∑VµV:ÚnµuZé%Éï'y˙ÁàÀ¡•jïzTX¥bo™Ê∫•—üüıÈ¥DÒ÷4„$jx€1–?≠¶!d≈f;ç¬Ω—®	ﬁÖøZkÊ^nöUäŸóÏTV6ª˝ 4Î$~∏≥Å£”/q‘˛Q#HÊ’‹oÈ·ﬂôùâ∆oU£Ê•´™Ωg«<˛¬…f¥«.‹,Ω£É'Kˆ–f;(ø€./÷Œ0kF¡GfF©;ÃÍiçËuy}sóeg!ç]⁄Ó…¢È€Îêá≈v›aΩkZ)D1tﬂƒ≠ËõußˆYöP°˙¶1˝•Q€ﬁNyŸËú∆hQŸQÚ|ï^YØqºQ·öµ\Ÿ:V«≈
+‹’9-Uˆﬁ≈ÇXg=±Œ∂?Y˜:D«:ÃQG0jÙpóuCJaä˘3ùø:Æe!T_ã7ÅÙ#´1∞ˆºÜW^≈@çC‚æ3ÛFFƒºÉR <«Æ='áñ8$3ÑcΩ%0ÑrNŸ=N™pß◊8bX}Ü^Å§≠~=XmelŒÍ$—Ûê…zﬂ‚zr2!¯‰(¢5l¬.ıÅ∏6Üœd#I‚ùMVÜÙ¿®FÆoë1Òs˘©.+úDîQñΩtqÊ*—÷˜Ö†Õífµc/o∂ÃX ∑ŸUpsg‹ûéœ6´£≥˙ºeÍ\©=L}êpj›Ã˛u »¡	vY5ı¡rE”∞WÍ„1e^É»a5Zål6©WÓΩ9˜p#ˆ
+Œå˘-ŒØ“^©Q«ﬂÖ'≥qqJ?%“™Q´65¸s∏E¢ƒ´Üf:ç˘r›õñAÁh';„9÷€Â¬ˆ˜È!o,Â®Ü√XÔ<@Y|I¡7oZ|°-Ü3ùMÇgî˜új|ûôól:VŒË©µ®eb|nÈÈ§†Lkx·¡T≠§ã◊∫<»´ìï©ò*„Œ…Ã÷˙m5;b‘"¯Ì∑¿©gk?_pÏFöÖ@ÒUÌ¡éåÁn¡¿:këmàÊ*ı&ÛA≥d≥=¯y˚6&¡Hí]Z"ôıò¡rp,fM£∆Ü‘_á0ã»ì˙∆Ûi;ëåºWa\ÚºFh.É∆ƒ=âÙÆú’^tŒc%^0AΩ≠≠Ò≠"V”NΩ∂¥ñÆ”“öm«Õ¡ ´Ææı¶ã‰e*¥vmFyƒ∏VU~∞ı£ûœ~}"uPÓ•◊k∫|Æ|S˚∂˚xÕÇf!=Uó«Ëœ-]∂2-√)[Õ∏CËI˜`º~9Ÿ¿ßá÷ìëûl#>y⁄˚_‰^M´yÜspˇ}õúnÓ≥Â«üw‰V	Ùÿ—}ÔW≠˚©˜frïZåÚjaË©Y≤≥Åèjœ…È≥dë+œq Ãò ß‚ü˚ÜºÎü˙qæ˚§cÃûº÷≤oÒ{±ÓÃ{~ÉÁ[ºü#}æ˜Ê}ú>ﬂﬁ«∫cº/≤_9f_Ωü!ú^˜ùå±∆˘dÔ˚5◊á?ì3Ô·Ô+üá˙&Cr°˝z˙ô¡gÉ≤â=˝'ﬁˆI6Uæ6.√yÔÎ;·åÎ|D˚k¥SVEáF∫W"ﬁËGmZèÏH÷Œ.U≤Æ˛æﬁP¢Ω\6ä≈∏ª#´f†p ˙ﬂï√hVûë‡ù®ŸaÂˇ+QΩ#‹¨ıºI≠ı∏∫I|ŸÁ«Ú*G|#÷cMöÒ.˜¯ı≥˛¨é¢ÈèKøË7Ázµj˚\g=U>ÃKøYLãOÎˆ°5„˙‘4ÿXÏÌ≥¡˜È˝Y†–Æ⁄°6P∞k@˘©ØR:üäIﬂˇ` \¡ôé
+endstreamendobj64 0 obj<</Length 2166/Filter/FlateDecode>>stream
+Hâ|WMn&ª‹˚ﬂ:Äë‚ètå¨r #É,Ê= …˝Åê,™›˝fxaó≈¶$™X$ﬂ««Ù˝jÎıÛÌ}|p"SöÉ˙‰Üºä>†zjpÒ˘Ycø;"∑˚ó§îp∑_öyàu∂¡ÍZ“ÆÍL·ä>Ü‰˘≠àñbùÅ&œB¬π&å5Q	ƒ,@ÊÈe6í⁄¢—‹πø	º‡“i_;‰%Á¿qﬁ*OˇÛÌ_o?ﬁ˛˛ˆÔ∑¯4~Ë%€?ˆ∂9\^Æπ,‡ÎÛè∑Q&Øˇ~˛Y˛Q∑öÎUøvﬂ2LÎ≤'bTòzô"ÿ˝\¿Üƒ:;fXéãØeﬂ√|ó˜ı˙éõ6™ıàS‚ELS_Ô¸1Ü6ﬁ;11 'd1‡9=ÒÙ^œ',kÏìÎs6ˆ≤ß’ÿF˘∏m¨ÁÌ‚8ræüÖuP˚◊:.Xê˚K≠èΩ˙|ÀÛ˙˚ÏœR·XÛâm˜ı”Q`]Ìü"N≈v7§‹e"}E+†ìhÔZœ ÷z[¶Ê˜n˚——«ÈH˘©ü2âüLXù∞{ÏS|$	Ÿ◊◊S«—w=≠o“=-ó•é˚ïJ⁄ïÑÇ‰°JnUΩ≠…–[pˇ¯§J∫_sb~(/⁄°.˚cm’Aˇ.'XqÛgN‰Y.Q…+“Mº2z‰™ßrÖ¢‹ŸâÖ›^=G≠ªıv6 ˝÷h*V—ÏÌ|=ìhÖ∫5ŸÄCœíå¨èıi|rΩﬁè>ıFâœuìÆï,Û±Æá§Rü/ﬁáƒÖ∑5Kß#gWì|ÅÓIUøeﬁV√õ˘Ia{xüTáYGz›è}•X8ıÉÈôíƒı6IﬁŒë
+Æ—=∏˘ƒ˝RuIéÄAÑÌ®JÕ)Zß@-åº
+◊N ÕΩ@pΩT?‚Ÿı!ü;.ƒ†R1Ω’áÀTŸìbpy§ˆî2Zø+	:"¸¡÷8_VÑP€($ˆ˚3ÖÚrWE}è¬gÄûl≠e$s±ß@Êz–≈Ï< hÌC ´>P≤ﬁ<(Õû#ëj≈.Ìﬁ È¨ÕÛ≤Á’ˆ%≥JB˚w-{ô}ú,5âwø¥¸Î±o|*LÚ≤*»q/‡:=v≥±Ì«eûj£†∂û»T⁄ÚŸπ’›G≥Õ6Th∂‡¢[ï;Sı‚¶ß‡⁄’më<˙ ˘b.VØ∂®‡“ı≈Îõv€º€éí‰küîŒì]h.N9À5ø!‹ÊW¬Œ‡QTîñzÌ‰k¸πNOÉNü÷Õë«,`˝Ô´¯‘=¯âOù#F<ÚIÏˆ¿W%‰ü2 ›5*s±vó-Ô˚≠2.®˘8ÑFz©˘,-ŒçÖã%ŒM»nQˆ!ëgqâñ∆öœÓËòÙx»cΩ˘œ„Ip>-“Ô4,)€	wY—Eê-L£ºôÏ^WdóÙÈˆzÙ_ÌéN©Xª˚Øu;L¸:O„}˙±É◊ÌnOÇπŸ+÷Õn±
+<‰±~’û˛ﬁ}=÷]nRìø⁄ù…„•ÈÕß…¨JE„™lÛ’M⁄œ´yÕñ¯#∫êµ;v’ÏfÊı:y}ovZËÒÎπÕ@[2Ì/›‡…õLÈ{^ÿ ˙Bß”œ±‰k»úæuûŸ¬dﬂs:Mπ˙°K∫û‹&¥.¢ßŸAãwïÎÃ Äv‘Â1ÇEFÍ
+ãÍK=fQ≠1°7Ã8,øJÒŸ·:ç»mMw#L`'–Lne´sUËéx…Ú™,˚∞8∆ŒKÓgk¸˙œ?ﬂ˛Ò˙Û!qî≤Û˘]wx˜5Ëªö,–~h	˜–≈ıœâ°AÇü®µ*ƒ≈K`4äˇ¸D+Z∏«4¡ó‚)ÍçeßPp¥©BjíªH¥®2eD	+€$mQü8XÁﬁËF)M3ê6vz⁄LØˇMÙ∂€î•1lJ8–°Ì»ú¸Dä Ãïtö@kïÏÿ,€ªÏx&¶-FG9„Ç0 ˛P™$Üm% úãø9üC"ı¡ŒF(–*KâÜ)˛≠ŸiÂØ˙bÁŒ©^(_#L5gì‹+˚Ñ¯pé:GäÕƒ‘árl?—õo™9Bî“@√π–∞æ÷¿±†räqŒ√ ƒCVáv8ƒ`aTël5•ÚæSQœÍZ‚Ä©ñôΩ*ø&[íî’ú2$sö±?ﬂ~¸Ìó·ÃÉ)Ÿôg&XÙÃâoRÅCm)Œ–:"O
+Í‹é≥éyÕeÔ8Lj6ª'ÇÖÊ°µ∫[Prÿ6=Ö‰∏H$@8!ÿÓçää«‹òY∞f‹î5¥öK‰Tùx±1]e&≈ÛÌ∑Õ‰-?›o!:’9êIÛ œd“,[üE⁄î›tüªHu+‡âEÀÖ§ß†;Ú°˛‹
+C¨x%«ri†oq(ñi`Hãöí˘\()®"0„∆ªÛ ∏RZ°C3à[9„ù3¥`ªÄŸÀvyŸfqÕ/®”ÀºRy€ƒ]1Pü§˚ù ÙSÅÕ⁄^”%˙+§ìFπ	∞@h)8cªŸ:KÜrù,KM/ã°	∏¥y_Õ2ò’◊ÆoÚFáá°≠ô7∑ë5˛ª2ä˛‡¨*NéîPúµ≥∆P*„»¿/Ç“åY
+LÀ[ë+.<¡ÿVWt®aÓíMﬁÏ¡ç¡QÃQVFÜ
+x¨l}ÆFŒË(9‘â—€r1JC,Q™0Œì∂$Ü(˝Eu>Ct!ûAÉ~-OYsÀß»y4^ö“ÿ¢ªÕ1gQ‹≥›KÒÛ»o˙®Æ«„JTAL#ﬂŸ±X)`&6’‚o+∑É·j•c©N(⁄ú≠ÊµÍiö)ÛŸ’LE≥∆Æ‹|éŸ˝UZqÈµTF’≥M≈ﬂ´TÿÀjîrÉmı˘ôÇÍÉ˘˜:)IY‡JßEÊ‡ﬂÛ-Æ∂9óÕ”èø8“8œ§Fw˚ä»r:z˝OÄ n íì
+endstreamendobj65 0 obj<</Length 1992/Filter/FlateDecode>>stream
+HâåWkn47¸ÔSÃ<I=èë3‰á≥¿bÅ|˚àUdOœÁÈ$0`7-â/ëTUπï˝s˚ﬂ„?˛ÒÁ«gπ©∑˝€ÙˆQ]*5%Ω˘ü2GÑí@œ„„˜èﬂ>˛˚AInuµªH´ÀÊm¥q/Uäkz¸	k?É©¶ :ƒ?ﬁh.cÃR;5Oïµ‰≠fw≥√Mm[ïãçŒ7◊¥À *∂Lh«§¨Ò>Ç# πŒÀ∏—<?>Œ“◊Ûà^˘/ç#Ü…(Î[]ıæZëÇ´Ë˜Uz/ÔÛ™‚Z›*~œg<€ÓB$Õ`÷êÕ∆∫®ÿ7VlÏP1ôjuMª∆∞O-πœuH√ı‡v§cü®ÎãmÀNÍ∫ùÏ2ˇïâé{	ôûã˚·Ùb#®≈rXyåiD˝S<R°=3|U,jm˘›{éáç∂vÅ^&yÑfËd’ÿÌ˚¥ñ©ıÔŒ[∆„D«4ú≤∏\HÅ:fk∑óÄv†±h≠Ñ[Ûﬂ5;=˛yômª≤ËsÏÍ’ÀfÀVF˜£3<ÔiÏ¢íß≠µŒªbóK+jó6X∏ëΩ°®#&õ2LÅ+≤&ÀçÇQ\iΩ¿IµYPÕ⁄cXäaµØ«ãà+Q∏"u≈A‘∫_è∂(pAøhö8CÑéTâ∞r,¬~ÑÅ[÷u;üzºuwuÑwÕ,Ê0zﬁjJ”Ω±ÜNêÎùWv7—ßñÁ$I-\ãHqÌ±®ã#E‹`Ej˛6Ì9v˚?wv,¡æ∂›Ïâu!÷	5“§À’TQÍÙÔ6©cÖ_<v^z9sË„æ√’è/«sk3ì=öKQ≠”Âvﬁ¯ãˇ/±ΩD}d‰Ò#YGøﬂ%y¡t\´°R«ÇÀµ∫Œ›d.¥=dékm{r .§°Ôî;GL∂ø{âîåÌ§‹'Kc?b7Eªª∞ß®nÉ·±É›&∑ÀÇY§˜Ê#X0zıﬁ;,ª[˚‹˛>4+ÖÂ¬‡∂⁄|üOjA’ÓÔI°¡â˚¨πvıK⁄∫’Í÷·A-6ºÔÛ¯ª¬%ŸŒ
+≤Ê˛-œD®+√WÃßßá·K:°ªÏÜ\„≈Ì≠ä4zç…d¢jÚïk•Xë¿f(· Fõq#µUt§Í0è&ÔÒe™Tºa∏ÉYÈ(Cïè∞aÑ»Ñ)7‚√VN¬ÅT™ÁKjhe…∞Äèj‘/ÿhOç®]øÇÿ7NñÒ…fÑÛ‹l¬ ¬6=5®±8£∞ù
+◊÷SÿP*’¬a5GﬁÕD°aßñp®ÊXS>‚ı˝ÍØáUŒoÏ‡”⁄‚≈•4„E*t÷ÎäØc%.!:*Ì {ü«{Æ˘f∑“üH·Cÿ$:=#3ã¡U.$Ã¢)zﬁXL wfïS9Åh„¢&Ïz*‘pÎíƒ¸åÆ„%ˇ~ÛÙOk≈{ÿü˛j}w…∏D˝IQæ>û·‘L'/NË)œ{”ä˘ºÈ•uÄëÎ¸ïª5+@X§î	?ƒq;≈π√/◊F˜’˘$Å—πÊjÉ%Îã∆äÁıW¸‰ö˜À0Ve8Z∑ÓÒ^≥ß…ÚﬁæN¢$à€ø
+a˜ÍthÀjqÑz≈ùf\¡I{˘—ß@ÊÑ<√±∑1˛K”üœ*xÀú\◊F¢À;«uÌ‚€Ïa˝¶∂$?" eg’lÓ\Gü4ˇ$N-`$¡têèµíæú°◊÷çÙà'G'J^≥ò%∆Èvl$ïË[<1e∞QrE¶}é°Or-5f¨IéTBë…sI7&œ≈hã÷ìd3’R7'ı9<ZÛ>ÔÀÆ…Óëf®Ãë˝˝#πË>∞ŒGœsü´'yZ8’"p$>rZZ¶ùsùC2fxY…π>yÂè2üœΩëu«‚W∞UYhm£5á	?g$›◊”˙+s.JzŒ•%Ω¡ﬂñÆ-5∆œ[ógJÉ h…îNÄàëﬂ‡◊öEˆ1~ÇëÃ %oíÃ =o|7udd§
+Ta…À˛Aãûã¡/‹Q3ÕU ¶J¸ù|\Öd=¡4Rl|«¬x!>ﬁ8-ì‚HÎP≥RÍ©%]ﬁ™P«sQ- {»}GÑxπÎ»Œ$8Äà-˘é°∑€Åı]‡¨ 6k+ïUàÑèéê¡xπúÆp¶
+πJﬂ.[	1”6é≈.KàwZ{9ı‘»çié/OEÁD3êŒŒŸdˆë‡£ØwBHÃ∫n?›çÏ%Ê#è© $~øÀ0Ù§S„y—GÁDõ:4Ê¸)â#ÿƒ@3ÕÊ¥cÀÓŸŸSRÜ·G»vîÙâ¥ewˇÊD˚?¡ê|i6R§q3‚-A¶m£OÂææ#6ÌßßR´É∏,hX‰R€§R?îÏ‰ÌÔ
+'6qûF÷π≈·‘™7–¢—'÷ Ä¬Yô‘ÁêPÒ∏À£_√å©œö«ﬂ€Ú¸µ	/Z˜¸ë”Ï¿∫ìNú∂¬C¬Éû§a°{‚í'
+£q‘L˜vV@ÂÄ(Wcùt‘ù’x>:¶¢N\q[pJ≤æì¥¶M“&htÈTﬂÉ„%jm†å|™ÅΩfk4º[ƒx>Ω®$a°ê§QIÍƒÄ‰˚\ë «	ÏfÑ© ç§QÎ…4ez$∑ø v7á¿
+endstreamendobj66 0 obj<</Length 1977/Filter/FlateDecode>>stream
+Hâ‹WÀé$∑ºœWÙŸ¿î»d2I~ÅŒÜ?a yñ AÄ ˇΩ#"Y’›ª´∆Ë √0òf…d>É…˜r∏◊[9j∑˜r¥&0<Å¥u˚x4¿Îˆ/¡:±F–f'4€0rvQêπvˆ®A0,•Zä±SÃ5õiÁìÃÎº-ÜKô¸©≠πl*°èeé\Z¬Ô3  Ω]F◊¢üR˜¶¶#œ≠sVâØtU):£ZjS˜∫%M{›'Ùµ]ıûã(#-ßèã≠‘º=*·˝ˆ{Œ¶Ê}ùü˘≥çºåJAûÇ◊‹*lQ=Ò˜Ô∑üﬁ˛˛ˆÎ[™∑^ÏòsŸ˝6z1¨J©üﬂäñ‹~˚¯EC|∏îØÌÓ2∑oËröÂ"S´IÃ«◊ÁV£ˇ«BVçﬁo∂ ®_ù˚√èˇ®∑˛∂œo0IÇ≥∆·›nÎX  Ñ¯éÇ¬®ñc‡ìÜ∞^√°^π®:<2Óx¡pø¡k%ÇÓ®œá≠°‹º†!‚Z£ÊÍ1 √…@V]¯À◊.iJ∏^¢¬%ÛXÒûÛ•KP≈ë®˛G‰pxÖkÏËcÌÒ◊ﬁDÆ¥ØGî∫«ÂkXu"/ã3É±4hÍ*ÜåØ—≈v¸¸L_•◊ä[-F®oê≤>ﬁŸ1%OHnp5
+TTéìi†@¬wX °5˘)èù™óçû‰âTÚﬁèêaìEö‡Ò´ùíKxß¥PÔY•Ì∞≈⁄ı£∫` í¯«,gpÕ¸@GÓm(r\D-k@(ùEÔ˝Ù∑ÁÄª√3÷D¿√X^∏ÙE¿imÎäL£Ëa§Õ⁄‹NI ¡9”Œπ8zÚD[wÑŒ¿ü°iì⁄;â”èuü—Üètâç?(@î1}yG+V€≥ÅjËDW~öƒ"—πtd–Á!Íÿ
+ºDrêN õ˜)â§ëhqœ"ôëÛË•^Y[gfò0ajœ$ßI˝o&„∆ÆÈ\Së’@MŸËÙ© V"Îö´∫6œm»é™ºœe|ï 1Û °è@d}’zï ;‰¢ó"Õ "˝b∑2oÎv∏ÏÎ∫c:Úv)a—]¨ñF”ºÛ
+L@“X‡ÓË°‡q	Jgj°◊PÈT⁄S"T:ì˜*Kél„°rÑ€ìGr,N*æº´¿≤#…q
+·™DΩë'G†	¨)IK©‚Æ
+¶)õû}èÊ√_ﬁ§À·DùâEÂí¬{°a#)|≠k!Îß]Ëõ v“à◊Çå¸3îmü¢l†Ï∆~"Ïæ∂æéæÓˇÉ|Ω˘∫=Ûu˝Cæ~¶k{A◊ˆH◊Ì]€#[€+≤®
+Ô-›ŒükX$óπ»te¬1Kâ:<€’W†≤‡±°Œ1‘πÊXQË◊DLM Qπ›˜ˇè´bŸ˚T∞Û¬∆é”Ÿ1AOéÈ<w€’ÑÊ»ﬂ¯âÕïÅ≥åç‰a8iAæòä_„Å¥ù∫M≥·ôp$S;∑Øfﬂcæò,)x≥ˇ)o∂ÌÕ¨Ö(!(„jèmh
+‡ãŸ”õÈB"‹^ú‡£A√lÈËL Úò|- Z~˙ÅRóü∑’Ä◊|h¥P8\ÌŸ06 a∑ºXíì˚1ƒE⁄òàÛ0wÍ·‘0{À‡Iw¢©
+ÉÅ›„dç%Îıô%πg»ÆÌºé:√ÑˇY¢CëˇNò–¨ÇRå˜8SÑ∑é_á…‘ÛãIÛ=ÕD•1ÏzRÑe±€∏PdCC˜àÉm‹°¢˛˝ ö˚˛ÆﬂcËäão@gfˆ'-`ãïóâ^ñÒ|ñø8k*D«9>}.Ò:ˆu>≥a7pÏÇ& ÿTW•Ω] †˝XwM¡s]‰N]=ÓPÔC{2+ÏèÕ2æq∆(∏∞ÜOﬁØEl˙“,Û|Ñ·L\àU]áPÙ}Ÿ9abxÓÍ—6¢y∂ƒ»ΩßÅ>Á#l˝ûLdÔOx∆∏Øf÷vk# ÌE±˙án¸WC◊‘¬òÂÎX≈}±øx˝¬‡	¯ü,[ä¬—Õ›Çoè#Ôv∑EıŒ«m·Î—2,§ûÍê´_s∞÷%d	Ù∆ôZ˜¬°éUo±ö]:–PıóZSü›RTÔ©í®¡ó⁄mæ-pQòxG$J∏≤È·kÑûÔh˚Ö⁄ÿR7Óûç~Q3?¿Óî”•Úå∫ÂK≈$…Lö$®¶ñû¬ö≠ÿ‘õb’öœà|d«‰€ë[£ z;π≤◊V;Q˙’Æ…,-"ì_frf;V‰ybKGEK‹g[wXá“∑éùb#[≠|_Õ–;É7&(Ÿ]YﬂO°JìÄ˜…r≠tgˇù #=˚9˜∏ûe÷íˆÛ¿⁄∂Û|EñìºS™Øå…Ã-„\ªfælc‰€Hk[H@MUı7Ô˚	Åhî¥adßÇ∏£ù.]r-ÀAúπUÈÊÛ|êU¨E`vWJßÚ}®∂a,œ¥4U[B™ƒ∑ˇˆUt>Í&≥*5Ålﬁ◊(rc¯}Æñ÷Ï-ÀdòÁ¬™BÊ≥™ô∆™JSìîø”4ˆŸ’¨ø¸.mËYG,vºˇ∑óé#¯·_üÔÆpDÈ€∆2ï’ç™z¶'Ñ[˚…◊/Z$«É†öïÚç∑ˇ0 ‡1ùY
+endstreamendobj76 0 obj<</Length 2281/Filter/FlateDecode>>stream
+Hâ§WM´d«›˜Ø∏À◊ã◊.©T•™måx¸H!3åc√ÃòÿŸ‰ﬂG:G˝1ûƒÜ7˜Ù’UI*ÈHjGãˇè__Ω;}ıßÔ‰¯◊Øß¸·Ì©]VﬂÒÙÊÙ‹.≠Õ„Ÿ.MóŸ˛x˙·Ùó”øOErÛKÔs4ï√GªxÎ≠È>^ΩÖ‚èû%° qñ\ñ˜„π_ö¬ew®óQ6ıãÓÖ'ΩXø#óæÔñ∂À~ÑΩª;°Õ;L∑∂æÁ÷‘Oª5˙≈{Î[«·∂CG¥>ÎV®	{/mJû´#¥≈O ih ã»§‡0M∏`ÔåBº¨ﬁ@p∑y∑4Ó}<G°0‚rrë0.‡\˘Jr© é7!¡°=_Y>©‚1 ußòÂEd» 8⁄H$s? ù≤Ö˚Ñ"á"Á5®z==ÃLèaX|üœ8A>Û>(Hï´!xJ÷dÄTy´∆E∆!Ó4cFHò—ÛuB]œ#¬"“æËZâä„”Ÿ°U¯÷y_ÖvàP6±F‘ën≤z"Sxß4vY€'∞”£ÏnpiÜÛô¸a<=[3±4ÌÃ™@N^Èı∫˙ÿ¿>çLÉÓõ’Dê›Koo5¸>Ù	Y5‹Wÿ=†IÛ√j£AF≥p◊†§+›Wﬁ‡À9Å›¯3–®HŸcP∑•ói0w^NG^Û∞}⁄xx92…MxmcSMÖ$]	(x©ãC•C+€ƒh•3ïñ”f\sÀ à»hïÓﬁ8&´;ëCØåıÄ⁄®Ã ó:ì)ïû†¸˙`B8ËUe:≤‘˘≈ËÂôu÷VU£±ÄôŒvä∫Ô+‰—Ã•(uã÷T·t˙„EùÛv_Qy≤)À¢∆¿K|Ù‘Ωó(±0Ì{K⁄k¬f∏g	‚Î j
+âdSH ¨¸Õ,åb1x:¿ù.õ1 òï,™	†Åq≥…•'£ûqK”Ì˛ ≤—…ê“4â‘w§‡dwo¶W∞p≤˛úÛ…%ÿi~qL+ò{˚⁄´Í ˜Ó$W§k€∏$s§´∂koa∫ÇR›˙$≥ÓÆÈ9z’OΩ≈µ∏;øÑ÷µä∏@ÚQı[xÊdıC÷,!WBÏ$ç¡
+x´R%∫R≤t`„€FY3d’$x›<◊Ì›∞O∂óLÄ.ÇÓFnƒÖ;àQpëõ±WjÃîÄáë∏QLÊÃi¡=É≠:‰òÆ1‰ôSdÕHâÍ$q(ÃHÃÎÑ∑ƒÈ¶45¬∆xGè¨f¶oI‡]Iıö&]œÙã∏`;œÔ¸ÏT~ÁûÊ46ÅÖíXÇt1õ,„`¬…«7¬|ºëp≠p^mr´¡ET
+é€VIQ—]√n‹—Q 4‹ U∂ Ãâ<”ÖR$€æ vrÆ+[¥"l6Ì÷æì°jBZëòÌc#‹ÃqF%äƒmE‚∂›∆Á'∏Hœ∫∫ñ≥Ú|ïI¶Uøôc=ÎæŸ*‚àÁïÔwó
+)ﬂ» új‡tãHËJ/Ú†≈ﬂxfvÎ˝ô¥rE97‹àÕ2!d•%ªÒD2T∏úf^7$tS¸¢,ê=ò- ¡ï
+(-ß≠|tQ6Pöö˘à°ä36SF’2¸»ñÃÂ∏⁄å•≠U(„ô©Cîπô™ΩAì•‘≈
+∆∞@¯“ZJÕë^éôŒåÕ¬u…sFûΩ,mNR»6õtt)E6¢vCä`´·3„!†µb©uÔ‰ïﬁx‹ìdKÃÛ8·ßî≥∑5LU¥5,$^ŒÁÇnà≥|‰z }ﬂ$…º5©πî{Ö°Órâózá8 "%´V¢pˆÖœ —y ¯®£\7hás&ÀÕ*/Î–NŒÂ}L¬Z&êÒSç3;
+£’:“aˆ‡â€X.ko4pN†Æ,-∫£”£è8Í≈DÆ[xüÉ÷L}:π>B∏fÕ~m%‘üò=s€›°¥}Ø;˛ê-Ç÷bFh¡ìIjë~ˆy∫»pH—≈f≤7œç^AÙc%øb@ÕØ2ôâ≤[()0õrﬁsVÕÏ„=üÚ:Òö~ó∆8˘ıá>z‘∏çy˚•≥HN≠^›l9G˛‡¿ewò›rC.:ÔæuB6ùr%«ïB‰Lòåÿ∞yáX<ı&¸\…Y∑‹¬ñpu;Ø1z•˛ﬁàï'd%sóï,xaÅt‰öÃj0CíSU∏†¢(Øec”~€"nÔ„J6S.dlRÇ∆GOÕ®"çS\cÚÎu‘„Us8zrçmùåpõ¥7W(ò¯ÑüﬂP˜“ZxX-:‹πÜıì˙NÕÏ0öTkﬂ¡_eE1RIπ4lu.rl€‹ÅËﬁ∞
+¡‰ßSÏ∂ ‰ÍÜÏEE1Æ7¯Ã“Jƒ}qp◊a`ÆÕ≈éÅ‚÷Ar1[tˆ:¸rLÃ°)∆—FÖ$Â \≠≤çcû≠ΩB8É©◊ÏÇàõ--¿ã^„˙N—Èj.Õ†Ò<È;€ú®≠FDXæy%ãü¯Uv/ç	+≥—c>Öa|ÑÀbGG≈&Aú[&g±Bï7‹Ωg5ÄR˙µÂöGû⁄P∞⁄∏&CF”¯·Gu;åm…ÈZ+¡‚˛âäù6ulk¬ç`í#‹‡‚úÎﬂŒ∫ùE¬’≠ÜSA˚û˜m5©úÁ∞Å|»%±Æ≈Ëõ◊•ô°ó"<ñ$Èπ∆Â;ƒ,ù©O˙$urﬁªä¶ˇ0áGlM¬»é;Ã¢z‰ Kﬁ„ oæ˝˙ÄõiårÚ®∞_^ü˛vº;˝·Âcû}ı"ˇÃxº¸pRæé"ç}ƒ±·ŒÀ€”ﬂü˛zûÌÈıŒ2û^üü«”/ÁÁx¸È¨ÌÈ›˜˘7~∞ˆÙﬂ„¸¨ÛÈèg	È◊«ŸÌÈÎ7gOﬂCÙÌqÓ∆∑?Û#˛òﬂÁº¸˘ÙÕÀ{w¥gt±¯/ímÓq‹{ÁFÕ™ﬂøΩù·Q¢\æ{OœÃ˝LvN√”W<°gÈ'ıÏ‹9˙GÙxK÷í cX∂	€‰”zös
+˛¨≥(∆–Ùˇ“£ç%Ù¯oıˇ` a÷ç∆
+endstreamendobj77 0 obj<</Length 1820/Filter/FlateDecode>>stream
+HâƒWmo€6Ó◊˙W” µ¬7ë¢¥hõµ›∞b†í°Pl⁄V'Kû§¥ıüﬂvIYVú:/Àf¿%Úéw‰›s’ #åVäe(	Ö~68¸6¯s@ê!(H`Râ1ÊMWÇ—)Ω;#h·ÂURÌèhHà2â¢XÖÿ®ë7™aòÑJtıòÔìä¢R>¢|z“|≈U”ºUp4!ü,8ô‚f4Få"ÜÅÙd58NıÍRóh8¢qê_ô˛x¯˚‰gP6##49ø&+=N>&œ¡´Ÿ¨‘U’º√$*3Á<x_¨¥U≥^π€æm/ÇÓ€Ì€ãacÀ—Ÿ:…—ÒÒ—´i}ïd˝≠F¡_?y˙‰È≈ã◊'o¨å3#iD~<Öèƒ¯<ôŸ¡[.˘±(ˇx$7F`è€Tc”€‰€¥I˝m"Lò'ßîﬁwª§iE¸∏J“lÏîL 8i,¬HBzPr•ê§aƒ‚,å01¡:øS¸æ°ün¸“X⁄"≤à(∆«G¸$$d1^õ¸2ﬂ:9ÄC*ºèÜ$
+2”h”$¶©⁄Wé∞`j∫ÀˆcÛ
+—·wmãô”ú¢1ö°çm ë4HÁ.ﬂÙW€IlNπƒ3˙§<ó†ëÖê°Q˙æp”≥"_ÿﬁ2©lß^¶Æ∑÷µÌ\jù€^©iUÎRœÏ˚◊¥^⁄ﬁ¶∏rπø.ìiùNıÀ~ˆü?Õo\„´_ø‘s]∂‘E´˛πì»tR9|X§_¥◊Ë:y‚¡£ò˜Ü¨Ê‘{ÏÌ‹¢•3Ù$uÎ'˘∆v“,ÀacùjÁjöæ*7~ìZÕ”,IWﬁÉπüÁrï’^∞g€L'~'˝|}U/ì<©“‰`Ô^~?a}≤M&ÿ«-ÜÇ∏Ä Çàn≤ï„0≤± ˚≥à≥(µi`%:y9ª$h”fªR'Åú‰Nˆx…`£´fÙˆ>êê1vÕ0ÎJàUÎÀ£òõfpëfvÑ}lÉ?.RgI›≈Êî«[àÛ‡ïõ)ÅX$‡â∏‚ÄGëàÖ8j†Ól@eH#?CPÄDEÃÌxáQ ¿L)#.â9oìÅ¿jxÀÃ*Jâ=úÇJ Yfr·öP…˝LE°îB)í:Ÿ◊©Ü˙ÑÕŒ¿S*À7~$:ò¸:ô∫¥™Ù:)€˘n:;< $∂hp—Œÿ8”,Õ”iíπU“EÓ¥zlËÚÎÖÛ¢ˆ¡‚:´dÊ∆\∂œ“dëUZ˘¢õB]8” “€û¡Ù8xÎ\ÍlÌúr3-V ôuN[Ï≠4‡üü÷Ö’J∑à˘Eó˛Î•líÆ´¨mÅˇãÜ êÊIô&9LÊ≠›>≈Ï√¢+é	‚ÑÑHosú ‚2”+£J‘ùD°‰÷—ùq‚œ*∏QpmkÔEóê4\4°Dô•ì°)€QPM}nj6eAΩy˚fz)¸À°©ÓvÆôM˘∑£π{Nù∆¨ùUπëÖõeˆë»`_¥9Ÿ™ï5Ûãé}≥v‰zõˆm„Ê]¡ˇy˚’H-w<ÎZ¨ù=u◊Æ∏·#@‘œ€Ôñ8aÍbj›6J=- ôã⁄Â8ëpÃ @A¢(FDàP@6PŒx¯∫,®Ê+‡çC) ®¢pö¬Gí-Ï.òÎdÂS¢e(i^ÔíÄ-~Ï†sb$<\ãÄêBÒd∞&„&4°‘‹ôÜn”°çH‡h(ë8‰¶öﬁ;¨&ø∆áiyèò«Ã“ré;œñûwã¢	<ìz˜™ä€2|º±P„ôè√$ƒ>~∞[CL¸uPŸhtÔ›µÊ†∏•ë-Ën≠ÓJö:„Q-~U◊PÆºÕ3]√ç»øAZÈt]W}PıV À `ŸΩ•“¢Öf±Õ„˛÷Cä?Ó—”ù£gˇ˚—Ôp/ÉN“@â≤®'FÅ|Q»F÷ÁVú™0fpÑÆ  ÛHôãP(kß»·êàxU‚1ÜÎò‚,N∆êzÙI_Å«˜ c°»Bn‰’5yÉ%Jä≤.&Ä8ZÌjÂáË7à9æ~—;πF}/”“_p.Ç’Íh6;⁄¿Ôbÿën*}NÁ3]˙3vú'£Ôﬁˆﬂu∏2%ÃPYbÈªGr#¬‹(§ ¥ç•Ü"∫Lﬂ√∆ÓÉ∆&¸¡7öπˆFéàÚô»‹≠f≤Y˜JˇÅzt[ }>[˚g≈‚Œ;lGö-Ñ‚y⁄≈é{. 1~ãú&uo√Ì52x]j=˜nÆ# N±î Ú8Ñ+÷øëY{˚©óIæS¢7:)ow¬›sÌD/\9{·†ŒØÁ]≥≠{¸· ÀÍN>≠äRÚ©¡~∆ôFöñëñ£·nE ±πfÒmIÄÀ∆=	˙GÄ :¸ê]
+endstreamendobj78 0 obj<</Length 1832/Filter/FlateDecode>>stream
+HâƒW[o€6~˜Ø–£=‘,o¢®æÏínElX{XáAñ®Ñõ.Æ$gÀ~˝/¢,9N◊µ¡‚@î(Ú\æÔËúCÌ ¡ë˘¡¿)E"ëÒÑGªzµæ∫S˘ïÓáÕÓ˜’∑ª’€’À77$∫ÌWú$àS≥öÿ’Dƒ(å	ä£N≠nVÔWƒâé•Â±ò¶©êQ^µ?D+Û∫^—#")‹W∞Ì-l4ÛÇ–(I©ëıs‘¨æŸ≠ú•Qü7´ó;Ú»5H;+#:@êƒÃX˛À˙:⁄l©\ﬂe˜ ›Â∆U∏á·ŒœÍ¶lª:t€∏âqÓtÔ7VôÆ_∏˚¨ÒÙ‡«qQ€u*˜ìCª–≤WΩ’ñn¨‹¯G”˛Y©‚V°ÕØªÔ¡«-E$évØ¡Ö74^gÊRõã2ÿ≈÷≠π+√£]2Ñã]◊òKa.:<ﬁF `ãQ¥≈S–ìx[Ç®WyØ’È&ÎtÊqx∑>T*ÎΩ#x9º€ºÚ∆∫Ìì≈7˙∂…ÜcßÊŒF£oì¢lTSËÊ÷≠8’˚*H¨Å&¢«fñâHKÊ,õBu˝ÿÓ≤aAA©îß ƒÛuÊyh⁄a§j$Ù^u™º∑›bΩ˙+WAàü;T#h{’®R=rè¨˜Ÿ õÂ1"ÇÉ√ªb–¡ó7ëµı/íÊ˝/ìE£·ïÆuoåƒ…˚∆œ‹v*Ã^ÕØ¨nèç«§?®\óz∫X¨˝©kÔuìÎ¨rœﬂ)ˇ‚ÕQÍi&™ÆG≈0ƒ'aJN¬‘O	ëb’UﬁíNıá∂ÈıæRsøGàœ„∫lªÖ™ÙπÉAßV# y€Àê∑M©ª˙,‡Œwéô®?·ò#é≈íc‚9v/'é˜Jy´ô–Ë«±™Ê
+*8≤ÑwJà∞≥‘Uuñ¡±BõÑÿœø‚∞‡uõ'«◊◊MÏÄµ¿iäí∂“πÁcß∫∫±ŸíëË›‡ÁU–º˚˜A=©±f-æ∫Ï8‹µù˛[}("∆òÈ‘I¬ÉÛ˚T°Û1¿°6 s¸¶ÜˆƒìÒòŒ¯ıS´?o8s…∫üÁÓnì∏Ñm≥˚wÛ$ûÖª<º∞sUÿqñX¡G'Û|ÔTPÆÃ]*Õaæ¯a^i¶“bÁÜ∞◊>Ê·±	UJÍGDM‚ã`’,–¡∑~æwzÏ¬∂˜¡ﬂI•
+Êæx“è2ﬁÖπˇü¢eµˆﬂI}»öáyÿf≈ΩÓ?‰À˛#øk˚ê\†~°Û¥KQ
+m·„ı}˜1bÇ^HkÓ›ˇA’{’Ω2ã‹V[‰„(é¢R@{ó" π´Û7WíäoùV,^lUNÕkL‡Î\¿nÑeÏ6˝tÚÉ—#P◊Ìn€œBoäã(a(éeDEä§ig9J†Ã˙Fˆc˙QagED••z“ƒv”umúÂH¶ëÅ˚<PB»ı¸MñM˝3Á$xÖMM%bíÒ4%¶èÜvõv‹u“¶Fr$x:ÈQ ˙©"î•S∞üß"æ$"Ãã D†qc0r	GXÑâ·Ï¢±¬·89ÉòK_ÑòâX¬ÒDÄ¿1˜È„æAFÿ<D∆ˇIlK‚HbîJ1,†C˛å·óöQ¸¢/≈”nyú¶Ïcêq±˜	\‰}¥ÄÄ‡À éXRDY8√∫ÿå•”‘18 ‚Ñ¬"é(Ü\ °`íp∞MÂ¸˚†ÙÂåyo®áüUcwƒq;ÏŒ$&HùlLA´óORÏ¬„∫∆—Î~{ëkC0ûüw9e¨M!÷∞)ÔÌNö¶Å˙“$;a:™!s«R±>ˆnÃÜW.eüƒÕÏpF∂„m,…«œO@∫)€Ø˛-™É˛7Gy[OQ—Ÿ.âπ2Àà–"P∏∆,5i¿úÍ<éÛ77ƒB?¡1ï nƒ%îX·ÁÌ◊˚ˆËxhè◊W⁄ôŒ›î_Ùnùï•˛À/tCïÌUÂnuπê56‘b›6Í›fc¥ˆ)∑oN›‘Ã*XL§˘ñì∞yw∞p»EPv1d∞MƒdÅMñ)∆&úüÖ,(∏V¯„d˘s ^UçÍ}Ï∂û.›¸~ÏF∆\$‡†‰F CΩègyˇ∞d˚¥1∫ÃŸ„ﬁ/93´ûÖ2»$ˆì÷ËøgÕ$+
+UÖ√»A,¶üLúÌ‚Lì6cPp–∆h≤æ∂'œÃ$ œVπ‡2‡Ó9têùtÆûì»ß Yri÷Q»™œ¿¶©»)H0t≤è£ìHì’¯g£ÛåE"ÖU`Y¸¡6ÊﬁbbÙ"∂ó¨[bk÷Qû<∂Jjö∫êlOZ0ï`h»XAM3›˝YAàiçLç]6!\$@]Ñˆ,∆êI/∂øê„Áç&&ÌQh;HÇ1y§â°“$ìQ}Ùè  pÇ=
+endstreamendobj19 0 obj<</Differences[24/breve/caron/circumflex/dotaccent/hungarumlaut/ogonek/ring/tilde 39/quotesingle 96/grave 128/bullet/dagger/daggerdbl/ellipsis/emdash/endash/florin/fraction/guilsinglleft/guilsinglright/minus/perthousand/quotedblbase/quotedblleft/quotedblright/quoteleft/quoteright/quotesinglbase/trademark/fi/fl/Lslash/OE/Scaron/Ydieresis/Zcaron/dotlessi/lslash/oe/scaron/zcaron 160/Euro 164/currency 166/brokenbar 168/dieresis/copyright/ordfeminine 172/logicalnot/.notdef/registered/macron/degree/plusminus/twosuperior/threesuperior/acute/mu 183/periodcentered/cedilla/onesuperior/ordmasculine 188/onequarter/onehalf/threequarters 192/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]/Type/Encoding>>endobj20 0 obj<</Subtype/Type1/BaseFont/Helvetica/Encoding/WinAnsiEncoding/Type/Font>>endobj98 0 obj<</Subtype/Type1/Name/ZaDb/BaseFont/ZapfDingbats/Type/Font>>endobj100 0 obj<</Length 89/Filter[/FlateDecode]/Type/EmbeddedFile>>stream
+Hâ≤±Ø»ÕQ(K-*ŒÃœ≥U2‘3PRHÕKŒO…ÃK∑U
+q”µP≤∑„≤©H)∞b†ÍºbÀV)£§§¿J_?ØX/1%?)U/9?W(°Ød` §t‰
+endstreamendobj25 0 obj<</Length 2122>>stream
+<config xmlns="http://www.xfa.org/schema/xci/1.0/"
+><trace
+><area level="1" name="font"
+></area
+></trace
+><agent name="designer"
+><!--  [0..n]  --><destination
+>pdf</destination
+><pdf
+><!--  [0..n]  --><fontInfo
+></fontInfo
+></pdf
+></agent
+><present
+><!--  [0..n]  --><pdf
+><!--  [0..n]  --><fontInfo
+><embed
+>0</embed
+></fontInfo
+><version
+>1.65</version
+><creator
+>Adobe LiveCycle Designer 8.0</creator
+><producer
+>Adobe LiveCycle Designer 8.0</producer
+><interactive
+>1</interactive
+><tagged
+>0</tagged
+><encryption
+><permissions
+><accessibleContent
+>1</accessibleContent
+><contentCopy
+>1</contentCopy
+><documentAssembly
+>1</documentAssembly
+><formFieldFilling
+>1</formFieldFilling
+><modifyAnnots
+>1</modifyAnnots
+><print
+>1</print
+><printHighQuality
+>1</printHighQuality
+><change
+>1</change
+><plaintextMetadata
+>1</plaintextMetadata
+></permissions
+></encryption
+><compression
+><level
+>6</level
+><compressLogicalStructure
+>1</compressLogicalStructure
+></compression
+><linearized
+>1</linearized
+></pdf
+><xdp
+><packets
+>*</packets
+></xdp
+><common
+><log
+><to
+>memory</to
+><mode
+>overwrite</mode
+></log
+><template
+><base
+>C:\DOCUME~1\jmorin\LOCALS~1\Temp\</base
+></template
+></common
+><destination
+>pdf</destination
+><output
+><to
+>uri</to
+><uri
+>C:\DOCUME~1\jmorin\LOCALS~1\Temp\_e9s1e89p2ff7c8m2m.tmp</uri
+></output
+></present
+><acrobat
+><acrobat7
+><dynamicRender
+>forbidden</dynamicRender
+></acrobat7
+><common
+><locale
+></locale
+><data
+><adjustData
+></adjustData
+><xsl
+><uri
+></uri
+></xsl
+><outputXSL
+><uri
+></uri
+></outputXSL
+></data
+><template
+><base
+>C:\DOCUME~1\jmorin\LOCALS~1\Temp\</base
+><relevant
+></relevant
+><uri
+></uri
+></template
+></common
+></acrobat
+><coolType
+><additionalFontsDirectory
+>C:\Program Files\Adobe\Acrobat 8.0\Designer 8.0\fonts</additionalFontsDirectory
+><commonFontsDirectory
+>C:\Program Files\Adobe\Acrobat 8.0\Designer 8.0\fonts</commonFontsDirectory
+><unicodeDirectory
+>C:\Program Files\Adobe\Acrobat 8.0\Designer 8.0\fonts\typeSpt\Unicode</unicodeDirectory
+><fntNamesDBFile
+>C:\Program Files\Adobe\Acrobat 8.0\Designer 8.0\fonts\typeSpt\FntNames.db</fntNamesDBFile
+></coolType
+></config
+>
+endstreamendobj26 0 obj<</Length 5184>>stream
+
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.5/" baseProfile="interactiveForms"
+><subform layout="tb" locale="en_US" name="topmostSubform"
+><pageSet
+><pageArea id="PageArea1" name="PageArea1"
+><contentArea h="792pt" name="ContentArea1" w="612pt" x="0pt" y="0pt"
+></contentArea
+><medium long="792pt" short="612pt" stock="custom"
+></medium
+></pageArea
+></pageSet
+><subform h="792pt" name="Page1" w="612pt" x="0pt" y="0pt"
+><break before="pageArea" beforeTarget="#PageArea1"
+></break
+><bind match="none"
+></bind
+><field h="16.56pt" name="Member_number" w="257.4pt" x="96.84pt" y="79.32pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Member number</toolTip
+></assist
+></field
+><field h="16.56pt" name="Pet_s_name" w="150.24pt" x="429.84pt" y="79.32pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Pet‚Äôs name</toolTip
+></assist
+></field
+><field h="16.56pt" name="Name" w="292.32pt" x="61.92pt" y="96.48pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Name</toolTip
+></assist
+></field
+><field h="16.56pt" name="Date_of_birth_mmddyyyy" w="99.12pt" x="480.96pt" y="96.6pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Date of birth (mm/dd/yyyy</toolTip
+></assist
+></field
+><field h="16.56pt" name="Address_1" w="207.84pt" x="70.68pt" y="113.76pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [1]</toolTip
+></assist
+></field
+><field h="16.56pt" name="Address_2" w="207.84pt" x="70.68pt" y="130.92pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [2]</toolTip
+></assist
+></field
+><field h="16.56pt" name="Address_3" w="207.84pt" x="70.68pt" y="148.08pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [3]</toolTip
+></assist
+></field
+><field h="16.56pt" name="Breed" w="171pt" x="409.08pt" y="151.8pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Breed</toolTip
+></assist
+></field
+><?templateDesigner expand 1?><field h="5.842mm" name="Address_3" w="36.3897mm" x="29.3486mm" y="59.9165mm"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [3]</toolTip
+></assist
+></field
+><field h="5.842mm" name="Address_3" w="39.5439mm" x="85.8725mm" y="60.1638mm"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [3]</toolTip
+></assist
+></field
+><field h="5.842mm" name="Address_3" w="48.2815mm" x="17.7045mm" y="65.7384mm"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [3]</toolTip
+></assist
+></field
+><field h="5.842mm" name="Address_3" w="47.3008mm" x="78.6017mm" y="66.2242mm"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Address [3]</toolTip
+></assist
+></field
+></subform
+><subform h="792pt" name="Page2" w="612pt" x="0pt" y="0pt"
+><break before="pageArea" beforeTarget="#PageArea1" startNew="1"
+></break
+><bind match="none"
+></bind
+><field h="2.28pt" name="Simple_Steps_to_an_Easy_Claims_Process__Row_1" w="557.04pt" x="27.48pt" y="55.8pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para hAlign="center" vAlign="middle"
+></para
+><font size="4pt" typeface="Helvetica"
+></font
+><assist
+><toolTip
+>(Simple Steps to an Easy Claims Process, &lt;Row 1&gt;)</toolTip
+></assist
+></field
+><field h="13.92pt" name="Important_notes" w="481.56pt" x="102.6pt" y="240.6pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Important notes:</toolTip
+></assist
+></field
+><field h="13.92pt" name="What_s_covered" w="484.8pt" x="99.36pt" y="431.88pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>What‚Äôs covered:</toolTip
+></assist
+></field
+><field h="13.92pt" name="Tips_for_your_veterinarian" w="442.08pt" x="142.08pt" y="589.2pt"
+><ui
+><textEdit
+><margin
+></margin
+></textEdit
+></ui
+><para vAlign="middle"
+></para
+><font typeface="Helvetica"
+></font
+><assist
+><toolTip
+>Tips for your veterinarian:</toolTip
+></assist
+></field
+><?templateDesigner expand 1?></subform
+><?templateDesigner expand 1?></subform
+><?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?><?templateDesigner Zoom 109?></template
+>
+endstreamendobj27 0 obj<</Length 688>>stream
+
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+><xfa:data
+><topmostSubform
+><Member_number
+></Member_number
+><Pet_s_name
+></Pet_s_name
+><Name
+></Name
+><Date_of_birth_mmddyyyy
+></Date_of_birth_mmddyyyy
+><Address_1
+></Address_1
+><Address_2
+></Address_2
+><Address_3
+></Address_3
+><Breed
+></Breed
+><Address_3
+></Address_3
+><Address_3
+></Address_3
+><Address_3
+></Address_3
+><Address_3
+></Address_3
+><Simple_Steps_to_an_Easy_Claims_Process__Row_1
+></Simple_Steps_to_an_Easy_Claims_Process__Row_1
+><Important_notes
+></Important_notes
+><What_s_covered
+></What_s_covered
+><Tips_for_your_veterinarian
+></Tips_for_your_veterinarian
+></topmostSubform
+></xfa:data
+></xfa:datasets
+>
+endstreamendobj28 0 obj<</Length 2423>>stream
+
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.1/"
+><locale desc="English (United States)" name="en_US"
+><calendarSymbols name="gregorian"
+><monthNames
+><month
+>January</month
+><month
+>February</month
+><month
+>March</month
+><month
+>April</month
+><month
+>May</month
+><month
+>June</month
+><month
+>July</month
+><month
+>August</month
+><month
+>September</month
+><month
+>October</month
+><month
+>November</month
+><month
+>December</month
+></monthNames
+><monthNames abbr="1"
+><month
+>Jan</month
+><month
+>Feb</month
+><month
+>Mar</month
+><month
+>Apr</month
+><month
+>May</month
+><month
+>Jun</month
+><month
+>Jul</month
+><month
+>Aug</month
+><month
+>Sep</month
+><month
+>Oct</month
+><month
+>Nov</month
+><month
+>Dec</month
+></monthNames
+><dayNames
+><day
+>Sunday</day
+><day
+>Monday</day
+><day
+>Tuesday</day
+><day
+>Wednesday</day
+><day
+>Thursday</day
+><day
+>Friday</day
+><day
+>Saturday</day
+></dayNames
+><dayNames abbr="1"
+><day
+>Sun</day
+><day
+>Mon</day
+><day
+>Tue</day
+><day
+>Wed</day
+><day
+>Thu</day
+><day
+>Fri</day
+><day
+>Sat</day
+></dayNames
+><meridiemNames
+><meridiem
+>AM</meridiem
+><meridiem
+>PM</meridiem
+></meridiemNames
+><eraNames
+><era
+>BC</era
+><era
+>AD</era
+></eraNames
+></calendarSymbols
+><datePatterns
+><datePattern name="full"
+>EEEE, MMMM D, YYYY</datePattern
+><datePattern name="long"
+>MMMM D, YYYY</datePattern
+><datePattern name="med"
+>MMM D, YYYY</datePattern
+><datePattern name="short"
+>M/D/YY</datePattern
+></datePatterns
+><timePatterns
+><timePattern name="full"
+>h:MM:SS A Z</timePattern
+><timePattern name="long"
+>h:MM:SS A Z</timePattern
+><timePattern name="med"
+>h:MM:SS A</timePattern
+><timePattern name="short"
+>h:MM A</timePattern
+></timePatterns
+><dateTimeSymbols
+>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols
+><numberPatterns
+><numberPattern name="numeric"
+>z,zz9.zzz</numberPattern
+><numberPattern name="currency"
+>$z,zz9.99|($z,zz9.99)</numberPattern
+><numberPattern name="percent"
+>z,zz9%</numberPattern
+></numberPatterns
+><numberSymbols
+><numberSymbol name="decimal"
+>.</numberSymbol
+><numberSymbol name="grouping"
+>,</numberSymbol
+><numberSymbol name="percent"
+>%</numberSymbol
+><numberSymbol name="minus"
+>-</numberSymbol
+><numberSymbol name="zero"
+>0</numberSymbol
+></numberSymbols
+><currencySymbols
+><currencySymbol name="symbol"
+>$</currencySymbol
+><currencySymbol name="isoname"
+>USD</currencySymbol
+><currencySymbol name="decimal"
+>.</currencySymbol
+></currencySymbols
+></locale
+></localeSet
+>
+endstreamendobj29 0 obj<</Length 214>>stream
+<PDFSecurity xmlns="http://ns.adobe.com/xtd/" accessibleContent="1" change="1" contentCopy="1" documentAssembly="1" formFieldFilling="1" metadata="1" modifyAnnots="1" print="1" printHighQuality="1"
+></PDFSecurity
+>
+endstreamendobj99 0 obj<</Length 367/Filter[/FlateDecode]/Type/EmbeddedFile>>stream
+Hâ¥SMoÇ@Ω˚+˜∫ë~1±∂Iõ‘J´MèìŸñ›%ªËø/´4–»egÊ=ofÿQ¢çÏG)F?∂êÅßÓu Â¸{ı\æcRÍõÌìÚr>º˛Ff ^Jîﬂ3VU’`ìÅ6kfk	…Yù^9EÊnô◊èl±⁄}AqâÅG:ó⁄“b_t∏Pñ∏äp∆_£ix÷…–Î±SÅ¶>%≥∏)ŒPÆ–Ä*‹·@∂COX!Xpq+Â≠|‰Ñ†X	C)H«€˙i•O‚ÿ†µ0<Àœ2Æ[1˛«˚óc∞fq›;ˆ[vÏüÓx!dû!,s§Å+x‚v”åi!4:r‡CW#ëπ6µ•	m+Ô+ÂÓgâtâ¶cæKQõ©ù√VJ$4Bq#∏jE^˜∂@j¢âA~‘¥Kwﬁ#≠¡”Ce-$∆¢ê.“QT∞?…ã´≥CGΩ±˝˘+¿ 9p™
+endstreamendobj101 0 obj<</Length 19/Filter[/FlateDecode]/Type/EmbeddedFile>>stream
+Hâ≤—ØH)∞b;Ä  q|
+endstreamendobj38 0 obj<</Names[(!ADBE::0100_VersChkStrings)39 0 R(!ADBE::0100_VersChkVars)40 0 R(!ADBE::0200_VersChkCode_XFACheck)41 0 R]>>endobj39 0 obj<</S/JavaScript/JS 44 0 R>>endobj40 0 obj<</S/JavaScript/JS 43 0 R>>endobj41 0 obj<</S/JavaScript/JS 42 0 R>>endobj42 0 obj<</Length 419/Filter[/FlateDecode]>>stream
+Hâºì[k¬0ÜÔ˝ﬂzeô;òÇõnN›<±]Ö–~ua±-M™Á_ö∆Ÿ‚Å¡d•Ùêºﬂ!Oﬁ∞ ™Ú3∆(®ÆJX($Â}⁄m∞“–«ÄÖË[ı›¡¢ê™0∑pÂ∏ve] ¶*—8vóòåU.<DÍcbŸôDÎå¥”Ω{pÚI2•<E“Ë√Edí¢m§€êΩ”üN›ﬁ©
+Ö 1ëyÕ©'Ω(ô!Œài„zUW›z’Æ]J§.˘ŒÑ3C9>ËæèKbz"Jó†5£∑—cø7®A@π@˚¶îÙÉAAªŸ}¢JsEÛ\(u˜$ã,ë≤ÑÕ„(ƒPV◊^∂Â-´«Vº>ù´ü<[3Ë¢ZP,k*NbüJ‹Œdõ3a:	“<mã„(ûy:c·é∆kØÛﬂ$Ù[?∂@ˆŒ†È·og∞l<C%A°àT@^RRIÀÎ.‚6CÆ÷¶!4Â≤¨ˇ›IÛ∆Lr<HXœî†ñé”iCò°Sv8ªˆLplÀ 0€æ©|0  @ø&
+endstreamendobj43 0 obj<</Length 274/Filter[/FlateDecode]>>stream
+Hâ‹ëAK√@ÖÔ˘√§AHÙ¢`—Ç Zz
+”›I\‹fód” ÷ˇnl•i={‹yﬂ>ﬁºë)LÏß!ùN¬ª€{oN(®HbT%a˘A¬Ö  VÂÇRôì`Æ #,ê¢*iÍ»ûo,©>÷˜ê˜˝Õâ$¶¢î:Ô√fc,\√•wÊ:_˝•ˆ††Ö¶√{GToπ‰e˛ÿ∞Ï›ZsÂ˚<ì
+Ω$èÎï_‚ïèº–K¥~eZbÆã∑≈C4{jnL¿‡–œ(¥©.VÕìù¨w„uW—6_´©ù¶0œ*Ã®ÛﬁóÁ¶ªN®;ÅΩŒ¬Û‰¢âÒ=v≤£™`´Çz’Óù˛ˇT˚#¿ ÿ‰
+endstreamendobj44 0 obj<</Length 641/Filter[/FlateDecode]>>stream
+Hâ‰ïMo€0ÜÔ˝DN	ñ›°Îa»!K?P¨Mä6ièÅl—	WYÚ$%ûˇ˝(«NÊÆ(˙uÈz1ä§_>zeQ
+]_Êh“Æ_íãÜGﬂè{0@g•%¶§Qvz{ ∞]Öh,`ˇƒƒw{ﬂˆB0:éOg√”∞⁄9œ:u¯Ü∞@;wﬁí^Ãß‰Üå°41¬0±&˛·‹Y.Ö«˘∫dWq¶=ZëxZ#úõ9ÿ§=⁄‚
+Ö‰`ª”&á—~t–T◊âuıQÚ£òﬂ†udÙ¸¬-B˝îA¿Â—	§ƒ√X¸µ"ãD†¬◊õl0)¸˝•.9À¡‰x“Z!ô*ÇbëŒÔ
+-8D(Õä_JÁ1!3“ƒ∫Ñ76∫7l‡–hÆ'¯∫ˇ•≠îSû°t®¸“¨ÀJ]UõâDû£∞A}aÏ‰÷‰hUŸg2Tò°ˆÆJMWö˜à[S÷§Ö±¬í6æÈ$¯M©6”Û ¡∫¥b˚¡™⁄≈∑¿2QaÀﬂ!˛TCcÎ“AÄØµLz°eÍ#¸zfÀÂ=a9	K∆bÀπB·ìóµ•L¡3¬ÏÍ∫£È’˘ßìÉ[“}ô,Z~Æ""È1V	π`z‹ï%W4ck
+«ìø·OÂ£|≤£Õ8\¶xÜ∆ç¿'¸.~øÊ_qKaÁ˝˝ƒ~€	\ …ÂJî(˚s>y»h±Ù’ˆ∂Ï¡u∞GUªÛ»6ó[≠…QÃóRcá≥4ú	
+ó¶Fœ–k7ÒkAJpzE…]0®Çî˛†nCd®
+åôÚ°X¢≠àB]ÏÈÓ≤ß\UÛ√èãy˚3ˆ%Ì<∑{&∆:Ù2à€√ÙQ(˛` -0ﬂ
+endstreamendobj33 0 obj<</CreationDate(D:20100531100018-05'00')/Creator(Adobe InDesign CS3 \(5.0\))/Producer(Adobe PDF Library 8.0)/ModDate(D:20110928085842-05'00')/Trapped/False>>endobjxref
+0 103
+0000000024 65535 f
+0000033414 00000 n
+0000033793 00000 n
+0000033838 00000 n
+0000051981 00000 n
+0000051640 00000 n
+0000051913 00000 n
+0000051241 00000 n
+0000050687 00000 n
+0000050710 00000 n
+0000039798 00000 n
+0000039138 00000 n
+0000039414 00000 n
+0000058188 00000 n
+0000058369 00000 n
+0000058548 00000 n
+0000037513 00000 n
+0000038743 00000 n
+0000057939 00000 n
+0000138756 00000 n
+0000139948 00000 n
+0000058833 00000 n
+0000058895 00000 n
+0000058752 00000 n
+0000000030 00001 f
+0000140293 00000 n
+0000142467 00000 n
+0000147703 00000 n
+0000148442 00000 n
+0000150917 00000 n
+0000000032 00001 f
+0000032843 00000 n
+0000000034 00001 f
+0000153564 00000 n
+0000000097 00000 f
+0000000016 00000 n
+0000032566 00000 n
+0000010340 00000 n
+0000151748 00000 n
+0000151882 00000 n
+0000151926 00000 n
+0000151970 00000 n
+0000152014 00000 n
+0000152505 00000 n
+0000152851 00000 n
+0000032902 00000 n
+0000061127 00000 n
+0000059032 00000 n
+0000059210 00000 n
+0000059383 00000 n
+0000059543 00000 n
+0000059743 00000 n
+0000059915 00000 n
+0000060087 00000 n
+0000060259 00000 n
+0000060421 00000 n
+0000060597 00000 n
+0000060774 00000 n
+0000060950 00000 n
+0000055255 00000 n
+0000037289 00000 n
+0000037400 00000 n
+0000121820 00000 n
+0000123956 00000 n
+0000126262 00000 n
+0000128499 00000 n
+0000130562 00000 n
+0000108574 00000 n
+0000038241 00000 n
+0000108756 00000 n
+0000037652 00000 n
+0000108905 00000 n
+0000045398 00000 n
+0000045674 00000 n
+0000041386 00000 n
+0000041670 00000 n
+0000132610 00000 n
+0000134962 00000 n
+0000136853 00000 n
+0000055290 00000 n
+0000046269 00000 n
+0000042182 00000 n
+0000121316 00000 n
+0000120925 00000 n
+0000117725 00000 n
+0000117165 00000 n
+0000117429 00000 n
+0000112779 00000 n
+0000112438 00000 n
+0000112710 00000 n
+0000112260 00000 n
+0000111928 00000 n
+0000111953 00000 n
+0000110058 00000 n
+0000109368 00000 n
+0000109644 00000 n
+0000061229 00000 n
+0000000000 00000 f
+0000140037 00000 n
+0000151182 00000 n
+0000140114 00000 n
+0000151639 00000 n
+0000010379 00000 n
+trailer
+<</Size 103/Root 35 0 R/Info 33 0 R/ID[<693C8A58A74FF946B1B4DC114C5140D6><160E181BBD2DAC47B92888CC3E6A0AAC>]>>
+startxref
+153738
+%%EOF
+21 0 obj<</Kids[22 0 R 23 0 R]/T(topmostSubform[0])/V()>>endobj33 0 obj<</CreationDate(D:20100531100018-05'00')/Creator(Adobe InDesign CS3 \(5.0\))/ModDate(D:20120315150854-06'00')/Producer(Adobe PDF Library 8.0)/Trapped/False>>endobj36 0 obj<</DA(/Helv 0 Tf 0 g )/DR<</Encoding<</PDFDocEncoding 19 0 R>>/Font<</Helv 20 0 R/ZaDb 98 0 R>>>>/Fields[21 0 R]/SigFlags 2/XFA[(xdp:xdp)113 0 R(config)25 0 R(template)26 0 R(datasets)114 0 R(localeSet)28 0 R(PDFSecurity)29 0 R(form)115 0 R(</xdp:xdp>)116 0 R]>>endobj46 0 obj[47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R]endobj48 0 obj<</AP<</N 112 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[429.84 696.12 580.08 712.68]/Subtype/Widget/T(Pet_s_name[0])/TU(Petês name)/Type/Annot/V(Nia Barnlund)>>endobj49 0 obj<</AP<</N 111 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[61.92 678.96 354.24 695.52]/Subtype/Widget/T(Name[0])/TU(Name)/Type/Annot/V(Mike Barnlund)>>endobj50 0 obj<</AP<</N 110 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[480.96 678.84 580.08 695.4]/Subtype/Widget/T(Date_of_birth_mmddyyyy[0])/TU(Date of birth \(mm/dd/yyyy)/Type/Annot/V(03/06/2009)>>endobj51 0 obj<</AP<</N 109 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[70.68 661.68 278.52 678.24]/Subtype/Widget/T(Address_1[0])/TU(Address [1])/Type/Annot/V(4-1622 28 Ave SW)>>endobj52 0 obj<</AP<</N 108 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[70.68 644.52 278.52 661.08]/Subtype/Widget/T(Address_2[0])/TU(Address [2])/Type/Annot/V(Calgary)>>endobj53 0 obj<</AP<</N 107 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[70.68 627.36 278.52 643.92]/Subtype/Widget/T(Address_3[0])/TU(Address [3])/Type/Annot/V(AB)>>endobj54 0 obj<</AP<</N 106 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[409.08 623.64 580.08 640.2]/Subtype/Widget/T(Breed[0])/TU(Breed)/Type/Annot/V(French Bulldog)>>endobj55 0 obj<</AP<</N 105 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[83.193 605.598 186.345 622.158]/Subtype/Widget/T(Address_3[1])/TU(Address [3])/Type/Annot/V(  403   614-4870)>>endobj56 0 obj<</AP<</N 104 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[243.418 604.897 355.511 621.457]/Subtype/Widget/T(Address_3[2])/TU(Address [3])/Type/Annot/V(  403   614-4870)>>endobj58 0 obj<</AP<</N 103 0 R>>/DA(/Helv 10 Tf 0 g)/F 4/FT/Tx/MK<<>>/P 45 0 R/Parent 22 0 R/Rect[222.808 587.718 356.889 604.278]/Subtype/Widget/T(Address_3[4])/TU(Address [3])/Type/Annot/V(mike.barnlund@gmail.com)>>endobj102 0 obj<</Length 22110/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/09/27-13:37:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:stMfs="http://ns.adobe.com/xap/1.0/sType/ManifestItem#">
+         <xmpMM:InstanceID>uuid:f179b35b-e42d-2344-a5e8-2873cafb9532</xmpMM:InstanceID>
+         <xmpMM:DocumentID>adobe:docid:indd:c36e8153-5dd2-11df-aee6-e063e2f5e341</xmpMM:DocumentID>
+         <xmpMM:RenditionClass>proof:pdf</xmpMM:RenditionClass>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>c36e8152-5dd2-11df-aee6-e063e2f5e341</stRef:instanceID>
+            <stRef:documentID>adobe:docid:indd:44b426d7-5f34-11df-ab29-dd43008c8eaa</stRef:documentID>
+         </xmpMM:DerivedFrom>
+         <xmpMM:Manifest>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <stMfs:linkForm>ReferenceStream</stMfs:linkForm>
+                  <xmpMM:placedXResolution>72.00</xmpMM:placedXResolution>
+                  <xmpMM:placedYResolution>72.00</xmpMM:placedYResolution>
+                  <xmpMM:placedResolutionUnit>Inches</xmpMM:placedResolutionUnit>
+                  <stMfs:reference rdf:parseType="Resource">
+                     <stRef:instanceID>uuid:e20c9ea5-f962-4a54-be12-984d39b9be9c</stRef:instanceID>
+                     <stRef:documentID>xmp.did:1960C1FE5126DF11B640F224D58AEA43</stRef:documentID>
+                  </stMfs:reference>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stMfs:linkForm>ReferenceStream</stMfs:linkForm>
+                  <xmpMM:placedXResolution>600.00</xmpMM:placedXResolution>
+                  <xmpMM:placedYResolution>600.00</xmpMM:placedYResolution>
+                  <xmpMM:placedResolutionUnit>Inches</xmpMM:placedResolutionUnit>
+                  <stMfs:reference rdf:parseType="Resource">
+                     <stRef:instanceID>uuid:711e592d-34f2-11da-ae19-9d5550c76391</stRef:instanceID>
+                     <stRef:documentID>adobe:docid:photoshop:711e592a-34f2-11da-ae19-9d5550c76391</stRef:documentID>
+                  </stMfs:reference>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpMM:Manifest>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpGImg="http://ns.adobe.com/xap/1.0/g/img/">
+         <xmp:CreateDate>2010-05-31T10:00:18-05:00</xmp:CreateDate>
+         <xmp:ModifyDate>2012-03-15T15:08:54-06:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2012-03-15T15:08:54-06:00</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe InDesign CS3 (5.0)</xmp:CreatorTool>
+         <xmp:Thumbnails>
+            <rdf:Alt>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpGImg:format>JPEG</xmpGImg:format>
+                  <xmpGImg:width>256</xmpGImg:width>
+                  <xmpGImg:height>256</xmpGImg:height>
+                  <xmpGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4AE0Fkb2JlAGQAAAAAAQUAAipY/9sAhAAKBwcHBwcKBwcKDgkJCQ4RDAsLDBEU&#xA;EBAQEBAUEQ8RERERDxERFxoaGhcRHyEhISEfKy0tLSsyMjIyMjIyMjIyAQsJCQ4MDh8XFx8rIh0i&#xA;KzIrKysrMjIyMjIyMjIyMjIyMjIyMjI+Pj4+PjJAQEBAQEBAQEBAQEBAQEBAQEBAQED/wAARCAEA&#xA;AMYDAREAAhEBAxEB/8QBogAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLAQACAgMBAQEBAQAA&#xA;AAAAAAABAAIDBAUGBwgJCgsQAAIBAwMCBAIGBwMEAgYCcwECAxEEAAUhEjFBUQYTYSJxgRQykaEH&#xA;FbFCI8FS0eEzFmLwJHKC8SVDNFOSorJjc8I1RCeTo7M2F1RkdMPS4ggmgwkKGBmElEVGpLRW01Uo&#xA;GvLj88TU5PRldYWVpbXF1eX1ZnaGlqa2xtbm9jdHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4KTlJ&#xA;WWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+hEAAgIBAgMFBQQFBgQIAwNtAQACEQMEIRIxQQVRE2Ei&#xA;BnGBkTKhsfAUwdHhI0IVUmJy8TMkNEOCFpJTJaJjssIHc9I14kSDF1STCAkKGBkmNkUaJ2R0VTfy&#xA;o7PDKCnT4/OElKS0xNTk9GV1hZWltcXV5fVGVmZ2hpamtsbW5vZHV2d3h5ent8fX5/c4SFhoeIiY&#xA;qLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMBAAIRAxEAPwCbeU/KflW58q6L&#xA;cXGi6fNNNp9rJJJJaws7u0MbMzM0ZJJJ3OKpmfKXksGh0TSwR1H1S3/6p4q7/CXkr/qy6X/0i2//&#xA;AFTxV3+EvJX/AFZdL/6Rbf8A6p4q7/CXkr/qy6X/ANItv/1TxV3+EvJX/Vl0v/pFt/8Aqnirv8Je&#xA;Sv8Aqy6X/wBItv8A9U8Vd/hLyV/1ZdL/AOkW3/6p4q7/AAl5K/6sul/9Itv/ANU8Vd/hLyV/1ZdL&#xA;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&#xA;oSEQ2F/HyciTYcnUVPcjFX//2Q==</xmpGImg:image>
+               </rdf:li>
+            </rdf:Alt>
+         </xmp:Thumbnails>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Adobe PDF Library 8.0</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj103 0 obj<</BBox[0.0 0.0 134.081 16.56]/FormType 1/Length 104/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 134.081 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.645 Td
+(mike.barnlund@gmail.com) Tj
+ET
+Q
+EMC
+endstreamendobj104 0 obj<</BBox[0.0 0.0 112.093 16.56]/FormType 1/Length 129/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 112.093 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(  ) Tj
+5.56 0 Td
+(403   ) Tj
+25.02 0 Td
+(614-4870) Tj
+ET
+Q
+EMC
+endstreamendobj105 0 obj<</BBox[0.0 0.0 103.152 16.56]/FormType 1/Length 129/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 103.152 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(  ) Tj
+5.56 0 Td
+(403   ) Tj
+25.02 0 Td
+(614-4870) Tj
+ET
+Q
+EMC
+endstreamendobj106 0 obj<</BBox[0.0 0.0 171.0 16.56]/FormType 1/Length 106/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 171 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(French ) Tj
+33.9 0 Td
+(Bulldog) Tj
+ET
+Q
+EMC
+endstreamendobj107 0 obj<</BBox[0.0 0.0 207.84 16.56]/FormType 1/Length 81/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 207.84 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(AB) Tj
+ET
+Q
+EMC
+endstreamendobj108 0 obj<</BBox[0.0 0.0 207.84 16.56]/FormType 1/Length 87/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 207.84 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.645 Td
+(Calgary) Tj
+ET
+Q
+EMC
+endstreamendobj109 0 obj<</BBox[0.0 0.0 207.84 16.56]/FormType 1/Length 146/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 207.84 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.655 Td
+(4-1622 ) Tj
+33.91 0 Td
+(28 ) Tj
+13.9 0 Td
+(Ave ) Tj
+20.01 0 Td
+(SW) Tj
+ET
+Q
+EMC
+endstreamendobj110 0 obj<</BBox[0.0 0.0 99.12 16.56]/FormType 1/Length 88/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 99.12 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(03/06/2009) Tj
+ET
+Q
+EMC
+endstreamendobj111 0 obj<</BBox[0.0 0.0 292.32 16.56]/FormType 1/Length 109/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 292.32 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(Mike ) Tj
+23.89 0 Td
+(Barnlund) Tj
+ET
+Q
+EMC
+endstreamendobj112 0 obj<</BBox[0.0 0.0 150.24 16.56]/FormType 1/Length 108/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</Font<</Helv 20 0 R>>/ProcSet[/PDF/Text]>>/Subtype/Form/Type/XObject>>stream
+/Tx BMC 
+q
+0 0 150.24 16.56 re
+W
+n
+BT
+/Helv 10 Tf
+0 g
+0 5.69 Td
+(Nia ) Tj
+17.78 0 Td
+(Barnlund) Tj
+ET
+Q
+EMC
+endstreamendobj113 0 obj<</Filter[/FlateDecode]/Length 89/Type/EmbeddedFile>>stream
+Hâ≤±Ø»ÕQ(K-*ŒÃœ≥U2‘3PRHÕKŒO…ÃK∑U
+q”µP≤∑„≤©H)∞b†ÍºbÀV)£§§¿J_?ØX/1%?)U/9?W(°Ød` §t‰endstreamendobj114 0 obj<</Filter[/FlateDecode]/Length 370/Type/EmbeddedFile>>stream
+HâúRMo€0ΩÎWΩ«tú ÎMX“m¿-ä•@èc3±0K2$9i˛˝‰≠hªLâÔÉÇ®'‘ÀÅ÷%äú¢|±ùãÎ}∫iSÍ◊ ÁÛπ»u·√b›≤%»Âlt¿º(·FË∑˘ò|o}Lªa¡f‡ûÌû∫a‹hı»	#:≤,ÙÉ!π•‡∫¡5
+¶åz¯Ω›õü<Q¸’Jå˛Ä{Rã÷6Õ%/°Àî+® Ú£Çi‘¶i«às°ó≥˘™™du+7'ñªgÚMX	}G›ë¬ÂùØ&¸BËÕˆù •⁄ÊFËoÅ]› Ì–uç?*xÖßN)óÂBJπö/gÀ€Âuüˇ¬ïÀÊ˘˚◊˘}>Z2]Q{{mﬁ€wåªƒ}ƒ‰ë~•x¡ªéåç¯|=JÒá?Á¡‰æ€ﬁáD.°Ûâ„=∑4~^ÌOÚ3Údr∑º¯!‡â„(r#&)Çi(Ö˛%¿ 5·yendstreamendobj115 0 obj<</Filter[/FlateDecode]/Length 271/Type/EmbeddedFile>>stream
+Hâºí±N√0Ü˜>E‰ëS√@ÖíJ2î
+ÑTËbπÒ•1ƒqd;IÈ”„4ATê!º¯Ó~üóS••ódò|òJF‰·}Ü±]]wÀó¯µ>à’[±YákGƒ€Àº0…¨-o ö¶Ò˜)ÛïﬁÅq
+…¿µó≠d2Mµ=˛P0â±™î ÿu7lsQÀäY¡v®˚wÙŸ5S2ÅsA?üá©¿ú—RC€∫MjñWË©µ‹•ùé¿¯4πg©JÈVhõQ)9ˇtg†d¡πFcËt$å‰Ær∑ëˇ”_¿¡x#ÙkÊ “≠ÿm_-4≤ì›k€˝5Ñ…â∫˚KÄ øG∫endstreamendobj116 0 obj<</Filter[/FlateDecode]/Length 19/Type/EmbeddedFile>>stream
+Hâ≤—ØH)∞b;Ä  q|endstreamendobjxref0 10000000000 65535 f
+21 10000155958 00000 n
+33 10000156024 00000 n
+36 10000156198 00000 n
+46 10000156477 00000 n
+48 90000156579 00000 n
+0000156785 00000 n
+0000156979 00000 n
+0000157210 00000 n
+0000157419 00000 n
+0000157619 00000 n
+0000157814 00000 n
+0000158011 00000 n
+0000158224 00000 n
+58 10000158438 00000 n
+102 150000158659 00000 n
+0000180848 00000 n
+0000181154 00000 n
+0000181485 00000 n
+0000181816 00000 n
+0000182122 00000 n
+0000182403 00000 n
+0000182690 00000 n
+0000183037 00000 n
+0000183324 00000 n
+0000183634 00000 n
+0000183943 00000 n
+0000184121 00000 n
+0000184581 00000 n
+0000184942 00000 n
+trailer<</Size 117/Root 35 0 R/Info 33 0 R/ID[<693C8A58A74FF946B1B4DC114C5140D6><D405A14935A24506AE0AB03EEE13183C>]/Prev 153738>>startxref185050%%EOF
