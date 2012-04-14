@@ -2,16 +2,16 @@
 
 // Variables
 
-$brand1: #93b1d7; /* blue */
-$brand2: #6a747c; /* grey */
+$brand1: #ab227e; /* purple */
+$brand2: #a9cd39; /* green */
 
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: $brand2;
+$bodyColor: #999;
 $linkColor: $brand1 - #222;
 $linkHoverColor: $linkColor - #222;
 
-$background: #222;
+$background: #000;
 
 $footerHeight: 175px;
 $footerPadding: 20px;
@@ -127,10 +127,7 @@ p { margin: 0 0 10px 0; }
 
 /* ========================= Sidebar ========================== */
 
-.content-with-sidebar {
-	clear: both;
-	float: left;
-	width: 710px;
+.content {
 	background: #333;
 	margin-top: 20px;
 	padding: 15px;

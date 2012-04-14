@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-<div class="content-with-sidebar">
+<div class="content">
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php
 
@@ -33,8 +33,6 @@ get_header();
 </div> <!-- .content-with-sidebar -->
 
 <?php
-
-get_sidebar();
 
 get_footer();
 

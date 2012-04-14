@@ -62,9 +62,8 @@ Your votes really make a difference! Thanks.
 
 1. Upload 'advanced-custom-fields' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. You may be prompted for a Database Upgrade. This is necessary for ACF to function. Please backup your database and click the Upgrade button
-3. Click on Adv Custom Fields and create your first Custom Field Group!
-4. Your ACF field group will now appear on the page / post / template you specified in the field group's location rules!
+3. Click on the new menu itme "Custom Fields" and create your first Custom Field Group!
+4. Your custom field group will now appear on the page / post / template you specified in the field group's location rules!
 5. Read the documentation to display your data: 
 
 
@@ -86,6 +85,27 @@ http://www.advancedcustomfields.com/support/
 
 
 == Changelog ==
+
+= 3.1.7 =
+* Bug fix: Image field returns correct url after selecting one or more images
+* Translation: Added Polish translation. Thank you Bartosz Arendt - Digital Factory - www.digitalfactory.pl
+* Update : Added id attribute to all div.field (id="acf-$field_name")
+
+= 3.1.6 =
+* New style for buttons
+* Bug Fix: Repeater maximum row setting was disabling the "add row" button 1 row early.
+* Performance: Field options are now loaded in via ajax. This results in much less HTML on the edit field group page
+* Performance: Field inputs are now loaded in via ajax. Again, less HTML on edit screens improves load times / memory usage
+* Bug Fix: Field groups registered by code were not showing on ajax change (category / page type / page template / etc). To fix this, your field group needs a unique ID. When you export a field group, you will now be given a unique ID to fix this issue. Field groups without a fixed id will still show on page load.
+* New Option: Repeater field can now have a custom button label
+* New Option: Flexible content field can now have a custom button label
+* Improvement: Updated the HTML / CSS for file fields with icon
+* Bug Fix: Fixed multi upload / select image in repeater. 
+* Performance: Added caching to the get_field function. Templates will now render quicker.
+* Bug Fix: Fixed Post formats location rule - it now works.
+
+= 3.1.5 =
+* Improvement: Redesigned the experience for uploading and selecting images / files in fields and sub fields. Image / File fields within a repeater can now add multiple images / files
 
 = 3.1.4 =
 * New Feature: Front end form (Please read documentation on website for usage)

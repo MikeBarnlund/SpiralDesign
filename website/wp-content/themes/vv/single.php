@@ -3,7 +3,7 @@ get_header();
 the_post();
 ?>
 
-<div class="content-with-sidebar">
+<div class="content">
 	<?php
 	if ( get_the_ID() ) {
 	?>
@@ -19,6 +19,5 @@ the_post();
 </div>
 
 <?php
-get_sidebar();
 get_footer();
 ?>
