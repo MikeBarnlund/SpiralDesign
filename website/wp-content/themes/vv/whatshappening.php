@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: News
+Template Name: Whats-Happening
 */
 
 get_header();
@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <div class="content">
-	<h1 class="entry-title"><?php the_title(); ?></h1>
+	<h1 class="entry-title"><?php the_title(); ?> whatshappening.php</h1>
 	<?php
 
 	/* Main Loop */
@@ -19,15 +19,15 @@ get_header();
 
 	foreach ( $the_posts as $post) {
 		setup_postdata( $post );
-		get_template_part( 'post' );
+		get_template_part( 'content', get_post_format());
 	}
 
 	/* Bottom post navigation */
 
 	global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 		<div id="nav-below" class="navigation">
-			<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sdbase' )) ?></div>
-			<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sdbase' )) ?></div>
+			<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'lovecalgary' )) ?></div>
+			<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'lovecalgary' )) ?></div>
 		</div>
 	<?php } ?>
 </div> <!-- .content-with-sidebar -->

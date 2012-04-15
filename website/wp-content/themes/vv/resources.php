@@ -39,7 +39,7 @@ the_post();
 				<?php }
 			} ?>
 
-			<?php edit_post_link( __( 'Edit', 'sdbase' ), '<div class="edit-link">', '</div>' ) ?>
+			<?php edit_post_link( __( 'Edit', 'lovecalgary' ), '<div class="edit-link">', '</div>' ) ?>
 		</div><!-- .entry-content -->
 	</div><!-- #post-<?php the_ID(); ?> -->
 	<?php } ?>
