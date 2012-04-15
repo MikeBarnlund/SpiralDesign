@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: Contact Page
-*/
+
 get_header();
 
 the_post();
@@ -17,7 +15,6 @@ the_post();
 		<div class="entry-content editable">
 			<?php the_content(); ?>
 			<?php edit_post_link( __( 'Edit', 'lovecalgary' ), '<div class="edit-link">', '</div>' ) ?>
-			<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'lovecalgary' ) . '&after=</div>') ?>
 		</div><!-- .entry-content -->
 	</div><!-- #post-<?php the_ID(); ?> -->
 	<?php } ?>
