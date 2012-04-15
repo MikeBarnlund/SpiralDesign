@@ -15,7 +15,7 @@ add_theme_support( 'admin-bar', array( 'callback' => '__return_false') );
 add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
-	register_post_type( 'listings',
+	register_post_type( 'listing',
 		array(
 			'labels' => array(
 				'name' => __( 'Listings' ),
