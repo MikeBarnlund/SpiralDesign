@@ -6,7 +6,7 @@
 	</div>
 
 	<?php
-	$image_url = get_field( 'feature_image' );
+	$image_url = get_field( 'featured_image' );
 	echo !empty( $image_url ) ? '<img src="' . $image_url . '" />' : '';
 	?>
 
