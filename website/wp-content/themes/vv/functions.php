@@ -30,7 +30,7 @@ function create_post_type() {
 
 function build_taxonomies() {
 	register_taxonomy(
-		'listing_type',
+		'listingtype',
 		'listing',
 		array(
 			'labels' => array(
@@ -41,7 +41,10 @@ function build_taxonomies() {
 				'new_item_name' => 'New Listing Type',
 				'parent_item' => 'Parent Listing Type'
 			),
-			'hierarchical' => true
+			'hierarchical' => true,
+			'rewrite' => array( 'slug' => 'listingtype' ),
+			'query_var' => true,
+			'show_in_nav_menus' => true
 		)
 	);
 }

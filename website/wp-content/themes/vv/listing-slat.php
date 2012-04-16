@@ -1,6 +1,7 @@
 <div id="post-<?php the_ID(); ?>" class="listing-slat editable">
 	<?php
 	$image_url = get_field( 'featured_image' );
+	$sold = get_field( 'sold' );
 	echo !empty( $image_url ) ? '<img src="' . $image_url . '" />' : '';
 	?>
 
@@ -12,6 +13,11 @@
 	</h2>
 
 	<h3><?php the_title(); ?></h3>
+
+	<?php
+	echo get_the_term_list( get_the_ID(), 'listingtype' );
+
+	?>
 
 	<div class="entry-content">
 		<?php the_content( __( '[view more]', 'vv' ) ); ?>

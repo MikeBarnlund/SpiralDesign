@@ -8,12 +8,19 @@ get_header();
 ?>
 
 <div class="content">
-	<h1 class="entry-title"><span>Industry <em>Leaders</em></span></h1>
-	<div class="listings">
+	<div class="listing-types">
 		<?php
-
-		/* Main Loop */
-
+		$terms = get_terms( 'listingtype' );
+		//var_dump( $terms );
+		$links = array();
+		foreach ( $terms as $term ) {
+			$links[] = '<a href="' . get_term_link( $term ) . '" alt="' . $term->name . ' Listings">' . $term->name . '</a>';
+		}
+		echo implode( $links, ' | ' );
+		?>
+	</div>
+	<div class="section">
+		<?php
 		$query = "
 			SELECT wposts.*
 			FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
@@ -21,7 +28,7 @@ get_header();
 			AND wpostmeta.meta_key = 'state'
 			AND wpostmeta.meta_value in ( 'featured', 'active' )
 			AND wposts.post_status = 'publish'
-			AND wposts.post_type = 'interview'
+			AND wposts.post_type = 'listing'
 			ORDER BY wposts.post_date DESC
 		";
 
@@ -32,7 +39,7 @@ get_header();
 			get_template_part( 'listing', 'slat' );
 		}
 		?>
-	</div> <!-- .interviews -->
+	</div>
 </div> <!-- .content -->
 
 <?php
