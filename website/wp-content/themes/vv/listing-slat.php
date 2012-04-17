@@ -28,7 +28,7 @@ setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
 		<span class="price"><?php echo $price; ?></span>
 	</h2>
 
-	<h3><?php the_title(); ?></h3>
+	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 	<?php
 	echo get_the_term_list( get_the_ID(), 'listingtype' );

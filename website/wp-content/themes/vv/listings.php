@@ -9,7 +9,6 @@ get_header();
 
 <div class="content">
 	<?php get_template_part( 'listingtypes' ); ?>
-	<?php get_search_form(); ?>
 	<div class="section">
 		<?php
 		$term = NULL;

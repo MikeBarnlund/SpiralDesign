@@ -47,4 +47,23 @@ function build_taxonomies() {
 			'show_in_nav_menus' => true
 		)
 	);
+
+	register_taxonomy(
+		'community',
+		'listing',
+		array(
+			'labels' => array(
+				'name' => 'Communities',
+				'singular_name' => 'Community',
+				'search_items' => 'Search Communities',
+				'add_new_item' => 'Add New Community',
+				'new_item_name' => 'New Community',
+				'parent_item' => 'Parent Community'
+			),
+			'hierarchical' => true,
+			'rewrite' => array( 'slug' => 'community' ),
+			'query_var' => true,
+			'show_in_nav_menus' => true
+		)
+	);
 }
