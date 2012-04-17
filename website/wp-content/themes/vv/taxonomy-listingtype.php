@@ -11,8 +11,7 @@ get_header();
 			if ( get_field( 'state' ) != 'inactive' ) {
 				get_template_part( 'listing', 'slat' );
 			}
-		endwhile;
-		?>
+		endwhile; ?>
 	</div>
 </div> <!-- .content -->
 
