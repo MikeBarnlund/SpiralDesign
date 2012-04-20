@@ -19,6 +19,11 @@ $query = NULL;
 // everything will get posted, so let's just check the first one
 if ( !empty( $type ) ) {
 
+	$args = array(
+		'post_type' => 'listing',
+		'nopaging' => 'true'
+	);
+
 	$meta_queries = array();
 
 	$meta_queries[] = array(
@@ -26,6 +31,11 @@ if ( !empty( $type ) ) {
 		'value' => array( 'featured', 'active' ),
 		'compare' => 'IN'
 	);
+
+	if ( $type != 'any' ) {
+		echo 'Using listing type';
+		$args['listingtype'] = $type;
+	}
 
 	if ( $price_min != '0' ) {
 		echo 'Using price_min';
@@ -47,6 +57,11 @@ if ( !empty( $type ) ) {
 		);
 	}
 
+	if ( $community != 'any' ) {
+		echo 'Using community';
+		$args['community'] = $community;
+	}
+
 	if ( $bedroom_min != 'any' ) {
 		echo 'Using bedroom_min';
 		$meta_queries[] = array(
@@ -58,7 +73,7 @@ if ( !empty( $type ) ) {
 	}
 
 	if ( $bedroom_max != 'any' ) {
-		echo 'Using bedroom_min';
+		echo 'Using bedroom_max';
 		$meta_queries[] = array(
 			'key' => 'bedroom',
 			'value' => $bedroom_max,
@@ -67,11 +82,7 @@ if ( !empty( $type ) ) {
 		);
 	}
 
-	$args = array(
-		'post_type' => 'listing',
-		'nopaging' => 'true',
-		'meta_query' => $meta_queries
-	);
+	$args['meta_query'] = $meta_queries;
 
 	$query = new WP_Query( $args );
 }
@@ -125,7 +136,11 @@ echo $dump;
 		<select id="community" name="community">
 			<?php
 			echo '<option value="any">Any Community</option>';
-			// iterate through communities?
+			$terms = get_terms( 'community' );
+			foreach ( $terms as $term ) {
+				$selected = ( $community == $term->slug ) ? ' selected="selected"' : '';
+				echo '<option value="' . $term->slug . '"' . $selected . '>' . $term->name . '</option>';
+			}
 			?>
 		</select>
 
