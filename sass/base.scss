@@ -15,12 +15,21 @@ $background: #d8d8d8;
 $bodyContainerBg: #f7f7f7;
 $bodyContainerGutter: 29px;
 
+$headerHeight: 207px;
+$headerBg: #434343;
+
+$menuColor: #b8b8b8;
+$menuHeight: 16px;
+
 $footerHeight: 175px;
 $footerPadding: 20px;
 
 $defaultBorderColor: #CCC;
 
-$navHeight: 30px;
+@mixin headerfont {
+	font-family: 'pt-sans-narrow';
+	text-transform: uppercase;
+}
 
 /* ========================== General Elements ========================= */
 
@@ -36,24 +45,21 @@ body {
 a { text-decoration: underline; color: $linkColor; }
 a:hover { color: $linkHoverColor; }
 h1, h2, h3, h4 {
-	margin: 15px 0;
+	margin: 12px 0;
 	line-height: 1;
 }
 h1 {
 	font-size: 21px;
 	border-bottom: 1px solid #ececec;
-	padding-bottom: 8px;
+	padding-bottom: 9px;
 	color: #474747;
+	@include headerfont();
 	em { color: $brand2; }
 }
 h2 { font-size: $fontSize + 7; }
 small { font-size: $fontSize - 2; }
 
 // ======================= Typekit Classes =====================
-
-.header-font {
-	text-transform: uppercase;
-}
 
 /* =================================== Layout ============================== */
 
@@ -90,31 +96,41 @@ small { font-size: $fontSize - 2; }
 /* ========================= Header ========================= */
 
 #header {
-	overflow: hidden;
+	height: $headerHeight;
+	background: $headerBg;
 
-	#logo {
-		height: 75px;
-	}
+	.container {
+		position: relative;
 
-	.container { overflow: hidden; }
-
-	#nav {
-		height: $navHeight;
-		background: #EEE;
-
-		.menu {
-			a {
-				text-decoration: none;
-				line-height: $navHeight;
-				padding: 0 15px;
-			}
-
-			a:hover, .current_page_item a {
-
-			}
+		#logo-top {
+			position: absolute;
+			top: 0; right: 0;
 		}
 
-		li { display: inline; }
+		#nav {
+			padding-bottom: 32px;
+			padding-top: 55px;
+			overflow: hidden;
+			#logo { float: left; }
+
+			.menu {
+				float: left;
+				margin-top: 120px - $menuHeight;
+				a {
+					@include headerfont();
+					color: $menuColor;
+					font-size: 16px;
+					text-decoration: none;
+					line-height: $menuHeight;
+					padding: 0 0 0 22px;
+					font-weight: bold;
+				}
+
+				a:hover, .current_page_item a { color: $brand2; }
+			}
+
+			li { display: inline; }
+		}
 	}
 }
 
