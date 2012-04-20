@@ -3,25 +3,28 @@
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #999999; font-size: 14px; line-height: 1.3; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: black; }
+body { height: 100%; color: #999999; font-size: 13px; line-height: 1.9; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #d8d8d8; }
 
-a { text-decoration: underline; color: #89005c; }
+a { text-decoration: underline; color: #ab227e; }
 
-a:hover { color: #67003a; }
+a:hover { color: #89005c; }
 
-h1, h2, h3, h4 { margin: 15px 0; }
+h1, h2, h3, h4 { margin: 15px 0; line-height: 1; }
 
-h1 { font-size: 32px; }
+h1 { font-size: 21px; border-bottom: 1px solid #ececec; padding-bottom: 8px; color: #474747; }
+h1 em { color: #a9cd39; }
 
-h2 { font-size: 21px; }
+h2 { font-size: 20px; }
 
-small { font-size: 12px; }
+small { font-size: 11px; }
+
+.header-font { text-transform: uppercase; }
 
 /* =================================== Layout ============================== */
 #contentwrapper { position: relative; min-height: 100%; }
 
 #contentbody { position: relative; padding: 0 0 195px 0; /* footer height (140) + padding (50) */ z-index: 0; overflow: hidden; }
-#contentbody .bodycontainer { padding: 0; width: 960px; margin: 0 auto; overflow: hidden; position: relative; }
+#contentbody .bodycontainer { width: 960px; margin: 0 auto; overflow: hidden; position: relative; background: #f7f7f7; padding: 0 29px 0 29px; }
 
 * html #contentwrapper { height: 100%; }
 
@@ -54,10 +57,6 @@ h2.entry-title { margin-bottom: 0; }
 p { margin: 0 0 10px 0; }
 
 /* ========================= Sidebar ========================== */
-.content { background: #333; margin-top: 20px; padding: 15px; }
-
-.sidebar { float: right; width: 200px; margin-top: 20px; background: #333; padding: 15px 0 15px 15px; }
-
 /* ==================== Footer ================= */
 #footer { background: #000; }
 #footer a { text-decoration: none; }
@@ -66,7 +65,7 @@ p { margin: 0 0 10px 0; }
 #footer .spiraldesign:hover { background-position: bottom left; }
 
 /* ================== Twitter ================ */
-#twitter_updates .twitter_time { font-size: 12px; }
+#twitter_updates .twitter_time { font-size: 11px; }
 
 /* ================== Contact Form ================ */
 table.contactform td { padding: 3px; vertical-align: middle; height: 51px; }
@@ -74,7 +73,7 @@ table.contactform td.label { text-align: right; padding-right: 8px; line-height:
 table.contactform td.submitrow { border-top: 1px solid #444; margin-top: 10px; }
 table.contactform .textbox, table.contactform textarea { width: 369px; }
 table.contactform .dropdown { width: 200px; }
-table.contactform .textbox, table.contactform textarea, table.contactform .dropdown { background: #222; border: 1px solid #444; color: #FFF; padding: 3px; font-size: 13px; }
+table.contactform .textbox, table.contactform textarea, table.contactform .dropdown { background: #222; border: 1px solid #444; color: #FFF; padding: 3px; font-size: 12px; }
 table.contactform .textbox:focus, table.contactform textarea:focus, table.contactform .dropdown:focus { background: #333; border: 1px solid #555; }
 
-.button { text-shadow: 0px -1px 0px #333333; color: #FFF; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #444444)); background: -webkit-linear-gradient(top, #666666, #444444); background: -moz-linear-gradient(top, #666666, #444444); background: -o-linear-gradient(top, #666666, #444444); background: -ms-linear-gradient(top, #666666, #444444); background: linear-gradient(top, #666666, #444444); -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; padding: 2px 20px; border-width: 1px; border-style: solid; border-color: #777 #333 #333 #777; font-size: 13px; float: right; cursor: pointer; }
+.button { text-shadow: 0px -1px 0px #333333; color: #FFF; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #444444)); background: -webkit-linear-gradient(top, #666666, #444444); background: -moz-linear-gradient(top, #666666, #444444); background: -o-linear-gradient(top, #666666, #444444); background: -ms-linear-gradient(top, #666666, #444444); background: linear-gradient(top, #666666, #444444); -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; padding: 2px 20px; border-width: 1px; border-style: solid; border-color: #777 #333 #333 #777; font-size: 12px; float: right; cursor: pointer; }

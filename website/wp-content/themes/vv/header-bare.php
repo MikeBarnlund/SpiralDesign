@@ -53,11 +53,14 @@
 	<?php wp_head(); ?>
 
 	<!-- Load Global Scripts -->
-
 	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- Load Theme Scripts -->
 	<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/theme.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- Typekit Scripts -->
+	<script type="text/javascript" src="http://use.typekit.com/xwh4pzz.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
 <body>

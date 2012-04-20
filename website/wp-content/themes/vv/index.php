@@ -22,7 +22,7 @@ the_post();
 	</div>
 
 	<div class="section">
-		<h1>About <em>Love Calgary Real Estate</em></h1>
+		<h1 class="header-font">About <em>Love Calgary Real Estate</em></h1>
 		<?php the_content(); ?>
 	</div>
 
