@@ -21,8 +21,16 @@
 				echo '<div class="footer-navigation single-post">';
 				$title_maxlen = 28;
 
-				$next_post = get_adjacent_available_post( false, '', false );
-				$previous_post = get_adjacent_available_post( false, '', true );
+				$next_post = NULL;
+				$previou_post = NULL;
+
+				if ( get_post_type() == 'interview' ) {
+					$next_post = get_adjacent_available_post( false, '', false );
+					$previous_post = get_adjacent_available_post( false, '', true );
+				} else {
+					$next_post = get_adjacent_post( false, '', false );
+					$previous_post = get_adjacent_post( false, '', true );
+				}
 
 				echo ( !empty( $previous_post ) )
 					?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
