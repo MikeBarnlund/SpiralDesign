@@ -59,8 +59,6 @@ h1 {
 h2 { font-size: $fontSize + 7; }
 small { font-size: $fontSize - 2; }
 
-// ======================= Typekit Classes =====================
-
 /* =================================== Layout ============================== */
 
 #contentwrapper			{ position: relative; min-height: 100%; }
@@ -70,8 +68,8 @@ small { font-size: $fontSize - 2; }
 	z-index: 0;
 	overflow: hidden;
 
-	.bodycontainer {
-		width: 960px;
+	.content {
+		width: 960px - $bodyContainerGutter * 2;
 		margin: 0 auto;
 		overflow: hidden;
 		position: relative;
@@ -88,6 +86,7 @@ small { font-size: $fontSize - 2; }
 	margin-top: 0 - $footerHeight;
 	clear: both;
 }
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -101,6 +100,7 @@ small { font-size: $fontSize - 2; }
 
 	.container {
 		position: relative;
+		z-index: 1;
 
 		#logo-top {
 			position: absolute;
@@ -110,23 +110,47 @@ small { font-size: $fontSize - 2; }
 		#nav {
 			padding-bottom: 32px;
 			padding-top: 55px;
-			overflow: hidden;
 			#logo { float: left; }
 
 			.menu {
+				$navItemGutter: 22px;
 				float: left;
 				margin-top: 120px - $menuHeight;
+				width: 840px;
+				li {
+					float: left;
+					position: relative;
+
+				}
 				a {
 					@include headerfont();
 					color: $menuColor;
 					font-size: 16px;
 					text-decoration: none;
 					line-height: $menuHeight;
-					padding: 0 0 0 22px;
-					font-weight: bold;
+					padding: 0 0 0 $navItemGutter;
+					//font-weight: bold;
+					cursor: pointer;
 				}
-
 				a:hover, .current_page_item a { color: $brand2; }
+
+				ul {
+					display: none;
+					position: absolute;
+					left: $navItemGutter - 10px;
+					background: $headerBg;
+					padding: 3px 10px 6px 10px;
+					li {
+						float: none;
+						display: block;
+						border-top: 1px solid #696969;
+					    margin-top: 1px;
+					    padding-top: 2px;
+					}
+					a {
+						padding: 0;
+					}
+				}
 			}
 
 			li { display: inline; }
@@ -156,12 +180,6 @@ h2.entry-title {
 .entry-content { line-height: 1.3; margin: 15px 0; overflow: hidden;}
 .entry-date { }
 p { margin: 0 0 10px 0; }
-
-/* ========================= Sidebar ========================== */
-
-.content {
-
-}
 
 /* ==================== Footer ================= */
 

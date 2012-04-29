@@ -7,20 +7,19 @@ get_header();
 the_post();
 ?>
 
-<div class="content">
-
-	<div class="slideshow">
+<div class="slideshow container">
+	<?php
+	$images = get_field( 'main_images' );
+	if( $images ) { ?>
 		<?php
-		$images = get_field( 'main_images' );
-		if( $images ) { ?>
-			<?php
-			foreach( $images as $image ) {
-				echo '<img src="' . $image['image'] . '" />';
-			}
-			?>
-		<?php } ?>
-	</div>
+		foreach( $images as $image ) {
+			echo '<img src="' . $image['image'] . '" />';
+		}
+		?>
+	<?php } ?>
+</div>
 
+<div class="content">
 	<div class="section">
 		<h1 class="header-font">About <em>Love Calgary Real Estate</em></h1>
 		<?php the_content(); ?>
@@ -51,6 +50,5 @@ the_post();
 		<a class="all-listings" href="/current-listings">See All&nbsp;&nbsp;<em>>></em></a>
 	</div>
 </div>
-
 <?php
 get_footer();

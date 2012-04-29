@@ -22,7 +22,7 @@ small { font-size: 11px; }
 #contentwrapper { position: relative; min-height: 100%; }
 
 #contentbody { position: relative; padding: 0 0 195px 0; /* footer height (140) + padding (50) */ z-index: 0; overflow: hidden; }
-#contentbody .bodycontainer { width: 960px; margin: 0 auto; overflow: hidden; position: relative; background: #f7f7f7; padding: 0 29px 0 29px; }
+#contentbody .content { width: 902px; margin: 0 auto; overflow: hidden; position: relative; background: #f7f7f7; padding: 0 29px 0 29px; }
 
 * html #contentwrapper { height: 100%; }
 
@@ -32,13 +32,17 @@ small { font-size: 11px; }
 
 /* ========================= Header ========================= */
 #header { height: 207px; background: #434343; }
-#header .container { position: relative; }
+#header .container { position: relative; z-index: 1; }
 #header .container #logo-top { position: absolute; top: 0; right: 0; }
-#header .container #nav { padding-bottom: 32px; padding-top: 55px; overflow: hidden; }
+#header .container #nav { padding-bottom: 32px; padding-top: 55px; }
 #header .container #nav #logo { float: left; }
-#header .container #nav .menu { float: left; margin-top: 104px; }
-#header .container #nav .menu a { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #b8b8b8; font-size: 16px; text-decoration: none; line-height: 16px; padding: 0 0 0 22px; font-weight: bold; }
+#header .container #nav .menu { float: left; margin-top: 104px; width: 840px; }
+#header .container #nav .menu li { float: left; position: relative; }
+#header .container #nav .menu a { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #b8b8b8; font-size: 16px; text-decoration: none; line-height: 16px; padding: 0 0 0 22px; cursor: pointer; }
 #header .container #nav .menu a:hover, #header .container #nav .menu .current_page_item a { color: #a9cd39; }
+#header .container #nav .menu ul { display: none; position: absolute; left: 12px; background: #434343; padding: 3px 10px 6px 10px; }
+#header .container #nav .menu ul li { float: none; display: block; border-top: 1px solid #696969; margin-top: 1px; padding-top: 2px; }
+#header .container #nav .menu ul a { padding: 0; }
 #header .container #nav li { display: inline; }
 
 /* ========================= Reusable ======================== */
@@ -57,7 +61,6 @@ h2.entry-title { margin-bottom: 0; }
 
 p { margin: 0 0 10px 0; }
 
-/* ========================= Sidebar ========================== */
 /* ==================== Footer ================= */
 #footer { background: #000; }
 #footer a { text-decoration: none; }

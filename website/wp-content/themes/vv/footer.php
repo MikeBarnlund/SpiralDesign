@@ -1,4 +1,3 @@
-			</div> <!-- end #contentbody .bodycontainer -->
 		</div> <!-- end #contentbody -->
 	</div> <!-- end #contentwrapper -->
 	<div id="footer">
