@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <div class="content">
-	<h1 class="entry-title"><?php the_title(); ?></h1>
+	<h1 class="page-title"><?php the_title(); ?></h1>
 	<?php
 
 	/* Main Loop */

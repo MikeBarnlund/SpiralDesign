@@ -7,6 +7,8 @@ body { height: 100%; color: #999999; font-size: 13px; line-height: 1.9; font-fam
 
 a { text-decoration: underline; color: #ab227e; }
 
+p { margin-bottom: 16px; }
+
 a:hover { color: #89005c; }
 
 h1, h2, h3, h4 { margin: 12px 0; line-height: 1; }
@@ -46,24 +48,20 @@ small { font-size: 11px; }
 #footer span { float: right; }
 #footer img { vertical-align: middle; margin-left: 13px; }
 
-/* ========================= Reusable ======================== */
-h2.entry-title { margin-bottom: 0; }
-
-.post { clear: both; margin-bottom: 20px; }
-
-.page h1.entry-title { margin-top: 0; }
-
+/* ========================= General ======================== */
 .alignright { float: right; margin-left: 10px; }
 
 .alignleft { float: left; margin-right: 10px; }
 
-/* ========================= Post Display ========================= */
-.entry-content { line-height: 1.3; margin: 15px 0; overflow: hidden; }
+h1.page-title { color: #474747; background: #d8d8d8; margin: 0 0 25px -29px; padding: 9px 0 11px 0; width: 960px; }
 
-p { margin: 0 0 10px 0; }
+h2.post-title { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #ab227e; background: #efefef; overflow: hidden; font-size: 15px; line-height: 27px; margin: 0 0 21px 0; }
+h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-right: 14px; text-transform: none; border-right: 1px solid #FFF; }
 
-/* ================== Twitter ================ */
-#twitter_updates .twitter_time { font-size: 11px; }
+.post-edit-link { margin-bottom: 21px; }
+
+.post { font-size: 12px; padding-bottom: 25px; }
+.post img.featured-image { margin-bottom: 18px; }
 
 /* ================== Contact Form ================ */
 table.contactform td { padding: 3px; vertical-align: middle; height: 51px; }

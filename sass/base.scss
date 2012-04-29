@@ -43,6 +43,7 @@ body {
 	background: $background;
 }
 a { text-decoration: underline; color: $linkColor; }
+p { margin-bottom: 16px; }
 a:hover { color: $linkHoverColor; }
 h1, h2, h3, h4 {
 	margin: 12px 0;
@@ -164,35 +165,45 @@ small { font-size: $fontSize - 2; }
 	}
 }
 
+/* ========================= General ======================== */
 
-/* ========================= Reusable ======================== */
-
-h2.entry-title {
-	margin-bottom: 0;
-}
-.post {
-	clear: both;
-	margin-bottom: 20px;
-}
-.page {
-	h1.entry-title {
-		margin-top: 0;
-	}
-}
 .alignright { float: right; margin-left: 10px; }
 .alignleft { float: left; margin-right: 10px; }
+h1.page-title {
+	color: #474747;
+	background: #d8d8d8;
+	margin: 0 0 25px 0-$bodyContainerGutter;
+	padding: 9px 0 11px 0;
+	width: 960px;
+}
+h2.post-title {
+	@include headerfont();
+	color: $brand1;
+	background: #efefef;
+	overflow: hidden;
+	font-size: 15px;
+	line-height: 27px;
+	margin: 0 0 21px 0;
 
-/* ========================= Post Display ========================= */
+	div {
+		background: $brand2;
+		float: left;
+		padding: 0 14px;
+		margin-right: 14px;
+		text-transform: none;
+		border-right: 1px solid #FFF;
+	}
+}
+.post-edit-link { margin-bottom: 21px; }
 
-.entry-content { line-height: 1.3; margin: 15px 0; overflow: hidden;}
-.entry-date { }
-p { margin: 0 0 10px 0; }
+// =================== Blog ===================
 
-/* ================== Twitter ================ */
-
-#twitter_updates {
-	.twitter_user { }
-	.twitter_time { font-size: $fontSize - 2; }
+.post {
+	font-size: 12px;
+	padding-bottom: 25px;
+	img.featured-image {
+		margin-bottom: 18px;
+	}
 }
 
 /* ================== Contact Form ================ */
