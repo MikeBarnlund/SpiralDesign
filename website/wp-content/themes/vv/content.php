@@ -14,9 +14,7 @@
 	echo !empty( $image_url ) ? '<img class="featured-image" src="' . $image_url . '" />' : '';
 	?>
 
-	<div class="entry-content">
-		<?php the_content( ); ?>
-	</div>
+	<?php the_content( ); ?>
 
 	<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
 </div>
