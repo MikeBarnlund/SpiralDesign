@@ -11,7 +11,7 @@ p { margin-bottom: 16px; }
 
 a:hover { color: #89005c; }
 
-h1, h2, h3, h4 { margin: 12px 0; line-height: 1; }
+h1, h2, h3, h4 { margin: 0 0 12px 0; line-height: 1; }
 
 h1 { font-size: 21px; border-bottom: 1px solid #ececec; padding-bottom: 9px; color: #474747; font-family: 'pt-sans-narrow'; text-transform: uppercase; }
 h1 em { color: #a9cd39; }
@@ -21,8 +21,8 @@ h2 { font-size: 20px; }
 small { font-size: 11px; }
 
 /* =================================== Layout ============================== */
-#contentbody { position: relative; z-index: 0; overflow: hidden; }
-#contentbody .content { width: 902px; margin: 0 auto; overflow: hidden; position: relative; background: #f7f7f7; padding: 0 29px 0 29px; }
+#contentbody { position: relative; z-index: 0; overflow: hidden; width: 960px; margin: 0 auto; background: #FFF; }
+#contentbody .content { overflow: hidden; position: relative; }
 
 .container { width: 960px; margin: 0 auto; }
 
@@ -53,15 +53,23 @@ small { font-size: 11px; }
 
 .alignleft { float: left; margin-right: 10px; }
 
-h1.page-title { color: #474747; background: #d8d8d8; margin: 0 0 25px -29px; padding: 9px 0 11px 0; width: 960px; }
+h1.page-title { color: #474747; background: #d8d8d8; padding: 9px 29px 11px 29px; margin: 0; }
 
 h2.post-title { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #ab227e; background: #efefef; overflow: hidden; font-size: 15px; line-height: 27px; margin: 0 0 21px 0; }
 h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-right: 14px; text-transform: none; border-right: 1px solid #FFF; }
 
-.post-edit-link { margin-bottom: 21px; }
-
 .post { font-size: 12px; padding-bottom: 25px; }
 .post img.featured-image { margin-bottom: 18px; }
+
+.page { padding: 24px 29px; }
+
+#contentbody .resources-page.content { padding: 30px 0; }
+#contentbody .resources-page.content .page { background: #F7F7F7; overflow: hidden; }
+
+.resources { color: #ab227e; float: left; width: 33%; margin-bottom: 21px; }
+.resources ul { list-style: disc inside; }
+.resources a { font-size: 12px; color: #999999; }
+.resources h3 { margin-top: 0; color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 16px; }
 
 /* ================== Contact Form ================ */
 table.contactform td { padding: 3px; vertical-align: middle; height: 51px; }

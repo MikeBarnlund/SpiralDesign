@@ -9,20 +9,20 @@ the_post();
 
 ?>
 
-<div class="content">
+<div class="content resources-page">
+	<h1 class="page-title"><?php the_title(); ?></h1>
 	<?php
 	if ( get_the_ID() ) {
 	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="entry-content editable">
-			<?php
-			$resource_sections = array( 'buying', 'selling', 'other' );
-			foreach ( $resource_sections as $res ) {
-				$resources = get_field( $res );
-				if( $resources ) { ?>
-					<h2><?php echo $res; ?></h2>
-					<ul class="resources section">
+		<?php
+		$resource_sections = array( 'buying', 'selling', 'other' );
+		foreach ( $resource_sections as $res ) {
+			$resources = get_field( $res );
+			if( $resources ) { ?>
+				<div class="resources section">
+					<h3><?php echo $res; ?></h3>
+					<ul>
 					<?php foreach( $resources as $resource ) {
 						$url = $resource['link_url'];
 						$file = $resource['link_file'];
@@ -36,11 +36,11 @@ the_post();
 						}
 					} ?>
 					</ul>
-				<?php }
-			} ?>
+				</div>
+			<?php }
+		} ?>
 
-			<?php edit_post_link( __( 'Edit', 'lovecalgary' ), '<div class="edit-link">', '</div>' ) ?>
-		</div><!-- .entry-content -->
+		<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
 	</div><!-- #post-<?php the_ID(); ?> -->
 	<?php } ?>
 
