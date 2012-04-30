@@ -26,9 +26,11 @@ $footerPadding: 20px;
 
 $defaultBorderColor: #CCC;
 
-@mixin headerfont {
+@mixin typekitfont ( $texttransform: false ) {
 	font-family: 'pt-sans-narrow';
-	text-transform: uppercase;
+	@if $texttransform == upper {
+		text-transform: uppercase;
+	}
 }
 
 /* ========================== General Elements ========================= */
@@ -54,11 +56,11 @@ h1 {
 	border-bottom: 1px solid #ececec;
 	padding-bottom: 9px;
 	color: #474747;
-	@include headerfont();
-	em { color: $brand2; }
+	@include typekitfont( upper );
 }
 h2 { font-size: $fontSize + 7; }
 small { font-size: $fontSize - 2; }
+em { color: $brand1; }
 
 /* =================================== Layout ============================== */
 
@@ -111,7 +113,7 @@ small { font-size: $fontSize - 2; }
 
 				}
 				a {
-					@include headerfont();
+					@include typekitfont( upper );
 					color: $menuColor;
 					font-size: 16px;
 					text-decoration: none;
@@ -149,8 +151,7 @@ small { font-size: $fontSize - 2; }
 /* ==================== Footer ================= */
 
 #footer {
-	@include headerfont();
-	text-transform: none;
+	@include typekitfont();
 	border-top: 2px solid $brand1;
 	color: #999999;
 	line-height: 60px;
@@ -174,7 +175,7 @@ h1.page-title {
 	margin: 0;
 }
 h2.post-title {
-	@include headerfont();
+	@include typekitfont( upper );
 	color: $brand1;
 	background: #efefef;
 	overflow: hidden;
@@ -192,6 +193,7 @@ h2.post-title {
 	}
 }
 .post-edit-link {  }
+.more-link { clear: right; float: right; }
 
 // =================== Blog ===================
 
@@ -232,8 +234,73 @@ h2.post-title {
 	h3 {
 		margin-top: 0;
 		color: $brand1;
-		@include headerfont();
+		@include typekitfont( upper );
 		font-size: 16px;
+	}
+}
+
+.listing-types {
+	color: #474747;
+	background: #d8d8d8;
+	padding: 9px $contentGutter 11px $contentGutter;
+	margin: 0;
+	a {
+		@include typekitfont( upper );
+		color: #474747;
+		font-size: 16px;
+		text-decoration: none;
+	}
+}
+
+.listings.content .entry-content {
+	padding-bottom: 2px;
+}
+
+// ================== Listing Slat =====================
+
+$slatGutter: 20px;
+$slatImageWidth: 286px;
+@mixin listingslatcontent() {
+	margin-left: $slatImageWidth;
+	padding-left: $slatGutter;
+	padding-right: $slatGutter;
+}
+
+.listing-slat {
+	background: #ececec;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 22px;
+
+	.featured-image {
+		float: left;
+		width: $slatImageWidth;
+	}
+	.listing-info-main {
+		@include listingslatcontent();
+		@include typekitfont();
+		line-height: 40px;
+		background: #d8d8d8;
+		font-size: 17px;
+		color: #474747;
+		.price { float: right; }
+	}
+	h2 {
+		margin: 0;
+		@include listingslatcontent();
+		@include typekitfont( upper );
+		line-height: 40px;
+		font-size: 15px;
+		background: #e4e4e4;
+	}
+	.listing-slat-content {
+		@include listingslatcontent();
+		padding-top: 15px;
+		font-size: 12px;
+	}
+	.listing-sold {
+		left: 0; top: 0;
+	    position: absolute;
 	}
 }
 
