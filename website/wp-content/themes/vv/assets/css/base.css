@@ -3,7 +3,7 @@
 /* ========================== General Elements ========================= */
 html { height: 100%; }
 
-body { height: 100%; color: #999999; font-size: 13px; line-height: 1.9; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #d8d8d8; }
+body { height: 100%; color: #999999; font-size: 12px; line-height: 1.9; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #d8d8d8; }
 
 a { text-decoration: underline; color: #ab227e; }
 
@@ -17,9 +17,9 @@ h1 { font-size: 21px; border-bottom: 1px solid #ececec; padding-bottom: 9px; col
 h1 em { color: #a9cd39; }
 h1.extra-bottom-margin { margin-bottom: 31px; }
 
-h2 { font-size: 20px; }
+h2 { font-size: 19px; }
 
-small { font-size: 11px; }
+small { font-size: 10px; }
 
 em { color: #ab227e; }
 
@@ -63,10 +63,10 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 
 .more-link { clear: right; float: right; }
 
-.post { font-size: 12px; padding-bottom: 25px; }
+.post { padding-bottom: 25px; }
 .post img.featured-image { margin-bottom: 18px; }
 
-.entry-content, .entry-content-em { padding: 22px 29px; }
+.entry-content, .entry-content-em { padding: 22px 29px; overflow: hidden; }
 .entry-content.thin-bottom, .entry-content-em.thin-bottom { padding-bottom: 4px; }
 
 .entry-content-em { background: #F7F7F7; }
@@ -76,7 +76,7 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 
 .resources { color: #ab227e; float: left; width: 33%; margin-bottom: 21px; }
 .resources ul { list-style: disc inside; }
-.resources a { font-size: 12px; color: #999999; }
+.resources a { color: #999999; }
 .resources h3 { margin-top: 0; color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 16px; }
 
 .listing-types { color: #474747; background: #d8d8d8; padding: 9px 29px 11px 29px; margin: 0; }
@@ -84,12 +84,21 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 
 .listings.content .entry-content { padding-bottom: 2px; }
 
+.contact-page img { float: left; border-right: 1px solid #FFF; }
+.contact-page h1 { margin-left: 378px; padding-left: 20px; padding-right: 20px; }
+.contact-page .entry-content-em { padding-top: 13px; padding-bottom: 13px; }
+.contact-page label { color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; width: 135px; font-size: 15px; line-height: 34px; margin-right: 15px; text-align: right; clear: left; float: left; }
+.contact-page input, .contact-page textarea { line-height: 34px; width: 237px; border: 0; background: #FFF; margin: 0 0 6px 0; }
+.contact-page input { float: left; height: 34px; }
+.contact-page input.wpcf7-submit { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin-left: 150px; }
+.contact-page textarea { width: 313px; height: 113px; }
+
 .listing-slat { background: #ececec; overflow: hidden; position: relative; margin-bottom: 22px; }
 .listing-slat .featured-image { float: left; width: 286px; }
 .listing-slat .listing-info-main { margin-left: 286px; padding-left: 20px; padding-right: 20px; font-family: 'pt-sans-narrow'; line-height: 40px; background: #d8d8d8; font-size: 17px; color: #474747; }
 .listing-slat .listing-info-main .price { float: right; }
 .listing-slat h2 { margin: 0; margin-left: 286px; padding-left: 20px; padding-right: 20px; font-family: 'pt-sans-narrow'; text-transform: uppercase; line-height: 40px; font-size: 15px; background: #e4e4e4; }
-.listing-slat .listing-slat-content { margin-left: 286px; padding-left: 20px; padding-right: 20px; padding-top: 15px; font-size: 12px; }
+.listing-slat .listing-slat-content { margin-left: 286px; padding-left: 20px; padding-right: 20px; padding-top: 15px; }
 .listing-slat .listing-sold { left: 0; top: 0; position: absolute; }
 
 /* ================== Contact Form ================ */
@@ -98,7 +107,7 @@ table.contactform td.label { text-align: right; padding-right: 8px; line-height:
 table.contactform td.submitrow { border-top: 1px solid #444; margin-top: 10px; }
 table.contactform .textbox, table.contactform textarea { width: 369px; }
 table.contactform .dropdown { width: 200px; }
-table.contactform .textbox, table.contactform textarea, table.contactform .dropdown { background: #222; border: 1px solid #444; color: #FFF; padding: 3px; font-size: 12px; }
+table.contactform .textbox, table.contactform textarea, table.contactform .dropdown { background: #222; border: 1px solid #444; color: #FFF; padding: 3px; font-size: 11px; }
 table.contactform .textbox:focus, table.contactform textarea:focus, table.contactform .dropdown:focus { background: #333; border: 1px solid #555; }
 
-.button { text-shadow: 0px -1px 0px #333333; color: #FFF; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #444444)); background: -webkit-linear-gradient(top, #666666, #444444); background: -moz-linear-gradient(top, #666666, #444444); background: -o-linear-gradient(top, #666666, #444444); background: -ms-linear-gradient(top, #666666, #444444); background: linear-gradient(top, #666666, #444444); -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; padding: 2px 20px; border-width: 1px; border-style: solid; border-color: #777 #333 #333 #777; font-size: 12px; float: right; cursor: pointer; }
+.button { text-shadow: 0px -1px 0px #333333; color: #FFF; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #444444)); background: -webkit-linear-gradient(top, #666666, #444444); background: -moz-linear-gradient(top, #666666, #444444); background: -o-linear-gradient(top, #666666, #444444); background: -ms-linear-gradient(top, #666666, #444444); background: linear-gradient(top, #666666, #444444); -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; padding: 2px 20px; border-width: 1px; border-style: solid; border-color: #777 #333 #333 #777; font-size: 11px; float: right; cursor: pointer; }

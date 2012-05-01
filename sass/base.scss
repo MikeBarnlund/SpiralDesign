@@ -5,7 +5,7 @@
 $brand1: #ab227e; /* purple */
 $brand2: #a9cd39; /* green */
 
-$fontSize: 13px;
+$fontSize: 12px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $bodyColor: #999999;
 $linkColor: $brand1;
@@ -202,7 +202,6 @@ h2.post-title {
 // =================== Blog ===================
 
 .post {
-	font-size: 12px;
 	padding-bottom: 25px;
 	img.featured-image {
 		margin-bottom: 18px;
@@ -213,6 +212,7 @@ h2.post-title {
 
 .entry-content, .entry-content-em {
 	padding: $contentGutter - 7 $contentGutter;
+	overflow: hidden;
 	&.thin-bottom { padding-bottom: $contentGutter - 25px;}
 }
 
@@ -235,7 +235,6 @@ h2.post-title {
 		list-style: disc inside;
 	}
 	a {
-		font-size: 12px;
 		color: #999999;
 	}
 	h3 {
@@ -261,6 +260,61 @@ h2.post-title {
 
 .listings.content .entry-content {
 	padding-bottom: 2px;
+}
+
+
+$contactGutter: 20px;
+$contactImageWidth: 377px;
+@mixin contactcontent() {
+	margin-left: $contactImageWidth + 1;
+	padding-left: $contactGutter;
+	padding-right: $contactGutter;
+}
+
+.contact-page {
+
+	img { float: left; border-right: 1px solid #FFF; }
+	h1 { @include contactcontent(); }
+	.entry-content-em {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+	label {
+		color: $brand1;
+		@include typekitfont( upper );
+		width: 135px;
+		font-size: 15px;
+		line-height: 34px;
+		margin-right: 15px;
+		text-align: right;
+		clear: left;
+		float: left;
+	}
+	input, textarea {
+		line-height: 34px;
+		width: 237px;
+		border: 0;
+		background: #FFF;
+		margin: 0 0 6px 0;
+	}
+	input {
+		float: left;
+		height: 34px;
+		&.wpcf7-submit {
+			@include typekitfont( upper );
+			background: $brand2;
+			color: $brand1;
+			width: 105px;
+			height: 27px;
+			line-height: 25px;
+			font-size: 15px;
+			margin-left: 150px;
+		}
+	}
+	textarea {
+		width: 313px;
+		height: 113px;
+	}
 }
 
 // ================== Listing Slat =====================
@@ -303,7 +357,6 @@ $slatImageWidth: 286px;
 	.listing-slat-content {
 		@include listingslatcontent();
 		padding-top: 15px;
-		font-size: 12px;
 	}
 	.listing-sold {
 		left: 0; top: 0;

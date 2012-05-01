@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact Page
+Template Name: Page
 */
 get_header();
 
@@ -13,7 +13,7 @@ the_post();
 	if ( get_the_ID() ) {
 	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<h1 class="entry-title"><?php the_title(); ?> Page</h1>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="entry-content editable">
 			<?php the_content(); ?>
 			<?php edit_post_link( __( 'Edit', 'lovecalgary' ), '<div class="edit-link">', '</div>' ) ?>
