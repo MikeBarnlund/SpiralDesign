@@ -57,6 +57,10 @@ h1 {
 	padding-bottom: 9px;
 	color: #474747;
 	@include typekitfont( upper );
+	em { color: $brand2; }
+	&.extra-bottom-margin {
+		margin-bottom: 31px;
+	}
 }
 h2 { font-size: $fontSize + 7; }
 small { font-size: $fontSize - 2; }
@@ -207,9 +211,12 @@ h2.post-title {
 
 // ==================== Page =====================
 
-.entry-content {
-	padding: $contentGutter - 5 $contentGutter;
+.entry-content, .entry-content-em {
+	padding: $contentGutter - 7 $contentGutter;
+	&.thin-bottom { padding-bottom: $contentGutter - 25px;}
 }
+
+.entry-content-em { background: #F7F7F7; }
 
 #contentbody .resources-page.content {
 	padding: 30px 0;
