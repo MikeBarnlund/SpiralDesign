@@ -96,6 +96,9 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .contact-page .your-comments-section { margin: 15px 0; }
 .contact-page textarea { width: 313px; height: 113px; }
 
+.about-page img { padding-bottom: 30px; }
+.about-page .entry-content-em { margin-bottom: 34px; }
+
 .listing-slat { background: #ececec; overflow: hidden; position: relative; margin-bottom: 22px; }
 .listing-slat .featured-image { float: left; width: 286px; }
 .listing-slat .listing-info-main { margin-left: 286px; padding-left: 20px; padding-right: 20px; font-family: 'pt-sans-narrow'; line-height: 40px; background: #d8d8d8; font-size: 17px; color: #474747; }
