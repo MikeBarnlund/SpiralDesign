@@ -11,16 +11,17 @@ the_post();
 ?>
 
 <div class="entry-content contact-page">
-	<?php
-	if ( get_the_ID() ) {
-	?>
-	<img src="<?php bloginfo( 'template_url' ) ?>/assets/img/contact.jpg"/>
+	<div class="contact-interior">
+		<?php
+		if ( get_the_ID() ) {
+		?>
+		<img src="<?php bloginfo( 'template_url' ) ?>/assets/img/contact.jpg"/>
 
-	<h1 class="page-title"><?php the_title(); ?></h1>
-	<div class="entry-content-em"><?php the_content(); ?></div>
+		<h1 class="page-title"><?php the_title(); ?></h1>
+		<div class="entry-content"><?php the_content(); ?></div>
 
-	<?php } ?>
-
+		<?php } ?>
+	</div>
 </div>
 
 <?php

@@ -275,9 +275,13 @@ $contactImageWidth: 377px;
 
 	img { float: left; border-right: 1px solid #FFF; }
 	h1 { @include contactcontent(); }
-	.entry-content-em {
+	.entry-content {
 		padding-top: 13px;
 		padding-bottom: 13px;
+	}
+	.contact-interior {
+		overflow: hidden;
+		background: #efefef;
 	}
 	label {
 		color: $brand1;
@@ -308,8 +312,12 @@ $contactImageWidth: 377px;
 			height: 27px;
 			line-height: 25px;
 			font-size: 15px;
-			margin-left: 150px;
+			margin: 0 0 0 150px;
 		}
+	}
+	.wpcf7 p { overflow: hidden; margin: 0; }
+	.your-comments-section {
+		margin: 15px 0;
 	}
 	textarea {
 		width: 313px;
