@@ -1,10 +1,16 @@
 <?php
 
+setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
+
 get_header();
 
 // Set up our listing fields
 
-$image_url = get_field( 'featured_image' );
+$featured_image_id = get_field( 'featured_image' );
+$featured_image = wp_get_attachment_image_src( $featured_image_id, 'full' );
+$featured_image_thumb = wp_get_attachment_image_src( $featured_image_id );
+
+$listing_status = get_field( 'listing_status' );
 
 $sold = get_field( 'sold' );
 
@@ -36,72 +42,71 @@ $optional_fields['taxes'] = get_field( 'taxes' );
 $optional_fields['condo'] = get_field( 'condo' );
 $optional_fields['mls'] = get_field( 'mls' );
 
+get_template_part( 'listingtypes' );
 ?>
 
-<div class="content">
-	<?php
-	setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
-	?>
-
-	<div id="post-<?php the_ID(); ?>" class="single-listing editable">
-		<?php
-
-		echo !empty( $image_url ) ? '<img src="' . $image_url . '" />' : '';
-
-		// iterate through the remaining images (use wordpress thumbnails?)
-		?>
-		<ul class="thumbnails">
-		<?php foreach( $images as $image ) {
-			echo '<li><img src="' . $image['image'] . '"/></li>';
-		} ?>
-		</ul>
-
-		<h2>
-			<?php echo $address; ?>
-			<em>|</em>
-			<?php echo $square_footage; ?>
-			<span class="price"><?php echo $price; ?></span>
-		</h2>
-
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-		<?php
-		echo get_the_term_list( get_the_ID(), 'listingtype' );
-		?>
-
-		<div class="entry-content">
-			<?php the_content( ); ?>
-		</div>
-
-		<div class="other-fields">
+<div class="entry-content-em single-listing">
+	<div class="slideshow">
+		<div class="current-image-container">
 			<?php
-			$has_optional_fields = false;
-			foreach ( $optional_fields as $optional_field ) {
-				$has_optional_fields = !empty( $optional_field );
-				if ( $has_optional_fields === TRUE ) break;
-			}
-
-			if ( $has_optional_fields ) {
-				echo '<dl>';
-				echo !empty( $optional_fields['bedrooms'] ) ? '<dt>Bedrooms:</dt><dd>' . $optional_fields['bedrooms'] . '</dd>' : '';
-				echo !empty( $optional_fields['bathrooms'] ) ? '<dt>Bathrooms:</dt><dd>' . $optional_fields['bathrooms'] . '</dd>' : '';
-				echo !empty( $optional_fields['year_built'] ) ? '<dt>Year Built:</dt><dd>' . $optional_fields['year_built'] . '</dd>' : '';
-				echo !empty( $optional_fields['property_type'] ) ? '<dt>Property Type:</dt><dd>' . $optional_fields['property_type'] . '</dd>' : '';
-				echo !empty( $optional_fields['garage_vehicle_spaces'] ) ? '<dt>Garage Vehicle Spaces:</dt><dd>' . $optional_fields['garage_vehicle_spaces'] . '</dd>' : '';
-				echo !empty( $optional_fields['living_area'] ) ? '<dt>Living Area:</dt><dd>' . $optional_fields['living_area'] . '</dd>' : '';
-				echo !empty( $optional_fields['lot_frontage'] ) ? '<dt>Lot Frontage:</dt><dd>' . $optional_fields['lot_frontage'] . '</dd>' : '';
-				echo !empty( $optional_fields['lot_depth'] ) ? '<dt>Lot Depth:</dt><dd>' . $optional_fields['lot_depth'] . '</dd>' : '';
-				echo !empty( $optional_fields['basement'] ) ? '<dt>Basement:</dt><dd>' . $optional_fields['basement'] . '</dd>' : '';
-				echo !empty( $optional_fields['taxes'] ) ? '<dt>Taxes:</dt><dd>' . $optional_fields['taxes'] . '</dd>' : '';
-				echo !empty( $optional_fields['condo'] ) ? '<dt>Condo:</dt><dd>' . $optional_fields['condo'] . '</dd>' : '';
-				echo !empty( $optional_fields['mls'] ) ? '<dt>MLS&reg;:</dt><dd>' . $optional_fields['mls'] . '</dd>' : '';
-				echo '</dl>';
-			}
+			echo !empty( $featured_image ) ? '<img class="current-image" src="' . $featured_image[0] . '" />' : '';
+			echo !empty( $listing_status ) && in_array( 'sold', $listing_status ) ? '<img class="listing-sold" src="' . get_bloginfo( 'template_url' ) . '/assets/img/sold.png"/>' : '';
 			?>
 		</div>
+		<ul class="thumbnails">
+			<?php
+			// iterate through the images including featured image (use wordpress thumbnails?)
+			echo !empty( $featured_image_thumb ) ? '<li><img src="' . $featured_image_thumb[0] . '" /></li>' : '';
+			$imagecount = 1;
+			foreach( $images as $image ) {
+				$imagecount++;
+				$url = wp_get_attachment_image_src( $image['image'] );
+				$url_full = wp_get_attachment_image_src( $image['image'], 'full' );
+				echo '<li ' . ( $imagecount % 4 === 0 ? 'class="last"' : '' ) .'><img src="' . $url[0] . '" full_url="' . $url_full[0] . '"/></li>';
+			} ?>
+		</ul>
+	</div>
+
+	<div class="listing-info-main">
+		<?php echo $address; ?>
+		<span class="price"><?php echo $price; ?></span>
+	</div>
+
+	<h2><?php the_title(); ?></h2>
+
+	<div class="listing-content">
+		<?php
+		echo apply_filters( 'the_content', $post->post_content );
+
+		$has_optional_fields = false;
+		foreach ( $optional_fields as $optional_field ) {
+			$has_optional_fields = !empty( $optional_field );
+			if ( $has_optional_fields === TRUE ) break;
+		}
+
+		if ( $has_optional_fields ) {
+			echo '<dl>';
+			echo '<dt>Square Footage:</dt><dd>' . $square_footage . '</dd>';
+			echo !empty( $optional_fields['bedrooms'] ) ? '<dt>Bedrooms:</dt><dd>' . $optional_fields['bedrooms'] . '</dd>' : '';
+			echo !empty( $optional_fields['bathrooms'] ) ? '<dt>Bathrooms:</dt><dd>' . $optional_fields['bathrooms'] . '</dd>' : '';
+			echo !empty( $optional_fields['year_built'] ) ? '<dt>Year Built:</dt><dd>' . $optional_fields['year_built'] . '</dd>' : '';
+			echo !empty( $optional_fields['property_type'] ) ? '<dt>Property Type:</dt><dd>' . $optional_fields['property_type'] . '</dd>' : '';
+			echo !empty( $optional_fields['garage_vehicle_spaces'] ) ? '<dt>Garage Vehicle Spaces:</dt><dd>' . $optional_fields['garage_vehicle_spaces'] . '</dd>' : '';
+			echo !empty( $optional_fields['living_area'] ) ? '<dt>Living Area:</dt><dd>' . $optional_fields['living_area'] . '</dd>' : '';
+			echo !empty( $optional_fields['lot_frontage'] ) ? '<dt>Lot Frontage:</dt><dd>' . $optional_fields['lot_frontage'] . '</dd>' : '';
+			echo !empty( $optional_fields['lot_depth'] ) ? '<dt>Lot Depth:</dt><dd>' . $optional_fields['lot_depth'] . '</dd>' : '';
+			echo !empty( $optional_fields['basement'] ) ? '<dt>Basement:</dt><dd>' . $optional_fields['basement'] . '</dd>' : '';
+			echo !empty( $optional_fields['taxes'] ) ? '<dt>Taxes:</dt><dd>' . $optional_fields['taxes'] . '</dd>' : '';
+			echo !empty( $optional_fields['condo'] ) ? '<dt>Condo:</dt><dd>' . $optional_fields['condo'] . '</dd>' : '';
+			echo !empty( $optional_fields['mls'] ) ? '<dt>MLS&reg;:</dt><dd>' . $optional_fields['mls'] . '</dd>' : '';
+			echo '</dl>';
+		}
+		?>
 
 		<?php edit_post_link( __( 'Edit', 'lovecalgary' ), "<div class=\"edit-link\">", "</div>" ) ?>
+
 	</div>
+
 </div> <!-- .content -->
 
 <?php

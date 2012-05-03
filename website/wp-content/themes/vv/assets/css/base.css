@@ -109,13 +109,30 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .search-page button { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin: 0 0 0 150px; cursor: pointer; display: block; clear: both; }
 .search-page .no-listings { font-family: 'pt-sans-narrow'; font-size: 15px; background: #F7F7F7; text-align: center; line-height: 40px; }
 
+.listing-info-main { font-family: 'pt-sans-narrow'; line-height: 40px; background: #d8d8d8; font-size: 17px; color: #474747; }
+.listing-info-main .price { float: right; }
+
+.listing-sold { left: 0; top: 0; position: absolute; }
+
+.single-listing .slideshow { float: left; width: 568px; }
+.single-listing .slideshow .current-image-container { margin-bottom: 16px; position: relative; }
+.single-listing .slideshow .current-image-container img.current-image { width: 568px; }
+.single-listing .slideshow ul.thumbnails { font-size: 0; }
+.single-listing .slideshow ul.thumbnails li { display: inline-block; *display: inline; zoom: 1; margin-right: 16px; margin-bottom: 16px; }
+.single-listing .slideshow ul.thumbnails li.last { margin-right: 0; }
+.single-listing .slideshow ul.thumbnails li img { width: 130px; }
+.single-listing .listing-info-main, .single-listing h2 { margin-left: 568px; padding: 0 16px; }
+.single-listing h2 { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #ab227e; background: #efefef; font-size: 15px; padding: 12px 16px; }
+.single-listing .listing-content { margin-left: 568px; overflow: hidden; padding-left: 16px; }
+.single-listing .listing-content dl { overflow: hidden; margin-bottom: 16px; }
+.single-listing .listing-content dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
+.single-listing .listing-content dd { float: left; }
+
 .listing-slat { background: #ececec; overflow: hidden; position: relative; margin-bottom: 22px; }
+.listing-slat .listing-info-main { margin-left: 286px; padding-left: 20px; padding-right: 20px; }
 .listing-slat .featured-image { float: left; width: 286px; }
-.listing-slat .listing-info-main { margin-left: 286px; padding-left: 20px; padding-right: 20px; font-family: 'pt-sans-narrow'; line-height: 40px; background: #d8d8d8; font-size: 17px; color: #474747; }
-.listing-slat .listing-info-main .price { float: right; }
 .listing-slat h2 { margin: 0; margin-left: 286px; padding-left: 20px; padding-right: 20px; font-family: 'pt-sans-narrow'; text-transform: uppercase; line-height: 40px; font-size: 15px; background: #e4e4e4; }
 .listing-slat .listing-slat-content { margin-left: 286px; padding-left: 20px; padding-right: 20px; padding-top: 15px; }
-.listing-slat .listing-sold { left: 0; top: 0; position: absolute; }
 
 /* ================== Contact Form ================ */
 table.contactform td { padding: 3px; vertical-align: middle; height: 51px; }

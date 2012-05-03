@@ -32,7 +32,11 @@ setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 	<div class="listing-slat-content">
-		<?php the_content( __( '[view more]', 'vv' ) ); ?>
-		<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
+		<?php
+		global $more;
+		$more = 0;
+		the_content( __( '[view more]', 'vv' ) );
+		edit_post_link( __( 'Edit Content', 'lovecalgary' ) );
+		?>
 	</div>
 </div>

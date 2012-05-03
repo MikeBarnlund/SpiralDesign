@@ -43,8 +43,6 @@ the_post();
 
 	foreach ( $the_posts as $post) {
 		setup_postdata( $post );
-		global $more;
-		$more = 0;
 		get_template_part( 'listing', 'slat' );
 	}
 	?>

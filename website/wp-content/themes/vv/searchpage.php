@@ -176,7 +176,7 @@ if ( !empty( $type ) ) {
 		</div>
 
 		<?php
-		if ( $query->have_posts() ) { ?>
+		if ( !empty( $query ) && $query->have_posts() ) { ?>
 			<div class="section">
 				<?php
 				// The Loop
