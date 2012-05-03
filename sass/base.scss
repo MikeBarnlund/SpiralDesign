@@ -385,6 +385,13 @@ $contactImageWidth: 377px;
 		display: block;
 		clear: both;
 	}
+	.no-listings {
+		@include typekitfont();
+		font-size: 15px;
+		background: #F7F7F7;
+		text-align: center;
+		line-height: 40px;
+	}
 }
 
 // ================== Listing Slat =====================

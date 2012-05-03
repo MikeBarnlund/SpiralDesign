@@ -176,7 +176,7 @@ if ( !empty( $type ) ) {
 		</div>
 
 		<?php
-		if ( !empty( $query ) ) { ?>
+		if ( $query->have_posts() ) { ?>
 			<div class="section">
 				<?php
 				// The Loop
@@ -185,7 +185,7 @@ if ( !empty( $type ) ) {
 				endwhile;
 				?>
 			</div>
-		<?php } else { ?>
+		<?php } else if ( !empty( $type ) ) { ?>
 			<div class="no-listings">Sorry, no listings matched your search.</div>
 		<?php } ?>
 	</div>
