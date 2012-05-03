@@ -103,7 +103,38 @@ get_template_part( 'listingtypes' );
 		}
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'lovecalgary' ), "<div class=\"edit-link\">", "</div>" ) ?>
+		<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
+
+		<a class="contact" href="/contact">Contact</a>
+
+		<?php
+		if ( is_single() ) {
+			echo '<div class="listing-navigation">';
+			$title_maxlen = 17;
+
+			$next_post = NULL;
+			$previou_post = NULL;
+
+			$next_post = get_adjacent_post( false, '', false );
+			$previous_post = get_adjacent_post( false, '', true );
+
+			echo ( !empty( $previous_post ) )
+				?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
+					( strlen( $previous_post->post_title ) > $title_maxlen
+						? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
+						: $previous_post->post_title ) .
+					'</a>'
+				: '';
+			echo ( !empty( $next_post ) )
+				?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
+					( strlen( $next_post->post_title ) > $title_maxlen
+						? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
+						: $next_post->post_title ) .
+					' <em>&gt;&gt;</em></a>'
+				: '';
+			echo '</div>';
+		}
+		?>
 
 	</div>
 

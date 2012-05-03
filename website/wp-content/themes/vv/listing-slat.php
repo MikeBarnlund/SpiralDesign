@@ -5,7 +5,8 @@ setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
 <div id="post-<?php the_ID(); ?>" class="listing-slat editable">
 	<?php
 
-	$image_url = get_field( 'featured_image' );
+	$featured_image_id = get_field( 'featured_image' );
+	$featured_image = wp_get_attachment_image_src( $featured_image_id, 'full' );
 
 	$listing_status = get_field( 'listing_status' );
 
@@ -18,7 +19,7 @@ setlocale( LC_MONETARY, 'en_US' ); // needed for money formatting
 	$address = get_field( 'address' );
 	if ( empty( $address ) ) $address = 'Address Not Available';
 
-	echo !empty( $image_url ) ? '<img class="featured-image" src="' . $image_url . '" />' : '';
+	echo !empty( $featured_image ) ? '<img class="featured-image" src="' . $featured_image[0] . '" />' : '';
 	echo !empty( $listing_status ) && in_array( 'sold', $listing_status ) ? '<img class="listing-sold" src="' . get_bloginfo( 'template_url' ) . '/assets/img/sold.png"/>' : '';
 	?>
 
