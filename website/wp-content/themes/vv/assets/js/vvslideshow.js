@@ -1,5 +1,3 @@
-console.log( 'loaded vvslideshow' );
-
 var currentImage = null;
 
 var imglist = [];
@@ -31,8 +29,6 @@ function replaceImage( oldImage, newImage ) {
 	} else {
 		doSwap( oldImage, newImage );
 	}
-
-	currentImage = newImage;
 }
 
 function doSwap ( oldImage, newImage ) {
@@ -44,17 +40,3 @@ function doSwap ( oldImage, newImage ) {
 function jumpTo ( imageIndex ) {
 	replaceImage( currentImage, imglist[ imageIndex ] );
 }
-
-$( document ).ready( function() {
-
-	// prep our image list
-	$( 'ul.thumbnails li img' ).each( function() {
-		imglist[ $( this ).attr( 'image_id' ) ] = { src: $( this ).attr( 'full_url' ), element: null };
-	} );
-
-	$( 'ul.thumbnails li img' ).click( function () {
-		jumpTo( $( this ).attr( 'image_id' ) );
-	} );
-
-	replaceImage( null, imglist[1] );
-} );

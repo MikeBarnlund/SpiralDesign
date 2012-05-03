@@ -48,6 +48,16 @@ get_template_part( 'listingtypes' );
 <script>
 	$( document ).ready( function() {
 
+		// prep our image list
+		$( 'ul.thumbnails li img' ).each( function() {
+			imglist[ $( this ).attr( 'image_id' ) ] = { src: $( this ).attr( 'full_url' ), element: null };
+		} );
+
+		$( 'ul.thumbnails li img' ).click( function () {
+			jumpTo( $( this ).attr( 'image_id' ) );
+		} );
+
+		replaceImage( null, imglist[1] );
 	} );
 </script>
 

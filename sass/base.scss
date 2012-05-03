@@ -264,6 +264,13 @@ h2.post-title {
 	padding-bottom: 2px;
 }
 
+// ============================ Home Page =====================================
+
+.current-image-container {
+	background: #000;
+}
+
+// ============================= Contact Page =================================
 
 $contactGutter: 20px;
 $contactImageWidth: 377px;
@@ -272,8 +279,6 @@ $contactImageWidth: 377px;
 	padding-left: $contactGutter;
 	padding-right: $contactGutter;
 }
-
-// ============================= Contact Page =================================
 
 .contact-page {
 

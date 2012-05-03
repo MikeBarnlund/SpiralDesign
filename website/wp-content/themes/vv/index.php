@@ -8,15 +8,30 @@ the_post();
 ?>
 
 <div class="slideshow container">
-	<?php
-	$images = get_field( 'main_images' );
-	if( $images ) { ?>
-		<?php
-		foreach( $images as $image ) {
-			echo '<img src="' . $image['image'] . '" />';
-		}
-		?>
-	<?php } ?>
+	<div class="current-image-container">
+		<script>
+			var currentHomeImageIndex = 0;
+			var newHomeImageIndex = 0;
+
+			$( document ).ready( function() {
+
+				imglist[0] = { src: '<?php bloginfo( 'template_url' ) ?>/assets/img/lc-home-1.jpg', element: $( '.current-image-container img' ).get( 0 ) };
+				imglist[1] = { src: '<?php bloginfo( 'template_url' ) ?>/assets/img/lc-home-2.jpg', element: null };
+				imglist[2] = { src: '<?php bloginfo( 'template_url' ) ?>/assets/img/lc-home-3.jpg', element: null };
+
+				var nextImage = function() {
+					newHomeImageIndex++;
+					if ( newHomeImageIndex > 2 ) newHomeImageIndex = 0;
+					replaceImage( imglist[ currentHomeImageIndex ], imglist[ newHomeImageIndex ] );
+					currentHomeImageIndex = newHomeImageIndex;
+				};
+
+				setInterval( nextImage, 6000 );
+
+			} );
+		</script>
+		<img src="<?php bloginfo( 'template_url' ) ?>/assets/img/lc-home-1.jpg" />
+	</div>
 </div>
 
 <div class="entry-content thin-bottom">

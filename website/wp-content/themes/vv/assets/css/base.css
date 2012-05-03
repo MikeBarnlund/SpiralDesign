@@ -84,6 +84,8 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 
 .listings.content .entry-content { padding-bottom: 2px; }
 
+.current-image-container { background: #000; }
+
 .contact-page img { float: left; border-right: 1px solid #FFF; }
 .contact-page h1 { margin-left: 378px; padding-left: 20px; padding-right: 20px; }
 .contact-page .entry-content { padding-top: 13px; padding-bottom: 13px; }
