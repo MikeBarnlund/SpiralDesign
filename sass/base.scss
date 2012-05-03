@@ -422,6 +422,7 @@ $slideshowGutter: 16px;
 .listing-sold {
 	left: 0; top: 0;
     position: absolute;
+	z-index: 10;
 }
 
 // ================== Single Listing Page ===================
@@ -433,7 +434,10 @@ $slideshowGutter: 16px;
 		.current-image-container {
 			margin-bottom: $slideshowGutter;
 			position: relative;
-			img.current-image { width: 568px; }
+			img {
+				width: 568px;
+				&.listing-sold { width: auto; }
+			}
 		}
 		ul.thumbnails {
 			font-size: 0;
@@ -443,7 +447,10 @@ $slideshowGutter: 16px;
 				margin-right: $slideshowGutter;
 				margin-bottom: $slideshowGutter;
 				&.last { margin-right: 0; }
-				img { width: 130px; }
+				img {
+					width: 130px;
+					cursor: pointer;
+				}
 			}
 		}
 	}

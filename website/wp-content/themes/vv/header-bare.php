@@ -58,6 +58,11 @@
 	<!-- Load Theme Scripts -->
 	<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/theme.js" type="text/javascript" charset="utf-8"></script>
 
+	<?php if ( is_single() && get_post_type() === 'listing' ) { ?>
+	<!-- single listing custom JS-->
+	    <script type='text/javascript' src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vvslideshow.js"></script>
+	<?php } ?>
+
 	<!-- Typekit Scripts -->
 	<script type="text/javascript" src="http://use.typekit.com/xwh4pzz.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>

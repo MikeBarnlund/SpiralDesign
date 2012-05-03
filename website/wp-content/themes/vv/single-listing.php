@@ -45,24 +45,30 @@ $optional_fields['mls'] = get_field( 'mls' );
 get_template_part( 'listingtypes' );
 ?>
 
+<script>
+	$( document ).ready( function() {
+
+	} );
+</script>
+
 <div class="entry-content-em single-listing">
 	<div class="slideshow">
 		<div class="current-image-container">
 			<?php
-			echo !empty( $featured_image ) ? '<img class="current-image" src="' . $featured_image[0] . '" />' : '';
+			//echo !empty( $featured_image ) ? '<img src="' . $featured_image[0] . '" />' : '';
 			echo !empty( $listing_status ) && in_array( 'sold', $listing_status ) ? '<img class="listing-sold" src="' . get_bloginfo( 'template_url' ) . '/assets/img/sold.png"/>' : '';
 			?>
 		</div>
 		<ul class="thumbnails">
 			<?php
 			// iterate through the images including featured image (use wordpress thumbnails?)
-			echo !empty( $featured_image_thumb ) ? '<li><img src="' . $featured_image_thumb[0] . '" /></li>' : '';
 			$imagecount = 1;
+			echo !empty( $featured_image_thumb ) ? '<li><img image_id="' . $imagecount . '" src="' . $featured_image_thumb[0] . '" full_url="' . $featured_image[0] . '"/></li>' : '';
 			foreach( $images as $image ) {
 				$imagecount++;
 				$url = wp_get_attachment_image_src( $image['image'] );
 				$url_full = wp_get_attachment_image_src( $image['image'], 'full' );
-				echo '<li ' . ( $imagecount % 4 === 0 ? 'class="last"' : '' ) .'><img src="' . $url[0] . '" full_url="' . $url_full[0] . '"/></li>';
+				echo '<li ' . ( $imagecount % 4 === 0 ? 'class="last"' : '' ) .'><img image_id="' . $imagecount . '" src="' . $url[0] . '" full_url="' . $url_full[0] . '"/></li>';
 			} ?>
 		</ul>
 	</div>

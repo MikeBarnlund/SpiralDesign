@@ -1,0 +1,60 @@
+console.log( 'loaded vvslideshow' );
+
+var currentImage = null;
+
+var imglist = [];
+
+function replaceImage( oldImage, newImage ) {
+
+	/*
+	Notes
+	- use some closures here, have a function with image elements ready to rock on timers
+	- you can create the image variables early and bind the load event, without actually
+		calling .attr() and loading the image (thoguh you may not want to)
+	*/
+
+	if ( newImage.element == null ) {
+
+		var img = new Image();
+		newImage.element = img;
+
+		$( img ).load( function() {
+			$( this ).hide();
+
+			$( '.slideshow .current-image-container' ).append( this );
+
+			doSwap( oldImage, newImage )
+		}).error(function( error ) {
+			console.log ( 'Huh?' );
+		}).attr( 'src', newImage.src );
+
+	} else {
+		doSwap( oldImage, newImage );
+	}
+
+	currentImage = newImage;
+}
+
+function doSwap ( oldImage, newImage ) {
+	var delay = 250;
+	if ( oldImage == null ) $( newImage.element ).fadeIn( delay );
+	else $( oldImage.element ).fadeOut( delay, function() { $( newImage.element ).fadeIn( delay ); } );
+}
+
+function jumpTo ( imageIndex ) {
+	replaceImage( currentImage, imglist[ imageIndex ] );
+}
+
+$( document ).ready( function() {
+
+	// prep our image list
+	$( 'ul.thumbnails li img' ).each( function() {
+		imglist[ $( this ).attr( 'image_id' ) ] = { src: $( this ).attr( 'full_url' ), element: null };
+	} );
+
+	$( 'ul.thumbnails li img' ).click( function () {
+		jumpTo( $( this ).attr( 'image_id' ) );
+	} );
+
+	replaceImage( null, imglist[1] );
+} );
