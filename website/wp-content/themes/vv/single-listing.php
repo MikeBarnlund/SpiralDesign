@@ -73,75 +73,77 @@ get_template_part( 'listingtypes' );
 		</ul>
 	</div>
 
-	<div class="listing-info-main">
-		<?php echo $address; ?>
-		<span class="price"><?php echo $price; ?></span>
-	</div>
+	<div class="listing-info">
+		<div class="listing-info-main">
+			<?php echo $address; ?>
+			<span class="price"><?php echo $price; ?></span>
+		</div>
 
-	<h2><?php the_title(); ?></h2>
+		<h2><?php the_title(); ?></h2>
 
-	<div class="listing-content">
-		<?php
-		echo apply_filters( 'the_content', $post->post_content );
+		<div class="listing-content">
+			<?php
+			echo apply_filters( 'the_content', $post->post_content );
 
-		$has_optional_fields = false;
-		foreach ( $optional_fields as $optional_field ) {
-			$has_optional_fields = !empty( $optional_field );
-			if ( $has_optional_fields === TRUE ) break;
-		}
+			$has_optional_fields = false;
+			foreach ( $optional_fields as $optional_field ) {
+				$has_optional_fields = !empty( $optional_field );
+				if ( $has_optional_fields === TRUE ) break;
+			}
 
-		if ( $has_optional_fields ) {
-			echo '<dl>';
-			echo '<dt>Square Footage:</dt><dd>' . $square_footage . '</dd>';
-			echo !empty( $optional_fields['bedrooms'] ) ? '<dt>Bedrooms:</dt><dd>' . $optional_fields['bedrooms'] . '</dd>' : '';
-			echo !empty( $optional_fields['bathrooms'] ) ? '<dt>Bathrooms:</dt><dd>' . $optional_fields['bathrooms'] . '</dd>' : '';
-			echo !empty( $optional_fields['year_built'] ) ? '<dt>Year Built:</dt><dd>' . $optional_fields['year_built'] . '</dd>' : '';
-			echo !empty( $optional_fields['property_type'] ) ? '<dt>Property Type:</dt><dd>' . $optional_fields['property_type'] . '</dd>' : '';
-			echo !empty( $optional_fields['garage_vehicle_spaces'] ) ? '<dt>Garage Vehicle Spaces:</dt><dd>' . $optional_fields['garage_vehicle_spaces'] . '</dd>' : '';
-			echo !empty( $optional_fields['living_area'] ) ? '<dt>Living Area:</dt><dd>' . $optional_fields['living_area'] . '</dd>' : '';
-			echo !empty( $optional_fields['lot_frontage'] ) ? '<dt>Lot Frontage:</dt><dd>' . $optional_fields['lot_frontage'] . '</dd>' : '';
-			echo !empty( $optional_fields['lot_depth'] ) ? '<dt>Lot Depth:</dt><dd>' . $optional_fields['lot_depth'] . '</dd>' : '';
-			echo !empty( $optional_fields['basement'] ) ? '<dt>Basement:</dt><dd>' . $optional_fields['basement'] . '</dd>' : '';
-			echo !empty( $optional_fields['taxes'] ) ? '<dt>Taxes:</dt><dd>' . $optional_fields['taxes'] . '</dd>' : '';
-			echo !empty( $optional_fields['condo'] ) ? '<dt>Condo:</dt><dd>' . $optional_fields['condo'] . '</dd>' : '';
-			echo !empty( $optional_fields['mls'] ) ? '<dt>MLS&reg;:</dt><dd>' . $optional_fields['mls'] . '</dd>' : '';
-			echo '</dl>';
-		}
-		?>
+			if ( $has_optional_fields ) {
+				echo '<dl>';
+				echo '<dt>Square Footage:</dt><dd>' . $square_footage . '</dd>';
+				echo !empty( $optional_fields['bedrooms'] ) ? '<dt>Bedrooms:</dt><dd>' . $optional_fields['bedrooms'] . '</dd>' : '';
+				echo !empty( $optional_fields['bathrooms'] ) ? '<dt>Bathrooms:</dt><dd>' . $optional_fields['bathrooms'] . '</dd>' : '';
+				echo !empty( $optional_fields['year_built'] ) ? '<dt>Year Built:</dt><dd>' . $optional_fields['year_built'] . '</dd>' : '';
+				echo !empty( $optional_fields['property_type'] ) ? '<dt>Property Type:</dt><dd>' . $optional_fields['property_type'] . '</dd>' : '';
+				echo !empty( $optional_fields['garage_vehicle_spaces'] ) ? '<dt>Garage Vehicle Spaces:</dt><dd>' . $optional_fields['garage_vehicle_spaces'] . '</dd>' : '';
+				echo !empty( $optional_fields['living_area'] ) ? '<dt>Living Area:</dt><dd>' . $optional_fields['living_area'] . '</dd>' : '';
+				echo !empty( $optional_fields['lot_frontage'] ) ? '<dt>Lot Frontage:</dt><dd>' . $optional_fields['lot_frontage'] . '</dd>' : '';
+				echo !empty( $optional_fields['lot_depth'] ) ? '<dt>Lot Depth:</dt><dd>' . $optional_fields['lot_depth'] . '</dd>' : '';
+				echo !empty( $optional_fields['basement'] ) ? '<dt>Basement:</dt><dd>' . $optional_fields['basement'] . '</dd>' : '';
+				echo !empty( $optional_fields['taxes'] ) ? '<dt>Taxes:</dt><dd>' . $optional_fields['taxes'] . '</dd>' : '';
+				echo !empty( $optional_fields['condo'] ) ? '<dt>Condo:</dt><dd>' . $optional_fields['condo'] . '</dd>' : '';
+				echo !empty( $optional_fields['mls'] ) ? '<dt>MLS&reg;:</dt><dd>' . $optional_fields['mls'] . '</dd>' : '';
+				echo '</dl>';
+			}
+			?>
 
-		<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
+			<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
 
-		<a class="contact" href="/contact">Contact</a>
+			<a class="contact" href="/contact">Contact</a>
 
-		<?php
-		if ( is_single() ) {
-			echo '<div class="listing-navigation">';
-			$title_maxlen = 17;
+			<?php
+			if ( is_single() ) {
+				echo '<div class="listing-navigation">';
+				$title_maxlen = 17;
 
-			$next_post = NULL;
-			$previou_post = NULL;
+				$next_post = NULL;
+				$previou_post = NULL;
 
-			$next_post = get_adjacent_post( false, '', false );
-			$previous_post = get_adjacent_post( false, '', true );
+				$next_post = get_adjacent_post( false, '', false );
+				$previous_post = get_adjacent_post( false, '', true );
 
-			echo ( !empty( $previous_post ) )
-				?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
-					( strlen( $previous_post->post_title ) > $title_maxlen
-						? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
-						: $previous_post->post_title ) .
-					'</a>'
-				: '';
-			echo ( !empty( $next_post ) )
-				?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
-					( strlen( $next_post->post_title ) > $title_maxlen
-						? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
-						: $next_post->post_title ) .
-					' <em>&gt;&gt;</em></a>'
-				: '';
-			echo '</div>';
-		}
-		?>
+				echo ( !empty( $previous_post ) )
+					?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post"><em>&lt;&lt;</em> ' .
+						( strlen( $previous_post->post_title ) > $title_maxlen
+							? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
+							: $previous_post->post_title ) .
+						'</a>'
+					: '';
+				echo ( !empty( $next_post ) )
+					?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
+						( strlen( $next_post->post_title ) > $title_maxlen
+							? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
+							: $next_post->post_title ) .
+						' <em>&gt;&gt;</em></a>'
+					: '';
+				echo '</div>';
+			}
+			?>
 
+		</div>
 	</div>
 
 </div> <!-- .content -->

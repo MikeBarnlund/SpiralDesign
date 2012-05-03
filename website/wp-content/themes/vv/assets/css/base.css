@@ -37,11 +37,11 @@ em { color: #ab227e; }
 #header .container #nav #logo { float: left; }
 #header .container #nav .menu { float: left; margin-top: 104px; width: 840px; }
 #header .container #nav .menu li { float: left; position: relative; }
-#header .container #nav .menu a { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #b8b8b8; font-size: 16px; text-decoration: none; line-height: 16px; padding: 0 0 0 22px; cursor: pointer; }
+#header .container #nav .menu a { display: block; font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #b8b8b8; font-size: 16px; text-decoration: none; line-height: 16px; padding: 0 0 0 22px; cursor: pointer; }
 #header .container #nav .menu a:hover, #header .container #nav .menu .current_page_item a { color: #a9cd39; }
 #header .container #nav .menu ul { display: none; position: absolute; left: 12px; background: #434343; padding: 3px 10px 6px 10px; }
 #header .container #nav .menu ul li { float: none; display: block; border-top: 1px solid #696969; margin-top: 1px; padding-top: 2px; }
-#header .container #nav .menu ul a { padding: 0; }
+#header .container #nav .menu ul a { padding: 0; line-height: 22px; }
 #header .container #nav li { display: inline; }
 
 /* ==================== Footer ================= */
@@ -91,22 +91,22 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .contact-page label { color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; width: 135px; font-size: 15px; line-height: 34px; margin-right: 15px; text-align: right; clear: left; float: left; }
 .contact-page input, .contact-page textarea { line-height: 34px; width: 237px; border: 0; background: #FFF; margin: 0 0 6px 0; }
 .contact-page input { float: left; height: 34px; }
-.contact-page input.wpcf7-submit { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin: 0 0 0 150px; }
-.contact-page .wpcf7 p { overflow: hidden; margin: 0; }
-.contact-page .your-comments-section { margin: 15px 0; }
-.contact-page textarea { width: 313px; height: 113px; }
+.contact-page input.wpcf7-submit { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin: 0 0 0 150px; float: none; clear: both; }
+.contact-page .wpcf7 p { overflow: hidden; margin: 0; clear: both; }
+.contact-page .your-comments { float: left; }
+.contact-page .your-comments-section { margin: 15px 0; overflow: hidden; }
+.contact-page textarea { float: left; width: 312px; height: 113px; }
 
 .about-page img { padding-bottom: 30px; }
 .about-page .entry-content-em { margin-bottom: 34px; }
 
 .search-page .entry-content-em { margin-bottom: 22px; }
 .search-page .form-fields { overflow: hidden; margin-bottom: 14px; }
-.search-page label { color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; width: 135px; font-size: 15px; line-height: 34px; margin-right: 15px; text-align: right; clear: left; float: left; }
-.search-page .select-cutoff { overflow: hidden; width: 217px; float: left; }
-.search-page select, .search-page button { border: 0; }
-.search-page select { width: 237px; background: #d8d8d8 url(../img/down-arrow.png) 195px center no-repeat; margin: 0 0 18px 0; color: #474747; font-size: 15px; padding: 5px 0 5px 15px; font-family: 'pt-sans-narrow'; text-transform: uppercase; vertical-align: middle; }
-.search-page span { float: left; padding: 0 10px; line-height: 34px; font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 15px; }
-.search-page button { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin: 0 0 0 150px; cursor: pointer; display: block; clear: both; }
+.search-page label { color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; width: 135px; font-size: 15px; margin-right: 15px; text-align: right; clear: left; float: left; }
+.search-page .select-cutoff { float: left; }
+.search-page span { float: left; padding: 0 6px; font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 15px; }
+.search-page select { display: inline-block; *display: inline; zoom: 1; margin-top: 5px; }
+.search-page button { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 105px; height: 27px; line-height: 25px; font-size: 15px; margin: 0 0 0 150px; cursor: pointer; display: block; clear: both; border: 0; }
 .search-page .no-listings { font-family: 'pt-sans-narrow'; font-size: 15px; background: #F7F7F7; text-align: center; line-height: 40px; }
 
 .listing-info-main { font-family: 'pt-sans-narrow'; line-height: 40px; background: #d8d8d8; font-size: 17px; color: #474747; }
@@ -122,9 +122,10 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .single-listing .slideshow ul.thumbnails li { display: inline-block; *display: inline; zoom: 1; margin-right: 16px; margin-bottom: 16px; }
 .single-listing .slideshow ul.thumbnails li.last { margin-right: 0; }
 .single-listing .slideshow ul.thumbnails li img { width: 130px; cursor: pointer; }
-.single-listing .listing-info-main, .single-listing h2 { margin-left: 568px; padding: 0 16px; }
+.single-listing .listing-info { margin-left: 568px; }
+.single-listing .listing-info-main, .single-listing h2 { padding: 0 16px; }
 .single-listing h2 { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #ab227e; background: #efefef; font-size: 15px; padding: 12px 16px; }
-.single-listing .listing-content { margin-left: 568px; overflow: hidden; padding-left: 16px; }
+.single-listing .listing-content { overflow: hidden; padding-left: 16px; }
 .single-listing .listing-content dl { overflow: hidden; margin-bottom: 16px; }
 .single-listing .listing-content dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
 .single-listing .listing-content dd { float: left; }
