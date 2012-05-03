@@ -29,6 +29,8 @@ function replaceImage( oldImage, newImage ) {
 	} else {
 		doSwap( oldImage, newImage );
 	}
+
+	currentImage = newImage;
 }
 
 function doSwap ( oldImage, newImage ) {
