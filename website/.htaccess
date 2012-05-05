@@ -1,3 +1,14 @@
+# BEGIN Security
+# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/spiraldesign_trunk/website/.htpasswd
+# AuthUserFile /home/barnlund/public_html/lovecalgary/.htpasswd
+# AuthGroupFile /dev/null
+# AuthName "AuthName"
+# AuthType Basic
+#
+# <Limit GET POST>
+# require valid-user
+# </Limit>
+# End Security
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

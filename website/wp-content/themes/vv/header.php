@@ -15,7 +15,7 @@
 								<?php
 								$terms = get_terms( 'listingtype' );
 								foreach ( $terms as $term ) {
-									echo '<li><a href="' . get_term_link( $term ) . '" alt="' . $term->name . 's">' . str_replace( ' ', '&nbsp;', $term->name ) . 's</a></li>';
+									echo '<li><a href="' . get_term_link( $term ) . '" alt="' . $term->name . '">' . str_replace( ' ', '&nbsp;', $term->name ) . '</a></li>';
 								}
 								?>
 							</ul>

@@ -56,7 +56,7 @@ em { color: #ab227e; }
 
 .alignleft { float: left; margin-right: 10px; }
 
-h1.page-title { color: #474747; background: #d8d8d8; padding: 9px 29px 11px 29px; margin: 0; }
+h1.page-title { color: #474747; background: #CCC; padding: 9px 29px 11px 29px; margin: 0; }
 
 h2.post-title { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #ab227e; background: #efefef; overflow: hidden; font-size: 15px; line-height: 27px; margin: 0 0 21px 0; }
 h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-right: 14px; text-transform: none; border-right: 1px solid #FFF; }
@@ -79,7 +79,7 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .resources a { color: #999999; }
 .resources h3 { margin-top: 0; color: #ab227e; font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 16px; }
 
-.listing-types { color: #474747; background: #d8d8d8; padding: 9px 29px 11px 29px; margin: 0; }
+.listing-types { color: #474747; background: #CCC; padding: 9px 29px 11px 29px; margin: 0; }
 .listing-types a { font-family: 'pt-sans-narrow'; text-transform: uppercase; color: #474747; font-size: 16px; text-decoration: none; }
 
 .listings.content .entry-content { padding-bottom: 2px; }
