@@ -21,9 +21,10 @@ function replaceImage( oldImage, newImage ) {
 
 			$( '.slideshow .current-image-container' ).append( this );
 
-			doSwap( oldImage, newImage )
+			doSwap( oldImage, newImage );
+
 		}).error(function( error ) {
-			console.log ( 'Huh?' );
+			//console.log ( 'Huh?' );
 		}).attr( 'src', newImage.src );
 
 	} else {
@@ -36,7 +37,20 @@ function replaceImage( oldImage, newImage ) {
 function doSwap ( oldImage, newImage ) {
 	var delay = 250;
 	if ( oldImage == null ) $( newImage.element ).fadeIn( delay );
-	else $( oldImage.element ).fadeOut( delay, function() { $( newImage.element ).fadeIn( delay ); } );
+	else {
+		$oldImage = $( oldImage.element );
+		$newImage = $( newImage.element );
+		$imageContainer = $oldImage.parent();
+
+		// render the new image to get the height
+		//$newImage.css( { opacity: })
+		console.log( $newImage.height() );
+
+		$imageContainer.animate( { 'height': $newImage.height() + 'px' } );
+		$oldImage.fadeOut( delay, function() {
+			$( newImage.element ).fadeIn( delay );
+		} );
+	}
 }
 
 function jumpTo ( imageIndex ) {
