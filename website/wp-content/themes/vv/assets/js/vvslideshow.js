@@ -42,10 +42,6 @@ function doSwap ( oldImage, newImage ) {
 		$newImage = $( newImage.element );
 		$imageContainer = $oldImage.parent();
 
-		// render the new image to get the height
-		//$newImage.css( { opacity: })
-		console.log( $newImage.height() );
-
 		$imageContainer.animate( { 'height': $newImage.height() + 'px' } );
 		$oldImage.fadeOut( delay, function() {
 			$( newImage.element ).fadeIn( delay );
