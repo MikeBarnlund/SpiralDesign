@@ -10,20 +10,26 @@ the_post();
 
 ?>
 
-<div class="content">
+<div>
+    <article>
+        <?php if ( get_the_ID() ) { ?>
 
-	<?php
-	if ( get_the_ID() ) {
-	?>
-	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="entry-content editable">
-			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit', 'sdbase' ), '<div class="edit-link">', '</div>' ) ?>
-			<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sdbase' ) . '&after=</div>') ?>
-		</div><!-- .entry-content -->
-	</div><!-- #post-<?php the_ID(); ?> -->
-	<?php } ?>
+        <div class="slideshow">
+            <?php
+            $images = get_field( 'home_images' );
+            if ( !empty( $images ) ) {
+                echo '<ul>';
+                foreach( $images as $image ) {
+                    echo '<li><img src="' . $image . '" /></li>';
+                }
+                echo '</ul>';
+            }
+            ?>
+        </div>
+
+        <?php } ?>
+        <?php edit_post_link( __( 'Edit', 'sdbase' ) ); ?>
+    </article>
 
 </div>
 
