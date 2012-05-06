@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "website/wp-content/themes/vv/assets/css"
+css_dir = "website/wp-content/themes/la/assets/css"
 sass_dir = "sass"
-images_dir = "website/wp-content/themes/vv/assets/img"
-javascripts_dir = "website/wp-content/themes/vv/assets/js"
+images_dir = "website/wp-content/themes/la/assets/img"
+javascripts_dir = "website/wp-content/themes/la/assets/js"
 
 # MB - Sass will look in the local directory for imports first, then check anything
 # on the import path
