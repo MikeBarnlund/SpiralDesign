@@ -1,13 +1,3 @@
 @import 'compass/css3';
-
-// Variables
-
-$brand1: #ab227e; /* purple */
-$brand2: #a9cd39; /* green */
-
-$fontSize: 14px;
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #999;
-$linkColor: $brand1 - #222;
-$linkHoverColor: $linkColor - #222;
-
+@import 'html5-reset';
+@import 'theme';
