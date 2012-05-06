@@ -1,0 +1,25 @@
+@mixin respond-to($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $break_small) { @content; }
+	}
+	@else if $media == mediumscreens {
+		@media only screen and (min-width: $break_small + 1) and (max-width: $break_large - 1) { @content; }
+	}
+	@else if $media == widescreens {
+		@media only screen and (min-width: $break_large) { @content; }
+	}
+}
+
+@mixin px-to-perc( $prop, $pixels, $context ) {
+	#{$prop}: percentage( $pixels / $context )
+}
+
+@mixin px-to-em( $prop, $pixels, $context ) {
+	#{$prop}: #{$pixels/$context}#{'em'}
+}
+
+@mixin inline-block() {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}

@@ -2,5 +2,5 @@
 	<div id="page">
 		<header class="clearfix">
 			<div id="logo"></div>
-		</div>
+		</header>
 		<div role="main">

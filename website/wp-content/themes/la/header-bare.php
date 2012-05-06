@@ -14,6 +14,8 @@
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo( 'template_url' ) ?>/assets/img/favicon.ico" />
 
 	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/libs/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript" src="http://use.typekit.com/shx2pfo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<title>
 		<?php
