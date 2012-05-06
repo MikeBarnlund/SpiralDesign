@@ -51,7 +51,7 @@ sup { top: -0.5em; }
 
 sub { bottom: -0.25em; }
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ul, ol { margin: 0; padding: 0; }
 
 dd { margin: 0 0 0 40px; }
 
@@ -137,12 +137,19 @@ td { vertical-align: top; }
   h2, h3 { page-break-after: avoid; } }
 /* yellow */
 /* green */
+.slideshow { height: 582px; overflow: hidden; position: relative; }
+.slideshow ul { position: absolute; top: 0; left: 0; width: 966px; }
+.slideshow ul li { float: left; }
+
 body { background: url(../img/bg.jpg) center top repeat; }
 body #page { background: url(../img/bg-overlay.png) center top no-repeat; min-height: 600px; }
 
 a { color: #bc9924; text-decoration: none; }
 a:hover { color: #9a7702; }
 
+.container { width: 966px; margin: 0 auto; }
+
+header { margin-bottom: 28px; }
 header #logo { width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
 
 footer { background: url(../img/footer-bg.png) center top no-repeat; height: 85px; margin: 0 auto; width: 966px; height: 91px; position: relative; }

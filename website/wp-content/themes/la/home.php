@@ -10,21 +10,16 @@ the_post();
 
 ?>
 
-<div>
+
+
+<div class="container">
     <article>
         <?php if ( get_the_ID() ) { ?>
 
         <div class="slideshow">
-            <?php
-            $images = get_field( 'home_images' );
-            if ( !empty( $images ) ) {
-                echo '<ul>';
-                foreach( $images as $image ) {
-                    echo '<li><img src="' . $image . '" /></li>';
-                }
-                echo '</ul>';
-            }
-            ?>
+            <ul>
+
+            </ul>
         </div>
 
         <?php } ?>
@@ -33,8 +28,24 @@ the_post();
 
 </div>
 
-<?php
+<?php get_footer(); ?>
 
-get_footer();
+<script>
+$( document ).ready( function() {
+    <?php
+    $images = get_field( 'home_images' );
+    if ( !empty( $images ) ) {
+        echo 'imgList = [ ';
+        $imagelist = array();
+        foreach( $images as $image ) {
+            $imagelist[] = '{ src: "' . $image['home_image'] .'", element: null }';
+        }
+        echo implode( ', ', $imagelist);
+        echo ' ]; ';
+        echo 'console.log( imgList.length );';
+    }
+    ?>
+} );
+</script>
 
-?>
+<?php get_template_part( 'footer', 'bare' ); ?>

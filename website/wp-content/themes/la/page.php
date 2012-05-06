@@ -25,5 +25,6 @@ the_post();
 <?php
 
 get_footer();
+get_template_part( 'footer', 'bare' );
 
 ?>

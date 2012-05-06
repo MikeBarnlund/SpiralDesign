@@ -1,0 +1,12 @@
+.slideshow {
+	height: $slideshowHeight;
+	overflow: hidden;
+	position: relative;
+	ul {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: $bodyWidth;
+		li { float: left; }
+	}
+}

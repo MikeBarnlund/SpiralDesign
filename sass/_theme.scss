@@ -12,7 +12,13 @@ a {
 	&:hover { color: $linkHoverColor; }
 }
 
+.container {
+	width: $bodyWidth;
+	margin: 0 auto;
+}
+
 header {
+	margin-bottom: 28px;
 	#logo {
 		width: 110px;
 		height: 110px;
