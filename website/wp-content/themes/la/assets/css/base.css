@@ -192,3 +192,8 @@ footer .copyright em { color: #bc9924; }
 @media only screen and (max-width: 480px) { .contact-page .about-content { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
 .contact-page .about-content h2 { font-family: 'ff-netto-web'; font-size: 18px; text-transform: uppercase; color: #bc9924; line-height: 1; margin: 0 0 5px 0; }
 .contact-page .about-content p { margin: 0; font-size: 13px; color: #cccccc; }
+
+.portfolio-page nav { margin-top: 23px; }
+.portfolio-page nav a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.4em; line-height: 1; padding: 8px 0 4px 0; }
+.portfolio-page nav a:first-child { margin-left: 0; }
+.portfolio-page nav a .selected, .portfolio-page nav a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }

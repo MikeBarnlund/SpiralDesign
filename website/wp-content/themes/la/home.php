@@ -10,18 +10,10 @@ the_post();
 
 ?>
 
-
-
 <div class="container">
     <article>
-        <?php if ( get_the_ID() ) { ?>
-
         <div class="slideshow"></div>
-
-        <?php } ?>
-        <?php edit_post_link( __( 'Edit', 'sdbase' ) ); ?>
     </article>
-
 </div>
 
 <?php get_footer(); ?>
