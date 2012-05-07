@@ -199,3 +199,13 @@ footer .copyright em { color: #bc9924; }
 .portfolio-page nav a.current, .portfolio-page nav a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
 @media only screen and (min-width: 481px) and (max-width: 768px) { .portfolio-page nav a { letter-spacing: 0px; } }
 @media only screen and (max-width: 480px) { .portfolio-page nav a { float: none; display: block; width: 100%; margin-bottom: 5px; } }
+
+a.portfolio-slat { display: block; width: 100%; text-align: center; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; height: 157px; background-position: center 0; background-repeat: no-repeat; text-transform: uppercase; line-height: 153px; margin-bottom: 32px; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+a.portfolio-slat.personal { background-image: url(../img/portfolio-bg-personal.jpg); }
+a.portfolio-slat.film { background-image: url(../img/portfolio-bg-film.jpg); }
+a.portfolio-slat.commercial { background-image: url(../img/portfolio-bg-commercial.jpg); }
+@media only screen and (min-width: 481px) and (max-width: 768px) { a.portfolio-slat { font-size: 70px; } }
+@media only screen and (max-width: 480px) { a.portfolio-slat { font-size: 40px; height: 60px; line-height: 58px; color: #999999; margin-bottom: 5px; }
+  a.portfolio-slat.personal, a.portfolio-slat.film, a.portfolio-slat.commercial { background: url(../img/portfolio-nav-bg.png) top left repeat; } }
+a.portfolio-slat:hover { background-position: center 100%; text-shadow: none; }
+@media only screen and (max-width: 480px) { a.portfolio-slat:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; } }

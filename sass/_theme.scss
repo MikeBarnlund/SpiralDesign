@@ -257,3 +257,46 @@ footer {
 		}
 	}
 }
+
+// ================================ Portfolio Slat ============================
+
+a.portfolio-slat {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	font-family: 'museo-sans-rounded';
+	font-weight: 100;
+	font-size: 99px;
+	height: 157px;
+	background-position: center 0;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+	line-height: 153px;
+	margin-bottom: 32px;
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	&.personal { background-image: url(../img/portfolio-bg-personal.jpg); }
+	&.film { background-image: url(../img/portfolio-bg-film.jpg); }
+	&.commercial { background-image: url(../img/portfolio-bg-commercial.jpg); }
+	@include respond-to( mediumscreens ) {
+		font-size: 70px;
+	}
+	@include respond-to( handhelds ) {
+		font-size: 40px;
+		height: 60px;
+		line-height: 58px;
+		color: #999999;
+		margin-bottom: 5px;
+		&.personal, &.film, &.commercial {
+			background: url(../img/portfolio-nav-bg.png) top left repeat;
+		}
+	}
+	&:hover {
+		background-position: center 100%;
+		text-shadow: none;
+		@include respond-to( handhelds ) {
+			color: $brand1;
+			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
+		}
+	}
+}

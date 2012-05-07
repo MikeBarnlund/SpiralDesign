@@ -7,17 +7,10 @@ get_header();
 
 ?>
 
-<div>
-	<?php
-
-        $term = NULL;
-
-        $args = array( 'post_type' => 'portfolio' );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post();
-            get_template_part( 'portfolio', 'slat' );
-        endwhile;
-		?>
+<div class="container">
+    <a href="/portfolio/personal" class='portfolio-slat personal'>Personal</a>
+    <a href="/portfolio/commercial" class='portfolio-slat commercial'>Commercial</a>
+    <a href="/portfolio/film" class='portfolio-slat film'>Film</a>
 </div>
 
 <?php
