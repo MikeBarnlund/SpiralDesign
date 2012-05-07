@@ -148,6 +148,8 @@ body #page { background: url(../img/bg-overlay.png) center top no-repeat; }
 a { color: #bc9924; text-decoration: none; }
 a:hover { color: #9a7702; }
 
+h1, h2, h3, h4, h5 { font-weight: normal; }
+
 .container { width: 100%; max-width: 966px; margin: 0 auto; }
 
 header { margin-bottom: 28px; }
@@ -171,3 +173,22 @@ footer nav a:hover { color: #bc9924; }
 footer .copyright { position: absolute; top: 72px; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
 footer .copyright em { color: #bc9924; }
 @media only screen and (max-width: 480px) { footer .copyright { position: static; text-align: center; margin-top: 40px; } }
+
+.contact-page { width: 100%; max-width: 966px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
+.contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; text-transform: uppercase; font-family: "museo-sans-rounded"; font-weight: 100; color: #333333; margin: 0; line-height: 1; }
+@media only screen and (max-width: 480px) { .contact-page h1 { position: static; padding: 20px 0; text-align: center; } }
+.contact-page .contact-form { float: right; margin-top: 51px; margin-right: 51px; width: 342px; }
+@media only screen and (max-width: 480px) { .contact-page .contact-form { float: none; width: 100%; margin: 0; } }
+.contact-page .contact-form p { margin: 0 0 11px 0; }
+.contact-page .contact-form input.wpcf7-text, .contact-page .contact-form textarea { display: block; margin: 0 0 11px 0; font-family: "ff-netto-web"; background: #333333; color: #999999; text-transform: uppercase; line-height: 1.2; font-size: 18px; border: 0; }
+.contact-page .contact-form input.wpcf7-text { padding: 8px 15px; width: 312px; }
+.contact-page .contact-form textarea { padding: 13px 15px; width: 312px; height: 141px; margin: 0; }
+@media only screen and (max-width: 480px) { .contact-page .contact-form textarea { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ width: 100%; } }
+@media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+.contact-page .contact-form .form-message { background: #666; }
+@media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+.contact-page .contact-form input.wpcf7-submit { display: block; float: right; border: 0; font-family: 'ff-netto-web'; text-transform: uppercase; font-size: 14px; color: #333; background: #bc9924; line-height: 1; padding: 3px 12px; }
+.contact-page .about-content { background: url(../img/about-content-bg.jpg) top left repeat; padding: 15px; margin-top: 40px; }
+@media only screen and (max-width: 480px) { .contact-page .about-content { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+.contact-page .about-content h2 { font-family: 'ff-netto-web'; font-size: 18px; text-transform: uppercase; color: #bc9924; line-height: 1; margin: 0 0 5px 0; }
+.contact-page .about-content p { margin: 0; font-size: 13px; color: #cccccc; }

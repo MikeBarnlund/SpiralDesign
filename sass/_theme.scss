@@ -12,6 +12,10 @@ a {
 	&:hover { color: $linkHoverColor; }
 }
 
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
 .container {
 	@include bodyWidth();
 	margin: 0 auto;
@@ -98,6 +102,121 @@ footer {
 			position: static;
 			text-align: center;
 			margin-top: 40px;
+		}
+	}
+}
+
+// ============================= Contact Page =================================
+
+@mixin hhform() {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	@include border-box();
+}
+
+.contact-page {
+	$contactFormWidth: 342px;
+	@include bodyWidth();
+	position: relative;
+	height: 583px;
+	background: url(../img/contact.jpg) top center no-repeat;
+	h1 {
+		position: absolute;
+		top: 58px;
+		left: 44px;
+		font-size: 49px;
+		text-transform: uppercase;
+		font-family: "museo-sans-rounded";
+		font-weight: 100;
+		color: #333333;
+		margin: 0;
+		line-height: 1;
+		@include respond-to( handhelds ) {
+			position: static;
+			padding: 20px 0;
+			text-align: center;
+		}
+	}
+	.contact-form {
+		float: right;
+		margin-top: 51px;
+		margin-right: 51px;
+		width: $contactFormWidth;
+		@include respond-to( handhelds ) {
+			float: none;
+			width: 100%;
+			margin: 0;
+		}
+		p { margin: 0 0 11px 0; }
+		input.wpcf7-text, textarea {
+			display: block;
+			margin: 0 0 11px 0;
+			font-family: "ff-netto-web";
+			background: #333333;
+			color: #999999;
+			text-transform: uppercase;
+			line-height: 1.2;
+			font-size: 18px;
+			border: 0;
+		}
+		input.wpcf7-text {
+			padding: 8px 15px;
+			width: $contactFormWidth - ( 2 * 15px );
+		}
+		textarea {
+			padding: 13px 15px;
+			width: $contactFormWidth - ( 2 * 15px );
+			height: 141px;
+			margin: 0;
+			@include respond-to( handhelds ) {
+				@include border-box();
+				width: 100%;
+			}
+		}
+		input.wpcf7-text {
+			@include respond-to( handhelds ) {
+				@include hhform();
+			}
+		}
+		.form-message {
+			background: #666;
+			@include respond-to( handhelds ) {
+				@include hhform();
+			}
+		}
+		input.wpcf7-submit {
+			display: block;
+			float: right;
+			border: 0;
+			font-family: 'ff-netto-web';
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #333;
+			background: $brand1;
+			line-height: 1;
+			padding: 3px 12px;
+		}
+	}
+	.about-content {
+		background: url(../img/about-content-bg.jpg) top left repeat;
+		padding: 15px;
+		margin-top: 40px;
+		@include respond-to( handhelds ) {
+			@include hhform();
+		}
+		h2 {
+			font-family: 'ff-netto-web';
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $brand1;
+			line-height: 1;
+			margin: 0 0 5px 0;
+		}
+		p {
+			margin: 0;
+			font-size: 13px;
+			color: #cccccc;
 		}
 	}
 }
