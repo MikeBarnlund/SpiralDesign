@@ -143,7 +143,6 @@ td { vertical-align: top; }
 .slideshow ul li img { width: 100%; }
 
 body { background: url(../img/bg.jpg) center top repeat; }
-body #page { background: url(../img/bg-overlay.png) center top no-repeat; }
 
 a { color: #bc9924; text-decoration: none; }
 a:hover { color: #9a7702; }
