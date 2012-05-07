@@ -11,3 +11,10 @@ $linkColor: $brand1;
 $linkHoverColor: $linkColor - #222;
 
 $slideshowHeight: 582px;
+
+// Mixins
+
+@mixin bodyWidth() {
+	width: 100%;
+	max-width: $bodyWidth;
+}

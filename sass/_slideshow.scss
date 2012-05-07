@@ -6,7 +6,12 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: $bodyWidth;
-		li { float: left; }
+		width: 100%;
+		@include bodyWidth();
+		li {
+			width: 100%;
+			float: left;
+			img { width: 100%; }
+		}
 	}
 }

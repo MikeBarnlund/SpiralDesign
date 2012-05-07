@@ -2,7 +2,7 @@ body {
 	background: url(../img/bg.jpg) center top repeat;
 	#page {
 		background: url(../img/bg-overlay.png) center top no-repeat;
-		min-height: 600px;
+		//min-height: 600px;
 	}
 }
 
@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-	width: $bodyWidth;
+	@include bodyWidth();
 	margin: 0 auto;
 }
 
@@ -24,18 +24,21 @@ header {
 		height: 110px;
 		background: url(../img/lap-logo.png) top left no-repeat;
 		margin: 88px auto 0 auto;
+		@include respond-to( handhelds ) {
+			margin-top: 28px;
+		}
 	}
 }
 footer {
+	@include bodyWidth();
 	background: url(../img/footer-bg.png) center top no-repeat;
 	height: 85px;
-	margin: 0 auto;
-    width: $bodyWidth;
+	margin: 23px auto 65px auto;
 	height: 91px;
 	position: relative;
 	.social {
 		float: right;
-		line-height: 66px;
+		line-height: 62px;
 		a {
 			@include inline-block();
 			background-position: top left;
@@ -61,6 +64,11 @@ footer {
 				background-position: 0 100%;
 			}
 		}
+		@include respond-to( handhelds ) {
+			float: none;
+			text-align: center;
+			a { margin: 0 12px; }
+		}
 	}
 	nav {
 		float: left;
@@ -72,14 +80,24 @@ footer {
 			color: #666666;
 			&:hover { color: $linkColor; }
 		}
+		@include respond-to( handhelds ) {
+			float: none;
+			text-align: center;
+			a { margin: 0 6px; }
+		}
 	}
 	.copyright {
 		position: absolute;
-		bottom: 0;
+		top: 72px;
 		right: 0;
 		font-size: 11px;
 		text-transform: uppercase;
 		color: #999999;
 		em { color: $brand1; }
+		@include respond-to( handhelds ) {
+			position: static;
+			text-align: center;
+			margin-top: 40px;
+		}
 	}
 }

@@ -16,11 +16,7 @@ the_post();
     <article>
         <?php if ( get_the_ID() ) { ?>
 
-        <div class="slideshow">
-            <ul>
-
-            </ul>
-        </div>
+        <div class="slideshow"></div>
 
         <?php } ?>
         <?php edit_post_link( __( 'Edit', 'sdbase' ) ); ?>
@@ -29,6 +25,8 @@ the_post();
 </div>
 
 <?php get_footer(); ?>
+
+<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/libs/jquery.sdslideshow.js"></script>
 
 <script>
 $( document ).ready( function() {
@@ -42,7 +40,11 @@ $( document ).ready( function() {
         }
         echo implode( ', ', $imagelist);
         echo ' ]; ';
-        echo 'console.log( imgList.length );';
+        ?>
+        if ( imgList ) {
+            $( '.slideshow' ).sdslideshow( { imageList: imgList, transitionDelay: 6000, transitionDuration: 1000 } );
+        }
+        <?php
     }
     ?>
 } );
