@@ -2,9 +2,12 @@
 </div> <!-- /#page -->
 <footer class="tk-primary">
 	<nav>
-		<a href="/" title="Home">Home</a>
-		<a href="/portfolio-home" title="Portfolio">Portfolio</a>
-		<a href="/contact" title="Contact">Contact</a>
+	    <?php
+	    $is_portfolio_page = is_single( 'personal' ) || is_single( 'commercial' ) || is_single( 'film' ) || is_page( 'portfolio-home' );
+	    ?>
+		<a href="/" title="Home"<?php echo is_home() || is_front_page() ? ' class="current"' : ''; ?>>Home</a>
+		<a href="/portfolio-home" title="Portfolio"<?php echo $is_portfolio_page === true ? ' class="current"' : ''; ?>>Portfolio</a>
+		<a href="/contact" title="Contact"<?php echo is_page( 'contact' ) ? ' class="current"' : ''; ?>>Contact</a>
 	</nav>
 	<div class="copyright"><em>&copy;</em> 2012 LORI ANDREWS PHOTOGRAPHY</div>
 	<div class="social">

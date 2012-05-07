@@ -82,7 +82,7 @@ footer {
 			text-transform: uppercase;
 			margin-right: 11px;
 			color: #666666;
-			&:hover { color: $linkColor; }
+			&:hover, &.current { color: $linkColor; }
 		}
 		@include respond-to( handhelds ) {
 			float: none;
@@ -241,7 +241,7 @@ footer {
 			&:first-child {
 				margin-left: 0;
 			}
-			.selected, &:hover {
+			&.current, &:hover {
 				color: $brand1;
 				background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
 			}

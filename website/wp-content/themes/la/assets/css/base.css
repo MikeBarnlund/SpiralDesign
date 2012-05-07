@@ -167,7 +167,7 @@ footer .social a:hover { background-position: 0 100%; }
   footer .social a { margin: 0 12px; } }
 footer nav { float: left; line-height: 65px; font-size: 17px; }
 footer nav a { text-transform: uppercase; margin-right: 11px; color: #666666; }
-footer nav a:hover { color: #bc9924; }
+footer nav a:hover, footer nav a.current { color: #bc9924; }
 @media only screen and (max-width: 480px) { footer nav { float: none; text-align: center; }
   footer nav a { margin: 0 6px; } }
 footer .copyright { position: absolute; top: 72px; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
@@ -196,4 +196,4 @@ footer .copyright em { color: #bc9924; }
 .portfolio-page nav { margin-top: 23px; }
 .portfolio-page nav a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.4em; line-height: 1; padding: 8px 0 4px 0; }
 .portfolio-page nav a:first-child { margin-left: 0; }
-.portfolio-page nav a .selected, .portfolio-page nav a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
+.portfolio-page nav a.current, .portfolio-page nav a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
