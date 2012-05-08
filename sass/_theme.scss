@@ -12,6 +12,8 @@ a {
 	&:hover { color: $linkHoverColor; }
 }
 
+em { font-style: normal; }
+
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
@@ -224,6 +226,27 @@ footer {
 // ========================== Portfolio Navigation ============================
 
 .portfolio-page {
+    article {
+        position: relative;
+        a {
+            position: absolute;
+            top: 202px;
+            width: 23px;
+            height: 177px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: top center;
+            &.nav-left {
+                background-image: url(../img/portfolio-nav-left.png);
+                left: -23px;
+            }
+            &.nav-right {
+                background-image: url(../img/portfolio-nav-right.png);
+                right: -23px;
+            }
+            &:hover { background-position: 0 100%; }
+        }
+    }
 	nav {
 		margin-top: 23px;
 		a {
@@ -237,7 +260,7 @@ footer {
 			background: url(../img/portfolio-nav-bg.png) top left repeat;
 			letter-spacing: 0.35em;
 			line-height: 1;
-			padding: 8px 0 4px 0;
+			padding: 6px 0 6px 0;
 			&:first-child {
 				margin-left: 0;
 			}

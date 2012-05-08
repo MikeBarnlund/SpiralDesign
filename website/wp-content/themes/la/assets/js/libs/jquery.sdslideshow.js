@@ -74,6 +74,21 @@ May 6, 2012		- Created (mb)
 		}
 
 		/*
+		Function: 	getPreviousImageIndex
+		Visibility: Privileged
+		Params: 	None
+		Purpose: 	Gets the previous image index (or the last if we're at the start)
+		Returns: 	Index of the image
+		*/
+		this.getPreviousImageIndex = function() {
+			var prevImageIndex = config.imageList.length - 1;
+			if ( currentImageIndex !== null && currentImageIndex > 0 ) {
+				prevImageIndex = currentImageIndex - 1;
+			}
+			return prevImageIndex;
+		}
+
+		/*
 		Function: 	getNextImageIndex
 		Visibility: Privileged
 		Params: 	None
@@ -86,6 +101,18 @@ May 6, 2012		- Created (mb)
 				nextImageIndex = currentImageIndex + 1;
 			}
 			return nextImageIndex;
+		}
+
+		/*
+		Function: 	showPreviousImage()
+		Visibility: Privileged
+		Params: 	None
+		Purpose: 	Goes back to the previous image (or the last image if we're at the start)
+		Returns: 	Nothing
+		*/
+		this.showPreviousImage = function() {
+			// console.log( 'showNextImage()' );
+			swapImageTo( instance.getPreviousImageIndex() );
 		}
 
 		/*

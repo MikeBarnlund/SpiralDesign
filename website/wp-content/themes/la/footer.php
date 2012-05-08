@@ -9,7 +9,7 @@
 		<a href="/portfolio-home" title="Portfolio"<?php echo $is_portfolio_page === true ? ' class="current"' : ''; ?>>Portfolio</a>
 		<a href="/contact" title="Contact"<?php echo is_page( 'contact' ) ? ' class="current"' : ''; ?>>Contact</a>
 	</nav>
-	<div class="copyright"><em>&copy;</em> 2012 LORI ANDREWS PHOTOGRAPHY</div>
+	<div class="copyright"><em>&copy;</em> 2012 LORI ANDREWS PHOTOGRAPHY <em>|</em> Site by <a target="_blank" href="http://vauntvisual.com">VV</a></div>
 	<div class="social">
 	    <a target="_blank" class="twitter" title="Lori Andrews Photography on Twitter" href="http://www.twitter.com"></a>
 	    <a target="_blank" class="flickr" title="Lori Andrews Photography on Flickr" href="http://www.flickr.com"></a>

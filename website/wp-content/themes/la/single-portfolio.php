@@ -8,7 +8,9 @@ the_post();
 
 <div class="container portfolio-page">
     <article>
+        <a class="nav-left"></a>
         <div class="slideshow"></div>
+        <a class="nav-right"></a>
     </article>
 
     <nav class="tk-primary clearfix">
@@ -24,6 +26,7 @@ the_post();
 
 <script>
 $( document ).ready( function() {
+    var slideshow = null;
     <?php
     $images = get_field( 'portfolio_images' );
     if ( !empty( $images ) ) {
@@ -36,11 +39,27 @@ $( document ).ready( function() {
         echo ' ]; ';
         ?>
         if ( imgList ) {
-            $( '.slideshow' ).sdslideshow( { imageList: imgList, transitionDelay: 6000, transitionDuration: 1000 } );
+            slideshow = $( '.slideshow' ).sdslideshow( {
+                imageList: imgList,
+                transitionDelay: 6000,
+                transitionDuration: 1000,
+                autoAdvance: false
+            } );
         }
         <?php
     }
     ?>
+
+    if ( slideshow !== null ) {
+        slideshow_instance = slideshow.data( 'instance' );
+
+        $( '.nav-left' ).click( function() {
+            slideshow_instance.showPreviousImage();
+        } );
+        $( '.nav-right' ).click( function() {
+            slideshow_instance.showNextImage();
+        } );
+    }
 } );
 </script>
 
