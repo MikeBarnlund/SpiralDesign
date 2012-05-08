@@ -110,9 +110,9 @@ May 6, 2012		- Created (mb)
 		Purpose: 	Goes back to the previous image (or the last image if we're at the start)
 		Returns: 	Nothing
 		*/
-		this.showPreviousImage = function() {
-			// console.log( 'showNextImage()' );
-			swapImageTo( instance.getPreviousImageIndex() );
+		this.showPreviousImage = function( animation ) {
+		    animation = typeof animation !== 'undefined' ? animation : 'fadeover';
+			swapImageTo( instance.getPreviousImageIndex(), animation );
 		}
 
 		/*
@@ -122,9 +122,9 @@ May 6, 2012		- Created (mb)
 		Purpose: 	Advances to the next image (or the first image if we're at the end)
 		Returns: 	Nothing
 		*/
-		this.showNextImage = function() {
-			// console.log( 'showNextImage()' );
-			swapImageTo( instance.getNextImageIndex() );
+		this.showNextImage = function( animation ) {
+		    animation = typeof animation !== 'undefined' ? animation : 'fadeover';
+			swapImageTo( instance.getNextImageIndex(), animation );
 		}
 
 		/*
@@ -134,7 +134,7 @@ May 6, 2012		- Created (mb)
 		Purpose: 	Animates the switch to the new image
 		Returns: 	Nothing
 		*/
-		var swapImageTo = function( newImageIndex ) {
+		var swapImageTo = function( newImageIndex, animation ) {
 
 			var swapped = false;
 
@@ -164,14 +164,16 @@ May 6, 2012		- Created (mb)
 
 					$li.append( this );
 
-					if ( animateSwap( oldImage, newImage ) === true ) currentImageIndex = newImageIndex;
+					newImage.element = $li.get( 0 );
+
+					if ( animateSwap( oldImage, newImage, animation ) === true ) currentImageIndex = newImageIndex;
 					if ( config.autoAdvance === true ) setTimeout( instance.showNextImage, config.transitionDelay );
 				} ).error( function( error ) {
 					// console.log( 'Error loading image' );
 				} ).attr( 'src', newImage.src );
 
 			} else {
-				if ( animateSwap( oldImage, newImage ) === true ) currentImageIndex = newImageIndex;
+				if ( animateSwap( oldImage, newImage, animation ) === true ) currentImageIndex = newImageIndex;
 				if ( config.autoAdvance === true ) setTimeout( instance.showNextImage, config.transitionDelay );
 			}
 		}
@@ -183,12 +185,13 @@ May 6, 2012		- Created (mb)
 		Purpose: 	Animates the switch to the new image
 		Returns: 	true on successful swap
 		*/
-		var animateSwap = function( oldImage, newImage ) {
+		var animateSwap = function( oldImage, newImage, animation ) {
 
-			$container.animate( { 'height': $( newImage.element ).parent().height() + 'px' } );
+			$container.animate( { 'height': $( newImage.element ).height() + 'px' } );
+			console.log( "Animation: " + animation );
 
-			switch ( config.transition ) {
-				case 'fadeOutIn':
+			switch ( animation ) {
+				case 'fadeoutin':
 					var delay = config.transitionDuration / 2;
 					if ( oldImage === null ) $( newImage.element ).fadeIn( delay );
 					else {
@@ -201,24 +204,55 @@ May 6, 2012		- Created (mb)
 						} );
 					}
 					break;
-				case 'fadeOver':
+				case 'fadeover':
 					var delay = config.transitionDuration;
-					$( newImage.element ).parent().css( { 'position': 'absolute', 'top': '0', 'left': '0' } );
+					$( newImage.element ).css( { 'position': 'absolute', 'top': '0', 'left': '0' } );
 
 					// Move the image container in the DOM
-					if ( oldImage !== null ) $imageList.append( $( newImage.element ).parent() );
+					if ( oldImage !== null ) $imageList.append( $( newImage.element ) );
 
-					$( newImage.element ).parent().fadeIn( delay, function() {
+					$( newImage.element ).fadeIn( delay, function() {
 						if ( oldImage !== null ) {
-							$( oldImage.element ).parent().hide();
+							$( oldImage.element ).hide();
 						}
 					} );
 
 					break;
 				case 'slideleft':
+    			    var delay = config.transitionDuration;
+    			    $( newImage.element )
+    			        .hide()
+    			        .appendTo( $imageList )
+    			        .css( { 'position': 'absolute', 'top': '0', 'left': '966px' } )
+    			        .show( 0, function() {
+    			            if ( Modernizr.csstransitions ) {
+                                $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
+                                if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '-966px' } );
+                			} else {	// use jQuery animation if no native CSS transitions are allowed
+                                $( newImage.element ).animate( { left: '-=966px' } );
+                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '-=966px' } );
+                			}
+    			        } );
+    			    break;
+				case 'slideright':
+    			    var delay = config.transitionDuration;
+    			    $( newImage.element )
+    			        .hide()
+    			        .css( { 'position': 'absolute', 'top': '0', 'left': '-966px' } )
+    			        .appendTo( $imageList )
+    			        .show( 0, function() {
+    			            if ( Modernizr.csstransitions ) {
+                                $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
+                                if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '966px' } );
+                			} else {	// use jQuery animation if no native CSS transitions are allowed
+                                $( newImage.element ).animate( { left: '+=966px' } );
+                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '+=966px' } );
+                			}
+    			        } );
+    			    break;
 				default:
-					if ( oldImage !== null ) $( oldImage ).hide();
-					$( newImage ).show();
+					if ( oldImage !== null ) $( oldImage.element ).hide();
+					$( newImage.element ).show();
 					break;
 			}
 
@@ -244,7 +278,7 @@ May 6, 2012		- Created (mb)
 		// default configuration
 		config = {
 			imageList: [],
-			transition: 'fadeOver',
+			defaultTransition: 'fadeover',
 			transitionDelay: 5000,
 			transitionDuration: 1000,
 			start: true,

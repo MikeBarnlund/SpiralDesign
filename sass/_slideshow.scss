@@ -1,3 +1,4 @@
+
 .slideshow {
 	height: $slideshowHeight;
 	overflow: hidden;
@@ -10,8 +11,13 @@
 		@include bodyWidth();
 		li {
 			width: 100%;
-			float: left;
 			img { width: 100%; }
+        	&.slideTransition {
+        	    transition: all .5s ease-in-out;
+        	    -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/
+                -moz-transition: all .5s ease-in-out; /** Firefox **/
+                -o-transition: all .5s ease-in-out; /** Opera **/
+        	}
 		}
 	}
 }

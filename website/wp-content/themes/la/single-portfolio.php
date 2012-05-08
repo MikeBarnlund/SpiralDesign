@@ -41,8 +41,7 @@ $( document ).ready( function() {
         if ( imgList ) {
             slideshow = $( '.slideshow' ).sdslideshow( {
                 imageList: imgList,
-                transitionDelay: 6000,
-                transitionDuration: 1000,
+                transitionDuration: 250,
                 autoAdvance: false
             } );
         }
@@ -54,10 +53,10 @@ $( document ).ready( function() {
         slideshow_instance = slideshow.data( 'instance' );
 
         $( '.nav-left' ).click( function() {
-            slideshow_instance.showPreviousImage();
+            slideshow_instance.showPreviousImage( 'slideright' );
         } );
         $( '.nav-right' ).click( function() {
-            slideshow_instance.showNextImage();
+            slideshow_instance.showNextImage( 'slideleft' );
         } );
     }
 } );

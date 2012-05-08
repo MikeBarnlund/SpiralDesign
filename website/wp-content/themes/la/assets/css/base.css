@@ -139,8 +139,9 @@ td { vertical-align: top; }
 /* green */
 .slideshow { height: 582px; overflow: hidden; position: relative; }
 .slideshow ul { position: absolute; top: 0; left: 0; width: 100%; width: 100%; max-width: 966px; }
-.slideshow ul li { width: 100%; float: left; }
+.slideshow ul li { width: 100%; }
 .slideshow ul li img { width: 100%; }
+.slideshow ul li.slideTransition { transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/ -moz-transition: all .5s ease-in-out; /** Firefox **/ -o-transition: all .5s ease-in-out; /** Opera **/ }
 
 body { background: url(../img/bg.jpg) center top repeat; }
 
