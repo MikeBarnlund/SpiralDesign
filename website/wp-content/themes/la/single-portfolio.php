@@ -7,11 +7,17 @@ the_post();
 ?>
 
 <div class="container portfolio-page">
-    <article>
-        <a class="nav-left"></a>
-        <div class="slideshow"></div>
-        <a class="nav-right"></a>
-    </article>
+    <table>
+        <tr>
+            <td class="portfolio-nav-container nav-left">
+                <a></a>
+            </td>
+            <td class="slideshow"></td>
+            <td class="portfolio-nav-container nav-right">
+                <a></a>
+            </td>
+        </tr>
+    </table>
 
     <nav class="tk-primary clearfix">
         <a href="/personal"<?php echo is_single( 'personal' ) ? ' class="current"' : ''; ?>>Personal</a>

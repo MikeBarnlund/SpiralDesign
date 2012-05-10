@@ -11,9 +11,9 @@
 	</nav>
 	<div class="copyright"><em>&copy;</em> 2012 LORI ANDREWS PHOTOGRAPHY <em>|</em> Site by <a target="_blank" href="http://vauntvisual.com">VV</a></div>
 	<div class="social">
-	    <a target="_blank" class="twitter" title="Lori Andrews Photography on Twitter" href="http://www.twitter.com"></a>
-	    <a target="_blank" class="flickr" title="Lori Andrews Photography on Flickr" href="http://www.flickr.com"></a>
-	    <a target="_blank" class="getty" title="Lori Andrews Photography on Getty Images" href="http://www.getty.com"></a>
+	    <a target="_blank" class="twitter" title="Lori Andrews Photography on Twitter" href="https://twitter.com/#!/designertweets"></a>
+	    <a target="_blank" class="flickr" title="Lori Andrews Photography on Flickr" href="http://www.flickr.com/photos/theproletariatdesigner/"></a>
+	    <a target="_blank" class="getty" title="Lori Andrews Photography on Getty Images" href="http://www.gettyimages.ca/Search/Search.aspx?assettype=image&family=creative&artist=Lori+Andrews&Language=en-US"></a>
 	</div>
 </footer>
 

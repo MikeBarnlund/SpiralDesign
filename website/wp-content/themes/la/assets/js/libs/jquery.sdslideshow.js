@@ -187,7 +187,9 @@ May 6, 2012		- Created (mb)
 		*/
 		var animateSwap = function( oldImage, newImage, animation ) {
 
-			$container.animate( { 'height': $( newImage.element ).height() + 'px' } );
+            var imageHeight = $( newImage.element ).height();
+            var imageWidth = $( newImage.element ).width();
+			$container.animate( { 'height': imageHeight + 'px' } );
 			console.log( "Animation: " + animation );
 			var delay = 0;
 
@@ -222,14 +224,14 @@ May 6, 2012		- Created (mb)
     			    $( newImage.element )
     			        .hide()
     			        .appendTo( $imageList )
-    			        .css( { 'position': 'absolute', 'top': '0', 'left': '966px' } )
+    			        .css( { 'position': 'absolute', 'top': '0', 'left': imageWidth + 'px' } )
     			        .show( 0, function() {
                             // if ( Modernizr.csstransitions ) {
                             //                                 $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
                             //                                 if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '-966px' } );
                             //                          } else {    // use jQuery animation if no native CSS transitions are allowed
-                                $( newImage.element ).animate( { left: '-=966px' } );
-                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '-=966px' } );
+                                $( newImage.element ).animate( { left: '-=' + imageWidth + 'px' } );
+                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '-=' + imageWidth + 'px' } );
                             // }
     			        } );
     			    break;
@@ -237,15 +239,15 @@ May 6, 2012		- Created (mb)
     			    delay = config.transitionDuration;
     			    $( newImage.element )
     			        .hide()
-    			        .css( { 'position': 'absolute', 'top': '0', 'left': '-966px' } )
+    			        .css( { 'position': 'absolute', 'top': '0', 'left': '-' + imageWidth + 'px' } )
     			        .appendTo( $imageList )
     			        .show( 0, function() {
                             // if ( Modernizr.csstransitions ) {
                             //                                 $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
                             //                                 if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '966px' } );
                             //                          } else {    // use jQuery animation if no native CSS transitions are allowed
-                                $( newImage.element ).animate( { left: '+=966px' } );
-                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '+=966px' } );
+                                $( newImage.element ).animate( { left: '+=' + imageWidth + 'px' } );
+                                if ( oldImage != null ) $( oldImage.element ).animate( { left: '+=' + imageWidth + 'px' } );
                             // }
     			        } );
     			    break;

@@ -143,6 +143,8 @@ td { vertical-align: top; }
 .slideshow ul li img { width: 100%; }
 .slideshow ul li.slideTransition { transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/ -moz-transition: all .5s ease-in-out; /** Firefox **/ -o-transition: all .5s ease-in-out; /** Opera **/ }
 
+html, body { height: 100%; }
+
 body { background: url(../img/bg.jpg) center top repeat; }
 
 a { color: #bc9924; text-decoration: none; }
@@ -197,11 +199,15 @@ footer .copyright em { color: #bc9924; }
 .contact-page .about-content h2 { font-family: 'ff-netto-web'; font-size: 18px; text-transform: uppercase; color: #bc9924; line-height: 1; margin: 0 0 5px 0; }
 .contact-page .about-content p { margin: 0; font-size: 13px; color: #cccccc; }
 
-.portfolio-page article { position: relative; }
-.portfolio-page article a { position: absolute; top: 202px; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
-.portfolio-page article a.nav-left { background-image: url(../img/portfolio-nav-left.png); left: -23px; }
-.portfolio-page article a.nav-right { background-image: url(../img/portfolio-nav-right.png); right: -23px; }
-.portfolio-page article a:hover { background-position: 0 100%; }
+.portfolio-page { width: 100%; max-width: 100%; }
+.portfolio-page table { width: 100%; }
+.portfolio-page table td { padding: 0; }
+.portfolio-page table td.slideshow { display: block; }
+.portfolio-page table .portfolio-nav-container { width: 23px; vertical-align: middle; }
+.portfolio-page table .portfolio-nav-container.nav-left a { background-image: url(../img/portfolio-nav-left.png); }
+.portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
+.portfolio-page table .portfolio-nav-container a { display: block; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
+.portfolio-page table .portfolio-nav-container a:hover { background-position: 0 100%; }
 .portfolio-page nav { margin-top: 23px; }
 .portfolio-page nav a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
 .portfolio-page nav a:first-child { margin-left: 0; }

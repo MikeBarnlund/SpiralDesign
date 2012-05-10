@@ -1,3 +1,5 @@
+html, body { height: 100%; }
+
 body {
 	background: url(../img/bg.jpg) center top repeat;
 	#page {
@@ -232,25 +234,34 @@ footer {
 // ========================== Portfolio Navigation ============================
 
 .portfolio-page {
-    article {
-        position: relative;
-        a {
-            position: absolute;
-            top: 202px;
+    width: 100%;
+    max-width: 100%;
+    table {
+        width: 100%;
+        td {
+            padding: 0;
+            &.slideshow { display: block; }
+        }
+        .portfolio-nav-container {
             width: 23px;
-            height: 177px;
-            cursor: pointer;
-            background-repeat: no-repeat;
-            background-position: top center;
+            vertical-align: middle;
+
             &.nav-left {
-                background-image: url(../img/portfolio-nav-left.png);
-                left: -23px;
+                a { background-image: url(../img/portfolio-nav-left.png); }
             }
             &.nav-right {
-                background-image: url(../img/portfolio-nav-right.png);
-                right: -23px;
+                a { background-image: url(../img/portfolio-nav-right.png); }
             }
-            &:hover { background-position: 0 100%; }
+
+            a {
+                display: block;
+                width: 23px;
+                height: 177px;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-position: top center;
+                &:hover { background-position: 0 100%; }
+            }
         }
     }
 	nav {
