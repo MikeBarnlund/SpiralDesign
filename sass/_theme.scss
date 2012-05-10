@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
 
 #page {
     max-width: $bodyWidth + 46px; // width of the two portfolio navigation widgets
-    padding: 0 23px;
+    //padding: 0 23px;
     margin: 0 auto;
 }
 
@@ -45,11 +45,56 @@ header {
 }
 footer {
 	@include bodyWidth();
-	background: url(../img/footer-bg.png) center top no-repeat;
-	height: 85px;
+	width: auto;
 	margin: 23px auto 65px auto;
 	height: 91px;
 	position: relative;
+
+	.footer-nav {
+	    background: url(../img/footer-top-bg.png) center top no-repeat;
+	    height: 62px;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+	.footer-bottom {
+	    background: url(../img/footer-bottom-bg.png) center top no-repeat;
+	    height: 24px;
+	    position: relative;
+	    .nav-arrow {
+            margin: 0 auto;
+	        width: 49px;
+	        height: 12px;
+	        background-position: center top;
+	        background-repeat: no-repeat;
+	        background-image: url(../img/nav-arrow.png);
+	        cursor: pointer;
+	        &.collapsed {
+                background-position: center 100%;
+	        }
+	    }
+	}
+
+	.social-label {
+	    line-height: 60px;
+	    color: $brand1;
+	    font-size: 17px;
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	    text-transform: uppercase;
+        em {
+            vertical-align: bottom;
+            font-size: 45px;
+            color: #FBFBFB;
+            margin: 0 19px;
+            font-weight: 100;
+        }
+	}
+
 	.social {
 		float: right;
 		line-height: 62px;
@@ -102,7 +147,7 @@ footer {
 	}
 	.copyright {
 		position: absolute;
-		top: 72px;
+		bottom: 0;
 		right: 0;
 		font-size: 11px;
 		text-transform: uppercase;
@@ -264,79 +309,126 @@ footer {
             }
         }
     }
-	nav {
-		margin-top: 23px;
-		a {
-			float: left;
-			width: 33%;
-			margin-left: 0.3333333%;
-			color: #999999;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 28px;
-			background: url(../img/portfolio-nav-bg.png) top left repeat;
-			letter-spacing: 0.35em;
-			line-height: 1;
-			padding: 6px 0 6px 0;
-			&:first-child {
-				margin-left: 0;
-			}
-			&.current, &:hover {
-				color: $brand1;
-				background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
-			}
-			@include respond-to( mediumscreens ) {
-				letter-spacing: 0px;
-			}
-			@include respond-to( handhelds ) {
-				float: none;
-				display: block;
-				width: 100%;
-				margin-bottom: 5px;
-			}
+}
+nav.portfolio-sections {
+	margin-top: 23px;
+	a {
+		float: left;
+		width: 33%;
+		margin-left: 0.3333333%;
+		color: #999999;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 28px;
+		background: url(../img/portfolio-nav-bg.png) top left repeat;
+		letter-spacing: 0.35em;
+		line-height: 1;
+		padding: 6px 0 6px 0;
+		&:first-child {
+			margin-left: 0;
+		}
+		&.current, &:hover {
+			color: $brand1;
+			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
+		}
+		@include respond-to( mediumscreens ) {
+			letter-spacing: 0px;
+		}
+		@include respond-to( handhelds ) {
+			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 5px;
 		}
 	}
 }
 
 // ================================ Portfolio Slat ============================
 
-a.portfolio-slat {
-	display: block;
-	width: 100%;
+div.portfolio-slat {
 	text-align: center;
-	color: #FFF;
-	font-family: 'museo-sans-rounded';
-	font-weight: 100;
-	font-size: 99px;
+
 	height: 157px;
 	background-position: center 0;
 	background-repeat: no-repeat;
-	text-transform: uppercase;
-	line-height: 153px;
 	margin-bottom: 32px;
-	text-shadow: 0 0 3px rgba(0,0,0,0.3);
-	&.personal { background-image: url(../img/portfolio-bg-personal.jpg); }
-	&.film { background-image: url(../img/portfolio-bg-film.jpg); }
-	&.commercial { background-image: url(../img/portfolio-bg-commercial.jpg); }
-	@include respond-to( mediumscreens ) {
-		font-size: 70px;
+	position: relative;
+
+	.portfolio-button-wrapper {
+	    position: absolute;
+	    bottom: -19px;
+        width: 100%;
 	}
-	@include respond-to( handhelds ) {
-		font-size: 40px;
-		height: 60px;
-		line-height: 58px;
-		color: #999999;
-		margin-bottom: 5px;
-		&.personal, &.film, &.commercial {
-			background: url(../img/portfolio-nav-bg.png) top left repeat;
-		}
+
+	.portfolio-selection-button {
+	    width: 172px;
+	    height: 49px;
+	    position: relative;
+	    margin: 0 auto;
+
+	    .grey-top, .grey-bottom { overflow: hidden; position: relative; }
+        .grey-top {
+            width: 172px;
+            height: 30px;
+            img {
+                position: absolute;
+                left: 0;
+                bottom: -30px;
+            }
+        }
+        .grey-bottom {
+            width: 172px;
+            height: 19px;
+            img {
+                position: absolute;
+                left: 0;
+                top: -19px;
+            }
+        }
+        .yellow {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 172px;
+            height: 19px;
+            z-index: 1;
+            img { display: block; }
+        }
 	}
-	&:hover {
-		background-position: center 100%;
-		text-shadow: none;
-		@include respond-to( handhelds ) {
-			color: $brand1;
-			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
-		}
+
+	a {
+	    display: block;
+	    line-height: 153px;
+    	height: 157px;
+	    color: #FFF;
+    	font-family: 'museo-sans-rounded';
+    	font-weight: 100;
+    	font-size: 99px;
+    	text-transform: uppercase;
+    	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+    	@include respond-to( mediumscreens ) {
+    		font-size: 70px;
+    	}
+    	@include respond-to( handhelds ) {
+    		font-size: 40px;
+    		height: 60px;
+    		line-height: 58px;
+    		color: #999999;
+    		margin-bottom: 5px;
+    		&.personal, &.film, &.commercial {
+    			background: url(../img/portfolio-nav-bg.png) top left repeat;
+    		}
+    	}
+    	&:hover {
+    		background-position: center 100%;
+    		text-shadow: none;
+    		background: #d3ac29;
+    		background: rgba(211,172,41,.5);
+    		@include respond-to( handhelds ) {
+    			color: $brand1;
+    			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
+    		}
+    	}
 	}
 }

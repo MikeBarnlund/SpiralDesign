@@ -6,7 +6,7 @@ the_post();
 
 ?>
 
-<div class="container portfolio-page">
+<div class="portfolio-page">
     <table>
         <tr>
             <td class="portfolio-nav-container nav-left">
@@ -18,13 +18,13 @@ the_post();
             </td>
         </tr>
     </table>
-
-    <nav class="tk-primary clearfix">
-        <a href="/personal"<?php echo is_single( 'personal' ) ? ' class="current"' : ''; ?>>Personal</a>
-        <a href="/commercial"<?php echo is_single( 'commercial' ) ? ' class="current"' : ''; ?>>Commercial</a>
-        <a href="/film"<?php echo is_single( 'film' ) ? ' class="current"' : ''; ?>>Film</a>
-    </nav>
 </div>
+
+<nav class="portfolio-sections container tk-primary clearfix">
+    <a href="/personal"<?php echo is_single( 'personal' ) ? ' class="current"' : ''; ?>>Personal</a>
+    <a href="/commercial"<?php echo is_single( 'commercial' ) ? ' class="current"' : ''; ?>>Commercial</a>
+    <a href="/film"<?php echo is_single( 'film' ) ? ' class="current"' : ''; ?>>Film</a>
+</nav>
 
 <?php get_footer(); ?>
 

@@ -138,7 +138,7 @@ td { vertical-align: top; }
 /* yellow */
 /* green */
 .slideshow { height: 582px; overflow: hidden; position: relative; }
-.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; width: 100%; max-width: 966px; }
+.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; max-width: 966px; padding: 0 23px; }
 .slideshow ul li { width: 100%; }
 .slideshow ul li img { width: 100%; }
 .slideshow ul li.slideTransition { transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/ -moz-transition: all .5s ease-in-out; /** Firefox **/ -o-transition: all .5s ease-in-out; /** Opera **/ }
@@ -154,15 +154,21 @@ em { font-style: normal; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
-#page { max-width: 1012px; padding: 0 23px; margin: 0 auto; }
+#page { max-width: 1012px; margin: 0 auto; }
 
-.container { width: 100%; max-width: 966px; margin: 0 auto; }
+.container { max-width: 966px; padding: 0 23px; margin: 0 auto; }
 
 header { margin-bottom: 28px; }
 header #logo { width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
 @media only screen and (max-width: 480px) { header #logo { margin-top: 28px; } }
 
-footer { width: 100%; max-width: 966px; background: url(../img/footer-bg.png) center top no-repeat; height: 85px; margin: 23px auto 65px auto; height: 91px; position: relative; }
+footer { max-width: 966px; padding: 0 23px; width: auto; margin: 23px auto 65px auto; height: 91px; position: relative; }
+footer .footer-nav { background: url(../img/footer-top-bg.png) center top no-repeat; height: 62px; position: relative; overflow: hidden; }
+footer .footer-bottom { background: url(../img/footer-bottom-bg.png) center top no-repeat; height: 24px; position: relative; }
+footer .footer-bottom .nav-arrow { margin: 0 auto; width: 49px; height: 12px; background-position: center top; background-repeat: no-repeat; background-image: url(../img/nav-arrow.png); cursor: pointer; }
+footer .footer-bottom .nav-arrow.collapsed { background-position: center 100%; }
+footer .social-label { line-height: 60px; color: #bc9924; font-size: 17px; position: absolute; z-index: -1; top: 0; left: 0; width: 100%; text-align: center; text-transform: uppercase; }
+footer .social-label em { vertical-align: bottom; font-size: 45px; color: #FBFBFB; margin: 0 19px; font-weight: 100; }
 footer .social { float: right; line-height: 62px; }
 footer .social a { display: inline-block; *display: inline; zoom: 1; background-position: top left; background-repeat: no-repeat; vertical-align: middle; margin-left: 24px; }
 footer .social a.getty { width: 95px; height: 17px; background-image: url(../img/getty-icon.png); }
@@ -176,11 +182,11 @@ footer nav a { text-transform: uppercase; margin-right: 11px; color: #666666; }
 footer nav a:hover, footer nav a.current { color: #bc9924; }
 @media only screen and (max-width: 480px) { footer nav { float: none; text-align: center; }
   footer nav a { margin: 0 6px; } }
-footer .copyright { position: absolute; top: 72px; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
+footer .copyright { position: absolute; bottom: 0; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
 footer .copyright em { color: #bc9924; }
 @media only screen and (max-width: 480px) { footer .copyright { position: static; text-align: center; margin-top: 40px; } }
 
-.contact-page { width: 100%; max-width: 966px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
+.contact-page { max-width: 966px; padding: 0 23px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
 .contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; text-transform: uppercase; font-family: "museo-sans-rounded"; font-weight: 100; color: #333333; margin: 0; line-height: 1; }
 @media only screen and (max-width: 480px) { .contact-page h1 { position: static; padding: 20px 0; text-align: center; } }
 .contact-page .contact-form { float: right; margin-top: 51px; margin-right: 51px; width: 342px; }
@@ -208,19 +214,27 @@ footer .copyright em { color: #bc9924; }
 .portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
 .portfolio-page table .portfolio-nav-container a { display: block; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
 .portfolio-page table .portfolio-nav-container a:hover { background-position: 0 100%; }
-.portfolio-page nav { margin-top: 23px; }
-.portfolio-page nav a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
-.portfolio-page nav a:first-child { margin-left: 0; }
-.portfolio-page nav a.current, .portfolio-page nav a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
-@media only screen and (min-width: 481px) and (max-width: 768px) { .portfolio-page nav a { letter-spacing: 0px; } }
-@media only screen and (max-width: 480px) { .portfolio-page nav a { float: none; display: block; width: 100%; margin-bottom: 5px; } }
 
-a.portfolio-slat { display: block; width: 100%; text-align: center; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; height: 157px; background-position: center 0; background-repeat: no-repeat; text-transform: uppercase; line-height: 153px; margin-bottom: 32px; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-a.portfolio-slat.personal { background-image: url(../img/portfolio-bg-personal.jpg); }
-a.portfolio-slat.film { background-image: url(../img/portfolio-bg-film.jpg); }
-a.portfolio-slat.commercial { background-image: url(../img/portfolio-bg-commercial.jpg); }
-@media only screen and (min-width: 481px) and (max-width: 768px) { a.portfolio-slat { font-size: 70px; } }
-@media only screen and (max-width: 480px) { a.portfolio-slat { font-size: 40px; height: 60px; line-height: 58px; color: #999999; margin-bottom: 5px; }
-  a.portfolio-slat.personal, a.portfolio-slat.film, a.portfolio-slat.commercial { background: url(../img/portfolio-nav-bg.png) top left repeat; } }
-a.portfolio-slat:hover { background-position: center 100%; text-shadow: none; }
-@media only screen and (max-width: 480px) { a.portfolio-slat:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; } }
+nav.portfolio-sections { margin-top: 23px; }
+nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
+nav.portfolio-sections a:first-child { margin-left: 0; }
+nav.portfolio-sections a.current, nav.portfolio-sections a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
+@media only screen and (min-width: 481px) and (max-width: 768px) { nav.portfolio-sections a { letter-spacing: 0px; } }
+@media only screen and (max-width: 480px) { nav.portfolio-sections a { float: none; display: block; width: 100%; margin-bottom: 5px; } }
+
+div.portfolio-slat { text-align: center; height: 157px; background-position: center 0; background-repeat: no-repeat; margin-bottom: 32px; position: relative; }
+div.portfolio-slat .portfolio-button-wrapper { position: absolute; bottom: -19px; width: 100%; }
+div.portfolio-slat .portfolio-selection-button { width: 172px; height: 49px; position: relative; margin: 0 auto; }
+div.portfolio-slat .portfolio-selection-button .grey-top, div.portfolio-slat .portfolio-selection-button .grey-bottom { overflow: hidden; position: relative; }
+div.portfolio-slat .portfolio-selection-button .grey-top { width: 172px; height: 30px; }
+div.portfolio-slat .portfolio-selection-button .grey-top img { position: absolute; left: 0; bottom: -30px; }
+div.portfolio-slat .portfolio-selection-button .grey-bottom { width: 172px; height: 19px; }
+div.portfolio-slat .portfolio-selection-button .grey-bottom img { position: absolute; left: 0; top: -19px; }
+div.portfolio-slat .portfolio-selection-button .yellow { position: absolute; bottom: 0; left: 0; width: 172px; height: 19px; z-index: 1; }
+div.portfolio-slat .portfolio-selection-button .yellow img { display: block; }
+div.portfolio-slat a { display: block; line-height: 153px; height: 157px; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; text-transform: uppercase; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+@media only screen and (min-width: 481px) and (max-width: 768px) { div.portfolio-slat a { font-size: 70px; } }
+@media only screen and (max-width: 480px) { div.portfolio-slat a { font-size: 40px; height: 60px; line-height: 58px; color: #999999; margin-bottom: 5px; }
+  div.portfolio-slat a.personal, div.portfolio-slat a.film, div.portfolio-slat a.commercial { background: url(../img/portfolio-nav-bg.png) top left repeat; } }
+div.portfolio-slat a:hover { background-position: center 100%; text-shadow: none; background: #d3ac29; background: rgba(211, 172, 41, 0.5); }
+@media only screen and (max-width: 480px) { div.portfolio-slat a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; } }

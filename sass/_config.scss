@@ -15,6 +15,7 @@ $slideshowHeight: 582px;
 // Mixins
 
 @mixin bodyWidth() {
-	width: 100%;
+	//width: 100%;
 	max-width: $bodyWidth;
+	padding: 0 23px;
 }
