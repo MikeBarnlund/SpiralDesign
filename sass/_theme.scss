@@ -56,6 +56,9 @@ footer {
 	    height: 62px;
 	    position: relative;
 	    overflow: hidden;
+	    @include respond-to( handhelds ) {
+	        height: auto;
+	    }
 	}
 
 	.footer-bottom {
@@ -127,6 +130,7 @@ footer {
 		@include respond-to( handhelds ) {
 			float: none;
 			text-align: center;
+			background: url(../img/footer-top-bg.png) center top no-repeat;
 			a { margin: 0 12px; }
 		}
 	}
@@ -155,9 +159,9 @@ footer {
 		color: #999999;
 		em { color: $brand1; }
 		@include respond-to( handhelds ) {
-			position: static;
+		    width: 100%;
 			text-align: center;
-			margin-top: 40px;
+			bottom: -30px;
 		}
 	}
 }
@@ -165,7 +169,7 @@ footer {
 // ============================= Contact Page =================================
 
 @mixin hhform() {
-	width: 85%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	@include border-box();
@@ -228,11 +232,13 @@ footer {
 			@include respond-to( handhelds ) {
 				@include border-box();
 				width: 100%;
+				padding: 10px 12px;
 			}
 		}
 		input.wpcf7-text {
 			@include respond-to( handhelds ) {
 				@include hhform();
+				padding: 5px 12px;
 			}
 		}
 		.form-message {
@@ -260,6 +266,7 @@ footer {
 		margin-top: 40px;
 		@include respond-to( handhelds ) {
 			@include hhform();
+			margin-top: 11px;
 		}
 		h2 {
 			font-family: 'ff-netto-web';
@@ -286,7 +293,13 @@ footer {
         width: 100%;
         td {
             padding: 0;
-            &.slideshow { display: block; }
+            &.slideshow {
+                ul {
+                    display: block;
+                    position: relative;
+                    padding: 0;
+                }
+            }
         }
         .portfolio-nav-container {
             width: 23px;
@@ -334,12 +347,14 @@ nav.portfolio-sections {
 		}
 		@include respond-to( mediumscreens ) {
 			letter-spacing: 0px;
+			font-size: 14px;
 		}
 		@include respond-to( handhelds ) {
 			float: none;
 			display: block;
 			width: 100%;
 			margin-bottom: 5px;
+			font-size: 24px;
 		}
 	}
 }
@@ -350,10 +365,14 @@ div.portfolio-slat {
 	text-align: center;
 
 	height: 157px;
-	background-position: center 0;
+	background-position: center center;
 	background-repeat: no-repeat;
 	margin-bottom: 32px;
 	position: relative;
+
+	@include respond-to( handhelds ) {
+	    height: auto;
+	}
 
 	.portfolio-button-wrapper {
 	    position: absolute;
@@ -395,12 +414,14 @@ div.portfolio-slat {
             z-index: 1;
             img { display: block; }
         }
+
+        @include respond-to( handhelds ) { display: none; }
 	}
 
 	a {
 	    display: block;
 	    line-height: 153px;
-    	height: 157px;
+    	height: 100%;
 	    color: #FFF;
     	font-family: 'museo-sans-rounded';
     	font-weight: 100;
@@ -412,24 +433,15 @@ div.portfolio-slat {
     		font-size: 70px;
     	}
     	@include respond-to( handhelds ) {
-    		font-size: 40px;
-    		height: 60px;
-    		line-height: 58px;
-    		color: #999999;
-    		margin-bottom: 5px;
-    		&.personal, &.film, &.commercial {
-    			background: url(../img/portfolio-nav-bg.png) top left repeat;
-    		}
+            font-size: 30px;
+            line-height: 60px;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
     	}
     	&:hover {
     		background-position: center 100%;
     		text-shadow: none;
     		background: #d3ac29;
     		background: rgba(211,172,41,.5);
-    		@include respond-to( handhelds ) {
-    			color: $brand1;
-    			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
-    		}
     	}
 	}
 }

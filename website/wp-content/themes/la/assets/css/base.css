@@ -164,6 +164,7 @@ header #logo { width: 110px; height: 110px; background: url(../img/lap-logo.png)
 
 footer { max-width: 966px; padding: 0 23px; width: auto; margin: 23px auto 0 auto; padding-bottom: 65px; height: 91px; position: relative; }
 footer .footer-nav { background: url(../img/footer-top-bg.png) center top no-repeat; height: 62px; position: relative; overflow: hidden; }
+@media only screen and (max-width: 480px) { footer .footer-nav { height: auto; } }
 footer .footer-bottom { background: url(../img/footer-bottom-bg.png) center top no-repeat; height: 24px; position: relative; }
 footer .footer-bottom .nav-arrow { margin: 0 auto; width: 49px; height: 12px; background-position: center top; background-repeat: no-repeat; background-image: url(../img/nav-arrow.png); cursor: pointer; }
 footer .footer-bottom .nav-arrow.collapsed { background-position: center 100%; }
@@ -175,7 +176,7 @@ footer .social a.getty { width: 95px; height: 17px; background-image: url(../img
 footer .social a.twitter { width: 37px; height: 26px; background-image: url(../img/twitter-icon.png); }
 footer .social a.flickr { width: 45px; height: 20px; background-image: url(../img/flickr-icon.png); }
 footer .social a:hover { background-position: 0 100%; }
-@media only screen and (max-width: 480px) { footer .social { float: none; text-align: center; }
+@media only screen and (max-width: 480px) { footer .social { float: none; text-align: center; background: url(../img/footer-top-bg.png) center top no-repeat; }
   footer .social a { margin: 0 12px; } }
 footer nav { float: left; line-height: 65px; font-size: 17px; }
 footer nav a { text-transform: uppercase; margin-right: 11px; color: #666666; }
@@ -184,7 +185,7 @@ footer nav a:hover, footer nav a.current { color: #bc9924; }
   footer nav a { margin: 0 6px; } }
 footer .copyright { position: absolute; bottom: 0; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
 footer .copyright em { color: #bc9924; }
-@media only screen and (max-width: 480px) { footer .copyright { position: static; text-align: center; margin-top: 40px; } }
+@media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; bottom: -30px; } }
 
 .contact-page { max-width: 966px; padding: 0 23px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
 .contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; text-transform: uppercase; font-family: "museo-sans-rounded"; font-weight: 100; color: #333333; margin: 0; line-height: 1; }
@@ -195,20 +196,20 @@ footer .copyright em { color: #bc9924; }
 .contact-page .contact-form input.wpcf7-text, .contact-page .contact-form textarea { display: block; margin: 0 0 11px 0; font-family: "ff-netto-web"; background: #333333; color: #999999; text-transform: uppercase; line-height: 1.2; font-size: 18px; border: 0; }
 .contact-page .contact-form input.wpcf7-text { padding: 8px 15px; width: 312px; }
 .contact-page .contact-form textarea { padding: 13px 15px; width: 312px; height: 141px; margin: 0; }
-@media only screen and (max-width: 480px) { .contact-page .contact-form textarea { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ width: 100%; } }
-@media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+@media only screen and (max-width: 480px) { .contact-page .contact-form textarea { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ width: 100%; padding: 10px 12px; } }
+@media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ padding: 5px 12px; } }
 .contact-page .contact-form .form-message { background: #666; }
-@media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+@media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
 .contact-page .contact-form input.wpcf7-submit { display: block; float: right; border: 0; font-family: 'ff-netto-web'; text-transform: uppercase; font-size: 14px; color: #333; background: #bc9924; line-height: 1; padding: 3px 12px; }
 .contact-page .about-content { background: url(../img/about-content-bg.jpg) top left repeat; padding: 15px; margin-top: 40px; }
-@media only screen and (max-width: 480px) { .contact-page .about-content { width: 85%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
+@media only screen and (max-width: 480px) { .contact-page .about-content { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ margin-top: 11px; } }
 .contact-page .about-content h2 { font-family: 'ff-netto-web'; font-size: 18px; text-transform: uppercase; color: #bc9924; line-height: 1; margin: 0 0 5px 0; }
 .contact-page .about-content p { margin: 0; font-size: 13px; color: #cccccc; }
 
 .portfolio-page { width: 100%; max-width: 100%; }
 .portfolio-page table { width: 100%; }
 .portfolio-page table td { padding: 0; }
-.portfolio-page table td.slideshow { display: block; }
+.portfolio-page table td.slideshow ul { display: block; position: relative; padding: 0; }
 .portfolio-page table .portfolio-nav-container { width: 23px; vertical-align: middle; }
 .portfolio-page table .portfolio-nav-container.nav-left a { background-image: url(../img/portfolio-nav-left.png); }
 .portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
@@ -219,10 +220,11 @@ nav.portfolio-sections { margin-top: 23px; }
 nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
 nav.portfolio-sections a:first-child { margin-left: 0; }
 nav.portfolio-sections a.current, nav.portfolio-sections a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
-@media only screen and (min-width: 481px) and (max-width: 768px) { nav.portfolio-sections a { letter-spacing: 0px; } }
-@media only screen and (max-width: 480px) { nav.portfolio-sections a { float: none; display: block; width: 100%; margin-bottom: 5px; } }
+@media only screen and (min-width: 481px) and (max-width: 768px) { nav.portfolio-sections a { letter-spacing: 0px; font-size: 14px; } }
+@media only screen and (max-width: 480px) { nav.portfolio-sections a { float: none; display: block; width: 100%; margin-bottom: 5px; font-size: 24px; } }
 
-div.portfolio-slat { text-align: center; height: 157px; background-position: center 0; background-repeat: no-repeat; margin-bottom: 32px; position: relative; }
+div.portfolio-slat { text-align: center; height: 157px; background-position: center center; background-repeat: no-repeat; margin-bottom: 32px; position: relative; }
+@media only screen and (max-width: 480px) { div.portfolio-slat { height: auto; } }
 div.portfolio-slat .portfolio-button-wrapper { position: absolute; bottom: -19px; width: 100%; }
 div.portfolio-slat .portfolio-selection-button { width: 172px; height: 49px; position: relative; margin: 0 auto; }
 div.portfolio-slat .portfolio-selection-button .grey-top, div.portfolio-slat .portfolio-selection-button .grey-bottom { overflow: hidden; position: relative; }
@@ -232,9 +234,8 @@ div.portfolio-slat .portfolio-selection-button .grey-bottom { width: 172px; heig
 div.portfolio-slat .portfolio-selection-button .grey-bottom img { position: absolute; left: 0; top: -19px; }
 div.portfolio-slat .portfolio-selection-button .yellow { position: absolute; bottom: 0; left: 0; width: 172px; height: 19px; z-index: 1; }
 div.portfolio-slat .portfolio-selection-button .yellow img { display: block; }
-div.portfolio-slat a { display: block; line-height: 153px; height: 157px; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; text-transform: uppercase; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+@media only screen and (max-width: 480px) { div.portfolio-slat .portfolio-selection-button { display: none; } }
+div.portfolio-slat a { display: block; line-height: 153px; height: 100%; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; text-transform: uppercase; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
 @media only screen and (min-width: 481px) and (max-width: 768px) { div.portfolio-slat a { font-size: 70px; } }
-@media only screen and (max-width: 480px) { div.portfolio-slat a { font-size: 40px; height: 60px; line-height: 58px; color: #999999; margin-bottom: 5px; }
-  div.portfolio-slat a.personal, div.portfolio-slat a.film, div.portfolio-slat a.commercial { background: url(../img/portfolio-nav-bg.png) top left repeat; } }
+@media only screen and (max-width: 480px) { div.portfolio-slat a { font-size: 30px; line-height: 60px; text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); } }
 div.portfolio-slat a:hover { background-position: center 100%; text-shadow: none; background: #d3ac29; background: rgba(211, 172, 41, 0.5); }
-@media only screen and (max-width: 480px) { div.portfolio-slat a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; } }
