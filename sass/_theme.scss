@@ -51,6 +51,10 @@ footer {
 	height: 91px;
 	position: relative;
 
+	@include respond-to( handhelds ) {
+	    height: 151px;
+	}
+
 	.footer-nav {
 	    background: url(../img/footer-top-bg.png) center top no-repeat;
 	    height: 62px;
