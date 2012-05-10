@@ -39,14 +39,16 @@ $( document ).ready( function() {
 		}
 	} );
 
-	$( 'footer .social a' ).hover(
-	    function() {
-            $( 'footer .social-label' ).html( '<em>(</em>' + $( this ).attr( 'rel' ) + '<em>)</em>' ).fadeIn( 50 );
-	    },
-	    function() {
-            $( 'footer .social-label' ).fadeOut( 50 );
-	    }
-	);
+    if ( !Modernizr.mq( 'only screen and (max-width: 480px)' ) ) {
+       	$( 'footer .social a' ).hover(
+    	    function() {
+                $( 'footer .social-label' ).html( '<em>(</em>' + $( this ).attr( 'rel' ) + '<em>)</em>' ).fadeIn( 50 );
+    	    },
+    	    function() {
+                $( 'footer .social-label' ).fadeOut( 50 );
+    	    }
+    	);
+    }
 
 	$( 'footer .nav-arrow' ).one( 'click', collapseNav );
 } );
