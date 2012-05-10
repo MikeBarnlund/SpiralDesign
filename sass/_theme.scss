@@ -18,6 +18,12 @@ h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
 
+#page {
+    max-width: $bodyWidth + 46px; // width of the two portfolio navigation widgets
+    padding: 0 23px;
+    margin: 0 auto;
+}
+
 .container {
 	@include bodyWidth();
 	margin: 0 auto;

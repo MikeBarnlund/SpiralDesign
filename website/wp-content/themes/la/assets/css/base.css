@@ -152,6 +152,8 @@ em { font-style: normal; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
+#page { max-width: 1012px; padding: 0 23px; margin: 0 auto; }
+
 .container { width: 100%; max-width: 966px; margin: 0 auto; }
 
 header { margin-bottom: 28px; }

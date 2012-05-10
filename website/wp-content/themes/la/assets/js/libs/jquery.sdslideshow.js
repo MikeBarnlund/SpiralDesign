@@ -60,7 +60,7 @@ May 6, 2012		- Created (mb)
 		*/
 		this.getConfig = function() {
 			return config;
-		}
+		};
 
 		/*
 		Function: 	getImageList
@@ -71,7 +71,7 @@ May 6, 2012		- Created (mb)
 		*/
 		this.getImageList = function() {
 			return config.imageList;
-		}
+		};
 
 		/*
 		Function: 	getPreviousImageIndex
@@ -86,7 +86,7 @@ May 6, 2012		- Created (mb)
 				prevImageIndex = currentImageIndex - 1;
 			}
 			return prevImageIndex;
-		}
+		};
 
 		/*
 		Function: 	getNextImageIndex
@@ -101,7 +101,7 @@ May 6, 2012		- Created (mb)
 				nextImageIndex = currentImageIndex + 1;
 			}
 			return nextImageIndex;
-		}
+		};
 
 		/*
 		Function: 	showPreviousImage()
@@ -111,9 +111,9 @@ May 6, 2012		- Created (mb)
 		Returns: 	Nothing
 		*/
 		this.showPreviousImage = function( animation ) {
-		    animation = typeof animation !== 'undefined' ? animation : 'fadeover';
+		    animation = typeof animation !== 'undefined' ? animation : config.defaultTransition;
 			swapImageTo( instance.getPreviousImageIndex(), animation );
-		}
+		};
 
 		/*
 		Function: 	showNextImage()
@@ -123,9 +123,9 @@ May 6, 2012		- Created (mb)
 		Returns: 	Nothing
 		*/
 		this.showNextImage = function( animation ) {
-		    animation = typeof animation !== 'undefined' ? animation : 'fadeover';
+		    animation = typeof animation !== 'undefined' ? animation : config.defaultTransition;
 			swapImageTo( instance.getNextImageIndex(), animation );
-		}
+		};
 
 		/*
 		Function: 	swapImageTo()
@@ -167,16 +167,16 @@ May 6, 2012		- Created (mb)
 					newImage.element = $li.get( 0 );
 
 					if ( animateSwap( oldImage, newImage, animation ) === true ) currentImageIndex = newImageIndex;
-					if ( config.autoAdvance === true ) setTimeout( instance.showNextImage, config.transitionDelay );
+					if ( config.autoAdvance === true ) setTimeout( function() { instance.showNextImage( animation ); }, config.transitionDelay );
 				} ).error( function( error ) {
 					// console.log( 'Error loading image' );
 				} ).attr( 'src', newImage.src );
 
 			} else {
 				if ( animateSwap( oldImage, newImage, animation ) === true ) currentImageIndex = newImageIndex;
-				if ( config.autoAdvance === true ) setTimeout( instance.showNextImage, config.transitionDelay );
+				if ( config.autoAdvance === true ) setTimeout( function() { instance.showNextImage( animation ); }, config.transitionDelay );
 			}
-		}
+		};
 
 		/*
 		Function: 	animateSwap()
@@ -189,10 +189,11 @@ May 6, 2012		- Created (mb)
 
 			$container.animate( { 'height': $( newImage.element ).height() + 'px' } );
 			console.log( "Animation: " + animation );
+			var delay = 0;
 
 			switch ( animation ) {
 				case 'fadeoutin':
-					var delay = config.transitionDuration / 2;
+                    delay = config.transitionDuration / 2;
 					if ( oldImage === null ) $( newImage.element ).fadeIn( delay );
 					else {
 						$oldImage = $( oldImage.element );
@@ -205,49 +206,47 @@ May 6, 2012		- Created (mb)
 					}
 					break;
 				case 'fadeover':
-					var delay = config.transitionDuration;
-					$( newImage.element ).css( { 'position': 'absolute', 'top': '0', 'left': '0' } );
-
-					// Move the image container in the DOM
-					if ( oldImage !== null ) $imageList.append( $( newImage.element ) );
-
-					$( newImage.element ).fadeIn( delay, function() {
-						if ( oldImage !== null ) {
-							$( oldImage.element ).hide();
-						}
-					} );
+                    delay = config.transitionDuration;
+                    $( newImage.element )
+                        .css( { 'position': 'absolute', 'top': '0', 'left': '0' } )
+                        .appendTo( $imageList )
+                        .fadeIn( delay, function() {
+                             if ( oldImage !== null ) {
+                                 $( oldImage.element ).hide();
+                             }
+                         } );
 
 					break;
 				case 'slideleft':
-    			    var delay = config.transitionDuration;
+    			    delay = config.transitionDuration;
     			    $( newImage.element )
     			        .hide()
     			        .appendTo( $imageList )
     			        .css( { 'position': 'absolute', 'top': '0', 'left': '966px' } )
     			        .show( 0, function() {
-    			            if ( Modernizr.csstransitions ) {
-                                $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
-                                if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '-966px' } );
-                			} else {	// use jQuery animation if no native CSS transitions are allowed
+                            // if ( Modernizr.csstransitions ) {
+                            //                                 $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
+                            //                                 if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '-966px' } );
+                            //                          } else {    // use jQuery animation if no native CSS transitions are allowed
                                 $( newImage.element ).animate( { left: '-=966px' } );
                                 if ( oldImage != null ) $( oldImage.element ).animate( { left: '-=966px' } );
-                			}
+                            // }
     			        } );
     			    break;
 				case 'slideright':
-    			    var delay = config.transitionDuration;
+    			    delay = config.transitionDuration;
     			    $( newImage.element )
     			        .hide()
     			        .css( { 'position': 'absolute', 'top': '0', 'left': '-966px' } )
     			        .appendTo( $imageList )
     			        .show( 0, function() {
-    			            if ( Modernizr.csstransitions ) {
-                                $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
-                                if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '966px' } );
-                			} else {	// use jQuery animation if no native CSS transitions are allowed
+                            // if ( Modernizr.csstransitions ) {
+                            //                                 $( newImage.element ).addClass( 'slideTransition' ).css( { 'left': '0' } );
+                            //                                 if ( oldImage != null ) $( oldImage.element ).addClass( 'slideTransition' ).css( { 'left': '966px' } );
+                            //                          } else {    // use jQuery animation if no native CSS transitions are allowed
                                 $( newImage.element ).animate( { left: '+=966px' } );
                                 if ( oldImage != null ) $( oldImage.element ).animate( { left: '+=966px' } );
-                			}
+                            // }
     			        } );
     			    break;
 				default:
@@ -257,7 +256,7 @@ May 6, 2012		- Created (mb)
 			}
 
 			return true;
-		}
+		};
 
 		/* ======================== Event Binding ===================== */
 
@@ -271,7 +270,7 @@ May 6, 2012		- Created (mb)
 		*/
 		this.handleError = function( errorCode, exception ) {
 			$.jGrowl( 'Error ' + errorCode + ': ' + exception.message + '<br/>Line: ' + exception.lineNumber + '<br/>' + exception.fileName );
-		}
+		};
 
 		/* ============= Constructor ============== */
 
