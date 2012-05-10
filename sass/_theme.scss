@@ -46,7 +46,8 @@ header {
 footer {
 	@include bodyWidth();
 	width: auto;
-	margin: 23px auto 65px auto;
+	margin: 23px auto 0 auto;
+	padding-bottom: 65px;
 	height: 91px;
 	position: relative;
 
