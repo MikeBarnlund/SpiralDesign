@@ -215,6 +215,9 @@ footer .copyright em { color: #bc9924; }
 .portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
 .portfolio-page table .portfolio-nav-container a { display: block; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
 .portfolio-page table .portfolio-nav-container a:hover { background-position: 0 100%; }
+@media only screen and (max-width: 480px) { .portfolio-page table .portfolio-nav-container.nav-left a { background-image: url(../img/portfolio-nav-left-hh.png); }
+  .portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right-hh.png); }
+  .portfolio-page table .portfolio-nav-container a { height: 87px; } }
 
 nav.portfolio-sections { margin-top: 23px; }
 nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }

@@ -321,6 +321,18 @@ footer {
                 background-position: top center;
                 &:hover { background-position: 0 100%; }
             }
+
+            @include respond-to( handhelds ) {
+                &.nav-left {
+                    a { background-image: url(../img/portfolio-nav-left-hh.png); }
+                }
+                &.nav-right {
+                    a { background-image: url(../img/portfolio-nav-right-hh.png); }
+                }
+                a {
+                    height: 87px;
+                }
+            }
         }
     }
 }
