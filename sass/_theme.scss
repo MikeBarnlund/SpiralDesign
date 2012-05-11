@@ -4,8 +4,8 @@ body {
 	background: #333333;
 	color: $bodyColor;
 	#page {
-		//background: url(../img/bg-overlay.png) center top no-repeat;
-		//min-height: 600px;
+    	padding-bottom: 17px;
+    	background: #3d3d3d;
 	}
 }
 
@@ -59,7 +59,7 @@ footer {
 
 	.copyright {
         float: right;
-		font-size: 11px;
+		font-size: 10px;
 		text-transform: uppercase;
 		em { color: $brand1; }
 		@include respond-to( handhelds ) {
@@ -69,15 +69,69 @@ footer {
 	}
 }
 
+// =========================== Navigation =====================================
+
+nav {
+    width: 210px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    .nav-item {
+        text-align: center;
+        line-height: 18px;
+        padding: 14px 0;
+        a {
+            color: #333333;
+            text-transform: uppercase;
+            &:hover {
+                color: $brand1;
+            }
+        }
+    }
+    .portfolio-nav {
+        font-size: 18px;
+        a {
+            float: left;
+            cursor: pointer;
+        }
+        img.logo {
+            float: left;
+        }
+    }
+}
+
 // =========================== Red Info Bar ===================================
 
 .redbar {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
+    width: 0px;
+    overflow: hidden;
     background: $brand1 url(../img/lai-redbar.png) top right no-repeat;
-    width: 16px;
-    height: 706px;
+    padding: 0 0 0 16px;
+    height: 100%;
+    .info-logo, .twitter, .mail {
+        background-image: url(../img/social-logos.png);
+        background-repeat: no-repeat;
+        width: 37px;
+        display: block;
+        margin-top: 20px;
+    }
+    .info-logo {
+        height: 37px;
+
+    }
+    .twitter {
+        background-position: 0 -38px;
+        height: 26px;
+        &:hover { background-position: 0 -126px; }
+    }
+    .mail {
+        background-position: 0 -65px;
+        height: 23px;
+        &:hover { background-position: 0 -153px; }
+    }
 }
 
 // ============================ Home Page =====================================
@@ -86,8 +140,6 @@ footer {
     @include bodyWidth();
 	margin: 0 auto;
 	position: relative;
-	padding-bottom: 17px;
-	background: #3d3d3d;
     article {
         margin-right: 16px;
     }

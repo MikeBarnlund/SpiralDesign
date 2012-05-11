@@ -17,8 +17,19 @@ the_post();
     <div class="info">
         <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/info-inactive.png" />
     </div>
+    <nav>
+        <div class="nav-item"><a href="/portfolio">Portfolio</a></div>
+        <div class="portfolio-nav clearfix">
+            <a class="portfolio-prev"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/nav-left.png" /></a>
+            <img class="logo" src="<?php bloginfo( 'template_url' ) ?>/assets/img/logo.png" />
+            <a class="portfolio-next"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/nav-right.png" /></a>
+        </div>
+        <div class="nav-item"><a href="/contact">Contact</a></div>
+    </nav>
     <div class="redbar">
-
+        <div class="info-logo"></div>
+        <a target="_blank" href="http://www.twitter.com" class="twitter"></a>
+        <a target="_blank" href="mailto:someone@theinternet.com" class="mail"></a>
     </div>
 </div>
 
@@ -28,6 +39,8 @@ the_post();
 
 <script>
 $( document ).ready( function() {
+
+    var slideshow = null;
     <?php
     $images = get_field( 'home_images' );
     if ( !empty( $images ) ) {
@@ -49,7 +62,18 @@ $( document ).ready( function() {
             if ( Modernizr.mq( 'only screen and (max-width: 480px)' ) ) {
                 settings.transitionDelay = 3000;
             }
-            $( '.slideshow' ).sdslideshow( settings );
+            slideshow = $( '.slideshow' ).sdslideshow( settings );
+        }
+
+        if ( slideshow !== null ) {
+            slideshow_instance = slideshow.data( 'instance' );
+
+            $( '.portfolio-prev' ).click( function() {
+                slideshow_instance.showPreviousImage( 'slideright' );
+            } );
+            $( '.portfolio-next' ).click( function() {
+                slideshow_instance.showNextImage( 'slideleft' );
+            } );
         }
         <?php
     }
