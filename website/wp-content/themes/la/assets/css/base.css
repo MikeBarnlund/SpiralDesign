@@ -228,19 +228,26 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
   .contact-page h1 { left: auto; bottom: auto; position: static; margin: 20px auto; width: 271px; text-align: left; }
   .contact-page .wpcf7, .contact-page .about-content { position: static; width: 271px; margin: 0 auto 20px auto; } }
 
-.portfolio-page { width: 100%; max-width: 100%; }
+.portfolio-page { position: relative; }
+.portfolio-page .portfolio-navbar { padding: 28px 28px 11px 28px; line-height: 56px; }
+.portfolio-page .portfolio-navbar .logo { padding-right: 20px; }
+.portfolio-page .portfolio-navbar ul { display: inline-block; *display: inline; zoom: 1; }
+.portfolio-page .portfolio-navbar ul li { display: inline-block; *display: inline; zoom: 1; }
+.portfolio-page .portfolio-navbar ul li a { text-transform: uppercase; margin-right: 14px; color: #CCC; font-size: 15px; }
+.portfolio-page .portfolio-navbar ul li a:hover { border-bottom: 3px solid #ab1f24; }
+.portfolio-page .portfolio-navbar .slideshow-nav { float: right; font-size: 0; }
+.portfolio-page .portfolio-navbar .slideshow-nav a { display: inline-block; *display: inline; zoom: 1; vertical-align: middle; background-image: url(../img/portfolio-nav-bg.png); background-repeat: no-repeat; width: 18px; height: 28px; cursor: pointer; margin-left: 10px; }
+.portfolio-page .portfolio-navbar .slideshow-nav a.nav-left { background-position: 0 0; }
+.portfolio-page .portfolio-navbar .slideshow-nav a.nav-left:hover { background-position: 0 -56px; }
+.portfolio-page .portfolio-navbar .slideshow-nav a.nav-right { background-position: 0 -28px; }
+.portfolio-page .portfolio-navbar .slideshow-nav a.nav-right:hover { background-position: 0 -84px; }
+@media only screen and (max-width: 423px) { .portfolio-page .portfolio-navbar { padding: 18px 18px 0; }
+  .portfolio-page .portfolio-navbar ul { display: block; text-align: center; margin-top: 18px; border-top: 1px solid #555; line-height: 1; padding-top: 18px; }
+  .portfolio-page .portfolio-navbar ul li a { margin: 0 14px; } }
+.portfolio-page .slideshow-wrapper { position: relative; }
 .portfolio-page table { width: 100%; }
 .portfolio-page table td { padding: 0; }
 .portfolio-page table td.slideshow ul { display: block; position: relative; padding: 0; }
-.portfolio-page table .portfolio-nav-container { width: 23px; vertical-align: middle; }
-.portfolio-page table .portfolio-nav-container.nav-left a { background-image: url(../img/portfolio-nav-left.png); }
-.portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
-.portfolio-page table .portfolio-nav-container a { display: block; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
-.portfolio-page table .portfolio-nav-container a:hover { background-position: 0 100%; }
-@media only screen and (max-width: 480px) { .portfolio-page table .portfolio-nav-container.nav-left a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; margin-right: 1px; }
-  .portfolio-page table .portfolio-nav-container.nav-right a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; margin-left: 1px; }
-  .portfolio-page table .portfolio-nav-container a { width: 22px; height: 90px; }
-  .portfolio-page table .portfolio-nav-container a:hover { background-position-y: top; } }
 
 nav.portfolio-sections { margin-top: 23px; }
 nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }

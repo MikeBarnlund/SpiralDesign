@@ -1,5 +1,9 @@
 <?php
 
+/*
+Template Name: Portfolio Page
+*/
+
 get_header();
 
 the_post();
@@ -7,24 +11,27 @@ the_post();
 ?>
 
 <div class="portfolio-page">
-    <table>
-        <tr>
-            <td class="portfolio-nav-container nav-left">
-                <a></a>
-            </td>
-            <td class="slideshow"></td>
-            <td class="portfolio-nav-container nav-right">
-                <a></a>
-            </td>
-        </tr>
-    </table>
+    <div class="slideshow-wrapper">
+        <table>
+            <tr>
+                <td class="slideshow"></td>
+            </tr>
+        </table>
+    <?php get_template_part( 'redbar' ); ?>
+    </div>
+    <div class="portfolio-navbar">
+        <img class='logo' src="<?php bloginfo( 'template_url' ) ?>/assets/img/lai-logo-light.png" />
+        <div class="slideshow-nav">
+            <a class="nav-left"></a>
+            <a class="nav-right"></a>
+        </div>
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </div>
 </div>
-
-<nav class="portfolio-sections container tk-primary clearfix">
-    <a href="/personal"<?php echo is_single( 'personal' ) ? ' class="current"' : ''; ?>>Personal</a>
-    <a href="/commercial"<?php echo is_single( 'commercial' ) ? ' class="current"' : ''; ?>>Commercial</a>
-    <a href="/film"<?php echo is_single( 'film' ) ? ' class="current"' : ''; ?>>Film</a>
-</nav>
 
 <?php get_footer(); ?>
 
