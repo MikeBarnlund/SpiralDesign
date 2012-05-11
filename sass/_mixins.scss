@@ -11,6 +11,9 @@ $break_large: 769px;
 	@else if $media == widescreens {
 		@media only screen and (min-width: $break_large) { @content; }
 	}
+	@else {
+	    @media only screen and ($media) { @content; }
+	}
 }
 
 @mixin px-to-perc( $prop, $pixels, $context ) {

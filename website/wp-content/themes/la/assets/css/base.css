@@ -171,25 +171,36 @@ footer .copyright em { color: #ab1f24; }
 @media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; } }
 
 nav { width: 210px; position: absolute; top: 10%; left: 10%; }
-nav .nav-item { text-align: center; line-height: 18px; padding: 14px 0; }
-nav .nav-item a { color: #333333; text-transform: uppercase; }
+nav .nav-item { text-align: center; line-height: 1; padding: 17px 0 14px 0; }
+nav .nav-item a { color: #333333; text-transform: uppercase; font-size: 18px; }
 nav .nav-item a:hover { color: #ab1f24; }
-nav .portfolio-nav { font-size: 18px; }
-nav .portfolio-nav a { float: left; cursor: pointer; }
-nav .portfolio-nav img.logo { float: left; }
+nav .portfolio-nav { font-size: 0; }
+nav .portfolio-nav a { cursor: pointer; display: inline-block; *display: inline; zoom: 1; }
+nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; }
+@media only screen and (max-width: 420px) { nav { width: 100%; text-align: center; top: 0; left: 0; font-size: 0; /*
+.nav-item { padding: 8px 0; a { font-size: 18px;}
+}
+*/ }
+  nav .nav-item { padding: 13px 0 10px; }
+  nav .nav-item a { color: #FFFFFF; font-size: 25px; text-shadow: 0 0 3px #000000; }
+  nav .portfolio-nav img.logo { width: 30%; } }
 
-.redbar { position: absolute; top: 0; right: 0px; width: 0px; overflow: hidden; background: #ab1f24 url(../img/lai-redbar.png) top right no-repeat; padding: 0 0 0 16px; height: 100%; }
+.redbar { position: absolute; top: 0; right: 0px; width: 0px; z-index: 10; overflow: hidden; background: #ab1f24 url(../img/lai-redbar.png) top right no-repeat; padding: 0 0 0 16px; height: 100%; }
 .redbar .info-logo, .redbar .twitter, .redbar .mail { background-image: url(../img/social-logos.png); background-repeat: no-repeat; width: 37px; display: block; margin-top: 20px; }
 .redbar .info-logo { height: 37px; }
 .redbar .twitter { background-position: 0 -38px; height: 26px; }
 .redbar .twitter:hover { background-position: 0 -126px; }
 .redbar .mail { background-position: 0 -65px; height: 23px; }
 .redbar .mail:hover { background-position: 0 -153px; }
+@media only screen and (max-width: 420px) { .redbar { padding: 0; }
+  .redbar .info-logo, .redbar .twitter, .redbar .mail { margin-left: auto; margin-right: auto; } }
 
 .page-container { max-width: 1075px; margin: 0 auto; position: relative; }
 .page-container article { margin-right: 16px; }
+@media only screen and (max-width: 420px) { .page-container article { margin-right: 0; } }
 
-.info { position: absolute; top: 220px; right: 27px; width: 37px; height: 37px; cursor: pointer; }
+.info { position: absolute; top: 220px; right: 27px; width: 37px; height: 37px; cursor: pointer; z-index: 1; }
+@media only screen and (max-width: 420px) { .info { right: 8px; top: 22px; } }
 
 .contact-page { max-width: 1075px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
 .contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; color: #333333; margin: 0; line-height: 1; }

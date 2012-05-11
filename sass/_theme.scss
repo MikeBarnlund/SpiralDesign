@@ -78,25 +78,53 @@ nav {
     left: 10%;
     .nav-item {
         text-align: center;
-        line-height: 18px;
-        padding: 14px 0;
+        line-height: 1;
+        padding: 17px 0 14px 0;
         a {
             color: #333333;
             text-transform: uppercase;
+            font-size: 18px;
             &:hover {
                 color: $brand1;
             }
         }
     }
     .portfolio-nav {
-        font-size: 18px;
+        font-size: 0;
         a {
-            float: left;
             cursor: pointer;
+            @include inline-block();
         }
         img.logo {
-            float: left;
+            @include inline-block();
         }
+    }
+
+    @include respond-to( 'max-width: 420px' ) {
+        width: 100%;
+        text-align: center;
+        top: 0; left: 0;
+        font-size: 0;
+
+        .nav-item {
+            padding: 13px 0 10px;
+            a {
+                color: #FFFFFF;
+                font-size: 25px;
+                text-shadow: 0 0 3px #000000;
+            }
+        }
+
+        .portfolio-nav {
+            img.logo { width: 30%; }
+        }
+
+        /*
+        .nav-item {
+            padding: 8px 0;
+            a { font-size: 18px;}
+        }
+        */
     }
 }
 
@@ -107,6 +135,7 @@ nav {
     top: 0;
     right: 0px;
     width: 0px;
+    z-index: 10;
     overflow: hidden;
     background: $brand1 url(../img/lai-redbar.png) top right no-repeat;
     padding: 0 0 0 16px;
@@ -120,7 +149,6 @@ nav {
     }
     .info-logo {
         height: 37px;
-
     }
     .twitter {
         background-position: 0 -38px;
@@ -132,6 +160,10 @@ nav {
         height: 23px;
         &:hover { background-position: 0 -153px; }
     }
+    @include respond-to( 'max-width: 420px' ) {
+        padding: 0;
+        .info-logo, .twitter, .mail { margin-left: auto; margin-right: auto; }
+    }
 }
 
 // ============================ Home Page =====================================
@@ -142,6 +174,9 @@ nav {
 	position: relative;
     article {
         margin-right: 16px;
+        @include respond-to( 'max-width: 420px' ) {
+            margin-right: 0;
+        }
     }
 }
 
@@ -152,6 +187,11 @@ nav {
     width: 37px;
     height: 37px;
     cursor: pointer;
+    z-index: 1;
+    @include respond-to( 'max-width: 420px' ) {
+        right: 8px;
+        top: 22px;
+    }
 }
 
 // ============================= Contact Page =================================
