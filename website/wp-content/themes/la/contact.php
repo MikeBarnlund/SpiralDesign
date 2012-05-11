@@ -8,11 +8,12 @@ the_post();
 
 ?>
 
-<div class="container contact-page">
+<div class="container contact-page clearfix">
+    <?php get_template_part( 'navigation' ); ?>
 	<?php if ( get_the_ID() ) { ?>
-		<h1 class="tk-primary">Contact</h1>
-		<div class="contact-form">
-    		<?php the_content(); ?>
+		<div class="contact-form clearfix">
+	        <h1 class="tk-primary">Contact</h1>
+		    <?php the_content(); ?>
 	    </div>
 	<?php } ?>
 </div>
