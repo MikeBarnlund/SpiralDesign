@@ -9,8 +9,6 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -135,65 +133,51 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-/* yellow */
+/* red */
 /* green */
-.slideshow { height: 582px; overflow: hidden; position: relative; }
-.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; max-width: 966px; padding: 0 23px; }
+.slideshow { height: 706px; overflow: hidden; position: relative; }
+.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; max-width: 1075px; }
 .slideshow ul li { width: 100%; }
 .slideshow ul li img { width: 100%; }
 .slideshow ul li.slideTransition { transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/ -moz-transition: all .5s ease-in-out; /** Firefox **/ -o-transition: all .5s ease-in-out; /** Opera **/ }
 
 html, body { height: 100%; }
 
-body { background: url(../img/bg.jpg) center top repeat; }
+body { background: #333333; color: #cccccc; }
 
-a { color: #bc9924; text-decoration: none; }
-a:hover { color: #9a7702; }
+a { color: #ab1f24; text-decoration: none; }
+a:hover { color: #890002; }
 
 em { font-style: normal; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
-::-moz-selection { background: #bc9924; color: black; }
+::-moz-selection { background: #ab1f24; color: black; }
 
-::selection { background: #bc9924; color: black; }
+::selection { background: #ab1f24; color: black; }
 
-#page { max-width: 1012px; margin: 0 auto; }
+#page { max-width: 1075px; margin: 81px auto 0 auto; }
 
-.container { max-width: 966px; padding: 0 23px; margin: 0 auto; }
+.container { max-width: 1075px; margin: 0 auto; position: relative; }
 
 header { margin-bottom: 28px; }
 header #logo { display: block; width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
 @media only screen and (max-width: 480px) { header #logo { margin-top: 28px; } }
 
-footer { max-width: 966px; padding: 0 23px; width: auto; margin: 23px auto 0 auto; padding-bottom: 65px; height: 91px; position: relative; }
-@media only screen and (max-width: 480px) { footer { height: 151px; } }
-footer .footer-nav { background: url(../img/footer-top-bg.png) center top no-repeat; height: 62px; position: relative; overflow: hidden; }
-@media only screen and (max-width: 480px) { footer .footer-nav { height: auto; } }
-footer .footer-bottom { background: url(../img/footer-bottom-bg.png) center top no-repeat; height: 24px; position: relative; }
-footer .footer-bottom .nav-arrow { margin: 0 auto; width: 49px; height: 12px; background-position: center top; background-repeat: no-repeat; background-image: url(../img/nav-arrow.png); cursor: pointer; }
-footer .footer-bottom .nav-arrow.collapsed { background-position: center 100%; }
-footer .social-label { line-height: 60px; color: #bc9924; font-size: 17px; position: absolute; z-index: -1; top: 0; left: 0; width: 100%; text-align: center; text-transform: uppercase; }
-footer .social-label em { vertical-align: bottom; font-size: 45px; color: #FBFBFB; margin: 0 19px; font-weight: 100; }
-footer .social { float: right; line-height: 62px; }
-footer .social a { display: inline-block; *display: inline; zoom: 1; background-position: top left; background-repeat: no-repeat; vertical-align: middle; margin-left: 24px; }
-footer .social a.getty { width: 95px; height: 17px; background-image: url(../img/getty-icon.png); }
-footer .social a.twitter { width: 37px; height: 26px; background-image: url(../img/twitter-icon.png); }
-footer .social a.flickr { width: 45px; height: 20px; background-image: url(../img/flickr-icon.png); }
-footer .social a:hover { background-position: 0 100%; }
-@media only screen and (max-width: 480px) { footer .social { float: none; text-align: center; background: url(../img/footer-top-bg.png) center top no-repeat; }
-  footer .social a { margin: 0 12px; } }
-footer nav { float: left; line-height: 65px; font-size: 17px; }
-footer nav a { text-transform: uppercase; margin-right: 11px; color: #666666; }
-footer nav a:hover, footer nav a.current { color: #bc9924; }
-@media only screen and (max-width: 480px) { footer nav { float: none; text-align: center; }
-  footer nav a { margin: 0 6px; } }
-footer .copyright { position: absolute; bottom: 0; right: 0; font-size: 11px; text-transform: uppercase; color: #999999; }
-footer .copyright em { color: #bc9924; }
-@media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; bottom: -30px; } }
+footer { max-width: 1075px; padding: 16px 0 120px 0; margin: 0 auto; }
+footer .copyright { float: right; font-size: 11px; text-transform: uppercase; }
+footer .copyright em { color: #ab1f24; }
+@media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; } }
 
-.contact-page { max-width: 966px; padding: 0 23px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
-.contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; text-transform: uppercase; font-family: "museo-sans-rounded"; font-weight: 100; color: #333333; margin: 0; line-height: 1; }
+.redbar { position: absolute; top: 0; right: 0; background: #ab1f24 url(../img/lai-redbar.png) top right no-repeat; width: 16px; height: 706px; }
+
+.page-container { max-width: 1075px; margin: 0 auto; position: relative; padding-bottom: 17px; background: #3d3d3d; }
+.page-container article { margin-right: 16px; }
+
+.info { position: absolute; top: 220px; right: 27px; width: 37px; height: 37px; cursor: pointer; }
+
+.contact-page { max-width: 1075px; position: relative; height: 583px; background: url(../img/contact.jpg) top center no-repeat; }
+.contact-page h1 { position: absolute; top: 58px; left: 44px; font-size: 49px; color: #333333; margin: 0; line-height: 1; }
 @media only screen and (max-width: 480px) { .contact-page h1 { position: static; padding: 20px 0; text-align: center; } }
 .contact-page .contact-form { float: right; margin-top: 51px; margin-right: 51px; width: 342px; }
 @media only screen and (max-width: 480px) { .contact-page .contact-form { float: none; width: 100%; margin: 0; } }
@@ -205,10 +189,10 @@ footer .copyright em { color: #bc9924; }
 @media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ padding: 5px 12px; } }
 .contact-page .contact-form .form-message { background: #666; }
 @media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .contact-form input.wpcf7-submit { display: block; float: right; border: 0; font-family: "museo-sans-rounded"; text-transform: uppercase; font-size: 14px; color: #333; background: #bc9924; line-height: 1; padding: 3px 12px; }
+.contact-page .contact-form input.wpcf7-submit { display: block; float: right; border: 0; font-family: "museo-sans-rounded"; text-transform: uppercase; font-size: 14px; color: #333; background: #ab1f24; line-height: 1; padding: 3px 12px; }
 .contact-page .about-content { background: url(../img/about-content-bg.jpg) top left repeat; padding: 15px; margin-top: 40px; font-family: "museo-sans-rounded"; }
 @media only screen and (max-width: 480px) { .contact-page .about-content { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ margin-top: 11px; } }
-.contact-page .about-content h2 { font-size: 18px; text-transform: uppercase; color: #bc9924; line-height: 1; margin: 0 0 5px 0; }
+.contact-page .about-content h2 { font-size: 18px; text-transform: uppercase; color: #ab1f24; line-height: 1; margin: 0 0 5px 0; }
 .contact-page .about-content p { margin: 0; font-size: 13px; color: #cccccc; }
 
 .portfolio-page { width: 100%; max-width: 100%; }
@@ -228,7 +212,7 @@ footer .copyright em { color: #bc9924; }
 nav.portfolio-sections { margin-top: 23px; }
 nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
 nav.portfolio-sections a:first-child { margin-left: 0; }
-nav.portfolio-sections a.current, nav.portfolio-sections a:hover { color: #bc9924; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
+nav.portfolio-sections a.current, nav.portfolio-sections a:hover { color: #ab1f24; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
 @media only screen and (min-width: 481px) and (max-width: 768px) { nav.portfolio-sections a { letter-spacing: 0px; font-size: 14px; } }
 @media only screen and (max-width: 480px) { nav.portfolio-sections a { float: none; display: block; width: 100%; margin-bottom: 5px; font-size: 24px; } }
 

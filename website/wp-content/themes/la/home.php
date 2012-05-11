@@ -10,10 +10,16 @@ the_post();
 
 ?>
 
-<div class="container">
+<div class="page-container">
     <article>
         <div class="slideshow"></div>
     </article>
+    <div class="info">
+        <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/info-inactive.png" />
+    </div>
+    <div class="redbar">
+
+    </div>
 </div>
 
 <?php get_footer(); ?>
@@ -37,7 +43,8 @@ $( document ).ready( function() {
             var settings = {
                 imageList: imgList,
                 transitionDelay: 6000,
-                transitionDuration: 1000
+                transitionDuration: 1000,
+                autoAdvance: false
             };
             if ( Modernizr.mq( 'only screen and (max-width: 480px)' ) ) {
                 settings.transitionDelay = 3000;

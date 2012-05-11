@@ -1,21 +1,20 @@
 // Variables
 
-$brand1: #bc9924; /* yellow */
+$brand1: #ab1f24; /* red */
 $brand2: #000000; /* green */
 
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $bodyColor: #cccccc;
-$bodyWidth: 966px;
+$bodyWidth: 1075px;
 $linkColor: $brand1;
 $linkHoverColor: $linkColor - #222;
 
-$slideshowHeight: 582px;
+$slideshowHeight: 706px;
 
 // Mixins
 
 @mixin bodyWidth() {
 	//width: 100%;
 	max-width: $bodyWidth;
-	padding: 0 23px;
 }

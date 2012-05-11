@@ -1,7 +1,8 @@
 html, body { height: 100%; }
 
 body {
-	background: url(../img/bg.jpg) center top repeat;
+	background: #333333;
+	color: $bodyColor;
 	#page {
 		//background: url(../img/bg-overlay.png) center top no-repeat;
 		//min-height: 600px;
@@ -28,14 +29,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #page {
-    max-width: $bodyWidth + 46px; // width of the two portfolio navigation widgets
-    //padding: 0 23px;
-    margin: 0 auto;
+    max-width: $bodyWidth; // width of the two portfolio navigation widgets
+    margin: 81px auto 0 auto;
 }
 
 .container {
 	@include bodyWidth();
 	margin: 0 auto;
+	position: relative;
 }
 
 header {
@@ -53,129 +54,52 @@ header {
 }
 footer {
 	@include bodyWidth();
-	width: auto;
-	margin: 23px auto 0 auto;
-	padding-bottom: 65px;
-	height: 91px;
-	position: relative;
+	padding: 16px 0 120px 0;
+	margin: 0 auto;
 
-	@include respond-to( handhelds ) {
-	    height: 151px;
-	}
-
-	.footer-nav {
-	    background: url(../img/footer-top-bg.png) center top no-repeat;
-	    height: 62px;
-	    position: relative;
-	    overflow: hidden;
-	    @include respond-to( handhelds ) {
-	        height: auto;
-	    }
-	}
-
-	.footer-bottom {
-	    background: url(../img/footer-bottom-bg.png) center top no-repeat;
-	    height: 24px;
-	    position: relative;
-	    .nav-arrow {
-            margin: 0 auto;
-	        width: 49px;
-	        height: 12px;
-	        background-position: center top;
-	        background-repeat: no-repeat;
-	        background-image: url(../img/nav-arrow.png);
-	        cursor: pointer;
-	        &.collapsed {
-                background-position: center 100%;
-	        }
-	    }
-	}
-
-	.social-label {
-	    line-height: 60px;
-	    color: $brand1;
-	    font-size: 17px;
-	    position: absolute;
-	    z-index: -1;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    text-align: center;
-	    text-transform: uppercase;
-        em {
-            vertical-align: bottom;
-            font-size: 45px;
-            color: #FBFBFB;
-            margin: 0 19px;
-            font-weight: 100;
-        }
-	}
-
-	.social {
-		float: right;
-		line-height: 62px;
-		a {
-			@include inline-block();
-			background-position: top left;
-			background-repeat: no-repeat;
-			vertical-align: middle;
-			margin-left: 24px;
-			&.getty {
-				width: 95px;
-				height: 17px;
-				background-image: url(../img/getty-icon.png);
-			}
-			&.twitter {
-				width: 37px;
-				height: 26px;
-				background-image: url(../img/twitter-icon.png);
-			}
-			&.flickr {
-				width: 45px;
-				height: 20px;
-				background-image: url(../img/flickr-icon.png);
-			}
-			&:hover {
-				background-position: 0 100%;
-			}
-		}
-		@include respond-to( handhelds ) {
-			float: none;
-			text-align: center;
-			background: url(../img/footer-top-bg.png) center top no-repeat;
-			a { margin: 0 12px; }
-		}
-	}
-	nav {
-		float: left;
-		line-height: 65px;
-		font-size: 17px;
-		a {
-			text-transform: uppercase;
-			margin-right: 11px;
-			color: #666666;
-			&:hover, &.current { color: $linkColor; }
-		}
-		@include respond-to( handhelds ) {
-			float: none;
-			text-align: center;
-			a { margin: 0 6px; }
-		}
-	}
 	.copyright {
-		position: absolute;
-		bottom: 0;
-		right: 0;
+        float: right;
 		font-size: 11px;
 		text-transform: uppercase;
-		color: #999999;
 		em { color: $brand1; }
 		@include respond-to( handhelds ) {
 		    width: 100%;
 			text-align: center;
-			bottom: -30px;
 		}
 	}
+}
+
+// =========================== Red Info Bar ===================================
+
+.redbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $brand1 url(../img/lai-redbar.png) top right no-repeat;
+    width: 16px;
+    height: 706px;
+}
+
+// ============================ Home Page =====================================
+
+.page-container {
+    @include bodyWidth();
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 17px;
+	background: #3d3d3d;
+    article {
+        margin-right: 16px;
+    }
+}
+
+.info {
+    position: absolute;
+    top: 220px;
+    right: 27px;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
 }
 
 // ============================= Contact Page =================================
@@ -198,9 +122,6 @@ footer {
 		top: 58px;
 		left: 44px;
 		font-size: 49px;
-		text-transform: uppercase;
-		font-family: "museo-sans-rounded";
-		font-weight: 100;
 		color: #333333;
 		margin: 0;
 		line-height: 1;

@@ -3,6 +3,7 @@
 */
 
 var navHeight = '62px';
+var animationDuration = 250;
 
 var collapseNav = function() {
     navHeight = $( 'footer .footer-nav' ).height();
@@ -19,7 +20,18 @@ var expandNav = function() {
     $( this ).one( 'click', collapseNav );
 }
 
+var showRedBar = function() {
+    $( '.redbar' ).animate( { 'width' : '64px' }, animationDuration );
+    $( '.redbar' ).one( 'mouseleave', function() {
+        $( '.redbar' ).animate( { 'width' : '16px' }, animationDuration );
+    } );
+}
+
 $( document ).ready( function() {
+
+    $( '.info' ).hover( showRedBar );
+    $( '.info' ).click( showRedBar );
+
 	$( 'header .nav-button' ).click( function() {
 		if ( $( 'nav' ).css( 'height' ) !== '0px' ) {
 			if ( Modernizr.csstransitions ) {
