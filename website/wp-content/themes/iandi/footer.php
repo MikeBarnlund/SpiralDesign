@@ -6,7 +6,7 @@
 			<a class="twitter" target="_blank" href="https://www.twitter.com/indandint"></a>
 			<a class="email" href="mailto:asher@industryandinterest.com"></a>
 			<!-- <a class="vv" target="_blank" href="http://vauntvisual.com"></a> -->
-			<span class="copyright"><em>&copy;</em> COPYRIGHT 2012 ASHER COMPTON.  ALL RIGHTS RESERVED.  <!--I&I IS A <a class="copyright-link" target="_blank" href="http://vauntvisual.com">VAUNT VISUAL</a> PROJECT.--></span>
+			<span class="copyright"><em>&copy;</em> COPYRIGHT 2012 ASHER COMPTON - INDUSTRY AND INTEREST - ALL RIGHTS RESERVED.  <!--I&I IS A <a class="copyright-link" target="_blank" href="http://vauntvisual.com">VAUNT VISUAL</a> PROJECT.--></span>
 			<?php
 			/*
 			if current page == home
