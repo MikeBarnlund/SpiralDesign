@@ -20,6 +20,13 @@ h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
 
+::-moz-selection{
+    background:$brand1 ;color:#000
+}
+::selection{
+    background:$brand1; color:#000
+}
+
 #page {
     max-width: $bodyWidth + 46px; // width of the two portfolio navigation widgets
     //padding: 0 23px;
@@ -216,7 +223,8 @@ footer {
 		input.wpcf7-text, textarea {
 			display: block;
 			margin: 0 0 11px 0;
-			font-family: "ff-netto-web";
+//          font-family: "ff-netto-web";
+            font-family: "museo-sans-rounded";
 			background: #333333;
 			color: #999999;
 			text-transform: uppercase;
@@ -255,7 +263,8 @@ footer {
 			display: block;
 			float: right;
 			border: 0;
-			font-family: 'ff-netto-web';
+//          font-family: 'ff-netto-web';
+            font-family: "museo-sans-rounded";
 			text-transform: uppercase;
 			font-size: 14px;
 			color: #333;
@@ -268,12 +277,12 @@ footer {
 		background: url(../img/about-content-bg.jpg) top left repeat;
 		padding: 15px;
 		margin-top: 40px;
+		font-family: "museo-sans-rounded";
 		@include respond-to( handhelds ) {
 			@include hhform();
 			margin-top: 11px;
 		}
 		h2 {
-			font-family: 'ff-netto-web';
 			font-size: 18px;
 			text-transform: uppercase;
 			color: $brand1;
@@ -328,13 +337,17 @@ footer {
 
             @include respond-to( handhelds ) {
                 &.nav-left {
-                    a { background-image: url(../img/portfolio-nav-left-hh.png); }
+                    a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; }
                 }
                 &.nav-right {
-                    a { background-image: url(../img/portfolio-nav-right-hh.png); }
+                    a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; }
                 }
                 a {
-                    height: 87px;
+                    width: 22px;
+                    height: 90px;
+                    &:hover {
+                        background-position-y: top;
+                    }
                 }
             }
         }
