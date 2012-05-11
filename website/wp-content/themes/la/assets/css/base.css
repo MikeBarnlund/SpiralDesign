@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5 { font-weight: normal; }
 .container { max-width: 966px; padding: 0 23px; margin: 0 auto; }
 
 header { margin-bottom: 28px; }
-header #logo { width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
+header #logo { display: block; width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
 @media only screen and (max-width: 480px) { header #logo { margin-top: 28px; } }
 
 footer { max-width: 966px; padding: 0 23px; width: auto; margin: 23px auto 0 auto; padding-bottom: 65px; height: 91px; position: relative; }
@@ -220,8 +220,8 @@ footer .copyright em { color: #bc9924; }
 .portfolio-page table .portfolio-nav-container.nav-right a { background-image: url(../img/portfolio-nav-right.png); }
 .portfolio-page table .portfolio-nav-container a { display: block; width: 23px; height: 177px; cursor: pointer; background-repeat: no-repeat; background-position: top center; }
 .portfolio-page table .portfolio-nav-container a:hover { background-position: 0 100%; }
-@media only screen and (max-width: 480px) { .portfolio-page table .portfolio-nav-container.nav-left a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; }
-  .portfolio-page table .portfolio-nav-container.nav-right a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; }
+@media only screen and (max-width: 480px) { .portfolio-page table .portfolio-nav-container.nav-left a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; margin-right: 1px; }
+  .portfolio-page table .portfolio-nav-container.nav-right a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; margin-left: 1px; }
   .portfolio-page table .portfolio-nav-container a { width: 22px; height: 90px; }
   .portfolio-page table .portfolio-nav-container a:hover { background-position-y: top; } }
 

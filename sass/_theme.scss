@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5 {
 header {
 	margin-bottom: 28px;
 	#logo {
+	    display: block;
 		width: 110px;
 		height: 110px;
 		background: url(../img/lap-logo.png) top left no-repeat;
@@ -337,10 +338,10 @@ footer {
 
             @include respond-to( handhelds ) {
                 &.nav-left {
-                    a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; }
+                    a { background: url(../img/portfolio-mobile-arrow.png) top left no-repeat; margin-right: 1px; }
                 }
                 &.nav-right {
-                    a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; }
+                    a { background: url(../img/portfolio-mobile-arrow.png) top right no-repeat; margin-left: 1px; }
                 }
                 a {
                     width: 22px;
