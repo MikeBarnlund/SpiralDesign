@@ -1,6 +1,6 @@
 # BEGIN Security
-# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/spiraldesign_trunk/website/.htpasswd
-# AuthUserFile /home/barnlund/public_html/lap/.htpasswd
+# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/loriandrewsinteriors.com/website/.htpasswd
+# AuthUserFile /home/barnlund/public_html/lai/.htpasswd
 # AuthGroupFile /dev/null
 # AuthName "AuthName"
 # AuthType Basic
