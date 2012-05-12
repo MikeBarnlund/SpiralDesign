@@ -217,7 +217,13 @@ footer .copyright a { color: #fff00a; }
 .single-post .post { margin-bottom: 48px; }
 
 .post-navigation { text-align: center; font-size: 0; line-height: 23px; }
-.post-navigation a.next-post, .post-navigation a.previous-post { display: inline-block; *display: inline; zoom: 1; vertical-align: top; width: 74px; height: 23px; line-height: 23px; color: #FFF; font-size: 12px; text-align: center; }
-.post-navigation a.next-post { background: url(../img/next-post.png) top left no-repeat; padding: 0 11px 0 4px; }
-.post-navigation a.previous-post { background: url(../img/previous-post.png) top left no-repeat; padding: 0 4px 0 11px; }
+.post-navigation a { display: inline-block; *display: inline; zoom: 1; vertical-align: top; height: 23px; line-height: 23px; text-transform: uppercase; }
+.post-navigation .next-prev { margin-bottom: 40px; }
+.post-navigation .next-prev a { width: 74px; color: #FFF; font-size: 12px; text-align: center; }
+.post-navigation .next-prev a.next-post { background: url(../img/next-post.png) top left no-repeat; padding: 0 11px 0 4px; }
+.post-navigation .next-prev a.previous-post { background: url(../img/previous-post.png) top left no-repeat; padding: 0 4px 0 11px; }
+.post-navigation .post-names { margin-bottom: 40px; }
+.post-navigation .post-names a { width: 40%; color: #ec038a; font-size: 14px; }
+.post-navigation .post-names a.next-post { text-align: left; }
+.post-navigation .post-names a.previous-post { text-align: right; }
 .post-navigation img { vertical-align: top; padding: 0 7px; }

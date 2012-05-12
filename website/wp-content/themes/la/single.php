@@ -23,26 +23,52 @@ $name = ( $category[0]->name ) ? $category[0]->name : 'uncategorized';
     	get_template_part( 'post' );
     endwhile;
 
-    ?>
+	$title_maxlen = 25;
+
+	$next_post = NULL;
+	$previous_post = NULL;
+
+	$next_post = get_adjacent_post( true, '', false );
+	$previous_post = get_adjacent_post( true, '', true );
+
+	?>
+
     <div class="post-navigation">
         <div class="next-prev">
-            <a class="previous-post">Previous</a>
-            <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/post-navigation-divider.png" />
-            <a class="next-post">Next</a>
+            <?php
+
+    		echo ( !empty( $previous_post ) )
+    			?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post">Previous</a>'
+    			: '';
+    		echo '<img src="' . get_bloginfo( 'template_url' ) . '/assets/img/post-navigation-divider.png" />';
+    		echo ( !empty( $next_post ) )
+    			?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">Next</a>'
+    			: '';
+
+            ?>
         </div>
         <div class="post-names">
+            <?php
 
+    		echo ( !empty( $previous_post ) )
+    			?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post">' .
+    				( strlen( $previous_post->post_title ) > $title_maxlen
+    					? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
+    					: $previous_post->post_title ) .
+    				'</a>'
+    			: '';
+    		echo '<img src="' . get_bloginfo( 'template_url' ) . '/assets/img/post-navigation-divider.png" />';
+    		echo ( !empty( $next_post ) )
+    			?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
+    				( strlen( $next_post->post_title ) > $title_maxlen
+    					? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
+    					: $next_post->post_title ) .
+    				'</a>'
+    			: '';
+
+            ?>
         </div>
     </div>
-    <?php
-
-    //next_post_link( format, link, in_same_cat, excluded_categories );
-
-    previous_post_link( '%link', __( '<span class="meta-nav">←</span> Previous', 'twentyeleven' ) );
-    echo ' | ';
-    next_post_link( '%link', __( 'Next <span class="meta-nav">→</span>', 'twentyeleven' ) );
-
-    ?>
 </div>
 <?php
 

@@ -295,23 +295,39 @@ footer {
     text-align: center;
     font-size: 0;
     line-height: 23px;
-    a.next-post, a.previous-post {
+    a {
         @include inline-block();
         vertical-align: top;
-        width: 89px - 15px;
         height: 23px;
         line-height: 23px;
-        color: #FFF;
-        font-size: 12px;
-        text-align: center;
+        text-transform: uppercase;
     }
-    a.next-post {
-        background: url(../img/next-post.png) top left no-repeat;
-        padding: 0 11px 0 4px;
+    .next-prev {
+        margin-bottom: 40px;
+        a {
+            width: 89px - 15px;
+            color: #FFF;
+            font-size: 12px;
+            text-align: center;
+        }
+        a.next-post {
+            background: url(../img/next-post.png) top left no-repeat;
+            padding: 0 11px 0 4px;
+        }
+        a.previous-post {
+            background: url(../img/previous-post.png) top left no-repeat;
+            padding: 0 4px 0 11px;
+        }
     }
-    a.previous-post {
-        background: url(../img/previous-post.png) top left no-repeat;
-        padding: 0 4px 0 11px;
+    .post-names {
+        margin-bottom: 40px;
+        a {
+            width: 40%;
+            color: #ec038a;
+            font-size: 14px;
+            &.next-post { text-align: left; }
+            &.previous-post { text-align: right; }
+        }
     }
     img { vertical-align: top; padding: 0 7px; }
 }
