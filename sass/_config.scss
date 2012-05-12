@@ -1,12 +1,18 @@
 // Variables
 
-$brand1: #ab1f24; /* red */
-$brand2: #000000; /* green */
+$brand1: #3d9aff; // blue
+
+$workcolor: #b700d7; // purple
+$lostcolor: #ff0000; // red
+$brand4: #d8ff23; // yellow
+$eatscolor: #4abace; // tourquoise
+
+$brand6: #fff00a; // dark yellow
 
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #cccccc;
-$bodyWidth: 1075px;
+$bodyColor: #444;
+$bodyWidth: 960px;
 $linkColor: $brand1;
 $linkHoverColor: $linkColor - #222;
 

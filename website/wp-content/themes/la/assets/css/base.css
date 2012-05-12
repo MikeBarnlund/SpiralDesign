@@ -133,77 +133,69 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-/* red */
-/* green */
 .slideshow { height: 706px; overflow: hidden; position: relative; }
-.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; max-width: 1075px; }
+.slideshow ul { position: absolute; top: 0; left: 0; width: 100%; max-width: 960px; }
 .slideshow ul li { width: 100%; }
 .slideshow ul li img { width: 100%; }
 .slideshow ul li.slideTransition { transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; /** Chrome & Safari **/ -moz-transition: all .5s ease-in-out; /** Firefox **/ -o-transition: all .5s ease-in-out; /** Opera **/ }
 
 html, body { height: 100%; }
 
-body { background: #333333; color: #cccccc; }
-body #page { padding-bottom: 17px; background: #3d3d3d; }
+body { background: #f6f6f6; color: #444444; }
 
-a { color: #ab1f24; text-decoration: none; }
-a:hover { color: #890002; }
+a { color: #3d9aff; text-decoration: none; }
+a:hover { color: #1b78dd; }
 
 em { font-style: normal; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
-::-moz-selection { background: #ab1f24; color: black; }
+::-moz-selection { background: #3d9aff; color: black; }
 
-::selection { background: #ab1f24; color: black; }
+::selection { background: #3d9aff; color: black; }
 
-#page { max-width: 1075px; margin: 81px auto 0 auto; }
-@media only screen and (max-width: 480px) { #page { margin-top: 20px; } }
+#page { max-width: 960px; margin: 0 auto; }
 
-.container { max-width: 1075px; margin: 0 auto; position: relative; }
+.container { max-width: 960px; margin: 0 auto; position: relative; }
 
-header { margin-bottom: 28px; }
-header #logo { display: block; width: 110px; height: 110px; background: url(../img/lap-logo.png) top left no-repeat; margin: 88px auto 0 auto; }
-@media only screen and (max-width: 480px) { header #logo { margin-top: 28px; } }
+header { height: 55px; position: relative; margin-bottom: -2px; background: url(../img/header-bg.png) top left no-repeat; }
+header .header-rt { position: absolute; right: 0; top: 0; width: 14px; height: 55px; background: url(../img/header-bg-rt.png) top center no-repeat; }
+header nav { width: 50%; }
+header nav.main { float: left; position: relative; }
+header nav.main a { display: inline-block; *display: inline; zoom: 1; font-size: 16px; text-transform: uppercase; color: #fff00a; margin-left: 27px; padding: 12px 0 8px 0; cursor: pointer; }
+header nav.main a.categories { background: url(../img/yellow-arrow.png) bottom center no-repeat; }
+header ul.cat-dropdown { position: absolute; left: 7px; top: 60px; display: none; }
+header ul.cat-dropdown li { margin-bottom: 2px; padding: 0 10px 0 0; background: #393939; }
+header ul.cat-dropdown li a { background: #393939; display: block; font-size: 14px; padding: 0 18px 0 18px; line-height: 20px; margin: 0; }
+header ul.cat-dropdown li a.eats { color: #4abace; }
+header ul.cat-dropdown li a.lost { color: red; }
+header ul.cat-dropdown li a.other { color: #b700d7; }
+header ul.cat-dropdown li a:hover { background: #FFF; }
+header ul.cat-dropdown li:hover { background: url(../img/nav-bg.png) top right no-repeat; }
+header nav.social { float: right; text-align: right; line-height: 21px; margin-top: 14px; font-size: 0; }
+header nav.social a { display: inline-block; *display: inline; zoom: 1; height: 21px; background-image: url(../img/social-icons.png); background-repeat: no-repeat; margin-right: 15px; }
+header nav.social a.instagram { width: 19px; background-position: 0 0; }
+header nav.social a.instagram:hover { background-position: 0 -21px; }
+header nav.social a.twitter { width: 29px; background-position: -34px 0; }
+header nav.social a.twitter:hover { background-position: -34px -21px; }
+header nav.social a.flickr { margin-right: 27px; width: 38px; background-position: -77px 0; }
+header nav.social a.flickr:hover { background-position: -77px -21px; }
 
-footer { max-width: 1075px; padding: 16px 0 120px 0; margin: 0 auto; }
-footer .copyright { float: right; font-size: 10px; text-transform: uppercase; }
-footer .copyright em { color: #ab1f24; }
-@media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; } }
+#logo { display: block; min-height: 392px; background: url(../img/tcd-logo.png) top left no-repeat; margin: 0 auto; }
+@media only screen and (max-width: 480px) { #logo { margin-top: 28px; } }
 
-nav { width: 210px; position: absolute; top: 10%; left: 10%; font-size: 0; }
-nav .nav-item { text-align: center; line-height: 1; padding: 17px 0 14px 0; }
-nav .nav-item a { color: #333333; text-transform: uppercase; font-size: 15px; }
-nav .nav-item a:hover { color: #ab1f24; }
-nav .portfolio-nav { font-size: 0; }
-nav .portfolio-nav a { cursor: pointer; display: inline-block; *display: inline; zoom: 1; }
-nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; }
-@media only screen and (max-width: 420px) { nav { width: 100%; text-align: center; top: 0; left: 0; }
-  nav .nav-item { padding: 13px 0 10px; }
-  nav .nav-item a { color: #FFFFFF; font-size: 25px; text-shadow: 0 0 3px #000000; }
-  nav .portfolio-nav img.logo { width: 30%; } }
+footer { height: 53px; position: relative; background: url(../img/header-bg.png) left 1px no-repeat; padding: 1px 0; border-top: 1px solid #545454; border-bottom: 1px solid #545454; }
+footer .footer-rt { position: absolute; right: 0; top: 1px; width: 14px; height: 53px; background: url(../img/header-bg-rt.png) top left no-repeat; }
+footer .copyright { float: right; font-size: 12px; text-transform: uppercase; line-height: 52px; color: #FFF; margin-right: 27px; }
+footer .copyright em { color: #fff00a; }
+footer .copyright a { color: #fff00a; }
 
-.contact-page nav { top: 18%; left: 41px; }
-
-.redbar { position: absolute; top: 0; right: 0px; width: 0px; z-index: 10; overflow: hidden; background: #ab1f24 url(../img/lai-redbar.png) top right no-repeat; padding: 0 0 0 16px; height: 100%; }
-.redbar .info-logo, .redbar .twitter, .redbar .mail { background-image: url(../img/social-logos.png); background-repeat: no-repeat; width: 37px; display: block; margin-top: 20px; }
-.redbar .info-logo { height: 37px; }
-.redbar .twitter { background-position: 0 -38px; height: 26px; }
-.redbar .twitter:hover { background-position: 0 -126px; }
-.redbar .mail { background-position: 0 -65px; height: 23px; }
-.redbar .mail:hover { background-position: 0 -153px; }
-@media only screen and (max-width: 420px) { .redbar { padding: 0; }
-  .redbar .info-logo, .redbar .twitter, .redbar .mail { margin-left: auto; margin-right: auto; } }
-
-.page-container { max-width: 1075px; margin: 0 auto; position: relative; }
+.page-container { max-width: 960px; margin: 0 auto; position: relative; }
 .page-container article { margin-right: 16px; }
 @media only screen and (max-width: 420px) { .page-container article { margin-right: 0; } }
 
-.info { position: absolute; top: 220px; right: 27px; width: 37px; height: 37px; cursor: pointer; z-index: 1; }
-@media only screen and (max-width: 420px) { .info { right: 8px; top: 22px; } }
-
-.contact-page { max-width: 1075px; position: relative; min-height: 724px; background: #333333 url(../img/contact.jpg) top center no-repeat; }
-.contact-page h1 { position: absolute; left: 41px; bottom: 330px; font-size: 29px; color: #ab1f24; margin: 0; line-height: 1; text-transform: uppercase; }
+.contact-page { max-width: 960px; position: relative; min-height: 724px; background: #333333 url(../img/contact.jpg) top center no-repeat; }
+.contact-page h1 { position: absolute; left: 41px; bottom: 330px; font-size: 29px; color: #3d9aff; margin: 0; line-height: 1; text-transform: uppercase; }
 .contact-page .contact-form { width: 271px; }
 @media only screen and (max-width: 480px) { .contact-page .contact-form { float: none; width: 100%; margin: 0; } }
 .contact-page .contact-form p { margin: 0 0 11px 0; }
@@ -219,7 +211,7 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
 .contact-page .wpcf7 { position: absolute; left: 41px; bottom: 16px; }
 .contact-page .about-content { font-family: "proxima-nova-alt"; position: absolute; right: 57px; bottom: 34px; width: 271px; }
 @media only screen and (max-width: 480px) { .contact-page .about-content { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .about-content h2 { font-size: 19px; text-transform: uppercase; color: #ab1f24; line-height: 1; text-align: center; margin: 0; background: url(../img/about-bg.png) center bottom no-repeat; padding-bottom: 11px; }
+.contact-page .about-content h2 { font-size: 19px; text-transform: uppercase; color: #3d9aff; line-height: 1; text-align: center; margin: 0; background: url(../img/about-bg.png) center bottom no-repeat; padding-bottom: 11px; }
 .contact-page .about-content section { background: #666666; margin: 0; font-size: 12px; color: #cccccc; text-transform: uppercase; padding: 22px; }
 @media only screen and (max-width: 651px) { .contact-page .contact-form { width: 100%; }
   .contact-page nav { width: 100%; text-align: center; top: 0; left: 0; position: static; margin-top: 20px; }
@@ -227,48 +219,3 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
   .contact-page nav .nav-item a { color: #FFFFFF; font-size: 18px; text-shadow: 0 0 3px #000000; }
   .contact-page h1 { left: auto; bottom: auto; position: static; margin: 20px auto; width: 271px; text-align: left; }
   .contact-page .wpcf7, .contact-page .about-content { position: static; width: 271px; margin: 0 auto 20px auto; } }
-
-.portfolio-page { position: relative; }
-.portfolio-page .portfolio-navbar { padding: 28px 28px 11px 28px; line-height: 56px; }
-.portfolio-page .portfolio-navbar .logo { padding-right: 20px; }
-.portfolio-page .portfolio-navbar ul { display: inline-block; *display: inline; zoom: 1; }
-.portfolio-page .portfolio-navbar ul li { display: inline-block; *display: inline; zoom: 1; }
-.portfolio-page .portfolio-navbar ul li a { text-transform: uppercase; margin-right: 14px; color: #CCC; font-size: 15px; }
-.portfolio-page .portfolio-navbar ul li a:hover { border-bottom: 3px solid #ab1f24; }
-.portfolio-page .portfolio-navbar .slideshow-nav { float: right; font-size: 0; }
-.portfolio-page .portfolio-navbar .slideshow-nav a { display: inline-block; *display: inline; zoom: 1; vertical-align: middle; background-image: url(../img/portfolio-nav-bg.png); background-repeat: no-repeat; width: 18px; height: 28px; cursor: pointer; margin-left: 10px; }
-.portfolio-page .portfolio-navbar .slideshow-nav a.nav-left { background-position: 0 0; }
-.portfolio-page .portfolio-navbar .slideshow-nav a.nav-left:hover { background-position: 0 -56px; }
-.portfolio-page .portfolio-navbar .slideshow-nav a.nav-right { background-position: 0 -28px; }
-.portfolio-page .portfolio-navbar .slideshow-nav a.nav-right:hover { background-position: 0 -84px; }
-@media only screen and (max-width: 423px) { .portfolio-page .portfolio-navbar { padding: 18px 18px 0; }
-  .portfolio-page .portfolio-navbar ul { display: block; text-align: center; margin-top: 18px; border-top: 1px solid #555; line-height: 1; padding-top: 18px; }
-  .portfolio-page .portfolio-navbar ul li a { margin: 0 14px; } }
-.portfolio-page .slideshow-wrapper { position: relative; }
-.portfolio-page table { width: 100%; }
-.portfolio-page table td { padding: 0; }
-.portfolio-page table td.slideshow ul { display: block; position: relative; padding: 0; }
-
-nav.portfolio-sections { margin-top: 23px; }
-nav.portfolio-sections a { float: left; width: 33%; margin-left: 0.3333333%; color: #999999; text-align: center; text-transform: uppercase; font-size: 28px; background: url(../img/portfolio-nav-bg.png) top left repeat; letter-spacing: 0.35em; line-height: 1; padding: 6px 0 6px 0; }
-nav.portfolio-sections a:first-child { margin-left: 0; }
-nav.portfolio-sections a.current, nav.portfolio-sections a:hover { color: #ab1f24; background: url(../img/portfolio-nav-selected-bg.png) top left repeat; }
-@media only screen and (min-width: 481px) and (max-width: 768px) { nav.portfolio-sections a { letter-spacing: 0px; font-size: 14px; } }
-@media only screen and (max-width: 480px) { nav.portfolio-sections a { float: none; display: block; width: 100%; margin-bottom: 5px; font-size: 24px; } }
-
-div.portfolio-slat { text-align: center; height: 157px; background-position: center center; background-repeat: no-repeat; margin-bottom: 32px; position: relative; }
-@media only screen and (max-width: 480px) { div.portfolio-slat { height: auto; } }
-div.portfolio-slat .portfolio-button-wrapper { position: absolute; bottom: -19px; width: 100%; }
-div.portfolio-slat .portfolio-selection-button { width: 172px; height: 49px; position: relative; margin: 0 auto; }
-div.portfolio-slat .portfolio-selection-button .grey-top, div.portfolio-slat .portfolio-selection-button .grey-bottom { overflow: hidden; position: relative; }
-div.portfolio-slat .portfolio-selection-button .grey-top { width: 172px; height: 30px; }
-div.portfolio-slat .portfolio-selection-button .grey-top img { position: absolute; left: 0; bottom: -30px; }
-div.portfolio-slat .portfolio-selection-button .grey-bottom { width: 172px; height: 19px; }
-div.portfolio-slat .portfolio-selection-button .grey-bottom img { position: absolute; left: 0; top: -19px; }
-div.portfolio-slat .portfolio-selection-button .yellow { position: absolute; bottom: 0; left: 0; width: 172px; height: 19px; z-index: 1; }
-div.portfolio-slat .portfolio-selection-button .yellow img { display: block; }
-@media only screen and (max-width: 480px) { div.portfolio-slat .portfolio-selection-button { display: none; } }
-div.portfolio-slat a { display: block; line-height: 153px; height: 100%; color: #FFF; font-family: 'museo-sans-rounded'; font-weight: 100; font-size: 99px; text-transform: uppercase; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-@media only screen and (min-width: 481px) and (max-width: 768px) { div.portfolio-slat a { font-size: 70px; } }
-@media only screen and (max-width: 480px) { div.portfolio-slat a { font-size: 30px; line-height: 60px; text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); } }
-div.portfolio-slat a:hover { background-position: center 100%; text-shadow: none; background: #d3ac29; background: rgba(211, 172, 41, 0.5); }

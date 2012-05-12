@@ -1,11 +1,10 @@
 html, body { height: 100%; }
 
 body {
-	background: #333333;
+	background: #f6f6f6;
 	color: $bodyColor;
 	#page {
-    	padding-bottom: 17px;
-    	background: #3d3d3d;
+
 	}
 }
 
@@ -30,10 +29,7 @@ h1, h2, h3, h4, h5 {
 
 #page {
     max-width: $bodyWidth; // width of the two portfolio navigation widgets
-    margin: 81px auto 0 auto;
-    @include respond-to( handhelds ) {
-        margin-top: 20px;
-    }
+    margin: 0 auto;
 }
 
 .container {
@@ -43,130 +39,129 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-	margin-bottom: 28px;
-	#logo {
-	    display: block;
-		width: 110px;
-		height: 110px;
-		background: url(../img/lap-logo.png) top left no-repeat;
-		margin: 88px auto 0 auto;
-		@include respond-to( handhelds ) {
-			margin-top: 28px;
-		}
+    height: 55px;
+    position: relative;
+    margin-bottom: -2px;
+    background: url(../img/header-bg.png) top left no-repeat;
+    .header-rt {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 14px;
+        height: 55px;
+        background: url(../img/header-bg-rt.png) top center no-repeat;
+    }
+    nav { width: 50%; }
+    nav.main {
+        float: left;
+        position: relative;
+        a {
+            @include inline-block();
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $brand6;
+            margin-left: 27px;
+            padding: 12px 0 8px 0;
+            cursor: pointer;
+            &.categories {
+                background: url(../img/yellow-arrow.png) bottom center no-repeat;
+            }
+        }
+    }
+    ul.cat-dropdown {
+        position: absolute;
+        left: 7px;
+        top: 55px + 5px;
+        display: none;
+        li {
+            margin-bottom: 2px;
+            padding: 0 10px 0 0;
+            background: #393939;
+            a {
+                background: #393939;
+                display: block;
+                font-size: 14px;
+                padding: 0 18px 0 18px;
+                line-height: 20px;
+                margin: 0;
+                &.eats { color: $eatscolor; }
+                &.lost { color: $lostcolor; }
+                &.other { color: $workcolor; }
+                &:hover { background: #FFF; }
+            }
+            &:hover {
+                background: url(../img/nav-bg.png) top right no-repeat;
+            }
+        }
+    }
+    nav.social {
+        float: right;
+        text-align: right;
+        line-height: 21px;
+        margin-top: 14px;
+        font-size: 0;
+        a {
+            @include inline-block();
+            height: 21px;
+            background-image: url(../img/social-icons.png);
+            background-repeat: no-repeat;
+            margin-right: 15px;
+            &.instagram {
+                width: 19px;
+                background-position: 0 0;
+                &:hover { background-position: 0 -21px; }
+            }
+            &.twitter {
+                width: 29px;
+                background-position: -34px 0;
+                &:hover { background-position: -34px -21px; }
+            }
+            &.flickr {
+                margin-right: 27px;
+                width: 38px;
+                background-position: -77px 0;
+                &:hover { background-position: -77px -21px; }
+            }
+
+        }
+    }
+}
+#logo {
+    display: block;
+    min-height: 392px;
+	background: url(../img/tcd-logo.png) top left no-repeat;
+	margin: 0 auto;
+	@include respond-to( handhelds ) {
+		margin-top: 28px;
 	}
 }
 footer {
-	@include bodyWidth();
-	padding: 16px 0 120px 0;
-	margin: 0 auto;
+    height: 53px;
+    position: relative;
+    background: url(../img/header-bg.png) left 1px no-repeat;
+    padding: 1px 0;
+    border-top: 1px solid #545454;
+    border-bottom: 1px solid #545454;
+    .footer-rt {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        width: 14px;
+        height: 53px;
+        background: url(../img/header-bg-rt.png) top left no-repeat;
+    }
 
 	.copyright {
         float: right;
-		font-size: 10px;
+		font-size: 12px;
 		text-transform: uppercase;
-		em { color: $brand1; }
-		@include respond-to( handhelds ) {
-		    width: 100%;
-			text-align: center;
-		}
+		line-height: 52px;
+		color: #FFF;
+		margin-right: 27px;
+		em { color: $brand6; }
+		a { color: $brand6; }
 	}
 }
-
-// =========================== Navigation =====================================
-
-nav {
-    width: 210px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 0;
-    .nav-item {
-        text-align: center;
-        line-height: 1;
-        padding: 17px 0 14px 0;
-        a {
-            color: #333333;
-            text-transform: uppercase;
-            font-size: 15px;
-            &:hover {
-                color: $brand1;
-            }
-        }
-    }
-    .portfolio-nav {
-        font-size: 0;
-        a {
-            cursor: pointer;
-            @include inline-block();
-        }
-        img.logo {
-            @include inline-block();
-        }
-    }
-
-    @include respond-to( 'max-width: 420px' ) {
-        width: 100%;
-        text-align: center;
-        top: 0; left: 0;
-
-        .nav-item {
-            padding: 13px 0 10px;
-            a {
-                color: #FFFFFF;
-                font-size: 25px;
-                text-shadow: 0 0 3px #000000;
-            }
-        }
-
-        .portfolio-nav {
-            img.logo { width: 30%; }
-        }
-    }
-}
-
-.contact-page nav {
-    top: 18%;
-    left: 41px;
-}
-
-// =========================== Red Info Bar ===================================
-
-.redbar {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 0px;
-    z-index: 10;
-    overflow: hidden;
-    background: $brand1 url(../img/lai-redbar.png) top right no-repeat;
-    padding: 0 0 0 16px;
-    height: 100%;
-    .info-logo, .twitter, .mail {
-        background-image: url(../img/social-logos.png);
-        background-repeat: no-repeat;
-        width: 37px;
-        display: block;
-        margin-top: 20px;
-    }
-    .info-logo {
-        height: 37px;
-    }
-    .twitter {
-        background-position: 0 -38px;
-        height: 26px;
-        &:hover { background-position: 0 -126px; }
-    }
-    .mail {
-        background-position: 0 -65px;
-        height: 23px;
-        &:hover { background-position: 0 -153px; }
-    }
-    @include respond-to( 'max-width: 420px' ) {
-        padding: 0;
-        .info-logo, .twitter, .mail { margin-left: auto; margin-right: auto; }
-    }
-}
-
 // ============================ Home Page =====================================
 
 .page-container {
@@ -178,20 +173,6 @@ nav {
         @include respond-to( 'max-width: 420px' ) {
             margin-right: 0;
         }
-    }
-}
-
-.info {
-    position: absolute;
-    top: 220px;
-    right: 27px;
-    width: 37px;
-    height: 37px;
-    cursor: pointer;
-    z-index: 1;
-    @include respond-to( 'max-width: 420px' ) {
-        right: 8px;
-        top: 22px;
     }
 }
 
@@ -353,214 +334,5 @@ nav {
             width: $contactFormWidth;
             margin: 0 auto 20px auto;
         }
-	}
-}
-
-// ========================== Portfolio Navigation ============================
-
-.portfolio-page {
-    position: relative;
-
-    .portfolio-navbar {
-        padding: 28px 28px 28px - 17px 28px;
-        line-height: 56px;
-        .logo {
-            padding-right: 20px;
-        }
-        ul {
-            @include inline-block();
-            li {
-                @include inline-block();
-                a {
-                    //@include inline-block();
-                    text-transform: uppercase;
-                    margin-right: 14px;
-                    color: #CCC;
-                    font-size: 15px;
-                    &:hover {
-                        border-bottom: 3px solid $brand1;
-                    }
-                }
-            }
-        }
-        .slideshow-nav {
-            float: right;
-            font-size: 0;
-            a {
-                @include inline-block();
-                vertical-align: middle;
-                background-image: url(../img/portfolio-nav-bg.png);
-                background-repeat: no-repeat;
-                width: 18px;
-                height: 28px;
-                cursor: pointer;
-                margin-left: 10px;
-                &.nav-left {
-                    background-position: 0 0;
-                    &:hover {
-                        background-position: 0 -56px;
-                    }
-                }
-                &.nav-right {
-                    background-position: 0 -28px;
-                    &:hover {
-                        background-position: 0 -84px;
-                    }
-                }
-            }
-        }
-        @include respond-to( 'max-width: 423px' ) {
-            padding: 18px 18px 0;
-            ul {
-                display: block;
-                text-align: center;
-                margin-top: 18px;
-                border-top: 1px solid #555;
-                line-height: 1;
-                padding-top: 18px;
-                li a {
-                    margin: 0 14px;
-                }
-            }
-        }
-    }
-
-    .slideshow-wrapper {
-        position: relative;
-    }
-
-    table {
-        width: 100%;
-        td {
-            padding: 0;
-            &.slideshow {
-                ul {
-                    display: block;
-                    position: relative;
-                    padding: 0;
-                }
-            }
-        }
-    }
-}
-nav.portfolio-sections {
-	margin-top: 23px;
-	a {
-		float: left;
-		width: 33%;
-		margin-left: 0.3333333%;
-		color: #999999;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 28px;
-		background: url(../img/portfolio-nav-bg.png) top left repeat;
-		letter-spacing: 0.35em;
-		line-height: 1;
-		padding: 6px 0 6px 0;
-		&:first-child {
-			margin-left: 0;
-		}
-		&.current, &:hover {
-			color: $brand1;
-			background: url(../img/portfolio-nav-selected-bg.png) top left repeat;
-		}
-		@include respond-to( mediumscreens ) {
-			letter-spacing: 0px;
-			font-size: 14px;
-		}
-		@include respond-to( handhelds ) {
-			float: none;
-			display: block;
-			width: 100%;
-			margin-bottom: 5px;
-			font-size: 24px;
-		}
-	}
-}
-
-// ================================ Portfolio Slat ============================
-
-div.portfolio-slat {
-	text-align: center;
-
-	height: 157px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom: 32px;
-	position: relative;
-
-	@include respond-to( handhelds ) {
-	    height: auto;
-	}
-
-	.portfolio-button-wrapper {
-	    position: absolute;
-	    bottom: -19px;
-        width: 100%;
-	}
-
-	.portfolio-selection-button {
-	    width: 172px;
-	    height: 49px;
-	    position: relative;
-	    margin: 0 auto;
-
-	    .grey-top, .grey-bottom { overflow: hidden; position: relative; }
-        .grey-top {
-            width: 172px;
-            height: 30px;
-            img {
-                position: absolute;
-                left: 0;
-                bottom: -30px;
-            }
-        }
-        .grey-bottom {
-            width: 172px;
-            height: 19px;
-            img {
-                position: absolute;
-                left: 0;
-                top: -19px;
-            }
-        }
-        .yellow {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 172px;
-            height: 19px;
-            z-index: 1;
-            img { display: block; }
-        }
-
-        @include respond-to( handhelds ) { display: none; }
-	}
-
-	a {
-	    display: block;
-	    line-height: 153px;
-    	height: 100%;
-	    color: #FFF;
-    	font-family: 'museo-sans-rounded';
-    	font-weight: 100;
-    	font-size: 99px;
-    	text-transform: uppercase;
-    	text-shadow: 0 0 3px rgba(0,0,0,0.3);
-
-    	@include respond-to( mediumscreens ) {
-    		font-size: 70px;
-    	}
-    	@include respond-to( handhelds ) {
-            font-size: 30px;
-            line-height: 60px;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5);
-    	}
-    	&:hover {
-    		background-position: center 100%;
-    		text-shadow: none;
-    		background: #d3ac29;
-    		background: rgba(211,172,41,.5);
-    	}
 	}
 }
