@@ -126,14 +126,11 @@ header {
         }
     }
 }
-#logo {
-    display: block;
-    min-height: 392px;
-	background: url(../img/tcd-logo.png) top left no-repeat;
-	margin: 0 auto;
-	@include respond-to( handhelds ) {
-		margin-top: 28px;
-	}
+.logo {
+    .logo-bottom {
+        height: 22px;
+        background: url(../img/logo-bottom.png) bottom center no-repeat;
+    }
 }
 footer {
     height: 53px;

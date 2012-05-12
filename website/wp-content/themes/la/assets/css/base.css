@@ -181,8 +181,7 @@ header nav.social a.twitter:hover { background-position: -34px -21px; }
 header nav.social a.flickr { margin-right: 27px; width: 38px; background-position: -77px 0; }
 header nav.social a.flickr:hover { background-position: -77px -21px; }
 
-#logo { display: block; min-height: 392px; background: url(../img/tcd-logo.png) top left no-repeat; margin: 0 auto; }
-@media only screen and (max-width: 480px) { #logo { margin-top: 28px; } }
+.logo .logo-bottom { height: 22px; background: url(../img/logo-bottom.png) bottom center no-repeat; }
 
 footer { height: 53px; position: relative; background: url(../img/header-bg.png) left 1px no-repeat; padding: 1px 0; border-top: 1px solid #545454; border-bottom: 1px solid #545454; }
 footer .footer-rt { position: absolute; right: 0; top: 1px; width: 14px; height: 53px; background: url(../img/header-bg-rt.png) top left no-repeat; }

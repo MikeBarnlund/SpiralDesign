@@ -16,7 +16,7 @@
                 <a target="_blank" class="getty" rel="Getty Images" title="Lori Andrews Photography on Getty Images" href="http://www.gettyimages.ca/Search/Search.aspx?assettype=image&family=creative&artist=Lori+Andrews&Language=en-US"></a>
             </div>
         </div> -->
-        <div class="copyright"><em>&copy;</em> 2012 The 10 Cent Designer <em>|</em> Blog by <a target="_blank" href="http://vauntvisual.com">VV</a> <em>|</em> <a href="/contact">Contact</a></div>
+        <div class="copyright"><em>&copy;</em> 2012 The 10 Cent Designer <em>|</em> Blog by <a target="_blank" href="http://vauntvisual.com">VV</a> <em>|</em> <a href="mailto:lori@the10centdesigner.com">Contact</a></div>
         <div class="footer-rt"></div>
     </footer>
 </div> <!-- /#page -->
