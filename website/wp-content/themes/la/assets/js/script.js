@@ -11,5 +11,19 @@ $( document ).ready( function() {
                 } );
             } );
         }
-    } )
+    } );
+
+	$( document ).ready( function() {
+		$( '.post-footer a.twitter' ).click( function() {
+			var url = $( this ).attr( 'href' );
+			window.open( url, "Tweet", "height=246,width=780,resizable=1" );
+			return false;
+		} );
+		$( '.post-footer a.facebook' ).click( function() {
+			var url = $( this ).attr( 'href' );
+			window.open( url, "Share on Facebook", "height=267,width=640,resizable=1" );
+			return false;
+		} );
+	} );
+
 } );

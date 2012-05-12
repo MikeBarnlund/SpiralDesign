@@ -150,9 +150,9 @@ em { font-style: normal; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
-::-moz-selection { background: #3d9aff; color: black; }
+::-moz-selection { background: #4abace; color: white; }
 
-::selection { background: #3d9aff; color: black; }
+::selection { background: #4abace; color: white; }
 
 #page { max-width: 960px; margin: 0 auto; }
 
@@ -181,6 +181,8 @@ header nav.social a.twitter:hover { background-position: -34px -21px; }
 header nav.social a.flickr { margin-right: 27px; width: 38px; background-position: -77px 0; }
 header nav.social a.flickr:hover { background-position: -77px -21px; }
 
+.logo { margin-bottom: 31px; }
+.logo img { max-width: 100%; }
 .logo .logo-bottom { height: 22px; background: url(../img/logo-bottom.png) bottom center no-repeat; }
 
 footer { height: 53px; position: relative; background: url(../img/header-bg.png) left 1px no-repeat; padding: 1px 0; border-top: 1px solid #545454; border-bottom: 1px solid #545454; }
@@ -189,32 +191,18 @@ footer .copyright { float: right; font-size: 12px; text-transform: uppercase; li
 footer .copyright em { color: #fff00a; }
 footer .copyright a { color: #fff00a; }
 
-.page-container { max-width: 960px; margin: 0 auto; position: relative; }
-.page-container article { margin-right: 16px; }
-@media only screen and (max-width: 420px) { .page-container article { margin-right: 0; } }
-
-.contact-page { max-width: 960px; position: relative; min-height: 724px; background: #333333 url(../img/contact.jpg) top center no-repeat; }
-.contact-page h1 { position: absolute; left: 41px; bottom: 330px; font-size: 29px; color: #3d9aff; margin: 0; line-height: 1; text-transform: uppercase; }
-.contact-page .contact-form { width: 271px; }
-@media only screen and (max-width: 480px) { .contact-page .contact-form { float: none; width: 100%; margin: 0; } }
-.contact-page .contact-form p { margin: 0 0 11px 0; }
-.contact-page .contact-form input.wpcf7-text, .contact-page .contact-form textarea { display: block; margin: 0 0 11px 0; font-family: "proxima-nova-alt"; background: #3d3d3d; color: #cccccc; text-transform: uppercase; line-height: 1.2; font-size: 14px; border: 0; }
-.contact-page .contact-form input.wpcf7-text { padding: 8px 15px; width: 241px; }
-.contact-page .contact-form textarea { padding: 13px 15px; width: 241px; height: 141px; margin: 0; }
-@media only screen and (max-width: 480px) { .contact-page .contact-form textarea { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ width: 100%; padding: 10px 12px; } }
-.contact-page .contact-form .wpcf7-form-control-wrap.your-message { display: block; padding-bottom: 18px; background: url(../img/message-bottom.png) bottom center no-repeat; }
-@media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ padding: 5px 12px; } }
-@media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .contact-form input.wpcf7-submit { display: block; width: 100%; text-align: center; border: 0; font-family: "proxima-nova-alt"; text-transform: uppercase; font-size: 14px; color: #333333; line-height: 1; background: none; }
-.contact-page .contact-form .ajax-loader { display: none; }
-.contact-page .wpcf7 { position: absolute; left: 41px; bottom: 16px; }
-.contact-page .about-content { font-family: "proxima-nova-alt"; position: absolute; right: 57px; bottom: 34px; width: 271px; }
-@media only screen and (max-width: 480px) { .contact-page .about-content { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .about-content h2 { font-size: 19px; text-transform: uppercase; color: #3d9aff; line-height: 1; text-align: center; margin: 0; background: url(../img/about-bg.png) center bottom no-repeat; padding-bottom: 11px; }
-.contact-page .about-content section { background: #666666; margin: 0; font-size: 12px; color: #cccccc; text-transform: uppercase; padding: 22px; }
-@media only screen and (max-width: 651px) { .contact-page .contact-form { width: 100%; }
-  .contact-page nav { width: 100%; text-align: center; top: 0; left: 0; position: static; margin-top: 20px; }
-  .contact-page nav .nav-item { padding: 9px 0 6px; }
-  .contact-page nav .nav-item a { color: #FFFFFF; font-size: 18px; text-shadow: 0 0 3px #000000; }
-  .contact-page h1 { left: auto; bottom: auto; position: static; margin: 20px auto; width: 271px; text-align: left; }
-  .contact-page .wpcf7, .contact-page .about-content { position: static; width: 271px; margin: 0 auto 20px auto; } }
+.post { margin-bottom: 65px; position: relative; }
+.post .post-header { background: #e7e8e9; margin-bottom: 18px; padding: 0 20px; }
+.post .post-header .post-meta { float: left; border-right: 1px solid #FFF; margin-right: 20px; margin-left: -20px; text-align: right; text-transform: uppercase; line-height: 1; padding: 7px 18px 9px 44px; position: relative; height: 30px; }
+.post .post-header .post-meta img { position: absolute; top: 0; left: 0; }
+.post .post-header .post-meta .post-category { font-size: 15px; color: #393939; padding-bottom: 4px; }
+.post .post-header .post-meta .post-time { font-size: 13px; color: #FFF; }
+.post .post-header .post-meta.eats { background: #4abace; }
+.post .post-header .post-title { line-height: 46px; color: #666666; font-size: 23px; text-transform: uppercase; }
+.post .post-content { font-family: helvetica, arial, sans-serif; color: #666666; font-size: 12px; line-height: 1.9; }
+.post .post-content p { margin: 0; line-height: 20px; }
+.post .post-footer { position: relative; margin-top: 17px; background: url(../img/post-footer-line.png) center center no-repeat; height: 26px; font-size: 0; }
+.post .post-footer a.twitter { background: #f6f6f6 url(../img/footer-twitter.png) center center no-repeat; width: 27px; height: 26px; display: inline-block; *display: inline; zoom: 1; padding-right: 9px; }
+.post .post-footer a.facebook { background: #f6f6f6 url(../img/footer-facebook.png) center center no-repeat; width: 16px; height: 26px; display: inline-block; *display: inline; zoom: 1; padding-right: 12px; }
+.post a.more-link { font-family: 'automate'; position: absolute; bottom: 1px; right: 0; background: #545454 url(../img/read-more-bg.png) center left no-repeat; height: 23px; color: #fff00a; font-size: 12px; line-height: 23px; padding: 0 12px 0 23px; text-transform: uppercase; z-index: 1; }
+.post img { max-width: 100%; display: inline-block; *display: inline; zoom: 1; }

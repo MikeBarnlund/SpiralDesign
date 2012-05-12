@@ -21,10 +21,10 @@ h1, h2, h3, h4, h5 {
 }
 
 ::-moz-selection{
-    background:$brand1 ;color:#000
+    background:$eatscolor; color:#FFF
 }
 ::selection{
-    background:$brand1; color:#000
+    background:$eatscolor; color:#FFF
 }
 
 #page {
@@ -127,10 +127,12 @@ header {
     }
 }
 .logo {
+    img { max-width: 100%; }
     .logo-bottom {
         height: 22px;
         background: url(../img/logo-bottom.png) bottom center no-repeat;
     }
+    margin-bottom: 31px;
 }
 footer {
     height: 53px;
@@ -159,177 +161,95 @@ footer {
 		a { color: $brand6; }
 	}
 }
-// ============================ Home Page =====================================
 
-.page-container {
-    @include bodyWidth();
-	margin: 0 auto;
-	position: relative;
-    article {
-        margin-right: 16px;
-        @include respond-to( 'max-width: 420px' ) {
-            margin-right: 0;
+// ================================== Post ====================================
+
+.post {
+    $postHeight: 46px;
+    margin-bottom: 65px;
+    position: relative;
+
+    .post-header {
+        background: #e7e8e9;
+        margin-bottom: 18px;
+        padding: 0 20px;
+        .post-meta {
+            float: left;
+            border-right: 1px solid #FFF;
+            margin-right: 20px;
+            margin-left: -20px;
+            text-align: right;
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 7px 18px 9px 44px;
+            position: relative;
+            height: $postHeight - 16px;
+            img { position: absolute; top: 0; left: 0; }
+            .post-category {
+                font-size: 15px;
+                color: #393939;
+                padding-bottom: 4px;
+            }
+            .post-time {
+                font-size: 13px;
+                color: #FFF;
+            }
+            &.eats { background: $eatscolor; }
+        }
+        .post-title {
+            line-height: $postHeight;
+            color: #666666;
+            font-size: 23px;
+            text-transform: uppercase;
         }
     }
-}
-
-// ============================= Contact Page =================================
-
-@mixin hhform() {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	@include border-box();
-}
-
-.contact-page {
-	$contactFormWidth: 271px;
-	@include bodyWidth();
-	position: relative;
-	min-height: 724px;
-	background: #333 url(../img/contact.jpg) top center no-repeat;
-	h1 {
-		position: absolute;
-		left: 41px;
-        bottom: 330px;
-		font-size: 29px;
-		color: $brand1;
-		margin: 0;
-		line-height: 1;
-		text-transform: uppercase;
-	}
-	.contact-form {
-		width: $contactFormWidth;
-		@include respond-to( handhelds ) {
-			float: none;
-			width: 100%;
-			margin: 0;
-		}
-		p { margin: 0 0 11px 0; }
-		input.wpcf7-text, textarea {
-			display: block;
-			margin: 0 0 11px 0;
-//          font-family: "ff-netto-web";
-            font-family: "proxima-nova-alt";
-			background: #3d3d3d;
-			color: #cccccc;
-			text-transform: uppercase;
-			line-height: 1.2;
-			font-size: 14px;
-			border: 0;
-		}
-		input.wpcf7-text {
-			padding: 8px 15px;
-			width: $contactFormWidth - ( 2 * 15px );
-		}
-		textarea {
-			padding: 13px 15px;
-			width: $contactFormWidth - ( 2 * 15px );
-			height: 141px;
-			margin: 0;
-			@include respond-to( handhelds ) {
-				@include border-box();
-				width: 100%;
-				padding: 10px 12px;
-			}
-		}
-		.wpcf7-form-control-wrap.your-message {
-		    display: block;
-		    padding-bottom: 18px;
-		    background: url(../img/message-bottom.png) bottom center no-repeat;
-		}
-		input.wpcf7-text {
-			@include respond-to( handhelds ) {
-				@include hhform();
-				padding: 5px 12px;
-			}
-		}
-		.form-message {
-			@include respond-to( handhelds ) {
-				@include hhform();
-			}
-		}
-		input.wpcf7-submit {
-			display: block;
-			width: 100%;
-			text-align: center;
-			border: 0;
-//          font-family: 'ff-netto-web';
-            font-family: "proxima-nova-alt";
-			text-transform: uppercase;
-			font-size: 14px;
-            color: #333333;
-			line-height: 1;
-			background: none;
-		}
-		.ajax-loader { display: none; }
-	}
-	.wpcf7 {
-	    position: absolute;
-	    left: 41px;
-	    bottom: 34px - 18px;
-	}
-	.about-content {
-		font-family: "proxima-nova-alt";
-		position: absolute;
-		right: 41px + 16px;
-		bottom: 34px;
-		width: $contactFormWidth;
-
-		@include respond-to( handhelds ) {
-			@include hhform();
-		}
-		h2 {
-			font-size: 19px;
-			text-transform: uppercase;
-			color: $brand1;
-			line-height: 1;
-			text-align: center;
-			margin: 0;
-			background: url(../img/about-bg.png) center bottom no-repeat;
-			padding-bottom: 11px;
-		}
-		section {
-		    background: #666666;
-		    margin: 0;
-			font-size: 12px;
-			color: #cccccc;
-			text-transform: uppercase;
-			padding: 22px;
-		}
-	}
-	@include respond-to( 'max-width: 651px' ) {
-	    .contact-form {
-	        width: 100%;
-	    }
-	    nav {
-            width: 100%;
-            text-align: center;
-            top: 0; left: 0;
-            position: static;
-            margin-top: 20px;
-
-            .nav-item {
-                padding: 9px 0 6px;
-                a {
-                    color: #FFFFFF;
-                    font-size: 18px;
-                    text-shadow: 0 0 3px #000000;
-                }
-            }
-	    }
-	    h1 {
-	        left: auto;
-	        bottom: auto;
-	        position: static;
-	        margin: 20px auto;
-	        width: $contactFormWidth;
-	        text-align: left;
-	    }
-        .wpcf7, .about-content {
-            position: static;
-            width: $contactFormWidth;
-            margin: 0 auto 20px auto;
+    .post-content {
+        font-family: helvetica, arial, sans-serif;
+        color: #666666;
+        font-size: 12px;
+        line-height: 1.9;
+        p {
+            margin: 0;
+            line-height: 20px;
         }
-	}
+    }
+    .post-footer {
+        position: relative;
+        margin-top: 17px;
+        background: url(../img/post-footer-line.png) center center no-repeat;
+        height: 26px;
+        font-size: 0;
+        a.twitter {
+            background: #F6F6F6 url(../img/footer-twitter.png) center center no-repeat;
+            width: 27px;
+            height: 26px;
+            @include inline-block();
+            padding-right: 9px;
+        }
+        a.facebook {
+            background: #F6F6F6 url(../img/footer-facebook.png) center center no-repeat;
+            width: 16px;
+            height: 26px;
+            @include inline-block();
+            padding-right: 12px;
+        }
+    }
+    a.more-link {
+        font-family: 'automate';
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        background: #545454 url(../img/read-more-bg.png) center left no-repeat;
+        height: 23px;
+        color: $brand6;
+        font-size: 12px;
+        line-height: 23px;
+        padding: 0 12px 0 23px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    img {
+        max-width: 100%;
+        @include inline-block();
+    }
 }
