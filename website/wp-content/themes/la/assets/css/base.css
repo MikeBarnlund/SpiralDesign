@@ -181,8 +181,15 @@ header nav.social a.twitter:hover { background-position: -34px -21px; }
 header nav.social a.flickr { margin-right: 27px; width: 38px; background-position: -77px 0; }
 header nav.social a.flickr:hover { background-position: -77px -21px; }
 
-.logo { margin-bottom: 31px; }
+.logo { margin-bottom: 31px; position: relative; }
 .logo img { max-width: 100%; }
+.logo .category-label { position: absolute; width: 100%; text-align: center; font-size: 56px; line-height: 1; top: 69%; text-transform: uppercase; }
+.logo .category-label.eats { color: #4abace; }
+.logo.eats .category-label { color: #4abace; }
+.logo.eats .archive-label { background-color: #4abace; }
+.logo .archive-label { position: absolute; right: 0; top: 75%; text-transform: uppercase; line-height: 1; padding: 0 18px 0 0; height: 34px; line-height: 34px; font-size: 26px; color: #393939; }
+.logo .archive-label img { float: left; margin-right: 18px; }
+.logo .archive-label.eats { background: #4abace; }
 .logo .logo-bottom { height: 22px; background: url(../img/logo-bottom.png) bottom center no-repeat; }
 
 footer { height: 53px; position: relative; background: url(../img/header-bg.png) left 1px no-repeat; padding: 1px 0; border-top: 1px solid #545454; border-bottom: 1px solid #545454; }
@@ -206,3 +213,11 @@ footer .copyright a { color: #fff00a; }
 .post .post-footer a.facebook { background: #f6f6f6 url(../img/footer-facebook.png) center center no-repeat; width: 16px; height: 26px; display: inline-block; *display: inline; zoom: 1; padding-right: 12px; }
 .post a.more-link { font-family: 'automate'; position: absolute; bottom: 1px; right: 0; background: #545454 url(../img/read-more-bg.png) center left no-repeat; height: 23px; color: #fff00a; font-size: 12px; line-height: 23px; padding: 0 12px 0 23px; text-transform: uppercase; z-index: 1; }
 .post img { max-width: 100%; display: inline-block; *display: inline; zoom: 1; }
+
+.single-post .post { margin-bottom: 48px; }
+
+.post-navigation { text-align: center; font-size: 0; line-height: 23px; }
+.post-navigation a.next-post, .post-navigation a.previous-post { display: inline-block; *display: inline; zoom: 1; vertical-align: top; width: 74px; height: 23px; line-height: 23px; color: #FFF; font-size: 12px; text-align: center; }
+.post-navigation a.next-post { background: url(../img/next-post.png) top left no-repeat; padding: 0 11px 0 4px; }
+.post-navigation a.previous-post { background: url(../img/previous-post.png) top left no-repeat; padding: 0 4px 0 11px; }
+.post-navigation img { vertical-align: top; padding: 0 7px; }

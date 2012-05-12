@@ -127,12 +127,41 @@ header {
     }
 }
 .logo {
+    margin-bottom: 31px;
+    position: relative;
     img { max-width: 100%; }
+    .category-label {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 56px;
+        line-height: 1;
+        top: 69%;
+        text-transform: uppercase;
+        &.eats { color: $eatscolor; }
+    }
+    &.eats {
+        .category-label { color: $eatscolor; }
+        .archive-label { background-color: $eatscolor; }
+    }
+    .archive-label {
+        position: absolute;
+        right: 0;
+        top: 75%;
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 0 18px 0 0;
+        height: 34px;
+        line-height: 34px;
+        font-size: 26px;
+        color: #393939;
+        img { float: left; margin-right: 18px; }
+        &.eats { background: $eatscolor; }
+    }
     .logo-bottom {
         height: 22px;
         background: url(../img/logo-bottom.png) bottom center no-repeat;
     }
-    margin-bottom: 31px;
 }
 footer {
     height: 53px;
@@ -252,4 +281,37 @@ footer {
         max-width: 100%;
         @include inline-block();
     }
+}
+
+// ===================================== Single Post ==========================
+
+.single-post {
+    .post {
+        margin-bottom: 48px;
+    }
+}
+
+.post-navigation {
+    text-align: center;
+    font-size: 0;
+    line-height: 23px;
+    a.next-post, a.previous-post {
+        @include inline-block();
+        vertical-align: top;
+        width: 89px - 15px;
+        height: 23px;
+        line-height: 23px;
+        color: #FFF;
+        font-size: 12px;
+        text-align: center;
+    }
+    a.next-post {
+        background: url(../img/next-post.png) top left no-repeat;
+        padding: 0 11px 0 4px;
+    }
+    a.previous-post {
+        background: url(../img/previous-post.png) top left no-repeat;
+        padding: 0 4px 0 11px;
+    }
+    img { vertical-align: top; padding: 0 7px; }
 }
