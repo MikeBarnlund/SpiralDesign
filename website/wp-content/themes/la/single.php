@@ -39,11 +39,11 @@ $name = ( $category[0]->name ) ? $category[0]->name : 'uncategorized';
 
     		echo ( !empty( $previous_post ) )
     			?	'<a href="' . get_permalink( $previous_post->ID ) . '" class="previous-post">Previous</a>'
-    			: '';
+    			: '<div class="post-placeholder"></div>';
     		echo '<img src="' . get_bloginfo( 'template_url' ) . '/assets/img/post-navigation-divider.png" />';
     		echo ( !empty( $next_post ) )
     			?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">Next</a>'
-    			: '';
+    			: '<div class="post-placeholder"></div>';
 
             ?>
         </div>
@@ -56,7 +56,7 @@ $name = ( $category[0]->name ) ? $category[0]->name : 'uncategorized';
     					? substr( $previous_post->post_title, 0, $title_maxlen ) . '...'
     					: $previous_post->post_title ) .
     				'</a>'
-    			: '';
+    			: '<div class="post-placeholder"></div>';
     		echo '<img src="' . get_bloginfo( 'template_url' ) . '/assets/img/post-navigation-divider.png" />';
     		echo ( !empty( $next_post ) )
     			?	'<a href="' . get_permalink( $next_post->ID ) . '" class="next-post">' .
@@ -64,7 +64,7 @@ $name = ( $category[0]->name ) ? $category[0]->name : 'uncategorized';
     					? substr( $next_post->post_title, 0, $title_maxlen ) . '...'
     					: $next_post->post_title ) .
     				'</a>'
-    			: '';
+    			: '<div class="post-placeholder"></div>';
 
             ?>
         </div>

@@ -43,6 +43,7 @@ header {
     position: relative;
     margin-bottom: -2px;
     background: url(../img/header-bg.png) top left no-repeat;
+    z-index: 1;
     .header-rt {
         position: absolute;
         right: 0;
@@ -55,6 +56,7 @@ header {
     nav.main {
         float: left;
         position: relative;
+        z-index: 1;
         a {
             @include inline-block();
             font-size: 16px;
@@ -85,7 +87,7 @@ header {
                 line-height: 20px;
                 margin: 0;
                 &.eats { color: $eatscolor; }
-                &.lost { color: $lostcolor; }
+                &.i-lost-my-head { color: $lmhcolor; }
                 &.other { color: $workcolor; }
                 &:hover { background: #FFF; }
             }
@@ -125,6 +127,24 @@ header {
 
         }
     }
+    @include respond-to( 'max-width: 500px' ) {
+        nav.main {
+            a {
+                font-size: 13px;
+                padding: 16px 0 8px 0;
+                margin-left: 8px;
+                &.categories {
+                    margin-left: 18px;
+                }
+            }
+        }
+        nav.social {
+            a {
+                margin-right: 8px;
+                &.flickr { margin-right: 23px; }
+            }
+        }
+    }
 }
 .logo {
     margin-bottom: 31px;
@@ -139,10 +159,15 @@ header {
         top: 69%;
         text-transform: uppercase;
         &.eats { color: $eatscolor; }
+        &.i-lost-my-head { color: $lmhcolor; }
     }
     &.eats {
         .category-label { color: $eatscolor; }
         .archive-label { background-color: $eatscolor; }
+    }
+    &.i-lost-my-head {
+        .category-label { color: $lmhcolor; }
+        .archive-label { background-color: $lmhcolor; }
     }
     .archive-label {
         position: absolute;
@@ -157,12 +182,15 @@ header {
         color: #393939;
         img { float: left; margin-right: 18px; }
         &.eats { background: $eatscolor; }
-    }
-    .logo-bottom {
-        height: 22px;
-        background: url(../img/logo-bottom.png) bottom center no-repeat;
+        &.i-lost-my-head { background: $lmhcolor; }
     }
 }
+
+.logo-bottom {
+    height: 22px;
+    background: url(../img/logo-bottom.png) bottom center no-repeat;
+}
+
 footer {
     height: 53px;
     position: relative;
@@ -170,6 +198,7 @@ footer {
     padding: 1px 0;
     border-top: 1px solid #545454;
     border-bottom: 1px solid #545454;
+    margin-bottom: 54px;
     .footer-rt {
         position: absolute;
         right: 0;
@@ -188,6 +217,12 @@ footer {
 		margin-right: 27px;
 		em { color: $brand6; }
 		a { color: $brand6; }
+		@include respond-to( 'max-width: 378px' ) {
+		    margin: 0;
+		    float: none;
+		    text-align: center;
+		    font-size: 10px;
+		}
 	}
 }
 
@@ -224,6 +259,7 @@ footer {
                 color: #FFF;
             }
             &.eats { background: $eatscolor; }
+            &.i-lost-my-head { background: $lmhcolor; }
         }
         .post-title {
             line-height: $postHeight;
@@ -302,6 +338,7 @@ footer {
         line-height: 23px;
         text-transform: uppercase;
     }
+    .post-placeholder { @include inline-block(); height: 23px; }
     .next-prev {
         margin-bottom: 40px;
         a {
@@ -310,6 +347,7 @@ footer {
             font-size: 12px;
             text-align: center;
         }
+        .post-placeholder { width: 89px; }
         a.next-post {
             background: url(../img/next-post.png) top left no-repeat;
             padding: 0 11px 0 4px;
@@ -328,6 +366,74 @@ footer {
             &.next-post { text-align: left; }
             &.previous-post { text-align: right; }
         }
+        .post-placeholder {
+            width: 40%;
+            height: 1px;
+        }
     }
     img { vertical-align: top; padding: 0 7px; }
+}
+
+// ===================================== About Page ===========================
+
+.about-page {
+    position: relative;
+    margin-bottom: 31px;
+    img { max-width: 100%; }
+    p {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        color: #FFF;
+        font-size: 56px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
+    }
+    .about-links {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        .tcd-small {
+            display: block;
+            margin-bottom: 27px;
+        }
+        .lap, .lai {
+            background-image: url(../img/la-logos.png);
+            width: 72px;
+            height: 71px;
+            display: block;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+        .lap {
+            background-position: 0 0;
+            margin-bottom: 12px;
+            &:hover { background-position: 0 -71px; }
+        }
+        .lai {
+            background-position: 0 -142px;
+            &:hover { background-position: 0 -213px; }
+        }
+    }
+    @include respond-to( 'max-width: 768px' ) {
+        p { font-size: 45px; }
+    }
+    @include respond-to( 'max-width: 680px' ) {
+        p { font-size: 30px; }
+    }
+    @include respond-to( 'max-width: 500px' ) {
+        p {
+            color: #393939;
+            font-size: 30px;
+        }
+        .about-links {
+            a.lap, a.lai, a.tcd-small {
+                margin-bottom: 5px;
+            }
+            .tcd-small {
+                img { width: 71px; }
+            }
+        }
+    }
 }
