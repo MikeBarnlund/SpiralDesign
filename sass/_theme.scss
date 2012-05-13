@@ -88,7 +88,8 @@ header {
                 margin: 0;
                 &.eats { color: $eatscolor; }
                 &.i-lost-my-head { color: $lmhcolor; }
-                &.other { color: $workcolor; }
+                &.joie-de-vivre { color: $jdvcolor; }
+                &.other { color: $lostcolor; }
                 &:hover { background: #FFF; }
             }
             &:hover {
@@ -108,6 +109,7 @@ header {
             background-image: url(../img/social-icons.png);
             background-repeat: no-repeat;
             margin-right: 15px;
+            cursor: pointer;
             &.instagram {
                 width: 19px;
                 background-position: 0 0;
@@ -160,6 +162,7 @@ header {
         text-transform: uppercase;
         &.eats { color: $eatscolor; }
         &.i-lost-my-head { color: $lmhcolor; }
+        &.joie-de-vivre { color: $jdvcolor; }
     }
     &.eats {
         .category-label { color: $eatscolor; }
@@ -168,6 +171,10 @@ header {
     &.i-lost-my-head {
         .category-label { color: $lmhcolor; }
         .archive-label { background-color: $lmhcolor; }
+    }
+    &.joie-de-vivre {
+        .category-label { color: $jdvcolor; }
+        .archive-label { background-color: $jdvcolor; }
     }
     .archive-label {
         position: absolute;
@@ -183,6 +190,7 @@ header {
         img { float: left; margin-right: 18px; }
         &.eats { background: $eatscolor; }
         &.i-lost-my-head { background: $lmhcolor; }
+        &.joie-de-vivre { background: $jdvcolor; }
     }
     @include respond-to( 'max-width: 793px') {
         .archive-label { top: 12% }
@@ -200,6 +208,14 @@ header {
             font-size: 24px;
             top: 60%;
         }
+    }
+    .home-link {
+        display: block;
+        height: 49%;
+        left: 34%;
+        position: absolute;
+        top: 11%;
+        width: 32%;
     }
 }
 
@@ -277,6 +293,7 @@ footer {
             }
             &.eats { background: $eatscolor; }
             &.i-lost-my-head { background: $lmhcolor; }
+            &.joie-de-vivre { background: $jdvcolor; }
         }
         .post-title {
             line-height: $postHeight;
@@ -293,6 +310,9 @@ footer {
         p {
             margin: 0;
             line-height: 20px;
+            @include respond-to( 'max-width: 960px' ) {
+                margin: 0 15px;
+            }
         }
     }
     .post-footer {
