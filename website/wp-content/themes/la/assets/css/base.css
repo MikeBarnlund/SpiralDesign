@@ -198,6 +198,11 @@ header nav.social a.flickr:hover { background-position: -77px -21px; }
 .logo .archive-label img { float: left; margin-right: 18px; }
 .logo .archive-label.eats { background: #4abace; }
 .logo .archive-label.i-lost-my-head { background: #ee0f84; }
+@media only screen and (max-width: 793px) { .logo .archive-label { top: 12%; }
+  .logo .category-label { font-size: 30px; } }
+@media only screen and (max-width: 420px) { .logo .archive-label { font-size: 16px; padding-right: 8px; }
+  .logo .archive-label img { margin-right: 8px; }
+  .logo .category-label { font-size: 24px; top: 60%; } }
 
 .logo-bottom { height: 22px; background: url(../img/logo-bottom.png) bottom center no-repeat; }
 
@@ -224,6 +229,10 @@ footer .copyright a { color: #fff00a; }
 .post .post-footer a.facebook { background: #f6f6f6 url(../img/footer-facebook.png) center center no-repeat; width: 16px; height: 26px; display: inline-block; *display: inline; zoom: 1; padding-right: 12px; }
 .post a.more-link { font-family: 'automate'; position: absolute; bottom: 1px; right: 0; background: #545454 url(../img/read-more-bg.png) center left no-repeat; height: 23px; color: #fff00a; font-size: 12px; line-height: 23px; padding: 0 12px 0 23px; text-transform: uppercase; z-index: 1; }
 .post img { max-width: 100%; display: inline-block; *display: inline; zoom: 1; }
+@media only screen and (max-width: 400px) { .post .post-header .post-meta { padding: 4px 10px 5px 22px; }
+  .post .post-header .post-meta img { margin-top: -3px; }
+  .post .post-header .post-meta .post-time { font-size: 10px; }
+  .post .post-header .post-title { font-size: 18px; line-height: 40px; } }
 
 .single-post .post { margin-bottom: 48px; }
 

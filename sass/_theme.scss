@@ -184,6 +184,23 @@ header {
         &.eats { background: $eatscolor; }
         &.i-lost-my-head { background: $lmhcolor; }
     }
+    @include respond-to( 'max-width: 793px') {
+        .archive-label { top: 12% }
+        .category-label {
+            font-size: 30px;
+        }
+    }
+    @include respond-to( 'max-width: 420px' ) {
+        .archive-label {
+            font-size: 16px;
+            padding-right: 8px;
+            img { margin-right: 8px;}
+        }
+        .category-label {
+            font-size: 24px;
+            top: 60%;
+        }
+    }
 }
 
 .logo-bottom {
@@ -316,6 +333,21 @@ footer {
     img {
         max-width: 100%;
         @include inline-block();
+    }
+    @include respond-to( 'max-width: 400px' ) {
+        .post-header {
+            .post-meta {
+                padding: 4px 10px 5px 22px;
+                img { margin-top: -3px;}
+                .post-time {
+                    font-size: 10px;
+                }
+            }
+            .post-title {
+                font-size: 18px;
+                line-height: 40px;
+            }
+        }
     }
 }
 
