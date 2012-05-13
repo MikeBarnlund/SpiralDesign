@@ -37,8 +37,8 @@ wp_reset_postdata();
             </nav>
             <nav class="social">
                 <a class="instagram"></a>
-                <a class="twitter"></a>
-                <a class="flickr"></a>
+                <a target="_blank" title="the10centdesigner on Twitter" href="https://twitter.com/#!/designertweets" class="twitter"></a>
+                <a target="_blank" title="the10centdesigner on Flickr" href="http://www.flickr.com/photos/theproletariatdesigner/" class="flickr"></a>
             </nav>
             <div class="header-rt"></div>
         </header>
