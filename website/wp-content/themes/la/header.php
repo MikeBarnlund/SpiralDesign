@@ -1,4 +1,27 @@
-<?php get_template_part( 'header', 'bare') ; ?>
+<?php
+get_template_part( 'header', 'bare' ) ;
+$categories = get_categories();
+$cat_links = array();
+
+foreach ( $categories as $category ) {
+    $args = array(
+        'cat' => $category->cat_ID,
+        'posts_per_page' => 1
+    );
+
+    // The Query
+    $the_query = new WP_Query( $args );
+
+    // The Loop
+    while ( $the_query->have_posts() ) : $the_query->the_post();
+        $cat_links[] = '<li><a class="' . $category->slug . '" href="' . get_permalink( get_the_ID() ) . '" />' . $category->name . '</a></li>';
+    endwhile;
+}
+
+// Reset Post Data
+wp_reset_postdata();
+
+?>
 	<div id="page">
 	    <header class="clearfix">
             <nav class="main">
@@ -7,10 +30,9 @@
                 </a>
                 <a href="/about">About</a>
                 <ul class="cat-dropdown">
-                    <li><a class="eats" href="cat1">Eats</a></li>
-                    <li><a class="lost" href="cat1">I Lost My Mind</a></li>
-                    <li><a class="eats" href="cat1">Eats</a></li>
-                    <li><a class="eats" href="cat1">Eats</a></li>
+                    <?php
+                        echo implode( $cat_links );
+                    ?>
                 </ul>
             </nav>
             <nav class="social">
