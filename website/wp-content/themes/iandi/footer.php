@@ -49,8 +49,8 @@
 				echo '</div>';
 			} else {
 				echo '<div class="footer-navigation">';
-				next_posts_link(__( 'Next <em>&gt;&gt;</em>', 'iandi' ));
 				previous_posts_link(__( '<em>&lt;&lt;</em> Prev', 'iandi' ));
+				next_posts_link(__( 'Next <em>&gt;&gt;</em>', 'iandi' ));
 				echo '</div>';
 			} ?>
 		</div>
