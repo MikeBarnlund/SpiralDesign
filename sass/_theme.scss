@@ -135,7 +135,7 @@ header {
             a {
                 font-size: 13px;
                 padding: 16px 0 8px 0;
-                margin-left: 8px;
+                margin-left: 5px;
                 &.home-link {
                     margin-left: 18px;
                 }
@@ -143,8 +143,8 @@ header {
         }
         nav.social {
             a {
-                margin-right: 8px;
-                &.flickr { margin-right: 23px; }
+                margin-right: 5px;
+                &.flickr { margin-right: 20px; }
             }
         }
         ul.cat-dropdown {
@@ -386,7 +386,9 @@ footer {
     }
 }
 
-.post-navigation {
+// ========================= Post Navigation ==================================
+
+.post-page-navigation, .post-navigation {
     text-align: center;
     font-size: 0;
     line-height: 23px;
@@ -398,6 +400,24 @@ footer {
         text-transform: uppercase;
     }
     .post-placeholder { @include inline-block(); height: 23px; }
+    .post-names {
+        margin-bottom: 40px;
+        a {
+            width: 40%;
+            color: #ec038a;
+            font-size: 14px;
+            &.next-post { text-align: left; }
+            &.previous-post { text-align: right; }
+        }
+        .post-placeholder {
+            width: 40%;
+            height: 1px;
+        }
+    }
+    img { vertical-align: top; padding: 0 7px; }
+}
+
+.post-navigation {
     .next-prev {
         margin-bottom: 40px;
         a {
@@ -416,21 +436,24 @@ footer {
             padding: 0 4px 0 11px;
         }
     }
-    .post-names {
-        margin-bottom: 40px;
+}
+
+.post-page-navigation {
+    margin-bottom: 65px;
+    .next-page, .prev-page {
+        @include inline-block();
+        width: 40%;
+        font-size: 14px;
         a {
-            width: 40%;
             color: #ec038a;
-            font-size: 14px;
-            &.next-post { text-align: left; }
-            &.previous-post { text-align: right; }
-        }
-        .post-placeholder {
-            width: 40%;
-            height: 1px;
         }
     }
-    img { vertical-align: top; padding: 0 7px; }
+    .next-page { text-align: right; }
+    .prev-page { text-align: left; }
+    .post-placeholder {
+        width: 40%;
+        height: 1px;
+    }
 }
 
 // ===================================== About Page ===========================
