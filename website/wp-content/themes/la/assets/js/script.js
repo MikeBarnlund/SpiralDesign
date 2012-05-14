@@ -6,9 +6,11 @@ var animationDuration = 250;
 
 var showRedBar = function() {
     $( '.redbar' ).animate( { 'width' : '53px' }, animationDuration );
-    $( document ).one( 'click', function() {
-        $( '.redbar' ).animate( { 'width' : '0px' }, animationDuration );
-    } );
+    $( '.redbar' ).one( 'click', hideRedBar );
+}
+
+var hideRedBar = function() {
+    $( '.redbar' ).animate( { 'width' : '0px' }, animationDuration );
 }
 
 $( document ).ready( function() {

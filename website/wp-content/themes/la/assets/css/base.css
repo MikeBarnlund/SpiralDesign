@@ -151,7 +151,7 @@ a:hover { color: #890002; }
 
 em { font-style: normal; }
 
-h1, h2, h3, h4, h5 { font-weight: normal; }
+h1, h2, h3, h4, h5 { font-weight: 100; }
 
 ::-moz-selection { background: #ab1f24; color: black; }
 
@@ -168,10 +168,15 @@ header #logo { display: block; width: 110px; height: 110px; background: url(../i
 
 footer { max-width: 1075px; padding: 16px 0 120px 0; margin: 0 auto; }
 footer .copyright { float: right; font-size: 10px; text-transform: uppercase; }
-footer .copyright em { color: #ab1f24; }
+footer .copyright em { color: #ab1f24; font-weight: 400; }
+footer .copyright a { font-weight: 700; }
 @media only screen and (max-width: 480px) { footer .copyright { width: 100%; text-align: center; } }
 
-nav { width: 210px; position: absolute; top: 10%; left: 10%; font-size: 0; }
+.tk-primary { font-weight: 100; }
+
+.heavy { font-weight: 400; }
+
+nav { width: 210px; position: absolute; top: 10%; left: 10%; font-size: 0; text-align: center; }
 nav .nav-item { text-align: center; line-height: 1; padding: 17px 0 14px 0; }
 nav .nav-item a { color: #333333; text-transform: uppercase; font-size: 15px; }
 nav .nav-item a:hover { color: #ab1f24; }
@@ -214,14 +219,15 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
 .contact-page .contact-form .wpcf7-form-control-wrap.your-message { display: block; padding-bottom: 18px; background: url(../img/message-bottom.png) bottom center no-repeat; }
 @media only screen and (max-width: 480px) { .contact-page .contact-form input.wpcf7-text { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ padding: 5px 12px; } }
 @media only screen and (max-width: 480px) { .contact-page .contact-form .form-message { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .contact-form input.wpcf7-submit { display: block; width: 100%; text-align: center; border: 0; font-family: "proxima-nova-alt"; text-transform: uppercase; font-size: 14px; color: #333333; line-height: 1; background: none; }
+.contact-page .contact-form input.wpcf7-submit { display: block; width: 100%; text-align: center; border: 0; font-family: "proxima-nova-alt"; text-transform: uppercase; font-size: 14px; color: #333333; line-height: 1; background: none; font-weight: 400; }
 .contact-page .contact-form .ajax-loader { display: none; }
 .contact-page .wpcf7 { position: absolute; left: 41px; bottom: 16px; }
 .contact-page .about-content { font-family: "proxima-nova-alt"; position: absolute; right: 57px; bottom: 34px; width: 271px; }
 @media only screen and (max-width: 480px) { .contact-page .about-content { width: 100%; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ } }
-.contact-page .about-content h2 { font-size: 19px; text-transform: uppercase; color: #ab1f24; line-height: 1; text-align: center; margin: 0; background: url(../img/about-bg.png) center bottom no-repeat; padding-bottom: 11px; }
+.contact-page .about-content h2 { font-size: 19px; font-weight: 400; text-transform: uppercase; color: #ab1f24; line-height: 1; text-align: center; margin: 0; background: url(../img/about-bg.png) center bottom no-repeat; padding-bottom: 11px; }
 .contact-page .about-content section { background: #666666; margin: 0; font-size: 12px; color: #cccccc; text-transform: uppercase; padding: 22px; }
-@media only screen and (max-width: 651px) { .contact-page .contact-form { width: 100%; }
+@media only screen and (max-width: 651px) { .contact-page { background-position: top left; }
+  .contact-page .contact-form { width: 100%; }
   .contact-page nav { width: 100%; text-align: center; top: 0; left: 0; position: static; margin-top: 20px; }
   .contact-page nav .nav-item { padding: 9px 0 6px; }
   .contact-page nav .nav-item a { color: #FFFFFF; font-size: 18px; text-shadow: 0 0 3px #000000; }
@@ -234,7 +240,7 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
 .portfolio-page .portfolio-navbar ul { display: inline-block; *display: inline; zoom: 1; }
 .portfolio-page .portfolio-navbar ul li { display: inline-block; *display: inline; zoom: 1; }
 .portfolio-page .portfolio-navbar ul li a { text-transform: uppercase; margin-right: 14px; color: #CCC; font-size: 15px; }
-.portfolio-page .portfolio-navbar ul li a:hover { border-bottom: 3px solid #ab1f24; }
+.portfolio-page .portfolio-navbar ul li a:hover { color: #ab1f24; }
 .portfolio-page .portfolio-navbar .slideshow-nav { float: right; font-size: 0; }
 .portfolio-page .portfolio-navbar .slideshow-nav a { display: inline-block; *display: inline; zoom: 1; vertical-align: middle; background-image: url(../img/portfolio-nav-bg.png); background-repeat: no-repeat; width: 18px; height: 28px; cursor: pointer; margin-left: 10px; }
 .portfolio-page .portfolio-navbar .slideshow-nav a.nav-left { background-position: 0 0; }

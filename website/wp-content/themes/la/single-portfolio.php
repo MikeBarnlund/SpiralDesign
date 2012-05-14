@@ -27,8 +27,8 @@ the_post();
         </div>
         <ul>
             <li><a href="/">Main</a></li>
-            <li><a href="/">Portfolio</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="/lai-portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
 </div>

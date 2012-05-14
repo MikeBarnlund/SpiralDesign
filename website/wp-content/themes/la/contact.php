@@ -12,7 +12,7 @@ the_post();
     <?php get_template_part( 'navigation' ); ?>
 	<?php if ( get_the_ID() ) { ?>
 		<div class="contact-form clearfix">
-	        <h1 class="tk-primary">Contact</h1>
+	        <h1>Contact</h1>
 		    <?php the_content(); ?>
 	    </div>
 	<?php } ?>

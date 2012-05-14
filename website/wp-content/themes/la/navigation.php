@@ -1,4 +1,4 @@
-<nav>
+<nav class="heavy">
     <?php
     $navitem1 = null;
     $navitem2 = null;
@@ -9,12 +9,15 @@
         $navitem1 = array ( 'title' => 'Home', 'url' => '/' );
         $navitem2 = array ( 'title' => 'Portfolio', 'url' => '/lai-portfolio' );
     }
+
+    $slideshow_controls = is_home() || is_front_page();
+
     ?>
     <div class="nav-item"><a href="<?php echo $navitem1['url']; ?>"><?php echo $navitem1['title']; ?></a></div>
     <div class="portfolio-nav clearfix">
-        <a class="portfolio-prev"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/nav-left.png" /></a>
+        <?php echo $slideshow_controls ? '<a class="portfolio-prev"><img src="' . get_bloginfo( 'template_url' ) . '/assets/img/nav-left.png" /></a>' : ''; ?>
         <img class="logo" src="<?php bloginfo( 'template_url' ) ?>/assets/img/logo.png" />
-        <a class="portfolio-next"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/nav-right.png" /></a>
+        <?php echo $slideshow_controls ? '<a class="portfolio-next"><img src="' . get_bloginfo( 'template_url' ) . '/assets/img/nav-right.png" /></a>' : ''; ?>
     </div>
     <div class="nav-item"><a href="<?php echo $navitem2['url']; ?>"><?php echo $navitem2['title']; ?></a></div>
 </nav>

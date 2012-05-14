@@ -18,7 +18,7 @@ a {
 em { font-style: normal; }
 
 h1, h2, h3, h4, h5 {
-	font-weight: normal;
+	font-weight: 100;
 }
 
 ::-moz-selection{
@@ -64,12 +64,22 @@ footer {
         float: right;
 		font-size: 10px;
 		text-transform: uppercase;
-		em { color: $brand1; }
+		em { color: $brand1; font-weight: 400; }
+		a { font-weight: 700; }
 		@include respond-to( handhelds ) {
 		    width: 100%;
 			text-align: center;
 		}
 	}
+}
+
+// =========================== Fonts ==========================================
+
+.tk-primary {
+    font-weight: 100;
+}
+.heavy {
+    font-weight: 400;
 }
 
 // =========================== Navigation =====================================
@@ -80,6 +90,7 @@ nav {
     top: 10%;
     left: 10%;
     font-size: 0;
+    text-align: center;
     .nav-item {
         text-align: center;
         line-height: 1;
@@ -283,6 +294,7 @@ nav {
             color: #333333;
 			line-height: 1;
 			background: none;
+			font-weight: 400;
 		}
 		.ajax-loader { display: none; }
 	}
@@ -303,6 +315,7 @@ nav {
 		}
 		h2 {
 			font-size: 19px;
+			font-weight: 400;
 			text-transform: uppercase;
 			color: $brand1;
 			line-height: 1;
@@ -321,6 +334,7 @@ nav {
 		}
 	}
 	@include respond-to( 'max-width: 651px' ) {
+	    background-position: top left;
 	    .contact-form {
 	        width: 100%;
 	    }
@@ -378,7 +392,7 @@ nav {
                     color: #CCC;
                     font-size: 15px;
                     &:hover {
-                        border-bottom: 3px solid $brand1;
+                        color: $brand1;
                     }
                 }
             }
