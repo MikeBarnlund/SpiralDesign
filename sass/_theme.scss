@@ -52,7 +52,7 @@ header {
         height: 55px;
         background: url(../img/header-bg-rt.png) top center no-repeat;
     }
-    nav { width: 50%; }
+    //nav { width: 50%; }
     nav.main {
         float: left;
         position: relative;
@@ -68,11 +68,12 @@ header {
             &.categories {
                 background: url(../img/yellow-arrow.png) bottom center no-repeat;
             }
+            &:hover { color: #FFF; }
         }
     }
     ul.cat-dropdown {
         position: absolute;
-        left: 7px;
+        left: 99px;
         top: 55px + 5px;
         display: none;
         li {
@@ -135,7 +136,7 @@ header {
                 font-size: 13px;
                 padding: 16px 0 8px 0;
                 margin-left: 8px;
-                &.categories {
+                &.home-link {
                     margin-left: 18px;
                 }
             }
@@ -144,6 +145,12 @@ header {
             a {
                 margin-right: 8px;
                 &.flickr { margin-right: 23px; }
+            }
+        }
+        ul.cat-dropdown {
+            left: 63px;
+            li a {
+                padding: 0 5px;
             }
         }
     }
@@ -231,7 +238,7 @@ footer {
     padding: 1px 0;
     border-top: 1px solid #545454;
     border-bottom: 1px solid #545454;
-    margin-bottom: 54px;
+    padding-bottom: 54px;
     .footer-rt {
         position: absolute;
         right: 0;
