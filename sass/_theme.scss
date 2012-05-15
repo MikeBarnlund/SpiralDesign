@@ -378,6 +378,99 @@ footer {
     }
 }
 
+// ========================== Comments ================================
+
+.commentlist, .children {
+    list-style: none;
+}
+#comments {
+    $commentGutter: 13px;
+    list-style: none;
+    p { margin: 0; }
+    .comment {
+        margin-bottom: $commentGutter;
+    }
+    .comment-meta {
+        background: #E7E8E9;
+        line-height: 1;
+        line-height: 19px;
+        a {
+            color: #666666;
+            &.comment-edit-link {
+                float: right;
+                margin-right: 5px;
+            }
+        }
+    }
+    .comment-author {
+        float: left;
+        border-right: 1px solid #FFF;
+        color: #FFF;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 10px;
+        margin-right: 10px;
+        a { color: #FFF; }
+        img { position: absolute; top: -13px; left: -8px; }
+    }
+    .bypostauthor .comment-author {
+        background: #FFF00A;
+        color: #333;
+        a { color: #333; }
+    }
+    .comment-body {
+        clear: both;
+        padding-top: $commentGutter;
+        p {
+            margin-bottom: $commentGutter;
+        }
+    }
+    ul.children {
+        margin-left: 40px;
+    }
+    #respond {
+        h3 {
+            text-transform: uppercase;
+            color: #666666;
+            background: #E7E8E9;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: "automate";
+            padding: 0 10px;
+            small { float: right; }
+        }
+        .comment-form-comment {
+            label { display: none; }
+            textarea {
+                width: 50%;
+                border: 0;
+                padding: 10px;
+            }
+        }
+        .form-allowed-tags {
+            font-size: 11px;
+            margin: $commentGutter 0;
+        }
+    }
+    .comment-reply-link, #submit {
+        @include inline-block();
+        padding: 3px 8px;
+        font-family: "automate";
+        text-transform: uppercase;
+        color: #666666;
+        background: #E7E8E9;
+        border: 0;
+    }
+    @include respond-to( 'max-width: 960px' ) {
+        margin: 0 15px;
+    }
+}
+
+.eats .comment-author { background: $eatscolor; }
+.i-lost-my-head .comment-author { background: $lmhcolor; }
+.joie-de-vivre .comment-author { background: $jdvcolor; }
+
 // ===================================== Single Post ==========================
 
 .single-post {
