@@ -386,6 +386,7 @@ footer {
 #comments {
     $commentGutter: 13px;
     list-style: none;
+    margin-top: $commentGutter;
     p { margin: 0; }
     .comment {
         margin-bottom: $commentGutter;
@@ -611,4 +612,12 @@ footer {
             }
         }
     }
+}
+
+// =========================== Archives Page ==================================
+
+.archives {
+    margin-bottom: 40px;
+    h1 { text-transform: uppercase; }
+    ul { margin-left: 15px; }
 }

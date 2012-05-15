@@ -244,7 +244,7 @@ footer .copyright a { color: #fff00a; }
 
 .commentlist, .children { list-style: none; }
 
-#comments { list-style: none; }
+#comments { list-style: none; margin-top: 13px; }
 #comments p { margin: 0; }
 #comments .comment { margin-bottom: 13px; }
 #comments .comment-meta { background: #E7E8E9; line-height: 1; line-height: 19px; }
@@ -312,3 +312,7 @@ footer .copyright a { color: #fff00a; }
 @media only screen and (max-width: 500px) { .about-page p { color: #393939; font-size: 30px; }
   .about-page .about-links a.lap, .about-page .about-links a.lai, .about-page .about-links a.tcd-small { margin-bottom: 5px; }
   .about-page .about-links .tcd-small img { width: 71px; } }
+
+.archives { margin-bottom: 40px; }
+.archives h1 { text-transform: uppercase; }
+.archives ul { margin-left: 15px; }

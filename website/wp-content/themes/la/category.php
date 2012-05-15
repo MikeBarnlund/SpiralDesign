@@ -12,7 +12,7 @@ $name = ( $category[0]->name ) ? $category[0]->name : 'uncategorized';
     <div class="logo logo-full <?php echo $slug; ?>">
         <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/tcd-logo-post.png" />
         <div class="category-label"><?php echo $name; ?></div>
-        <div class="archive-label tk-myriad-pro"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/archive-label-bg.png">Archive</div>
+        <a href="/archives" class="archive-label tk-myriad-pro"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/archive-label-bg.png">Archive</a>
         <a href="/" class="home-link"></a>
         <div class="logo-bottom"></div>
     </div>
