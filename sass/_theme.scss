@@ -135,11 +135,6 @@ nav {
     }
 }
 
-.contact-page nav {
-    top: 18%;
-    left: 41px;
-}
-
 // =========================== Red Info Bar ===================================
 
 .redbar {
@@ -368,6 +363,16 @@ nav {
             margin: 0 auto 20px auto;
         }
 	}
+}
+.contact-page nav {
+    top: 18%;
+    left: 41px;
+    @include respond-to( handhelds ) {
+        .nav-item a {
+            color: #333;
+            text-shadow: 0 0 0 #000;
+        }
+    }
 }
 
 // ========================== Portfolio Navigation ============================

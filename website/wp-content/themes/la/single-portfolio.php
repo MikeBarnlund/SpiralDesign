@@ -20,7 +20,7 @@ the_post();
     <?php get_template_part( 'redbar' ); ?>
     </div>
     <div class="portfolio-navbar">
-        <img class='logo' src="<?php bloginfo( 'template_url' ) ?>/assets/img/lai-logo-light.png" />
+        <a href="/"><img class='logo' src="<?php bloginfo( 'template_url' ) ?>/assets/img/lai-logo-light.png" /></a>
         <div class="slideshow-nav">
             <a class="nav-left"></a>
             <a class="nav-right"></a>

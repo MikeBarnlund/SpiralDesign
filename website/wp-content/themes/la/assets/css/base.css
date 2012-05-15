@@ -188,8 +188,6 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
   nav .nav-item a { color: #FFFFFF; font-size: 25px; text-shadow: 0 0 3px #000000; }
   nav .portfolio-nav img.logo { width: 30%; } }
 
-.contact-page nav { top: 18%; left: 41px; }
-
 .redbar { position: absolute; top: 0; right: 0px; width: 0px; z-index: 10; overflow: hidden; background: #ab1f24 url(../img/lai-redbar.png) top right no-repeat; padding: 0 0 0 16px; height: 100%; }
 .redbar .info-logo, .redbar .twitter, .redbar .mail { background-image: url(../img/social-logos.png); background-repeat: no-repeat; width: 37px; display: block; margin-top: 20px; }
 .redbar .info-logo { height: 37px; }
@@ -233,6 +231,9 @@ nav .portfolio-nav img.logo { display: inline-block; *display: inline; zoom: 1; 
   .contact-page nav .nav-item a { color: #FFFFFF; font-size: 18px; text-shadow: 0 0 3px #000000; }
   .contact-page h1 { left: auto; bottom: auto; position: static; margin: 20px auto; width: 271px; text-align: left; }
   .contact-page .wpcf7, .contact-page .about-content { position: static; width: 271px; margin: 0 auto 20px auto; } }
+
+.contact-page nav { top: 18%; left: 41px; }
+@media only screen and (max-width: 480px) { .contact-page nav .nav-item a { color: #333; text-shadow: 0 0 0 #000; } }
 
 .portfolio-page { position: relative; }
 .portfolio-page .portfolio-navbar { padding: 28px 28px 11px 28px; line-height: 56px; }
