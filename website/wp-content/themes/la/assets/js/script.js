@@ -9,6 +9,9 @@ $( document ).ready( function() {
                 $( document ).one( 'click', function() {
                     $( '.cat-dropdown' ).fadeOut( 100 );
                 } );
+                $( '#searchform' ).click( function( e ) {
+                    e.stopPropagation();
+                } );
             } );
         }
     } );

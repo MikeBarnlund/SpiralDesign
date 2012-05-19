@@ -96,6 +96,12 @@ header {
             &:hover {
                 background: url(../img/nav-bg.png) top right no-repeat;
             }
+            &.searchitem {
+                padding: 4px;
+                &:hover {
+                    background: #393939;
+                }
+            }
         }
     }
     nav.social {
@@ -161,11 +167,12 @@ header {
     img { max-width: 100%; }
     .category-label {
         position: absolute;
+        top: 69%;
+        left: 0;
         width: 100%;
         text-align: center;
         font-size: 56px;
         line-height: 1;
-        top: 69%;
         text-transform: uppercase;
         &.eats { color: $eatscolor; }
         &.i-lost-my-head { color: $lmhcolor; }
@@ -614,10 +621,25 @@ footer {
     }
 }
 
+.lt-ie8 .about-page .about-links {
+    width: 180px;
+}
+
 // =========================== Archives Page ==================================
 
 .archives {
     margin-bottom: 40px;
     h1 { text-transform: uppercase; }
     ul { margin-left: 15px; }
+}
+
+// ================================ Search Page ===============================
+
+#searchform {
+    input {
+        display: block;
+        font-size: 12px;
+        border: 0;
+        padding: 2px;
+    }
 }

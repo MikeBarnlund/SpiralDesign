@@ -171,6 +171,8 @@ header ul.cat-dropdown li a.joie-de-vivre { color: red; }
 header ul.cat-dropdown li a.other { color: #b700d7; }
 header ul.cat-dropdown li a:hover { background: #FFF; }
 header ul.cat-dropdown li:hover { background: url(../img/nav-bg.png) top right no-repeat; }
+header ul.cat-dropdown li.searchitem { padding: 4px; }
+header ul.cat-dropdown li.searchitem:hover { background: #393939; }
 header nav.social { float: right; text-align: right; line-height: 21px; margin-top: 14px; font-size: 0; }
 header nav.social a { display: inline-block; *display: inline; zoom: 1; height: 21px; background-image: url(../img/social-icons.png); background-repeat: no-repeat; margin-right: 15px; cursor: pointer; }
 header nav.social a.instagram { width: 19px; background-position: 0 0; }
@@ -188,7 +190,7 @@ header nav.social a.flickr:hover { background-position: -77px -21px; }
 
 .logo { margin-bottom: 31px; position: relative; }
 .logo img { max-width: 100%; }
-.logo .category-label { position: absolute; width: 100%; text-align: center; font-size: 56px; line-height: 1; top: 69%; text-transform: uppercase; }
+.logo .category-label { position: absolute; top: 69%; left: 0; width: 100%; text-align: center; font-size: 56px; line-height: 1; text-transform: uppercase; }
 .logo .category-label.eats { color: #4abace; }
 .logo .category-label.i-lost-my-head { color: #ee0f84; }
 .logo .category-label.joie-de-vivre { color: red; }
@@ -313,6 +315,10 @@ footer .copyright a { color: #fff00a; }
   .about-page .about-links a.lap, .about-page .about-links a.lai, .about-page .about-links a.tcd-small { margin-bottom: 5px; }
   .about-page .about-links .tcd-small img { width: 71px; } }
 
+.lt-ie8 .about-page .about-links { width: 180px; }
+
 .archives { margin-bottom: 40px; }
 .archives h1 { text-transform: uppercase; }
 .archives ul { margin-left: 15px; }
+
+#searchform input { display: block; font-size: 12px; border: 0; padding: 2px; }

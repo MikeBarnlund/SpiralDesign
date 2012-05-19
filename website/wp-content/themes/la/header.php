@@ -38,6 +38,7 @@ wp_reset_postdata();
                     <?php
                         echo implode( $cat_links );
                     ?>
+                    <li class="searchitem"><?php get_search_form(); ?></li>
                 </ul>
             </nav>
             <nav class="social">

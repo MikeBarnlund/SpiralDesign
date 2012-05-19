@@ -1070,15 +1070,15 @@ class DC_FlickrGallery {
 	}
 	
 	function footer() {
-		?>
-			<script type="text/javascript">
-				(function($){
-					$(function(){
-						$("img.flickr.square,img.flickr.thumbnail,img.flickr.small").flightbox({size_callback: get_sizes});
-					});
-				})(jQuery);
-			</script>
-		<?php
+        // ?>
+        //  <script type="text/javascript">
+        //      (function($){
+        //          $(function(){
+        //              $("img.flickr.square,img.flickr.thumbnail,img.flickr.small").flightbox({size_callback: get_sizes});
+        //          });
+        //      })(jQuery);
+        //  </script>
+        // <?php
 	}
 	
 	function load_tabs_setting($tabs) {
