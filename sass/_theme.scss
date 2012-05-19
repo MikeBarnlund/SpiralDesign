@@ -178,6 +178,10 @@ header {
         &.i-lost-my-head { color: $lmhcolor; }
         &.joie-de-vivre { color: $jdvcolor; }
     }
+    .tag-label {
+        @extend .category-label;
+        color: $lostcolor;
+    }
     &.eats {
         .category-label { color: $eatscolor; }
         .archive-label { background-color: $eatscolor; }
@@ -641,5 +645,27 @@ footer {
         font-size: 12px;
         border: 0;
         padding: 2px;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+// ================================== Tags ====================================
+
+.tags {
+    padding-bottom: 14px;
+    a {
+        font-family: 'automate';
+        text-transform: uppercase;
+        line-height: 1;
+        @include inline-block();
+        @include border-radius( 3px );
+        background: $brand6;
+        color: #333;
+        padding: 2px 5px 4px 5px;
+        &:hover {
+            color: #FFF;
+            background: $lostcolor;
+        }
     }
 }

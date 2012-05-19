@@ -190,15 +190,16 @@ header nav.social a.flickr:hover { background-position: -77px -21px; }
 
 .logo { margin-bottom: 31px; position: relative; }
 .logo img { max-width: 100%; }
-.logo .category-label { position: absolute; top: 69%; left: 0; width: 100%; text-align: center; font-size: 56px; line-height: 1; text-transform: uppercase; }
-.logo .category-label.eats { color: #4abace; }
-.logo .category-label.i-lost-my-head { color: #ee0f84; }
-.logo .category-label.joie-de-vivre { color: red; }
-.logo.eats .category-label { color: #4abace; }
+.logo .category-label, .logo .tag-label { position: absolute; top: 69%; left: 0; width: 100%; text-align: center; font-size: 56px; line-height: 1; text-transform: uppercase; }
+.logo .category-label.eats, .logo .eats.tag-label { color: #4abace; }
+.logo .category-label.i-lost-my-head, .logo .i-lost-my-head.tag-label { color: #ee0f84; }
+.logo .category-label.joie-de-vivre, .logo .joie-de-vivre.tag-label { color: red; }
+.logo .tag-label { color: #b700d7; }
+.logo.eats .category-label, .logo.eats .tag-label { color: #4abace; }
 .logo.eats .archive-label { background-color: #4abace; }
-.logo.i-lost-my-head .category-label { color: #ee0f84; }
+.logo.i-lost-my-head .category-label, .logo.i-lost-my-head .tag-label { color: #ee0f84; }
 .logo.i-lost-my-head .archive-label { background-color: #ee0f84; }
-.logo.joie-de-vivre .category-label { color: red; }
+.logo.joie-de-vivre .category-label, .logo.joie-de-vivre .tag-label { color: red; }
 .logo.joie-de-vivre .archive-label { background-color: red; }
 .logo .archive-label { position: absolute; right: 0; top: 75%; text-transform: uppercase; line-height: 1; padding: 0 18px 0 0; height: 34px; line-height: 34px; font-size: 26px; color: #393939; }
 .logo .archive-label img { float: left; margin-right: 18px; }
@@ -206,10 +207,10 @@ header nav.social a.flickr:hover { background-position: -77px -21px; }
 .logo .archive-label.i-lost-my-head { background: #ee0f84; }
 .logo .archive-label.joie-de-vivre { background: red; }
 @media only screen and (max-width: 793px) { .logo .archive-label { top: 12%; }
-  .logo .category-label { font-size: 30px; } }
+  .logo .category-label, .logo .tag-label { font-size: 30px; } }
 @media only screen and (max-width: 420px) { .logo .archive-label { font-size: 16px; padding-right: 8px; }
   .logo .archive-label img { margin-right: 8px; }
-  .logo .category-label { font-size: 24px; top: 60%; } }
+  .logo .category-label, .logo .tag-label { font-size: 24px; top: 60%; } }
 .logo .home-link { display: block; height: 49%; left: 34%; position: absolute; top: 11%; width: 32%; }
 
 .logo-bottom { height: 22px; background: url(../img/logo-bottom.png) bottom center no-repeat; }
@@ -321,4 +322,8 @@ footer .copyright a { color: #fff00a; }
 .archives h1 { text-transform: uppercase; }
 .archives ul { margin-left: 15px; }
 
-#searchform input { display: block; font-size: 12px; border: 0; padding: 2px; }
+#searchform input { display: block; font-size: 12px; border: 0; padding: 2px; width: 95%; margin: 0 auto; }
+
+.tags { padding-bottom: 14px; }
+.tags a { font-family: 'automate'; text-transform: uppercase; line-height: 1; display: inline-block; *display: inline; zoom: 1; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: #fff00a; color: #333; padding: 2px 5px 4px 5px; }
+.tags a:hover { color: #FFF; background: #b700d7; }

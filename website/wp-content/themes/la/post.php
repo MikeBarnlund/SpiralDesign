@@ -24,6 +24,7 @@ $name = !empty( $category[0]->name ) ? $category[0]->name : 'uncategorized';
             <img src="<?php echo $featured_image_url; ?>" alt="Featured Image" />
         <?php } ?>
         <?php the_content( 'Read Full Story' ); ?>
+        <div class="tags"><?php the_tags( 'Tagged As: ', '&nbsp;' ); ?></div>
         <?php
         if ( !is_single() ) { ?>
             <a class="comment-link" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
