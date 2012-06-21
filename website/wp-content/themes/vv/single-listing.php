@@ -122,7 +122,11 @@ get_template_part( 'listingtypes' );
 
 			<?php edit_post_link( __( 'Edit Content', 'lovecalgary' ) ) ?>
 
-			<a class="contact" href="/contact">Contact</a>
+            <form method='post' action='<?php bloginfo('url'); ?>/contact/' >
+                <input id="listing_name" name="listing_name" type="hidden" value="<?php echo get_the_title(); ?>" />
+                <input id="listing_url" name="listing_url" type="hidden" value="<?php echo get_permalink(); ?>" />
+			    <button type="submit" class="contact">Contact</button>
+			</form>
 
 			<?php
 			if ( is_single() ) {

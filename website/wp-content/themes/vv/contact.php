@@ -8,6 +8,9 @@ get_header();
 
 the_post();
 
+$listing_name = $_POST["listing_name"];
+$listing_url = $_POST["listing_url"];
+
 ?>
 
 <div class="entry-content contact-page">

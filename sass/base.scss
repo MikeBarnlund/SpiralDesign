@@ -484,8 +484,9 @@ $slideshowGutter: 16px;
 		dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
 		dd { float: left; }
 	}
-	a.contact {
+	button.contact {
 		@include typekitfont( upper );
+		border: 0;
 		background: $brand2;
 		color: $brand1;
 		width: 78px;

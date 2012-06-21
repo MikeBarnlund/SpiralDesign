@@ -131,7 +131,7 @@ h2.post-title div { background: #a9cd39; float: left; padding: 0 14px; margin-ri
 .single-listing .listing-content dl { overflow: hidden; margin-bottom: 16px; }
 .single-listing .listing-content dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
 .single-listing .listing-content dd { float: left; }
-.single-listing a.contact { font-family: 'pt-sans-narrow'; text-transform: uppercase; background: #a9cd39; color: #ab227e; width: 78px; height: 27px; line-height: 25px; font-size: 15px; cursor: pointer; display: block; clear: both; text-align: center; text-decoration: none; float: right; margin-bottom: 6px; }
+.single-listing button.contact { font-family: 'pt-sans-narrow'; text-transform: uppercase; border: 0; background: #a9cd39; color: #ab227e; width: 78px; height: 27px; line-height: 25px; font-size: 15px; cursor: pointer; display: block; clear: both; text-align: center; text-decoration: none; float: right; margin-bottom: 6px; }
 .single-listing .listing-navigation { font-family: 'pt-sans-narrow'; text-transform: uppercase; font-size: 15px; background: #d8d8d8; clear: right; padding: 15px; line-height: 15px; overflow: hidden; }
 .single-listing .listing-navigation a { text-decoration: none; }
 .single-listing .listing-navigation a em { color: #474747; }
