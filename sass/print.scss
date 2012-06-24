@@ -1,0 +1,150 @@
+@import 'reset';
+@import 'config';
+
+@mixin typekitfont ( $texttransform: false ) {
+	font-family: 'Helvetica';
+	@if $texttransform == upper {
+		text-transform: uppercase;
+	}
+}
+
+/* ========================== General Elements ========================= */
+
+html { height: 100%; }
+body {
+    width: 511pt;
+	height: 100%;
+	color: #000;
+	font-size: $fontSize;
+	line-height: 1.9;
+	font-family: $fontFamily;
+}
+a { text-decoration: underline; }
+p { margin-bottom: 16px; }
+h1, h2, h3, h4 {
+	margin: 0 0 12px 0;
+	line-height: 1;
+}
+h1 {
+	font-size: 21px;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 9px;
+	@include typekitfont( upper );
+	&.extra-bottom-margin {
+		margin-bottom: 31px;
+	}
+}
+h2 { font-size: $fontSize + 7; }
+small { font-size: $fontSize - 2; }
+
+.entry-content, .entry-content-em {
+	overflow: hidden;
+}
+
+// ================= Listing Styles ====================
+
+$slatGutter: 20px;
+$slatImageWidth: 286px;
+@mixin listingslatcontent() {
+	margin-left: $slatImageWidth;
+	padding-left: $slatGutter;
+	padding-right: $slatGutter;
+}
+
+$slideshowImageWidth: 59%;
+$slideshowGutter: 16px;
+@mixin listingpagecontent() {
+	margin-left: $slideshowImageWidth;
+}
+
+.listing-info-main {
+	@include typekitfont();
+	line-height: 40px;
+	font-size: 17px;
+	.price { float: right; }
+}
+
+.listing-sold {
+	left: 0; top: 0;
+    position: absolute;
+	z-index: 10;
+}
+
+// ================== Single Listing Page ===================
+
+.single-listing {
+	.slideshow {
+		float: left;
+		width: $slideshowImageWidth;
+		.current-image-container {
+			margin-bottom: $slideshowGutter;
+			position: relative;
+			img {
+			    width: 100%;
+				&.listing-sold { width: auto; }
+			}
+		}
+		ul.thumbnails {
+			font-size: 0;
+			li {
+				display: inline-block;
+				*display: inline; zoom: 1;
+				margin-right: $slideshowGutter;
+				margin-bottom: $slideshowGutter;
+				&.last { margin-right: 0; }
+				img {
+					width: 88px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.listing-info {
+		@include listingpagecontent();
+	}
+	.listing-info-main, h2 {
+    	font-weight: bold;
+    	margin-left: 16px;
+        border-bottom: 1px solid #888;
+	}
+	h2 {
+		@include typekitfont( upper );
+		font-size: 15px;
+    	padding: 12px 0;
+	}
+	.price {
+	    display: block;
+	    float: none;
+	    border-top: 1px solid #888;
+	}
+	.listing-content {
+		overflow: hidden;
+		padding-left: 16px;
+		dl { overflow: hidden; margin-bottom: 16px; }
+		dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
+		dd { float: left; }
+	}
+	button.contact {
+		display: none;
+	}
+	.listing-navigation {
+		@include typekitfont( upper );
+		font-size: 15px;
+		background: #d8d8d8;
+		clear: right;
+		padding: 15px;
+		line-height: 15px;
+		overflow: hidden;
+		a {
+			text-decoration: none;
+			&.next-post { float: right; }
+			&.previous-post { float: left; }
+		}
+	}
+}
+
+// =========================== Print Hide Overrides ===========================
+
+.post-edit-link, .listing-navigation {
+    display: none;
+}

@@ -5,7 +5,6 @@
 	<meta name="description" content="<?php echo bloginfo( 'description' ); ?>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/assets/css/reset.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/base.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo( 'template_url' ) ?>/favicon.ico" />

@@ -1,0 +1,67 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* purple */
+/* green */
+/* ========================== General Elements ========================= */
+html { height: 100%; }
+
+body { width: 511pt; height: 100%; color: #000; font-size: 12px; line-height: 1.9; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a { text-decoration: underline; }
+
+p { margin-bottom: 16px; }
+
+h1, h2, h3, h4 { margin: 0 0 12px 0; line-height: 1; }
+
+h1 { font-size: 21px; border-bottom: 1px solid #ececec; padding-bottom: 9px; font-family: 'Helvetica'; text-transform: uppercase; }
+h1.extra-bottom-margin { margin-bottom: 31px; }
+
+h2 { font-size: 19px; }
+
+small { font-size: 10px; }
+
+.entry-content, .entry-content-em { overflow: hidden; }
+
+.listing-info-main { font-family: 'Helvetica'; line-height: 40px; font-size: 17px; }
+.listing-info-main .price { float: right; }
+
+.listing-sold { left: 0; top: 0; position: absolute; z-index: 10; }
+
+.single-listing .slideshow { float: left; width: 59%; }
+.single-listing .slideshow .current-image-container { margin-bottom: 16px; position: relative; }
+.single-listing .slideshow .current-image-container img { width: 100%; }
+.single-listing .slideshow .current-image-container img.listing-sold { width: auto; }
+.single-listing .slideshow ul.thumbnails { font-size: 0; }
+.single-listing .slideshow ul.thumbnails li { display: inline-block; *display: inline; zoom: 1; margin-right: 16px; margin-bottom: 16px; }
+.single-listing .slideshow ul.thumbnails li.last { margin-right: 0; }
+.single-listing .slideshow ul.thumbnails li img { width: 88px; cursor: pointer; }
+.single-listing .listing-info { margin-left: 59%; }
+.single-listing .listing-info-main, .single-listing h2 { font-weight: bold; margin-left: 16px; border-bottom: 1px solid #888; }
+.single-listing h2 { font-family: 'Helvetica'; text-transform: uppercase; font-size: 15px; padding: 12px 0; }
+.single-listing .price { display: block; float: none; border-top: 1px solid #888; }
+.single-listing .listing-content { overflow: hidden; padding-left: 16px; }
+.single-listing .listing-content dl { overflow: hidden; margin-bottom: 16px; }
+.single-listing .listing-content dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
+.single-listing .listing-content dd { float: left; }
+.single-listing button.contact { display: none; }
+.single-listing .listing-navigation { font-family: 'Helvetica'; text-transform: uppercase; font-size: 15px; background: #d8d8d8; clear: right; padding: 15px; line-height: 15px; overflow: hidden; }
+.single-listing .listing-navigation a { text-decoration: none; }
+.single-listing .listing-navigation a.next-post { float: right; }
+.single-listing .listing-navigation a.previous-post { float: left; }
+
+.post-edit-link, .listing-navigation { display: none; }

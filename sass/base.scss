@@ -1,30 +1,5 @@
-@import 'compass/css3';
-
-// Variables
-
-$brand1: #ab227e; /* purple */
-$brand2: #a9cd39; /* green */
-
-$fontSize: 12px;
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #999999;
-$linkColor: $brand1;
-$linkHoverColor: $linkColor - #222;
-
-$background: #d8d8d8;
-$bodyContainerBg: #f7f7f7;
-$contentGutter: 29px;
-
-$headerHeight: 207px;
-$headerBg: #434343;
-
-$menuColor: #b8b8b8;
-$menuHeight: 16px;
-
-$footerHeight: 175px;
-$footerPadding: 20px;
-
-$defaultBorderColor: #CCC;
+@import 'reset';
+@import 'config';
 
 @mixin typekitfont ( $texttransform: false ) {
 	font-family: 'pt-sans-narrow';
@@ -495,11 +470,12 @@ $slideshowGutter: 16px;
 		font-size: 15px;
 		cursor: pointer;
 		display: block;
-		clear: both;
+		//clear: both;
 		text-align: center;
 		text-decoration: none;
 		float: right;
 		margin-bottom: 6px;
+		margin-left: 6px;
 	}
 	.listing-navigation {
 		@include typekitfont( upper );

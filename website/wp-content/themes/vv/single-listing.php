@@ -58,7 +58,13 @@ get_template_part( 'listingtypes' );
 		} );
 
 		replaceImage( null, imglist[1] );
+
+		// Bind print event
+		$( 'button#print_button' ).click( function() {
+			sdprint( '.single-listing', '<?php bloginfo( 'template_url' ) ?>/assets/css/print.css' );
+		} );
 	} );
+
 </script>
 
 <div class="entry-content-em single-listing">
@@ -127,6 +133,8 @@ get_template_part( 'listingtypes' );
                 <input id="listing_url" name="listing_url" type="hidden" value="<?php echo get_permalink(); ?>" />
 			    <button type="submit" class="contact">Contact</button>
 			</form>
+
+			<button id="print_button" class="contact">Print</button>
 
 			<?php
 			if ( is_single() ) {
