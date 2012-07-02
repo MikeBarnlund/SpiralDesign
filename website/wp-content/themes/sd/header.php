@@ -5,5 +5,5 @@
 			<nav>
 				<?php wp_nav_menu( ); ?>
 			</nav>
-		</div>
+		</header>
 		<div role="main">
