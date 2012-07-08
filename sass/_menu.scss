@@ -4,9 +4,14 @@ ul.menu {
         &.current-menu-item {
             text-decoration: underline;
         }
+        &.has-sub-menu:before {
+            content: '\25bc';
+            font-size: 12px;
+        }
     }
     ul.sub-menu {
         display: none;
+        position: absolute;
         li { float: none; }
     }
 }
