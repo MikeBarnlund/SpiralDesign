@@ -1,11 +1,10 @@
 <div class="share">
 	<?php
-	$title = urlencode( get_the_title() );
+	$message = '"' . get_the_title() . '" on ' . get_bloginfo( 'name' );
+	$twitter_message = $message . ' - ' . getTinyUrl( get_permalink() );
+	$message = urlencode( $message );
+	$twitter_message = urlencode( $twitter_message );
 	?>
-	<a title="Share on Twitter" target="_blank" href="http://twitter.com/home?status=Contribute%20to%20the%20<?php echo $title; ?>%20-%20<?php the_permalink(); ?>">
-		<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/twitter_16.png"/>Share on Twitter
-	</a>
-	<a title="Share on Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php echo $title; ?>">
-		<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/facebook_16.png"/>Share on Facebook
-	</a>
+	<span><a id="tweet_button" target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo urlencode( get_permalink() ); ?>&text=<?php echo $twitter_message; ?>&url=<?php echo urlencode( get_permalink() ); ?>">Twitter</a></span>
+	<span><a id="fb_button" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>">Facebook</a></span>
 </div>

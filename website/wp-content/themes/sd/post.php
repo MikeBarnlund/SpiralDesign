@@ -15,4 +15,6 @@
 		<?php the_content( __( 'Read', 'vv' ) ); ?>
 		<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sdbase' ) . '&after=</div>') ?>
 	</div>
+
+	<?php get_template_part( 'share' ); ?>
 </div>
