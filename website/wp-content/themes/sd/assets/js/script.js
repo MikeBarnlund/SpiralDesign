@@ -26,7 +26,7 @@ $( document ).ready( function() {
             } );
         } else 
             $submenu.fadeOut( 100 );
-            
+
         // don't follow the link
         return false;
     } );
