@@ -1,0 +1,12 @@
+ul.menu {
+    li { 
+        @include inline-block(); 
+        &.current-menu-item {
+            text-decoration: underline;
+        }
+    }
+    ul.sub-menu {
+        display: none;
+        li { float: none; }
+    }
+}

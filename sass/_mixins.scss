@@ -1,0 +1,37 @@
+$break_small: 480px;
+$break_large: 769px;
+
+@mixin respond-to($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $break_small) { @content; }
+	}
+	@else if $media == mediumscreens {
+		@media only screen and (min-width: $break_small + 1) and (max-width: $break_large - 1) { @content; }
+	}
+	@else if $media == widescreens {
+		@media only screen and (min-width: $break_large) { @content; }
+	}
+	@else {
+	    @media only screen and ($media) { @content; }
+	}
+}
+
+@mixin px-to-perc( $prop, $pixels, $context ) {
+	#{$prop}: percentage( $pixels / $context )
+}
+
+@mixin px-to-em( $prop, $pixels, $context ) {
+	#{$prop}: #{$pixels/$context}#{'em'}
+}
+
+@mixin inline-block() {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+@mixin border-box() {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
