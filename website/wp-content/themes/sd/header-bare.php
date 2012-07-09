@@ -35,6 +35,11 @@
 			bloginfo( 'name' );
 			print ' | Search results for ' . esc_html( $s );
 		}
+		elseif ( is_category() ) {
+			bloginfo( 'name' );
+			print ' | ';
+			single_cat_title();
+		}
 		elseif ( is_404() ) {
 			bloginfo( 'name' );
 			print ' | Not Found';

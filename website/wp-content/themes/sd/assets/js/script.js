@@ -15,8 +15,8 @@ $( document ).ready( function() {
 	
 	// ============================== Menu =================================
 	
-    $( 'li.has-sub-menu').click( function() {
-        $submenu = $( this ).children( 'ul.sub-menu' );
+    $( 'li.has-sub-menu a').click( function() {
+        $submenu = $( this ).siblings( 'ul.sub-menu' );
         
         if ( !$submenu.is( ':visible' ) ) {
             $submenu.fadeIn( 75, function() {
@@ -27,7 +27,7 @@ $( document ).ready( function() {
         } else 
             $submenu.fadeOut( 100 );
 
-        // don't follow the link
-        return false;
+        // don't follow the link if it's '#'
+        if ( $( this ).attr( 'href' ) == '#' ) return false;
     } );
 } );
