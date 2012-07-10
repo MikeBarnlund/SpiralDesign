@@ -1,7 +1,12 @@
 // Variables
 
+$brand1: #e2383f;
+
 $fontSize: 14px;
 $fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #999;
+$bodyColor: #666666;
 $linkColor: $brand1 - #222;
 $linkHoverColor: $linkColor - #222;
+
+$contentWidth: 1024px;
+$contentPadding: 24px;

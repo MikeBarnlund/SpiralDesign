@@ -1,0 +1,25 @@
+
+body {
+    
+}
+
+a { 
+    color: $brand1; 
+    text-decoration: none; 
+}
+
+.container {
+    max-width: $contentWidth;
+    margin: 0 auto;
+}
+
+.tk {
+    font-family: "bebas-neue";
+}
+
+.content {
+    @extend .container;
+    //width: $contentWidth - $contentPadding * 2;
+    padding: $contentPadding;
+    @include background( rgba( 0, 0, 0, .1 ) image-url( "content-bg.png" ) );
+}

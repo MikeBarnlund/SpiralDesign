@@ -1,0 +1,36 @@
+
+header {
+    text-align: center;
+    padding-bottom: 14px;
+    #logo { 
+        @include inline-block(); 
+        margin: 13px 0 12px 0;
+    }
+    nav { 
+        @extend .container; 
+    }
+}
+
+ul.menu {
+    font-size: 20px;
+    line-height: 1;
+    background: #CCC;
+    height: 31px;
+    li {
+        @include inline-block(); 
+        padding: 7px 6px 0 6px;
+        a {
+            @extend .tk;
+            color: $bodyColor; 
+            text-transform: uppercase; 
+        }
+        &.current-menu-item {
+            a { color: $brand1; }
+        }
+    }
+    ul.sub-menu {
+        display: none;
+        position: absolute;
+        li { display: block; }
+    }
+}
