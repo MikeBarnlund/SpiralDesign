@@ -9,7 +9,12 @@ the_post();
 <div class="content">
 	<?php if ( get_the_ID() ) { ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<div class="entry-title">
+				<h1><?php the_title(); ?></h1>
+				<h2><?php the_field( 'subheading' ); ?></h2>
+				<div class="down-arrow-black"></div>
+			</div>
+			
 			<div class="entry-content editable">
 				<?php the_content(); ?>
 				<?php edit_post_link( __( 'Edit', 'sdbase' ), '<div class="edit-link">', '</div>' ) ?>

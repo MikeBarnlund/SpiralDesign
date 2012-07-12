@@ -23,14 +23,33 @@ ul.menu {
             @extend .tk;
             color: $bodyColor; 
             text-transform: uppercase; 
+            &:hover { color: $brand1; }
         }
         &.current-menu-item {
             a { color: $brand1; }
         }
+        &.has-sub-menu {
+            position: relative;
+        }
     }
     ul.sub-menu {
+        z-index: 1;
         display: none;
         position: absolute;
-        li { display: block; }
+        text-align: left;
+        top: 45px;
+        left: 0;
+        background: url(../img/dropdown.png) top left no-repeat;
+        width: 212px;
+        height: 79px;
+        padding-top: 13px;
+        a { 
+            color: #7f7f7f;
+            &:hover { color: $brand1; }
+        }
+        li { 
+            display: block; 
+            padding: 2px 0 2px 19px;
+        }
     }
 }

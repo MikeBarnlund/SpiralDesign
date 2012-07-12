@@ -1,11 +1,16 @@
 
 body {
-    
+    color: $bodyColor;
 }
 
 a { 
     color: $brand1; 
     text-decoration: none; 
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin: 0;
 }
 
 .container {
@@ -22,4 +27,37 @@ a {
     //width: $contentWidth - $contentPadding * 2;
     padding: $contentPadding;
     @include background( rgba( 0, 0, 0, .1 ) image-url( "content-bg.png" ) );
+}
+
+.down-arrow-black {
+    position: absolute;
+    background-image: url(../img/down-arrow-black.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+}
+
+.entry-title {
+    @extend .tk;
+    line-height: 1;
+    border-top: 3px solid #000;
+    padding: 18px 0 14px 0;
+    margin-bottom: 30px;
+    position: relative;
+    h1 {
+        font-size: 47px;
+        color: #000;
+    }
+    h2 {
+        margin-top: 1px;
+        font-size: 30px;
+        color: $bodyColor; 
+    }
+    .down-arrow-black {
+        width: 100%;
+        background-position: 2.75% 0;
+        border-top: 3px solid #000;
+        bottom: -15px;
+    }
 }
