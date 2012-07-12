@@ -1,12 +1,18 @@
 
 body {
     color: $bodyColor;
+    font-size: 15px;
+    font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    //font-weight: 300;
+    line-height: 1.65;
 }
 
 a { 
     color: $brand1; 
     text-decoration: none; 
 }
+
+p { margin: 0 0 25px 0; }
 
 h1, h2, h3, h4 {
     font-weight: normal;
@@ -22,9 +28,9 @@ h1, h2, h3, h4 {
     font-family: "bebas-neue";
 }
 
+.main { @extend .container; }
+
 .content {
-    @extend .container;
-    //width: $contentWidth - $contentPadding * 2;
     padding: $contentPadding;
     @include background( rgba( 0, 0, 0, .1 ) image-url( "content-bg.png" ) );
 }
@@ -43,7 +49,7 @@ h1, h2, h3, h4 {
     line-height: 1;
     border-top: 3px solid #000;
     padding: 18px 0 14px 0;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     position: relative;
     h1 {
         font-size: 47px;
@@ -59,5 +65,15 @@ h1, h2, h3, h4 {
         background-position: 2.75% 0;
         border-top: 3px solid #000;
         bottom: -15px;
+    }
+}
+
+.page {
+    h3 {
+        @extend .tk;
+        line-height: 1;
+        color: $brand1;
+        font-size: 23px;
+        margin-bottom: 10px;
     }
 }

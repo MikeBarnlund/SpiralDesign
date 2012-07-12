@@ -397,6 +397,9 @@ ul, ol {
 }
 body {
   color: #666666;
+  font-size: 15px;
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.65;
 }
 
 a {
@@ -404,17 +407,21 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0 0 25px 0;
+}
+
 h1, h2, h3, h4 {
   font-weight: normal;
   margin: 0;
 }
 
-.container, .content, header nav {
+.container, .main, header nav, footer {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.tk, .entry-title, ul.menu li a, footer {
+.tk, .entry-title, .page h3, ul.menu li a, footer {
   font-family: "bebas-neue";
 }
 
@@ -436,7 +443,7 @@ h1, h2, h3, h4 {
   line-height: 1;
   border-top: 3px solid #000;
   padding: 18px 0 14px 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   position: relative;
 }
 .entry-title h1 {
@@ -453,6 +460,13 @@ h1, h2, h3, h4 {
   background-position: 2.75% 0;
   border-top: 3px solid #000;
   bottom: -15px;
+}
+
+.page h3 {
+  line-height: 1;
+  color: #e2383f;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 
 header {

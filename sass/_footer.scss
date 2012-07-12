@@ -1,6 +1,6 @@
 
 footer {
-    @extend .tk;
+    @extend .tk, .container;
     color: #929292;
     background: #CCC;
     position: relative;
