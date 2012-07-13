@@ -94,6 +94,15 @@ h1, h2, h3, h4 {
     padding: 15px 20px 2px 20px;
     margin: -10px 0 25px 0;
     p { padding: 0 0 13px 0; }
+    ul {
+        float: left;
+        font-size: 13px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        li {
+            list-style: disc inside;
+        }
+    }
 }
 
 .entry-content {

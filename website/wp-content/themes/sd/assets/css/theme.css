@@ -490,6 +490,15 @@ h1, h2, h3, h4 {
 .emphasis p {
   padding: 0 0 13px 0;
 }
+.emphasis ul {
+  float: left;
+  font-size: 13px;
+  padding-bottom: 15px;
+  padding-right: 35px;
+}
+.emphasis ul li {
+  list-style: disc inside;
+}
 
 .entry-content h2 {
   line-height: 1;
