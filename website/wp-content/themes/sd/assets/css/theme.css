@@ -268,6 +268,10 @@ ul, ol {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 /* =============================================================================
    Non-Semantic Helper Classes
    ========================================================================== */
@@ -400,6 +404,7 @@ body {
   font-size: 15px;
   font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.65;
+  background: url(../img/bg.png) top left no-repeat;
 }
 
 a {
@@ -408,7 +413,8 @@ a {
 }
 
 p {
-  margin: 0 0 25px 0;
+  margin: 0;
+  padding: 0 0 25px 0;
 }
 
 h1, h2, h3, h4 {
@@ -421,13 +427,27 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-.tk, .entry-title, .page h3, ul.menu li a, footer {
+.tk, .entry-title, .entry-content h2, .entry-content h3, ul.menu li a, footer {
   font-family: "bebas-neue";
 }
 
+.main {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.ie7 .main, .ie8 .main {
+  background: url(../img/content-bg.png) top left repeat;
+}
+
 .content {
-  padding: 24px;
-  background: rgba(0, 0, 0, 0.1) url('/wp-content/themes/sd/assets/img/content-bg.png?1341809275');
+  margin: 0 24px;
+  padding: 0;
+  background: #e5e5e5;
+}
+.content.with-side-image {
+  padding-left: 206px;
+  background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
 }
 
 .down-arrow-black {
@@ -462,11 +482,52 @@ h1, h2, h3, h4 {
   bottom: -15px;
 }
 
-.page h3 {
+.emphasis {
+  background: #d8d8d8;
+  padding: 15px 20px 2px 20px;
+  margin: -10px 0 25px 0;
+}
+.emphasis p {
+  padding: 0 0 13px 0;
+}
+
+.entry-content h2 {
+  line-height: 1;
+  color: #e2383f;
+  font-size: 28px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 28px;
+}
+.entry-content h3 {
   line-height: 1;
   color: #e2383f;
   font-size: 23px;
   margin-bottom: 10px;
+}
+.entry-content .align-right {
+  float: right;
+  padding-left: 25px;
+}
+.entry-content .align-left {
+  float: left;
+  padding-right: 25px;
+}
+
+ul.clients li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 244px;
+  text-align: center;
+  line-height: 113px;
+}
+ul.clients li img {
+  vertical-align: middle;
+  opacity: .7;
+}
+ul.clients li a:hover img {
+  opacity: 1;
 }
 
 header {
@@ -483,14 +544,14 @@ header #logo {
 ul.menu {
   font-size: 20px;
   line-height: 1;
-  background: #CCC;
+  background: url(../img/nav-bg.png) center left repeat;
   height: 31px;
 }
 ul.menu li {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  padding: 7px 6px 0 6px;
+  padding: 5px 6px 0 6px;
 }
 ul.menu li a {
   color: #666666;
@@ -514,8 +575,8 @@ ul.menu ul.sub-menu {
   left: 0;
   background: url(../img/dropdown.png) top left no-repeat;
   width: 212px;
-  height: 79px;
-  padding-top: 13px;
+  height: 82px;
+  padding-top: 10px;
 }
 ul.menu ul.sub-menu a {
   color: #7f7f7f;
@@ -535,6 +596,7 @@ footer {
   border-top: 3px solid #000;
   text-align: center;
   height: 82px;
+  margin-bottom: 124px;
 }
 footer .social {
   margin-top: 22px;

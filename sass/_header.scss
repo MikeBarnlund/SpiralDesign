@@ -14,11 +14,11 @@ header {
 ul.menu {
     font-size: 20px;
     line-height: 1;
-    background: #CCC;
+    background: url(../img/nav-bg.png) center left repeat;
     height: 31px;
     li {
         @include inline-block(); 
-        padding: 7px 6px 0 6px;
+        padding: 5px 6px 0 6px;
         a {
             @extend .tk;
             color: $bodyColor; 
@@ -41,8 +41,8 @@ ul.menu {
         left: 0;
         background: url(../img/dropdown.png) top left no-repeat;
         width: 212px;
-        height: 79px;
-        padding-top: 13px;
+        height: 82px;
+        padding-top: 10px;
         a { 
             color: #7f7f7f;
             &:hover { color: $brand1; }

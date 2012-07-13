@@ -6,4 +6,4 @@
 				<?php wp_nav_menu( array( 'walker' => new SH_Last_Walker(), 'depth' => 0 ) ); ?>
 			</nav>
 		</header>
-		<div class="main">
+		<div class="main clearfix">

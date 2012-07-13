@@ -5,6 +5,7 @@ body {
     font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     //font-weight: 300;
     line-height: 1.65;
+    background: url(../img/bg.png) top left no-repeat;
 }
 
 a { 
@@ -12,7 +13,10 @@ a {
     text-decoration: none; 
 }
 
-p { margin: 0 0 25px 0; }
+p { 
+    margin: 0;
+    padding: 0 0 25px 0; 
+}
 
 h1, h2, h3, h4 {
     font-weight: normal;
@@ -28,11 +32,24 @@ h1, h2, h3, h4 {
     font-family: "bebas-neue";
 }
 
-.main { @extend .container; }
+.main { 
+    @extend .container; 
+    background: rgba(0,0,0,.1);
+    padding: $contentPadding 0;
+}
+
+.ie7 .main, .ie8 .main {
+    background: url(../img/content-bg.png) top left repeat;
+}
 
 .content {
-    padding: $contentPadding;
-    @include background( rgba( 0, 0, 0, .1 ) image-url( "content-bg.png" ) );
+    margin: 0 $contentPadding;
+    padding: 0;
+    background: #e5e5e5;
+    &.with-side-image {
+        padding-left: 206px;
+        background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
+    }
 }
 
 .down-arrow-black {
@@ -68,12 +85,36 @@ h1, h2, h3, h4 {
     }
 }
 
-.page {
+.emphasis {
+    background: #d8d8d8;
+    padding: 15px 20px 2px 20px;
+    margin: -10px 0 25px 0;
+    p { padding: 0 0 13px 0; }
+}
+
+.entry-content {
+    h2 {
+        @extend .tk;
+        line-height: 1;
+        color: $brand1;
+        font-size: 28px;
+        border-bottom: 3px solid #000;
+        padding-bottom: 8px;
+        margin-bottom: 28px;
+    }
     h3 {
         @extend .tk;
         line-height: 1;
         color: $brand1;
         font-size: 23px;
         margin-bottom: 10px;
+    }
+    .align-right {
+        float: right;
+        padding-left: 25px;
+    }
+    .align-left {
+        float: left;
+        padding-right: 25px;
     }
 }

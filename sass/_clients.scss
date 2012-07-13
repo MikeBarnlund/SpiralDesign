@@ -1,0 +1,14 @@
+
+ul.clients {
+    li {
+        @include inline-block();
+        width: ( $contentWidth - $contentPadding * 2 ) / 4;
+        text-align: center;
+        line-height: 113px; // height of the tallest logo
+        img { 
+            vertical-align: middle; 
+            opacity: .7;
+        }
+        a:hover img { opacity: 1; }
+    }
+}
