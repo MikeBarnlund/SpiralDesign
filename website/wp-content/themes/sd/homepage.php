@@ -9,11 +9,12 @@ get_header();
 the_post();
 
 ?>
+<div class="main clearfix">
+	<div class="content">
 
-<div class="content">
+		Home Page
 
-	Home Page
-
+	</div>
 </div>
 
 <?php

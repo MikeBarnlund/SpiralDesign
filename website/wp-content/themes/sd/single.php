@@ -6,10 +6,12 @@ the_post();
 
 ?>
 
-<div class="content">
-	<?php if ( get_the_ID() ) {
-		get_template_part( 'post' );
-	} ?>
+<div class="main clearfix">
+	<div class="content">
+		<?php if ( get_the_ID() ) {
+			get_template_part( 'post' );
+		} ?>
+	</div>
 </div>
 
 <?php

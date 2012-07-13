@@ -34,20 +34,24 @@ h1, h2, h3, h4 {
 
 .main { 
     @extend .container; 
-    background: rgba(0,0,0,.1);
-    padding: $contentPadding 0;
+    &.with-side-image {
+        background: rgba(0,0,0,.1);
+    }
 }
 
-.ie7 .main, .ie8 .main {
+.ie7 .main.with-side-image, .ie8 .main.with-side-image {
     background: url(../img/content-bg.png) top left repeat;
 }
 
 .content {
-    margin: 0 $contentPadding;
-    padding: 0;
     background: #e5e5e5;
-    &.with-side-image {
-        padding-left: 206px;
+    padding: $contentPadding;
+}
+
+.with-side-image {
+    .content {
+        padding: 0 0 0 206px;
+        margin: $contentPadding;
         background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
     }
 }

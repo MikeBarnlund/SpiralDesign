@@ -427,26 +427,26 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-.tk, .entry-title, .entry-content h2, .entry-content h3, ul.menu li a, footer {
+.tk, .entry-title, .entry-content h2, .entry-content h3, .keynote-topics, ul.menu li a, footer {
   font-family: "bebas-neue";
 }
 
-.main {
+.main.with-side-image {
   background: rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
 }
 
-.ie7 .main, .ie8 .main {
+.ie7 .main.with-side-image, .ie8 .main.with-side-image {
   background: url(../img/content-bg.png) top left repeat;
 }
 
 .content {
-  margin: 0 24px;
-  padding: 0;
   background: #e5e5e5;
+  padding: 24px;
 }
-.content.with-side-image {
-  padding-left: 206px;
+
+.with-side-image .content {
+  padding: 0 0 0 206px;
+  margin: 24px;
   background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
 }
 
@@ -528,6 +528,20 @@ ul.clients li img {
 }
 ul.clients li a:hover img {
   opacity: 1;
+}
+
+.keynote-topics {
+  font-size: 28px;
+  float: left;
+  line-height: 1;
+}
+.keynote-topics ul {
+  float: left;
+  padding-right: 27px;
+}
+.keynote-topics ul li {
+  list-style: disc inside;
+  padding-bottom: 20px;
 }
 
 header {
