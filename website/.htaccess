@@ -1,13 +1,13 @@
 # BEGIN Security
-# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/sd-trunk/website/.htpasswd
-# AuthUserFile /home/barnlund/public_html/sd-trunk/.htpasswd
-# AuthGroupFile /dev/null
-# AuthName "AuthName"
-# AuthType Basic
+# AuthUserFile /Users/mikebarnlund/workspaces/spiraldesign/quantumstrategies.com/website/.htpasswd
+AuthUserFile /home/barnlund/public_html/qs/.htpasswd
+AuthGroupFile /dev/null
+AuthName "AuthName"
+AuthType Basic
 #
-# <Limit GET POST>
-# require valid-user
-# </Limit>
+<Limit GET POST>
+require valid-user
+</Limit>
 # End Security
 
 # BEGIN WordPress
