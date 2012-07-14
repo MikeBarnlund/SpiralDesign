@@ -1,5 +1,6 @@
 
 ul.clients {
+    text-align: center;
     li {
         @include inline-block();
         width: ( $contentWidth - $contentPadding * 2 ) / 4;

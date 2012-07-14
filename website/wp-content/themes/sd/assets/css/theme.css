@@ -514,6 +514,11 @@ h1, h2, h3, h4 {
   font-size: 23px;
   margin-bottom: 10px;
 }
+.entry-content h4 {
+  color: #e2383f;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .entry-content .align-right {
   float: right;
   padding-left: 25px;
@@ -523,6 +528,17 @@ h1, h2, h3, h4 {
   padding-right: 25px;
 }
 
+blockquote {
+  margin: 0;
+  font-style: italic;
+}
+blockquote p {
+  padding: 0 0 15px 0;
+}
+
+ul.clients {
+  text-align: center;
+}
 ul.clients li {
   display: inline-block;
   *display: inline;
@@ -576,14 +592,17 @@ ul.clients li a:hover img {
   margin-bottom: 3px;
 }
 .contact-fields input, .contact-fields textarea {
-  width: 100%;
   background: #ccc;
   border: 0;
 }
 .contact-fields input {
   height: 33px;
+  width: 96%;
+  padding: 0 2%;
 }
 .contact-fields textarea {
+  width: 98%;
+  padding: 1%;
   height: 147px;
 }
 
@@ -597,6 +616,58 @@ input.wpcf7-submit {
   background: #000;
   color: #FFF;
   font-size: 20px;
+}
+
+.video {
+  margin-bottom: 32px;
+}
+
+.main-event, .events li {
+  position: relative;
+}
+.main-event img, .events li img {
+  width: 100%;
+}
+.main-event .event-content, .events li .event-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.main-event h2, .events li h2 {
+  color: #e2383f;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.main-event span, .events li span {
+  font-size: 12px;
+  color: #FFF;
+}
+.main-event .description, .events li .description {
+  color: #AAA;
+}
+
+.main-event {
+  margin-bottom: 15px;
+}
+
+.events {
+  font-size: 0;
+}
+.events li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 32.33%;
+  margin-left: 1.5%;
+  cursor: pointer;
+}
+.events li:first-child {
+  margin-left: 0;
+}
+.events .description {
+  display: none;
 }
 
 header {

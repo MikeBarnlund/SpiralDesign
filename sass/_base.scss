@@ -125,6 +125,11 @@ h1, h2, h3, h4 {
         font-size: 23px;
         margin-bottom: 10px;
     }
+    h4 {
+        color: $brand1;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
     .align-right {
         float: right;
         padding-left: 25px;
@@ -132,5 +137,13 @@ h1, h2, h3, h4 {
     .align-left {
         float: left;
         padding-right: 25px;
+    }
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+    p {
+        padding: 0 0 15px 0;
     }
 }

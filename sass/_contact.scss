@@ -23,12 +23,19 @@
         margin-bottom: 3px;
     }
     input, textarea {
-        width: 100%;
         background: #ccc;
         border: 0;
     }
-    input { height: 33px; }
-    textarea { height: 147px;}
+    input { 
+        height: 33px; 
+        width: 96%;
+        padding: 0 2%;
+    }
+    textarea { 
+        width: 98%;
+        padding: 1%;
+        height: 147px;
+    }
 }
 input.wpcf7-submit {
     @extend .tk;
