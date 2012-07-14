@@ -8,6 +8,9 @@ body {
     background: url(../img/bg.png) top left no-repeat;
 }
 
+::-moz-selection { background: $brand1; color: #fff; text-shadow: none; }
+::selection { background: $brand1; color: #fff; text-shadow: none; }
+
 a { 
     color: $brand1; 
     text-decoration: none; 

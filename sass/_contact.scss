@@ -1,0 +1,44 @@
+.contact-fields {
+    li {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 15px;
+        &.even {
+            margin-right: 0;
+        }
+        &.full {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    label {
+        @extend .tk;
+        color: $brand1;
+        font-size: 20px;
+        line-height: 1;
+        display: block;
+        background: #000;
+        padding: 5px 0 2px 12px;
+        margin-bottom: 3px;
+    }
+    input, textarea {
+        width: 100%;
+        background: #ccc;
+        border: 0;
+    }
+    input { height: 33px; }
+    textarea { height: 147px;}
+}
+input.wpcf7-submit {
+    @extend .tk;
+    line-height: 1;
+    float: right;
+    width: 195px;
+    height: 32px;
+    padding: 6px 0 2px 0;
+    border: 0;
+    background: #000;
+    color: #FFF;
+    font-size: 20px;
+}
