@@ -13,13 +13,6 @@
         }
     }
     label {
-        @extend .tk;
-        color: $brand1;
-        font-size: 20px;
-        line-height: 1;
-        display: block;
-        background: #000 url(../img/down-arrow-grey.png) top right no-repeat;
-        padding: 5px 0 2px 12px;
         margin-bottom: 3px;
     }
     input, textarea {

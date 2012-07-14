@@ -1,0 +1,38 @@
+.services {
+    font-size: 0;
+    li {
+        @include inline-block();
+        @extend .tk;
+        line-height: 1.1;
+        font-size: 24px;
+        width: 32.33%;
+        margin-left: 1.5%;
+        cursor: pointer;
+        &:first-child {
+            margin-left: 0;   
+        }
+    }
+    label { margin-bottom: 13px; }
+    a { color: #919191; }
+}
+
+.slideshow {
+    @extend .container;
+    position: relative;
+    .item {
+        img { width: 100%; }
+        .service-content {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+        }
+        h2, h3 {
+            @extend .tk;
+            text-align: center;
+            color: #FFF;
+            line-height: 1;
+        }
+        h2 { font-size: 82px; }
+        h3 { font-size: 27px; }
+    }
+}
