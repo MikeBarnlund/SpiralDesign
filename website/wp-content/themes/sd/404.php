@@ -7,4 +7,10 @@
 	</div>
 </div>
 
-<?php get_footer(); ?>
+<?php 
+
+get_footer(); 
+
+get_template_part( 'body', 'close' );
+
+?>

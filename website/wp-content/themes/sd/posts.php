@@ -15,4 +15,6 @@ get_posts();
 
 get_footer();
 
+get_template_part( 'body', 'close' );
+
 ?>

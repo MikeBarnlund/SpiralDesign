@@ -427,7 +427,7 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-.tk, .entry-title, .entry-content h2, .entry-content h3, label, .keynote-topics, input.wpcf7-submit, .services li, .slideshow .item h2, .slideshow .item h3, ul.menu li a, footer {
+.tk, .entry-title, .entry-content h2, .entry-content h3, label, .keynote-topics, input.wpcf7-submit, .services li, .slideshow li h2, .slideshow li h3, ul.menu li a, footer {
   font-family: "bebas-neue";
 }
 
@@ -696,26 +696,68 @@ input.wpcf7-submit {
   color: #919191;
 }
 
-.slideshow {
-  position: relative;
+.slideshow-button {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 121px;
+  height: 52px;
+  width: 38px;
+  background-image: url(../img/slideshow-buttons.png);
+  background-repeat: no-repeat;
 }
-.slideshow .item img {
+.slideshow-button#sd-next {
+  right: 0;
+  background-position: -38px 0;
+}
+.slideshow-button#sd-next:hover {
+  background-position: -38px 100%;
+}
+.slideshow-button#sd-prev {
+  left: 0;
+  background-position: 0 0;
+}
+.slideshow-button#sd-prev:hover {
+  background-position: 0 100%;
+}
+
+.slideshow {
+  width: 100%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.slideshow ul {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
-.slideshow .item .service-content {
+.slideshow li {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 295px;
+  max-width: 100%;
+}
+.slideshow li img {
+  max-width: 100%;
+}
+.slideshow li .service-content {
   position: absolute;
   top: 100px;
   width: 100%;
 }
-.slideshow .item h2, .slideshow .item h3 {
+.slideshow li h2, .slideshow li h3 {
   text-align: center;
   color: #FFF;
   line-height: 1;
 }
-.slideshow .item h2 {
+.slideshow li h2 {
   font-size: 82px;
 }
-.slideshow .item h3 {
+.slideshow li h3 {
   font-size: 27px;
 }
 

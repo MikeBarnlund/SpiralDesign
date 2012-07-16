@@ -16,11 +16,46 @@
     a { color: #919191; }
 }
 
+.slideshow-button {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 121px;
+    height: 52px;
+    width: 38px;
+    background-image: url(../img/slideshow-buttons.png);
+    background-repeat: no-repeat;
+    &#sd-next {
+        right: 0;
+        background-position: -38px 0;
+        &:hover { background-position: -38px 100%; }
+    }
+    &#sd-prev {
+        left: 0;
+        background-position: 0 0;
+        &:hover { background-position: 0 100%; }
+    }
+}
+
 .slideshow {
     @extend .container;
+    width: 100%;
     position: relative;
-    .item {
-        img { width: 100%; }
+    height: 0;
+    overflow: hidden;
+    
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    li {
+        position: relative;
+        @include inline-block();
+        height: 295px;
+        max-width: 100%;
+        img { max-width: 100%; }
         .service-content {
             position: absolute;
             top: 100px;

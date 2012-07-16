@@ -18,4 +18,6 @@ the_post();
 
 get_footer();
 
+get_template_part( 'body', 'close' );
+
 ?>

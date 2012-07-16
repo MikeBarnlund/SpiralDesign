@@ -1,0 +1,3 @@
+[submodule "website/wp-content/themes/sd/assets/js/libs/jquery.sdslideshow.js"]
+	path = website/wp-content/themes/sd/assets/js/libs/jquery.sdslideshow.js
+	url = git://github.com/MikeBarnlund/jquery.sdslideshow.js.git
