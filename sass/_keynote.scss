@@ -10,5 +10,21 @@
             list-style: disc inside;
             padding-bottom: 20px;
         }
+        @include respond-to( 'max-width: 1023px' ) {
+            float: none;
+            padding: 0;
+        }
+        @include respond-to( 'max-width: 540px' ) {
+            padding-right: 27px;
+        }
+    }
+    @include respond-to( 'max-width: 870px' ) {
+        font-size: 18px;
+    }
+}
+
+@include respond-to( 'max-width: 540px' ) {
+    #post-44 span img {
+        display: none;
     }
 }

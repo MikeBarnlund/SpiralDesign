@@ -21,18 +21,55 @@
 
 .main-event {
     margin-bottom: 15px;
+    @include respond-to( 'max-width: 768px' ) {
+        .event-content {
+            position: static;
+            background: none;
+            padding: 10px 0 0 0;
+        }
+        span { color: $bodyColor; }
+        .description { color: $bodyColor; }
+    }
 }
 
 .events {
     font-size: 0;
+    .description { display: none; }
     li {
         @include inline-block();
         width: 32.33%;
         margin-left: 1.5%;
         cursor: pointer;
+        vertical-align: top;
         &:first-child {
             margin-left: 0;   
         }
+        @include respond-to( 'max-width: 920px' ) {
+            .event-content {
+                position: static;
+                background: none;
+                padding: 10px 0 0 0;
+            }
+            span { color: $bodyColor; }
+        }
     }
-    .description { display: none; }
+}
+
+@include respond-to( 'max-width: 600px' ) {
+    .main-event {
+        display: none;
+    }
+    .events {
+        li {
+            width: 100%;
+            margin: 0;
+            cursor: auto;
+            .description { 
+                display: block; 
+                font-size: $fontSize;
+                color: $bodyColor;
+                padding-bottom: 20px;
+            }
+        } 
+    }
 }

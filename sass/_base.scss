@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
 }
 
 .main { 
-    @extend .container; 
+    @extend .container;
     &.with-side-image {
         background: rgba(0,0,0,.1);
     }
@@ -56,6 +56,18 @@ h1, h2, h3, h4 {
         padding: 0 0 0 206px;
         margin: $contentPadding;
         background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
+    }
+}
+
+.main {
+    @include respond-to( 'max-width: 640px' ) {
+        &.with-side-image {
+            background: #e5e5e5;
+            .content {
+                padding: 0;
+                background: none;
+            }
+        }
     }
 }
 

@@ -3,7 +3,7 @@ ul.clients {
     text-align: center;
     li {
         @include inline-block();
-        width: ( $contentWidth - $contentPadding * 2 ) / 4;
+        width: 25%;
         text-align: center;
         line-height: 113px; // height of the tallest logo
         img { 
@@ -11,5 +11,12 @@ ul.clients {
             opacity: .7;
         }
         a:hover img { opacity: 1; }
+        @include respond-to( 'max-width: 760px' ) {
+            width: 33%;
+        }
+        @include respond-to( 'max-width: 570px' ) {
+            width: 50%;
+            img { max-width: 90%; }
+        }
     }
 }
