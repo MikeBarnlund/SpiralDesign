@@ -52,16 +52,33 @@ ul.menu {
             padding: 2px 0 2px 19px;
         }
     }
-    @include respond-to( 'max-width: 480px' ) {
+    @include respond-to( 'max-width: 440px' ) {
         height: auto;
-        background: #CCCCCC;
-
+        background: #CCC;
+        text-align: left;
+        li {
+            border-top: 1px solid #AAA;
+            display: block;
+            padding-right: 0px;
+            &:first-child {
+                border: 0;
+            }
+            a { 
+                display: block; 
+                width: 100%;
+            }
+        }
         ul.sub-menu {
             width: auto;
             height: auto;
-            background: #000;
-            padding: 8px 8px 0 8px;
-            li { padding: 0 0 8px 0; }
+            background: #DDD;
+            position: static;
+            padding: 0;
+            margin-left: 15px;
+            li { 
+                padding: 5px 6px 0 6px;
+                a { color: inherit; }
+            }
         }
     }
 }

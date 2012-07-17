@@ -389,8 +389,8 @@ li {
 }
 body {
   color: #666666;
-  font-size: 15px;
-  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.65;
   background: url(../img/bg.png) top left no-repeat;
 }
@@ -447,7 +447,19 @@ h1, h2, h3, h4 {
 .with-side-image .content {
   padding: 0 0 0 206px;
   margin: 24px;
-  background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
+  background-image: url(../img/side-image.png);
+  background-color: #e5e5e5;
+  background-position: center left;
+  background-repeat: repeat-y;
+}
+.with-side-image .content.company {
+  background-image: url(../img/company-side.jpg);
+}
+.with-side-image .content.contact {
+  background-image: url(../img/contact-side.jpg);
+}
+.with-side-image .content.results {
+  background-image: url(../img/results-side.jpg);
 }
 
 @media only screen and (max-width: 640px) {
@@ -490,6 +502,12 @@ h1, h2, h3, h4 {
   background-position: 2.75% 0;
   border-top: 3px solid #000;
   bottom: -15px;
+}
+@media only screen and (min-width: 768px) {
+  .entry-title h1, .entry-title h2 {
+    margin-left: -20px;
+    opacity: 0;
+  }
 }
 
 .emphasis {
@@ -641,6 +659,11 @@ ul.clients li a:hover img {
 .contact-fields input, .contact-fields textarea {
   background: #ccc;
   border: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
 }
 .contact-fields input {
   height: 33px;
@@ -944,19 +967,37 @@ ul.menu ul.sub-menu li {
   display: block;
   padding: 2px 0 2px 19px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 440px) {
   ul.menu {
     height: auto;
-    background: #CCCCCC;
+    background: #CCC;
+    text-align: left;
+  }
+  ul.menu li {
+    border-top: 1px solid #AAA;
+    display: block;
+    padding-right: 0px;
+  }
+  ul.menu li:first-child {
+    border: 0;
+  }
+  ul.menu li a {
+    display: block;
+    width: 100%;
   }
   ul.menu ul.sub-menu {
     width: auto;
     height: auto;
-    background: #000;
-    padding: 8px 8px 0 8px;
+    background: #DDD;
+    position: static;
+    padding: 0;
+    margin-left: 15px;
   }
   ul.menu ul.sub-menu li {
-    padding: 0 0 8px 0;
+    padding: 5px 6px 0 6px;
+  }
+  ul.menu ul.sub-menu li a {
+    color: inherit;
   }
 }
 

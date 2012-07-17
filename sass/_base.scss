@@ -1,8 +1,8 @@
 
 body {
     color: $bodyColor;
-    font-size: 15px;
-    font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: $fontSize;
+    font-family: $fontFamily;
     //font-weight: 300;
     line-height: 1.65;
     background: url(../img/bg.png) top left no-repeat;
@@ -55,7 +55,13 @@ h1, h2, h3, h4 {
     .content {
         padding: 0 0 0 206px;
         margin: $contentPadding;
-        background: #e5e5e5 url(../img/side-image.png) center left no-repeat;
+        background-image: url(../img/side-image.png);
+        background-color: #e5e5e5;
+        background-position: center left;
+        background-repeat: repeat-y;
+        &.company { background-image: url(../img/company-side.jpg); }
+        &.contact { background-image: url(../img/contact-side.jpg); }
+        &.results { background-image: url(../img/results-side.jpg); }
     }
 }
 
@@ -101,6 +107,12 @@ h1, h2, h3, h4 {
         background-position: 2.75% 0;
         border-top: 3px solid #000;
         bottom: -15px;
+    }
+    @include respond-to( 'min-width: 768px' ) {
+        h1, h2 {
+            margin-left: -20px;
+            opacity: 0;
+        }
     }
 }
 

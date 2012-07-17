@@ -6,7 +6,7 @@ the_post();
 
 ?>
 <div class="main with-side-image clearfix">
-	<div class="content">
+	<div class="content <?php echo $post->post_name; ?>">
 		<?php if ( get_the_ID() ) { ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="entry-title">

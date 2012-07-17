@@ -18,6 +18,7 @@
     input, textarea {
         background: #ccc;
         border: 0;
+        @include border-radius(0px);
     }
     input { 
         height: 33px; 

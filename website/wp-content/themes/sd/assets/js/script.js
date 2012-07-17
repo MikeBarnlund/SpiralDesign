@@ -42,4 +42,12 @@ $( document ).ready( function() {
             } )
             .animate( { 'opacity': 1 }, 250 );
     } );
+    
+    // ========================= Title Animation ==============================
+    
+    if ( Modernizr.mq( '(min-width: 768px)' ) ) {
+        setTimeout( function() { $( '.entry-title h1' ).animate( { 'margin-left': '0px', 'opacity': '1' } ) }, 50 );
+        setTimeout( function() { $( '.entry-title h2' ).animate( { 'margin-left': '0px', 'opacity': '1' } ) }, 250 );   
+    }
+    
 } );

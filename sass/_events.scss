@@ -42,7 +42,7 @@
         cursor: pointer;
         vertical-align: top;
         &:first-child {
-            margin-left: 0;   
+            margin-left: 0;
         }
         @include respond-to( 'max-width: 920px' ) {
             .event-content {
