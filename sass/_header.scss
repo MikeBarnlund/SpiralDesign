@@ -55,11 +55,10 @@ ul.menu {
     @include respond-to( 'max-width: 440px' ) {
         height: auto;
         background: #CCC;
-        text-align: left;
         li {
             border-top: 1px solid #AAA;
             display: block;
-            padding-right: 0px;
+            padding: 5px 0 2px;
             &:first-child {
                 border: 0;
             }
@@ -74,7 +73,7 @@ ul.menu {
             background: #DDD;
             position: static;
             padding: 0;
-            margin-left: 15px;
+            text-align: center;
             li { 
                 padding: 5px 6px 0 6px;
                 a { color: inherit; }

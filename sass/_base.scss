@@ -62,6 +62,13 @@ h1, h2, h3, h4 {
         &.company { background-image: url(../img/company-side.jpg); }
         &.contact { background-image: url(../img/contact-side.jpg); }
         &.results { background-image: url(../img/results-side.jpg); }
+        &.strategic-consulting { background-image: url(../img/consulting-side.jpg); }
+        &.keynote-speaking { background-image: url(../img/keynote-side.jpg); }
+        &.professional-development { background-image: url(../img/professional-development-side.jpg); }
+        &.founder {
+            background-image: url(../img/founder-side.jpg); 
+            background-position: 0 0;
+        }
     }
 }
 
