@@ -31,7 +31,7 @@ the_post();
 						$img_url_full = wp_get_attachment_image_src( $client['client_logo'], 'full' );
 						$client_url = $client['client_website_url'];
 						$client_title = $client['client_name'];
-						echo '<li><a href="' . $client_url . '" target="_blank" title="' . $client_title . '"><img alt="' . $client_title . '" src="' . $img_url_full[0] . '"/></a></li>';
+						echo '<li><img src="' . $img_url_full[0] . '"/></li>';
 					} ?>
 					</ul>
 				</div>

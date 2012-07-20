@@ -535,10 +535,13 @@ h1, h2, h3, h4 {
   float: left;
   font-size: 13px;
   padding-bottom: 15px;
-  padding-right: 35px;
+}
+.emphasis ul.first {
+  padding-right: 30px;
 }
 .emphasis ul li {
-  list-style: disc inside;
+  list-style: disc outside none;
+  margin-left: 13px;
 }
 
 .entry-content h2 {
@@ -599,10 +602,6 @@ ul.clients li {
 }
 ul.clients li img {
   vertical-align: middle;
-  opacity: .7;
-}
-ul.clients li a:hover img {
-  opacity: 1;
 }
 @media only screen and (max-width: 760px) {
   ul.clients li {
