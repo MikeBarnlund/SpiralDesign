@@ -5,7 +5,7 @@
 		<a class="twitter" href="https://twitter.com/QSInc" target="_blank" title="Quantum Strategies on Twitter"></a>
 		<a class="linkedin" href="http://www.linkedin.com/in/alanstrudwickcom" target="_blank" title="Quantum Strategies on LinkedIn"></a>
 	</div>
-	&copy; 2012 QUANTUM STRATEGIES  |  Site by VV
+	&copy; 2012 QUANTUM STRATEGIES  |  Site by <a href="http://vauntvisual.com" target="_blank" title="Vaunt Visual Homepage">VV</a>
 	<div class="down-arrow-black"></div>
 	<div class="bottom"></div>
 </footer>
