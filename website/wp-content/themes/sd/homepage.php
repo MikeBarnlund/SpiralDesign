@@ -75,7 +75,7 @@ $( document ).ready( function() {
         if ( itemlist ) {
             slideshow = $( '.slideshow' ).sdslideshow( {
                 itemList: itemlist,
-                transitionDuration: 250,
+                transitionDuration: 1000,
                 autoAdvance: false,
 				preload: true
             } );

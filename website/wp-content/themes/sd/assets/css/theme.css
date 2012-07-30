@@ -607,7 +607,6 @@ ul.clients li img {
 
 .keynote-topics {
   font-size: 28px;
-  float: left;
   line-height: 1;
 }
 .keynote-topics ul {
@@ -617,12 +616,6 @@ ul.clients li img {
 .keynote-topics ul li {
   list-style: disc inside;
   padding-bottom: 20px;
-}
-@media only screen and (max-width: 1023px) {
-  .keynote-topics ul {
-    float: none;
-    padding: 0;
-  }
 }
 @media only screen and (max-width: 540px) {
   .keynote-topics ul {
@@ -635,11 +628,6 @@ ul.clients li img {
   }
 }
 
-@media only screen and (max-width: 540px) {
-  #post-44 span img {
-    display: none;
-  }
-}
 .contact-fields li {
   float: left;
   width: 49%;
