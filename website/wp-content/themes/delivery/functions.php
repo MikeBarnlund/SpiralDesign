@@ -13,11 +13,31 @@ add_theme_support( 'menus' );
 add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
-	register_post_type( 'sampleposttype',
+	register_post_type( 'programabstract',
 		array(
 			'labels' => array(
-				'name' => __( 'Sample Custom Posts' ),
-				'singular_name' => __( 'Sample Custom Post' )
+				'name' => __( 'Program Abstracts' ),
+				'singular_name' => __( 'Program Abstract' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+	register_post_type( 'programround',
+		array(
+			'labels' => array(
+				'name' => __( 'Program Rounds' ),
+				'singular_name' => __( 'Program Round' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+	register_post_type( 'programphase',
+		array(
+			'labels' => array(
+				'name' => __( 'Program Phases' ),
+				'singular_name' => __( 'Program Phase' )
 			),
 		'public' => true,
 		'has_archive' => true,

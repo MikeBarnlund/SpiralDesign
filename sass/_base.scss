@@ -1,0 +1,14 @@
+body {
+    font-size: $fontSize;
+    color: $bodyColor;
+}
+
+::-moz-selection { background: $brand1; color: #fff; text-shadow: none; }
+::selection { background: $brand1; color: #fff; text-shadow: none; }
+
+.container {
+    max-width: $contentWidth;
+    margin: 0 auto;
+}
+
+.field_label { font-weight: bold; }
