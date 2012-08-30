@@ -28,20 +28,25 @@ the_post();
 								<table class="table table-condensed subtable">
 									<thead>
 										<tr>
-											<th>Text</th>
-											<th>Answers</th>
-											<th>Notes</th>
+											<th>Content File</th>
+											<th>Language</th>
 										</tr>
 									</thead>
 									<tbody>
 										<?php
-										$quick_questions = get_field( 'quick_questions' );
-										foreach ( $quick_questions as $quick_question ) {
-										?>
-											<tr>
-												<td><?php echo $quick_question['question_text']; ?></td>
-												<td><?php echo $quick_question['question_answers']; ?></td>
-											</tr>
+										$qq_files = get_field( 'quick_questions_content' );
+										if ( $qq_files !== false ) {
+											foreach ( $qq_files as $qq_file ) {
+											?>
+												<tr>
+													<td>
+														<a target="_blank" href="<?php echo $qq_file['quick_questions_content_file']; ?>"><?php echo $qq_file['quick_question_content_file_name']; ?></a>
+													</td>
+													<td><?php echo $qq_file['language']; ?></td>
+												</tr>
+											<?php } 
+										} else { ?>
+											<tr><td colspan="2">No Quick Question Content Available</td></tr>
 										<?php } ?>
 									</tbody>
 								</table>
