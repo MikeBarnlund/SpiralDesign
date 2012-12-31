@@ -67,8 +67,12 @@ class acf_upgrade
 		{
 			if( $version < $this->parent->upgrade_version )
 			{
-				$this->parent->admin_message('<p>' . __("Advanced Custom Fields",'acf') . 'v' . $this->parent->version . ' ' . __("requires a database upgrade",'acf') .' (<a class="thickbox" href="' . admin_url() . 'plugin-install.php?tab=plugin-information&plugin=advanced-custom-fields&section=changelog&TB_iframe=true&width=640&height=559">' . __("why?",'acf') .'</a>). ' . __("Please",'acf') .' <a href="http://codex.wordpress.org/Backing_Up_Your_Database">' . __("backup your database",'acf') .'</a>, '. __("then click",'acf') . ' <a href="' . admin_url() . 'edit.php?post_type=acf&page=acf-upgrade" class="button">' . __("Upgrade Database",'acf') . '</a></p>');
+				$this->parent->admin_message('<p>' . __("Advanced Custom Fields",'acf') . ' v' . $this->parent->version . ' ' . __("requires a database upgrade",'acf') .' (<a class="thickbox" href="' . admin_url() . 'plugin-install.php?tab=plugin-information&plugin=advanced-custom-fields&section=changelog&TB_iframe=true&width=640&height=559">' . __("why?",'acf') .'</a>). ' . __("Please",'acf') .' <a href="http://codex.wordpress.org/Backing_Up_Your_Database">' . __("backup your database",'acf') .'</a>, '. __("then click",'acf') . ' <a href="' . admin_url() . 'edit.php?post_type=acf&page=acf-upgrade" class="button">' . __("Upgrade Database",'acf') . '</a></p>');
 				
+			}
+			elseif( $version < $this->parent->version)
+			{
+				update_option('acf_version', $this->parent->version );
 			}
 		}
 		else
@@ -103,6 +107,14 @@ class acf_upgrade
 		elseif( $version < '3.2.5' )
 		{
 			$next = '3.2.5';
+		}
+		elseif( $version < '3.3.3' )
+		{
+			$next = '3.3.3';
+		}
+		elseif( $version < '3.4.1' )
+		{
+			$next = '3.4.1';
 		}
 		
 		?>	
@@ -221,11 +233,12 @@ class acf_upgrade
 				// upgrade options first as "field_group_layout" will cause get_fields to fail!
 				
 				// get acf's
-				$acfs = get_pages(array(
-					'numberposts' 	=> 	-1,
-					'post_type'		=>	'acf',
-					'sort_column' => 'menu_order',
-					'order' => 'ASC',
+				$acfs = get_posts(array(
+					'numberposts' 	=> -1,
+					'post_type' 	=> 'acf',
+					'orderby' 		=> 'menu_order title',
+					'order' 		=> 'asc',
+					'suppress_filters' => false,
 				));
 				
 				if($acfs)
@@ -276,11 +289,12 @@ class acf_upgrade
 			case '3.0.0 (step 2)':
 				
 				// get acf's
-				$acfs = get_pages(array(
-					'numberposts' 	=> 	-1,
-					'post_type'		=>	'acf',
-					'sort_column' => 'menu_order',
-					'order' => 'ASC',
+				$acfs = get_posts(array(
+					'numberposts' 	=> -1,
+					'post_type' 	=> 'acf',
+					'orderby' 		=> 'menu_order title',
+					'order' 		=> 'asc',
+					'suppress_filters' => false,
 				));
 				
 				if($acfs)
@@ -400,9 +414,7 @@ class acf_upgrade
 						if(!isset($field['key'])) $field['key'] = 'field_' . $field['id'];
 						
 						// update field
-						update_post_meta($field['post_id'], $field['key'], $field);
-						//$this->update_field($field['post_id'], $field);
-						
+						$this->parent->update_field( $field['post_id'], $field);
 						
 				 		// create field name (field_rand)
 				 		//$message .= print_r($field, true) . '<br /><br />';
@@ -591,11 +603,12 @@ class acf_upgrade
 				
 				
 				// get acf's
-				$result = get_pages(array(
-					'numberposts' 	=> 	-1,
-					'post_type'		=>	'acf',
-					'sort_column' => 'menu_order',
-					'order' => 'ASC',
+				$acfs = get_posts(array(
+					'numberposts' 	=> -1,
+					'post_type' 	=> 'acf',
+					'orderby' 		=> 'menu_order title',
+					'order' 		=> 'asc',
+					'suppress_filters' => false,
 				));
 				
 				
@@ -603,9 +616,9 @@ class acf_upgrade
 				
 				
 				// populate acfs
-				if($result)
+				if($acfs)
 				{
-					foreach($result as $acf)
+					foreach($acfs as $acf)
 					{
 						$show_on_page = get_post_meta($acf->ID, 'show_on_page', true) ? get_post_meta($acf->ID, 'show_on_page', true) : array();
 						
@@ -624,10 +637,183 @@ class acf_upgrade
 			    $return = array(
 			    	'status'	=>	true,
 					'message'	=>	$message,
-					'next'		=>	false,
+					'next'		=>	'3.3.3',
 			    );
 			    
 			break;
+		
+		
+			/*
+			*  3.3.3
+			*
+			*  @description: changed field option: taxonomies filter on relationship / post object and page link fields.
+			*  @created: 20/07/12
+			*/
+			
+			case '3.3.3':
+				
+				// vars
+				$message = __("Modifying field option 'taxonomy'",'acf') . '...';
+				$wp_term_taxonomy = $wpdb->prefix.'term_taxonomy';
+				$term_taxonomies = array();
+				
+				$rows = $wpdb->get_results("SELECT * FROM $wp_term_taxonomy", ARRAY_A);
+			
+				if($rows)
+				{
+					foreach($rows as $row)
+					{
+						$term_taxonomies[ $row['term_id'] ] = $row['taxonomy'] . ":" . $row['term_id'];
+					}
+				}
+				
+				
+				// get acf's
+				$acfs = get_posts(array(
+					'numberposts' 	=> -1,
+					'post_type' 	=> 'acf',
+					'orderby' 		=> 'menu_order title',
+					'order' 		=> 'asc',
+					'suppress_filters' => false,
+				));
+				
+				// populate acfs
+				if($acfs)
+				{
+				foreach($acfs as $acf)
+				{
+					$fields = $this->parent->get_acf_fields($acf->ID);
+					
+					if( $fields )
+					{
+					foreach( $fields as $field )
+					{
+						
+						// only edit the option: taxonomy
+						if( !isset($field['taxonomy']) )
+						{
+							continue;
+						}
+						
+						
+						if( is_array($field['taxonomy']) )
+						{
+						foreach( $field['taxonomy'] as $k => $v )
+						{
+							
+							// could be "all"
+							if( !is_numeric($v) )
+							{
+								continue;
+							}
+							
+							$field['taxonomy'][ $k ] = $term_taxonomies[ $v ];
+							
+							
+						}
+						// foreach( $field['taxonomy'] as $k => $v )	
+						}
+						// if( $field['taxonomy'] )
+						
+						
+						$this->parent->update_field( $acf->ID, $field);
+						
+					}
+					// foreach( $fields as $field )
+					}
+					// if( $fields )
+				}
+				// foreach($acfs as $acf)
+				}
+				// if($acfs)
+				
+				
+				// update version
+				update_option('acf_version','3.3.3');
+				
+				$return = array(
+			    	'status'	=>	true,
+					'message'	=>	$message,
+					'next'		=>	'3.4.1',
+			    );
+				
+			break;
+			
+			
+			/*
+			*  3.4.1
+			*
+			*  @description: Move user custom fields from wp_options to wp_usermeta
+			*  @created: 20/07/12
+			*/
+			
+			case '3.4.1':
+				
+				// vars
+				$message = __("Moving user custom fields from wp_options to wp_usermeta'",'acf') . '...';
+				
+				$option_row_ids = array();
+				$option_rows = $wpdb->get_results("SELECT option_id, option_name, option_value FROM $wpdb->options WHERE option_name LIKE 'user%' OR option_name LIKE '\_user%'", ARRAY_A);
+				
+				
+				if( $option_rows )
+				{
+					foreach( $option_rows as $k => $row)
+					{
+						preg_match('/user_([0-9]+)_(.*)/', $row['option_name'], $matches);
+						
+						
+						// if no matches, this is not an acf value, ignore it
+						if( !$matches )
+						{
+							continue;
+						}
+						
+						
+						// add to $delete_option_rows
+						$option_row_ids[] = $row['option_id'];
+						
+						
+						// meta_key prefix
+						$meta_key_prefix = "";
+						if( substr($row['option_name'], 0, 1) == "_" )
+						{
+							$meta_key_prefix = '_';
+						}
+						
+						
+						// update user meta
+						update_user_meta( $matches[1], $meta_key_prefix . $matches[2], $row['option_value'] );
+
+					}
+				}
+				
+				
+				// clear up some memory ( aprox 14 kb )
+				unset( $option_rows );
+				
+				
+				// remove $option_row_ids
+				if( $option_row_ids )
+				{
+					$option_row_ids = implode(', ', $option_row_ids);
+				
+					$wpdb->query("DELETE FROM $wpdb->options WHERE option_id IN ($option_row_ids)");
+				}
+				
+				
+				// update version
+				update_option('acf_version','3.4.1');
+				
+				$return = array(
+			    	'status'	=>	true,
+					'message'	=>	$message,
+					'next'		=>	false,
+			    );
+				
+			break;
+		
+		
 		}
 		
 		// return json

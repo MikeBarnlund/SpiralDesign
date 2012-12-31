@@ -18,14 +18,14 @@
 /** The name of the database for WordPress */
 
 // define('DB_NAME', 'barnlund_qs');
-define('DB_NAME', 'barnlund_sdtrunk');
+define('DB_NAME', 'buccaneer');
 
 /** MySQL database username */
-define('DB_USER', 'barnlund_sdtrunk');
+define('DB_USER', 'buccaneer');
 
 /** MySQL database password */
 // define('DB_PASSWORD', 'str4t3g13s');
-define('DB_PASSWORD', 'sdtrunk');
+define('DB_PASSWORD', 'b7n8znea2');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

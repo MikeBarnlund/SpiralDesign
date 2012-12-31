@@ -1,7 +1,7 @@
 <?php
 
-// set some globals
-reset_the_repeater_field();
+// vars
+$GLOBALS['acf_field'] = array();
 
 
 /*--------------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ reset_the_repeater_field();
 function get_fields($post_id = false)
 {
 	// vars
-	global $post;
+	global $post, $wpdb;
 	
 	if(!$post_id)
 	{
@@ -24,21 +24,54 @@ function get_fields($post_id = false)
 	}
 	
 	
-	// default
+	// allow for option == options
+	if( $post_id == "option" )
+	{
+		$post_id = "options";
+	}
+	
+	
+	// vars
+	$field_key = "";
 	$value = array();
 	
-	$keys = get_post_custom_keys($post_id);
+	
+	// get field_names
+	if( is_numeric($post_id) )
+	{
+		$keys = $wpdb->get_col($wpdb->prepare(
+			"SELECT meta_key FROM $wpdb->postmeta WHERE post_id = %d and meta_key NOT LIKE %s",
+			$post_id,
+			'\_%'
+		));
+	}
+	elseif( strpos($post_id, 'user_') !== false )
+	{
+		$user_id = str_replace('user_', '', $post_id);
 		
+		$keys = $wpdb->get_col($wpdb->prepare(
+			"SELECT meta_key FROM $wpdb->usermeta WHERE user_id = %d and meta_key NOT LIKE %s",
+			$user_id,
+			'\_%'
+		));
+	}
+	else
+	{
+		$keys = $wpdb->get_col($wpdb->prepare(
+			"SELECT option_name FROM $wpdb->options WHERE option_name LIKE %s",
+			$post_id . '\_%'
+		));
+	}
+
+
 	if($keys)
 	{
 		foreach($keys as $key)
 		{
-			if(substr($key, 0, 1) != "_")
-			{
-				$value[$key] = get_field($key, $post_id);
-			}
+			$value[$key] = get_field($key, $post_id);
 		}
  	}
+ 	
  	
 	// no value
 	if(empty($value))
@@ -60,7 +93,7 @@ function get_fields($post_id = false)
 * 
 *-------------------------------------------------------------------------------------*/
  
-function get_field($field_name, $post_id = false) 
+function get_field($field_key, $post_id = false, $format_value = true) 
 { 
 	global $post, $acf; 
 	 
@@ -78,7 +111,7 @@ function get_field($field_name, $post_id = false)
 	
 	
 	// return cache 
-	$cache = wp_cache_get('acf_get_field_' . $post_id . '_' . $field_name); 
+	$cache = wp_cache_get('acf_get_field_' . $post_id . '_' . $field_key); 
 	if($cache) 
 	{ 
 		return $cache; 
@@ -86,46 +119,64 @@ function get_field($field_name, $post_id = false)
 	 
 	// default 
 	$value = ""; 
+	$field = array(
+		'type'	=>	'text',
+		'name'	=>	$field_key
+	);
 	 
-	 
-	// get value
-	$field_key = "";
-	if( is_numeric($post_id) )
+	
+	if( $format_value )
 	{
-		$field_key = get_post_meta($post_id, '_' . $field_name, true); 
+		// is $field_name a name? pre 3.4.0
+		if( strpos($field_key, "field_") === false )
+		{
+			// get field key
+			if( is_numeric($post_id) )
+			{
+				$field_key = get_post_meta($post_id, '_' . $field_key, true); 
+			}
+			elseif( strpos($post_id, 'user_') !== false )
+			{
+				$temp_post_id = str_replace('user_', '', $post_id);
+				$field_key = get_user_meta($temp_post_id, '_' . $field_key, true); 
+			}
+			else
+			{
+				$field_key = get_option('_' . $post_id . '_' . $field_key); 
+			}
+		}
+		
+		
+		// get field
+		if( strpos($field_key, "field_") !== false )
+		{
+			$field = $acf->get_acf_field($field_key);
+		}
 	}
 	else
 	{
-		$field_key = get_option('_' . $post_id . '_' . $field_name); 
+		$field = array(
+			'type' => 'none',
+			'name' => $field_key
+		);
 	}
-
 	
-	if($field_key != "") 
-	{ 
-		// we can load the field properly! 
-		$field = $acf->get_acf_field($field_key); 
-		$value = $acf->get_value_for_api($post_id, $field); 
-	} 
-	else 
-	{ 
-		// just load the text version 
-		if( is_numeric($post_id) )
-		{
-			$value = get_post_meta($post_id, $field_name, true);
-		}
-		else
-		{
-			$value = get_option($post_id . '_' . $field_name); 
-		}
-		 
-	} 
+	
+	// load value
+	$value = $acf->get_value_for_api($post_id, $field);
+	
 	 
 	// no value? 
-	if($value == "") $value = false; 
+	if( $value == "" )
+	{
+		$value = false; 
+	}
+	
 	 
 	// update cache 
-	wp_cache_set('acf_get_field_' . $post_id . '_' . $field_name, $value); 
+	wp_cache_set('acf_get_field_' . $post_id . '_' . $field_key, $value); 
 	 
+	
 	return $value; 
 	 
 }
@@ -155,60 +206,105 @@ function the_field($field_name, $post_id = false)
 
 /*--------------------------------------------------------------------------------------
 *
-*	the_repeater_field
+*	has_sub_field
 *
 *	@author Elliot Condon
-*	@since 1.0.3
+*	@since 3.3.4
 * 
 *-------------------------------------------------------------------------------------*/
 
-function the_repeater_field($field_name, $post_id = false)
+function has_sub_field($field_name, $post_id = false)
 {
-	
-	// if no field, create field + reset count
-	if(!$GLOBALS['acf_field'])
-	{
-		reset_the_repeater_field();
-		$GLOBALS['acf_field'] = get_field($field_name, $post_id);
+	// needs a post_id
+	global $post; 
+	 
+	if( !$post_id ) 
+	{ 
+		$post_id = $post->ID; 
 	}
 	
-	// increase order_no
-	$GLOBALS['acf_count']++;
+	// empty?
+	if( empty($GLOBALS['acf_field']) )
+	{
+		$GLOBALS['acf_field'][] = array(
+			'name'	=>	$field_name,
+			'value'	=>	get_field($field_name, $post_id),
+			'row'	=>	-1,
+			'post_id' => $post_id,
+		);
+	}
+	
 	
 	// vars
-	$field = $GLOBALS['acf_field'];
-	$i = $GLOBALS['acf_count'];
+	$depth = count( $GLOBALS['acf_field'] ) - 1;
+	$name = $GLOBALS['acf_field'][$depth]['name'];
+	$value = $GLOBALS['acf_field'][$depth]['value'];
+	$row = $GLOBALS['acf_field'][$depth]['row'];
+	$id = $GLOBALS['acf_field'][$depth]['post_id'];
 	
-	if(isset($field[$i]))
+	
+	// if ID has changed, this is a new repeater / flexible field!
+	if( $post_id != $id )
 	{
+		// reset
+		$GLOBALS['acf_field'] = array();
+		return has_sub_field($field_name, $post_id);
+	}
+
+	
+	// does the given $field_name match the current field?
+	if( $field_name != $name )
+	{
+		// is this a "new" while loop refering to a sub field?
+		if( isset($value[$row][$field_name]) )
+		{
+			$GLOBALS['acf_field'][] = array(
+				'name'	=>	$field_name,
+				'value'	=>	$value[$row][$field_name],
+				'row'	=>	-1,
+				'post_id' => $post_id,
+			);
+		}
+		elseif( isset($GLOBALS['acf_field'][$depth-1]) && $GLOBALS['acf_field'][$depth-1]['name'] == $field_name )
+		{
+			// if someone used break; We should see if the parent value has this field_name as a value.
+			unset( $GLOBALS['acf_field'][$depth] );
+			$GLOBALS['acf_field'] = array_values($GLOBALS['acf_field']);
+		}
+		else
+		{
+			// this was a break; (probably to get the first row only). Clear the repeater
+			$GLOBALS['acf_field'] = array();
+			return has_sub_field($field_name, $post_id);
+		}
+		
+	}
+	
+	
+	// update vars
+	$depth = count( $GLOBALS['acf_field'] ) - 1;
+	$value = $GLOBALS['acf_field'][$depth]['value'];
+	$row = $GLOBALS['acf_field'][$depth]['row'];
+
+		
+	// increase row number
+	$GLOBALS['acf_field'][$depth]['row']++;
+	$row++;
+	
+	
+	if( isset($value[$row]) )
+	{
+		// next row exists
 		return true;
 	}
 	
-	// no row, reset the global values
-	reset_the_repeater_field();
+	
+	// no next row! Unset this array and return false to stop while loop
+	unset( $GLOBALS['acf_field'][$depth] );
+	$GLOBALS['acf_field'] = array_values($GLOBALS['acf_field']);
+
 	return false;
 	
-}
-
-function the_flexible_field($field_name, $post_id = false)
-{
-	return the_repeater_field($field_name, $post_id);
-}
-
-
-/*--------------------------------------------------------------------------------------
-*
-*	reset_the_repeater_field
-*
-*	@author Elliot Condon
-*	@since 1.0.3
-* 
-*-------------------------------------------------------------------------------------*/
-
-function reset_the_repeater_field()
-{
-	$GLOBALS['acf_field'] = false;
-	$GLOBALS['acf_count'] = -1;
 }
 
 
@@ -224,16 +320,27 @@ function reset_the_repeater_field()
 function get_sub_field($field_name)
 {
 
+	// no field?
+	if( empty($GLOBALS['acf_field']) )
+	{
+		return false;
+	}
+	
+	
 	// vars
-	$field = $GLOBALS['acf_field'];
-	$i = $GLOBALS['acf_count'];
+	$depth = count( $GLOBALS['acf_field'] ) - 1;
+	$value = $GLOBALS['acf_field'][$depth]['value'];
+	$row = $GLOBALS['acf_field'][$depth]['row'];
 	
-	// no value
-	if(!$field) return false;
-
-	if(!isset($field[$i][$field_name])) return false;
 	
-	return $field[$i][$field_name];
+	// no value at i
+	if( !isset($GLOBALS['acf_field'][$depth]['value'][$row][$field_name]) )
+	{
+		return false;
+	}
+	
+	
+	return $GLOBALS['acf_field'][$depth]['value'][$row][$field_name];
 }
 
 
@@ -246,9 +353,9 @@ function get_sub_field($field_name)
 * 
 *-------------------------------------------------------------------------------------*/
 
-function the_sub_field($field_name, $field = false)
+function the_sub_field($field_name)
 {
-	$value = get_sub_field($field_name, $field);
+	$value = get_sub_field($field_name);
 	
 	if(is_array($value))
 	{
@@ -323,17 +430,24 @@ function acf_register_field_group($array)
 {
 	$array = array_merge($array, $GLOBALS['acf_register_field_group']);
 	
-	// order field groups based on menu_order
+	if( empty($GLOBALS['acf_register_field_group']) )
+	{
+		return $array;
+	}
+	
+	
+	// order field groups based on menu_order, title
 	// Obtain a list of columns
 	foreach ($array as $key => $row) {
 	    $menu_order[$key] = $row['menu_order'];
+	    $title[$key] = $row['title'];
 	}
 	
 	// Sort the array with menu_order ascending
 	// Add $array as the last parameter, to sort by the common key
 	if(isset($menu_order))
 	{
-		array_multisort($menu_order, SORT_ASC, $array);
+		array_multisort($menu_order, SORT_ASC, $title, SORT_ASC, $array);
 	}
 	
 	
@@ -351,24 +465,23 @@ add_filter('acf_register_field_group', 'acf_register_field_group');
 * 
 *-------------------------------------------------------------------------------------*/
 
-$GLOBALS['acf_register_options_page'] = array();
+$GLOBALS['acf_options_pages'] = array();
 
-function register_options_page($title = "")
+function register_options_page( $title = "" )
 {
-	$GLOBALS['acf_register_options_page'][] =  array(
-		'title'	=> $title,
-		'slug' => 'options-' . sanitize_title_with_dashes( $title ),
-	);
+	$GLOBALS['acf_options_pages'][] = $title;
 }
 
-function acf_register_options_page($array)
+
+function acf_settings_options_pages( $options )
 {
-	$array = array_merge($array, $GLOBALS['acf_register_options_page']);
+	// merge in options pages
+	$options['options_page']['pages'] = array_merge( $options['options_page']['pages'], $GLOBALS['acf_options_pages'] );
 	
-	return $array;
-}
-add_filter('acf_register_options_page', 'acf_register_options_page');
 
+	return $options;
+}
+add_filter('acf_settings', 'acf_settings_options_pages');
 
 
 /*--------------------------------------------------------------------------------------
@@ -382,17 +495,11 @@ add_filter('acf_register_options_page', 'acf_register_options_page');
 
 function get_row_layout()
 {
-	
 	// vars
-	$field = $GLOBALS['acf_field'];
-	$i = $GLOBALS['acf_count'];
+	$value = get_sub_field('acf_fc_layout');
 	
-	// no value
-	if(!$field) return false;
-
-	if(!isset($field[$i]['acf_fc_layout'])) return false;
 	
-	return $field[$i]['acf_fc_layout'];
+	return $value;
 }
 
 
@@ -409,21 +516,25 @@ function acf_shortcode( $atts )
 {
 	// extract attributs
 	extract( shortcode_atts( array(
-		'field' => ""
+		'field' => "",
+		'post_id' => false,
 	), $atts ) );
 	
+	
 	// $field is requird
-	if(!$field || $field == "")
+	if( !$field || $field == "" )
 	{
 		return "";
 	}
 	
+	
 	// get value and return it
-	$value = get_field($field);
+	$value = get_field( $field, $post_id );
+	
 	
 	if(is_array($value))
 	{
-		$value = @implode(', ',$value);
+		$value = @implode( ', ',$value );
 	}
 	
 	return $value;
@@ -443,30 +554,25 @@ add_shortcode( 'acf', 'acf_shortcode' );
 function acf_form_head()
 {
 	// global vars
-	global $acf;
+	global $acf, $post_id;
 	
 	
 	
 	// run database save first
-	if(isset($_POST) && isset($_POST['acf_save']))
+	if( isset($_POST['acf_save']) )
 	{
+		// $post_id to save against
 		$post_id = $_POST['post_id'];
 		
-		// save fields
-		$fields = $_POST['fields'];
 		
-		if($fields)
-		{
-			foreach($fields as $key => $value)
-			{
-				// get field
-				$field = $acf->get_acf_field($key);
+		// allow for custom save
+		$post_id = apply_filters('acf_form_pre_save_post', $post_id);
+		
+		
+		// save the data
+		do_action('acf_save_post', $post_id);	
 				
-				$acf->update_value($post_id, $field, $value);
-			}
-		}
-		
-		
+				
 		// redirect
 		if(isset($_POST['return']))
 		{
@@ -505,12 +611,7 @@ function acf_form_wp_head()
 
 	// Javascript
 	echo '<script type="text/javascript" src="'.$acf->dir.'/js/input-actions.js?ver=' . $acf->version . '" ></script>';
-	echo '<script type="text/javascript">
-		acf.validation_message = "' . __("Validation Failed. One or more fields below are required.",'acf') . '";
-		acf.post_id = ' . $post->ID . ';
-		acf.editor_mode = "wysiwyg";
-		acf.admin_url = "' . admin_url() . '";
-	</script>';
+	
 	
 	
 	// add user js + css
@@ -540,8 +641,6 @@ function acf_form($options = null)
 			'class' => ''
 		),
 		'return' => add_query_arg( 'updated', 'true', get_permalink() ), // return url
-		'html_field_open' => '<div class="field">', // field wrapper open
-		'html_field_close' => '</div>', // field wrapper close
 		'html_before_fields' => '', // html inside form before fields
 		'html_after_fields' => '', // html inside form after fields
 		'submit_value' => 'Update', // vale for submit field
@@ -565,13 +664,18 @@ function acf_form($options = null)
 	{
 		$options['field_groups'] = $acf->get_input_metabox_ids(array('post_id' => $options['post_id']), false);
 	}
-
+	
 	
 	// updated message
 	if(isset($_GET['updated']) && $_GET['updated'] == 'true' && $options['updated_message'])
 	{
 		echo '<div id="message" class="updated"><p>' . $options['updated_message'] . '</p></div>';
 	}
+	
+	
+	// Javascript
+	echo '<script type="text/javascript">acf.post_id = ' . $options['post_id'] . '; acf.nonce = "' . wp_create_nonce( 'acf_nonce' ) . '";</script>';
+	
 	
 	// display form
 	?>
@@ -587,7 +691,7 @@ function acf_form($options = null)
 	<?php
 	
 	// html before fields
-	echo $defaults['html_before_fields'];
+	echo $options['html_before_fields'];
 	
 	$field_groups = $acf->get_field_groups();
 	if($field_groups):
@@ -607,8 +711,10 @@ function acf_form($options = null)
 				
 			if($field_group['fields'])
 			{
-				echo '<div id="acf_' . $field_group['id'] . '" class="postbox acf_postbox"><div class="inside">';
-					echo '<div class="options" data-layout="' . $field_group['options']['layout'] . '" data-show="true"></div>';
+				echo '<div id="acf_' . $field_group['id'] . '" class="postbox acf_postbox">';
+				echo '<h3 class="hndle"><span>' . $field_group['title'] . '</span></h3>';
+				echo '<div class="inside">';
+					echo '<div class="options" data-layout="' . $field_group['options']['layout'] . '" data-show="1"></div>';
 					$acf->render_fields_for_input($field_group['fields'], $options['post_id']);
 				echo '</div></div>';
 			}
@@ -617,7 +723,7 @@ function acf_form($options = null)
 	endif;
 	
 	// html after fields
-	echo $defaults['html_after_fields'];
+	echo $options['html_after_fields'];
 	
 	?>
 	<!-- Submit -->
@@ -642,7 +748,7 @@ function acf_form($options = null)
 * 
 *-------------------------------------------------------------------------------------*/
 
-function update_field($field_name, $value, $post_id = false)
+function update_field($field_key, $value, $post_id = false)
 {
 	global $post, $acf; 
 	 
@@ -657,35 +763,305 @@ function update_field($field_name, $value, $post_id = false)
 	{
 		$post_id = "options";
 	}
-	 
-	 
-	// get value
-	$field_key = "";
-	if( is_numeric($post_id) )
-	{
-		$field_key = get_post_meta($post_id, '_' . $field_name, true); 
-	}
-	else
-	{
-		$field_key = get_option('_' . $post_id . '_' . $field_name); 
-	}
-
 	
-	// create default field to save the data as plain text
-	$field = array(
-		'type' => 'text',
-		'name' => $field_name,
-		'key' => ''
+	
+	// is $field_name a name? pre 3.4.0
+	if( strpos($field_key, "field_") === false )
+	{
+		// get field key
+		if( is_numeric($post_id) )
+		{
+			$field_key = get_post_meta($post_id, '_' . $field_key, true); 
+		}
+		elseif( strpos($post_id, 'user_') !== false )
+		{
+			$temp_post_id = str_replace('user_', '', $post_id);
+			$field_key = get_user_meta($temp_post_id, '_' . $field_key, true); 
+		}
+		else
+		{
+			$field_key = get_option('_' . $post_id . '_' . $field_key); 
+		}
+	}
+	
+	
+	// get field
+	$field = $acf->get_acf_field($field_key); 
+	
+	
+	// backup if no field was found, save as a text field
+	if( !$field )
+	{
+		$field = array(
+			'type' => 'none',
+			'name' => $field_key
+		);
+	}
+	
+	
+	// sub fields? They need formatted data
+	if( $field['type'] == 'repeater' )
+	{
+		$value = acf_convert_field_names_to_keys( $value, $field );
+	}
+	elseif( $field['type'] == 'flexible_content' )
+	{
+		if( $field['layouts'] )
+		{
+			foreach( $field['layouts'] as $layout )
+			{
+				$value = acf_convert_field_names_to_keys( $value, $layout );
+			}
+		}
+	}
+	
+	
+	// save
+	$acf->update_value($post_id, $field, $value);
+	
+	
+	return true;
+	
+}
+
+
+/*--------------------------------------------------------------------------------------
+*
+*	acf_convert_field_names_to_keys
+*
+*	@description: Helper for the update_field function
+*	@created: 30/09/12
+*	@author Elliot Condon
+*	@since 3.5.0
+*
+*-------------------------------------------------------------------------------------*/
+
+function acf_convert_field_names_to_keys( $value, $field )
+{
+	// only if $field has sub fields
+	if( !isset($field['sub_fields']) )
+	{
+		return $value;
+	}
+	
+
+	// define sub field keys
+	$sub_fields = array();
+	if( $field['sub_fields'] )
+	{
+		foreach( $field['sub_fields'] as $sub_field )
+		{
+			$sub_fields[ $sub_field['name'] ] = $sub_field;
+		}
+	}
+	
+	
+	// loop through the values and format the array to use sub field keys
+	if( $value )
+	{
+		foreach( $value as $row_i => $row)
+		{
+			if( $row )
+			{
+				foreach( $row as $sub_field_name => $sub_field_value )
+				{
+					// sub field must exist!
+					if( !isset($sub_fields[ $sub_field_name ]) )
+					{
+						continue;
+					}
+					
+					
+					// vars
+					$sub_field = $sub_fields[ $sub_field_name ];
+					$sub_field_value = acf_convert_field_names_to_keys( $sub_field_value, $sub_field );
+					
+					
+					// set new value
+					$value[$row_i][ $sub_field['key'] ] = $sub_field_value;
+					
+					
+					// unset old value
+					unset( $value[$row_i][$sub_field_name] );
+						
+					
+				}
+				// foreach( $row as $sub_field_name => $sub_field_value )
+			}
+			// if( $row )
+		}
+		// foreach( $value as $row_i => $row)
+	}
+	// if( $value )
+	
+	
+	return $value;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+*
+*	get_field_object
+*
+*	@description: returns an array containing all the field data for a given field_name.
+*	@created: 3/09/12
+*	@author Elliot Condon
+*	@since 3.4.0
+*
+*	@return: Array in this format
+
+Array
+(
+    [key] => field_5043fe0e3c58f
+    [label] => Select
+    [name] => select
+    [type] => select
+    [instructions] => 
+    [required] => 1
+    [choices] => Array
+        (
+            [yes] => Yes
+            [no] => No
+            [maybe] => Maybe
+        )
+
+    [default_value] => 
+    [allow_null] => 1
+    [multiple] => 1
+    [order_no] => 4
+    [value] => Array
+        (
+            [0] => Yes
+            [1] => Maybe
+        )
+
+)
+	
+*-------------------------------------------------------------------------------------*/
+
+function get_field_object($field_key, $post_id = false, $options = array())
+{
+	// defaults for options
+	$defaults = array(
+		'load_value'	=>	true,
 	);
 	
-	if($field_key != "") 
+	$options = array_merge($defaults, $options);
+	
+	
+	// vars
+	global $post, $acf; 
+	 
+	if(!$post_id) 
 	{ 
-		// we can load the field properly! 
-		$field = $acf->get_acf_field($field_key); 
-	} 
+		$post_id = $post->ID; 
+	}
 	
 	
-	$acf->update_value($post_id, $field, $value);
+	// allow for option == options
+	if( $post_id == "option" )
+	{
+		$post_id = "options";
+	}
+	
+	
+	// is $field_name a name? pre 3.4.0
+	if( strpos($field_key, "field_") === false )
+	{
+		// get field key
+		if( is_numeric($post_id) )
+		{
+			$field_key = get_post_meta($post_id, '_' . $field_key, true); 
+		}
+		elseif( strpos($post_id, 'user_') !== false )
+		{
+			$temp_post_id = str_replace('user_', '', $post_id);
+			$field_key = get_user_meta($temp_post_id, '_' . $field_key, true); 
+		}
+		else
+		{
+			$field_key = get_option('_' . $post_id . '_' . $field_key); 
+		}
+	}
+	
+	
+	// get field
+	$field = $acf->get_acf_field($field_key); 
+	
+	
+	// backup if no field was found, save as a text field
+	if( !$field )
+	{
+		return false;
+	}
+	
+	
+	if( $options['load_value'] )
+	{
+		$field['value'] = $acf->get_value_for_api($post_id, $field);
+	}
+
+	return $field; 
+
 }
+
+
+/*
+*  Depreceated Functions
+*
+*  @description: 
+*  @created: 23/07/12
+*/
+
+
+/*--------------------------------------------------------------------------------------
+*
+*	reset_the_repeater_field
+*
+*	@author Elliot Condon
+*	@depreciated: 3.3.4 - now use has_sub_field
+*	@since 1.0.3
+* 
+*-------------------------------------------------------------------------------------*/
+
+function reset_the_repeater_field()
+{
+	// do nothing
+}
+
+
+/*--------------------------------------------------------------------------------------
+*
+*	the_repeater_field
+*
+*	@author Elliot Condon
+*	@depreciated: 3.3.4 - now use has_sub_field
+*	@since 1.0.3
+* 
+*-------------------------------------------------------------------------------------*/
+
+function the_repeater_field($field_name, $post_id = false)
+{
+	return has_sub_field($field_name, $post_id);
+}
+
+
+/*--------------------------------------------------------------------------------------
+*
+*	the_flexible_field
+*
+*	@author Elliot Condon
+*	@depreciated: 3.3.4 - now use has_sub_field
+*	@since 3.?.?
+* 
+*-------------------------------------------------------------------------------------*/
+
+function the_flexible_field($field_name, $post_id = false)
+{
+	return has_sub_field($field_name, $post_id);
+}
+
 
 ?>
