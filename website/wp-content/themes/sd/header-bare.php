@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/theme.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo( 'template_url' ) ?>/assets/img/favicon.ico" />
 
-	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/libs/modernizr-2.5.3.min.js"></script>
+	<script src="<?php bloginfo( 'template_url' ) ?>/assets/js/libs/modernizr.custom.2.6.2.min.js"></script>
 
 	<title>
 		<?php
