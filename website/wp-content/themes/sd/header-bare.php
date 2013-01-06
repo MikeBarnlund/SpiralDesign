@@ -7,9 +7,11 @@
 	<meta name="description" content="<?php echo bloginfo( 'description' ); ?>" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/bootstrap-responsive.min.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/theme.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo( 'template_url' ) ?>/assets/img/favicon.ico" />
 
