@@ -1,0 +1,30 @@
+
+body {
+    background-color: #f3f3f3;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $bodyColor;
+}
+
+#page {
+    margin: 0 auto;
+    max-width: 1280px;
+    background-image: url(../img/bg.gif);
+    @include box-shadow( rgba(0,0,0,.3) 0px 0px 5px );
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: $headingFontFamily;
+    font-weight: normal;
+    color: $headingColor;
+}
+
+a {
+    color: $linkColor;
+    &:hover { color: $linkHoverColor; }
+}
+
+.content {
+    padding: 60px 100px;
+}

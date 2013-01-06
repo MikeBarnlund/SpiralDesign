@@ -1,0 +1,12 @@
+.banner {
+    
+}
+
+.home-banner {
+    h1 { 
+        background: rgba(64, 64, 64, .77); 
+        color: #FFF;
+        padding: 32px $contentMarginWide;
+        @include text-shadow( #000 1px 1px 0 );
+    }
+}

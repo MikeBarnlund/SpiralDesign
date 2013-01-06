@@ -1,7 +1,15 @@
 // Variables
 
-$fontSize: 14px;
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #999;
-$linkColor: $brand1 - #222;
-$linkHoverColor: $linkColor - #222;
+$brand1: #007db4;
+
+$fontSize: 16px;
+$fontFamily: 'Varela', Helvetica, Arial, sans-serif;
+$headingFontFamily: 'Oswald', Helvetica, Arial, sans-serif;
+$headingColor: #626262;
+$bodyColor: #858585;
+$linkColor: $brand1;
+$linkHoverColor: $linkColor + #222;
+
+$activeMenuBg: #f0f0f0;
+
+$contentMarginWide: 100px;

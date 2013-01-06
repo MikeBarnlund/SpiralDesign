@@ -19,6 +19,12 @@ $( document ).ready( function() {
         $submenu = $( this ).siblings( 'ul.sub-menu' );
         
         if ( !$submenu.is( ':visible' ) ) {
+            // get submenu width
+            
+            // get parent nav item width
+            
+            // set submenu.left to -(half submenu width - half parent nav width)
+            
             $submenu.fadeIn( 75, function() {
                 $( document ).one( 'click', function() {
                     $submenu.fadeOut( 100 );
