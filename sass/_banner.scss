@@ -3,10 +3,48 @@
 }
 
 .home-banner {
-    h1 { 
-        background: rgba(64, 64, 64, .77); 
+    height: 389px;
+    position: relative;
+    .banner-content {
+        background: rgba(64, 64, 64, .77);
+        padding: 0 $contentMarginWide;
+        position: absolute;
+        bottom: 0;
+    }
+    h1 {
+        display: table-cell;
+        line-height: 1.1;
         color: #FFF;
-        padding: 32px $contentMarginWide;
+        margin: 0 10% 0 0;
+        padding: 32px 0;
         @include text-shadow( #000 1px 1px 0 );
+    }
+    .summary {
+        display: table-cell;
+        vertical-align: middle;   
+        p {
+            margin: 0;
+            color: #FFF;
+            
+        }
+    }
+    .next-button {
+        display: table-cell;
+        text-align: right;
+        vertical-align: middle;
+        
+        a {
+            @include inline-block();
+            text-align: center;
+            width: 79px;
+            height: 79px;
+            line-height: 69px;
+            background: $brand2;
+            color: #FFF;
+            font-family: $headingFontFamily;
+            font-size: 50px;
+            cursor: pointer;
+            &:hover { text-decoration: none; }
+        }
     }
 }
