@@ -1,23 +1,30 @@
 .banner {
-    
-}
-
-.home-banner {
-    height: 389px;
-    position: relative;
+    border-bottom: 33px $brand1 solid;
+    background-position: center center;
     .banner-content {
         background: rgba(64, 64, 64, .77);
         padding: 0 $contentMarginWide;
+    }
+    h1 {
+        line-height: 1.1;
+        color: #FFF;
+        padding: 32px 0;
+        @include text-shadow( #000 1px 1px 0 );
+        margin: 0;
+    }
+}
+
+.home-banner {
+    @extend .banner;
+    height: 389px;
+    position: relative;
+    .banner-content {
         position: absolute;
         bottom: 0;
     }
     h1 {
         display: table-cell;
-        line-height: 1.1;
-        color: #FFF;
         margin: 0 10% 0 0;
-        padding: 32px 0;
-        @include text-shadow( #000 1px 1px 0 );
     }
     .summary {
         display: table-cell;
@@ -25,7 +32,7 @@
         p {
             margin: 0;
             color: #FFF;
-            
+            padding: 0 20px;
         }
     }
     .next-button {
@@ -46,5 +53,12 @@
             cursor: pointer;
             &:hover { text-decoration: none; }
         }
+    }
+}
+
+.page-banner {
+    @extend .banner;
+    .banner-content {
+        @include inline-block();
     }
 }

@@ -4,6 +4,7 @@ body {
     font-family: $fontFamily;
     font-size: $fontSize;
     color: $bodyColor;
+    line-height: 1.4;
 }
 
 #page {
@@ -18,13 +19,42 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $headingFontFamily;
     font-weight: normal;
     color: $headingColor;
+    line-height: 1;
+    margin: 0 0 20px 0;
 }
+
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+
+p { margin: 0 0 15px 0;}
+
+b, strong {
+    font-weight: normal;
+    color: #000;   
+}
+
+blockquote { margin: 0 0 15px 0; border: 0; padding: 0; }
 
 a {
     color: $linkColor;
     &:hover { color: $linkHoverColor; }
+    &.button {
+        @include inline-block();
+        cursor: pointer;
+        line-height: 30px;
+        padding: 0 18px;
+        color: #FFF;
+        background: $brand2;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:hover { text-decoration: none; }
+    }
 }
 
 .content {
-    padding: 60px 100px;
+    padding: 45px $contentMarginWide;
+    section {
+        margin-bottom: 60px;
+    }
 }

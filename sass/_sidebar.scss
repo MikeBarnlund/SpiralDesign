@@ -1,0 +1,19 @@
+.sidebar {
+    h3 { color: $brand1; }
+    .widget {
+        background-color: #eeeeee;
+        padding: 18px 16px;
+        margin-bottom: 35px;
+    }
+    .quote {
+        background-image: url(../img/quote.png);
+        background-position: 16px 18px;
+        background-repeat: no-repeat;
+        padding: 18px 16px 18px 48px;
+    }
+    blockquote {
+        font-style: italic;
+        font-size: 20px;
+        color: #626262;
+    }
+}

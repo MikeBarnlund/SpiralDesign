@@ -6,8 +6,6 @@ Template Name: Home
 
 get_header();
 
-//the_post();
-
 ?>
 
 <?php
@@ -26,10 +24,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
 	<?php
 endwhile;
 
+//wp_reset_postdata();
+
+the_post();
+
 ?>
 
 <div class="content">
-	
+	<?php the_content(); ?>
 </div>
 
 <?php

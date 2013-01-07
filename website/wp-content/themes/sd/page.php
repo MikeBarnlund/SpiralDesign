@@ -6,18 +6,21 @@ the_post();
 
 ?>
 
+<div class="page-banner" style="background-image: url(<?php the_field('image'); ?>)">
+	<div class="banner-content">
+		<h1><?php the_title(); ?></h1>
+	</div>
+</div>
 <div class="content">
-	<?php if ( get_the_ID() ) { ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<div class="entry-content editable">
-				<?php the_content(); ?>
-				<?php edit_post_link( __( 'Edit', 'sdbase' ), '<div class="edit-link">', '</div>' ) ?>
-				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sdbase' ) . '&after=</div>') ?>
-			</div><!-- .entry-content -->
-		</div><!-- #post-<?php the_ID(); ?> -->
-	<?php }
-	get_template_part( 'share' ); ?>
+	<div class="row-fluid">
+		<div class="span8">
+			<?php the_content(); ?>
+		</div>
+		
+		<div class="span4">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 </div>
 
 <?php
