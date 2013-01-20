@@ -5,9 +5,19 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 			<a class="button">Request Info &raquo;</a>
 		</div>
+		<?php
+		
+		$args = array( 'post_type' => 'testimonial', 'orderby' => 'rand' );
+		$the_query = new WP_Query( $args );
+		$the_query->the_post();
+		
+		$testimonial = get_the_content();
+		$reference = get_field('reference');
+		
+		?>
 		<div class="widget quote">
-			<blockquote>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</blockquote>
-			&mdash;&nbsp;John Smith, CEO
+			<blockquote><?php echo $testimonial; ?></blockquote>
+			&mdash;&nbsp;<?php echo $reference; ?>
 		</div>
 	</div>
 </div>

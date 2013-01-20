@@ -23,6 +23,16 @@ function create_post_type() {
 		'has_archive' => true,
 		)
 	);
+	register_post_type( 'testimonial',
+		array(
+			'labels' => array(
+				'name' => __( 'Testimonials' ),
+				'singular_name' => __( 'Testimonial' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
 }
 
 // Ondemand function to generate tinyurl
