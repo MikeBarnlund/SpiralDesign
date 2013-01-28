@@ -1,3 +1,8 @@
+body {
+    padding: 0;
+}
+ul,ol { margin: 0; }
+
 label { font-size: $fontSize; }
 .help-inline {
     color: $bodyColor;

@@ -57,4 +57,7 @@ a {
     section {
         margin-bottom: 60px;
     }
+    li {
+        list-style: square inside url(../img/bullet.gif);
+    }
 }

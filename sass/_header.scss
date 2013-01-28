@@ -1,9 +1,16 @@
+$headerGutter: 10px;
+
 header {
-    padding: 60px $contentMarginWide;
+    padding: 60px $contentMarginWide 60px - $headerGutter $contentMarginWide;
+    overflow: hidden;
+    img#logo {
+        padding-bottom: $headerGutter;
+    }
 }
 
 nav { 
-    float: right; 
+    float: right;
+    padding-bottom: $headerGutter;
     a:hover { text-decoration: none; }
 }
 
@@ -28,6 +35,7 @@ ul.menu {
         position: absolute;
         margin: 0;
         background: $activeMenuBg;
+        li { display: block; }
         a {
             color: #acacac;
             &:hover {

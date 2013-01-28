@@ -33,6 +33,22 @@ function create_post_type() {
 		'has_archive' => true,
 		)
 	);
+	register_post_type( 'application',
+		array(
+			'labels' => array(
+				'name' => __( 'Applications' ),
+				'singular_name' => __( 'Application' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+}
+
+// Custom Thumbnail Size for Applications =====================================
+
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'application-thumb', 277, 142, true ); // add our custom application thumbnail size
 }
 
 // Ondemand function to generate tinyurl

@@ -17,7 +17,7 @@ $( document ).ready( function() {
 	
     $( 'li.has-sub-menu a').click( function() {
         $submenu = $( this ).siblings( 'ul.sub-menu' );
-        
+
         if ( !$submenu.is( ':visible' ) ) {
             // get submenu width
             
