@@ -49,6 +49,7 @@ function create_post_type() {
 
 if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'application-thumb', 277, 142, true ); // add our custom application thumbnail size
+	add_image_size( 'application-full', 750 ); // add our custom full-width application size
 }
 
 // Ondemand function to generate tinyurl

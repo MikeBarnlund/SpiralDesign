@@ -35,7 +35,7 @@ the_post();
 		<div class="span5">
 			<?php the_content(); ?>
 		</div>
-		<div class="span7">
+		<div class="home-application-slats span7">
 			<?php
 
 			$args = array( 'orderby' => 'menu_order', 'post_type' => 'application', 'posts_per_page' => 100 );
@@ -48,14 +48,15 @@ the_post();
 				
 				$application_image_id = get_field('application_image');
 				$application_thumb_url = wp_get_attachment_image_src( $application_image_id, 'application-thumb' )[0];
-				var_dump($application_thumb_url);
 				
 				?>
 				<div class="span6">
-					<a href="<?php the_permalink(); ?>"><img src="<?php echo $application_thumb_url; ?>" /></a>
-					<h3><?php the_title(); ?></h3>
+					<a class="application-tile" href="<?php the_permalink(); ?>">
+						<img src="<?php echo $application_thumb_url; ?>" />
+						<h3><?php the_title(); ?></h3>
+					</a>
 					<?php the_field('summary'); ?>
-					<a href="<?php the_permalink(); ?>" class="button">Learn More &raquo;</a>
+					<a href="<?php the_permalink(); ?>" class="more">Learn More &raquo;</a>
 				</div>
 				<?php 
 				echo ( $i % 2 === 0 ? '</div>' : '' );
