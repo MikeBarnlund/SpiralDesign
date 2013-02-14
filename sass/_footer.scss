@@ -2,4 +2,65 @@ footer {
     padding: 60px $contentMarginWide;
     color: #d1d1d1;
     background: $brand1;
+    
+    .menu-footer-navigation-container { @include inline-block(); }
+    
+    .menu {
+        li { list-style: none; }
+        .menu-item-type-custom {
+            @include inline-block();
+            vertical-align: top;
+            margin-right: 50px;
+            a {
+                text-transform: uppercase;
+                color: #FFF;
+                font-family: $headingFontFamily;
+                &:hover { 
+                    color: #FFF; 
+                    text-decoration: none;
+                }
+            }
+        }
+        .sub-menu {
+            li { margin-top: 10px; }
+            a {
+                text-transform: none;
+                font-family: $fontFamily;
+                color: #d1d1d1;
+                font-size: 14px;
+                &:hover {
+                    color: #FFF;
+                    text-decoration: underline;
+                }
+            }            
+        }
+    }
+    .contact {
+        float: right;
+        text-align: center;
+        .divider {
+            margin: 30px 0;
+            font-size: 0;
+            height: 0px;
+            border-top: 1px solid #0074a7;
+            border-bottom: 1px solid #028ac6;
+        }
+        a { 
+            color: #FFF; 
+            font-family: $headingFontFamily;
+            display: block;
+            text-decoration: none;
+        }
+        .phone { font-size: 22px; margin-bottom: 18px; }
+        .email { font-size: 16px; }
+        .legal {
+            margin-top: 18px;
+            font-family: $fontFamily;
+            color: #d1d1d1;
+            &:hover {
+                color: #FFF;
+                text-decoration: underline;
+            }
+        }
+    }
 }

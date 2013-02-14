@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Varela' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/bootstrap.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/bootstrap-responsive.min.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/theme.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo( 'template_url' ) ?>/assets/img/favicon.ico" />

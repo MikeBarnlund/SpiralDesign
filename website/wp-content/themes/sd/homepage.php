@@ -6,23 +6,42 @@ Template Name: Home
 
 get_header();
 
-?>
-
-<?php
-
 $args = array( 'post_type' => 'homepageslide' );
 $loop = new WP_Query( $args );
-while ( $loop->have_posts() ) : $loop->the_post();
-	?>
-	<div class="home-banner" style="background-image: url(<?php the_field('image'); ?>)">
-		<div class="banner-content">
-			<h1><?php the_title(); ?></h1>
-			<div class="summary"><p><?php the_field('summary'); ?></p></div>
-			<div class="next-button"><a>&gt;</a></div>
-		</div>
+
+?>
+
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<?php
+		rewind_posts();
+		$i = 0;
+		while ( $loop->have_posts() ) : $loop->the_post(); 
+			$i++;
+			?>
+			<li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>"<?php echo ( $i === 1 ) ? ' class="active"' : ''; ?>></li>
+		<?php endwhile; ?>
+	</ol>
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+		<?php
+		rewind_posts();
+		$i = 0;
+		while ( $loop->have_posts() ) : $loop->the_post();
+			$i++;
+			?>
+			<div class="<?php echo ( $i === 1 ) ? 'active ' : ''; ?>item" style="background-image: url(<?php the_field('image'); ?>)">
+				<div class="banner-content">
+					<h1><?php the_title(); ?></h1>
+					<div class="summary"><p><?php the_field('summary'); ?></p></div>
+					<div class="next-button"><a href="#myCarousel" data-slide="next">&gt;</a></div>
+				</div>
+			</div>
+		<?php endwhile; ?>
 	</div>
-	<?php
-endwhile;
+</div>
+
+<?php 
 
 //wp_reset_postdata();
 

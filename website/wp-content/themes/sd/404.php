@@ -1,10 +1,31 @@
-<?php get_header(); ?>
+<?php
 
-<div id="post-0" class="post error404 not-found">
-	<h1 class="entry-title"><?php _e( 'Not Found', 'sdbase' ); ?></h1>
-	<div class="entry-content">
-		<p><?php _e( 'Sorry, that page doesn\'t exist here. ', 'sdbase' ); ?></p>
+get_header();
+
+the_post();
+
+?>
+
+<div class="page-banner" style="background-image: url(<?php the_field('image'); ?>)">
+	<div class="banner-content">
+		<h1>Page Not Found</h1>
+	</div>
+</div>
+<div class="content">
+	<div class="row-fluid">
+		<div class="span8">
+			<p>Sorry, that page doesn't exist.</p>
+			<a href="/" class="button">&laquo; Back Home</a>
+		</div>
+		
+		<div class="span4">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
 </div>
 
-<?php get_footer(); ?>
+<?php
+
+get_footer();
+
+?>

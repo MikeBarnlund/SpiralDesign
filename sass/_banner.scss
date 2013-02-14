@@ -14,17 +14,25 @@
     }
 }
 
-.home-banner {
-    @extend .banner;
-    height: 389px;
-    position: relative;
+.carousel-inner {
+    .item {
+        height: 389px;
+        border-bottom: 33px $brand1 solid;
+        background-position: center center;
+    }
     .banner-content {
+        background: rgba(64, 64, 64, .77);
+        padding: 0 $contentMarginWide;
         position: absolute;
         bottom: 0;
     }
     h1 {
         display: table-cell;
         margin: 0 10% 0 0;
+        line-height: 1.1;
+        color: #FFF;
+        @include text-shadow( #000 1px 1px 0 );
+        padding: 32px 0;
     }
     .summary {
         display: table-cell;
