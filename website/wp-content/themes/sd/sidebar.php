@@ -2,7 +2,7 @@
 	<div class="span12">
 		<div class="widget">
 			<h3>Get In Touch</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<p>Interested in contacting us? We'd love to hear from you.</p>
 			<a href="/contact" class="button">Request Info &raquo;</a>
 		</div>
 		<?php

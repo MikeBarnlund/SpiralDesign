@@ -29,7 +29,8 @@ the_post();
 
 					while ( $loop->have_posts() ) : $loop->the_post(); 					
 						$application_image_id = get_field('application_image');
-						$application_image_url = wp_get_attachment_image_src( $application_image_id, 'application-thumb' )[0];
+						$application_image = wp_get_attachment_image_src( $application_image_id, 'application-thumb' );
+						$application_image_url = $application_image[0];
 						?>
 						<div class="row-fluid">
 							<div class="span6">

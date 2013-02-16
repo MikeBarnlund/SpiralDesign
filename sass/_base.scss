@@ -61,6 +61,12 @@ a {
         list-style: square outside url(../img/bullet.gif);
         margin: 0 0 10px 17px;
     }
+    img.size-full {
+        display: block;
+        border: 10px solid #FFF;
+        @include box-shadow(rgba(0,0,0,.2) 0px 0px 5px);
+        max-width: 95%;
+    }
 }
 
 .home-application-slats {

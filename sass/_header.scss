@@ -19,7 +19,7 @@ header {
                 font-size: 16px;
                 padding: 5px 12px 7px;
             }
-            &.current-menu-item, &:hover {
+            &.current-menu-item, &.current-menu-parent, &:hover {
                 background: $activeMenuBg;
             }
         }

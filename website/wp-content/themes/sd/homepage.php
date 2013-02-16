@@ -32,8 +32,8 @@ $loop = new WP_Query( $args );
 			?>
 			<div class="<?php echo ( $i === 1 ) ? 'active ' : ''; ?>item" style="background-image: url(<?php the_field('image'); ?>)">
 				<div class="banner-content">
-					<h1><?php the_title(); ?></h1>
-					<div class="summary"><p><?php the_field('summary'); ?></p></div>
+					<h1><a href="<?php the_field('link'); ?>"><?php the_title(); ?></a></h1>
+					<div class="summary"><p><a href="<?php the_field('link'); ?>"><?php the_field('summary'); ?></a></p></div>
 					<div class="next-button"><a href="#myCarousel" data-slide="next">&gt;</a></div>
 				</div>
 			</div>
@@ -66,7 +66,8 @@ the_post();
 				$i++;
 				
 				$application_image_id = get_field('application_image');
-				$application_thumb_url = wp_get_attachment_image_src( $application_image_id, 'application-thumb' )[0];
+				$application_thumb = wp_get_attachment_image_src( $application_image_id, 'application-thumb' );
+				$application_thumb_url = $application_thumb[0];
 				
 				?>
 				<div class="span6">

@@ -1,0 +1,24 @@
+There are a couple of suggestions here that really shouldn't be applied to a responsive site. In retrospect - we probably should have had a separate discussion about exactly how responsive layouts work. 
+
+* Please make their logo clickable back to the homepage
+** _fixed_
+* Update url to buccaneercoatings.com
+** _When we launch it will be using the real URL._
+* Need active state on the section of the site you are on (i.e. when on about, it doesn’t show the active state for about in the main navigation)
+** _fixed_
+* I thought we had talked about applying some type of treatment for showing the internal pages within a section…this relevant for the about and application areas of the site, I have no way of knowing where I am in the navigation. Any suggestions? I know you mentioned mike that the treatment in the design may not work, but we need some sort of an option here. 
+** _I added a breadcrumb navigation here, but I think that conversation predated the approved mockups so I assumed we'd decided against this? The breadcrumb navigation in a two-tiered navigation as we have here will, at most, provide a link back to the Application page (which we already have three times on each Application page). In general that sort of thing is best used when there are several levels of sub-navigation and there are more places to jump back to than just the immediate parent page. I've added the breadcrumb navigation and let me know if you think it works - just pointing out that I don't think it's particularly useful here._
+* The quotes look huge. The treatment for theses don't feel like they really fit with the rest of the site…any suggestions? Could just be decreasing the font size.
+** _I copied the font sizes directly from the mockups. I dropped the font size down about 25% based on the feedback. If it's not working we can play around with the font size "live" and we'll find something appropriate._
+* Get in touch on internal pages (wording): Interested in contacting us? We’d love to hear from you.
+** _updated_
+* All of the internal pages under applications are missing the images that were to be added in those pages. You'll want to reference the separate document I sent regarding images. All images are on google drive. 
+** _Grabbing these images from you today._
+* Update email address to info@buccaneercoatings.com
+** _fixed_
+* The grey transparent bar behind the text on each of the three carousel slides are different sizes, can we be consistent in the height of these?
+** _There are a number of places where the content containers (in this case the grey transparent bar) has to expand/shrink to accommodate the content. Without this fluidity, we'd have to set different container heights for any resolution at which content "breaks" to a new line, and since this is a responsive site, this would happen several times._
+
+
+* Please shorten the blurb on "floors and driveways" to keep it on three lines: Preventing damage caused by moisture. Protection against alkalis and ultraviolet light.
+** Updated - but again the concept of "3 lines" is resolution-specific. As the browser width changes, so do the widths of the content containers/line widths, and so do the number of lines necessary to print the content.

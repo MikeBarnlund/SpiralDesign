@@ -9,3 +9,7 @@ label { font-size: $fontSize; }
     font-style: italic;
     font-size: 14px;
 }
+.breadcrumb {
+    background: #EEE;
+    @include border-radius( 0 );
+}
