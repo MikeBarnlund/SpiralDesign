@@ -16,6 +16,10 @@ $break_large: 769px;
 	}
 }
 
+@mixin lessthan( $breakpoint ) {
+    @media only screen and (max-width: $breakpoint) { @content; }
+}
+
 @mixin px-to-perc( $prop, $pixels, $context ) {
 	#{$prop}: percentage( $pixels / $context )
 }

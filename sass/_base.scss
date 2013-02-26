@@ -54,7 +54,7 @@ a {
 }
 
 .content {
-    padding: 5% $contentMarginWide;
+    padding: 3% $contentMarginWide;
     section { margin-bottom: 60px; }
     ul, ol { margin-bottom: 15px; }
     li {
@@ -66,6 +66,9 @@ a {
         border: 10px solid #FFF;
         @include box-shadow(rgba(0,0,0,.2) 0px 0px 5px);
         max-width: 95%;
+    }
+    @include lessthan( 768px ) {
+        padding: $contentMarginWide;
     }
 }
 
@@ -80,12 +83,16 @@ a {
         margin: 0 0 $application_slat_gutter $application_slat_gutter;
         font-size: 12px;
     }
+    .span6 {
+        margin-bottom: 15px;
+    }
 }
 
 .application-image-container {
     display: block;
     padding: 10px;
     @include box-shadow(rgba(0,0,0,.2) 0px 0px 5px);
+    background: #FFF;
     img { width: 100%; }
 }
 
@@ -109,4 +116,9 @@ a {
         margin-bottom: 20px;
     }
     a.button { margin-top: 10px; }
+}
+
+.goback {
+    @include inline-block();
+    margin-bottom: 15px;
 }

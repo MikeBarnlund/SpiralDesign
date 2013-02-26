@@ -37,10 +37,29 @@ header {
             }
         }
     }
+    @include lessthan( 768px ) {
+        text-align: center;
+        padding: 60px $contentMarginWide 53px;
+        ul.menu {
+            font-size: 0;
+            li a { 
+                font-size: 14px;
+                padding: 5px 7px 7px 7px;
+            }
+            ul.sub-menu {
+                text-align: left;
+            }
+        }
+    }
 }
 
 nav { 
     float: right;
     padding-bottom: $headerGutter;
+    padding-top: 5px;
     a:hover { text-decoration: none; }
+    @include lessthan( 768px ) {
+        float: none;
+        padding-bottom: 0;
+    }
 }

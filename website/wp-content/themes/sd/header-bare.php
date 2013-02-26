@@ -24,29 +24,24 @@
 
 		if ( is_single() ) {
 			single_post_title();
+			print ' - ';
+			bloginfo( 'name' );
 		}
 		elseif ( is_home() || is_front_page() ) {
-			bloginfo( 'description' );
-			print ' | ';
 			bloginfo( 'name' );
 		}
 		elseif ( is_page() ) {
-			bloginfo( 'name' );
-			print ' | ';
 			single_post_title( '' );
+			print ' - ';
+			bloginfo( 'name' );		
 		}
 		elseif ( is_search() ) {
 			bloginfo( 'name' );
-			print ' | Search results for ' . esc_html( $s );
-		}
-		elseif ( is_category() ) {
-			bloginfo( 'name' );
-			print ' | ';
-			single_cat_title();
+			print ' - Search results for ' . esc_html( $s );
 		}
 		elseif ( is_404() ) {
+			print 'Not Found - ';
 			bloginfo( 'name' );
-			print ' | Not Found';
 		}
 		else { bloginfo( 'name' ); }
 

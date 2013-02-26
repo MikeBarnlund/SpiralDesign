@@ -3,14 +3,15 @@ footer {
     color: #d1d1d1;
     background: $brand1;
     
-    .menu-footer-navigation-container { @include inline-block(); }
-    
     .menu {
-        li { list-style: none; }
+        li { 
+            list-style: none; 
+        }
         .menu-item-type-custom {
-            @include inline-block();
+            float: left;
             vertical-align: top;
-            margin-right: 50px;
+            margin-bottom: 25px;
+            margin-right: 7%;
             a {
                 text-transform: uppercase;
                 color: #FFF;
@@ -35,9 +36,19 @@ footer {
             }            
         }
     }
+    
+    .menu-footer-navigation-container {
+        @include lessthan( 768px ) {
+            display: none;
+        }
+    }
+    
     .contact {
         float: right;
         text-align: center;
+        @include lessthan( 768px ) {
+            float: none;
+        }
         .divider {
             margin: 30px 0;
             font-size: 0;
