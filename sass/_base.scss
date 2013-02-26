@@ -72,6 +72,12 @@ a {
     }
 }
 
+.lt-ie9 .content img.size-full {
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD;
+}
+
 .home-application-slats {
     $application_slat_gutter: 13px;
     p {
@@ -94,6 +100,10 @@ a {
     @include box-shadow(rgba(0,0,0,.2) 0px 0px 5px);
     background: #FFF;
     img { width: 100%; }
+}
+
+.lt-ie9 .application-image-container {
+    border: 1px solid #DDD;
 }
 
 .application-tile {

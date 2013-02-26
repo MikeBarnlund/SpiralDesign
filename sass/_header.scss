@@ -4,7 +4,7 @@ header {
     padding: 60px $contentMarginWide 60px - $headerGutter $contentMarginWide;
     position: relative;
     z-index: 1;
-    img#logo {
+    a#logo img {
         padding-bottom: $headerGutter;
     }
     ul.menu {
@@ -51,6 +51,10 @@ header {
             }
         }
     }
+}
+
+.lt-ie8 header a#logo {
+    float: left;
 }
 
 nav { 

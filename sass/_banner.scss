@@ -94,6 +94,10 @@
     }
 }
 
+.lt-ie9 .carousel-inner .banner-content, .lt-ie9 .banner .banner-content {
+    background: url(../img/banner-bg.png);
+}
+
 .page-banner {
     @extend .banner;
     .banner-content {
