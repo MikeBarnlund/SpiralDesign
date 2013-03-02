@@ -105,7 +105,7 @@ class acf_field_group
 		
 		// custom scripts
 		wp_enqueue_script(array(
-			'acf-fields',
+			'acf-field-group',
 		));
 		
 		
@@ -130,7 +130,7 @@ class acf_field_group
 		// custom styles
 		wp_enqueue_style(array(
 			'acf-global',
-			'acf-fields',
+			'acf-field-group',
 		));
 		
 		
@@ -559,7 +559,13 @@ class acf_field_group
 				
 		}
 		
-		$this->parent->create_field(array(
+		
+		// allow custom location rules
+		$choices = apply_filters( 'acf/location/rule_values/' . $options['param'], $choices );
+							
+		
+		// create field
+		do_action('acf/create_field', array(
 			'type'	=>	'select',
 			'name'	=>	'location[rules][' . $options['key'] . '][value]',
 			'value'	=>	$options['value'],
@@ -742,16 +748,12 @@ class acf_field_group
 		}
 		
 		
-		// get next id
-		$next_id = intval( get_option('acf_next_field_id', 1) );
-		
-		
-		// update the acf_next_field_id
-		update_option('acf_next_field_id', ($next_id + 1) );
-		
-		
 		// return id
-		die('field_' . $next_id);
+		$id = $this->parent->get_next_field_id();
+		
+		
+		// die
+		die( 'field_' . $id );
 	}
 
 }

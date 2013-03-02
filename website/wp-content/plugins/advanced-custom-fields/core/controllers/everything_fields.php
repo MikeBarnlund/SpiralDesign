@@ -41,16 +41,18 @@ class acf_everything_fields
 		// save
 		add_action('create_term', array($this, 'save_taxonomy'));
 		add_action('edited_term', array($this, 'save_taxonomy'));
-		
 		add_action('edit_user_profile_update', array($this, 'save_user'));
 		add_action('personal_options_update', array($this, 'save_user'));
 		add_action('user_register', array($this, 'save_user'));
-		
-		
 		add_filter("attachment_fields_to_save", array($this, 'save_attachment'), null , 2);
+
 
 		// shopp
 		add_action('shopp_category_saved', array($this, 'shopp_category_saved'));
+		
+		
+		// delete
+		add_action('delete_term', array($this, 'delete_term'), 10, 4);
 	}
 	
 	
@@ -192,8 +194,9 @@ class acf_everything_fields
 		}
 		
 		
-		// find metabox id's for this page
-		$this->data['metabox_ids'] = $this->parent->get_input_metabox_ids( $options , false );
+		// get field groups
+		$metabox_ids = array();
+		$this->data['metabox_ids'] = apply_filters( 'acf/location/match_field_groups', $metabox_ids, $options );
 
 		
 		// dont continue if no ids were found
@@ -418,8 +421,8 @@ class acf_everything_fields
 		
 			
 		// get acfs
-		$acfs = $this->parent->get_field_groups();
-		
+		$acfs = apply_filters('acf/get_field_groups', false);
+			
 		
 		// layout
 		$layout = 'tr';	
@@ -511,7 +514,7 @@ class acf_everything_fields
 							echo '</p>';
 							
 							$field['name'] = 'fields[' . $field['key'] . ']';
-							$this->parent->create_field($field);
+							do_action('acf/create_field', $field);
 						
 						echo '</div>';
 					}
@@ -520,7 +523,7 @@ class acf_everything_fields
 						echo '<div id="acf-' . $field['name'] . '" class="form-field field field-' . $field['type'] . ' field-'.$field['key'] . $required_class . '">';
 							echo '<label for="fields[' . $field['key'] . ']">' . $field['label'] . $required_label . '</label>';	
 							$field['name'] = 'fields[' . $field['key'] . ']';
-							$this->parent->create_field($field);
+							do_action('acf/create_field', $field );
 							if($field['instructions']) echo '<p class="description">' . $field['instructions'] . '</p>';
 						echo '</div>';
 					}
@@ -530,7 +533,7 @@ class acf_everything_fields
 							echo '<th valign="top" scope="row"><label for="fields[' . $field['key'] . ']">' . $field['label'] . $required_label . '</label></th>';	
 							echo '<td>';
 								$field['name'] = 'fields[' . $field['key'] . ']';
-								$this->parent->create_field($field);
+								do_action('acf/create_field', $field );
 								
 								if($field['instructions']) echo '<p class="description">' . $field['instructions'] . '</p>';
 							echo '</td>';
@@ -560,6 +563,25 @@ class acf_everything_fields
 		// exit for ajax
 		die();
 
+	}
+	
+	
+	/*
+	*  delete_term
+	*
+	*  @description: 
+	*  @since: 3.5.7
+	*  @created: 12/01/13
+	*/
+	
+	function delete_term( $term, $tt_id, $taxonomy, $deleted_term )
+	{
+		global $wpdb;
+		
+		$values = $wpdb->query($wpdb->prepare(
+			"DELETE FROM $wpdb->options WHERE option_name LIKE %s",
+			'%' . $taxonomy . '_' . $term . '%'
+		));
 	}
 	
 			

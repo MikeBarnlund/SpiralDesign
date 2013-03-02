@@ -426,34 +426,46 @@ function register_field_group($array)
 	$GLOBALS['acf_register_field_group'][] = $array;
 }
 
-function acf_register_field_group($array)
+
+add_filter('acf/get_field_groups', 'acf_register_field_group', 10, 1);
+function acf_register_field_group( $return )
 {
-	$array = array_merge($array, $GLOBALS['acf_register_field_group']);
-	
+
+	// validate
 	if( empty($GLOBALS['acf_register_field_group']) )
 	{
-		return $array;
+		return $return;
 	}
+	
+	// ensure $return is an array
+	if( ! is_array( $return ) )
+	{
+	  $return = array();
+  }
+	
+	// merge in custom
+	$return = array_merge($return, $GLOBALS['acf_register_field_group']);
+	
 	
 	
 	// order field groups based on menu_order, title
 	// Obtain a list of columns
-	foreach ($array as $key => $row) {
-	    $menu_order[$key] = $row['menu_order'];
-	    $title[$key] = $row['title'];
+	foreach ($return as $key => $row)
+	{
+	    $menu_order[ $key ] = $row['menu_order'];
+	    $title[ $key ] = $row['title'];
 	}
 	
 	// Sort the array with menu_order ascending
 	// Add $array as the last parameter, to sort by the common key
 	if(isset($menu_order))
 	{
-		array_multisort($menu_order, SORT_ASC, $title, SORT_ASC, $array);
+		array_multisort($menu_order, SORT_ASC, $title, SORT_ASC, $return);
 	}
 	
-	
-	return $array;
+	return $return;
 }
-add_filter('acf_register_field_group', 'acf_register_field_group');
+
 
 
 /*--------------------------------------------------------------------------------------
@@ -587,6 +599,7 @@ function acf_form_head()
 	do_action('acf_print_scripts-input');
 	do_action('acf_print_styles-input');
 	
+	
 	// need wp styling
 	wp_enqueue_style(array(
 		'colors-fresh'
@@ -600,20 +613,6 @@ function acf_form_head()
 
 function acf_form_wp_head()
 {
-	// global vars
-	global $post, $acf;
-	
-
-	// Style
-	echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/global.css?ver=' . $acf->version . '" />';
-	echo '<link rel="stylesheet" type="text/css" href="'.$acf->dir.'/css/input.css?ver=' . $acf->version . '" />';
-
-
-	// Javascript
-	echo '<script type="text/javascript" src="'.$acf->dir.'/js/input-actions.js?ver=' . $acf->version . '" ></script>';
-	
-	
-	
 	// add user js + css
 	do_action('acf_head-input');
 }
@@ -660,9 +659,27 @@ function acf_form($options = null)
 	
 	
 	// register post box
-	if(!$options['field_groups'])
+	if( !$options['field_groups'] )
 	{
-		$options['field_groups'] = $acf->get_input_metabox_ids(array('post_id' => $options['post_id']), false);
+		// get field groups
+		$filter = array(
+			'post_id' => $options['post_id']
+		);
+		
+		if( strpos($options['post_id'], 'user_') !== false )
+		{
+			$user_id = str_replace('user_', '', $options['post_id']);
+			$filter['ef_user'] = $user_id;
+		}
+		elseif( strpos($options['post_id'], 'taxonomy_') !== false )
+		{
+			$taxonomy_id = str_replace('taxonomy_', '', $options['post_id']);
+			$filter['ef_taxonomy'] = $taxonomy_id;
+		}
+		
+		
+		$options['field_groups'] = array();
+		$options['field_groups'] = apply_filters( 'acf/location/match_field_groups', $options['field_groups'], $filter );
 	}
 	
 	
@@ -674,7 +691,8 @@ function acf_form($options = null)
 	
 	
 	// Javascript
-	echo '<script type="text/javascript">acf.post_id = ' . $options['post_id'] . '; acf.nonce = "' . wp_create_nonce( 'acf_nonce' ) . '";</script>';
+	$script_post_id = is_numeric($options['post_id']) ? $options['post_id'] : 0;
+	echo '<script type="text/javascript">acf.post_id = ' . $script_post_id . '; </script>';
 	
 	
 	// display form
@@ -693,7 +711,8 @@ function acf_form($options = null)
 	// html before fields
 	echo $options['html_before_fields'];
 	
-	$field_groups = $acf->get_field_groups();
+	$field_groups = apply_filters('acf/get_field_groups', false);
+
 	if($field_groups):
 		foreach($field_groups as $field_group):
 			
