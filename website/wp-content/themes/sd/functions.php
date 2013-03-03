@@ -4,6 +4,13 @@
  * @author Mike Barnlund <mike@spiraldesign.ca>
 */
 
+// Load JS ====================================================================
+
+function loadBackbone() {
+	wp_enqueue_script('backbone');
+}
+add_action('wp_enqueue_scripts', 'loadBackbone');
+
 // Menu Support ===============================================================
 
 add_theme_support( 'menus' );
@@ -71,4 +78,50 @@ class SH_Last_Walker extends Walker_Nav_Menu{
 
         return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
     }
+}
+
+// AJAX Stuff =================================================================
+
+add_action('wp_ajax_nopriv_do_ajax', 'our_ajax_function');
+add_action('wp_ajax_do_ajax', 'our_ajax_function');
+function our_ajax_function(){
+ 
+	// the first part is a SWTICHBOARD that fires specific functions
+	// according to the value of Query Var 'fn'
+
+	switch( $_REQUEST['fn'] ){
+		case 'get_latest_posts':
+			$output = ajax_get_latest_posts( $_REQUEST[ 'count' ] );
+			break;
+		case 'get_post_by_slug':
+			$output = ajax_get_post( $_REQUEST[ 'slug' ] );
+			break;
+		default:
+			$output = 'No function specified, check your jQuery.ajax() call';
+			break;
+	}
+
+	// at this point, $output contains some sort of valuable data!
+	// Now, convert $output to JSON and echo it to the browser 
+	// That way, we can recapture it with jQuery and run our success function
+
+	$output = json_encode( $output );
+	if( is_array( $output ) ){
+		print_r( $output );   
+	}
+	else {
+		echo $output;
+	}
+	die;
+}
+
+function ajax_get_latest_posts($count){
+	$posts = get_posts( array( 'numberposts' => $count ) );
+	return $posts;
+}
+
+function ajax_get_post( $slug ) {
+	$args = array( 'name' => $slug, 'numberposts' => 1 );
+	$post = get_posts( $args );
+	return $post;
 }

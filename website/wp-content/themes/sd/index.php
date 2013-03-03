@@ -11,6 +11,17 @@ get_header();
 	?>
 </div>
 
+<div id="container">
+	<button>Load</button>
+	<ul id="list"></ul>
+</div>
+
+<div id="list-template">
+	<li></li>
+</div>
+
+<a href="http://spiraldesign.ca/foo/test">Test Foo</a>
+
 <?php
 
 get_footer();
