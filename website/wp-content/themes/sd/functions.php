@@ -13,11 +13,31 @@ add_theme_support( 'menus' );
 add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
-	register_post_type( 'sampleposttype',
+	register_post_type( 'discussion_question',
 		array(
 			'labels' => array(
-				'name' => __( 'Sample Custom Posts' ),
-				'singular_name' => __( 'Sample Custom Post' )
+				'name' => __( 'Discussion Questions' ),
+				'singular_name' => __( 'Discussion Question' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+	register_post_type( 'resource',
+		array(
+			'labels' => array(
+				'name' => __( 'Resources' ),
+				'singular_name' => __( 'Resource' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+	register_post_type( 'quotation',
+		array(
+			'labels' => array(
+				'name' => __( 'Quotations' ),
+				'singular_name' => __( 'Quotation' )
 			),
 		'public' => true,
 		'has_archive' => true,
