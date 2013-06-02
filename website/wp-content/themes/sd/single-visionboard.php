@@ -8,14 +8,10 @@ the_post();
 
 <div class="content">
 	<?php if ( get_the_ID() ) { ?>
-		<div id="post-<?php the_ID(); ?>" class="post editable">
-			<?php edit_post_link( __( 'Edit', 'sdbase' ), "<div class=\"edit-link\">", "</div>" ) ?>
-			<h2 class="entry-title">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">Vision Board - <?php the_title(); ?></a>
-			</h2>
-			<div class="entry-meta">
-				<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
-			</div>
+		<div id="post-<?php the_ID(); ?>" class="post">
+			<h1 class="post-title">
+				<?php the_title(); ?>
+			</h1>
 			
 			<table class="vision-board">
 				<tr>

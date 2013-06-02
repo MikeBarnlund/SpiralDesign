@@ -1,17 +1,19 @@
-ul.menu {
-    li { 
-        @include inline-block(); 
-        &.current-menu-item {
-            text-decoration: underline;
+div.menu {
+    ul {
+        li {
+            float: left;
+            margin: 0 0 0 5px;
+            list-style: none;
+            a {
+                background-color: #EBEBEB;
+                border-radius: 3px 3px 3px 3px;
+                color: #757575;
+                display: block;
+                letter-spacing: 1.5px;
+                padding: 10px 8px 9px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         }
-        &.has-sub-menu:before {
-            content: '\25bc';
-            font-size: 12px;
-        }
-    }
-    ul.sub-menu {
-        display: none;
-        position: absolute;
-        li { display: block; }
     }
 }

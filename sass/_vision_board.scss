@@ -1,10 +1,15 @@
 .vision-board {
+    border-collapse: separate;
+    border-spacing: $defaultGutter/2;
     td {
-        border: 1px solid $defaultBorderColor;
-        padding: 10px;
+        padding: $defaultGutter;
         vertical-align: top;
+        width: 25%;
+        @include box-shadow( rgba(0, 0, 0, .2) 0px 0px 3px );
         h2 {
             border-bottom: 1px solid $defaultBorderColor;
+            margin-top: 0;
+            padding-bottom: $defaultGutter;
         }
     }
 }

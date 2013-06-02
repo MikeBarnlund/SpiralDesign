@@ -1,9 +1,10 @@
 // Variables
 
 $brand1: #AA4BA4;
-$fontSize: 14px;
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$bodyColor: #999;
+$fontSize: 13px;
+$fontFamily: 'OpenSans','Helvetica Neue', Helvetica, Arial, sans-serif;
+$bodyColor: #777;
 $linkColor: $brand1 - #222;
 $linkHoverColor: $linkColor - #222;
-$defaultBorderColor: #888;
+$defaultBorderColor: #BBB;
+$defaultGutter: 15px;

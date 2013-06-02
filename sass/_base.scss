@@ -1,7 +1,38 @@
 
+body {
+    color: $bodyColor;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
+
+header {
+    margin: $defaultGutter;
+}
+
+div[role="main"] {
+    margin: $defaultGutter;
+}
+
+a {
+    color: $linkColor;
+    &:hover { color: $linkHoverColor; }
+}
+
 ul {
     li { 
         list-style: disc outside none; 
         margin-left: 13px;
+        margin-bottom: $defaultGutter/2;
     }
+    margin-bottom: $defaultGutter/2;
 }
+
+h1, h2, h3, h4, h5 { 
+    font-weight: lighter; 
+    margin: $defaultGutter 0;
+    color: #000;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
