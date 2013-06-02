@@ -1,0 +1,10 @@
+.vision-board {
+    td {
+        border: 1px solid $defaultBorderColor;
+        padding: 10px;
+        vertical-align: top;
+        h2 {
+            border-bottom: 1px solid $defaultBorderColor;
+        }
+    }
+}

@@ -13,11 +13,11 @@ add_theme_support( 'menus' );
 add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
-	register_post_type( 'sampleposttype',
+	register_post_type( 'visionboard',
 		array(
 			'labels' => array(
-				'name' => __( 'Sample Custom Posts' ),
-				'singular_name' => __( 'Sample Custom Post' )
+				'name' => __( 'Vision Board' ),
+				'singular_name' => __( 'Vision Board' )
 			),
 		'public' => true,
 		'has_archive' => true,
