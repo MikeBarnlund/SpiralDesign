@@ -23,6 +23,26 @@ function create_post_type() {
 		'has_archive' => true,
 		)
 	);
+	register_post_type( 'productcanvas',
+		array(
+			'labels' => array(
+				'name' => __( 'Product Canvas' ),
+				'singular_name' => __( 'Product Canvas' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+	register_post_type( 'persona',
+		array(
+			'labels' => array(
+				'name' => __( 'Persona' ),
+				'singular_name' => __( 'Persona' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
 }
 
 // Ondemand function to generate tinyurl
