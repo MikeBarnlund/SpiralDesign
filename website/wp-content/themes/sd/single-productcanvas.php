@@ -38,7 +38,7 @@ the_post();
 						} 
 						?>
 					</td>
-					<td colspan="2">
+					<td colspan="2" class="big-picture">
 						<h2>The Big Picture</h2>
 					</td>
 					<td>

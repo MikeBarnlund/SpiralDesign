@@ -4,5 +4,16 @@
     td.photo { max-width: 150px; }
 }
 .persona-slat {
-    
+    @include box-shadow( rgba(0, 0, 0, .2) 0px 0px 3px );
+    padding: $defaultGutter;
+    margin-bottom: $defaultGutter;
+    img { 
+        float: left; 
+        width: 25%;
+        margin: 0 5% 2% 0;
+    }
+    h3 { 
+        font-weight: bold; 
+        margin-top: 0;
+    }
 }
