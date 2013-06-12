@@ -35,11 +35,28 @@ the_post();
 							$post = $row['persona'];
 							setup_postdata( $post );
 							get_template_part( 'post', 'persona' );
-						} 
+						}
+						
+						wp_reset_postdata();
 						?>
 					</td>
 					<td colspan="2" class="big-picture">
 						<h2>The Big Picture</h2>
+						<?php
+						if ( get_field( 'epics' ) ) {
+							while ( has_sub_field( 'epics' ) ) { ?>
+								<div class="epic-slat clearfix">
+									<?php
+									$persona = get_sub_field('persona');
+									$attachment_id = get_post_meta( $persona->ID, 'photo', true );
+									$size = "full"; // (thumbnail, medium, large, full or custom size)
+									$photo_url = wp_get_attachment_url( $attachment_id, $size );
+									?>
+									<img src="<?php echo $photo_url; ?>"/>
+									<?php the_sub_field('epic'); ?>
+								</div>
+							<?php }	
+						} ?>
 					</td>
 					<td>
 						<h2>Product Details</h2>

@@ -7,5 +7,5 @@
 	?>
 	<a href="<?php the_permalink(); ?>"><img src="<?php echo $photo_url; ?>"/></a>
 	<h3><a href="<?php the_permalink(); ?>"><?php the_field('name'); ?></a></h3>
-	<p><?php the_field('summary'); ?></p>
+	<?php the_field('summary'); ?>
 </div>

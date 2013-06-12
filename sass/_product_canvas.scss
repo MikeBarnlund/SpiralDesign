@@ -1,6 +1,23 @@
 .product-canvas {
 	@extend .canvas-base;
+	font-size: 12px;
     .big-picture {
         width: 50%;
     }
+}
+
+.epic-slat {
+    @include box-shadow( rgba(0, 0, 0, .2) 0px 0px 3px );
+    border-spacing: 0;
+    @include inline-block();
+    margin: 1%;
+    padding: 2%;
+    vertical-align: middle;
+    width: 26.9%;
+    img { 
+        float: left; 
+        width: 32px;
+        margin: 0 5px 0 0;
+    }
+    p { margin-bottom: 0; }
 }
